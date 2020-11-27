@@ -1,0 +1,660 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "nl" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://purl.org/dc/terms", "https://w3id.org/datascope" ],
+    "iri" : "No IRI set"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/dc/terms/BibliographicResource",
+    "baseIri" : "http://purl.org/dc/terms",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BibliographicResource"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "13", "14", "10", "6", "15", "9", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/datascope#DataScope",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataScope",
+      "en" : "Data scope",
+      "nl" : "Data scope"
+    },
+    "comment" : {
+      "en" : "The class of Data Scopes. Instances of this class are specific data scopes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/datascope#Modeling",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Modeling",
+      "en" : "Modeling",
+      "nl" : "Modelleering"
+    },
+    "comment" : {
+      "en" : "Defines how the relevant elements in sources are represented."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/datascope#Selection",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Selection",
+      "en" : "Selection",
+      "nl" : "Selectie"
+    },
+    "comment" : {
+      "en" : "Describes a data selection process and its results."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Resource"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/datascope#Linking",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Linking",
+      "en" : "Linking",
+      "nl" : "Verbindingen"
+    },
+    "comment" : {
+      "en" : "Describes which explicit internal and external connections between data items are established. Can contain (a reference to) a linkset."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Resource"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/datascope#Paper",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Paper",
+      "en" : "Paper",
+      "nl" : "Document"
+    },
+    "comment" : {
+      "en" : "A class to describe a reporting document for which the Data scope is used (scientific paper or other)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/datascope#Classification",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classification",
+      "en" : "Classification",
+      "nl" : "Classificatie"
+    },
+    "comment" : {
+      "en" : "Class to represent the grouping or categorization of objects in a data scope."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/datascope#Normalization",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Normalization",
+      "en" : "Normalization",
+      "nl" : "Normalisatie"
+    },
+    "comment" : {
+      "en" : "Describes how surface forms mapped to a normalized form? (e.g. the mapping of person names to a 'Firstname, Lastname' form.)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/datascope#Dataset",
+    "baseIri" : "https://w3id.org/datascope",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset",
+      "en" : "Data set",
+      "nl" : "Dataset"
+    },
+    "comment" : {
+      "en" : "A dataset or subset used in a specific selection. This not a reference to the dataset itself but the dataset as part of the selection."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "12" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/datascope#has_method",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "has_method",
+      "en" : "has method"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "generic property to specify a method used in a step (for example in Normalization)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/datascope#source",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "source",
+      "en" : "source"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "property to describe dht source of a dataset (can point to an internal representation or external dataset."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_modelling",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "has_modelling",
+      "en" : "has modelling"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "property to link a Modelling step to a Data Scope"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_datascope",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "has_datascope",
+      "en" : "has datascope"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property to link a specific research output (paper) to a Data Scope."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_selection",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "has_selection",
+      "en" : "has selection"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "property to link a Selection to a Data Scope"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/datascope#published_in",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "published_in",
+      "en" : "published_in"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Property to link a paper to its publishing venue."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_selection_criteria",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "has_selection_criteria",
+      "en" : "has selection_criteria"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "property to describe one or more selection criteria for a dataset"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/datascope#is_subset_of",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "is_subset_of",
+      "en" : "is subset of"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "property to link data subset to its superset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_language",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "has_language",
+      "en" : "has language"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Describes the language of a dataset"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "23"
+  }, {
+    "range" : "12",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "12",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "12",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "12",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_normalization",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "has_normalization",
+      "en" : "has normalization"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "property to link a Normalization instance to a Data Scope"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "range" : "12",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_dataset",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "has_dataset",
+      "en" : "has dataset"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Property to link a Selection step to a dataset."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "12",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "12",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_classification",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "has_classification",
+      "en" : "has classification"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Links a data scope to a classification element"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_date",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "has_date",
+      "en" : "has date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "a date for the dataset (for date of retrieval, use has_collection_date."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_linking",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "has_linking",
+      "en" : "has linking"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Property to connect a Linking step to a Data Scope"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_normalization_step",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "has_normalization_step",
+      "en" : "has normalization_step"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "property to link a Normalization step to Normalization"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_collection_date",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "has_collection_date",
+      "en" : "has collection_date"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Property to define the date of retrieval of a specific subset."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_representation",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "has_representation",
+      "en" : "has representation"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "property to specify the representation form for a Modelling"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/datascope#has_subset",
+    "baseIri" : "https://w3id.org/datascope",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "has_subset",
+      "en" : "has subset"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "property to indicate a subset of a dataset"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "45"
+  } ]
+}

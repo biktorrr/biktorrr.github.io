@@ -1,0 +1,308 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/partOf
+<http://purl.org/dc/terms/partOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/datascope#has_classification_scheme
+<https://w3id.org/datascope#has_classification_scheme> rdfs:comment "Property to describe a classification scheme used for a specific classification. Can use an explicit source (for example in SKOS)"@en ;
+                                                       rdfs:label "has classification_scheme"@en ;
+                                                       rdf:type owl:AnnotationProperty ;
+                                                       rdfs:domain <https://w3id.org/datascope#Classification> .
+
+
+###  https://w3id.org/datascope#has_extraction_method
+<https://w3id.org/datascope#has_extraction_method> rdfs:comment "Describes the method used to extract a dataset"@en ;
+                                                   rdfs:label "extraction_method"@en ;
+                                                   rdf:type owl:AnnotationProperty ;
+                                                   rdfs:domain <https://w3id.org/datascope#Dataset> .
+
+
+###  https://w3id.org/datascope#has_method
+<https://w3id.org/datascope#has_method> rdf:type owl:AnnotationProperty ;
+                                        rdfs:domain rdfs:Resource .
+
+
+###  https://w3id.org/datascope#has_subset
+<https://w3id.org/datascope#has_subset> rdf:type owl:AnnotationProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> .
+
+
+###  https://w3id.org/datascope#is_subset_of
+<https://w3id.org/datascope#is_subset_of> rdf:type owl:AnnotationProperty ;
+                                          rdfs:subPropertyOf <http://purl.org/dc/terms/partOf> .
+
+
+###  https://w3id.org/datascope#source
+<https://w3id.org/datascope#source> rdf:type owl:AnnotationProperty ;
+                                    rdfs:subPropertyOf <http://purl.org/dc/terms/source> .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#Resource
+rdfs:Resource rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/datascope#has_classification
+<https://w3id.org/datascope#has_classification> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/datascope#DataScope> ;
+                                                rdfs:range <https://w3id.org/datascope#Classification> ;
+                                                rdfs:comment "Links a data scope to a classification element"@en ;
+                                                rdfs:label "has classification"@en .
+
+
+###  https://w3id.org/datascope#has_datascope
+<https://w3id.org/datascope#has_datascope> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/datascope#Paper> ;
+                                           rdfs:range <https://w3id.org/datascope#DataScope> ;
+                                           rdfs:comment "Property to link a specific research output (paper) to a Data Scope."@en ;
+                                           rdfs:label "has datascope"@en .
+
+
+###  https://w3id.org/datascope#has_dataset
+<https://w3id.org/datascope#has_dataset> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/datascope#Selection> ;
+                                         rdfs:range <https://w3id.org/datascope#Dataset> ;
+                                         rdfs:comment "Property to link a Selection step to a dataset."@en ;
+                                         rdfs:label "has dataset"@en .
+
+
+###  https://w3id.org/datascope#has_linking
+<https://w3id.org/datascope#has_linking> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/datascope#DataScope> ;
+                                         rdfs:range <https://w3id.org/datascope#Linking> ;
+                                         rdfs:comment "Property to connect a Linking step to a Data Scope"@en ;
+                                         rdfs:label "has linking"@en .
+
+
+###  https://w3id.org/datascope#has_modelling
+<https://w3id.org/datascope#has_modelling> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/datascope#DataScope> ;
+                                           rdfs:range <https://w3id.org/datascope#Modeling> ;
+                                           rdfs:comment "property to link a Modelling step to a Data Scope"@en ;
+                                           rdfs:label "has modelling"@en .
+
+
+###  https://w3id.org/datascope#has_normalization
+<https://w3id.org/datascope#has_normalization> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/datascope#DataScope> ;
+                                               rdfs:range <https://w3id.org/datascope#Normalization> ;
+                                               rdfs:comment "property to link a Normalization instance to a Data Scope"@en ;
+                                               rdfs:label "has normalization"@en .
+
+
+###  https://w3id.org/datascope#has_selection
+<https://w3id.org/datascope#has_selection> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/datascope#DataScope> ;
+                                           rdfs:range <https://w3id.org/datascope#Selection> ;
+                                           rdfs:comment "property to link a Selection to a Data Scope"@en ;
+                                           rdfs:label "has selection"@en .
+
+
+###  https://w3id.org/datascope#has_subset
+<https://w3id.org/datascope#has_subset> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                        rdfs:range <https://w3id.org/datascope#Dataset> .
+
+
+###  https://w3id.org/datascope#is_subset_of
+<https://w3id.org/datascope#is_subset_of> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                          rdfs:range <https://w3id.org/datascope#Dataset> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/datascope#has_collection_date
+<https://w3id.org/datascope#has_collection_date> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 rdfs:comment "Property to define the date of retrieval of a specific subset."@en ;
+                                                 rdfs:label "has collection_date"@en .
+
+
+###  https://w3id.org/datascope#has_date
+<https://w3id.org/datascope#has_date> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                      rdfs:range rdfs:Literal ;
+                                      rdfs:comment "a date for the dataset (for date of retrieval, use has_collection_date."@en ;
+                                      rdfs:label "has date"@en .
+
+
+###  https://w3id.org/datascope#has_language
+<https://w3id.org/datascope#has_language> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                          rdfs:range rdfs:Literal ;
+                                          rdfs:comment "Describes the language of a dataset"@en ;
+                                          rdfs:label "has language"@en .
+
+
+###  https://w3id.org/datascope#has_method
+<https://w3id.org/datascope#has_method> rdf:type owl:DatatypeProperty ;
+                                        rdfs:range rdfs:Literal .
+
+
+###  https://w3id.org/datascope#has_normalization_step
+<https://w3id.org/datascope#has_normalization_step> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://w3id.org/datascope#Normalization> ;
+                                                    rdfs:range rdfs:Resource ;
+                                                    rdfs:comment "property to link a Normalization step to Normalization"@en ;
+                                                    rdfs:label "has normalization_step"@en .
+
+
+###  https://w3id.org/datascope#has_representation
+<https://w3id.org/datascope#has_representation> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <https://w3id.org/datascope#Modeling> ;
+                                                rdfs:range rdfs:Literal ;
+                                                rdfs:comment "property to specify the representation form for a Modelling"@en ;
+                                                rdfs:label "has representation"@en .
+
+
+###  https://w3id.org/datascope#has_selection_criteria
+<https://w3id.org/datascope#has_selection_criteria> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                                    rdfs:range rdfs:Literal ;
+                                                    rdfs:comment "property to describe one or more selection criteria for a dataset"@en ;
+                                                    rdfs:label "has selection_criteria"@en .
+
+
+###  https://w3id.org/datascope#published_in
+<https://w3id.org/datascope#published_in> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <https://w3id.org/datascope#Paper> ;
+                                          rdfs:range rdfs:Resource ;
+                                          rdfs:comment "Property to link a paper to its publishing venue."@en ;
+                                          rdfs:label "published_in"@en .
+
+
+###  https://w3id.org/datascope#source
+<https://w3id.org/datascope#source> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <https://w3id.org/datascope#Dataset> ;
+                                    rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/BibliographicResource
+<http://purl.org/dc/terms/BibliographicResource> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  https://w3id.org/datascope#Classification
+<https://w3id.org/datascope#Classification> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                            rdfs:comment "Class to represent the grouping or categorization of objects in a data scope."@en ;
+                                            rdfs:label "Classificatie"@nl ,
+                                                       "Classification"@en .
+
+
+###  https://w3id.org/datascope#DataScope
+<https://w3id.org/datascope#DataScope> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                       rdfs:comment "The class of Data Scopes. Instances of this class are specific data scopes"@en ;
+                                       rdfs:label "Data scope"@en ,
+                                                  "Data scope"@nl .
+
+
+###  https://w3id.org/datascope#Dataset
+<https://w3id.org/datascope#Dataset> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                     rdfs:comment "A dataset or subset used in a specific selection. This not a reference to the dataset itself but the dataset as part of the selection."@en ;
+                                     rdfs:label "Data set"@en ,
+                                                "Dataset"@nl .
+
+
+###  https://w3id.org/datascope#Linking
+<https://w3id.org/datascope#Linking> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                     rdfs:comment "Describes which explicit internal and external connections between data items are established. Can contain (a reference to) a linkset."@en ;
+                                     rdfs:label "Linking"@en ,
+                                                "Verbindingen"@nl .
+
+
+###  https://w3id.org/datascope#Modeling
+<https://w3id.org/datascope#Modeling> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                      rdfs:comment "Defines how the relevant elements in sources are represented."@en ;
+                                      rdfs:label "Modeling"@en ,
+                                                 "Modelleering"@nl .
+
+
+###  https://w3id.org/datascope#Normalization
+<https://w3id.org/datascope#Normalization> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:comment "Describes how surface forms mapped to a normalized form? (e.g. the mapping of person names to a 'Firstname, Lastname' form.)"@en ;
+                                           rdfs:label "Normalisatie"@nl ,
+                                                      "Normalization"@en .
+
+
+###  https://w3id.org/datascope#Paper
+<https://w3id.org/datascope#Paper> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.org/dc/terms/BibliographicResource> ;
+                                   rdfs:comment "A class to describe a reporting document for which the Data scope is used (scientific paper or other)"@en ;
+                                   rdfs:label "Document"@nl ,
+                                              "Paper"@en .
+
+
+###  https://w3id.org/datascope#Selection
+<https://w3id.org/datascope#Selection> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                       rdfs:comment "Describes a data selection process and its results."@en ;
+                                       rdfs:label "Selectie"@nl ,
+                                                  "Selection"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://w3id.org/datascope#has_method> rdfs:comment "generic property to specify a method used in a step (for example in Normalization)"@en ;
+                                        rdfs:label "has method"@en .
+
+
+<https://w3id.org/datascope#has_subset> rdfs:comment "property to indicate a subset of a dataset"@en ;
+                                        rdfs:label "has subset"@en .
+
+
+<https://w3id.org/datascope#is_subset_of> rdfs:comment "property to link data subset to its superset"@en ;
+                                          rdfs:label "is subset of"@en .
+
+
+<https://w3id.org/datascope#source> rdfs:comment "property to describe dht source of a dataset (can point to an internal representation or external dataset."@en ;
+                                    rdfs:label "source"@en .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
