@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parkpop – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Parkpop</h1>
+<p class="tm">8 posts · started 2009-06-25 14:16 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090625141600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2009-06-25 14:16</span></div>
+  <div class="pb">Nog mensen zin om al chillend met een biertje 'Kadegedeng Kadegedeng toe-toeeee' te brullen zondag a.s.?<br><br>http://www.parkpop.nl/nl/programma<br></div>
+</article>
+<article class="post" data-ts="20090625142100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2009-06-25 14:21</span></div>
+  <div class="pb">ziet er goed uit, maar ik ben dan lichttechnicus bij een dansvoorstelling, jeweettoch</div>
+</article>
+<article class="post" data-ts="20090625150500" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2009-06-25 15:05</span></div>
+  <div class="pb">helaas, zondag moet ik chillen met Jan Terlouw.</div>
+</article>
+<article class="post" data-ts="20090625150800" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2009-06-25 15:08</span></div>
+  <div class="pb">weer kapotzuipen zeker..</div>
+</article>
+<article class="post" data-ts="20090625151800" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-06-25 15:18</span></div>
+  <div class="pb">Vanzelfsprekend, het thema is: van het padje met jan<br><br></div>
+</article>
+<article class="post" data-ts="20090625152000" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2009-06-25 15:20</span></div>
+  <div class="pb">Zjoste Puite, de Koning van Katoren</div>
+</article>
+<article class="post" data-ts="20090625153300" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2009-06-25 15:33</span></div>
+  <div class="pb">Dat is misschien een goede nieuwe bijnaam inderdaad. Die ga ik maar eens pluggen.</div>
+</article>
+<article class="post" data-ts="20090626103300" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2009-06-26 10:33</span></div>
+  <div class="pb">Guus aantikken in DH is geen slechte. Ik moet toch via DH omdat er werkzaamheden zijn tussen Utrecht en Den Bosch. Voor de rest interesseert het programma me niet zo erg geloof ik. Wat waren jou plannen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 25/26 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 25/26</h1>
+<p class="tm">12 posts · started 2003-10-23 10:30 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031023103000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-10-23 10:30</span></div>
+  <div class="pb">zajazoja</div>
+</article>
+<article class="post" data-ts="20031023113100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-10-23 11:31</span></div>
+  <div class="pb">zajazoja<br></div>
+</article>
+<article class="post" data-ts="20031023163200" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2003-10-23 16:32</span></div>
+  <div class="pb">zaneezonee</div>
+</article>
+<article class="post" data-ts="20031023165800" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-10-23 16:58</span></div>
+  <div class="pb">jeetje, dat is bruusk, bokbierweekendje?</div>
+</article>
+<article class="post" data-ts="20031023174200" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-10-23 17:42</span></div>
+  <div class="pb">zanee zonee</div>
+</article>
+<article class="post" data-ts="20031024042500" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2003-10-24 04:25</span></div>
+  <div class="pb">zonee zanee Zizou!</div>
+</article>
+<article class="post" data-ts="20031024094600" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-10-24 09:46</span></div>
+  <div class="pb">Tijmen? Big T?<br></div>
+</article>
+<article class="post" data-ts="20031024104800" id="p8">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#8 · 2003-10-24 10:48</span></div>
+  <div class="pb">za ja<br>zo nee</div>
+</article>
+<article class="post" data-ts="20031024142400" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2003-10-24 14:24</span></div>
+  <div class="pb">zanee zonee <br>bokbierja</div>
+</article>
+<article class="post" data-ts="20031024165200" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10 · 2003-10-24 16:52</span></div>
+  <div class="pb">bokbiernee zizouja</div>
+</article>
+<article class="post" data-ts="20031024174200" id="p11">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#11 · 2003-10-24 17:42</span></div>
+  <div class="pb">za nee<br>zo ja, om weer te beginnen met ballen </div>
+</article>
+<article class="post" data-ts="20031025052700" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2003-10-25 05:27</span></div>
+  <div class="pb">HE Tijmen, als je nog even wacht kunnen we saampjes weer beginnen, geschwellig he.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

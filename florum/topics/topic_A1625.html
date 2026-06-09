@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Michiel&#x27;s party – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Michiel&#x27;s party</h1>
+<p class="tm">11 posts · started 2005-11-26 13:46 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051126134600" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2005-11-26 13:46</span></div>
+  <div class="pb">Wij gaan met de auto en we gaan om 8 uur weg, als er mensen willen meerijden (max.3 personen) bel dan even om wat af te spreken, wie het eerst komt wie het eerst maalt!<br>Ook op de terugweg zijn er 3 plaatsen beschikbaar.<br><IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20051126155800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-11-26 15:58</span></div>
+  <div class="pb">wij willen wel erg graag een plaatsje terug! (blije et moi)</div>
+</article>
+<article class="post" data-ts="20051126160500" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2005-11-26 16:05</span></div>
+  <div class="pb">Er zijn enkel nog 2 plaatsjes over voor op de heen weg. De rest is af vergeven.</div>
+</article>
+<article class="post" data-ts="20051127133200" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2005-11-27 13:32</span></div>
+  <div class="pb">Vond het heel gezellig! En dat terwijl ik nog geen druppel gedronken had <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> ! Bedankt Michiel!<br></div>
+</article>
+<article class="post" data-ts="20051128093400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-11-28 09:34</span></div>
+  <div class="pb">Ja, Blije en ik vonden het ook erg geslaagd<br><br>En ik heb erg lekker gegeten. hulde aan Lexi!</div>
+</article>
+<article class="post" data-ts="20051128100100" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2005-11-28 10:01</span></div>
+  <div class="pb">ja.. het was heel erg gezellig.. en nog hartelijke dank aan Lara voor het afzetten op CS<br>, waardoor ik mijn trein wel kon halen!</div>
+</article>
+<article class="post" data-ts="20051128104100" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-11-28 10:41</span></div>
+  <div class="pb">Ik vond het ook een erg geslaagd feest, al kan ik me niet alles zo goed meer herinneren. Bedankt allemaal!</div>
+</article>
+<article class="post" data-ts="20051128133800" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2005-11-28 13:38</span></div>
+  <div class="pb">Ik wilde Michiel bedanken voor de innige danspartij en zou getergd zijn tot op het bot als hij dat zich niet meer kan herinneren. </div>
+</article>
+<article class="post" data-ts="20051128140400" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2005-11-28 14:04</span></div>
+  <div class="pb">Ik herinner het me anders maar al te goed, hoe jullie in innige omhelzing op de bank lagen!</div>
+</article>
+<article class="post" data-ts="20051128140500" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2005-11-28 14:05</span></div>
+  <div class="pb">Ik voelde de jaloerse blik van Merlijn in mijn rug priemen.</div>
+</article>
+<article class="post" data-ts="20051128180200" id="p11">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#11 · 2005-11-28 18:02</span></div>
+  <div class="pb">Ik moet zeggen dat ik het me voor een groot deel niet meer kan herinneren... <br>Die dans echter, Oli4, zal ik nooit vergeten :)  </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

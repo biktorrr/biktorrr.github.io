@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gelukkig nieuwjaar! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gelukkig nieuwjaar!</h1>
+<p class="tm">10 posts · started 2004-01-01 15:56 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040101155600" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2004-01-01 15:56</span></div>
+  <div class="pb">Bij deze allen nog een gelukkig nieuwjaar. Ik neem aan dat jullie allemaal heel zijn gebleven. Ook al voel je dat niet zo wanneer je net wakker wordt op 1 januari. Ik heb trouwens een goed idee. Laten we allemaal in de florabuurt in Amsterdam-Noord gaan wonen. Is tenslotte onze naam en ons soort mensen. Lekker rellen en goedberedeneerd argumenteren. En niet te vergeten de kerstboomverbranding.</div>
+</article>
+<article class="post" data-ts="20040101162500" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-01-01 16:25</span></div>
+  <div class="pb">Ik hoop dat mijn eerste salaris hoog genoeg zal zijn voor een hypo daaro.</div>
+</article>
+<article class="post" data-ts="20040101162600" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-01-01 16:26</span></div>
+  <div class="pb">Trouwens ook nog een gelukkig nieuw jaar :)</div>
+</article>
+<article class="post" data-ts="20040101221400" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2004-01-01 22:14</span></div>
+  <div class="pb">gelukkig nieuwjaar.. en oja, Haarlem had dit jaar zijn eigen rellenwijk: Parkwijk.<br><br>Wel een beetje eng: <br><strong>Flora</strong>dorp<br><strong>Park</strong>wijk<br></div>
+</article>
+<article class="post" data-ts="20040101225900" id="p5">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#5 · 2004-01-01 22:59</span></div>
+  <div class="pb">Gelukkig nieuwjaar allemaal,dat we maar weer een nieuw jaar mogen overleven!</div>
+</article>
+<article class="post" data-ts="20040102124000" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2004-01-02 12:40</span></div>
+  <div class="pb">nou Lh dat is wel een hele ambitieus voornemen !<br><br><h2>De beste wensen</h2></div>
+</article>
+<article class="post" data-ts="20040102182100" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2004-01-02 18:21</span></div>
+  <div class="pb">Je vous souhaite tous une tr\ès bonne ann\ée.</div>
+</article>
+<article class="post" data-ts="20040105082100" id="p8">
+  <div class="ph"><span class="pa">daVincie</span><span class="pm">#8 · 2004-01-05 08:21</span></div>
+  <div class="ps">gelukkig nieuwjaar</div><div class="pb">Bijzonder gevoel om als floracied 2004 te beginnen. Ook de florakids (Shanna, Ma\ël en Noah) zijn weer laaiend enthousiast. Zelfs de vrouw heeft aangekondigd haar flora-tenue op thuiswedstrijden te zullen dragen. Het wordt een mooi jaar in de tweede klasse<br><br>KAMPIOENEN!!!!!</div>
+</article>
+<article class="post" data-ts="20040105123700" id="p9">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#9 · 2004-01-05 12:37</span></div>
+  <div class="pb">Ook al is het een beetje laat...toch allemaal een heel gelukkig nieuwjaar gewenst!</div>
+</article>
+<article class="post" data-ts="20040105150100" id="p10">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#10 · 2004-01-05 15:01</span></div>
+  <div class="pb">een kampioenen-jaar gewenst aan eenieder</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

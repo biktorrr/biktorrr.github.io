@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voetbalplaatjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Voetbalplaatjes</h1>
+<p class="tm">9 posts · started 2009-02-26 15:33 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090226153300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-02-26 15:33</span></div>
+  <div class="pb">Heb onderhand een indrukwekkende collectie voetbalplaatjes en zelfs nog vijf ongeopende zakjes. Voor een billijke prijs ben ik bereid er afstand van te doen. Disclaimer: de Feijenoord-spelers zijn een beetje toegetakeld (brillen, hangtieten en zelfs een Hitler-snor hier en daar).</div>
+</article>
+<article class="post" data-ts="20090226153800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2009-02-26 15:38</span></div>
+  <div class="pb">Voor een theo lucius in mint conditie bied ik 50 centimes,daarnaast heb ik nog levchenko nodig van groningen.<br><br>Beiden keer 2 bitte.<br><br></div>
+</article>
+<article class="post" data-ts="20090226160200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2009-02-26 16:02</span></div>
+  <div class="pb">Ik heb iig een Lucius op de plank liggen (met pontificale baard en prominente fallus). Die Levchenko moet ik even voor je checken.<br><br>Voor twee maal Lucius reken ik E5. Beffoindre.</div>
+</article>
+<article class="post" data-ts="20140518204303" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2014-05-18 20:43</span></div>
+  <div class="pb">Ivm topic recycling:  felicitaties voor de enige aerdenhouter die groningen zijn home team durft te noemen! Europees voetbal halen lijkt me een puike prestatie.<br><br>Tevens hulde voor dit olijcke en ondergewaardeerde topic, denkelijk bij opening al gewonnen de merl.</div>
+</article>
+<article class="post" data-ts="20140518205509" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2014-05-18 20:55</span></div>
+  <div class="pb">Helemaal de enige Aerdenhouter/Aerdenhoutenaar/Aerdenhoutenees / Aerdenhoutenaer (insert your own joke about Bentveld here) ben ik natuurlijk niet, er is ook nog een bepaalde Herr Professor die dezelfde voorkeur deelt. Maar bedankt voor de felicitatie.</div>
+</article>
+<article class="post" data-ts="20140519120907" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2014-05-19 12:09</span></div>
+  <div class="pb">Herr Professor zie ik als jouw alter ego Berney, die telt niet.</div>
+</article>
+<article class="post" data-ts="20140519220629" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2014-05-19 22:06</span></div>
+  <div class="pb">Voortekenen van een orkaan boven het Roergebied (of waar Berney ook stiekem moge uithangen zonder dat hij iemand - in elk geval mij niet - daarvan heeft verwittigd)</div>
+</article>
+<article class="post" data-ts="20140525012556" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2014-05-25 01:25</span></div>
+  <div class="pb">Op het laatst dacht ik: ´Het zou Ronaldo sieren als ´ie die strafschop nu gewoon naastzou schieten.´ Dat mag ik graag doen: bedenken wat voor Ronaldo het ethisch juiste gedrag zou zijn. Gewoon, zodat ik zeker wwet dat hij abject en walgelijk is. </div>
+</article>
+<article class="post" data-ts="20140525130333" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2014-05-25 13:03</span></div>
+  <div class="pb">Het zou Ronaldo ook sieren om eens zijn shirt aan te houden. <br><br>Ik had mixed feelings, aan de ene kant speelde atletico vaak anti voetbal met elf verdedigers, aan de andere kant zou succes niet te koop moeten zijn, en gun ik het madrid niet met hun aanval van 280 miljoen. Een ideal scenario, waarin Ronaldo moest janken omdat Bal de  winnende maakte en niet hij leek binnen handbereik, maar dankzij die penalty was zelfs Ronaldo blij, en verloor de objectieve voetbalfan. Helaas. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

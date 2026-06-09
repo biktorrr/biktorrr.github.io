@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Za pok0r @GOG? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Za pok0r @GOG?</h1>
+<p class="tm">7 posts · started 2007-02-17 13:10 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070217131000" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-02-17 13:10</span></div>
+  <div class="pb">Merrel en Tube zijn in.<br><br>nog meer mensen geinteresseerd?</div>
+</article>
+<article class="post" data-ts="20070217153300" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-02-17 15:33</span></div>
+  <div class="pb">yeyt</div>
+</article>
+<article class="post" data-ts="20070217153700" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-02-17 15:37</span></div>
+  <div class="pb">Na tienen misschien</div>
+</article>
+<article class="post" data-ts="20070217172700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-02-17 17:27</span></div>
+  <div class="pb">Neyt...Amsterdam hoog!</div>
+</article>
+<article class="post" data-ts="20070217200400" id="p5">
+  <div class="ph"><span class="pa">jk</span><span class="pm">#5 · 2007-02-17 20:04</span></div>
+  <div class="pb">hoe laat?</div>
+</article>
+<article class="post" data-ts="20070217203200" id="p6">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#6 · 2007-02-17 20:32</span></div>
+  <div class="pb">21u knallen,<br><br>ik heb Bikkie's nummer niet, dus ik weet niet of hij komt<br>De jazzmaster kom wel<br></div>
+</article>
+<article class="post" data-ts="20070217204300" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2007-02-17 20:43</span></div>
+  <div class="pb">ik ga eerst even naar het 5-jarig jubileum van caf\é briljant in de 2e klasse stationswachtkamer. Daarna kom ik zeker nog buurten, zo rond 22:00<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

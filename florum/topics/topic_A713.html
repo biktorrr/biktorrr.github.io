@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NeoNazi&#x27;s voor Saddam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NeoNazi&#x27;s voor Saddam</h1>
+<p class="tm">2 posts · started 2003-02-18 16:21 by PTspammingClown</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030218162100" id="p1">
+  <div class="ph"><span class="pa">PTspammingClown</span><span class="pm">#1 · 2003-02-18 16:21</span></div>
+  <div class="pb">vooral de quote van de oppernazi heerst<br><br>STOCKHOLM - Een groep Zweedse neonazi's, het Wasa-legioen, recruteert vrijwilligers om aan de kant van Saddams leger te vechten wanneer het komt tot een oorlog. Volgens de Zweedse krant Aftonbladet vinden de neonazi's de verdediging van een bedreigd land belangrijker dan de strijd tegen de islam. <br><br>"Het is een beetje tegenstrijdig. We verzetten ons in Zweden tegen de islam, maar we zien er geen probleem in om ons in te zetten voor een islamitisch land dat wordt aangevallen door een grootmacht. Saddam Hussein is geen bedreiging voor de wereldvrede", verklaarde de leider van het Wasa-legioen, voormalig VN-vredessoldaat Curt Linusson, in de krant. <br><br></div>
+</article>
+<article class="post" data-ts="20030219100400" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-02-19 10:04</span></div>
+  <div class="pb">ik zie een mooi 'full-quote' diepte-interview voor me...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transformers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Transformers</h1>
+<p class="tm">13 posts · started 2007-07-01 17:22 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070701172200" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2007-07-01 17:22</span></div>
+  <div class="pb">Waar gaan we hem kijken? As vrijdag?</div>
+</article>
+<article class="post" data-ts="20070701174800" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-07-01 17:48</span></div>
+  <div class="pb">ik ga em of a.s. vrijdag kijken met de PHKers (Utrecht), of a.s. woensdag in Beverwijk als ie in premi\ère gaat. Hangt er nog een beetje van het animo af. Amsterdam is voor jou handig en er zijn tal van boys die graag daar naar de film gaan, dus een date is vast makkelijk geregeld.<br><br></div>
+</article>
+<article class="post" data-ts="20070701194400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2007-07-01 19:44</span></div>
+  <div class="pb">Van de vijf slechtste voorfilms die ik ooit heb gezien, zijn er 2 van de transformers, dus ik sla deze gelegenheid even over met jullie goedkeuring.  </div>
+</article>
+<article class="post" data-ts="20070701215500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-07-01 21:55</span></div>
+  <div class="pb">transformers Jeyt<br>vrijdag Neyt.<br><br>donderdag / dinsdag / woensdag?</div>
+</article>
+<article class="post" data-ts="20070702091200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2007-07-02 09:12</span></div>
+  <div class="pb">Helaas, andere dagen al vol deze week alleen vrijdag is voor mij mogelijk.</div>
+</article>
+<article class="post" data-ts="20070702145700" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-07-02 14:57</span></div>
+  <div class="pb">even een quote uit een recensie:<br><br>It was awesome. It was like a big honking slice of Awesome-toast buttered on both sides with awesome. It was a double serving of Hell Fucking Yeah with a side order of OMFG. </div>
+</article>
+<article class="post" data-ts="20070702145900" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2007-07-02 14:59</span></div>
+  <div class="pb">klinkt als een betrouwbare bron, misschien ga ik er toch maar naartoe <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20070702165800" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2007-07-02 16:58</span></div>
+  <div class="pb">hmm, woensdag moeten we zaalballen.<br>Dan moet ik maar een andere keer, maar deze week wordt lastig.<br></div>
+</article>
+<article class="post" data-ts="20070703142000" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2007-07-03 14:20</span></div>
+  <div class="pb">als het na de 14e is, ben ik ook van de partije (maar laat dat je niet tegenhouden om eerder te gaan hoor..)</div>
+</article>
+<article class="post" data-ts="20070703183000" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2007-07-03 18:30</span></div>
+  <div class="pb">As vrijdag anders een kaartje leggen???</div>
+</article>
+<article class="post" data-ts="20070704154900" id="p11">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#11 · 2007-07-04 15:49</span></div>
+  <div class="pb">Heeft Jean Mineur hier iets over gezegd?</div>
+</article>
+<article class="post" data-ts="20070704193700" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2007-07-04 19:37</span></div>
+  <div class="pb">Ik ben meer voor een biertje drinken in Amsterdam, vrijdag.</div>
+</article>
+<article class="post" data-ts="20070704230400" id="p13">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#13 · 2007-07-04 23:04</span></div>
+  <div class="pb">Ben ik ook wel voor Amsterdam of Haarlem.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

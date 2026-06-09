@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>video en geluid scheiden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">video en geluid scheiden</h1>
+<p class="tm">5 posts · started 2009-05-11 22:22 by JLau</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090511222200" id="p1">
+  <div class="ph"><span class="pa">JLau</span><span class="pm">#1 · 2009-05-11 22:22</span></div>
+  <div class="pb">hey boys,<br><br>weet iemand misschien hoe ik het geluid van een avi-file makkelijk kan scheiden van de video? En dan nog wel ook het originele filmpje intact laten als het even kan.<br><br>thanx,<br>Laura</div>
+</article>
+<article class="post" data-ts="20090512104300" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2009-05-12 10:43</span></div>
+  <div class="pb">dat kan iig met VirtualDub, een freeware videobewerkingsprogrammaatje:<br><br>http://www.virtualdub.org/</div>
+</article>
+<article class="post" data-ts="20090512110300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2009-05-12 11:03</span></div>
+  <div class="pb">Voor de native Mac apps moet dit toch ook lukken met iMovie??</div>
+</article>
+<article class="post" data-ts="20090512174700" id="p4">
+  <div class="ph"><span class="pa">JLau</span><span class="pm">#4 · 2009-05-12 17:47</span></div>
+  <div class="pb">@VB: volgens de website van VirtualDub is deze software alleen geschikt voor Windows en dus niet voor een Mac. Weet jij misschien een andere manier?<br><br>@MK: ik heb wat geprobeerd met IMovie, maar die accepteert een avi-filmpje niet, gek genoeg. Andere ideetjes?<br><br>dankjewel!</div>
+</article>
+<article class="post" data-ts="20090512223400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-05-12 22:34</span></div>
+  <div class="pb">mac, hmm nee dat weet ik niet, staat hier iets?<br>http://forums.macrumors.com/archive/index.php/t-36482.html</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

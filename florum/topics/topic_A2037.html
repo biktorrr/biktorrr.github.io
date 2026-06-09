@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kranteknipsel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kranteknipsel</h1>
+<p class="tm">7 posts · started 2007-05-08 12:59 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070508125900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-05-08 12:59</span></div>
+  <div class="pb"><i>Uit de Telegraaf van vandaag:</i><br><br>Het was een speling van het lot. Nog geen twee minuten nadat Ajacied Urby Emanuelson (20) in de bekerfinale tegen AZ een kwartier voor tijd was vervangen door Tom de Mul en de linksback op de reservebank had plaatsgenomen, rinkelde de telefoon van spelersbegeleider Herman Pinkster. De wee\ën van mijn vriendin <b>Vanity</b> waren begonnen, blikte Emanuelson terug. Samen met zijn broer spoedde hij zich vanuit De Kuip naar het Leids Universitair Medisch Centrum. En dus stond ik na de strafschoppenserie niet met de beker, maar zeven uur later met mijn dochter <b>Nashaira Sienna Evelisha</b> Emanuelson in mijn handen, glom de kersverse vader.<br><br></div>
+</article>
+<article class="post" data-ts="20070508130100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-05-08 13:01</span></div>
+  <div class="pb"><i>Nogmaals</i><br><br>Het was een speling van het lot. Nog geen twee minuten nadat Ajacied Urby Emanuelson (20) in de bekerfinale tegen AZ een kwartier voor tijd was vervangen door Tom de Mul en de linksback op de reservebank had plaatsgenomen, rinkelde de telefoon van spelersbegeleider Herman Pinkster. De wee\ën van mijn vriendin <b>Vanity</b> waren begonnen, blikte Emanuelson terug. Samen met zijn broer spoedde hij zich vanuit De Kuip naar het Leids Universitair Medisch Centrum. En dus stond ik na de strafschoppenserie niet met de beker, maar zeven uur later met mijn dochter <u>Nashaira Sienna Evelisha</u> Emanuelson in mijn handen, glom de kersverse vader.<br></div>
+</article>
+<article class="post" data-ts="20070508130200" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-05-08 13:02</span></div>
+  <div class="pb">een naam een dochter van een godenzoon waardig.<br></div>
+</article>
+<article class="post" data-ts="20070508130200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2007-05-08 13:02</span></div>
+  <div class="pb"><i>Hoe kan ik die andere mooie naam nou over het hoofd zien:</i><br><br>Het was een speling van het lot. Nog geen twee minuten nadat Ajacied Urby Emanuelson (20) in de bekerfinale tegen AZ een kwartier voor tijd was vervangen door Tom de Mul en de linksback op de reservebank had plaatsgenomen, rinkelde de telefoon van spelersbegeleider Herman Pinkster. De wee\ën van mijn vriendin <u>Vanity</u> waren begonnen, blikte Emanuelson terug. Samen met zijn broer spoedde hij zich vanuit De Kuip naar het Leids Universitair Medisch Centrum. En dus stond ik na de strafschoppenserie niet met de beker, maar zeven uur later met mijn dochter <u>Nashaira Sienna Evelisha</u> Emanuelson in mijn handen, glom de kersverse vader.<br><br></div>
+</article>
+<article class="post" data-ts="20070508131700" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-05-08 13:17</span></div>
+  <div class="pb">duuude...<br><br>2-0 voor Urby lijkt me</div>
+</article>
+<article class="post" data-ts="20070508164600" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2007-05-08 16:46</span></div>
+  <div class="pb">...et orbi</div>
+</article>
+<article class="post" data-ts="20070509131900" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-05-09 13:19</span></div>
+  <div class="pb">Ja Mer, dat overtreft toch in zeer sterke mate jouw kwaliteiten tot het verzinnen van fantastische namen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dag lief record van Gomes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dag lief record van Gomes</h1>
+<p class="tm">7 posts · started 2004-12-12 15:24 by Anonieme Hooligan</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041212152400" id="p1">
+  <div class="ph"><span class="pa">Anonieme Hooligan</span><span class="pm">#1 · 2004-12-12 15:24</span></div>
+  <div class="pb">Salomon Kalou is een jood is een joohoohooood !<br><br>Verder ook dank aan de rest van Feijnoord voor het terug in de mest drukken van de PSV boeren.<br><br><br></div>
+</article>
+<article class="post" data-ts="20041212171400" id="p2">
+  <div class="ph"><span class="pa">Ronnie</span><span class="pm">#2 · 2004-12-12 17:14</span></div>
+  <div class="pb">Een mooie dag voor het jiddische voetbal.</div>
+</article>
+<article class="post" data-ts="20041212212400" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2004-12-12 21:24</span></div>
+  <div class="pb">Ik kan beamen dat ik waar voor m'n geld heb gekregen. :)</div>
+</article>
+<article class="post" data-ts="20041213015900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-12-13 01:59</span></div>
+  <div class="pb">zwaar irritant....grumbl...</div>
+</article>
+<article class="post" data-ts="20041213133000" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-12-13 13:30</span></div>
+  <div class="pb">Misha, ik heb je kaart ontvangen hoor! Ik moest er wel om lachen: 0-6. Het aantal doelpunten had je in ieder geval goed voorspeld!<br><br>Wat trouwens wel mooi was: toen ik zondagmiddag rond 16 uur naar Amsterdam ging was er op station Haarlem net een trein uit Rotterdam aangekomen en daar kwamen me toch een paar toeterlamme Feyenoordsupporters uitgerold. Op het stationsplein was het gelal zelfs te horen (MAAIIN FAAAAAIIIIEENOOOOOOOOOOOORD!!!). Ze waren echt totaal van de wereld terwijl een vol perron ze in stilte stond te observeren... was echt mooi.<br><br> </div>
+</article>
+<article class="post" data-ts="20041213151600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-12-13 15:16</span></div>
+  <div class="pb">Beauty is in the eye of the beholder, zou ik -- zijnde een verlichtte boeddha -- willen zeggen. Verheven als ik ben zou ik van zo'n tafereel moeten kotsen.</div>
+</article>
+<article class="post" data-ts="20041213174300" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-12-13 17:43</span></div>
+  <div class="pb">Nou dat zou ik nou eens een mooi tafereel vinden. :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

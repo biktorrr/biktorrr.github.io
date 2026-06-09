@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>frans leren – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">frans leren</h1>
+<p class="tm">4 posts · started 2009-02-18 23:43 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090218234300" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-02-18 23:43</span></div>
+  <div class="pb">Chez baquilles,<br><br>Voor degenen die hun Frans wel eens zouden willen bijspijkeren heeft de lieve jazzmaster een online cursusje gebouwd.<br><br><a href='http://www.intercambio-es.com/nl/nl/franse_grammatica_lessen.php'>gratis franse grammatica lessen</a><br>voor degenen met een weblog, een link wordt natuurlijk gewaardeerd.<br><br>De content is op mijn verzoek geschreven door een knaquille die in Frankrijk woont.<br><br>Overigens zijn er ook <br><br><a href='http://www.intercambio-es.com/nl/nl/spaanse_lessen.php' title='gratis spaanse grammatica lessen'>'gratis spaanse grammatica lessen</a><br> en <a href='http://www.intercambio-es.com/nl/nl/italiaanse_grammatica_lessen.php' title=''gratis Italiaanse grammatica lessen'>'gratis spaanse grammatica lessen</a><br><br></div>
+</article>
+<article class="post" data-ts="20090219105500" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-02-19 10:55</span></div>
+  <div class="pb">H\è, h\è, eindelijk de taal eens leren. Met het Colosseum op de achtergrond <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20090219111900" id="p3">
+  <div class="ph"><span class="pa">ceci n&#x27;est pas un Baquille</span><span class="pm">#3 · 2009-02-19 11:19</span></div>
+  <div class="pb">Je ne m'appelle pas le Baquille</div>
+</article>
+<article class="post" data-ts="20090219121600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2009-02-19 12:16</span></div>
+  <div class="pb">toe es uun konjoo<br><br>goed geregeld jazza, ik ga verder met bijspijkeren</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

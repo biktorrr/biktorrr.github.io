@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Talent in Twente – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Talent in Twente</h1>
+<p class="tm">8 posts · started 2005-10-04 11:02 by ANP</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051004110200" id="p1">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#1 · 2005-10-04 11:02</span></div>
+  <div class="pb">van onze verslaggever<br><br>Na FC Flora-Talinn, waar E-to-da-Z en de zijnen nog hoogtijdagen beleven in de hoogste regionen, heeft het bestuur van de FC Floraboys NV besloten een derde club in het oosten van het land op te zetten."Er is ruimte in het budget, een kans om het onaangeroerde surplus aan voetbal getalenteerden aldaar voor de Floraboys te winnen" aldus de verheugde voorzitter. Onder het motto "Talent in Twente" heeft het bestuur Floraboy MD, voorheen topscoorder, naar voren geschoven om de talenten van deze nieuwe Floraboy-dependance van het nodige voetbalgogme en bikkelmentaliteit te voorzien. Vanaf 1 November zal MD naar het oosten verhuizen en de taak van jeugdige uitverkorenen klaar stomen voor Talinn -waarbij er de mogelijkheid is de uitzonderlijkste talenten linea recta naar de hoofdmacht te tranfereren- op zich te nemen. "Een hele uitdaging en een mooie kans om mezelf, maar vooral het instituut Floraboys, beter te maken. Ik voel me vereerd door de keuze van het bestuur en ben verheugd dat de hoge heren altijd blijk geven een neus voor een super investering te hebben" aldus de oud topscoorder "Hengelo is een akker met rijpe voetbaltalenten....het is tijd om te oogsten"<br><br>In een reactie laten de bestuursvoorzitters van Heracles en Fc Twente weten niet gecharmeerd te zijn van deze ontwikkling. "MD is een fenomeen, we vrezen dat zijn krachtige persoonlijkheid en helden-imago als een magneet zullen werken op de talenten uit de gehele regio. Dit is een zwarte dag voor onze clubs"<br><br></div>
+</article>
+<article class="post" data-ts="20051004114600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-10-04 11:46</span></div>
+  <div class="pb">Deze floraciet wenst MD alle geluk van de wereld in Bijna-Duitsland.<br></div>
+</article>
+<article class="post" data-ts="20051004121200" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2005-10-04 12:12</span></div>
+  <div class="pb">Serieyoussouf?<br></div>
+</article>
+<article class="post" data-ts="20051004154900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-10-04 15:49</span></div>
+  <div class="pb">Gefeliciteerd MD wanneer is je cr\émailli\ère?</div>
+</article>
+<article class="post" data-ts="20051004184100" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2005-10-04 18:41</span></div>
+  <div class="pb">Danku, de huisverwarming zal nog even op zich laten wachten. Ik zal eerst nog enige strijd moeten leveren om sponsoren te vinden om daar een kans van slagen te hebben.<br><br>Tegen die tijd bent u allen uitgenodigd om de bakermat van onze nieuwe satelietclub te aanschouwen. We beginnen bescheiden met een aantal parken in de buurt.</div>
+</article>
+<article class="post" data-ts="20051004212900" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2005-10-04 21:29</span></div>
+  <div class="pb">Gefeliciteerd Maarten, vrij radicaal zoals ik dat ineens hoor, maar er zal wel het een en 't ander aan voorafgegaan zijn dat niet doorgesijpeld is tot in Parijs. Veel plezier in ieder geval.<br><br>Verder respect voor MK en zijn gevoel voor het oppikken van lastige Franse woorden. Of voor de uitstekend functionerende copy-pastefunctie op zijn computer.</div>
+</article>
+<article class="post" data-ts="20051006152900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-10-06 15:29</span></div>
+  <div class="pb">accenten zijn voor snobs</div>
+</article>
+<article class="post" data-ts="20051006213900" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2005-10-06 21:39</span></div>
+  <div class="pb">Vertel dat maar aan iedereen in Hengelo Maarten!<br><br>In ieder geval de beste wensen daar.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

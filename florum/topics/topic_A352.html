@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topscorerspositie kwijt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topscorerspositie kwijt!</h1>
+<p class="tm">7 posts · started 2001-11-22 14:05 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011122140500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-11-22 14:05</span></div>
+  <div class="pb">Dit kan natuurlijk nooit de bedoeling zijn!<br><br>Topscorers:  <br>1 -  14  M. Claassen (Schenker)<br>2 -   9  Misha Kuys (Flora Boys)<br>  -   9  Frank Pitstra (Flora Boys)<br>4 -   8  Dirk Gietelink (A.E.L. b4)<br>5 -   7  Mark Schilstra (Real Tampeloeritas)<br><br>Schenker heeft zelfs nog 'n wedstrijd minder<br>gespeeld. Bikkelen, Frank en Misha!<br><br>Zie ook:<br><br>http://www.org.uva.nl/usc/competities/zaalvoetbal/standen.html</div>
+</article>
+<article class="post" data-ts="20011123150900" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2001-11-23 15:09</span></div>
+  <div class="ps">klopt niet</div><div class="pb">tja leuk en aardig, maar ik heb dus eigenlijk wel twee doelpunten meer he, 1 van misha afgelopen keer, en tijde terug.. maar daar kopen we niets voor,, ik beloof beterschap ik ga flammmmmeeeeeeeeeeeeh</div>
+</article>
+<article class="post" data-ts="20011123171100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2001-11-23 17:11</span></div>
+  <div class="pb">Corrrect 'echte' stand is bijgewerkt bij Zaalvoetbal.</div>
+</article>
+<article class="post" data-ts="20011128001000" id="p4">
+  <div class="ph"><span class="pa">Lort Gob</span><span class="pm">#4 · 2001-11-28 00:10</span></div>
+  <div class="ps">Nog een leuke</div><div class="pb">Ik zat even door de 3e klasse teams te kijken...<br><br>* derde klasse C            <br>gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br>1 Psy                         7    6   0   1   11    69 -  14    2/ 1   0/ 0<br><br>3 -  15  Jack de Klerk (Psy)<br>4 -  14  Matthijs Baas (Psy)<br>  -  14  Michiel Oudega (Psy)<br></div>
+</article>
+<article class="post" data-ts="20011128001100" id="p5">
+  <div class="ph"><span class="pa">Lort Gob</span><span class="pm">#5 · 2001-11-28 00:11</span></div>
+  <div class="ps">Dus:</div><div class="pb">Even voor de duidelijkheid: die dudes hebben bijna 10 doelpunten gemiddeld per wedstrijd!</div>
+</article>
+<article class="post" data-ts="20011128021200" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2001-11-28 02:12</span></div>
+  <div class="pb">tja wij hebben ook gewoon 59 doelpunten uit 7<br>Lijkt me nog redelijk boven gemiddeld. <br><br>Verder ligt ieder falen aan onze kant, puur bij de trainer het bestuur en vooral het stompzinnige publiek.<br><br>Trouwens kom je nog kijken woensdag avond (22:00 tegen Sicco en de Siccoianen) Gob?<br><br>W "Als er een man van de assist rangschikking was stond ik bovenaan huil- huil" J </div>
+</article>
+<article class="post" data-ts="20011129122700" id="p7">
+  <div class="ph"><span class="pa">Lort Gob</span><span class="pm">#7 · 2001-11-29 12:27</span></div>
+  <div class="pb">Gewoon neerhalen die dude van Schenker dus? Misha en Frank veel scoren, en dan de laatste wedstrijd nog even naar de topscorerspositie cruisen :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

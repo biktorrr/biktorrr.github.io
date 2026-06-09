@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Een nieuw Seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Een nieuw Seizoen</h1>
+<p class="tm">4 posts · started 2005-03-14 11:05 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050314110500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-03-14 11:05</span></div>
+  <div class="pb">(wegens importantie op beide flora geplaatst)<br><br>Zoals jullie uiteraard al gemerkt hebben is de frontpage van onze geliefde website weer eens vernieuwd. Dit is gedaan met het oog op de komende paar maanden. <br><br>De floraboys hebben hun minst produktieve winter allertijden achter de rug. Dit werd voornamelijk veroorzaakt door de twee hypochonders Jossyt S. en Merlijn S, maar ook door een algehele lamlendigheid bij de rest der floracieten.<br><br>Die tijden zijn nu voorbij!<br><br>Afgelopen weekend markeerde echter de ommekeer, een moment van Hoop. ACHT (8!) man op het park, ballend voor wat ze waard waren! En dat zonder Mitchell, Sander, Biktie en Tube. <br><br>Nu het eerste waterige lentezonnetje door de wolken breekt dient het hart van de floraboy een sprong van vreugde te maken. Laten we ieder weekend gaan ballen in aanloop naar het REVT en de glorieuse terugkeer van twee topvedettes op het park. En laat het weer door Haarlem gallen:<br><br>NIETS IS STERKER DAN DIE ENE BOYS,<br>FLO-RA-BOYS.<br>MIJN FLORABOYS.</div>
+</article>
+<article class="post" data-ts="20050314113700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2005-03-14 11:37</span></div>
+  <div class="pb">Hoogstwaarschijnlijk ben ik er zondag ook weer bij!</div>
+</article>
+<article class="post" data-ts="20050314124700" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2005-03-14 12:47</span></div>
+  <div class="pb">Het zou zomaar kunnen dat ik er dan ook ben, al is dat nog niet geheel zeker.</div>
+</article>
+<article class="post" data-ts="20050314150600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-03-14 15:06</span></div>
+  <div class="pb">Ik mag weer buiten fietsen!!!<br><br>Als jullie gaan voetballen, zal ik m'n ererondjes langs de buhnes maken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

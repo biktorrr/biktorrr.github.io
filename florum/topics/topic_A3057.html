@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WoMiBo – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WoMiBo</h1>
+<p class="tm">6 posts · started 2011-02-09 11:34 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110209113444" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2011-02-09 11:34</span></div>
+  <div class="pb">Tube en ik zitten vanavond in de Jopenkerk te vieren dat onze vakantie is begonnen. Vanaf een uur of zes of zo.</div>
+</article>
+<article class="post" data-ts="20110209114604" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2011-02-09 11:46</span></div>
+  <div class="pb">hehe, goede topicnaam. Voor mij wordt het lastig, ik moet tonelen.</div>
+</article>
+<article class="post" data-ts="20110210181306" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2011-02-10 18:13</span></div>
+  <div class="pb">Ai, te laat...</div>
+</article>
+<article class="post" data-ts="20110210203445" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2011-02-10 20:34</span></div>
+  <div class="pb">Alvast een hele fijne reis gewenst. Ik kijk uit naar de photos op internet.</div>
+</article>
+<article class="post" data-ts="20110211134119" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2011-02-11 13:41</span></div>
+  <div class="pb">Ja veel plezier!</div>
+</article>
+<article class="post" data-ts="20110211171716" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2011-02-11 17:17</span></div>
+  <div class="pb">Thanks. Er zullen denkelijk wel foto's op facebook verschijnen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

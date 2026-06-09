@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor de big T. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor de big T.</h1>
+<p class="tm">3 posts · started 2003-03-30 00:18 by Saddam from Iraq</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030330001800" id="p1">
+  <div class="ph"><span class="pa">Saddam from Iraq</span><span class="pm">#1 · 2003-03-30 00:18</span></div>
+  <div class="pb">Dont be fooled by the bombs that i've got,<br>i'm still, i'm still Saddam from Iraq...<br>Used to tik a little now i tik a lot...<br>no matter where i am i know where i come from: SOUTH IRAQ!<br><br>shout out to the posse an especially the timmenizer for tikkin' it real and the holy kenobi for being down under and keepin' Melbourne the chekste, if you know what i mean yeah... yoyo in da house. Madrid reprazzzzzzenttaaahhh.. Lee Towers and DJ's Erik Z's adn Kesses to the maximize, biggitup to all the posses down south in paris: the city to kick it!!! BOOOYAh, biggitup biggitup!<br><br>bo selectah<br><br><br>realize<br><br><br><br><br><br>recognize... Dj Booyah and Saddamn posse out a' ere...</div>
+</article>
+<article class="post" data-ts="20030330002200" id="p2">
+  <div class="ph"><span class="pa">CECA FANS OLE OLE</span><span class="pm">#2 · 2003-03-30 00:22</span></div>
+  <div class="ps">oele</div><div class="pb"><img src="http://www.medijaklub.co.yu/arhivaslika/politicari/arkan-ceca1.jpg"></div>
+</article>
+<article class="post" data-ts="20030330003100" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2003-03-30 00:31</span></div>
+  <div class="pb"><img src="http://www.nci.org/1img/sad-ani.gif"><br>Saddam ook ok<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

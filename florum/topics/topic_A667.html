@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zit Timmie in een winterslaap? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zit Timmie in een winterslaap?</h1>
+<p class="tm">3 posts · started 2003-01-08 12:14 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030108121400" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-01-08 12:14</span></div>
+  <div class="pb">Timmie, waar blijft de column die voor mij het licht is in de duisternis, mijn pareltje tussen alle overbodige Heertjes en CaMu's, mijn warme kruik tijdens de koude dagen en mijn enige pleziertje als mijn vriendin 600 km noordwaarts zit.<br><br>Dat mag men mij niet afnemen. </div>
+</article>
+<article class="post" data-ts="20030108123200" id="p2">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#2 · 2003-01-08 12:32</span></div>
+  <div class="pb">ligt bij de uitgevert De Boer INC.</div>
+</article>
+<article class="post" data-ts="20030108125400" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-01-08 12:54</span></div>
+  <div class="pb">de uitgever heeft nog steeds geen toegnang tot het medium maar plaatst bij deze voorlopig de nieuwe TT op dit florum...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

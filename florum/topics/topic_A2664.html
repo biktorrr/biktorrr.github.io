@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alexa – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Alexa</h1>
+<p class="tm">6 posts · started 2009-06-05 16:18 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090605161800" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-06-05 16:18</span></div>
+  <div class="pb">Boys goed nieuws, Alexa houdt ons goed in de gaten en heeft wat analyses gedaan over wat men allemaal voor interessante info kan vinden op ons kennisinstrument.<br><br>Hieronder de belangrijkste trefwoorden. Zelf ken ik geen denise maar de pantofolo dór staat bij mij in de kast, de spab abortus op het CV van Cootje, johan cruyff academie blijkt gerelateerd aan soduku onderzoek en:  Last but not least, als je iemand wil quoten van harvard met een beetje style dan kan je maar op 1 site terecht natuurlijk. <br><br><br>#    denise meijsing<br># "denise meijsing"<br># floraboys<br># pantofolo dór<br># spab abortus<br># chamiones leagues<br># sesetoko<br># johan cruyff academie<br># citeren harvard stijl quote<br><br><br></div>
+</article>
+<article class="post" data-ts="20090605162100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-06-05 16:21</span></div>
+  <div class="pb">Sexy is watching us.</div>
+</article>
+<article class="post" data-ts="20090605163200" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2009-06-05 16:32</span></div>
+  <div class="pb">Scary, ik heb een gevoel van plaatsvervangende inbreuk op mijn privacy. Wat vindt het college beveiliging persoonsgegevens hiervan?</div>
+</article>
+<article class="post" data-ts="20090605163200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2009-06-05 16:32</span></div>
+  <div class="pb">huh??</div>
+</article>
+<article class="post" data-ts="20090605163700" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2009-06-05 16:37</span></div>
+  <div class="pb">dat heeft natuurlijk niks met je vriendin te maken, MB, "Alexa the Web Information Company"</div>
+</article>
+<article class="post" data-ts="20090605173500" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2009-06-05 17:35</span></div>
+  <div class="pb">Holy monkey, wat een mooie set keywords. DM was overigens een klasgenote van ons die ik nog wel eens in Haruloheim rond zie lopen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

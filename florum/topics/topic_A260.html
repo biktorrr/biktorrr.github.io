@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hubris – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hubris</h1>
+<p class="tm">7 posts · started 2001-09-26 17:07 by Penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010926170700" id="p1">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#1 · 2001-09-26 17:07</span></div>
+  <div class="pb">Wanneer een speler zichzelf opwerpt als analist is dat als een sterveling die als een God denkt te weten hoe zijn noodlot eruit zal zien. De grieken kende hier een mooi woord voor hubris, oftewel overmoed. Moge de toorn van de goden over jullie neerdalen. Alleen wanneer zij niet meer spelen kunnen voetbalhelden opstijgen naar het rijk der van godelijke wijsheid begiftigde analisten. Jullie dus niet nee. Is ook de reden dat ik niet meespeel. Ik wil hier uiteraard wel 1 uizondering op maken: HE for he is the one you want to be but never can be.</div>
+</article>
+<article class="post" data-ts="20010926170800" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2001-09-26 17:08</span></div>
+  <div class="ps">uhmm</div><div class="pb">dit is eigenlijk een vervolg op de discussie over de analyse van Tim elders op het florum</div>
+</article>
+<article class="post" data-ts="20010926221100" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-09-26 22:11</span></div>
+  <div class="pb">Allemaal leuk en aardig dude maar zolang jij nog nooit met 20-1 gewonnen hebt mag jij niet oordelen over Goden die dat wel hebben gedaan.<br><br>Trouwens over twee weken hebben wij geloof ik een week vrij. Wellciht een gelegenheid voor  Locomotiv Viae-  Floraboys </div>
+</article>
+<article class="post" data-ts="20010927010200" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-09-27 01:02</span></div>
+  <div class="ps">speciale wissel</div><div class="pb">Met gast optreden van de nr.7 ?<br>anders weer gewoon (semi)vaste prik op de bank met de FloraboysBannier</div>
+</article>
+<article class="post" data-ts="20010927010400" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2001-09-27 01:04</span></div>
+  <div class="pb">En ook weer wat leuks om te lezen voor het slapen gaan ..bedankt ouwe Penose.(btw.Ik heb een uitnodiging voor je).</div>
+</article>
+<article class="post" data-ts="20010927125300" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2001-09-27 12:53</span></div>
+  <div class="pb">Ik zie hier dat Locomotiv VIAE <br><br><br> 6 Lokomotiv VIAE              2    0   0   2    0     8 -  18    0/ 0   0/ 0<br><br>Het dus niet zp best doet, doelsaldp - 10</div>
+</article>
+<article class="post" data-ts="20010927125300" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2001-09-27 12:53</span></div>
+  <div class="pb">mooi stukje ouwe penose...<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

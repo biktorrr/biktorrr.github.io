@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zo-mi-spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zo-mi-spam</h1>
+<p class="tm">1 post · started 2006-01-01 18:12 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060101181200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-01-01 18:12</span></div>
+  <div class="pb">Afgeluisterd in een pub in London:<br><br>"Sterrenkijken levert niet meer zoveel op tegenwoordig, toch Timmie?" <br>"Nou ik geloof dat Hansie anders ook nog wel wat ruimte op zijn departement zou willen maken niet, sicco?"<br>"hmm, laten we dan maar hier een kleding winkel beginnen voor hippe blote-navel-moppies"<br>"uitstekend idee..."<br><br><a href="http://www.bikbok.com/content/"> Bikbok </a><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

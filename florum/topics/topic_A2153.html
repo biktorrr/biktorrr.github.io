@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Celeb Spotting Special: Beatrixschool – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Celeb Spotting Special: Beatrixschool</h1>
+<p class="tm">5 posts · started 2007-09-05 14:35 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070905143500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-09-05 14:35</span></div>
+  <div class="pb">Speciaal voor Tube en Holy C:<br><br>Zit ik gisteren onschuldig RTL Boulevard te kijken toen de hoofdrol in de musicalversie van 'Dirty Dancing' bekend werd gemaakt. Albert v. L. gebruikt woorden als 'Nieuw Talent' 'Zelden zo goed' etc. En wat schetst mijn verbazing: het gaat over onze oud-klasgenoot Je tte vd Be rg!<br><a href="http://www.rtl.nl/(vm=/actueel/rtlboulevard/home/)/system/video/html/components/actueel/rtlboulevard/miMedia/2007/week36/di_dirtydancing.avi_plain.xml">kijk zelf maar</a>.<br><br>En wie stond er samen met dit toptalent in de hoofdrol bij haar eerste toneelstuk op de Beatrix???? Jawel.. ondergetekende.<br><br>Ik zag het altijd al in haar. </div>
+</article>
+<article class="post" data-ts="20070905144200" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-09-05 14:42</span></div>
+  <div class="pb">overigens heeft ze het ook nog even over onze hitsige klassefeesten, zeker het bekijken waard dus als je wil weten hoe het Sodom en Gomorra was waar we in opgroeiden.</div>
+</article>
+<article class="post" data-ts="20070905144600" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2007-09-05 14:46</span></div>
+  <div class="pb">is die niet blijven zitten in de 2e of 3e ofzo? kan me herinneren dat ze toen bij mij in de klas kwam voor 1 jaar.<br><br>Of was dat een andere Jette...</div>
+</article>
+<article class="post" data-ts="20070905155300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-09-05 15:53</span></div>
+  <div class="pb">nou ze is naar het ECL gegaan geloof ik dus ik betwijfel het. </div>
+</article>
+<article class="post" data-ts="20070905164900" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2007-09-05 16:49</span></div>
+  <div class="pb">ze hing toch altijd bij Holy, samen met haar broer?<br>leuk gezin was dat.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

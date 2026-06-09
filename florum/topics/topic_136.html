@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orca? (Alleen voor hardcore vrijdagavonders) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Orca? (Alleen voor hardcore vrijdagavonders)</h1>
+<p class="tm">4 posts&nbsp;·&nbsp;started 2001-06-25 11:31 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010625113100" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2001-06-25 11:31</span></div>
+  <div class="pb">...is de Orca nog teruggezet in Zee? Zo niet, waar is ie dan nu? :)</div>
+</article>
+<article class="post" data-ts="20010625204700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2&nbsp;·&nbsp;2001-06-25 20:47</span></div>
+  <div class="ps">Weg Orca!</div><div class="pb">De orca is dus gejat. We hebben wel een mooie opblaasbare Corona-fles meegenomen.</div>
+</article>
+<article class="post" data-ts="20010625225100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3&nbsp;·&nbsp;2001-06-25 22:51</span></div>
+  <div class="pb">Dus ook van ons gejat??????? TSSSSSS....belachelijk...dan had ik hem toch mee moeten nemen toen ik hem in die steeg zag liggen, maar ik was dus nog ff naar de Dutch Joint geweest en daar had ik vernomen dat de Orca wel in het Florapark zou belanden.......des suund...Willy weer niet gefreed...</div>
+</article>
+<article class="post" data-ts="20010626013700" id="p4">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#4&nbsp;·&nbsp;2001-06-26 01:37</span></div>
+  <div class="pb">Hellaas hellaas, twas dus wel de PERFECTE Floraboys mascotte geweest! Nu we het daar toch over hebben lijkt het me verstandig om het hier sowieso eens over te hebben.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

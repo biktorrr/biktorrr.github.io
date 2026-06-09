@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>24 uur: wie wil? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">24 uur: wie wil?</h1>
+<p class="tm">8 posts · started 2001-11-01 13:12 by SPA-Probleme!!!</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011101131200" id="p1">
+  <div class="ph"><span class="pa">SPA-Probleme!!!</span><span class="pm">#1 · 2001-11-01 13:12</span></div>
+  <div class="pb">halo, er zijn wat problemen met de spa-startdatum,<br>wybren kan misschien pas vanaf vrijdag. Hou hier even<br>een beetje rekening mee, meer info volgt (hopelijk)</div>
+</article>
+<article class="post" data-ts="20011101131600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-11-01 13:16</span></div>
+  <div class="pb">Nu wybren op het laatste moment heeft afgezegd voor de 24 uur van het Belgische bier in Antwerpen hebben we een bed over in ons mooie hotel waar we van zaterdag op zondag overnachten. Is er iemand die ipv Wybren wil meegaan? informatie over het bierfestival is te vinden op http://www.24-uur.be<br>de overnachtingskosten komen op 44 gulden incl. ontbijt</div>
+</article>
+<article class="post" data-ts="20011101151400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2001-11-01 15:14</span></div>
+  <div class="ps">jaja</div><div class="pb">het belgisch bieren festival,.. en dan terug naar nederland <br>en dan weer naar belgie.. je kan er dan beter blijven lijkt<br>mij natuurlijk...</div>
+</article>
+<article class="post" data-ts="20011101151500" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-11-01 15:15</span></div>
+  <div class="pb">ik ben in zaltbommel voor het 72 uurs leren uitslapen en de hond uitlaten weekend.<br><br></div>
+</article>
+<article class="post" data-ts="20011101152100" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2001-11-01 15:21</span></div>
+  <div class="ps">kan niet</div><div class="pb">mee omdat hij het weekend heeft, o o wat ben ik blut o o <br>wat is het kut... maar hij wel gezond, dus heeft niets te<br>klagen.. <br><br>jaja fuck het,, geld maakt wel gelukkig..<br></div>
+</article>
+<article class="post" data-ts="20011101185800" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2001-11-01 18:58</span></div>
+  <div class="pb">Wybren is een aap!</div>
+</article>
+<article class="post" data-ts="20011101190100" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2001-11-01 19:01</span></div>
+  <div class="pb">Laf hoor, boude uitspraken niet ondertekenen. Een zekere waarheid in de uitspraak valt echter niet te ontkennen.</div>
+</article>
+<article class="post" data-ts="20011102132500" id="p8">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#8 · 2001-11-02 13:25</span></div>
+  <div class="pb">Uitspraken die eindigen op "\ïs een aap" zijn waarschijnlijk geschreven door ene Gob. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

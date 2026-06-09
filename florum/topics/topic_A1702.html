@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hmm – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hmm</h1>
+<p class="tm">9 posts · started 2006-03-02 11:28 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060302112800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-03-02 11:28</span></div>
+  <div class="pb">stil hier zeg...</div>
+</article>
+<article class="post" data-ts="20060302113900" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2006-03-02 11:39</span></div>
+  <div class="pb">Ja, blijkbaar heeft niemand inspiratie. Iemand een mening over het nederlands elftal ofzo?</div>
+</article>
+<article class="post" data-ts="20060302114700" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2006-03-02 11:47</span></div>
+  <div class="pb">jemig vic, misschien moet je es aan het werk gaan! (dat moet ik nu eigenlijk ook...)</div>
+</article>
+<article class="post" data-ts="20060302123200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-03-02 12:32</span></div>
+  <div class="pb">He, gezellig.</div>
+</article>
+<article class="post" data-ts="20060302125200" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2006-03-02 12:52</span></div>
+  <div class="pb">Suggestie: leuke foto's en nieuwe kansen in de wekelijse quiz op mijn weblog.</div>
+</article>
+<article class="post" data-ts="20060302132600" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-03-02 13:26</span></div>
+  <div class="pb">ja we kunnen ook inderdaad langzamerhand ons doordeweekse sociale leven van het florum naar ollie's blog verhuizen.</div>
+</article>
+<article class="post" data-ts="20060302133000" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-03-02 13:30</span></div>
+  <div class="pb">zoals wel vaker een vermakelijk begin van mijn dag, alhoewel ik die puzzels links laat liggen, die zijn meer voor jouw (journalisten)vriendjes in Parijs. Ik ken alleen de toeristieke attracties daar....en bois de boulogne.....<br></div>
+</article>
+<article class="post" data-ts="20060302142900" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2006-03-02 14:29</span></div>
+  <div class="pb">Ik werd even blij toen ik een kiek van de Quick zag: die wist ik tenminste! Maar het was geen prijsvraag deze keer...</div>
+</article>
+<article class="post" data-ts="20060302144600" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2006-03-02 14:46</span></div>
+  <div class="pb">Mekker de mekker.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

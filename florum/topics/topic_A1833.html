@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heppy Hartkoor voor Kenobi – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heppy Hartkoor voor Kenobi</h1>
+<p class="tm">7 posts · started 2006-08-23 13:23 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060823132300" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-08-23 13:23</span></div>
+  <div class="pb">http://basshunter.m0o.eu/anna/index_nl.php<br><br>moet ondertitels, foute zonnebrillen en Wybrenesque canalbootjes.<br></div>
+</article>
+<article class="post" data-ts="20060823150000" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-08-23 15:00</span></div>
+  <div class="pb">Ben je nu niet in de war met Toppertje (en een breezer ananas)? Voor de liefhebbers heb ik hier de vertaalde tekst van Boten Anna:<br><br>Ik heb een boot<br>ik heb een hele mooie splinter nieuwe boot<br>Haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal<br>het is de allermooiste boot van allemaal<br><br>Ik heb een boot<br>ik heb een hele mooie splinter nieuwe boot<br>Haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal<br>het is de allermooiste boot van allemaal<br><br>en ik heb meiden in bikini lekker bloot<br>ik heb een hele mooie boot en hij is zo groot<br>hij is niet geel en niet groen en niet rood<br>nu ben ik rijk maar vroeger lag ik in de goot<br><br>ik heb een hele mooie splinter nieuwe boot<br>Haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal<br>het is de allermooiste boot van allemaal...<br><br>(lang stuk zonder tekst)<br><br>Ik heb een boot<br>ik heb een hele mooie splinter nieuwe boot<br>Haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal<br>het is de allermooiste boot van allemaal<br><br>ik liet me gaan wanneer ik meedee aan de lotterij<br>ik heb nu een hele mooie boot hij is van mij<br>dan gaan we feesten met z'n allen op deze boot daar gaan we met z'n allen knallen<br>ik heb een hele mooie splinter nieuwe boot<br>haar naam is anna en ze ligt hier in de sloot en ik ga varen op het kanaal<br><br>het is de allermooiste boot van allemaal<br>ik heb een hele mooie splinter nieuwe boot<br>haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal het is de allermooiste boot van allemaal<br><br>ik heb een hele mooie splinter nieuwe boot<br>haar naam is anna en ze ligt hier in de sloot<br>en ik ga varen op het kanaal het is de allermooiste boot van allemaal<br>en ik heb meiden in bikini lekker bloot<br>ik heb een hele mooie boot en wa is die groot<br>lekker varen op het kanaal het is de allermooiste boot op het kanaal <br><br><IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20060823164800" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-08-23 16:48</span></div>
+  <div class="pb">altijd leuk, die gebroeders Ko..doen ze ook nog iets zonder boten en waterscooters?<br></div>
+</article>
+<article class="post" data-ts="20060823174600" id="p4">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#4 · 2006-08-23 17:46</span></div>
+  <div class="pb">Tn, Leg mij eens uit hoe je zonder google op zo'n site terechtkomt.</div>
+</article>
+<article class="post" data-ts="20060824144600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-08-24 14:46</span></div>
+  <div class="pb">niet<br>:)</div>
+</article>
+<article class="post" data-ts="20060825091500" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2006-08-25 09:15</span></div>
+  <div class="pb">wel een stukje super-text moet ik zeggen.. </div>
+</article>
+<article class="post" data-ts="20060825172000" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-08-25 17:20</span></div>
+  <div class="pb">beter dan een text over of een zekere Anna wel of niet een mIRC-bot blijkt te zijn.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

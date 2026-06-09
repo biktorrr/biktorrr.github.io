@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terug en verhuisd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Terug en verhuisd</h1>
+<p class="tm">5 posts · started 2003-08-08 14:03 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030808140300" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-08-08 14:03</span></div>
+  <div class="pb">Sommige dingen veranderen nimmer. Dat ik nu in Parijs woon, wil uiteraard niet zeggen dat ik mijn favoriete hobby zomaar laat schieten: 1 augustus ben ik voor +- de zestiende keer sinds 1997 verhuisd. Geen Victoren en Merlijns (om slechts de twee top verhuishulpen te noemen) in Ford Transits dit keer, in Parijs verhuis je per Mercedes, weliswaar van Easycar, maar dat mocht de pret niet drukken. Mijn nog vrij beperkte inboedel paste daar bovendien in zijn geheel in.<br>Nu woon ik in het 19de arrondissement, voor de kenners: niet ver van Gare du Nord (aan de ene kant) en van P\ère Lachaise (aan de andere) en vlakbij de Buttes de Chaumont. Adres:<br><br>20 rue de l'Equerre (de legendarische Winkelhaakstraat)<br>75019 Parijs<br><br>nieuw telefoonnummer : 00.33.1.40.18.04.93<br>ongewijzigde mobiele : 00.33.6.16.49.36.19<br><br>Nu ben ik voor bijna twee weken in Nederland en zoals aangegeven in een ander bericht kom ik zondag zeker ballen en zaterdag misschien. </div>
+</article>
+<article class="post" data-ts="20030808181900" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2003-08-08 18:19</span></div>
+  <div class="pb">Je nieuwe onderkomen bevalt dus wel!En met je tv in je nek en de magnetron onder de arm alle trappen opgelopen puf puf!! </div>
+</article>
+<article class="post" data-ts="20030811114700" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-08-11 11:47</span></div>
+  <div class="pb">en met mijn koelbox!<br></div>
+</article>
+<article class="post" data-ts="20030819013200" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-08-19 01:32</span></div>
+  <div class="pb">heeft iemand een email adres van oli4 ?<br><br>Misschien oli4 zelf desnoods?</div>
+</article>
+<article class="post" data-ts="20030819104100" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-08-19 10:41</span></div>
+  <div class="pb">last time i checked:<br>oli4@voila.fr</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tikkende Timmie Getikt? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tikkende Timmie Getikt?</h1>
+<p class="tm">5 posts · started 2003-02-25 16:01 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030225160100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-02-25 16:01</span></div>
+  <div class="pb">In tijden van intense duister rondom de Floraboys sierde nog slechts een lichtpuntje mijn hemel: Timmies getik. Altijd weer als ik met een gortdroge mond wakker was geworden van de tegengoals die ik de Floraboys in m'n nachtmerries zag incasseren, na een nacht woelen in mijn zestien persoons- in hoogte verstelbaar waterbed, schraapte ik m'n laatste energie bij malkander in de hoop de nieuwste Timmie Tikt te kunnen lezen. Meestal tikte Timmie alle onrechtmatigheden van deze wereld overzichtelijk op een rijtje, waardoor het voetbal en wanpresteren van *mijn* cluppie even naar de achtergrond verdrongen werd. Ik weet niet of ik dit als 100 % full-prof wel mag zeggen: ik begon het voetbal zelfs enigszins te relativeren. "Wat betekent winnen eigenlijk, als je met de wedstrijdpremie van een gewonnen wedstrijd slecht twee Tomahawk-raketten kunt betalen?" vroeg ik me laatst in een filosofische bui af.<br><br>Maar nu! De Floraboys blijven verliezen; de grasmat van het trainingscomplex is op sterven na dood; de club gaat bijna tenonder aan onderlinge twisten, die slechts tenauwernood bijgelegd kunnen worden... En al die tijd laat mijn redder in nood, mijn apostel van het ware voetbalwoord zich niet horen. Heeft Timmie zich van de Floraboys afgekeerd!? Weigert hij nog langer met ons te trainen; weigert hij nog langer zijn visie op ons te geven. Hebben wij hem niet voldoende ballen gegeven; hebben wij zijn woord bevuild!? Ik kan het me niet voorstellen, maar mocht dat zo zijn: SPREEK DAN TOT MIJ, OH TIMMENIZER!</div>
+</article>
+<article class="post" data-ts="20030225175100" id="p2">
+  <div class="ph"><span class="pa">Timmie&#x27;s persvoorlichter</span><span class="pm">#2 · 2003-02-25 17:51</span></div>
+  <div class="pb">morgen</div>
+</article>
+<article class="post" data-ts="20030226040200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2003-02-26 04:02</span></div>
+  <div class="pb">Waar is ie dan??? </div>
+</article>
+<article class="post" data-ts="20030226104700" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-02-26 10:47</span></div>
+  <div class="pb">laat de timmie tot ons spreken!</div>
+</article>
+<article class="post" data-ts="20030226111200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-02-26 11:12</span></div>
+  <div class="pb">Ik droomde vanacht dat us Tim boos was omdat ik hem maar een 8 had gegeven. Toen ik wakker werd dacht ik dat dat natuurlijk helemaal niet kon, omdat ik altijd meteen een 10 invul voor de Timmenizer. Maar op de weg naar de training begon ik steeds meer aan mezelf te twijfelen. "Heb ik wel echt een 10 gegeven, heb ik wel al Tims daden op oprechte wijze bejubeld..." En wat bleek: Ik had de panna-koning een 8 gegeven en bovendien enkele regels die als commentaar zouden kunnen worden opgevat. Timmenizer, als het nog niet te laat is en je je nog niet van de Floraboys hebt afgewend: IK MEENDE HET NIET ZO! Het was een geestesvertroebeling! Een vlaag van verstandsverbijstering. Geef ons nog een kans. We zullen op de training allemaal met onze benen wagenwijd gaan staan als jij in de buurt bent en al onze ballen keurig op je rechter-kicks plaatsen. Oooh Timmenizer SPREEK TOT ONS!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

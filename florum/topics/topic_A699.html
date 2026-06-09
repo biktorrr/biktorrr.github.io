@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dramatisch nieuws: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dramatisch nieuws:</h1>
+<p class="tm">4 posts · started 2003-02-02 17:59 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030202175900" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2003-02-02 17:59</span></div>
+  <div class="pb">Belgische bierexport in gevaar (2-1-2003)<br>Door de Franse belastingheffing van 2 euro per liter voor bieren met een alcoholgehalte van meer dan 8,5% ontstaat er een groot probleem voor een aantal Belgische brouwerijen.<br>De heffing was oorspronkelijk bedoeld om de verkoop van enkele Nederlandse bieren in blik met een zeer hoog alcoholgehalte te ontmoedigen. De protectionistische maatregel treft vooral de Belgische brouwerijen die de zware bieren Chimay, Westmalle, Bush, Kasteelbier, Delirium, Sint-Bernardus en Malheur exporteren.<br>Voor deze bijzondere belasting op bier is er geen gelijkwaardige voor wijn en sterke drank terwijl ze wordt gehanteerd als maatregel om de volksgezondheid te beschermen tegen overmatig drankgebruik.<br>De Belgische brouwers hebben deze discriminerende maatregel aangeklaagd bij diverse politici. Zowel de Belgische premier Verhofstadt als de Europese commissievoorzitter Prodi hebben geprotesteerd bij de Fransen.<br>Er is ook een klacht ingediend bij de Europse Comissie. <br>De Franse Bierconsumentenorganisatie ATpub luidt de alarmklok. <br>(Bron: Geert van Lierde) <br><br><br>Olivier, misschien wordt het tijd dat jij dit in Het Parool aan de kaak stelt.<br><br>Voor de interrailers onder ons die in 1997 meegingen naar Parijs en Itali\ë: welk bier zou hier nou mee bedoeld worden:<br>"enkele Nederlandse bieren in blik met een zeer hoog alcoholgehalte".<br></div>
+</article>
+<article class="post" data-ts="20030203182900" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-02-03 18:29</span></div>
+  <div class="pb">Maximator, navigator en 8.6 van Bavaria: onovertroffen Hollandse kwaliteitsproducten </div>
+</article>
+<article class="post" data-ts="20030207155300" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2003-02-07 15:53</span></div>
+  <div class="pb">De Franse overheid is bezweken onder de grote druk vanuit van vooral Brussel. De accijnsverhoging is onmiddellijk opgeschort! <br>Gerechtigheid!</div>
+</article>
+<article class="post" data-ts="20030210121300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-02-10 12:13</span></div>
+  <div class="pb">pfiew<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

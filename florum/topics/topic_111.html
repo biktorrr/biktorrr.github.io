@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Svdm? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Svdm?</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2001-06-02 18:14 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010602181400" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2001-06-02 18:14</span></div>
+  <div class="pb">Hallo...Olivier had aan het eind van deze maand meer rechtmatige punten dan Frank en nu is toch Frank als speler van de Maand uitgekozen? Is dit een fout van Joost, of denkt ie in z'n eentje wel even SvdM awards te kunnen uitreiken?</div>
+</article>
+<article class="post" data-ts="20010603033100" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2&nbsp;·&nbsp;2001-06-03 03:31</span></div>
+  <div class="pb">Dat zal ik morgen wel even uitleggen. The bottomline is dat Frank meer recnhmatige punten had dan Olivier. </div>
+</article>
+<article class="post" data-ts="20010604165000" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3&nbsp;·&nbsp;2001-06-04 16:50</span></div>
+  <div class="pb">en hoe komt wybren aan 2 punten terwijl hij zich het hele weekend niet heeft laten zien?</div>
+</article>
+<article class="post" data-ts="20010604173500" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4&nbsp;·&nbsp;2001-06-04 17:35</span></div>
+  <div class="ps">Hier even de echte WJ</div><div class="pb">Punt 1- Hoe Wybren aan 2 punten komt? Geen idee, geintje van iemand ofzo?<br><br>Punt 2-<br><br>" Is dit een fout van Joost, of denkt ie in z'n eentje wel <br>even SvdM awards te kunnen uitreiken?"<br><br>Wie is hier nou degene die in z'n eentje wel <br>even denkt de SvdM awards te kunnen uitreiken? Ik dus niet. Ik heb alleen gezien wie de meeste eerlijk verdiende punten had. En die heeft dus gewonnen.<br></div>
+</article>
+<article class="post" data-ts="20010605130400" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5&nbsp;·&nbsp;2001-06-05 13:04</span></div>
+  <div class="pb">Tsss....en ik maar op Olivier stemmen aan het einde omdat ik verwachte dat ie dan zou gaan winnen.</div>
+</article>
+<article class="post" data-ts="20010606133800" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6&nbsp;·&nbsp;2001-06-06 13:38</span></div>
+  <div class="pb">haha</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

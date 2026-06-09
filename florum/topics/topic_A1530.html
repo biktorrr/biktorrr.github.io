@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verhuizen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verhuizen</h1>
+<p class="tm">8 posts · started 2005-07-04 22:25 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050704222500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-07-04 22:25</span></div>
+  <div class="pb">Welke 2 Floraboys willen Cheska en mij dinsdag 12-7 in Amsterdam helpen haar spulletjes te verhuizen. De datum is nog niet helemaal zeker, maar waarschijnlijk wel. Als het verandert geef ik dat zsm door. Het zou handig zijn als er eentje in het bezit is van een rijbewijs. Beloning: een paar heerlijke biertjes in haar nieuwe paradijs en misschien wel een kroket van de nabijgelegen Febo erbij (prestatieloon).</div>
+</article>
+<article class="post" data-ts="20050705092700" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-07-05 09:27</span></div>
+  <div class="pb">ik zou er bijna mijn spanje-reis voor afzeggen. Olivier en de zijnen verhuizen is natuurlijk mijn core-business. <br><br>Maar elas, ik kan dus niet.<br>Succes</div>
+</article>
+<article class="post" data-ts="20050705100100" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2005-07-05 10:01</span></div>
+  <div class="pb">Ik kan, zoals het er nu voor staat, wel helpen dinsdag. Heb alleen geen rijbewijs.</div>
+</article>
+<article class="post" data-ts="20050705122400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-07-05 12:24</span></div>
+  <div class="pb">Sorry chief, ik heb in mijn contract staan dat ik tijdens werktijd ook echt aanwezig moet zijn. </div>
+</article>
+<article class="post" data-ts="20050705160500" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-07-05 16:05</span></div>
+  <div class="pb">Een zogenoemd wurgcontract, zeg ik je.<br><br></div>
+</article>
+<article class="post" data-ts="20050706154500" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2005-07-06 15:45</span></div>
+  <div class="pb">hmm, ik ben pas vanaf 13.15 uur beschikbaar...</div>
+</article>
+<article class="post" data-ts="20050706203100" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2005-07-06 20:31</span></div>
+  <div class="pb">Ik gooi het in de groep. Misschien is het uberhaupt niet nodig, het is nog een beetje onduidelijk allemaal. Ik bel je iig zondag of maandag, als ik weer in Nederland ben. Bedankt alvast dat je wil meehelpen.</div>
+</article>
+<article class="post" data-ts="20050706204900" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2005-07-06 20:49</span></div>
+  <div class="pb">"That's me in the corner..."</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

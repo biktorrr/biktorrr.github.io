@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goede vrijdag borrel! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Goede vrijdag borrel!</h1>
+<p class="tm">8 posts · started 2014-04-18 10:49 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140418104939" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2014-04-18 10:49</span></div>
+  <div class="pb">Het leven is een lijdensweg en de dood is een verlossing, aldus onze eigen Bernard Delicieux. Words of wisdom die vandaag, goede vrijdag, extra waar zijn. <br><br>Om dat te vieren organiseren Bernard en ik de eerste Floraboys #goedevrijdagborrel, en uniek concept met potsers, panna's en politiek. Voor overkwalificeerde underachievers en eenieder die de bikkeling graag gecontinued ziet. <br><br>Half negen. Briljant. Be there. </div>
+</article>
+<article class="post" data-ts="20140418105236" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2014-04-18 10:52</span></div>
+  <div class="pb">Ok ok ik kom al</div>
+</article>
+<article class="post" data-ts="20140418115459" id="p3">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#3 · 2014-04-18 11:54</span></div>
+  <div class="pb">Ijs en weder dienende ben ik er bij. </div>
+</article>
+<article class="post" data-ts="20140418142937" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2014-04-18 14:29</span></div>
+  <div class="pb">Toppie</div>
+</article>
+<article class="post" data-ts="20140418191524" id="p5">
+  <div class="ph"><span class="pa">Het leven is lijden, de dood een bevrijding-nazi</span><span class="pm">#5 · 2014-04-18 19:15</span></div>
+  <div class="pb">Het moet dus zijn 'Het leven is lijden, de dood een bevrijding'. Overigens tik ik 'm voor vanavond aan.</div>
+</article>
+<article class="post" data-ts="20140418210022" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2014-04-18 21:00</span></div>
+  <div class="pb">Ik moet nog twee hazen vangen en slachten en zal het denkelijk niet redden. Veel plezier dus en hopelijk kunnen de aanwezigen Jazzy enthousiasmeren voor het GoT-spel.</div>
+</article>
+<article class="post" data-ts="20140419135720" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2014-04-19 13:57</span></div>
+  <div class="pb">Mooi initiatief, boys. Ik was even een pintje pakken met Beat in Brussel (nog steeds ok, ol\é ol\é nu m\ét twee kinders), maar bij een volgende editie ben ik er zeker bij.  </div>
+</article>
+<article class="post" data-ts="20140420112844" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2014-04-20 11:28</span></div>
+  <div class="pb">Beat is oke ole ole<br>Beat is oke ole ole<br>Beat is oke <br>Beat is oke <br>Beat is oke ole ole<br><br><br><br>hoe is het trouwens met Nacho</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

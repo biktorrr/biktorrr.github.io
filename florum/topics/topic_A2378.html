@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voor de nerds onder ons – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Voor de nerds onder ons</h1>
+<p class="tm">6 posts · started 2008-05-13 12:43 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080513124300" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1 · 2008-05-13 12:43</span></div>
+  <div class="pb">Voor de nerds onder ons, eeeeh jullie:<br><br>The Jargon Files: http://www.catb.org/~esr/jargon/html/index.html<br><br>Data General > Dirty Genitals<br><br>IBM 360 > IBM Three-Sickly<br><br>Government Property â Do Not Duplicate (on keys) > Government Duplicity â Do Not Propagate<br><br>for historical reasons > for hysterical raisins<br><br>Margaret Jacks Hall (the CS building at Stanford) > Marginal Hacks Hall<br><br>Microsoft > Microsloth<br><br>Internet Explorer > Internet Exploiter<br><br>FrontPage > AffrontPage<br><br>VB.NET > VB Nyet<br><br>Lotus Notes > Lotus Bloats<br><br>Microsoft Outlook > Microsoft Outhouse<br><br>Linux > Linsux<br><br>FreeBSD > FreeLSD</div>
+</article>
+<article class="post" data-ts="20080513142000" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2008-05-13 14:20</span></div>
+  <div class="pb">serieux, ga eens werken...</div>
+</article>
+<article class="post" data-ts="20080513162000" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2008-05-13 16:20</span></div>
+  <div class="pb">Dit is mijn werk... Keeping up with the nerds :). Had wel wat meer comments verwacht, maar blijkbaar vindt iedereen deze humor dus de normaalste zaak van de wereld. Wat zegt dat over de boys?!</div>
+</article>
+<article class="post" data-ts="20080513162600" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2008-05-13 16:26</span></div>
+  <div class="pb">ik vond het wat kinderlijke humor, maar goed, komt dan wel weer van de Poephooghe vandaan, dus wat verwacht je ;-)</div>
+</article>
+<article class="post" data-ts="20080513175200" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-05-13 17:52</span></div>
+  <div class="pb">ik snap het niet, zo praten wij hier altijd...<br><br>het is trouwens toch Internet Exploder en niet Exploiter?</div>
+</article>
+<article class="post" data-ts="20080513175600" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-05-13 17:56</span></div>
+  <div class="pb">Voor de liefhebbers van hardcore Ironie: <br><br>een filmpje van het zojuist instorten van het gebouw vanb de Delfste faculteit <a href="http://www.dumpert.nl/mediabase/105731/46ccb8cd/bouwkunde_gebouw_delft_stort_in_topic.html">BOUW</a>kunde</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

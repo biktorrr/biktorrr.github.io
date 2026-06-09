@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie tikt een stelling – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie tikt een stelling</h1>
+<p class="tm">4 posts · started 2010-08-31 16:42 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100831164200" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2010-08-31 16:42</span></div>
+  <div class="pb">Goed, ik zit te wachten op mijn connectie met starbuck internet dus een bonusje<br><br>Dit is de stelling: <br>Heineken is de Coca-cola van het bier<br><br>Ik zit nu in Santiago, Chili op het vliegveld te wachten op mijn connectie naar Calama (google maar), en hetvolgende kwam me te op. Heineken is eigenlijks niets meer dan de Coca-cola onder het bier. <br>Geen kwaliteit, maar overal verkrijgbaar en altijd een veilige keuze.  Als je ergens in het buitenland bent, heb je dat soms. Dat de keuze van het eten en drinken er een beetje vreemd uitziet. Dan is het soms fijn dat je coca-cola kan drinken. Eigenlijk smerig, maar het is overal en altijd een veilige keuze. Hetzelfde heb je eigenlijk met Heineken als je zin in bier hebt. Soms komen de onbekende keuzes je de neus uit, maar waar je ook bent, er is altijd Heineken. Niet het lekkerste bier (verre van) maar wel waar je de smaak van weet en nog steeds bier. <br><br>Wat verschrikkelijk eigenlijk.</div>
+</article>
+<article class="post" data-ts="20100831165100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-08-31 16:51</span></div>
+  <div class="pb">Goed getikt!<br><br><br>Mijn Turkse snackbarhouder vroeg me vorige week trouwens of Heineken nou inderdaad het beste was, want dat was het enige dat ie verkocht.</div>
+</article>
+<article class="post" data-ts="20100831200800" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2010-08-31 20:08</span></div>
+  <div class="pb">Je zou kunnen zeggen dat het door de kwaliteit komt dat Heineken en Coca-Cola op zo veel plaatsen verkocht worden. Ik vind Heineken niet de minste van alle pilsners en ik verkies Coca-Cola bijna altijd boven andere cola's. <br><br>Leuk detail is dat Heinken zijn aanwezigheid op de Amerikaanse markt grotendeels te danken had doordat er al een schip vol met bier voor de kust lag voor het geval de drooglegging op zou houden. De dag daarna zaten de Amerikanen al aan het Heineken bier.</div>
+</article>
+<article class="post" data-ts="20100901082300" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-09-01 08:23</span></div>
+  <div class="pb">Ik vind Cola eigenlijk de lekkerste frisdrank. <br><br>Qua bier tik ik Heineken meestal af en ga ik voor een Leffe, een Grimbergen dubbel, een Rochefort, een Chimay Bleu, een Duvel, een Flat Tire, een Anchor Steam. Ik heb nog maar een keer gehoord dat iemand onwel is geworden van het drinken van een bepaald soort bier (door de kwaliteit natuurlijk, niet de kwantiteit). Dat was een van de eigen brouwsels van Mitch en de Tube. Dus wat mij betreft is Heineken net zo veilig als de rest.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

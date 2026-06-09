@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rondvaart... ??? fanclub – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rondvaart... ??? fanclub</h1>
+<p class="tm">6 posts · started 2001-08-23 10:09 by Famous Frank</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010823100900" id="p1">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#1 · 2001-08-23 10:09</span></div>
+  <div class="pb">Mijn adres is Mendelhof 12 -1 hoog,, 1098 TP amsterdam,.. zo voorzover het zakelijke.... We worden duidelijk kampioen,, we zijn de ultieme titel kandidaten.. dit geeft wel veel druk!!! kunnen wij deze druk wel aan!!??? Ik wil me trouwens ook wel opgeven als reserve keeper hoor, vind het niet erg om even in te vallen als Tuut TUUUUT even is platgetrapt door de tegenstander... tja wat zou jij doen als je de tegenstanders was??? lijkt me logissssssch..<br><br>Als we kampioen zijn ben ik voor een rondvaart door de grachten,, inclusief supportersvereniging...! Aangezien dit kampioensfeest natuurlijk veel werk vergt,, ben ik voor om een 2 of 3 ledig comittee op te richten die dit allemaal gaat regelen voor spelers, spelersvrouwen, spelersmannen (jaja statistisch gezien moet er ook wel een spelersman zijn) familie, vrienden, fans... rondvaart en dan ergens eten en borrelen... zuipen tot we vallen...!!! Maar doen we de rondvaart in amsterdam,, of kan je ook leuk cruisen in haarlem.... of varen we met een schuit gewoon rondje amsterdam en dan naar haarlem???? Dit zit me wel beetje dwars,, dit moet wel goed geregelt worden natuurlijk..!!!<br><br>Reacties op het forum plaatsen!!!!</div>
+</article>
+<article class="post" data-ts="20010823101200" id="p2">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#2 · 2001-08-23 10:12</span></div>
+  <div class="ps">SHIRTSSSS</div><div class="pb">wat zijn onze clubkleuren eigenlijk??? En hebben we al shirts of wat gaan we doen.... ik heb misschien nog wel zootje dezelfde t-shirts bij mijn pa en ma liggen van een of andere hardloop wedstrijd... dan zijn we in ieder geval uniform gekleedt.... of werden er echte shirts met naam?!! gemaakt??? kost niet zo veel natuurlijk... poloshirtje bij c&a kost 25 piek... bedrukken ook zoiets dus voor 50 piek heb je wel kwaliteitje!!!  uit en thuis???</div>
+</article>
+<article class="post" data-ts="20010823131100" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-08-23 13:11</span></div>
+  <div class="pb">Tja dat kampioen worden lijkt me duidelijk, vind wel dat we een beetje fatsoenlijke shirts moeten regelen. Ik zal wel ff bij een sport winkel gaan kijken vanmiddag.<br><br></div>
+</article>
+<article class="post" data-ts="20010823133300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2001-08-23 13:33</span></div>
+  <div class="ps">..</div><div class="pb">Merlijn zou toch de elsevier-shirt-sponsoring doen???<br>hoe staat het daarmee?<br></div>
+</article>
+<article class="post" data-ts="20010824050300" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2001-08-24 05:03</span></div>
+  <div class="pb">ik was toevallig deze zomer in St. Petersburg en daar hebben ze ook best leuke grachten. En die Russen kunnen wel een feestje gebruiken.</div>
+</article>
+<article class="post" data-ts="20010824132700" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-08-24 13:27</span></div>
+  <div class="pb">Ik heb Shell en Elsevier geprobeerd, maar Shell wil niet. Raar. M'n vaderrr zei dat 15 Elsevier shirs geen probleem hoeven te zijn. Hopelijk betere kwaliteit dan de vorige. Ik wou nog KPN proberen. Die lopen te blaten dat ze fan zijn van alle voetballers, maar dat is 'r nog niet van gekomen...<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

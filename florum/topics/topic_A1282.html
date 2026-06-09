@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WAt&#x27;s dit? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WAt&#x27;s dit?</h1>
+<p class="tm">4 posts · started 2004-09-02 12:51 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040902125100" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-09-02 12:51</span></div>
+  <div class="pb">Wintervorst.com - MXStream --> BBNed<br><br>Voordat ik besloot om over te stappen van MXStream bij XS4all naar BBNed bij Demon heb ik gekeken wat de mogelijkheden zijn om de bestaande hardware van MXStream te gebruiken op het BBNed netwerk.<br>Denk niet dat ik de enige ben die deze beslissing neemt om in ieder geval van het MXStream naar het BBNed netwerk over te stappen bij misschien een andere provider <br>De keuze was van financi\ële aard, ik betaalde 86 EU voor mijn MXstream abbonement 1524/256 en DSLexpress bij demon kost slechts 65 EU per maand, scheelt dus 21 EU per maand voor meer up(512) en download(2048) snelheid. Kon het gewoon niet laten lopen. :) <br><br>Ik was gelukkig al langer dan een jaar bij XS4all, dus kon mijn verbinding zonder problemen opzeggen en heb toen DSLExpress besteld. <br>Zat dus 2 maanden zonder internet omdat het bestaande adsl signaal eerst van je lijn af behoort te zijn voordat een nieuwe aanvraag geaccepteerd gaat worden (wordt binnen een week na aanvraag een lijnmeting gedaan). <br><br>Ik kan mogelijk een beetje bevooroordeeld overkomen in mijn uitleg, omdat ik medewerker ben van Demon Internet - Thus PLC. Het bedrijf waar ik mijn BBNed verbinding bij heb. =) <br><br>Mocht je er met deze informatie niet uitkomen is de kans niet erg groot dat ik je verder kan helpen, kijk dan bijvoorbeeld eens op :<br>SpeedTouch.nl<br>Of stuur een e-mail naar: info@speedtouchsupport.nl<br>Zij behoren in staat zijn je verder te kunnen helpen, wellicht dat ze een profiel gaan maken dat ook geschikt is voor de oudere speed touch modems, want er staan er nu nog alleen die voor de nieuwste apparaten.... *zucht*. <br><br>Ook is het zo dat ik geen garantie kan geven dat het modem goed blijft of gaat werken na het uitvoeren van de handelingen. Het is geheel op eigen risico. Dus lees alles eerst goed door voordat je besluit dit te gaan doen, het kan er namelijk voor zorgen dat het modem helemaal niet meer werkt (helaas...). <br><br><br>Hiernaast staan de links voor de specifieke modems van MXStream om ze werken te krijgen met BBNed. Succes ermee, het heeft mij een lange avond gekost om het allemaal uit te vogelen. :) <br><br>Maarten Duwel<br>aka<br>Wintervorst </div>
+</article>
+<article class="post" data-ts="20040902144700" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-09-02 14:47</span></div>
+  <div class="pb">Tja ik geloof dat er iemand nogal loopt te k*tten.<br><br></div>
+</article>
+<article class="post" data-ts="20040902195400" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-09-02 19:54</span></div>
+  <div class="pb">Dat is de persoonlijke site van maarten, floraboys.com wordt via zijn pc doorgelinked omdat hij het domein bezit. Er was iets fout met de link ofzo..</div>
+</article>
+<article class="post" data-ts="20040903081600" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-09-03 08:16</span></div>
+  <div class="pb">ok,duidelijk. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

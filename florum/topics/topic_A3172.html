@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telefoneke – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Telefoneke</h1>
+<p class="tm">10 posts · started 2011-10-27 17:38 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111027173820" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2011-10-27 17:38</span></div>
+  <div class="pb">http://a8.sphotos.ak.fbcdn.net/hphotos-ak-ash4/303175_2580239465946_1253215443_32935727_768830672_n.jpg</div>
+</article>
+<article class="post" data-ts="20111027173849" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2011-10-27 17:38</span></div>
+  <div class="pb"><img src="http://a8.sphotos.ak.fbcdn.net/hphotos-ak-ash4/303175_2580239465946_1253215443_32935727_768830672_n.jpg"><br><br>jwz</div>
+</article>
+<article class="post" data-ts="20111027173901" id="p3">
+  <div class="ph"><span class="pa">VB2</span><span class="pm">#3 · 2011-10-27 17:39</span></div>
+  <div class="pb"><img src="http://a8.sphotos.ak.fbcdn.net/hphotos-ak-ash4/303175_2580239465946_1253215443_32935727_768830672_n.jpg"><br><br></div>
+</article>
+<article class="post" data-ts="20111027174000" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2011-10-27 17:40</span></div>
+  <div class="pb">Oops... dacht ik je van dienst te zijn met een correcte HTML posting. Heb je jezelf al gecorrigeerd. jwt. excusee..</div>
+</article>
+<article class="post" data-ts="20111027175251" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2011-10-27 17:52</span></div>
+  <div class="pb">Mooi! dit keer wel eerste keus?</div>
+</article>
+<article class="post" data-ts="20111027190538" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2011-10-27 19:05</span></div>
+  <div class="pb">mooi. Ik hoop dat het dit keer wat minder tammekes was dan de voorafgaande keer dat wij er waren met Cootjes bachelor bash.<br><br>Mocht het p-vrouwtje wel naar binnen?</div>
+</article>
+<article class="post" data-ts="20111027195835" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2011-10-27 19:58</span></div>
+  <div class="pb">De eerlijkheid gebied te zeggen dat we niet naar binnen zijn geweest. We waren al op weg naar het hotelletje en ik vond het niet gepast om met een vrouwelijke metgezel deze olijke kroeg binnen te lopen.</div>
+</article>
+<article class="post" data-ts="20111027215727" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2011-10-27 21:57</span></div>
+  <div class="pb">Derde keus (en nog immer trots daarop)!!</div>
+</article>
+<article class="post" data-ts="20111028001530" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2011-10-28 00:15</span></div>
+  <div class="pb">Goed werk hoor!<br></div>
+</article>
+<article class="post" data-ts="20111028003301" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2011-10-28 00:33</span></div>
+  <div class="pb">Beter gezegd: @VB goed werk ouwes.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

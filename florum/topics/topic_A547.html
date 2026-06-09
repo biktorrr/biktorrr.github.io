@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>wintersport??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">wintersport???</h1>
+<p class="tm">4 posts · started 2002-08-16 11:38 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020816113800" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2002-08-16 11:38</span></div>
+  <div class="ps">Opdat wij niet vergeten.</div><div class="pb"><b>Statistieken seizoen aug 2001/dec 2001</b><br>Wedstrijdschema Datum Tijd Veld Score <br><br><br>11/09 18:00 1 Real Tampeloeritas - Flora Boys 3-8 (1-4) <br>17/09 22:30 1 Flora Boys - Zeker van de Beker 6 - 6 (5 - 2) <br>25/09 18:00 4 ITS-AIO - Flora Boys  1 - 20 (1 - 8) <br>04/10 20:15 Flora Boys - Schenker 4 - 2 (2 - 0) <br>18/10 18:45  A.E.L. b4 - Flora Boys 2 - 12 (1 - 5) <br>30/10 18:00  Flora Boys - Real Tampeloeritas 3 - 3 (0 - 2) <br>20/11 18:00  Zeker van de Beker - Flora Boys  2 - 5 (2-2)? <br>28/11 22:00  Flora Boys - Lokomotiv VIAE 9 - 2 (6 - 1) <br>06/12 21:00 1 Schenker - Flora Boys 5 - 5 (2 - 1) <br>20/12 18:00 4 Flora Boys - A.E.L. b4 9 - 1 (1 - 0) <br></div>
+</article>
+<article class="post" data-ts="20020818213300" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-08-18 21:33</span></div>
+  <div class="ps">Wintersport</div><div class="pb">WINTERSPORT<br><br>Wintersport? Wie heeft er zin om mee op wintersport te gaan?!! Lekker snowboarden of skieen altijd leuk natuurlijk.<br><br>Begin januari is de goedkoopste periode, dat scheelt een bom duiten en dat is mooi meegenomen natuurlijk. Een voordeel is ook dat studenten deze periode over het algemeen vrij hebben of kunnen maken.!<br><br><br>WJ jij komt toch uit Madrid wel even een weekje langs boarden???</div>
+</article>
+<article class="post" data-ts="20020819101600" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-08-19 10:16</span></div>
+  <div class="ps">wintersport</div><div class="pb">wintersport? </div>
+</article>
+<article class="post" data-ts="20020819124700" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-08-19 12:47</span></div>
+  <div class="pb">???</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

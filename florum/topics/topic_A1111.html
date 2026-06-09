@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhoneZooi – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">PhoneZooi</h1>
+<p class="tm">7 posts · started 2004-02-15 18:24 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040215182400" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2004-02-15 18:24</span></div>
+  <div class="pb">Nou..zeg...wat er allemaal wel niet na een zaterdagavondje op me phone staat kan echt niet door de beugel. Een stukje van dit drankbestendig geheugen wil ik wel met jullie delen.<br><br><br><img src="http://members.chello.nl/j.kuys1/sx1/Image22.jpg"><br><br><img src="http://members.chello.nl/j.kuys1/sx1/Image23.jpg"><br><br><img src="http://members.chello.nl/j.kuys1/sx1/Image39.jpg"><br><br><img src="http://members.chello.nl/j.kuys1/sx1/Image41.jpg"><br><img src="http://members.chello.nl/j.kuys1/sx1/Image52.jpg"><br><br><img src="http://members.chello.nl/j.kuys1/sx1/Image58.jpg"><br><br><img src="http://members.chello.nl/j.kuys1/sx1/3bigts.jpg"><br><br><br>En nog wat geluidsfragmenten...helaas niet allemaal even zuiver want ik heb me handje op de mike gehouden oid...staat me niet meer even helder voor de geest.<br><br><a href="http://members.chello.nl/j.kuys1/sx1/pvVideo01.mp3"><br>Geluidsfragment1</a><br><a href="http://members.chello.nl/j.kuys1/sx1/pvVideo02.mp3"><br>Geluidsfragment2</a><br><a href="http://members.chello.nl/j.kuys1/sx1/pvVideo03.mp3"><br>Geluidsfragment3</a><br><a href="http://members.chello.nl/j.kuys1/sx1/Soundclip.mp3"><br>Geluidsfragment4</a><br><br><br></div>
+</article>
+<article class="post" data-ts="20040216092400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-02-16 09:24</span></div>
+  <div class="pb">"als je stronken bent dan geloof je in de Biktie"<br><br>mooie avond zo te horen</div>
+</article>
+<article class="post" data-ts="20040216095800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-02-16 09:58</span></div>
+  <div class="pb">Hulde aan de mooie kieken. Ik ga vanmiddag genieten van het geluid, want de console waar ik nu aan zit te werken heeft geen boxen. Misschien dat ik de hele afdeling ook even uitnodig om mee te genieten.</div>
+</article>
+<article class="post" data-ts="20040217221400" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2004-02-17 22:14</span></div>
+  <div class="pb">Mooi! <br>"Vrienden voor het leven" lijkt me een mooi motto voor deze fotoserie. Geluiden moet ik nog even ergens anders luisteren.</div>
+</article>
+<article class="post" data-ts="20040218165400" id="p5">
+  <div class="ph"><span class="pa">JL@U</span><span class="pm">#5 · 2004-02-18 16:54</span></div>
+  <div class="pb">het was een erg gezellige avond/nacht zo te zien....<br><br>Vooral Merlijns telefoontje naar Tim om half 3 's nachts was erg amusant! We weten dus nu ook hoe een dronken Merlijn BIKTIE scandeert! Kostelijk.</div>
+</article>
+<article class="post" data-ts="20040218175500" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-02-18 17:55</span></div>
+  <div class="pb">Ik moet het nog even gaan beluisteren. Maar ik heb de Biktie niet gebeld, dacht ik. We hadden juist een wijsgerige discussie met Max over de Biktie. Hij was Jezus en Boeddha maar wij weigerden voor hem op de knieen te gaan: wij geloven in de Biktie.</div>
+</article>
+<article class="post" data-ts="20040221173000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-02-21 17:30</span></div>
+  <div class="pb">Ik moet zeggen dat de geluidsfragmenten ook heel goed zijn. Vooral de teksten tussen het geroggel van Max door. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verjaardag/roomwarming 16 april – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verjaardag/roomwarming 16 april</h1>
+<p class="tm">9 posts · started 2005-04-04 22:12 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050404221200" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2005-04-04 22:12</span></div>
+  <div class="pb">Dag lieve Floraboys & -girls,<br><br>Ik wil zaterdag 16de april ('s avonds) mijn verjaardag/housewarming gaan vieren in <br>mijn nieuwe onderkomen. Jullie zijn bij deze allemaal uitgenodigd. <br>Het hangt een beetje van het weer af of het daar door kan gaan, aangezien ik niet zoveel ruimte heb om mensen binnen onder te brengen, maar wel een aardig terrasje voor de deur heb. :)<br>Mocht het weer tegenzitten zal het bij mijn oudertjes thuis zijn, en dan mail/post ik dat 's ochtends <br>nog wel even en anders zie je het gauw genoeg als je langs m'n kamer rijdt. :D<br><br>Mijn adres:<br>Vinkenlaan 56<br>2182JE Hillegom<br>tel: 06 25586402<br><br>Ouders adres: <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br>Stationsweg 148b<br>2182BE Hillegom<br>tel: 0252 516663<br><br>Laat nog even weten of je komt en graag tot 16 april!<br><br>Maarten Duwel</div>
+</article>
+<article class="post" data-ts="20050404221400" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2005-04-04 22:14</span></div>
+  <div class="pb">BTW.<br>E-mailistisch ben ik te bereiken op maartenduwel@hotmail.com</div>
+</article>
+<article class="post" data-ts="20050405102500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2005-04-05 10:25</span></div>
+  <div class="pb">Ik ben dan al uitgenodigd voor een ander feest en kan er dus niet bij zijn. <br>Veel plezier!</div>
+</article>
+<article class="post" data-ts="20050405145200" id="p4">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#4 · 2005-04-05 14:52</span></div>
+  <div class="pb">ik was wel van plan langs te hoppen. Even kijken hoe ik/we daar kom/en</div>
+</article>
+<article class="post" data-ts="20050405162500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-04-05 16:25</span></div>
+  <div class="pb">Mij lijkt het ook leuk, even wachten op Kirsten d'r plannen en de bolideermogelijkheden.</div>
+</article>
+<article class="post" data-ts="20050416141200" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2005-04-16 14:12</span></div>
+  <div class="pb">Het feestje is ondanks het weer gewoon aan de vinkenlaan.<br>Tot vanavond!</div>
+</article>
+<article class="post" data-ts="20050416151200" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2005-04-16 15:12</span></div>
+  <div class="pb">Herberekening, het gaat niet passen, hoe graag ik het ook wil. Voor de mensen die graag mijn kamer wilden zien heb ik een tegoedbon.<br><br>Het feest is dus bij mijn ouders aan de stationsweg 148b.</div>
+</article>
+<article class="post" data-ts="20050417133700" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2005-04-17 13:37</span></div>
+  <div class="pb">het was gezellig, ik heb de avond, van de voordeur in haarlem en weer terug, als \éen lange LARP ervaren.</div>
+</article>
+<article class="post" data-ts="20050417210800" id="p9">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#9 · 2005-04-17 21:08</span></div>
+  <div class="pb">Dude!<br>Omdat die gasten er allemaal anders dan jou uitzagen wil niet meteen zeggen dat het allemaal larpers waren....<br><br>Ennieweej, het was een fijn partijtje. :)<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

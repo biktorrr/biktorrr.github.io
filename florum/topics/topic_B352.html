@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>21 okt zaalballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">21 okt zaalballen</h1>
+<p class="tm">11 posts · started 2003-10-16 13:05 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031016130500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-10-16 13:05</span></div>
+  <div class="pb">je suis la,<br><br>Lil' T ben je al voldoende hersteld? En de rest: komt men?<br></div>
+</article>
+<article class="post" data-ts="20031016131600" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-16 13:16</span></div>
+  <div class="pb">heb mijn glazenb bol/agenda niet bijdehand maar zie geen redenen om niet aanwezig te zijn.</div>
+</article>
+<article class="post" data-ts="20031016134900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-10-16 13:49</span></div>
+  <div class="pb">Present.</div>
+</article>
+<article class="post" data-ts="20031017135000" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-10-17 13:50</span></div>
+  <div class="pb">fysio geeft het een go, dan ik ook. Ik wil niet nog een keer een 3 in de pers zien, gvd.<br></div>
+</article>
+<article class="post" data-ts="20031018093100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-10-18 09:31</span></div>
+  <div class="pb">Ik vermoed niet dat ik er ben, weet het alleen niet helemaal zeker.</div>
+</article>
+<article class="post" data-ts="20031019010500" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-10-19 01:05</span></div>
+  <div class="pb">tot nu toe dus:<br><br>merlijn <br>ptc<br>little T.<br>wj<br><br>twijfel:<br><br>Mk.</div>
+</article>
+<article class="post" data-ts="20031019112200" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2003-10-19 11:22</span></div>
+  <div class="ps">niet aanwezig</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20031019151700" id="p8">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#8 · 2003-10-19 15:17</span></div>
+  <div class="pb">aanwezig</div>
+</article>
+<article class="post" data-ts="20031019210100" id="p9">
+  <div class="ph"><span class="pa">Koots</span><span class="pm">#9 · 2003-10-19 21:01</span></div>
+  <div class="pb">tot nu toe dus:<br><br>merlijn <br>ptc<br>little t.<br>Big T.<br>wj<br><br>Niet:<br>Famous<br><br>twijfel:<br><br>Mk.</div>
+</article>
+<article class="post" data-ts="20031020123400" id="p10">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#10 · 2003-10-20 12:34</span></div>
+  <div class="pb">bij twijfel mag ik gezet worden. Na een pittige wedstrijd tegen Bloemendaal zit mijn rug zo vast dat ik amper kan lopen. Hoop dat ik erbij kan zijn.<br><br></div>
+</article>
+<article class="post" data-ts="20031021095700" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2003-10-21 09:57</span></div>
+  <div class="pb">Come on, Jossyit! Zo'n mooie kans om uit te lopen op Famous en Vincent S. laat je toch niet aan je voorbijgaan, he? Om de vernedering van Mirabeau nog groter te maken is ook het prille talentje Robinho opgeroepen. Hij zal ook van de partij zijn.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

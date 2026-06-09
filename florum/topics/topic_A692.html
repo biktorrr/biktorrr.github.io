@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Machtige Mat Strikes Back – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Machtige Mat Strikes Back</h1>
+<p class="tm">2 posts · started 2003-01-28 11:48 by TN razende intel-reportert</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030128114800" id="p1">
+  <div class="ph"><span class="pa">TN razende intel-reportert</span><span class="pm">#1 · 2003-01-28 11:48</span></div>
+  <div class="pb"><blockquote><br>Terwijl de voltallige vaderlandse pers gisteravond was uitgerukt om het vermeende ontslag van Luis van Gaal te verslaan, danwel slapend naar de presentatie van een rapport te luisteren (kies er maar een), zat deze reportert in zijn busje achter huize Herben aan de telefoontap. Niet zonder succes.<br><br>Naar nu blijkt heeft de top van de Likud toenadering gezocht met dhr.Herben (in de partij kringen bekend als 'Kleine Krijger') voor zijn verhelderende opvattingen over integratie van muzelmannen(het schijnt dat Sharon veel in zijn plannen ziet) en zijn gelijke opvatting over het probleem <i>'Duisenberg'</i>.<br>Voor het verstrekken van informatie aangaande dit gevaar en het uitwisselen van 'terroristenbestanden' is Mat een oplossing voor het 'oneffenheidje' v.d.G aangereikt <a href="http://www.isayeret.com/weapons/sws/barrett/barrett.htm">(zie hier)</a> , een vrije v.i.p.toegang tot diverse israelische bases en een verrekijker+notitieboekje.<br>Van verdere ontwikkelingen wordt u allen op de hoogte gehouden.<blockquote></div>
+</article>
+<article class="post" data-ts="20030128115500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-01-28 11:55</span></div>
+  <div class="pb">ik zag mighty Mat gister ook even langswippen bij Katja en Bridget. Hij was geeiilll!!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

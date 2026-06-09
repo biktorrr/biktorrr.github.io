@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lamb dvd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lamb dvd</h1>
+<p class="tm">2 posts · started 2005-06-09 10:21 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050609102100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2005-06-09 10:21</span></div>
+  <div class="pb">Especi\ál Voor sicco, jits en vik.<br><br><br>First off Lamb news. We have finally mixed and edited the Dvd, it contains footage from the Paradiso show, with some tracks from Glastonbury (2004) and Wechter (2004), the Audio sounds wicked! (and pictures good too). We have been mixing it in surround sound, (stereo too) but in surround, it really makes you feel like you are in the middle of that sweaty seething amazing hall in Amsterdam.<br><br>Now just the finishing touches are all stopping us from putting it out. The back stage extras are really funny, and insightful on what we get up to on tour, when not on stage. Also a screening of our partially famous Tequila<br>sessions. I think it will be ready for release at the tail end of the summer!<br>(www.lambstar.net)<br></div>
+</article>
+<article class="post" data-ts="20050609103100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-06-09 10:31</span></div>
+  <div class="pb">eej terecht!<br><br>(wel een beetje in verkeerde florum)<br><br>maar zekers terecht!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

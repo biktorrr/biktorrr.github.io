@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1/2 mei BALLEN – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">1/2 mei BALLEN</h1>
+<p class="tm">11 posts · started 2004-04-28 19:40 by De Oleisjeyk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040428194000" id="p1">
+  <div class="ph"><span class="pa">De Oleisjeyk</span><span class="pm">#1 · 2004-04-28 19:40</span></div>
+  <div class="pb">Ik ben er in ieder geval neydt! Wie wel??</div>
+</article>
+<article class="post" data-ts="20040429104800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-04-29 10:48</span></div>
+  <div class="pb">heej oly, ik ben er denk ik niet op zaterdag, maar helemaal zeker weet ik dat nog niet. <br>zoja</div>
+</article>
+<article class="post" data-ts="20040429121000" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2004-04-29 12:10</span></div>
+  <div class="pb">za nee<br>zo HBC, pas om 14:00 helaas<br><br></div>
+</article>
+<article class="post" data-ts="20040429121100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-04-29 12:11</span></div>
+  <div class="pb">getekend, TN; maar had denk ik net zo goed JP kunenn zijn</div>
+</article>
+<article class="post" data-ts="20040429121600" id="p5">
+  <div class="ph"><span class="pa">EM</span><span class="pm">#5 · 2004-04-29 12:16</span></div>
+  <div class="pb">Ik kan za WEL, zondag NEE</div>
+</article>
+<article class="post" data-ts="20040429130000" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-04-29 13:00</span></div>
+  <div class="pb">Tegen wie moeten jullie trouwens bij HBC..de een na onderste?</div>
+</article>
+<article class="post" data-ts="20040429143400" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2004-04-29 14:34</span></div>
+  <div class="pb">Oi, ik zie net dat het om 12:00 begint, dan is er nog een kans dat ik wel kan zondag.<br></div>
+</article>
+<article class="post" data-ts="20040429201800" id="p8">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#8 · 2004-04-29 20:18</span></div>
+  <div class="pb">We moeten tegen SVIJ die weliswaar maar een plaats onder ons staan maar de laatste paar wedstrijden toch wel vrij kansloos bezig zijn. We hebben wederom te weinig man dus iedereen die wil is welkom. Laat het me wel een beetje op tijd weten svp. Voorlopig reken ik so en so op Misha en Victor "2 uit 2" de Boer. <br><br></div>
+</article>
+<article class="post" data-ts="20040501000300" id="p9">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#9 · 2004-05-01 00:03</span></div>
+  <div class="pb">tijmen heeft NEYT een wagen, als Misha of Vik iets zou kunnen regelen zou dat muchos aprrecionados zijn</div>
+</article>
+<article class="post" data-ts="20040501122200" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-05-01 12:22</span></div>
+  <div class="pb">Maar wordt er nou gebald zaterdag? </div>
+</article>
+<article class="post" data-ts="20040501133500" id="p11">
+  <div class="ph"><span class="pa">EM</span><span class="pm">#11 · 2004-05-01 13:35</span></div>
+  <div class="pb">Dan zeg ik bij deze ook af.. ik heb nog niemand gezien die wel kan. En ik wil niet weer voor niets komen... ik kom graag als jullie weer lekker bal weekend hebben!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

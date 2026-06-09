@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>extreem cool – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">extreem cool</h1>
+<p class="tm">5 posts · started 2003-10-01 09:41 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031001094100" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-10-01 09:41</span></div>
+  <div class="pb">Op het Florum mag je ook wel af en toe iets extreem cools kwijt, vind ik, vooral als je in het buitenland woont en geen homepage hebt. Zo overkwam het mij gisteren dat ik mij op het plateau bevond van het tv-journaal van Canal+ (hier voor iedereen een gedeelte van de dag gratis te zien) om professioneel commentaar te geven op de fusie tussen KLM en Air France en vooral de Nederlandse reactie daarop. Uw correspondent dus prime time (nou ja bijna om 19h) met zijn kop op de Franse tv. "Ouais, les Hollandais sont tr\ès partag\és. Il y a \à peu pr\ès la moiti\é qui pensent que c'est la seule solution pour s'en sortir, il y a l'autre moiti\é qui estime que c'est la fin de KLM. Blablabla" Cool h\è? Waarschijnlijk is het opgenomen, maar ik ga ze vandaag even een videoband vragen voor de zekerheid. <br>Tot morgen bij Victor.</div>
+</article>
+<article class="post" data-ts="20031001124700" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-01 12:47</span></div>
+  <div class="pb">Cool is met 20-1 winnen van its aio. <br>Kees Jansma spelen op de Canal + is evengoed een mooie anekdote voor je Floravrienden.</div>
+</article>
+<article class="post" data-ts="20031001125300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-10-01 12:53</span></div>
+  <div class="pb">Wow! Respect aan jou Oliveir! Ik wist niet de En France zo'n toonaangevend magazine was. Respect!</div>
+</article>
+<article class="post" data-ts="20031001134400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-10-01 13:44</span></div>
+  <div class="pb">had je  je 'Olivier-Elsevier'-pak aan of had je voor Canal+ gewoon  je Paris-NorthCentral-met-mijn-neger-vriendjes-naar-de-TaTi-outfit aan?</div>
+</article>
+<article class="post" data-ts="20031002105000" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-10-02 10:50</span></div>
+  <div class="pb">"les Hollandais" in plaats van "nous Hollandais", dat krijg je erqan als je een week geen brood eet.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brouwerij &#x27;t IJ op vrijdag 9 julie: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Brouwerij &#x27;t IJ op vrijdag 9 julie:</h1>
+<p class="tm">9 posts · started 2006-07-06 15:35 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060706153500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-07-06 15:35</span></div>
+  <div class="pb">Komt allen. Ik zit er met Mitsj vanaf 17u. Iedereen welkom.</div>
+</article>
+<article class="post" data-ts="20060706155500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-07-06 15:55</span></div>
+  <div class="pb">Het is morgen 7 juli. Maar dit geheel terzijde.</div>
+</article>
+<article class="post" data-ts="20060706155800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-07-06 15:58</span></div>
+  <div class="pb">Een uitzondering die de regel van mijn perfectie bevestigd.</div>
+</article>
+<article class="post" data-ts="20060706161100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-07-06 16:11</span></div>
+  <div class="pb">regels zijn regels. ik ben erbij...</div>
+</article>
+<article class="post" data-ts="20060707131100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-07-07 13:11</span></div>
+  <div class="pb">Ik begin al te snakken naar een lekker IJ-biertje...</div>
+</article>
+<article class="post" data-ts="20060707131700" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-07-07 13:17</span></div>
+  <div class="pb">Ik begin al te snakken naar vijf lekkere potsers.</div>
+</article>
+<article class="post" data-ts="20060707134900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-07-07 13:49</span></div>
+  <div class="pb">ik ook, maar ik ben er pas om 17.36 ofzo</div>
+</article>
+<article class="post" data-ts="20060707140800" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2006-07-07 14:08</span></div>
+  <div class="pb">Ik kom direct na het praatje dat om 16u begint. Ben er uiterlijk om 17:20u.</div>
+</article>
+<article class="post" data-ts="20060707141700" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2006-07-07 14:17</span></div>
+  <div class="pb">Dan ben ik er ook uiterlijk om 17.20 uur. Chezellichjes!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

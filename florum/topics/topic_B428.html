@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zondag ballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zondag ballen</h1>
+<p class="tm">9 posts · started 2004-03-19 11:25 by Jossyt S</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040319112500" id="p1">
+  <div class="ph"><span class="pa">Jossyt S</span><span class="pm">#1 · 2004-03-19 11:25</span></div>
+  <div class="pb">Mannen, door blessures heeft HBC zon 6 een tekort aan mensen. Ik heb toestemming gevraagd om Floraboys te benaderen.<br><br>Zondag 11:30 spelen we tegen Velsen 13 een partij die we uit wonnen met 1-0 (doelpunt Jossyt S)<br><br>Wie doet er mee? Vic, Merlijn, Misha? </div>
+</article>
+<article class="post" data-ts="20040319122800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-03-19 12:28</span></div>
+  <div class="pb">Klinkt leuk!</div>
+</article>
+<article class="post" data-ts="20040319133100" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-03-19 13:31</span></div>
+  <div class="pb">ik was eigenlijk van plan me een beetje te sparen voor de marathon-aflevering van maandag, maar ach, waarom neit!<br><br>ik ga dan zaterdag even niet ballen...</div>
+</article>
+<article class="post" data-ts="20040319145700" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-03-19 14:57</span></div>
+  <div class="pb">Ik ben er zondag bij, en evenals Vic morgen neyt.<br><br>De kleuren van HBC zijn zwarte broek en als het kan oranje sokken. ik gok dat er wel shirts geleend kunnen worden.<br><br>in de mail van HBC-6 lees ik dat Joost voor ongeveer 4 man zou zorgen, dus we hebben er nog een paar nodig.</div>
+</article>
+<article class="post" data-ts="20040319150600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2004-03-19 15:06</span></div>
+  <div class="pb">Ok...dan cancel ik zaterdag ook wel....ik wil wel weer eens kijken of ik nog kan presteren op het grote veld. Als het afgeblazen wordt door de regen gaarne even melden. En hoe verloopt verder het transport?</div>
+</article>
+<article class="post" data-ts="20040319150600" id="p6">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#6 · 2004-03-19 15:06</span></div>
+  <div class="pb">had gerekent op:<br><br>mer<br>vic<br>mk<br>kenzo</div>
+</article>
+<article class="post" data-ts="20040319161400" id="p7">
+  <div class="ph"><span class="pa">Vdb</span><span class="pm">#7 · 2004-03-19 16:14</span></div>
+  <div class="pb">overigens heb ik geen oranje sokken :P</div>
+</article>
+<article class="post" data-ts="20040319163800" id="p8">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#8 · 2004-03-19 16:38</span></div>
+  <div class="pb">qua transport: Tijmen komt ons denk ik ophalen met de bolide toch Tijmen?</div>
+</article>
+<article class="post" data-ts="20040320203100" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2004-03-20 20:31</span></div>
+  <div class="pb">ik kom waarschijnlijk jullie aanmoedigen.. Floraboys!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Filmpje van de Tube – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Filmpje van de Tube</h1>
+<p class="tm">8 posts · started 2005-04-06 11:45 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050406114500" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2005-04-06 11:45</span></div>
+  <div class="pb">hier een filmpje dat ik van de Tube kreeg. Ik kan m niet afspelen, maar hij schijnt legendarisch te zijn...<br><br><a href="http://staff.science.uva.nl/~vdeboer/floraboys/tube_wpl.avi">klikkerdeklik</a></div>
+</article>
+<article class="post" data-ts="20050406114900" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-04-06 11:49</span></div>
+  <div class="pb">geweldig ik kan m ook niet afspelen.<br></div>
+</article>
+<article class="post" data-ts="20050406120500" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2005-04-06 12:05</span></div>
+  <div class="pb">?? ik kan hem wel afspelen.. zonder geluid, maar is het Tube's nieuwe vervoermiddel?<br><br>Tube goes AirWolf?</div>
+</article>
+<article class="post" data-ts="20050406124000" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2005-04-06 12:40</span></div>
+  <div class="pb">Het is de trauma helikopter die bijna op m'n bureau landt. Overigens is het me nog steeds volstrekt onduidelijk waarom ie op het weesperplein moest landen. Het filmpje heeft geen geluid.</div>
+</article>
+<article class="post" data-ts="20050406125500" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-04-06 12:55</span></div>
+  <div class="pb">Ja dat had ik vorige week ook op m'n werk, het klonk alsof die door de muren zo naar binnen vloog maar hij lande twee straten verder. Waarschijnlijk maken die piloten er een sport van om iedereen de stuipen op het lijf te jagen.</div>
+</article>
+<article class="post" data-ts="20050406130200" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2005-04-06 13:02</span></div>
+  <div class="pb">Wel terecht filmpje...vooral leuk als die heli voor je raam blijft hangen. Me dunkt dat ie even de warme pizza voor de lunch moest afleveren of anders had hij misschien wel wat met Bonfire te maken. </div>
+</article>
+<article class="post" data-ts="20050406142100" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-04-06 14:21</span></div>
+  <div class="pb">Misschien was er een junk onwel geworden in het metrostation...</div>
+</article>
+<article class="post" data-ts="20050406173000" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-04-06 17:30</span></div>
+  <div class="pb">ah nu heb ik m ook gezien. Duurt wel lang voordat ie beneden is zeg...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

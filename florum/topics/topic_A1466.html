@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chocolade fondue enzo – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Chocolade fondue enzo</h1>
+<p class="tm">8 posts · started 2005-04-11 15:30 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050411153000" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2005-04-11 15:30</span></div>
+  <div class="pb">Aangezien in de actiefste Floragirl ben op het florum maar een nieuwe topic van mij!en wel voor de floragirls of wie zich nog meer geroepen voelt.<br>Jeanine en ik hebben zin in een avondje chocoladefondue met alle zie bovengenoemde! <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br>Wie heeft er ook zin in!</div>
+</article>
+<article class="post" data-ts="20050411160200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-04-11 16:02</span></div>
+  <div class="pb">Chocoladefondue? JEYT!</div>
+</article>
+<article class="post" data-ts="20050411162000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-04-11 16:20</span></div>
+  <div class="pb">ik heb Marije vorige week een chocolatiere gegeven. Daar kan je dus ook mee chocoladefondueen, alleen niet met zn tienen...</div>
+</article>
+<article class="post" data-ts="20050411163100" id="p4">
+  <div class="ph"><span class="pa">Famous de Echte</span><span class="pm">#4 · 2005-04-11 16:31</span></div>
+  <div class="ps">ehh</div><div class="pb">Merlijn?? Chocolade fondeu is iets voor girls niet voor stoere Floraboys!</div>
+</article>
+<article class="post" data-ts="20050411174000" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2005-04-11 17:40</span></div>
+  <div class="pb">je mag dan wel de actiefste floragirl op het forum zijn, maar in de kroeg ben IK meestal de enige. Kom ook eens naar de kroeg! (bruxelles) En ik houd niet van chocoladefondue, doe mij maar een biertje.<br><br>O ja, en wist je dat mannen en vrouwen van dezelfde planeet komen?</div>
+</article>
+<article class="post" data-ts="20050411194600" id="p6">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#6 · 2005-04-11 19:46</span></div>
+  <div class="pb">Gezellig!</div>
+</article>
+<article class="post" data-ts="20050411201500" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2005-04-11 20:15</span></div>
+  <div class="pb">nou nou Ca, zaterdag nacht kwam Lara later binnen dan dat jij wegging.... De titel Floragirls kroegtijgerin heb je niet zó snel te pakken.<br><br>Verder klinkt alles met chocolade goed maar zal ik dit feestje maar aan de girls overlaten.<br><br> <br><br></div>
+</article>
+<article class="post" data-ts="20050411203700" id="p8">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#8 · 2005-04-11 20:37</span></div>
+  <div class="pb">hee, daar ben ik ook voor! Chocolade is altijd goed :D<br>Wanneer? En waar? [mijn huisje staat open, Tim is toch bijna weg :( ]</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

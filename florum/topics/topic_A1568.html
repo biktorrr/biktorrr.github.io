@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hiep Hiep voor de Blije – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hiep Hiep voor de Blije</h1>
+<p class="tm">12 posts · started 2005-09-12 09:34 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050912093400" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2005-09-12 09:34</span></div>
+  <div class="pb">Hoera!<br>ik doe een verjaardagsdansje voor je<br></div>
+</article>
+<article class="post" data-ts="20050912103500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-09-12 10:35</span></div>
+  <div class="pb">psst...<br>16 september..</div>
+</article>
+<article class="post" data-ts="20050912104100" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-09-12 10:41</span></div>
+  <div class="pb">hmm, ik dacht vandaag en dat werd door hyves bevestigd...sorry.<br><br></div>
+</article>
+<article class="post" data-ts="20050912110700" id="p4">
+  <div class="ph"><span class="pa">Hyves</span><span class="pm">#4 · 2005-09-12 11:07</span></div>
+  <div class="pb">" Jarigen:<br>vrijdag : Marije wordt 24 "</div>
+</article>
+<article class="post" data-ts="20050912112500" id="p5">
+  <div class="ph"><span class="pa">Blije</span><span class="pm">#5 · 2005-09-12 11:25</span></div>
+  <div class="pb">Vrijdag ja. Vrijdag ben ik jarig, en zaterdag (17 september) ga ik jarig zitten zijn in de nieuwe toneelschuur. Als jullie het leuk vinden om langs te komen dan vind ik dat ook heel leuk. Mijn film is afgelopen om ongeveer 22:22. <br><br>Ik besef wel dat ik me nu in het verjaardags-hoogseizoen ertussen probeer te wurmen, maar ja, ik ben wel jarig..</div>
+</article>
+<article class="post" data-ts="20050912121900" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-09-12 12:19</span></div>
+  <div class="pb">ok dan! <br>ik ben erbij!</div>
+</article>
+<article class="post" data-ts="20050912124800" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-09-12 12:48</span></div>
+  <div class="pb">Ik kom dan ook langs rond 22.22 uur in de Toneelschuur!</div>
+</article>
+<article class="post" data-ts="20050916100100" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-09-16 10:01</span></div>
+  <div class="pb">nu dan!<br><br>Hieperdepiep hoera!<br><br>(komen er leuk nog meer mensen langs zaterdag eigenlijk?)</div>
+</article>
+<article class="post" data-ts="20050916154500" id="p9">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#9 · 2005-09-16 15:45</span></div>
+  <div class="pb">Ook van JL@u en mij de hartelijke verjaardagswensen!</div>
+</article>
+<article class="post" data-ts="20050916164900" id="p10">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#10 · 2005-09-16 16:49</span></div>
+  <div class="pb">Ja nu mogen we je echt feliciteren!!!!! dat je een nog maar grotere meid mag worden!!hihi,ik probeer ook nog langs te komen zaterdag!</div>
+</article>
+<article class="post" data-ts="20050917100300" id="p11">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#11 · 2005-09-17 10:03</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20050917100300" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2005-09-17 10:03</span></div>
+  <div class="pb">Dikke jeyt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

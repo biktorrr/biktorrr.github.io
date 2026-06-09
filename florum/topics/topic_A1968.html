@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>commercieel rollenspel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">commercieel rollenspel</h1>
+<p class="tm">6 posts · started 2007-01-26 08:28 by Laura</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070126082800" id="p1">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#1 · 2007-01-26 08:28</span></div>
+  <div class="pb">hey floraboys,<br><br>ik had een vraagje. Wie van jullie heeft ooit tijdens een sollicitatieronde een commercieel rollenspel moeten doen? Ik heb nl volgende week een selectiedag voor eventueel een nieuwe baan en dan moet ik ook meedoen met zo'n rollenspel. Wie kan me vertellen hoe dat in z'n werk gaat? Ik wil het natuurlijk wel goed doen...<br><br>Thanx</div>
+</article>
+<article class="post" data-ts="20070126095800" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-01-26 09:58</span></div>
+  <div class="pb">ik heb alleen een adviseursrollenspel moeten spelen. Daar was weinig commercieels aan.</div>
+</article>
+<article class="post" data-ts="20070126105200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-01-26 10:52</span></div>
+  <div class="pb">Ik!<br><br>Bij Berenschot had ik twee rollenspellen. In de eerste moest ik een oversexte monteur in het gareel houden en in de tweede moest ik trainingscursussen aan de man brengen.<br><br>Een klein beetje voorbereiding kan zeker geen kwaad, maar laten we dat dan telefonisch doen.</div>
+</article>
+<article class="post" data-ts="20070127112700" id="p4">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#4 · 2007-01-27 11:27</span></div>
+  <div class="pb">hee bedankt Mer! Wanneer bel je me?</div>
+</article>
+<article class="post" data-ts="20070127155800" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2007-01-27 15:58</span></div>
+  <div class="ps">sollicitatie</div><div class="pb">leuk zeg een sollicitatie, altijd spannend.<br>Bij welk bedrijf ga je solliciteren?<br><br></div>
+</article>
+<article class="post" data-ts="20070129101600" id="p6">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#6 · 2007-01-29 10:16</span></div>
+  <div class="pb">Het gaat om een baan als consultant voor Manpower, fulltime.<br><br>Leuk bij bedrijven langsgaan om te zorgen dat ze kiezen voor Manpower en aan de andere kant ervoor zorgen dat die bedrijven worden gekoppeld aan de juiste werknemers.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen vanavond</h1>
+<p class="tm">4 posts · started 2008-03-19 13:51 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080319135100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2008-03-19 13:51</span></div>
+  <div class="pb"></b>Gaan er nog mensen <b>de</b> wedstrijd van vanavond bekijken?<br><br>Ben wel benieuwd of die Heraclieden het gewoon weer gaan flikken.</div>
+</article>
+<article class="post" data-ts="20080319143000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-03-19 14:30</span></div>
+  <div class="pb">Henny Dompelings Nestor (meneer de Boer) schijnt het te gaan kijken in de O briens<br><!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080319143900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-03-19 14:39</span></div>
+  <div class="pb">Ik zou zeggen dat er wel een aantrekkelijker wedstrijd op het programma staat: PSV tegen de ultra-ultra joden. Die laatste ga ik kijken nabij het Stratumseind. Jullie zijn van harte welkom.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080319163500" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2008-03-19 16:35</span></div>
+  <div class="pb">Ik zit vanavond tussen de ajaxjoden in ierse pub aan heinekenplein. Ook daar is eenieder van harte welkom.<!--62.58.28.18--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

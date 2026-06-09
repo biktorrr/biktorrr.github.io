@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nog een paar schoonheidsfoutjes voor joost – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nog een paar schoonheidsfoutjes voor joost</h1>
+<p class="tm">4 posts · started 2002-08-28 10:55 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020828105500" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-08-28 10:55</span></div>
+  <div class="pb">Ziet er allemaal puik uit.Alleen kloppen er een aantal zaken(voornamelijk de kleuren) nog niet.<br>-In de forum verdwijnt het rood van de naam en de message tegen de kleur van de balk.<br>-De geschiedenis en de prognose verdwijnen ook als je er overheen gaat<br>-De new message button laadt niet (maar doet het wel) maar het newmessageveld is nog wel steeds blauw.<br>-als je over de FPP link gaat verwijst hij in de popuptext naar het voetbalflorum en verwijst het voetbalflorum naar het forum.<br><br>Keep up the good work Josit!</div>
+</article>
+<article class="post" data-ts="20020828114100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-08-28 11:41</span></div>
+  <div class="pb">Ook onhandig is dat in het forum zelf de rode balkes en de rode tekst onleesbaar op elkaar zijn.Zo kun je dus niet zien wie het topic heeft geopend en hoeveel berichtjes er zijn. We komen er wel.</div>
+</article>
+<article class="post" data-ts="20020828114200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-08-28 11:42</span></div>
+  <div class="pb">En dat je vervolgens als je op submit drukt na het intypen van een bericht, weer in het oude blauwe forum komt.</div>
+</article>
+<article class="post" data-ts="20020828122200" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2002-08-28 12:22</span></div>
+  <div class="ps">check check</div><div class="pb">...........</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

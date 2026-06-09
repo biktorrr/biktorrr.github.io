@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zo direct – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zo direct</h1>
+<p class="tm">9 posts · started 2008-02-01 16:03 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080201160300" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2008-02-01 16:03</span></div>
+  <div class="pb">He boys,<br><br>wat spreken we af voor borrel/hapje?</div>
+</article>
+<article class="post" data-ts="20080201161700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2008-02-01 16:17</span></div>
+  <div class="pb">Ik heb een beetje een kater van gisteren, maar als er mensen in zijn voor een klein biertje in bijv. de Kantine schuif ik gezellig aan.<!--145.222.93.6--></div>
+</article>
+<article class="post" data-ts="20080201162000" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-02-01 16:20</span></div>
+  <div class="pb">Ik ga zo de slingers ophangen.<br><br>ALAAF!<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080201162100" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2008-02-01 16:21</span></div>
+  <div class="pb">OK, ik ga naar huis. Als, naast mitch, iemand zin heeft om wat te eten/drinken in de kantine om 19.00 laat me dat even per telefoon weten. <!--62.41.69.18--></div>
+</article>
+<article class="post" data-ts="20080201163100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2008-02-01 16:31</span></div>
+  <div class="pb">@Merl: staat er ook al een paard in je gang?<!--145.222.93.6--></div>
+</article>
+<article class="post" data-ts="20080201191400" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-02-01 19:14</span></div>
+  <div class="pb">ik ben in Haarlem... Lost kijken met de jazzmaster<!--82.204.25.6--></div>
+</article>
+<article class="post" data-ts="20080201202400" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-02-01 20:24</span></div>
+  <div class="pb">Ik kan jullie vertellen dat ik zojuist 112 heb gebeld omdat ik vreesde dat een bejaarde buurvrouw ten val was gekomen. Helaasjes. Mijn bovenbuurvrouw is weliswaar bejaard maar houdt er blijkbaar een luidruchtig liefdesleven op na. Zo bleek tenminste nadat de politie aanbelde.<br><br>WOENSELBITCHES!<!--62.195.6.90--></div>
+</article>
+<article class="post" data-ts="20080201214700" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2008-02-01 21:47</span></div>
+  <div class="pb">Zo te horen was het carnaval duidelijk al begonnen!<!--87.212.29.181--></div>
+</article>
+<article class="post" data-ts="20080201221700" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-02-01 22:17</span></div>
+  <div class="pb">mooi verhaal :)<!--82.204.25.6--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

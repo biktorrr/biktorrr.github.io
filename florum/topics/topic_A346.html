@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>waar zijn de foto&#x27;s?? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">waar zijn de foto&#x27;s??</h1>
+<p class="tm">8 posts · started 2001-11-19 11:54 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011119115400" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2001-11-19 11:54</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20011119150900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-11-19 15:09</span></div>
+  <div class="pb">komen waarschijnlijk morgen hoorde ik van T.<br></div>
+</article>
+<article class="post" data-ts="20011119155000" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2001-11-19 15:50</span></div>
+  <div class="ps">dat schiet weer niet</div><div class="pb">op, als we foto's hadden gemaakt, ontwikkelen dat ging<br>nog sneller....!!</div>
+</article>
+<article class="post" data-ts="20011120135800" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-11-20 13:58</span></div>
+  <div class="pb">COME ON, TIJMEN!!! COME ON!!!<br><br>Zo heeft verpruts je wel alle voordelen van 'n digitale camera.</div>
+</article>
+<article class="post" data-ts="20011120161200" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2001-11-20 16:12</span></div>
+  <div class="ps">TIJMEEEEEEEN!</div><div class="pb">halo, je zou ze vandaag al gepost hebben<br>duuude, ik verspeel mijn credibiliteit <br>duuude duuude, gimme ze pics....<br></div>
+</article>
+<article class="post" data-ts="20011120234700" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2001-11-20 23:47</span></div>
+  <div class="ps">Jaja</div><div class="pb">dudstert moet ff een mooi gaatje prikken om het te doen,ben aan het proberen de fotoos die danwel deheer WM of MS hebben verklooit nog iets van aanzien te geven.<br></div>
+</article>
+<article class="post" data-ts="20011122181200" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2001-11-22 18:12</span></div>
+  <div class="ps">Hmmpppf</div><div class="pb"><p>Ok..<b>update</B><br>Om een of andere nog nader uit te puzzelen reden heeft al mijn programmatuur moeite met het herkennen van de camera, hoewel dit hervoor niet het geval was.Ik kan met geen mogelijkheid op dit moment de fotoos uit de camera halen.Ik ben gister er bijna de hele middag mee bezig geweest,maar  de staat van de CitadelConsole is ook niet echt bevoordelijk voor een diepte uitpuzzling.Ik zal het snel op de Studievereniging computer proberen als ik de juiste drivers heb opgespoord en anders moet er gewacht worden voor een allerlaaste foutendeductie als ik het kan vergelijken wanneer ik weer achter de computer in haarlem zit.<br>Als hij het dan daar ook nog niet doet dan is mijn camera naar de kloten, en naar die conclusie wil ik pas toe komen als allerlaatste mogelijkheid.<br><br>In het kort.<br>Er wordt aan de fotoos gewerkt,nog even geduld aub.<br></P></div>
+</article>
+<article class="post" data-ts="20011127131600" id="p8">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#8 · 2001-11-27 13:16</span></div>
+  <div class="ps">in spanning</div><div class="pb">wacht ik af</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

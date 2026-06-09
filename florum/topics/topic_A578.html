@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nieuwe welkomstpagina – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">nieuwe welkomstpagina</h1>
+<p class="tm">8 posts · started 2002-09-12 14:30 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020912143000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-09-12 14:30</span></div>
+  <div class="pb">jaja ik heb toegang tot de FTP Site van de floraboys, en heb daarom de opstartpagina van de site even verleukt,<br><br>commentaar welkom</div>
+</article>
+<article class="post" data-ts="20020912150700" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2002-09-12 15:07</span></div>
+  <div class="pb">Vet goed.</div>
+</article>
+<article class="post" data-ts="20020912183900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-09-12 18:39</span></div>
+  <div class="pb">Lastig ballen met zo'n standbeeld!</div>
+</article>
+<article class="post" data-ts="20020913001800" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2002-09-13 00:18</span></div>
+  <div class="pb">ik vind dat we het prima doen...met dat standbeeld..misschien ookwel omdat er geen gras (meer) omheen ligt.<br><br>"Oprechte Bikkeling sinds 1879"</div>
+</article>
+<article class="post" data-ts="20020913171500" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-09-13 17:15</span></div>
+  <div class="pb">ik wil niet veel zeggen maar staat dat standbeeld er niet gewoon nog.. tegenover het bankje in het miniparkje in dat driehoekje?<br>Onze eeuwige supportert om hem maar zo te noemen</div>
+</article>
+<article class="post" data-ts="20020913181200" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2002-09-13 18:12</span></div>
+  <div class="pb">Dat plaatje is toch het standbeeld naast de weg?<br>Heeft op zich niet zo veel met ballen op het florapark<br>te maken.</div>
+</article>
+<article class="post" data-ts="20020914010800" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2002-09-14 01:08</span></div>
+  <div class="pb">Laurens hoort ook nog bij het florapark..net als dat grasveldje waar  de bal heen schiet als je hard een tube bal geeft (zeg maar t.o. het ontdekking van de hemel-huis)..en al die huizen aan de stad-kant (oude mamma tube bedrijf); is ook allemaal Florapark. Eigenlijk moet je het maar zo zien dat er 3 wegen door het florapark lopen (de wagenweg niet megerekend)</div>
+</article>
+<article class="post" data-ts="20020916133400" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-09-16 13:34</span></div>
+  <div class="pb">het is overigens Frans Hals...<br><br>maar geod, Kenobi als je heeeeeel goed kijkt kan je op de achtergrond het florapark ontwaren..<br><br>moet je wel je best doen hoor</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

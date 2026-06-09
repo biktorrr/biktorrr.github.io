@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bedankt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bedankt!</h1>
+<p class="tm">3 posts · started 2007-04-03 19:10 by De tante</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070403191000" id="p1">
+  <div class="ph"><span class="pa">De tante</span><span class="pm">#1 · 2007-04-03 19:10</span></div>
+  <div class="pb">Ik wil jullie allemaal heel erg bedanken voor het super-verjaardagscadeau wat ik heb gekregen! Ik heb zaterdag met Rigtje en Lara allemaal mooie planten gekocht; een olijfboompje (komen eetbare olijfjes aan!) en een sinaasappelboompje (met sinaasappeltjes) en rozemarijn! Mochten jullie deze zomer van de zon willen genieten in mediteraanse sfeer (en niet naar Spanje kunnen) dan zijn jullie van harte welkom!<br><br>kus tante</div>
+</article>
+<article class="post" data-ts="20070404011000" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-04-04 01:10</span></div>
+  <div class="pb">Respect voor iedereen die geld betaalt voor 'oliviers'.<br><br>Veel plezier daarmee, tante !</div>
+</article>
+<article class="post" data-ts="20070404093300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-04-04 09:33</span></div>
+  <div class="pb">veel plezier met jullie boomgaard, <br>ook lekker in de zomer om in de schaduw te kunnen zitten.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

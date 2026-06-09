@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys -- ASVS 1 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys -- ASVS 1</h1>
+<p class="tm">1 post · started 2002-03-05 18:17 by De schrijvende pers</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020305181700" id="p1">
+  <div class="ph"><span class="pa">De schrijvende pers</span><span class="pm">#1 · 2002-03-05 18:17</span></div>
+  <div class="pb"><B>Eerste zege: ruim verdiend<B><br><br>Na het collectieve falen van afgelopen week, wisten de Floraboys dat het uur van de waarheid nadert. Nog een dergelijke misstap en de droom van poule twee zou wel eens een hele korte kunnen worden... Met zeven speelgerechtigde spelers moesten de Floraboys zich gister tegen de formatie van ASVS 1 verzetten, die met acht man numeriek in het overwicht waren.<br><br><BR><br><br>Dat ze ook op het veld in het overwicht waren kan van geen moment in de wedstrijd gezegd worden. Voornamelijk het gebrek aan individuele acties brak ASVS 1 op. Hiervan profiteerde vooral de verdedigend ingestelde spelers. Opmerkelijk was dat Joost "Puite" zichzelf ook herhaaldelijk als verdedigende speler opstelde -- het publiek verwacht van hem acties! Misschien was het om het begrip 'zone-dekking' in het zaalvoetbalvocabulaire te introduceren. Zoals Joost 'Puite' het demonstreerde komt het neer op 'met je handen in de lucht achter een tegenstander aanlopen'.<br><br><BR><br><br>Dit aspect van Joosts optreden was niet sterk. Maar dat kan niet gezegd worden van een ander aspect. Alom bekend zijn de gebreken die Joost "Puite" de laatste tijd hebben geteisterd en tot op heden teisteren. Voor de manier waarop hij zich elke keer weer in de selectie knokt bestaat binnen de spelersgroep dan ook niets dan respect. Het was dan ook niet moeilijk te verklaren waarom de Floraboys na vijf minuten om meer juigden dan het tweede goal van Joosts kicksen.<br><br><BR><br><br>Echter, de heetgebakerde spits moet nog wel tegen zichzelf in bescherming genomen te worden: het publiek verdenkt Joost ervan alleen maar zone te dekken uit conditionele overwegingen. En dat kan natuurlijk niet het geval zijn.<br><br><BR><br><br>"Holy" Misha en "Famous" Frank verzorgden de andere goals, waardoor de Floraboys eindelijk meer goals maakten dan de tegenstander. ASVS 1 is het geen moment gelukt echt druk te zetten op "TuuT" Tim, die duidelijk nog te leiden had van de mentale dreun die hem tegen de Blauw Balse Boys is toegediend. Dat "Tuut" Tim nog niet de oude is blijkt wel uit de -- naast enkele goede reddingen -- onnodige tweede goal van ASVS 1. Na deze goal was "Tuut" Tim niet meer de schim die hij daarvoor was. Letterlijk elke uitworp was prooi voor ASVS 1. Gedurende de tweede helft nam "0" Victor de rol van goalie op zich, omdat "Tuut" Tim een bal tegen zijn handen kreeg. <br><br><BR><br><br>Het experiment mag zonder meer geslaagd genoemd worden: "0" Victor houdt zich uitstekend staande in zijn kooi <I>en</I> "Tuut" Tim staat zijn mannetje in het veld. Met "0" Victor als keeper krijgen de Floraboys een balvast aanspeelpunt. "Tuut" Tim moet natuurlijk nog acclimatiseren: hakjes geven is mooi maar dikwijls niet de meest effectieve manier van spelen. Toch zou het een optie kunnen zijn "0" Victor de tweede helft op goal te zetten en "Tuut" Tim te laten veldvoetballen. Op deze manier kunnen de Floraboys meer druk naar voren zetten omdat "0" Victor als extra aanspeelpunt kan fungeren. Uiteraard kunnen dergelijke draconische opties slecht gelicht worden als de nood aan de man is.<br><br><BR><br><br>Gister was de nood voor de Floraboys niet aan de man. Door twee late goals liepen de Floraboys uit naar een terechte 5-3, waarmee ze hun eerste overwinning in poule twee kunnen vieren.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

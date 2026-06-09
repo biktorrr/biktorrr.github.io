@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gecondoleerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gecondoleerd</h1>
+<p class="tm">7 posts · started 2003-11-29 11:32 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031129113200" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-11-29 11:32</span></div>
+  <div class="pb">Hierbij wil ik mijn diepe meebelevenis uiten aan hen die voetbalclubs uit Rotterdam-zuid (en eventueel uit 't Stichtse)in hun hart een plaats hebben gegeven.<br>Ik kan slechts met dezen en genen hopen dat volgend jaar de zaken anders zullen verlopen.<br></div>
+</article>
+<article class="post" data-ts="20031129123500" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-11-29 12:35</span></div>
+  <div class="pb">Tja aan de ene kant is het allemaal bijzonder triest dat Feijenooit niet eens kan winnen van de nummer 7 van Tjechie, aan de andere kant is het eigenlijk best genieten voor de neutrale ajax jood.<br><br>Ik kijk wel uit naar zondag.<br><br><br></div>
+</article>
+<article class="post" data-ts="20031202011000" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-12-02 01:10</span></div>
+  <div class="pb">alweer mijn oprechte deelneming.<br><br>Ff een mooi citaatje nog:<br><br>Kees van Wonderen, ooggetuige, had geen tv-beelden meer nodig om zijn ergernis uit te spreken. Hij begreep niet dat de goal zo werd opgehemeld. ''Doodziek ben ik ervan. Van der Vaart was helemaal uit balans. Wat hij deed, was puur geluk. Dit is geen uitgespeelde goal. Van der Vaart heeft wel individuele klasse, dat zal ik niet ontkennen, maar dit doelpunt is daar geen bewijs van. Het zou hem sieren als hij dat toegeeft.''</div>
+</article>
+<article class="post" data-ts="20031213111200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-12-13 11:12</span></div>
+  <div class="pb">Dan kan ik natuurlijk niet achterblijven. Jongens ajacieden, echt mijn welgemeende condoleances! Ik begrijp dat het voor de enkeling onder jullie (ik noem geen naam) die aan het begin van het seizoen nog uitging van het winnen de Champions League (net als vorig seizoen en het seizoen daarvoor) extra moeilijk is. Nu niet eens overwinteren in de uefa-cup...<br><br></div>
+</article>
+<article class="post" data-ts="20031213184700" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-12-13 18:47</span></div>
+  <div class="pb">haha ik vroeg me al af waar die bleef. Dank je wel MB je steekt ons in deze moeilijke tijden een broodnodig hart onder de riem.</div>
+</article>
+<article class="post" data-ts="20031213191800" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2003-12-13 19:18</span></div>
+  <div class="pb">Gelukkig hebben we binnenkort weer een fan van de enige "nederlandse" club die dit jaar overwintert in ons midden.</div>
+</article>
+<article class="post" data-ts="20031217032200" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-12-17 03:22</span></div>
+  <div class="pb">Wel Nederlandse club geen Hollandse club (PSV ligt immers niet in Noord- of Zuid-Holland.)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

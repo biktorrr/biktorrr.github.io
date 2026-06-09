@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vanavond</h1>
+<p class="tm">9 posts · started 2007-10-26 08:21 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071026082100" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2007-10-26 08:21</span></div>
+  <div class="pb">Dit weekend is er weer veel bokbier in de Beurs van Berlage. Dus vanavond een keer geen Cantine, Brouwerij 't IJ, Scharrebier, Nieuwmarkt of Heinekenplein.<br>Ik kan er rond 18/19 uur zijn. Wie komen er nog?</div>
+</article>
+<article class="post" data-ts="20071026085600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-10-26 08:56</span></div>
+  <div class="pb">Kan er wel een gebruiken. Rond een uur of 20u schuif ik aan. (Zijn jullie er dan nog?)<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20071026092900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-10-26 09:29</span></div>
+  <div class="pb">ik heb hier om 16u al een borrel, ik weet niet precies hoe lang ik daar ben, maar als het een beetje aansluit ben ik misschien wel van de partij.<br><br>Ik bel wel even tzt.<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071026095100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-10-26 09:51</span></div>
+  <div class="pb">Ik kijk nog even wanneer ik wil komen, ik denk aan zondagavond omdat het dan relatief rustig is. Maar dan loop ik natuurlijk wel het risico dat het bier op is. <!--145.221.24.7--></div>
+</article>
+<article class="post" data-ts="20071026102600" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2007-10-26 10:26</span></div>
+  <div class="pb">Ben ook even van de partije...<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071026103700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2007-10-26 10:37</span></div>
+  <div class="pb">ik ook, alleen wel aan de late kant. Wel afgesproken met een ex collega daar.<!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20071026111400" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-10-26 11:14</span></div>
+  <div class="pb">Ik moet eerst nog zzalvoetballen om 18.45. Daarna heb ik mogelijk wel grote dorst. Ik laat nog van me horen.<!--62.41.69.18--></div>
+</article>
+<article class="post" data-ts="20071026115500" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2007-10-26 11:55</span></div>
+  <div class="pb">ik haak aan, heb tot 17.00 college op de uva, daarna bierrrr. als het te druk wordt later wildemannetje oid?<!--194.151.219.5--></div>
+</article>
+<article class="post" data-ts="20071027020000" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2007-10-27 02:00</span></div>
+  <div class="pb">Wat een Bockboeren zeg. Waar waren jullie nou? Kwam alleen Majort en Jazz tegen. Een een stucks of wat Bockbier. Hoogh.<!--82.134.255.90--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

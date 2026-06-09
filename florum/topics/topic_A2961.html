@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd Panda Vrouwtje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd Panda Vrouwtje</h1>
+<p class="tm">12 posts · started 2010-09-16 06:38 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100916063800" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2010-09-16 06:38</span></div>
+  <div class="pb">Volgens mijn kalender is het Panda Vrouwtje vandaag jarig!<br>Gefeliciteerd lieve Rije....</div>
+</article>
+<article class="post" data-ts="20100916064200" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-09-16 06:42</span></div>
+  <div class="pb">Lief Panda Vrouwtje. Gefeliciteerd! Nu wachten of de taart in dit topiquille gaat vallen of in dat andere felicitatietopiquille. </div>
+</article>
+<article class="post" data-ts="20100916072400" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2010-09-16 07:24</span></div>
+  <div class="pb">Gefeliciteerd, lieve Panda! Weer een Pandajaar erop. Ik zet in op het andere topic qua felicitaart.</div>
+</article>
+<article class="post" data-ts="20100916073600" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2010-09-16 07:36</span></div>
+  <div class="pb">gefeliciteerd! ik laat de taart over de kenoobster..</div>
+</article>
+<article class="post" data-ts="20100916091400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2010-09-16 09:14</span></div>
+  <div class="pb">En van mij ook gefeliciteerd pandavrouwtje!</div>
+</article>
+<article class="post" data-ts="20100916102000" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2010-09-16 10:20</span></div>
+  <div class="pb">Gefeliciteerd! Ik zal een mooie bamboeplant kopen voor je nieuwe huisje <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br></div>
+</article>
+<article class="post" data-ts="20100916102100" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2010-09-16 10:21</span></div>
+  <div class="pb">(die was voor Oli4)<br></div>
+</article>
+<article class="post" data-ts="20100917085300" id="p8">
+  <div class="ph"><span class="pa">Panda Vrouwtje</span><span class="pm">#8 · 2010-09-17 08:53</span></div>
+  <div class="pb">En ook hier: dank jullie wel lieve boys en girls. Ik verheug me erg op de bamboe, mijn oude voorraad (van Mitch en Lexie gekregen) heeft de verhuizing niet overleeft. Binnenkort mogen jullie gezellig komen housewarmen!</div>
+</article>
+<article class="post" data-ts="20100917141700" id="p9">
+  <div class="ph"><span class="pa">Dt-nazi</span><span class="pm">#9 · 2010-09-17 14:17</span></div>
+  <div class="pb">Ook op en rond verjaardagen moet ik hard zijn: overleefd.<br><br>Desalniettemin, en dat doe ik niet vaak: gefeliciteerd, Fr\äulein Panda!</div>
+</article>
+<article class="post" data-ts="20100917155400" id="p10">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#10 · 2010-09-17 15:54</span></div>
+  <div class="pb">De eerste verjaarsgroet van de Dt-nazi. Hij heeft dus ook een zachte kant.</div>
+</article>
+<article class="post" data-ts="20100917184900" id="p11">
+  <div class="ph"><span class="pa">Panda Vrouwtje</span><span class="pm">#11 · 2010-09-17 18:49</span></div>
+  <div class="pb">Inderdaad, dat was wel heel soft van die nazi. Zo leer ik het dus nooit!</div>
+</article>
+<article class="post" data-ts="20100917213900" id="p12">
+  <div class="ph"><span class="pa">Umlaut-nazi</span><span class="pm">#12 · 2010-09-17 21:39</span></div>
+  <div class="pb">Overigens hulde voor de Umlaut op ´Fr\äulein´. Meestal worden op het Florum de Umlauts weggelaten. Je zou bijna gaan denken dat de Dt-nazi daadwerkelijk vanaf een Duitse computer gemaild heeft. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

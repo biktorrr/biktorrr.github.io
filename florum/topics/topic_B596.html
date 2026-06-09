@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>prijsvraag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">prijsvraag</h1>
+<p class="tm">1 post · started 2005-04-17 00:13 by Vi</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050417001300" id="p1">
+  <div class="ph"><span class="pa">Vi</span><span class="pm">#1 · 2005-04-17 00:13</span></div>
+  <div class="pb">"FC Porto is vorig seizoen op oneerlijke wijze aan de landstitel gekomen, claimt Expresso. Het Portugese blad zegt dat 'bronnen binnen het ministerie van justitie' hebben laten lekken dat Porto scheidsrechters omkocht met geld en prostitu\ées om de eigen ploeg te bevoordelen of juist concurrenten te benadelen.<br><br>Scheidsrechter Jacinto Paixao zou hebben bekend dat hem door FC Porto een nachtje met drie Braziliaanse dames van lichte zeden was aangeboden na de thuiswedstrijd tegen Estrela Amadora in januari 2004. De drie vrouwen ontvingen naar verluidt 150 euro. Van de kant van Porto worden alle aantijgingen ontkend. <br><br>Ruim een jaar geleden deed justitie zestig invallen in huizen van scheidsrechters en voetbalbestuurders en arresteerde daarbij zestien personen. De actie, met als codenaam Operatie Gouden Fluit, maakte onderdeel uit van een grootschalig onderzoek naar omkoping van scheidsrechters."<br><br>Nu is de vraag beste lezertjes, slaat die fluit op de dag of de nachtelijke activiteiten van de betreffende scheidsrechters?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

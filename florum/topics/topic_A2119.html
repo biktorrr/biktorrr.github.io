@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nog plannen vrijdag? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">nog plannen vrijdag?</h1>
+<p class="tm">8 posts · started 2007-08-02 22:15 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070802221500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-08-02 22:15</span></div>
+  <div class="pb">Zijn er nog gegadigden voor een herhaling van vorige vrijdagavond, misschien in een van Michiel's andere opties?</div>
+</article>
+<article class="post" data-ts="20070803094600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-08-03 09:46</span></div>
+  <div class="pb">Goed idee. De Kompaszaal op het KNSM-eiland (http://www.kompaszaal.nl/kompaszaal/index.php) heeft een groot terras met uitzicht over het IJ. Je kunt er ook eten. en ze hebben er Zatte...En genoeg mogelijkheden voor afzakkertjes in de buurt. <br>Alexa komt ook. <br>Wybren is op vakantie. <br><br>hoe laat zullen we afspreken?</div>
+</article>
+<article class="post" data-ts="20070803103900" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-08-03 10:39</span></div>
+  <div class="pb">Na uiteraard weer eerst even langs mallie te zijn gegaan kom ik langs. Dus zeg dat ik rond 19.00 wel het kompas gevonden heb.</div>
+</article>
+<article class="post" data-ts="20070803120500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-08-03 12:05</span></div>
+  <div class="pb">ik ben rond een uur of halfzes wel klaar hier, 18u daar afspreken dan?<br><br>Marije komt ook.(!)</div>
+</article>
+<article class="post" data-ts="20070803122200" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2007-08-03 12:22</span></div>
+  <div class="pb">ik ben d'r ook bij.<br>waar kan ik dat kompas vinden (of moet ik gewoon het pijltje op mijn kompas volgen)?</div>
+</article>
+<article class="post" data-ts="20070803125200" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2007-08-03 12:52</span></div>
+  <div class="pb">nou vooruit dan maar</div>
+</article>
+<article class="post" data-ts="20070803142500" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2007-08-03 14:25</span></div>
+  <div class="pb">Leuk! Dat wordt nog gezellig. 18 uur is prima. De Kompaszaal is te vinden op het KNSM-eiland, KNSM-Laan 311. Het is in hetzelfde gebouw als de Sissyboy alleen dan wat verder doorlopen de KNSM-laan af. <br></div>
+</article>
+<article class="post" data-ts="20070803154000" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-08-03 15:40</span></div>
+  <div class="pb">Ik ben er iets na 19u.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

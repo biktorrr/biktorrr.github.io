@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stedelijk Gymnasium – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Stedelijk Gymnasium</h1>
+<p class="tm">11 posts · started 2004-02-25 22:23 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040225222300" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-02-25 22:23</span></div>
+  <div class="pb">Kreeg dit net in mailbox:<br><br>Hallo,<br><br>Het is al weer een tijdje geleden sinds we het Stedelijk achter ons hebben<br>gelaten. Sommigen zijn al aan het werk, anderen studeren nog. Het is nog geen<br>mijlpaal, nu bijna 7 jaar verder, maar toch lijkt het ons leuk om iedereen weer<br>eens te zien en bij te praten. <br><br>We zijn zaterdag 17 april bij Fid\èl in de Korte Veerstraat rond een uurtje of<br>negen. Als je zin hebt om ook te komen dan ben je welkom.<br><br>Om iedereen te kunnen bereiken willen je vragen dit mailtje door te sturen naar<br>iedereen waarmee je nog contact hebt van onze oude klas/jaar<br><br>Tot dan <br><br>Adeodat, Jeroen en Luuk<br></div>
+</article>
+<article class="post" data-ts="20040226101500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-02-26 10:15</span></div>
+  <div class="pb">Lekker voor je.</div>
+</article>
+<article class="post" data-ts="20040226145200" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2004-02-26 14:52</span></div>
+  <div class="pb">MMMKAY</div>
+</article>
+<article class="post" data-ts="20040226145900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-02-26 14:59</span></div>
+  <div class="pb">Haha, nu weet Michiel het ook.</div>
+</article>
+<article class="post" data-ts="20150410125558" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2015-04-10 12:55</span></div>
+  <div class="pb">Beste Stedelijk boys,<br><br>Overwegen jullie ook om in juni onze Alma Stedelijk Mater te bezoeken voor het 125e Lustrum?<br><br>Beffoindre</div>
+</article>
+<article class="post" data-ts="20150411005332" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2015-04-11 00:53</span></div>
+  <div class="pb">Hmm, beetje dansen in de Patro, m'n meissie en schoonmoeder erbij, zou zomaar 'ns kunnen</div>
+</article>
+<article class="post" data-ts="20150420162518" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2015-04-20 16:25</span></div>
+  <div class="pb">Verder nog luitjes?</div>
+</article>
+<article class="post" data-ts="20150420221110" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2015-04-20 22:11</span></div>
+  <div class="pb">"Beetje dansen in de Patro"? Je zult bedoelen: doen alsof ik een beetje aan het dansen ben in de Patro, maar ondertussen iedereen laten weten hoe succesvol ik ben. Dat is tenminste bonton op reunies heb ik me laten vertellen: laten zien hoe ver je het geschopt hebt.</div>
+</article>
+<article class="post" data-ts="20150421123240" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2015-04-21 12:32</span></div>
+  <div class="pb">Daar tik ik m dan graag voor aan</div>
+</article>
+<article class="post" data-ts="20150525221449" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2015-05-25 22:14</span></div>
+  <div class="pb">Boys, gaan we 's middags of 's avonds</div>
+</article>
+<article class="post" data-ts="20150525221507" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2015-05-25 22:15</span></div>
+  <div class="pb">?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

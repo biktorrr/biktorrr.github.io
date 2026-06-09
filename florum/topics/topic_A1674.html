@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Op de radio: douce vie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Op de radio: douce vie</h1>
+<p class="tm">7 posts · started 2006-01-17 19:25 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060117192500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-01-17 19:25</span></div>
+  <div class="pb">Wellicht aan de late kant, maar als jullie mij allemaal intelligente dingen over erfenissen in Franse dorpjes op een KRO-programma (Dolce Vita) willen horen zeggen, moeten jullie je transistor afstemmen op 747 AM en wel om 8.15. Vroeg, maar dan heb je wel wat.</div>
+</article>
+<article class="post" data-ts="20060118090500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-01-18 09:05</span></div>
+  <div class="pb">9.05: volgens mij ben je al geweest inderdaad, ze hebben het nu over een Belg met een nieuwe zithoek...<br><br><br>Journalistiek erfgoed<br>Olivier van Beemen schrijft voor de regionale kranten van persbureau GPD, Historisch Nieuwsblad en het Vlaamse opinietijdschrift Knack.<br>In oktober 2002 vestigde hij zich in Parijs als freelance correspondent voor Het Parool. Tegelijkertijd rondde hij daar zijn scriptie af voor de studie Franse taal en cultuur aan de Universiteit van Amsterdam. Aan die universiteit studeerde hij ook journalistiek. Van Beemen houdt een weblog bij op www.oliviervanbeemen.blogspot.com. </div>
+</article>
+<article class="post" data-ts="20060118091600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-01-18 09:16</span></div>
+  <div class="pb">Ik was lekker Rob Trip aan het luisteren. Maar goed dat je het tot de nationale radio hebt geschopt!</div>
+</article>
+<article class="post" data-ts="20060118130700" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2006-01-18 13:07</span></div>
+  <div class="pb">Erg veel hebben jullie niet gemist. Was ook niet zo goed in vorm zo vroeg op de ochtend. </div>
+</article>
+<article class="post" data-ts="20060118133900" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2006-01-18 13:39</span></div>
+  <div class="pb">Was je live? En hoe lang was je aan het orakelen dan?</div>
+</article>
+<article class="post" data-ts="20060118161700" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2006-01-18 16:17</span></div>
+  <div class="pb">Ik was een minuutje of 10 live aan 't orakelen. Over lofts in Quartier Latin en dergelijke. Als je echt ge\ïnteresseerd bent kun je het <a href="http://www.kro.nl/dolcevita/Archief2006/060118erfenis.asp?ComponentID=229024&SourcePageID=121407"> hier</a> beluisteren, denk ik (zelf niet geprobeerd). Ik zat in het eerste deel vd uitzending.</div>
+</article>
+<article class="post" data-ts="20060118170100" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-01-18 17:01</span></div>
+  <div class="pb">olivier begint op 14.15<br>Je klonk inderdaad niet echt vrolijk :)<br><br>Een tien voor de uitspraak van die Franse dorpsnamen trouwens...<br><br><br>cool</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

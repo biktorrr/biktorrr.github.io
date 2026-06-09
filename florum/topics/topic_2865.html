@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De Grote Datum-Vrijhouden-Rebus – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De Grote Datum-Vrijhouden-Rebus</h1>
+<p class="tm">14 posts&nbsp;·&nbsp;started 2010-04-14 15:27 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100414152700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1&nbsp;·&nbsp;2010-04-14 15:27</span></div>
+  <div class="pb"><img src="http://staff.science.uva.nl/~vdeboer/floraboys/datumvrij.JPG"> <br>vrijdhouden gaarne<br><br><br><br>uiteraard ijs en weder en professoren dienende...</div>
+</article>
+<article class="post" data-ts="20100414153000" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2&nbsp;·&nbsp;2010-04-14 15:30</span></div>
+  <div class="pb">Dertig september twaalf uur. Yes, ik boek de Thalys!</div>
+</article>
+<article class="post" data-ts="20100414155500" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3&nbsp;·&nbsp;2010-04-14 15:55</span></div>
+  <div class="pb">Ik zal het zelf met de ICE moeten doen. Maar ik hou ´m vrij. </div>
+</article>
+<article class="post" data-ts="20100414160700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4&nbsp;·&nbsp;2010-04-14 16:07</span></div>
+  <div class="pb">Dat wordt een verlossende donderdag!</div>
+</article>
+<article class="post" data-ts="20100414161400" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5&nbsp;·&nbsp;2010-04-14 16:14</span></div>
+  <div class="pb">Tik.</div>
+</article>
+<article class="post" data-ts="20100414164500" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6&nbsp;·&nbsp;2010-04-14 16:45</span></div>
+  <div class="pb">bizar, denk je voor het eerst in 12 jaar eens aan Alf, staat ie een uur later in een rebus. <br><br>Ik heb m nog niet ontcijferd maar neem aan dat het je promotie gaat. Een tik lijkt me dus wel gepast.<br><br>*tik*</div>
+</article>
+<article class="post" data-ts="20100414172400" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7&nbsp;·&nbsp;2010-04-14 17:24</span></div>
+  <div class="pb">Tiks!</div>
+</article>
+<article class="post" data-ts="20100414192600" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8&nbsp;·&nbsp;2010-04-14 19:26</span></div>
+  <div class="pb">Top<br>*Tik*</div>
+</article>
+<article class="post" data-ts="20100415113900" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9&nbsp;·&nbsp;2010-04-15 11:39</span></div>
+  <div class="pb">Staat in mijn agenda!</div>
+</article>
+<article class="post" data-ts="20100415215400" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10&nbsp;·&nbsp;2010-04-15 21:54</span></div>
+  <div class="pb">JEIT, datums!</div>
+</article>
+<article class="post" data-ts="20100415221600" id="p11">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#11&nbsp;·&nbsp;2010-04-15 22:16</span></div>
+  <div class="pb">staat in mijn agenda maar waarschijnlijk aftiks.. <br><br>comibnatie Amber, Twan en Alf is genoeg voor een promotie in rebussologie op de universiteit van het Leven.</div>
+</article>
+<article class="post" data-ts="20100417130700" id="p12">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#12&nbsp;·&nbsp;2010-04-17 13:07</span></div>
+  <div class="pb">*tik*<br>gefeliciteerd</div>
+</article>
+<article class="post" data-ts="20100417154500" id="p13">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#13&nbsp;·&nbsp;2010-04-17 15:45</span></div>
+  <div class="pb">Een dubbel-doctoraat, UvA-UvhL! Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20100418213800" id="p14">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#14&nbsp;·&nbsp;2010-04-18 21:38</span></div>
+  <div class="pb">Gefeliciteerd, staat er bij mij ook in.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gelukkig 2012 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gelukkig 2012</h1>
+<p class="tm">12 posts · started 2012-01-01 02:19 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120101021933" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2012-01-01 02:19</span></div>
+  <div class="pb">Gelukkig nieuwjaar. Pour tous les baquilles & knaquilles!!!</div>
+</article>
+<article class="post" data-ts="20120101022012" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2012-01-01 02:20</span></div>
+  <div class="pb">Tik aan alle Boys en Girls!</div>
+</article>
+<article class="post" data-ts="20120101022130" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2012-01-01 02:21</span></div>
+  <div class="pb">***TIK***!</div>
+</article>
+<article class="post" data-ts="20120101023549" id="p4">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#4 · 2012-01-01 02:35</span></div>
+  <div class="pb">Alaaf!</div>
+</article>
+<article class="post" data-ts="20120101023600" id="p5">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#5 · 2012-01-01 02:36</span></div>
+  <div class="pb">Alaaf!</div>
+</article>
+<article class="post" data-ts="20120101025635" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2012-01-01 02:56</span></div>
+  <div class="pb">Veel aantikken en mooie potsers drinken!<br><br>Tik tik en nog eens tik!!!</div>
+</article>
+<article class="post" data-ts="20120101032101" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2012-01-01 03:21</span></div>
+  <div class="pb">vanuit het verleden, fijn 2012, k moet nog 2.5 uurtjes spenderen in 2011</div>
+</article>
+<article class="post" data-ts="20120101124737" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2012-01-01 12:47</span></div>
+  <div class="pb">*Tik!*</div>
+</article>
+<article class="post" data-ts="20120101131428" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2012-01-01 13:14</span></div>
+  <div class="pb">Een hoogh jaar gewenscht!</div>
+</article>
+<article class="post" data-ts="20120101155501" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2012-01-01 15:55</span></div>
+  <div class="pb">Bonne ann\ée !</div>
+</article>
+<article class="post" data-ts="20120102111116" id="p11">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#11 · 2012-01-02 11:11</span></div>
+  <div class="pb">Boys, girls, kids: ook een geweldig 2012 van Lara, Luc en mijzelf!<br></div>
+</article>
+<article class="post" data-ts="20120102132720" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2012-01-02 13:27</span></div>
+  <div class="pb">Tik. Namens de Pluysen ook een mooi 2012!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

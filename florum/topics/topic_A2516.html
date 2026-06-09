@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kredietcrisis Pokor – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kredietcrisis Pokor</h1>
+<p class="tm">10 posts · started 2008-10-14 20:42 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081014204200" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2008-10-14 20:42</span></div>
+  <div class="pb">Heren en Dames, aangezien ik slecht in de slappe was zit en op korte termijn een aanvulling op mijn liquide middelen kan gebruiken stel ik voor om een pokersessie te beleggen. <br><br>21u bij Victor as vrijdag?</div>
+</article>
+<article class="post" data-ts="20081014220600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-10-14 22:06</span></div>
+  <div class="pb">an sich een goed plan. Alleen is vrijdagavond de GOG altijd out of bounds :)</div>
+</article>
+<article class="post" data-ts="20081014233000" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2008-10-14 23:30</span></div>
+  <div class="pb">Ik had dan al iets staan... Zaterdag kaartjes leggen?</div>
+</article>
+<article class="post" data-ts="20081015115500" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-10-15 11:55</span></div>
+  <div class="pb">Oh, en ik kan vrijdag toch, heb zelfs beschikking over Residence De Nood! Minimum inleg 1K, gaat om het spel niet om de knikkers want met de inleg beginnen we een zeer agressief beleggingsclubje (verdere inlichtingen bij Merlijn).</div>
+</article>
+<article class="post" data-ts="20081017125500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2008-10-17 12:55</span></div>
+  <div class="pb">PH ik bel je nog wel even voor vanavond, door de recente daling van ING is het nu tijdelijk 3-halen-1-betalen voor aandeeltjes. Dus liquide middelen zijn zeer welkom.</div>
+</article>
+<article class="post" data-ts="20081017130900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2008-10-17 13:09</span></div>
+  <div class="pb">Hmpf. Geloof niet dat er iets anders is vanavond. Dan doe ik maar mee.</div>
+</article>
+<article class="post" data-ts="20081017133500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2008-10-17 13:35</span></div>
+  <div class="pb">Geen kompaszaaltje??????!!!</div>
+</article>
+<article class="post" data-ts="20081017133700" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2008-10-17 13:37</span></div>
+  <div class="pb">Dit is dan ook wel weer een mooi advies:<br><br><a href="http://bigpicture.typepad.com/comments/2008/10/chill-out.html">http://bigpicture.typepad.com/comments/2008/10/chill-out.html</a></div>
+</article>
+<article class="post" data-ts="20081017144100" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-10-17 14:41</span></div>
+  <div class="pb">ok, ik ben er ook. Hoe laat?</div>
+</article>
+<article class="post" data-ts="20081017151500" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2008-10-17 15:15</span></div>
+  <div class="pb">ik ben er vanavond niet bij. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

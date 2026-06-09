@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morgen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Morgen</h1>
+<p class="tm">10 posts · started 2008-04-10 09:10 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080410091000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2008-04-10 09:10</span></div>
+  <div class="pb">Boys, bitches,<br><br>Morgen, vrijdag 11 april, knallen? Wie doet er mee?</div>
+</article>
+<article class="post" data-ts="20080410143700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2008-04-10 14:37</span></div>
+  <div class="pb">Bij zonneschijn en een vroege opkomst lijkt mij de kinderwagenvriendelijke omgeving van brouwerij 't IJ geschikt. </div>
+</article>
+<article class="post" data-ts="20080410153000" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2008-04-10 15:30</span></div>
+  <div class="pb">Ik knal morgenochtend in Den Haag en waarschijnlijk morgenavond pas na 24u in Amsterdam met enkele lagere schoolvrinden. Reken dus niet op mij, tenzij....</div>
+</article>
+<article class="post" data-ts="20080411092200" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2008-04-11 09:22</span></div>
+  <div class="pb">ik ben er, Jur komt ook<br><br>1800 ofzo?</div>
+</article>
+<article class="post" data-ts="20080411110900" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-04-11 11:09</span></div>
+  <div class="pb">klinkt leuk. Ik ben wel laat(er)</div>
+</article>
+<article class="post" data-ts="20080411112200" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-04-11 11:22</span></div>
+  <div class="pb">Heulaasjes, weer een gemiste kans om Amber te zien :(</div>
+</article>
+<article class="post" data-ts="20080411114200" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-04-11 11:42</span></div>
+  <div class="pb">Ik ben er rond half acht. Cootje wil ook wat doen.</div>
+</article>
+<article class="post" data-ts="20080411115800" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2008-04-11 11:58</span></div>
+  <div class="pb">Oke. Alexa, Amber en ik zijn om 18 uur bij 't IJ. Het moet wel een beetje lekker weer zijn want binnen is niet geschikt voor families. <br>Als we dan rond 19.30 uur naar de kantine wandelen kunnen we daar wat eten. Alexa en Amber gaan dan natuurlijk wel naar huis.<br>Okeetjes?</div>
+</article>
+<article class="post" data-ts="20080411121800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-04-11 12:18</span></div>
+  <div class="pb">okeetjes mijnerzijds, ik zal er tegen 19u zijn</div>
+</article>
+<article class="post" data-ts="20080412125800" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2008-04-12 12:58</span></div>
+  <div class="pb">voor al uw feesten en partijen:<br>http://www.johnnygo.nl/laag.html</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

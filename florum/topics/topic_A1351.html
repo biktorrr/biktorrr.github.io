@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stukje rechtvaardiging – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stukje rechtvaardiging</h1>
+<p class="tm">2 posts · started 2004-11-12 11:19 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041112111900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-11-12 11:19</span></div>
+  <div class="pb">even een stukje rechtvaardiging voor de floraboys bananen-voorkant:  er zijn paramilitaire trainingskampen in dit schitterende kikkerlandje:<br><br>LIEMPDE - De nationale recherche heeft in de omgeving van Liempde in Brabant en andere locaties in Nederland invallen gedaan. Volgens burgemeester J. van Homelen van Boxtel en een woordvoerder van het landelijk parket van het Openbaar Ministerie gaat het in Liempde om een opleidingscentrum van de PKK. <br><br>De inval is gedaan in kampeerboerderij De Mus'donck aan de Gemondesestraat. Op de kampeerboerderij zijn 29 aanhoudingen verricht, zegt de woordvoerder van het OM. Van Homelen zei ook nog dat er verder in het land invallen in kader van dit onderzoek worden gedaan en dat de camping al geruime tijd als opleidingscentrum werd gebruikt. <br><br>De omgeving van de kampeerboerderij bij Liempde is afgezet. De zegsman van het OM benadrukt dat het niet gaat om een actie in verband met de recente ontwikkelingen met radicale moslims in Nederland. <br><br></div>
+</article>
+<article class="post" data-ts="20041112114900" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-11-12 11:49</span></div>
+  <div class="pb">Ik denk dat elk land wel paramilitaire trainingskampen heeft. Vooral Belgie en Denemarken schijnen hierin te grossieren. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

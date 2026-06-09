@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bik geeft heel PHK verbale panna – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bik geeft heel PHK verbale panna</h1>
+<p class="tm">6 posts · started 2005-12-20 14:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051220140200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2005-12-20 14:02</span></div>
+  <div class="pb">Gest:<br>Verzamel hier de inconsequenties van de "nieuwe spelling", vind de argumenten voor en vermeld meteen even in welke spelling jij nog schrijft.<br><br>lokaal - localiteit (k/c)<br>christus - Kerstman (hoofdletter)<br>Rooms-katholiek - oudkatholieke (hoofdletter)<br>hocus pocus - alleen-zijn (verbindingsstreepje)<br>arbodienst - Arboraad (hoofdletter)<br>Joden (als bevolkingsgroep) - joden (als religieuze groep)<br>----------<br><u>Biggy</u><br><h2> hoe ik ook spel, ik spel altijd met mijn eigen spelling</h2><br></div>
+</article>
+<article class="post" data-ts="20051220144800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-12-20 14:48</span></div>
+  <div class="pb">@ Tijmen: Dat is inderdaad een verbale panna die er niet om liegt. Goed speurwerk!<br><br>@ Biggy: Zou je je eigen spelling ook kunnen beschrijven. Voor de buitenstaander is het soms moeilijk te geloven dat i consequent gebruikt wordt namelijk. <br><br>*Benen dicht*</div>
+</article>
+<article class="post" data-ts="20051220152500" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2005-12-20 15:25</span></div>
+  <div class="pb">@ Merrel<br>dat maakt dus niet uit.. Ook al verander ik van spelling midden in een zin, dan is het nog mijn eigen spelling, wat die ook is. </div>
+</article>
+<article class="post" data-ts="20051220154600" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2005-12-20 15:46</span></div>
+  <div class="pb">Een pijnlijke panna die gevoeld wordt tot in Forbach, een stadje vlak bij de geboortegronden van Alexa. (voor wie geinteresseerden zou zijn wat ik daar in godsnaam doe: zie mijn blog)</div>
+</article>
+<article class="post" data-ts="20051220161300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2005-12-20 16:13</span></div>
+  <div class="pb">@ Bik: Tja die verbale panna zit. Stukje post-modernistisch spellen dus. Maar filosofeer je er wel 's over, lieve Bikkie, dat jouw spelling het leesgemak soms niet ten goede komt. Ik bedoel: als ik *nu* besluit datikmuhaangeenkonfentiemeerhoeftehouwen, dan bevordert dat niet altijd het leesplezier. <br><br>@ Olivier: Ik zal 's gaan kijken als m'n secretaresse aangeeft dat ik een momentje voor mezelf heb.</div>
+</article>
+<article class="post" data-ts="20051220180900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2005-12-20 18:09</span></div>
+  <div class="pb">@ BIK, nogmaals: Ik zie dat je wel op een ander topic heb gepost, maar niet op de mijne. Mag ik concluderen dat mijn spitsvondige repliek niet afgestraft gaat worden met een verbale panna?<br><br>@ Olivier, nogmaals: Ik heb je blog gelezen en heb mijn eruditie via een bescheiden comment tentoon gespreid. Je bent er lustig op los aan het tikken trouwens. Ik kan nog geen pap zeggen, of er staan alweer drie nieuwe tiksels on-line. Hulde!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

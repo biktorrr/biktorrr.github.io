@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B-pop – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">B-pop</h1>
+<p class="tm">4 posts&nbsp;·&nbsp;started 2010-05-02 11:10 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100502111000" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1&nbsp;·&nbsp;2010-05-02 11:10</span></div>
+  <div class="pb">Gaan er nog mensen naar bevrijdingspop? Bijv. Junkie XL om 15:15? De rest ken ik niet. Ik ben er een beetje uit lately. Overigens onder voorbehoud betreffende mijn fitheid. Qua weder ziet het er overigens redelijk uit.</div>
+</article>
+<article class="post" data-ts="20100502115000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2010-05-02 11:50</span></div>
+  <div class="pb">Ja, ik was wel van plan te gaan.</div>
+</article>
+<article class="post" data-ts="20100502115400" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3&nbsp;·&nbsp;2010-05-02 11:54</span></div>
+  <div class="pb">ik ook, alleen maar 's avonds<br></div>
+</article>
+<article class="post" data-ts="20100502125800" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4&nbsp;·&nbsp;2010-05-02 12:58</span></div>
+  <div class="pb">Hoe, wat, waar precies nog niet helemaal duidelijk, maar in elk geval ergens die dag: present. Opnieuw hoogstwaarschijnlijk in gezelschap van /\/\&#8721</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

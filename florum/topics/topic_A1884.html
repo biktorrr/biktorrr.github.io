@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cheique werkgroepdocenten – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cheique werkgroepdocenten</h1>
+<p class="tm">6 posts · started 2006-10-28 12:12 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061028121200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-10-28 12:12</span></div>
+  <div class="pb">Amici, <br><br>Vanaf heden staan de cijfers van de papers van O&M-I online op blackboard. U kunt het via "view<br>grades" online bekijken middels uw blackboard-account. Bij enige onduidelijkheden verzoek ik u vriendelijk via de e-mail contact met mij op te nemen. <br><br>Hartelijke groet, <br><br>Bart C.A. van Horck <br>Werkgroepdocent O&M-I</div>
+</article>
+<article class="post" data-ts="20061028134900" id="p2">
+  <div class="ph"><span class="pa">Piet Hein</span><span class="pm">#2 · 2006-10-28 13:49</span></div>
+  <div class="pb">In mijn tijd hing er een briefje met cijfers naast de docenten kamer... Waar gaat het heen met de wereld. </div>
+</article>
+<article class="post" data-ts="20061029195200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-10-29 19:52</span></div>
+  <div class="pb">Belangrijker nog: heb je het tentamen gehaald?</div>
+</article>
+<article class="post" data-ts="20061030095100" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-10-30 09:51</span></div>
+  <div class="pb">dat hoor ik snel, nakijktijd is meestal drie weken ofzo. Deze werkgroepen hoefde ik btw niet te volgen aangezien ik het deed als keuzevak.<br>Er even vannuitgaande dat ik deze twee tentamens gehaald heb moet ik er nog twee de week voor kerst en dan zijn alle punten binnen. Woensdag komt Frankie P. eten, dan kunnen we het nog even hebben over Afstudeer.Idols.<br></div>
+</article>
+<article class="post" data-ts="20061113124600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-11-13 12:46</span></div>
+  <div class="pb">update:<br>Bestuurskunde 1: 6,5<br>Organisatie en Manag(e)ment: 8,0<br><br>2down, 2 to go.<br></div>
+</article>
+<article class="post" data-ts="20061113132800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-11-13 13:28</span></div>
+  <div class="pb">Jeyt! Hooghe teijdingh!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

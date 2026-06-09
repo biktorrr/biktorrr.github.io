@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Had het AD het toch goed,alleen verkeerde club. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Had het AD het toch goed,alleen verkeerde club.</h1>
+<p class="tm">8 posts · started 2002-05-13 23:07 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020513230700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-05-13 23:07</span></div>
+  <div class="pb">Adriaanse en Van Gaal naar FC Barcelona  <br> <br> Amsterdam, 13 mei 2002  <br> <br>Louis van Gaal keert terug als hoofdcoach van Barcelona. De oud-trainer van Ajax volgt Carlos Rexach op bij de club. Deze had eerder al aangegeven na dit seizoen te zullen vertrekken. Co Adriaanse wordt Van Gaals assistent. Beiden tekenden een contract voor twee jaar.<br> <br></div>
+</article>
+<article class="post" data-ts="20020513233600" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2002-05-13 23:36</span></div>
+  <div class="pb">weet je zeker olivier, dat je van stageplek wil wisselen....een baan voordat het een baan is.</div>
+</article>
+<article class="post" data-ts="20020514115200" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-05-14 11:52</span></div>
+  <div class="pb">dat van Adriaanse is een gerucht.</div>
+</article>
+<article class="post" data-ts="20020515021700" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-05-15 02:17</span></div>
+  <div class="pb">AD topkrant.<br><br>Jorritsma en de bv van haar man hebben ze ook maar weer lekker te kakken gezet. Lekker vechten tegen het establishment. <br>Jammer dat er inene zoveel nieuws overheen kwam.<br><br>Daarom herhaal ik: AD topkrant. <br><br>Vanaf heden geldt trouwens tevens: Parool heldenkrant<br><br>Mogen jullie raden waar mijn komende stage is</div>
+</article>
+<article class="post" data-ts="20020515104000" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-05-15 10:40</span></div>
+  <div class="ps">co&#x27;tje niet</div><div class="pb">co'tje misschien niet dus assistente, een andere knakker die bij knvb werkt schijnt ook in de running te zijn</div>
+</article>
+<article class="post" data-ts="20020517131700" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2002-05-17 13:17</span></div>
+  <div class="pb">had het AD toch nog nieuws voordat het nieuws was! Jonker ipv Adriaanse.</div>
+</article>
+<article class="post" data-ts="20020517133200" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-05-17 13:32</span></div>
+  <div class="pb">Oli4, heb je geen stageverzoek ingediend bij de Pijpkrant?</div>
+</article>
+<article class="post" data-ts="20020517173700" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2002-05-17 17:37</span></div>
+  <div class="pb">Daarvoor is mijn opleiding ontoereikend. Via het 'informele circuit' heb ik nog een poging gewaagd. Tevergeefs.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

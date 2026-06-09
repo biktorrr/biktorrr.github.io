@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Turkse Viagra – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Turkse Viagra</h1>
+<p class="tm">8 posts · started 2004-05-14 09:50 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040514095000" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2004-05-14 09:50</span></div>
+  <div class="pb">De Turkse Viagra schijnt goed te werken volgens een vriend van me.En euh je hoeft er niet eens voor naar de apotheek..<br><br>http://www.pixum.nl/members/davidovic/?act=a_view&album=1277902&i_pos=56&ktw=509f1da15bed4092ac28f2fdadf5866a</div>
+</article>
+<article class="post" data-ts="20040514112500" id="p2">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#2 · 2004-05-14 11:25</span></div>
+  <div class="pb">euh... heb je tijd over ofzo???? Maar verder is het wel een apart plaatje <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20040514113500" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2004-05-14 11:35</span></div>
+  <div class="pb">eeeeeh?</div>
+</article>
+<article class="post" data-ts="20040514151900" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2004-05-14 15:19</span></div>
+  <div class="pb">dan denk je dat is Tijmen donderdagmiddagspam, maar nee.. het is Lara die dit ineens er in knalt..</div>
+</article>
+<article class="post" data-ts="20040514153800" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-05-14 15:38</span></div>
+  <div class="pb">Wie a zegt, moet ook b zeggen:<br><br><IMG SRC="http://www.pixum.nl/members/davidovic/?act=a_view&album=1277902&i_pos=56&ktw=509f1da15bed4092ac28f2fdadf5866a"></div>
+</article>
+<article class="post" data-ts="20040514153800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-05-14 15:38</span></div>
+  <div class="pb"><IMG SRC="http://www.pixum.nl/int/img.php?u=davidovic&t=2&i3=4ccj0d3e8cs0jogdg33tcs611e0664t6"><br><br>En nog een rrronde!</div>
+</article>
+<article class="post" data-ts="20040514153900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2004-05-14 15:39</span></div>
+  <div class="pb">Nou ja, fuck het ook maar lekker. </div>
+</article>
+<article class="post" data-ts="20040514155500" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-05-14 15:55</span></div>
+  <div class="pb">Goed in de context gebleven Merlijn.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

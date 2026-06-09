@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REFT film op CD – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">REFT film op CD</h1>
+<p class="tm">5 posts · started 2004-03-31 23:23 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040331232300" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2004-03-31 23:23</span></div>
+  <div class="pb">Ik heb hier de master CD van het REFT 2003 liggen, wil hier best wat copietjes van maken maar dan kan de film dus alleen bekeken worden op de computer.<br><br>Is het misschien een idee als iemand met een dvd-brander, deze CD ff omzet naar DVD ? </div>
+</article>
+<article class="post" data-ts="20040401104300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-04-01 10:43</span></div>
+  <div class="pb">eh, ik heb een DVD-brander...<br><br></div>
+</article>
+<article class="post" data-ts="20040401121400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2004-04-01 12:14</span></div>
+  <div class="pb">Hey Vic, is het een idee als ik jou de 'master' cd geef en jij dit dan omzet naar dvd en dan ff copietjes draait voor degene die copy willen.<br><br>Als het kan, ik wil wel een dvd ervan en ook graag de top dvd The Derry Put Project: The Book of Light<br><br>Laat maar ff weten wat het kost.<br><br></div>
+</article>
+<article class="post" data-ts="20040401131800" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-04-01 13:18</span></div>
+  <div class="pb">ja, lijkt me een top-idee, ik maak dan wel een compilatie-DVD van die twee dingen, die mensen kunnen bestellen bij mij.<br><br>Vorige keer kostte de dvd-tjes + hoesjes mij 2,- per stuk, dus als ik weer zo'n partijtje op de kop kan tikken zal de prijs hetzelfde zijn.</div>
+</article>
+<article class="post" data-ts="20040401155200" id="p5">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#5 · 2004-04-01 15:52</span></div>
+  <div class="pb">Ik kan ook nog wel 2 eurides missen voor zon top dvd.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

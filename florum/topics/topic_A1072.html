@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MSNnen met Robin van Persie? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">MSNnen met Robin van Persie?</h1>
+<p class="tm">4 posts · started 2003-12-22 12:57 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031222125700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-12-22 12:57</span></div>
+  <div class="pb">kan je 'm <a href="http://members.msn.com/?mpp=4263~5AAAAAAvAEWxknHtcoYervFF9ZRL6DJqHfn22gi22W7syI7mXdmSze4g$$~5AAAAAAwAGAibcqA25cO45LeCoXRU6BOAlsG3mqxbkRIc$">vragen</a> waarom ze niet punten pakken als de Joduh en PisVee ze laten liggen. </div>
+</article>
+<article class="post" data-ts="20120716124202" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2012-07-16 12:42</span></div>
+  <div class="pb">Zie dat RvP en zijn Bouchra zich hebben laten inspireren door <http://www.youtube.com/watch?v=pCdmiZyyGjQ>dat filmpje</a> over ghettonamen. Mooi!<br><br>"De voetballer werd samen met zijn vrouw Bouchra, zoontje Shaqueel en dochter Dina Layla gespot op het Spaanse eiland Formentera."</div>
+</article>
+<article class="post" data-ts="20120716153623" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2012-07-16 15:36</span></div>
+  <div class="pb">Hee spuit11, die heb ik jaren geleden al gespot, waarmee ik zelfs het topic won!<br><br></div>
+</article>
+<article class="post" data-ts="20120716170134" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2012-07-16 17:01</span></div>
+  <div class="pb">De kracht van de herhaling, Zjoste, daar draait 't om!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

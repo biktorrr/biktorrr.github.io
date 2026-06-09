@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VICTORS FEESTJE: 30 MEI! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VICTORS FEESTJE: 30 MEI!</h1>
+<p class="tm">10 posts · started 2003-05-15 11:05 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030515110500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-05-15 11:05</span></div>
+  <div class="pb">Victors feestje: 30 mei<br><br>Hallo vrienden en vriendinnen en vage kennissen, op 26 mei wordt ik 24 jaar. Nu besef ik dat dit geen mythisch getal is zoals 25 of 50 ofzo.<br> <br>Toch gaan er 24 uur in een dag, zijn het flippo-24-spel en de tv-serie '24' heel gaaf en last but not least gaan er 24 flesjes in een krat. Daarom wou ik het toch maar vieren.<br><br>Dit gaat dan gebeuren 30 mei, om een uur of 21.00u tot +/- 1.00u ofzo aan de Kenaustraat nr 9, dit zal dan zowel in mijn kamertje als in de gang plaatshebben zodat ik hoop dat er voldoende ruimte is.<br><br>Jij bent dus uitgenodigd! En eventuele niet-gemailde/-bereikte aanhang ook. <br><br>Kun je wel even melden of je komt, ofwel via het florum ofwel via de mail of via de goede oude telefoon.<br><br>Tot dan,<br>Victor</div>
+</article>
+<article class="post" data-ts="20030515111100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-15 11:11</span></div>
+  <div class="pb">ZUIPEN!!! Daar ben ik bij!</div>
+</article>
+<article class="post" data-ts="20030515111200" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-05-15 11:12</span></div>
+  <div class="pb">das snel!</div>
+</article>
+<article class="post" data-ts="20030515113200" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2003-05-15 11:32</span></div>
+  <div class="pb">Lijkt me mooi, ga m'n best doen. :)</div>
+</article>
+<article class="post" data-ts="20030515114000" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2003-05-15 11:40</span></div>
+  <div class="pb">ja checken ik ben er..</div>
+</article>
+<article class="post" data-ts="20030515121000" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2003-05-15 12:10</span></div>
+  <div class="ps">lijkt mij</div><div class="pb">top, moet ff checken of mijn agenda het toelaat.. maar reserveer alvast bij deze een plaatsje op de gang</div>
+</article>
+<article class="post" data-ts="20030515182700" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-05-15 18:27</span></div>
+  <div class="pb">Toppie Knallen....een groot feest op de Kenaustraat.!</div>
+</article>
+<article class="post" data-ts="20030515193300" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2003-05-15 19:33</span></div>
+  <div class="pb">pressssssenta</div>
+</article>
+<article class="post" data-ts="20030517144000" id="p9">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#9 · 2003-05-17 14:40</span></div>
+  <div class="pb">Ik ga ook komen hoor gezellie.Nog wensen voor je verjaardag?????????</div>
+</article>
+<article class="post" data-ts="20030517194800" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2003-05-17 19:48</span></div>
+  <div class="pb">ik zal er zijn</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

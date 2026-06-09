@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloraPoll 2: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FloraPoll 2:</h1>
+<p class="tm">8 posts · started 2003-04-04 13:15 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030404131500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-04-04 13:15</span></div>
+  <div class="pb">Je kan hier stemmen.<br><br><!-- v- PollGEAR Code by http://htmlgear.com -v --><br><br><br><br><noscript><br><font face='arial' size='1'> take my poll at:<br><A HREF="http://htmlgear.tripod.com/poll/control.poll?u=mrwanky&i=2&a=render">Flobo2 Poll:</A>   <img src='http://htmlgear.lycos.com/img/log/po_i_getgear.GIF' border='0'><br>htmlGEAR.com</a></font><br></noscript><br><!-- ^- End PollGEAR Code -^ --><br></div>
+</article>
+<article class="post" data-ts="20030404160100" id="p2">
+  <div class="ph"><span class="pa">TvK</span><span class="pm">#2 · 2003-04-04 16:01</span></div>
+  <div class="pb">volgens huidige resultaten moet geloof ik DJ ERik Z uit de kleren onder het kopje Floraporn?<br></div>
+</article>
+<article class="post" data-ts="20030404165800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-04-04 16:58</span></div>
+  <div class="pb">tja we zijn een democracy-driven site dus als de floracieten het willen...<br><br>en trouwens we hebben die foto's al. Dus dat zou makkelijk regelen zijn. Wat dachten we van de DJ met de bijl op de voorpagina</div>
+</article>
+<article class="post" data-ts="20030404171800" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-04-04 17:18</span></div>
+  <div class="pb">moet toegeven, heb op porno gestemd.</div>
+</article>
+<article class="post" data-ts="20030404174700" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2003-04-04 17:47</span></div>
+  <div class="pb">Ik vind een directe doorgave van Iraq tv zeker iets toevoegen (www.dsltv.nl)</div>
+</article>
+<article class="post" data-ts="20030407123900" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-04-07 12:39</span></div>
+  <div class="pb">spannende strijd tussen Timmie en Porno...</div>
+</article>
+<article class="post" data-ts="20030410191500" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2003-04-10 19:15</span></div>
+  <div class="pb">Leuk idee die polls, al zouden ze iets waterdichter moeten, zoals met de SvdM. Daar kon je, meen ik, maar een keer stemmen. Of gold er een erecode? Daar ben ik ook altijd voorstander van.</div>
+</article>
+<article class="post" data-ts="20030416220900" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2003-04-16 22:09</span></div>
+  <div class="pb">Wanneer komt de uitslag?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

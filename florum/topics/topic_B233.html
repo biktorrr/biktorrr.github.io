@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen: za8 zo 9 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen: za8 zo 9</h1>
+<p class="tm">10 posts · started 2003-02-05 16:10 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030205161000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2003-02-05 16:10</span></div>
+  <div class="pb">Mits je tijdig herstelt bent van mijn uitwuif natuurlijk!</div>
+</article>
+<article class="post" data-ts="20030205175100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-02-05 17:51</span></div>
+  <div class="pb">za ja<br>zo ja<br> <br><br>Zullen we wel in de Hout ballen?</div>
+</article>
+<article class="post" data-ts="20030206131600" id="p3">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#3 · 2003-02-06 13:16</span></div>
+  <div class="pb">za ja<br>zo nee<br><br>Waarom in de hout?</div>
+</article>
+<article class="post" data-ts="20030206150500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-02-06 15:05</span></div>
+  <div class="pb">Omdat ik via via had gehoord dat de mensen rond het Florapark niet al te blij zijn als we elke week hun park kapot komen trappen. Vooral als het regent gaat het gras snel kapot, dus kunnen we beter in de Hout gaan voor twee a drie weken, dacht ik.</div>
+</article>
+<article class="post" data-ts="20030206172900" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-02-06 17:29</span></div>
+  <div class="pb">Ik zie normaal de redelijkheid er wel van in om ergens anders dan het florapark te ballen, MAAR NU EVEN NIET!<br>Het is het laatste balweekend voor mij in Nederland<br>en ik zou dit het liefst op het Florapark willen<br>meemaken.</div>
+</article>
+<article class="post" data-ts="20030206173000" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2003-02-06 17:30</span></div>
+  <div class="pb">Wat zeg ik meemaken.....beleven is het juiste woord!</div>
+</article>
+<article class="post" data-ts="20030206184300" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2003-02-06 18:43</span></div>
+  <div class="pb">za nee <br>zo nee<br><br>sax <br><br>btw...Robert als vaste keepert aantrekken?</div>
+</article>
+<article class="post" data-ts="20030206213900" id="p8">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#8 · 2003-02-06 21:39</span></div>
+  <div class="pb">za: ja<br>zo: nee<br><br>Ik ben het tevens met MK eens</div>
+</article>
+<article class="post" data-ts="20030207140200" id="p9">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#9 · 2003-02-07 14:02</span></div>
+  <div class="pb">zazo ja<br>ik ben het een smet merlijn om het park een rustperiode te geven, maar omdat de 1 dit weekend voor het laatst kan ballen lijkt het mij wel redelijk om dit weekend nog in het park te spelen. Daarna in de Hout?</div>
+</article>
+<article class="post" data-ts="20030207155700" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2003-02-07 15:57</span></div>
+  <div class="pb">za ja <br>zo nee<br><br>Dat wordt dus zaterdag in ieder geval ballen: Sander, Merlijn, Misha, Tube, Maurits en ik.<br><br>wat betreft de locatie sluit ik mij bij de voorgaande schrijver aan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

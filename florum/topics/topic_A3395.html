@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dingen die de Tube aan een drol doen denken – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dingen die de Tube aan een drol doen denken</h1>
+<p class="tm">12 posts · started 2016-04-01 15:43 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160401154332" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2016-04-01 15:43</span></div>
+  <div class="pb">De titel zegt genoeg lijkt mij. Wij wilden nog een mooie collage maken voor op de WC. Stuur hier uw vakantiekiekjes in!</div>
+</article>
+<article class="post" data-ts="20160401154625" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2016-04-01 15:46</span></div>
+  <div class="pb">Deze bijvoorbeeld</div>
+</article>
+<article class="post" data-ts="20160401155618" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2016-04-01 15:56</span></div>
+  <div class="pb">Of deze 'man doet drol na'<br></div>
+</article>
+<article class="post" data-ts="20160401160020" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2016-04-01 16:00</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20160401160206" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2016-04-01 16:02</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20160401160224" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2016-04-01 16:02</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20160401162330" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2016-04-01 16:23</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20160401182815" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2016-04-01 18:28</span></div>
+  <div class="pb">Oooooh, dat laatste is de slaapzak van een vlinder Tuuuube!! Hoe durf je.</div>
+</article>
+<article class="post" data-ts="20160402170217" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2016-04-02 17:02</span></div>
+  <div class="pb">Oei, oei, oei. Dit is ook een veelbelovend topic, zeg. </div>
+</article>
+<article class="post" data-ts="20160402203747" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2016-04-02 20:37</span></div>
+  <div class="pb">Schitterend. Typisch zo'n topic waarvan ik dan voorspel dat ie de 1000 niet haalt, en dat ik dan drie weken later al zwaar voor lul sta.</div>
+</article>
+<article class="post" data-ts="20161203165803" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2016-12-03 16:58</span></div>
+  <div class="pb">Heb er weer een gespot. Ditmaal een van pluche. Schijnbaar een kunstzinnig trendy interieur object</div>
+</article>
+<article class="post" data-ts="20161208181919" id="p12">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#12 · 2016-12-08 18:19</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

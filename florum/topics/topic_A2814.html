@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>een balletje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">een balletje</h1>
+<p class="tm">8 posts · started 2010-01-13 21:07 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100113210700" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2010-01-13 21:07</span></div>
+  <div class="pb">Die wou ik graag opwerpen voor hapje en een drankje vrijdag na een week lekker te hebben bijgedragen aan economie.</div>
+</article>
+<article class="post" data-ts="20100114125100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-01-14 12:51</span></div>
+  <div class="pb">goed idee, zie mail</div>
+</article>
+<article class="post" data-ts="20100114163600" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-01-14 16:36</span></div>
+  <div class="pb">Mail? Die Decathlon van jou is trouwens TOP Co!</div>
+</article>
+<article class="post" data-ts="20100114164700" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2010-01-14 16:47</span></div>
+  <div class="pb">19:00 Wildeman</div>
+</article>
+<article class="post" data-ts="20100114165600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-01-14 16:56</span></div>
+  <div class="pb">Ik ben met MK in Haarloheim. Ik ga het niet te laat maken, het is voor mij een 'doordeweeksedag'. :(</div>
+</article>
+<article class="post" data-ts="20100114185000" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2010-01-14 18:50</span></div>
+  <div class="pb">Ik tik hem af.</div>
+</article>
+<article class="post" data-ts="20100115093900" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2010-01-15 09:39</span></div>
+  <div class="pb">ik moet voetballen vanavond.</div>
+</article>
+<article class="post" data-ts="20100115094900" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2010-01-15 09:49</span></div>
+  <div class="pb">Heb daar namelijk een vette schaats/hardloopbroek gekocht en een fleece voor 35 euro! UNK. Maarreh, vanavond eten ga ik niet redden: heb een KungFu nieuwjaarsborrel (waarbij de hapjes veranderen in dodelijke projectielen en de drankjes, nouja, die drinken we denk ik gewoon op). <br><br>Daarna wel naar de Weber/Lux denk ik rond uur of 22:00... :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

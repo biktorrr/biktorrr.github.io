@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 23-24 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 23-24</h1>
+<p class="tm">8 posts · started 2004-10-21 14:09 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041021140900" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-10-21 14:09</span></div>
+  <div class="pb">Ik kan zondag!</div>
+</article>
+<article class="post" data-ts="20041021144900" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-10-21 14:49</span></div>
+  <div class="pb">zoals hieronder, ik kan alleen zaterdag...<br>met vik in brussel, merlijn in de lappenmand en michiel en de tube aan het bier moeten we nog maar zien of we het halen. Misschien vanwege/met de hulp van mijn feestje zijn er meer boys in haarlem? (oli4/sicco/wybren?)<br></div>
+</article>
+<article class="post" data-ts="20041021162700" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2004-10-21 16:27</span></div>
+  <div class="pb">ik ben zaterdag in Haarlem en kan ook helpen/ballen</div>
+</article>
+<article class="post" data-ts="20041021182500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-10-21 18:25</span></div>
+  <div class="pb">Ik ben zaterdag ook in Haarlem!</div>
+</article>
+<article class="post" data-ts="20041022105700" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2004-10-22 10:57</span></div>
+  <div class="pb">Ik ben dus eigenlijk de enige die zondag wil/kan ballen?</div>
+</article>
+<article class="post" data-ts="20041022114300" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2004-10-22 11:43</span></div>
+  <div class="pb">Zanee<br>Zoja</div>
+</article>
+<article class="post" data-ts="20041023011000" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2004-10-23 01:10</span></div>
+  <div class="pb">Maarten tegen mij dus. Ik ga andere leuke dingen plannen op zondag. Mochten er ineens toch nog veel mensen zijn, dan kunnen jullie het op dat Ned. mob. nr. geven dat ik laatst hier opgeschreven heb. Ik kan het nu even zo snel niet vinden, maar jullie hebben het vast allemaal keurig netjes opgeslagen.</div>
+</article>
+<article class="post" data-ts="20041023015300" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2004-10-23 01:53</span></div>
+  <div class="pb">Komop Oli, je maakt best kans, ik zal met \é\én been op m'n rug spelen, goed? <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

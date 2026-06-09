@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voorbeschouwing 28/11 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Voorbeschouwing 28/11</h1>
+<p class="tm">5 posts · started 2001-11-26 14:52 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011126145200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-11-26 14:52</span></div>
+  <div class="pb">Nou mannen,<br><br>Het is heel simpel. Lokomotic VIAE is gewoon een verschrik-<br>kelijk slechte ploeg. Door stelselmatig slecht inkopen, zijn<br>ze verworden tot poulevulling. Menno Blokland is de uitzon-<br>dering die die regel bevestigt. Ik stel 'n paar targets <br>voor die we gaan halen. Geordend naar importantie:<br>1) Menno Blokland gaat op 'n eiland staan, en geen enkele<br>goal maken;<br>2) Sicco gaat ook geen enkele goal maken;<br>3) We gaan de nul houden. Timmetje is er niet;<br>4) We gaan met 10 goals verschil winnen;<br>5) We gaan geen blessures oplopen voor tegen Schenker.<br><br>Lijkt me allemaal vrij duidelijk.<br><br>Nog even 'for the sake of completeness': Wie komen er alle-<br>maal?<br><br>Ik in ieder geval.</div>
+</article>
+<article class="post" data-ts="20011126173500" id="p2">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#2 · 2001-11-26 17:35</span></div>
+  <div class="ps">The bikkeling continues.</div><div class="pb">WJ en Famous zijn van de partij.<br><br>At your service zoals Pim Fortuyn zou zeggen. <br><br></div>
+</article>
+<article class="post" data-ts="20011128143000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2001-11-28 14:30</span></div>
+  <div class="pb">moi <br>en holy<br>en michiel</div>
+</article>
+<article class="post" data-ts="20011129011300" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-11-29 01:13</span></div>
+  <div class="ps">NABESCHOUWING</div><div class="pb">Nou Sicco, voor een team die 7 keer verloren hebben vond ik jullie hardstikke goed. Er had op zich meer in gezeten voor jullie. BEst wel een beetje respect dus, zeker voor de dude die iedereeen 2 keer gepoort heeft. En dat doelpunt van jouw was schitterend, we gunden hem je van harte (sterker nog, we hadden afgesproken je de laatste 3 minuten vrij te laten achterin als we een veilige voorsprong hadden)<br><br>Kop op, en op naar de volgende wedstrijd dus Toppie!<br><br></div>
+</article>
+<article class="post" data-ts="20011130144000" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2001-11-30 14:40</span></div>
+  <div class="ps">do the locomotive</div><div class="pb">'Do the locomotive'is de tune die te horen is als we winnen. Dit jaar nog nooit dus. Maar goed, we draaiden wel lekker woensdag. Nog vermeld mag wordend at wij met een man minder speelden. Ons grote makke was dat sommige van onze verdedigers hun mannetje niet dekten of eruit gespeeld werden. Wat betreft jullie doelstellingen: niet bijster succesvol, op de laatste na. Maar Merlijn maakte het goed door mij uit pure frustratie maar de bal in het gezicht te schoppen. Terechte overwinning, dat wel hoor. Jullie hebben het spelletje wel door.<br><br> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

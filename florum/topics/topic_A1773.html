@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autostank Fix0r – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Autostank Fix0r</h1>
+<p class="tm">6 posts · started 2006-05-30 13:43 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060530134300" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-05-30 13:43</span></div>
+  <div class="pb">Zoals sommigen van jullie hadden gemerkt wilde het de laatste tijd op bepaalde momenten nogal stinken in de LittleT-Mobiel.<br>Geen flatulerende jazzmaestro's of vik-t's als oorzaak, maar een -naar het schijnt- geval van de lining van de motorkap die door het weer iets vervormd was geraakt en op het motorblok rustte. Het betreffende gedeelte is verwijderd. Nu zal niet alleen de stank verdwijnen maar ook de motor beter te horen zijn. *hengheng*<br><br></div>
+</article>
+<article class="post" data-ts="20060530140300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-05-30 14:03</span></div>
+  <div class="pb">terecht, misschien kunnen we gelijk met mijn dremel een gat in je motorkap slijpen en dan een brute luchtinlaat monteren.<br><br>Als je toch bezigbent...</div>
+</article>
+<article class="post" data-ts="20060530140900" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-05-30 14:09</span></div>
+  <div class="ps">Pimpen = niet-functioneel tunen.</div><div class="pb">moet ik wel eerst nog een dikke intercooler kopen, anders is het alleen maar show.</div>
+</article>
+<article class="post" data-ts="20060601115200" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2006-06-01 11:52</span></div>
+  <div class="pb">Mooi niet gefixed helaas, gisteren ANWB gebeld want het begon toch wel ernstig te roken,we konden er nog mee naar huis maar dat was voorlopig ookwel het laatste... :-( Een of andere koppakking is stuk en dat gaf een klein olielek wat drupte op de uitlaat en verdampte (vandaar de stank). Gaat pittige operatie worden,bij garage, of beun de haas,  dus voorlopig zijn wij even autoaf..<br><br>Mochten we echt desprate worden houden we wel een sponserloop of zo <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20060601121300" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-06-01 12:13</span></div>
+  <div class="pb">duct tape?</div>
+</article>
+<article class="post" data-ts="20060614124500" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2006-06-14 12:45</span></div>
+  <div class="pb">nou hij is weer gefix0red, door de mannen die er echt verstand van hebben. Wel jammer dat onze vriendenkring zo'n groot academisch contigent bevat....en bovag automonteur vriendje zou toch wel heel handig zijn. Een paar biertjes ipv 440 arbeidsloon is niet gek.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

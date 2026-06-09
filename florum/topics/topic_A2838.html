@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hawaii – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hawaii</h1>
+<p class="tm">5 posts · started 2010-02-27 22:32 by Laura</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100227223200" id="p1">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#1 · 2010-02-27 22:32</span></div>
+  <div class="pb">hey allemaal,<br><br>groetjes uit Hawaii...Nu het nog niet is getroffen door de tsunami. We zijn wel geevacueerd, en wachten nu op de golf! </div>
+</article>
+<article class="post" data-ts="20100228074500" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2010-02-28 07:45</span></div>
+  <div class="pb">Ik maakte me al zorgen over die aardbeving in Chili, maar blijkbaar niet om de juiste reden. Veel succes bij het overleven van dit gebbetje!</div>
+</article>
+<article class="post" data-ts="20100228101600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2010-02-28 10:16</span></div>
+  <div class="pb">Ah, goed te horen dat alles ok is. </div>
+</article>
+<article class="post" data-ts="20100228115700" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2010-02-28 11:57</span></div>
+  <div class="pb">ja, we hebben wel moeten "rennen". Meter-hoge golven vernietigden alles in hun pad totdat ze gestopt werden door de breker in de baai hier, kwamen ongeloofelijk snel na de evacuatie. We hadden maar 6 uur om deze 10 meter te evacueren.<br><br> En de Tsunami die me nu nog krijgt nu ik op 4100 meter zit, die is het waard de hele wereld te overspoelen.</div>
+</article>
+<article class="post" data-ts="20100228151600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-02-28 15:16</span></div>
+  <div class="pb">er was bevroedelijk iemand naar je op zoek Bik, tsunamietje op Hawaai...aardschuddinkje in Chile.<br>Ik denk dat de Almachtige een beetje klaar is met al dat voyeuristische gedoe van jou en je telescoopjes.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

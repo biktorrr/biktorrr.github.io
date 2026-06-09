@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSI goes 2nd life – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">CSI goes 2nd life</h1>
+<p class="tm">4 posts · started 2007-11-03 14:41 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071103144100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-11-03 14:41</span></div>
+  <div class="pb">Misschien leuk voor de Hooghe, de csi new york aflevering van vorige week (S04E05 : in de VS) gaat bijna helemaal over 2nd life.<br>Leer ik ook weer eens wat.<br></div>
+</article>
+<article class="post" data-ts="20071105101500" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-11-05 10:15</span></div>
+  <div class="pb">Hoogh, zet em meteen ff op de download!<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071106083500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-11-06 08:35</span></div>
+  <div class="pb">das illegaal. als je em wil moet je em maar ff zelf halen, bv via een bittorrent site (www.isohunt.com)<br>en em dan met mu-torrent (utorrent) of azureus downloaden.<br>:)<br><!--193.173.46.126--></div>
+</article>
+<article class="post" data-ts="20071106122000" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2007-11-06 12:20</span></div>
+  <div class="pb">Illegaal, schmielegaal. Op het WLW is alles streaming, wie doet me wat!<!--213.84.4.9--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

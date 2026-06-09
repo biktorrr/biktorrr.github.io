@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd : Blije – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd : Blije</h1>
+<p class="tm">7 posts&nbsp;·&nbsp;started 2008-09-16 17:45 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080916174500" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2008-09-16 17:45</span></div>
+  <div class="pb">Naast de plannen voor het regeren van het land en het bewonderen van het staatshoofd door velen wil ik nog een ander heugdelijk feit onder julie aandacht brengen. Marije verjaart vandaag. Bij deze van harte gefeliciteerd!!!</div>
+</article>
+<article class="post" data-ts="20080916174700" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2&nbsp;·&nbsp;2008-09-16 17:47</span></div>
+  <div class="pb">anders kom je volgende keer weer op d'r verjaardag, dan kan je d'r dan feliciteren. Er was een erg mooie/goede taart...<br><br><br></div>
+</article>
+<article class="post" data-ts="20080916191800" id="p3">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#3&nbsp;·&nbsp;2008-09-16 19:18</span></div>
+  <div class="pb">He gefeliciteerd Marije!! Veel plezier nog vanavond!<br>Maar we wisten het niet hoor Tijmen van afgelopen zaterdag, als we wisten dat er een feestje was waren we wel gekomen <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20080916213600" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4&nbsp;·&nbsp;2008-09-16 21:36</span></div>
+  <div class="pb">Hoogh, gefeliciteerd Marije!</div>
+</article>
+<article class="post" data-ts="20080917065600" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5&nbsp;·&nbsp;2008-09-17 06:56</span></div>
+  <div class="pb">ja, van harte Blije!</div>
+</article>
+<article class="post" data-ts="20080917073800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6&nbsp;·&nbsp;2008-09-17 07:38</span></div>
+  <div class="pb">Gefeliziteerd!</div>
+</article>
+<article class="post" data-ts="20080917081500" id="p7">
+  <div class="ph"><span class="pa">Blije</span><span class="pm">#7&nbsp;·&nbsp;2008-09-17 08:15</span></div>
+  <div class="pb">Dank jullie wel allemaal! Het is weer gelukt: een jaartje ouder!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

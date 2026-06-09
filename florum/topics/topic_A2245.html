@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrij-Mi-Spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrij-Mi-Spam</h1>
+<p class="tm">10 posts · started 2007-12-14 10:19 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071214101900" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-12-14 10:19</span></div>
+  <div class="pb"><a href="http://www.gk2gk.com/">Voor als de relatie van de AIO's onder ons onverhoopt strandt <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></a><br></div>
+</article>
+<article class="post" data-ts="20071214133200" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-12-14 13:32</span></div>
+  <div class="pb">Handig voor als een (ex)AIO toevallig geen relatie (meer) heeft bedoel je zeker <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0>?<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071214133500" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2007-12-14 13:35</span></div>
+  <div class="pb">Meteen maar even twee goeie hits:<br><br>http://www.gk2gk.com/profile/details.asp?USER=182681<br><br>http://www.gk2gk.com/profile/details.asp?USER=155369<br><br>Hoogh!<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071214133600" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2007-12-14 13:36</span></div>
+  <div class="pb">Oh en die tweede houdt er ook nog leuke hobby's op na:<br><br><img src="http://www.gk2gk.com/uploads/photos/regular/9BEF5831DDBF446B8902E03378A4E9D6.JPG"><!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071214135700" id="p5">
+  <div class="ph"><span class="pa">Afdeling Systeembeheer</span><span class="pm">#5 · 2007-12-14 13:57</span></div>
+  <div class="pb">Geachte PH, in verband met het bezoeken van dubieuze AIO-sites  via het EPN netwerk moeten wij u berichten dat u u direct dient te melden bij de directeur. Hij was geinspireerd door een van uw laatst bekeken foto's.<!--24.132.223.170--></div>
+</article>
+<article class="post" data-ts="20071216155300" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2007-12-16 15:53</span></div>
+  <div class="pb">Interessante geek poll trouwens:<br><br>What theory best explains life on earth?<br>	Creationism<br>	Evolution<br>	Intelligent Design<br>	Don't know<br><br>Ben benieuwd wat er uit komt<!--80.126.71.152--></div>
+</article>
+<article class="post" data-ts="20071217091600" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2007-12-17 09:16</span></div>
+  <div class="pb">Ik hou het op de Bik Bang.<!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20071217092900" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2007-12-17 09:29</span></div>
+  <div class="pb">het Jossit, dat is niet het begin van het leven, dat is het begin van de atoompjes<!--146.50.20.43--></div>
+</article>
+<article class="post" data-ts="20071217093500" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2007-12-17 09:35</span></div>
+  <div class="pb">nee dat is de Big Bang Ca, das weer wat anders.<!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20071217145300" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2007-12-17 14:53</span></div>
+  <div class="pb">en de Bikkie Bash dan?<!--146.50.23.34--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

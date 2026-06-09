@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Site verbeteringen/Ideetjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Site verbeteringen/Ideetjes</h1>
+<p class="tm">8 posts · started 2006-01-25 12:52 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060125125200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-01-25 12:52</span></div>
+  <div class="pb">Lieve Jazzy,<br>Omdat ik het coherentie vermogen van een natte tissue heb en veel spelfouten maak zou ik het persoonlijk handig vinden als er een optie zou zijn om je reeds geposte textjes te editten. Dit om te voorkomen/verhelpen dat ik drie posts achter elkaar moet maken waarin ik me in de ene excuseer voor fouten en onvolledigheden in de ander. Is zoiets mogelijk voor het FLorum (zoals op zoveel andere fora)?<br></div>
+</article>
+<article class="post" data-ts="20060125130200" id="p2">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#2 · 2006-01-25 13:02</span></div>
+  <div class="pb">Lieve Tijmen,<br><br>Gemiddeld genomen werk ik 60 uur in de week. Dat vind ik meer dan genoeg.<br><br>Wat jij nu vraagt zou al met al zo'n 5 uur werk betekenen. <br>Ik stel voor dat je gebruik maakt van \é\én van de volgende opties.<br><br>1. Je maakt lekker 175 euro over op m'n zakelijke rekening en dan kom ik langs voor een vrijblijvend intake gesprek om samen te bekijken wat handig is om te verbeteren aan het Florum.<br><br>2. Voordat je op submit drukt lees je in het vervolg je posts nog \é\én keer door zodat je naderhand niets meer hoeft te verbeteren. Deze laatste optie kan ik je vrijblijvend eenmalig gratis aanbieden.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20060125134300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-01-25 13:43</span></div>
+  <div class="pb">Als ik een optie mag toevoegen aan deze openbare discussie: probeer kortere zinnen te maken. Een slim truukje is om geen bijzinnen meer te maken en een quotum te zetten op het aantal bijvoeglijke naamwoorden per zin.</div>
+</article>
+<article class="post" data-ts="20060125134900" id="p4">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#4 · 2006-01-25 13:49</span></div>
+  <div class="pb">ik vind de foutjes juist wel charmant aan het Florum.</div>
+</article>
+<article class="post" data-ts="20060125150300" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-01-25 15:03</span></div>
+  <div class="pb">begrepen, het is veel werk. </div>
+</article>
+<article class="post" data-ts="20060125151000" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2006-01-25 15:10</span></div>
+  <div class="pb">Nobody is perfect..</div>
+</article>
+<article class="post" data-ts="20060126222700" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2006-01-26 22:27</span></div>
+  <div class="pb">Holy = nobody<br><br>(ok, te makkelijk)</div>
+</article>
+<article class="post" data-ts="20060130090900" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2006-01-30 09:09</span></div>
+  <div class="ps">- Warning - Warning -</div><div class="pb">Mk maakt gebruik van de puntenverdubbelaar!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

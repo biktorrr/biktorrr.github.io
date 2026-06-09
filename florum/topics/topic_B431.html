@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 3/4 april – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 3/4 april</h1>
+<p class="tm">8 posts · started 2004-04-02 13:46 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040402134600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-04-02 13:46</span></div>
+  <div class="pb">Het lopen van en naar de Metro is nog dusdanig uitputtend dat ballen er dit weekend (iig za) niet inzit:<br><br>zanee zowaarschnee dus<br><br>Mocht er toch nog gebald worden, de bal is bij mij op te halen. Bel wel even (ruim) van tevoren</div>
+</article>
+<article class="post" data-ts="20040402135900" id="p2">
+  <div class="ph"><span class="pa">100%striker</span><span class="pm">#2 · 2004-04-02 13:59</span></div>
+  <div class="pb">zanee zohbc<br><br></div>
+</article>
+<article class="post" data-ts="20040403121800" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-04-03 12:18</span></div>
+  <div class="pb">za ja zo nee<br><br>maar ik denk dat het er niet inzit met joost, mer en vik afwezig. Ik wil wel!<br><br></div>
+</article>
+<article class="post" data-ts="20040403131900" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-04-03 13:19</span></div>
+  <div class="pb">ik ga er wel zijn<br>MB, neem sander iig mee :)</div>
+</article>
+<article class="post" data-ts="20040403180600" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-04-03 18:06</span></div>
+  <div class="pb">Tja, ik werd dus wakker gebeld vanmiddag door Dagtaimney om een uur of half twee. Ik voelde me niet echt in staat tot bewegen - laat staan voetballen. Morgen zal ik er denk ik ook niet bij zijn want mijn rug is na vorig weekend nog niet helemaal hersteld.<br><br>PS: Verder was ik wel heel blij dat Maior vanmorgen toen het al licht was en na mijn koelkast te hebben leeggedronken en ik inmiddels in slaap was gevallen de australische homoseksuele medemens die op de een of andere manier met ons meeliep van het Leidseplein naar The Porn Palace ook weer heeft meegenomen naar zijn huis. HAHA... </div>
+</article>
+<article class="post" data-ts="20040403215900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-04-03 21:59</span></div>
+  <div class="pb">Wow. Dat zijn nog 's zinnen.</div>
+</article>
+<article class="post" data-ts="20040404045100" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-04-04 04:51</span></div>
+  <div class="pb">Ja..kutlang..vind je niet?</div>
+</article>
+<article class="post" data-ts="20040404123500" id="p8">
+  <div class="ph"><span class="pa">Jossyt</span><span class="pm">#8 · 2004-04-04 12:35</span></div>
+  <div class="pb">Zelfs ik moest die laatste zin 4 keer doorlezen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

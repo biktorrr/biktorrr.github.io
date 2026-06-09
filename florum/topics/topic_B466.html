@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>het ek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">het ek</h1>
+<p class="tm">4 posts · started 2004-06-06 23:30 by jossyt scepticus p</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040606233000" id="p1">
+  <div class="ph"><span class="pa">jossyt scepticus p</span><span class="pm">#1 · 2004-06-06 23:30</span></div>
+  <div class="pb">Stukje amateur onderzoeks journalistiek:<br><br><hr><br><br>Het gaat erom of we er tegen de Duitsers staan, stelde bondscoach Dick Advocaat na de 1-0 nederlaag tegen Ierland. Daarin heeft hij gelijk, maar hij moet erkennen dat Nederland nog nooit zo'n slechte oefencampagne op weg naar een eindronde afwerkte. <br>Vanaf het WK in 1974 nam het Nederlands elftal elf keer deel aan een eindronde van een WK of EK. Twee keer besloot de toenmalige bondscoach geen oefenwedstrijden af te werken tegen nationale ploegen, in 1976 en 1980. <br><br>In alle negen voorgaande campagnes verloor Nederland zelden, slechts twee nederlagen in twintig duels tegenover vijftien zeges. En nog nooit verloor het Nederlands elftal twee oefeninterlands in de voorbereiding direct voorafgaand aan een toernooi. <br><br>Het laatste verlies stamt van 30 mei 1990, toen de Oostenrijkers met 3-2 wonnen in Wenen. De andere nederlaag dateert van 24 mei 1988 toen Bulgarije met 2-1 kwam winnen in De Kuip. Die nederlaag in Rotterdam was de enige thuisnederlaag ooit in een oefencampagne, tot de Belgen en Ieren afgelopen week langskwamen. <br><br></div>
+</article>
+<article class="post" data-ts="20040606233200" id="p2">
+  <div class="ph"><span class="pa">jossyt scepticus p</span><span class="pm">#2 · 2004-06-06 23:32</span></div>
+  <div class="pb">Iedere verhaal heeft natuurlijk twee kanten:<br><br><hr><i><br>'Toen ik op de tribune zat bij Nederland, dacht ik nog: dat zal ons niet gebeuren'  <br>De Duitse bondscoach Rudi Völler na de 2-0 thuisnederlaag van Duitsland tegen Hongarije (ARD)</i><br><br></div>
+</article>
+<article class="post" data-ts="20040607100300" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2004-06-07 10:03</span></div>
+  <div class="pb">goed voorbeeld van niet zeiken, lekker ballen want je hebt toch niets te verliezen dan maar?</div>
+</article>
+<article class="post" data-ts="20040607105000" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-06-07 10:50</span></div>
+  <div class="pb">Alleen hebben zowel Nederland als Duitsland niets te verliezen. En leggen ze allebei de nadruk op.. "als we onze eerste wedstrijd maar winnen". </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

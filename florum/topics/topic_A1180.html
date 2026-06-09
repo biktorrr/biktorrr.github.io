@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Housewarming/Afstudeer/Verjaardags feest – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Housewarming/Afstudeer/Verjaardags feest</h1>
+<p class="tm">9 posts · started 2004-04-22 14:46 by Jossyt S.</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040422144600" id="p1">
+  <div class="ph"><span class="pa">Jossyt S.</span><span class="pm">#1 · 2004-04-22 14:46</span></div>
+  <div class="pb">Floracieden,<br><br>Hoe zaterdag avond 1 mei vrij voor een knalfuif. Op die dag vier ik dat ik verhuisd en afgestudeerd ben deze week en dat ik op 2 mei 25 wordt. <br><br>Nieuwe adres:<br><br>Holsteijnstraat 11 rd<br>2021 HJ Haarlem<br><br>Mzzl,<br><br>J<br><br></div>
+</article>
+<article class="post" data-ts="20040422145200" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2004-04-22 14:52</span></div>
+  <div class="pb">Leuk, zal er zeker zijn. 1 cadeautje is goed he? Wat wil je hebben? </div>
+</article>
+<article class="post" data-ts="20040422162000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-04-22 16:20</span></div>
+  <div class="pb">damn, ik ben dan in Amsterdam bij een nerde-bijeenkomst, maar ik zal voor de man met de S zeker even vroeg terugkomen.</div>
+</article>
+<article class="post" data-ts="20040422185800" id="p4">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#4 · 2004-04-22 18:58</span></div>
+  <div class="pb">hey Vic, kunnen we misschien iets regelen als ik daar ook nog heen ga? <br><br>ik ben er zo wie zo </div>
+</article>
+<article class="post" data-ts="20040423100500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-04-23 10:05</span></div>
+  <div class="pb">Heb dan net m'n vitamine Cheique opgedaan, en ben sowenso van de partij.</div>
+</article>
+<article class="post" data-ts="20040423100800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-04-23 10:08</span></div>
+  <div class="pb">Biktie, jij bent dan ook aan de PHK? dan kan je meerijden, mits er genoeg plaats over is (geen idee eigenlijk wie er nou allemaal mee wilden rijden).</div>
+</article>
+<article class="post" data-ts="20040429195900" id="p7">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#7 · 2004-04-29 19:59</span></div>
+  <div class="pb">party people, vergeet zaterdag niet te komen.</div>
+</article>
+<article class="post" data-ts="20040501104800" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2004-05-01 10:48</span></div>
+  <div class="pb">Wat is er dan?</div>
+</article>
+<article class="post" data-ts="20040501111200" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2004-05-01 11:12</span></div>
+  <div class="pb">Tube en Ca zijn van de partij!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

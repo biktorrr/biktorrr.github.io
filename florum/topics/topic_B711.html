@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ballen 11/12 maart – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ballen 11/12 maart</h1>
+<p class="tm">12 posts · started 2006-03-09 14:44 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060309144400" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2006-03-09 14:44</span></div>
+  <div class="pb">Zajazoja</div>
+</article>
+<article class="post" data-ts="20060309144900" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2006-03-09 14:49</span></div>
+  <div class="pb">ja goed punt. We moeten wel goed trainen voor het REVT!<br><br>zajazoja</div>
+</article>
+<article class="post" data-ts="20060310095900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-03-10 09:59</span></div>
+  <div class="pb">wat een enthousiasme </div>
+</article>
+<article class="post" data-ts="20060310125600" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2006-03-10 12:56</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20060310125600" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2006-03-10 12:56</span></div>
+  <div class="pb">laat ik die maar even dempen<br>zaneezonee</div>
+</article>
+<article class="post" data-ts="20060310140500" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2006-03-10 14:05</span></div>
+  <div class="pb">Ik sluit me aan bij penose.</div>
+</article>
+<article class="post" data-ts="20060310150700" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-03-10 15:07</span></div>
+  <div class="pb">za ja<br>zo misschien<br></div>
+</article>
+<article class="post" data-ts="20060310153100" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2006-03-10 15:31</span></div>
+  <div class="pb">Floraboys 3<br>Hedonia 28<br><br>schiet lekker op...</div>
+</article>
+<article class="post" data-ts="20060310153600" id="p9">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#9 · 2006-03-10 15:36</span></div>
+  <div class="pb">stukje negatieve aanwezigheids tendens continuerings gebeuren</div>
+</article>
+<article class="post" data-ts="20060311124700" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2006-03-11 12:47</span></div>
+  <div class="pb">Ben benieuwd of de trend in het komende uur nog doorbroken wordt.</div>
+</article>
+<article class="post" data-ts="20060311135200" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2006-03-11 13:52</span></div>
+  <div class="pb">HP.<br>(Helaas Peanutbutter)</div>
+</article>
+<article class="post" data-ts="20060312105500" id="p12">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#12 · 2006-03-12 10:55</span></div>
+  <div class="pb"> ik moet helaas mededelen dat mijn misschien een neyt is geworden voor vandaag.<br> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

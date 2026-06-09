@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VrijMiSpam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VrijMiSpam</h1>
+<p class="tm">9 posts · started 2006-06-02 10:39 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060602103900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-06-02 10:39</span></div>
+  <div class="pb">even weer wat good-old spam:<br><br><img src="http://www.retecool.com/ffvimg/img/c6ec48bb/118_211b3cd7f5196cd0.jpg"><br><br>hehe</div>
+</article>
+<article class="post" data-ts="20060602114500" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-06-02 11:45</span></div>
+  <div class="pb">brok0n?</div>
+</article>
+<article class="post" data-ts="20060602115000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-06-02 11:50</span></div>
+  <div class="pb">hier niet, maar <br><br>http://www.retecool.com/ffvimg/img/c6ec48bb/118_211b3cd7f5196cd0.jpg <br><br>is de link</div>
+</article>
+<article class="post" data-ts="20060602120000" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2006-06-02 12:00</span></div>
+  <div class="pb">ook brok0n bij mij</div>
+</article>
+<article class="post" data-ts="20091030130700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2009-10-30 13:07</span></div>
+  <div class="pb">@Tube&Ca: ter inspiratie! :)<br><br><br>Huwelijksgasten op de vuist in stadhuis<br> <br>Een bruiloft op het stadhuis in Haarlem (foto) is compleet uit de hand gelopen na een verkeerde opmerking door de broer van de bruid. Foto ANP<br>HAARLEM - Een trouwpartij in het stadhuis van Haarlem is uitgelopen op een flinke vechtpartij tussen de beide families. De politie heeft vrijdag een bericht daarover in het Haarlems Dagblad bevestigd. <br><br>Aanleiding voor de vechtpartij was het feit dat de broer van de bruid tijdens het maken van een groepsfoto een opmerking maakte over de verstandelijk gehandicapte oom van de bruidegom. Hij zou iets over de Jostiband hebben geroepen, een muziekgroep van verstandelijk gehandicapten. Daarna liep de trouwplechtigheid volledig uit de hand. De families gingen massaal met elkaar op de vuist. De politie moest de vechtenden later uit elkaar halen. <br><br>Er vielen enkele lichtgewonden. De politie heeft het incident niet eerder naar buiten gebracht om 'geen olie op het vuur te gooien'. ''Bovendien gaat het om een priv\ézaak en is er geen aangifte gedaan'', aldus de politiewoordvoerder. <br><br>De trouwdag was in elk geval goed verpest. Op het feest 's avonds was alleen de familie van de bruid van de partij. (ANP) </div>
+</article>
+<article class="post" data-ts="20091030134900" id="p6">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#6 · 2009-10-30 13:49</span></div>
+  <div class="pb">Was zeker een middeleeuws LARP huwelijk. Ook een aardig idee.</div>
+</article>
+<article class="post" data-ts="20091030140000" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2009-10-30 14:00</span></div>
+  <div class="pb">schitterend, lekker massaal knokken....</div>
+</article>
+<article class="post" data-ts="20091030142100" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2009-10-30 14:21</span></div>
+  <div class="pb">Schitterend. En dat gebeurt in je eigen stad. Ik geloof dat ik elders al heb aangegeven dat Haarlem het centrum van de wereld is.</div>
+</article>
+<article class="post" data-ts="20091030161600" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2009-10-30 16:16</span></div>
+  <div class="pb">Haha, skitterend, jammer dat ik het niet live mocht meemaken. Ik denk dat ik maar niet meer naar m'n werk in Amsterdam ga maar alleen nog maar op de Grote Markt ga rondhangen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

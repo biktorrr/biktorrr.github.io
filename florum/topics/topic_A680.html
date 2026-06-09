@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiezen&amp;Ballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kiezen&amp;Ballen</h1>
+<p class="tm">5 posts · started 2003-01-21 15:54 by T-NO</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030121155400" id="p1">
+  <div class="ph"><span class="pa">T-NO</span><span class="pm">#1 · 2003-01-21 15:54</span></div>
+  <div class="pb">Ik wilde voorstellen om morgen het kijken van voorlopige uitslagen/ nieuws te combineren met ballen. Het zou mij leuk lijken als Merlijn danwel Misha zo ruimhartig zou willen zijn om mij (misschien anderen) te ontvangen in Amsterdam zodat we gezamelijk kunnen zien hoe JPB een pleefiguur slaat en vervolgens onze opwachting te maken in Het Droomtheater.<br>Ideetje?<br></div>
+</article>
+<article class="post" data-ts="20030122114400" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-01-22 11:44</span></div>
+  <div class="pb">ik zou sicco bellen als ik jou was</div>
+</article>
+<article class="post" data-ts="20030122131300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-01-22 13:13</span></div>
+  <div class="pb">Dat zou ik ook even doen als ik jou was. Is TNO jouw nieuwe shirtsponsor, Tijmen? Wel bizar dat ze je verplichten hun naam als jouw naam te gebruiken. Aan de andere kant; als het genoeg opbrengt, waarom niet?</div>
+</article>
+<article class="post" data-ts="20030122140300" id="p4">
+  <div class="ph"><span class="pa">PT-CO</span><span class="pm">#4 · 2003-01-22 14:03</span></div>
+  <div class="pb">ik dacht dat het meer in de J-Lau, J-Lo, T-No sfeer zat :)</div>
+</article>
+<article class="post" data-ts="20030122142100" id="p5">
+  <div class="ph"><span class="pa">T-NO</span><span class="pm">#5 · 2003-01-22 14:21</span></div>
+  <div class="pb">hmmkay...aangezien het animo daverend is en ik bang ben dat ik niet ten volle zicht kan hebben op een beeldscherm en mij de angst om het hart grijpt dat we zo verstrengeld raken in verhitte discussies en analyses besluit ik maar om in alle rust thuis te blijven.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

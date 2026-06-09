@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 13 &amp; 14 augustus – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 13 &amp; 14 augustus</h1>
+<p class="tm">12 posts · started 2005-08-11 22:50 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050811225000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2005-08-11 22:50</span></div>
+  <div class="pb">za nee<br>zo ja</div>
+</article>
+<article class="post" data-ts="20050811233000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-08-11 23:30</span></div>
+  <div class="pb">zajazowaarschja</div>
+</article>
+<article class="post" data-ts="20050812104200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-08-12 10:42</span></div>
+  <div class="pb">za: ja<br>zo: ja</div>
+</article>
+<article class="post" data-ts="20050812110900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-08-12 11:09</span></div>
+  <div class="pb">een van beide ja.<br></div>
+</article>
+<article class="post" data-ts="20050812145600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-08-12 14:56</span></div>
+  <div class="pb">zamiszoja</div>
+</article>
+<article class="post" data-ts="20050812163000" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2005-08-12 16:30</span></div>
+  <div class="pb">za:nee<br>zo:nee</div>
+</article>
+<article class="post" data-ts="20050812170300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-08-12 17:03</span></div>
+  <div class="pb">hoe is het met de knie?</div>
+</article>
+<article class="post" data-ts="20050813090200" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2005-08-13 09:02</span></div>
+  <div class="pb">Klote. Met de scheuring is het goed. Die geneest volgens mij wel. Maar heb ook een stuk onderhuids litteken weefsel wat flink gevoelig en dus snel ge\ïrriteerd is. Dat zorgt ervoor als ik ff aan het fietsen danwel lopen ben, dat mijn knie vocht begint aan te trekken en stroef wordt.... Heb er vorige week een bierblikje aan vocht uit laten halen, dus hij is nu in rust minder dik als dat ie was. <br>Het is nu dus afwachten hoe snel ik van die irritatie en gevoeligheid af ben, dan kan ik weer aan de bak. Ik verwacht echter niet dat dat spoedig is aangezien ik dat litteken al bijna 2 maanden heb, maar dus sinds die scheuring pas echt is gaan opspelen.... <br>Gok nu op 4 weken, maar het kunnen er ook meer of minder zijn. Moeilijk te zeggen, geen eerdere ervaring met een dergelijke blessure... Plus dat meespeelt hoeveel rust ik nu hou (minder irritatie == meer genezing).</div>
+</article>
+<article class="post" data-ts="20050813093400" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2005-08-13 09:34</span></div>
+  <div class="pb">Wow! Een bierblikje aan vocht!<br><br>Sterkte ermee.</div>
+</article>
+<article class="post" data-ts="20050814031900" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2005-08-14 03:19</span></div>
+  <div class="pb">voorlopig neenee lijkt me dus. Hou ons op de hoogte en sterkte!<br><br><br><br>(overigens: zotochnee voor mij)</div>
+</article>
+<article class="post" data-ts="20050814105100" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2005-08-14 10:51</span></div>
+  <div class="pb">Ik zag overigens gisteren wel acht erecodes incluis de Commander schitteren op het gras.</div>
+</article>
+<article class="post" data-ts="20050814130700" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2005-08-14 13:07</span></div>
+  <div class="pb">Ik concludeer dat het een NEYT is vandaag...En dat terwijl ik zo in vorm zou zijn geweest na om 4.15 uur de Flapcan te hebben verlaten...jammer.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

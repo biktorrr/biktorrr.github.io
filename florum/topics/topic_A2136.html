@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Densing Gees, te goed. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Densing Gees, te goed.</h1>
+<p class="tm">3 posts · started 2007-08-18 10:41 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070818104100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-08-18 10:41</span></div>
+  <div class="pb">Hij stond ookal op NU.nl, maar als je daar niet kijkt zou je hem kunnen missen<br><a href="http://www.youtube.com/watch?v=twQlpFrm5iM&eurl=http%3A%2F%2Fwww%2Enu%2Enl%2Fnews%2Ejsp%3Fn%3D1198073%26c%3D50%26rss"> Bearforce 1 </a><br><br>vooral op 2:15 min. ghehehe<br></div>
+</article>
+<article class="post" data-ts="20070820154000" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2007-08-20 15:40</span></div>
+  <div class="pb">matigjes</div>
+</article>
+<article class="post" data-ts="20070917221800" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2007-09-17 22:18</span></div>
+  <div class="pb">AMSTERDAM - De Nederlandse homoband Bearforce1, die op internet een gigantische hype is, is op zoekt naar een extra lid. <br> <br>Deze zogenoemde 'Spare Bear' (reservebeer) kan als invaller dienen voor de overige vier bandleden, die overvallen zijn door het grote aantal verzoeken om te komen optreden. Dat meldde manager Robert Swarts maandag.  <br><br>Wereldwijd <br><br>Van New York tot Miami krijgt het viertal aanvragen binnen. Op de videowebsite YouTube is Bearforce1 met hun gelijknamige liedje een grote hit. Dat liedje bestaat uit een medley van bestaande hits van artiesten als Donna Summer en Dead or Alive. De debuutsingle van het gezelschap werd ten doop gehouden tijdens de Amsterdamse Gay Pride. <br><br>Hype <br><br>Na dat optreden belandde het liedje met lyrische recensies op de populaire showbizzblog PerezHilton.com. Een hype, vooral in homokringen, was geboren. Bearforce1 bestaat uit drie Nederlandse mannen en een Ier. De vier leerden elkaar kennen tijdens een vakantie in New York. In homokringen staan stoere, harige mannen bekend als 'beren', vandaar de naam Bearforce. <br><br>Ge\ïnteresseerden voor de vacature van Spare Bear kunnen zich opgeven via de website van de formatie. <br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

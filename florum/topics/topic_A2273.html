@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cafe Waterlooplein – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cafe Waterlooplein</h1>
+<p class="tm">8 posts · started 2008-01-20 15:56 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080120155600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-01-20 15:56</span></div>
+  <div class="pb"><img src="http://lh4.google.com/floraboys/R5NsnhhK9mI/AAAAAAAABzQ/4ei4QOJz6cU/DSC00046.JPG?imgmax=512"></div>
+</article>
+<article class="post" data-ts="20080120155600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-01-20 15:56</span></div>
+  <div class="pb"><img src="http://lh4.google.com/floraboys/R5NsmhhK9lI/AAAAAAAABzI/DiMjXMbyTGk/DSC00045.JPG?imgmax=512"><!--82.204.25.6--></div>
+</article>
+<article class="post" data-ts="20080120155700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-01-20 15:57</span></div>
+  <div class="pb">meer foto's op het floraboys picasawebje:<br><br><a href="http://picasaweb.google.com/floraboys/CafeWaterlooPlein">kommaardoor</a><!--82.204.25.6--></div>
+</article>
+<article class="post" data-ts="20080120170800" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2008-01-20 17:08</span></div>
+  <div class="pb">mooi mooi mooi<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080121083600" id="p5">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#5 · 2008-01-21 08:36</span></div>
+  <div class="pb">Stelletje playaz zijn jullie toch! Lekker breezahsletje hoor!<!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20080201132900" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2008-02-01 13:29</span></div>
+  <div class="pb">Ik heb gisteravond de hele avond doorgebracht bij Annie en Nico in het caf\é. Ik kan melden dat Nico weer helemaal de ouwe is. Hij is anders nooit ziek dus dat overgeven was een incidentje.<!--145.222.93.6--></div>
+</article>
+<article class="post" data-ts="20080201135200" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2008-02-01 13:52</span></div>
+  <div class="pb">ah gelukkig maar.<!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080201140400" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2008-02-01 14:04</span></div>
+  <div class="pb">Briljante mensen, briljante kroeg.<!--194.171.252.100--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

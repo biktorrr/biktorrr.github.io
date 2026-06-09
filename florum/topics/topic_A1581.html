@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>&#x27;Blingbling&#x27;-accesoires gevraagd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">&#x27;Blingbling&#x27;-accesoires gevraagd</h1>
+<p class="tm">9 posts · started 2005-09-26 13:09 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050926130900" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2005-09-26 13:09</span></div>
+  <div class="pb">Ik heb vrijdagavond een feest met als thema 'bling bling' en waar ik uiteraard in 'bling bling'-stijl naartoe moet. Kan iemand mij misschien helpen aan passende kleding, accesoires, andere attributen????? <br>Ook ideeen zijn welkom.</div>
+</article>
+<article class="post" data-ts="20050926134600" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2005-09-26 13:46</span></div>
+  <div class="pb">misha heeft een zilveren schakel, misschien kan ie je die uitlenen. Verder heeft elke feestwinkel (jan monnikkendam, etc) nep gouden kettingen, hologes,tandplakkertjes, hoeden etc.<br><a href="http://www.pimpsuits.net/">Hier</a> nog wat ideetjes.<br></div>
+</article>
+<article class="post" data-ts="20050926234600" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2005-09-26 23:46</span></div>
+  <div class="pb">Leen ff de gouden dollar ketting van BikT.</div>
+</article>
+<article class="post" data-ts="20050928142200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2005-09-28 14:22</span></div>
+  <div class="pb">Heeft er nou niemand nog iets in de kast hangen??</div>
+</article>
+<article class="post" data-ts="20050928143100" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-09-28 14:31</span></div>
+  <div class="pb">Ik heb nog wel een gouden oscar op de kast staan maar verder is mijn garderobe niet echt blingbling mitsj.<br><br></div>
+</article>
+<article class="post" data-ts="20051003114300" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2005-10-03 11:43</span></div>
+  <div class="pb">Mitch, zijn er nog fotoos? Dan zet ik die graag weer op mijn gameboy om aan diverse onbekenden op opdringerige lill't wijze te laten zien hoe lollig of dat mijn vrienden wel niet zijn.<br> </div>
+</article>
+<article class="post" data-ts="20051003185100" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-10-03 18:51</span></div>
+  <div class="pb">@ Tijmen: zodra ik iets heb zal ik het doorsturen. Ik was verder niet echt erg "bling bling" dus verwacht er niet teveel van!</div>
+</article>
+<article class="post" data-ts="20051016194900" id="p8">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#8 · 2005-10-16 19:49</span></div>
+  <div class="pb">Je hebt nu onwijs coole bling-bling riemen met een computerschermpje waarin je je eigen tekst kan zetten! http://www.shopaholic-bykayinc.com/pagina4.html</div>
+</article>
+<article class="post" data-ts="20051017081500" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2005-10-17 08:15</span></div>
+  <div class="pb">Misschien dat we die als Floraboys zijnde moeten aanschaffen. Mocht iemand dan een bling-bling-party hebben of andersinds goede sier willen maken, dan kan hij of zij die bling-bling riem aan.<br><br>In geval van aanschaf zou ik suggereren dat BIK 'm standaard draagt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frank op de b?hne! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Frank op de b?hne!</h1>
+<p class="tm">6 posts · started 2002-02-10 22:20 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020210222000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-02-10 22:20</span></div>
+  <div class="pb">Frank (Bloem) heeft een nieuw toneelstuk op zijn naam staan. Hij nodigt ons uit om te komen kijken. Het is komende week te zien in Theater Perdu 's avonds om half negen. De precieze dagen weet ik niet. Waarschijnlijk wo/do/vr/za.   </div>
+</article>
+<article class="post" data-ts="20020211095100" id="p2">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#2 · 2002-02-11 09:51</span></div>
+  <div class="pb">Zaterdag komt mij het best uit</div>
+</article>
+<article class="post" data-ts="20020211124600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-02-11 12:46</span></div>
+  <div class="pb">ik kan helemaal niet (wo do andere afspr, daarna sneeuwborden) maar veel plezieders</div>
+</article>
+<article class="post" data-ts="20020211153500" id="p4">
+  <div class="ph"><span class="pa">Andy</span><span class="pm">#4 · 2002-02-11 15:35</span></div>
+  <div class="pb">Ik ga zaterdag met Margje en Niels. Als je ook wilt, moet je<br>dat met je Frank opbellen (vaste nummer) en inspreken hoe-<br>veel kaarten je wilt voor welke dag.</div>
+</article>
+<article class="post" data-ts="20020212194500" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-02-12 19:45</span></div>
+  <div class="pb">ik kan ook niet (do werken/ vr&za ben ik in hantwerpen want dan vieren Fleur en ik ons 5-jarig samenzijn)</div>
+</article>
+<article class="post" data-ts="20020213123100" id="p6">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#6 · 2002-02-13 12:31</span></div>
+  <div class="ps">Ook zondag</div><div class="pb">Volgens mij staat Frank ook zondag nog op de buhne van  theater Perdu. Het spektakel zal beginnen om 1/2 9, als ik het wel heb.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

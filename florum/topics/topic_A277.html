@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nieuwe stand en update wedstrijden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">nieuwe stand en update wedstrijden</h1>
+<p class="tm">6 posts · started 2001-10-04 12:59 by TuuT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011004125900" id="p1">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#1 · 2001-10-04 12:59</span></div>
+  <div class="pb">andere uitslagen<br><br>Schenker              - A.E.L. b4                7  -  6<br>Real Tampeloeritas    - Zeker van de Beker       1  -  4<br><br>Dus dat is ongeveer het nivau van Schenker.. als AEL met 6-1 van real tampoloeritas had verloren.<br><br>Dat betekend wel dat de stand onderhand de volgende is<br><br>* derde klasse A            gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br> 1 Schenker                    3    3   0   0    6    17 -   6    0/ 0   0/ 0<br> 2 Flora Boys                  3    2   1   0    5    34 -  10    0/ 0   0/ 0<br> 3 A.E.L. b4                   3    1   0   2    2    12 -  13    0/ 0   0/ 0<br> 4 Real Tampeloeritas          3    1   0   2    2    10 -  13    0/ 0   0/ 0<br> 5 Zeker van de Beker          3    1   1   1    1    10 -  12    0/ 0   2/ 2<br> 6 ITS-AIO                     3    0   0   3   -4     1 -  30    0/ 0   5/ 4<br><br><br>Als we dus vanavond winnen staan we eindelijk bovenaan<br>Go Floraboys<br><br></div>
+</article>
+<article class="post" data-ts="20011004133900" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-10-04 13:39</span></div>
+  <div class="pb">het is 'betekent' met een t van Tuut</div>
+</article>
+<article class="post" data-ts="20011004161100" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-10-04 16:11</span></div>
+  <div class="pb">Ik begin het nu echt een beetje zielig te vinden voor de bebaarde buitenlandse baltovenaartjes van ITS AIO. Anders moet er af en toe iemand van ons maar bij hun meespelen als ze tegen Real Tampeloeritas, Zeker van de Beker of Schenkert moeten! Ik dacht aan De Pit, die kreeg zelfs applause van een van de ITS-AIO'ers toen hij er weer 1 in de netten had gejaagd.</div>
+</article>
+<article class="post" data-ts="20011004185900" id="p4">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#4 · 2001-10-04 18:59</span></div>
+  <div class="ps">retoriek</div><div class="pb">er is in de vraagstelling of statement hierboven toch wel duidelijk een retorisch elementje in geslopen tuutje!!!<br><br>als we vanavond winnen staan we bovenaan!!?<br><br>we staan bovenaan!!!<br><br>WE WORDDEN KAMPIOEENENNNN<br><br><br>olelelleoeoleleleoele<br><br>en van je elaaa-elaaa-elaaa--holllalalalallalaa eeeeeela</div>
+</article>
+<article class="post" data-ts="20011005164700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-10-05 16:47</span></div>
+  <div class="pb">ik wil nu eigenlijk wel de nieuwste stand zien!we zullen wel weer een week moeten wachten..</div>
+</article>
+<article class="post" data-ts="20011005174300" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2001-10-05 17:43</span></div>
+  <div class="pb">Hee een week vol glorie heb je het dan over he Michiel, we kunnen nu lekker w8en tot dat mooiiieeee moment.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

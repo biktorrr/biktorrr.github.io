@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>morgen rellende hobbit kijken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">morgen rellende hobbit kijken?</h1>
+<p class="tm">9 posts · started 2005-10-05 13:55 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051005135500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-10-05 13:55</span></div>
+  <div class="pb">Morgen gaan in ieder geval Merl en ik naar de cinema om naar Frodo te kijken die in de engelse Hooligans-onderwereld terecht komt. Florafilmpje dus.<br><br>zie ook <a href="http://www.imdb.com/title/tt0385002/">Hooligans @ Imdb</a><br><br>Pathe de Munt 19.30. aanmelden voor deze happening kan hier, per telefoon of bij de Pathe voordeur.</div>
+</article>
+<article class="post" data-ts="20051005135600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-10-05 13:56</span></div>
+  <div class="pb">Het is een film die over bikkelen gaat, dus komt allen.</div>
+</article>
+<article class="post" data-ts="20051005135700" id="p3">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#3 · 2005-10-05 13:57</span></div>
+  <div class="pb">er schijnt ook een Millwall Hooligan in voor te komen</div>
+</article>
+<article class="post" data-ts="20051005144400" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2005-10-05 14:44</span></div>
+  <div class="pb">lijkt me leuk, moet ik wel morgen nog even een afspraak met mijn begeleidster verzetten die mij dan graag zou willen bellen.<br></div>
+</article>
+<article class="post" data-ts="20051005170900" id="p5">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#5 · 2005-10-05 17:09</span></div>
+  <div class="pb">18.56 bij Burger Kingie</div>
+</article>
+<article class="post" data-ts="20051006105900" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2005-10-06 10:59</span></div>
+  <div class="pb">kom toch niet, ze is al de hele week aan het schuiven en ik kan het niet maken om dan als zij eindelijk een tijd heeft gevonden _dat_ dan te verzetten. :(<br></div>
+</article>
+<article class="post" data-ts="20051006214000" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2005-10-06 21:40</span></div>
+  <div class="pb">Een verstandige keuze lijkt me.<br><br></div>
+</article>
+<article class="post" data-ts="20051007095900" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-10-07 09:59</span></div>
+  <div class="pb">lijkt mij, vooral achteraf gezien, ook.</div>
+</article>
+<article class="post" data-ts="20051007103000" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2005-10-07 10:30</span></div>
+  <div class="pb">tja, en toen was het stil gister en kreeg ik vanmorgen een meeltje dat ze ziek thuis zat. Maakt verder niet uit, ik kom er wel. Het doet me goed om te horen dat ik niet een wereldfilm heb gemist, zonder OV is een filmpje in Adam pakken plots een stuk prijziger geworden.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

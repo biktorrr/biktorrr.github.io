@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys KampioensDVD: wie nog? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys KampioensDVD: wie nog?</h1>
+<p class="tm">5 posts · started 2004-02-24 16:06 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040224160600" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-02-24 16:06</span></div>
+  <div class="pb">hallo, ik was even het overzicht kwijt:<br><br>wie willen er nog een Floraboys Kampioens DVD kopen.<br>ze zijn al vanaf 2,- te koop.<br><br>Sicco? <br>Tube? <br>Michiel? <br>Merlijn? <br>Frank P.?</div>
+</article>
+<article class="post" data-ts="20040224174900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-02-24 17:49</span></div>
+  <div class="pb">Jaja</div>
+</article>
+<article class="post" data-ts="20040225100700" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2004-02-25 10:07</span></div>
+  <div class="ps">kampioens dvd</div><div class="pb">ik heb hem nog niet gezien, is het echt heel vreselijk?<br>dan wil ik hem niet<br><br>als het mee valt, YES ik wil 'm</div>
+</article>
+<article class="post" data-ts="20040226130100" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2004-02-26 13:01</span></div>
+  <div class="pb">ik heb hem allang..</div>
+</article>
+<article class="post" data-ts="20040226144400" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-02-26 14:44</span></div>
+  <div class="pb">ik heb er al \é\én</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

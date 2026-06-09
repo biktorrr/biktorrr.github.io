@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Champions league anyone? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Champions league anyone?</h1>
+<p class="tm">8 posts · started 2010-09-11 08:41 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100911084100" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2010-09-11 08:41</span></div>
+  <div class="pb">Boys, de passepartouts voor de CL zijn vanaf vandaag te koop voor die Jazz. Wie wil er naar een wedstrijd voor 80 euro? PP zijn 240 voor 3.<br><br>Wedstrijden: Madrid, Milan en Auxerre.</div>
+</article>
+<article class="post" data-ts="20100911085100" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-09-11 08:51</span></div>
+  <div class="pb">addendum: mocht je willen, hoeveel heb je dan over voor een kaartje:<br><br>Madrid?<br>Milan?<br>Auxerre?<br><br>Als ik drie kaarten ga kopen om over die boys te verspreiden is dit wel handig om te weten. Anders wil er straks niemand naar Auxerre bijvoorbeeld.<br><br></div>
+</article>
+<article class="post" data-ts="20100911103000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-09-11 10:30</span></div>
+  <div class="pb">wedstrijdje madrid of milan lijkt me wel wat....wel een hoop dollares. Ik ga eens kijken of ik niet een zekere sponsorende verzekeraar wat tickets kan laten doneren aan deze Professional.</div>
+</article>
+<article class="post" data-ts="20100911105400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-09-11 10:54</span></div>
+  <div class="pb">Wat is de propositie precies? In m'n eentje naar een wedstrijd of met die Jazz? 80 is trouwens wel absurd veel. Denkelijk iets te veel voor mij. </div>
+</article>
+<article class="post" data-ts="20100911110800" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2010-09-11 11:08</span></div>
+  <div class="pb">Tja, er zijn verschillende mensen die hebben aangegeven er wel naartoe te willen. The pit en pappa bouba bijvoorbeeld. Mij lijkt het ook leuk om een keer te gaan. Maar voorlopig kan je dus alleen voor alledrie bestellen.  Stel dat ik 2x3 wedstrijden koop dan is dus de vraag of een paar van jullie een wedstrijd willen overnemen. Ik hoef er geen 3x naartoe namelijk. </div>
+</article>
+<article class="post" data-ts="20100911162600" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2010-09-11 16:26</span></div>
+  <div class="pb">hmm.. ik zou alleen die woensdag kunnen naar AC Milan, maar misschien wel leuk.. ga er over denken</div>
+</article>
+<article class="post" data-ts="20100914144400" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2010-09-14 14:44</span></div>
+  <div class="pb">hmpf<br><br>Ik hoor net dat mijn baas met een grote klant en de selectie van de ultrajoden in het vliegtuig zat onderweg naar Madrid.<br>Ik moet echt een betere band opbouwen met Agon...<br></div>
+</article>
+<article class="post" data-ts="20100914144900" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2010-09-14 14:49</span></div>
+  <div class="pb">Ha die profesj, gezellig dat je d'r weer bent!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

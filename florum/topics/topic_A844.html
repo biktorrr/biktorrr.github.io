@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Antisemitisme – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Antisemitisme</h1>
+<p class="tm">6 posts · started 2003-07-14 17:08 by Jose Blanco Fietsende Joden</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030714170800" id="p1">
+  <div class="ph"><span class="pa">Jose Blanco Fietsende Joden</span><span class="pm">#1 · 2003-07-14 17:08</span></div>
+  <div class="pb">Omdat ik het vermoeden had dat ik nogal benadeeld werd heb ik toch maar even de rekenmachine erbij gepakt.<br><br>Reken maar even mee:<br><br>Zaterdag:<br><br>Virenque wint de rit en pakt zowel geel als de bolletjes.<br><br>Etappe Virenque:10<br>Geel Virenque- : 4<br>Armstrong----- : 2<br>Bolletjes trui : 2<br>Groen McEwen-  : 1<br>------------------<br>----------------19<br><br><br>Toch?<br>Vervolgens heb ik twee vragen:<br><br>Waarom staat er dan 18 achter mijn naam?<br><br>Moet ik alle andere etappes ook nagaanrekenenen of is hier sprake van een bijzonder ongelukkig foutje?<br><br><br><br><br>                 </div>
+</article>
+<article class="post" data-ts="20030714230400" id="p2">
+  <div class="ph"><span class="pa">jb</span><span class="pm">#2 · 2003-07-14 23:04</span></div>
+  <div class="pb">ik laat mijn topic niet zomaar naar de tweede plaats verwijzen.</div>
+</article>
+<article class="post" data-ts="20030715001400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-07-15 00:14</span></div>
+  <div class="ps">ik sta nog geen 1e</div><div class="pb">ik ga er dus vanuit dat er telfouten gemaakt kunnen zijn, moet ik alles natellen of gaat het eerlijk???</div>
+</article>
+<article class="post" data-ts="20030716114600" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-07-16 11:46</span></div>
+  <div class="pb">Welk gedeelte van "Ik wil mijn rechtmatig vergaarde punten erbij" wordt niet begrepen dudez?</div>
+</article>
+<article class="post" data-ts="20030716160800" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2003-07-16 16:08</span></div>
+  <div class="pb">sorry ik had dit berichtje gemist.. zal worden gecorrigeerd</div>
+</article>
+<article class="post" data-ts="20030717093900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-07-17 09:39</span></div>
+  <div class="pb">Het staat ook onder een wat rare titel vernoemd... Misschien minpunten voor degene die dit topic gestart heeft?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

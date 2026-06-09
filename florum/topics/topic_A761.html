@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie tikt 20 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie tikt 20</h1>
+<p class="tm">1 post · started 2003-04-16 14:10 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030416141000" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-04-16 14:10</span></div>
+  <div class="pb">Timmie tikt 20<br><br>Alweer de twinstigste timmie tikt. En aan de vooravond van alweer een belangrijke wedstrijd voor de floraboys. DE eerste helft van het seizoen zit erop. Nu moeten we gaan bikkelen AEM zodat er een cheique uitslag op het scorebord komt. Om met de woorden van de minister van Informatie te spreken. " As usual, we will slaughter them." In tegenstelling tot het leger dat de iraqi's tot hun beschikking hebben, hebben wij wel een kans om te gaan stunten. 4kt1 is een redelijk team, maar zoals FC utrecht gisteren puik liet zien, is iedereen te verslaan. Ook teams met minder ballen in de buhne dan wij. Gelukkig treden wij aan op volle oorlogssterkte met voldoende wissels. Slechts Sandor is een beetje aan het verslijten door het zware programma. <br>Dat voetbal verbroedert heb ik al vaak gepredikt in mijn column als spreekbuis van en tot de wereld. Een goed voorbeeld was het nieuwsbericht dat britse militairen in Basra tegen het lokale FC Basra-saddam is heilig, prijs zijn grote neus- ( dat laatse deel van de clubnaam zal naar alle waarschijnlijkheid worden geschrapt) aan het ballen waren. DE FC Basra werde helaas ingemaakt door de britten die met hun eigen bal speelden en afgetriand tot en met waren. Ik geloof dat het 7-3 werd uiteindelijk. Een mooi voorbeeld dat alle landen op een na voetbal leuk en plezierig vinden, maakt niet uit van welk geloof je komt of wat voor chemische wapens je hebt. Het enige land dat hier niet ontzettend in mee doet is uitgerekend de Verenigde Staten. Dit bracht mij op een idee van een theorie over het busshianisme. Bush is zoals jullie weten een echte baseball fan en is ook zeer tegen niet-Amerikaanse sporten. Irak was waarschijnlijk slechts een persoonlijk advies van Papa Bush, die Saddam nog weg wilde hebben. Zijn eigenlijke kruistocht is om het voetbal aller landen uit te roeien in te vervangen door baseball. (ik mag wegens mijn amerikaanse uitgever geen honkbal zeggen, zo ver strekt zijn invloed al!) Een queeste die gedoemd is te falen natuurlijk. Hoor ik daar de roepende in de woestijn alweer? Ja.. het is Witte Joste die in zijn gebrekkig spaans roept. " Voetballers aller landen verenigt u" <br>Maar de gevallen ster die hetin het buitenland niet zo kan maken dat de roep om zijn terugkeer groot wordt, heeft helaas een schorre keel.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homo van Zeg eens Aaa? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Homo van Zeg eens Aaa?</h1>
+<p class="tm">2 posts · started 2006-02-17 10:58 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060217105800" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-02-17 10:58</span></div>
+  <div class="pb">Las net <a href="http://www.parool.nl/nieuws/2006/FEB/16/ams2.html">dit<a/> bericht bij Het Parool. Job Cohen wil meer moslims in soaps, naar het voorbeeld van Zeg eens aaa, waar een homostel veel emanciperend werk deed voor die bevolkingsgroep. Maar, zo vroeg ik me af, wie was er in vredesnaam homo bij Zeg eens aaa?</div>
+</article>
+<article class="post" data-ts="20060217113100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-02-17 11:31</span></div>
+  <div class="pb">er zat in \éen van de latere seizoenen een lesbisch stel (ik heb het nog ff getjekt bij de oudertjes)<br><br>op het net vond ik zo gauw dit:<br>Carline Brouwer (1960). Nederlands actrice die in 1984 de lesbische vriendin speelde van de lesbische kinderarts uit "Zeg eens AAA"<br><br>Ik vind dat Cohen niet moet willen claimen de aanzet te willen zijn van processen die allang al in werking zijn. Diverse minderheden hebben al een paar flinke vingers in de pap van de media, van RTL Boulevard tot Schnitzelparadijs, van Soap tot Discussieprogramma.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

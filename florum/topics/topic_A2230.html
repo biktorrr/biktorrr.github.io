@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Celeb-Home spotting – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Celeb-Home spotting</h1>
+<p class="tm">5 posts · started 2007-11-26 09:06 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071126090600" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2007-11-26 09:06</span></div>
+  <div class="pb">wat: Achter-Balkon Ca en Tube<br>Wanneer: Gisteren, zondag 25 Nov<br>Bijzonderheden: Zag er goed schoon uit. En was goed te zien van het nieuwe balkon van m'n broer, die nu op dezelfde etage woont.</div>
+</article>
+<article class="post" data-ts="20071126091300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-11-26 09:13</span></div>
+  <div class="pb">haha, zo terecht. Laten we anders langzamerhand alle appartementen opkopen in dat gebouw...<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071126093700" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2007-11-26 09:37</span></div>
+  <div class="pb">Misschien kunnen over en weer live streaming webcams worden geplaatst. Kunnen wij ook meegenieten van het schone balkon.<!--89.205.181.203--></div>
+</article>
+<article class="post" data-ts="20071126103800" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2007-11-26 10:38</span></div>
+  <div class="pb">hehehe, bijzonder terecht T.<!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20071126104300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2007-11-26 10:43</span></div>
+  <div class="pb">Hooghe teydingh!<!--194.171.252.100--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

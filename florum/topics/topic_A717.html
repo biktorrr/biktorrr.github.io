@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 16 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 16</h1>
+<p class="tm">3 posts · started 2003-02-26 14:06 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030226140600" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-02-26 14:06</span></div>
+  <div class="pb">De profetie <br><br>Het hiervolgende stuk tekst is opgegraven in een diepe grot nabij de vindplaats van de Dode Zee rollen. Men heeft moeten concluderen dat die grot de echte beschermde plaats en dat de Dode Zee rollen slechts een afleidingsmaneuvre zijn geweest om grafschenders en plunderaars op het verkeerde voetje te zetten. Dode Zee rollen specialist W. Meijer, tevens kennis van de Floraboys kon zijn verbazing en geluk niet op toen hij hetvolgende vond.<br><br>" Eens zullen er in een land rijk van water en vee de gouden tijden aanbreken. Bloemen zullen de leidraad worden van een plaats waar de ogen van de rechtmatige uitvinder van het geschrift zonder veer op neer zullen dalen. Deze plaats zal in het begin vergeten en verloedert worden. Gebruikt om huiselijke kameraden een illusie van vrijheid te geven. <br>Maar op een dag, ver in de toekomst zullen de wonderlijke stemmen van de profeten van de ronde hier het begin inluiden van de gouden tijd. Slechts gewapend met een rond object zullen zij ondanks alles bij elkaar zijn competitief zijn. Bij deze spelen zal geen bloed vloeien, zal geen deelnemer lager zijn dan de andere, zal de welbekende bron der jeugd de taak als doelpaal op zich nemen en zal er altijd een Zon aanwezig zijn, ook al schermt een dikke laag wolken de zon af.<br>Weet dat dat het begin zal zijn van uw geluk. Stort u in het weledele spel dat deze profeten beoefenen om hun visie op den wereld uit te dragen. <br>In tijd dat deze profeten hun heil zoeken in een door mensen gemaakte grot, zal de tijd van de beproeving aankomen. Twee maal in de tijd dat de maan verschijnt en weer verdwijnt achter de donkere hemel van de nacht zullen zij zich moeten beproeven. Dit zal zeker niet altijd duidelijk zijn, maar zij zullen de beproevingen doorstaan. Kijkt uit naar de komst van de stervedette, wiens naam .."<br><br>Helaas was het manusscript niet verder dan dat te lezen, slecht twee initialen geheel op het einde van de rol ontrafelt de auteur van deze boodschap.<br><br>Dj E.Z.<br><br>Een raadsel dat hede ten dage nog niet is opgelost</div>
+</article>
+<article class="post" data-ts="20030227134900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-02-27 13:49</span></div>
+  <div class="pb">ik begrijp er niks van, gaan we nou de beker winnen of niet?</div>
+</article>
+<article class="post" data-ts="20030227135000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-02-27 13:50</span></div>
+  <div class="pb">nieuwe tt staat nu ook overigens bij de ouwe</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

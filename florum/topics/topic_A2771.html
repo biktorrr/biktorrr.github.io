@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALAAF – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ALAAF</h1>
+<p class="tm">6 posts · started 2009-11-11 11:47 by Camiel</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091111114700" id="p1">
+  <div class="ph"><span class="pa">Camiel</span><span class="pm">#1 · 2009-11-11 11:47</span></div>
+  <div class="pb">Alaaf,<br><br>Het is weer de 11e van de 11e boys, jullie weten wat dat betekent?!<br><br>Groetjes,<br><br>C<br><br></div>
+</article>
+<article class="post" data-ts="20091111122000" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-11-11 12:20</span></div>
+  <div class="pb">Yo O, kan ik 14 - 16 febr 2010 een plekje in hotel Eindhoooffuh reserveren?</div>
+</article>
+<article class="post" data-ts="20091111123700" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2009-11-11 12:37</span></div>
+  <div class="pb">Alaaf: alle Franse winkels dicht en minder openbaar vervoer omdat WO 1 met een gebbetje (11-11, 11:11) ten einde kwam, Camiel?</div>
+</article>
+<article class="post" data-ts="20091111134500" id="p4">
+  <div class="ph"><span class="pa">Camiel</span><span class="pm">#4 · 2009-11-11 13:45</span></div>
+  <div class="pb">Akelige athe\ïst dat ge d'r zijt Oli4.<br></div>
+</article>
+<article class="post" data-ts="20091111141700" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2009-11-11 14:17</span></div>
+  <div class="pb">Sint maarten?<br>Veterans day? (met al die klaproosjes)<br><br>Of toch de kickoff van dat verachtelijke carnaval.<br></div>
+</article>
+<article class="post" data-ts="20091111180800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-11-11 18:08</span></div>
+  <div class="pb"><h1>ALAAF</h1><br><br>Da's chewoon keichezellich!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

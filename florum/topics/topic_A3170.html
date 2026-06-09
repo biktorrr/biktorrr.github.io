@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>neutraal FDK topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">neutraal FDK topic</h1>
+<p class="tm">6 posts · started 2011-10-27 10:31 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111027103122" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2011-10-27 10:31</span></div>
+  <div class="pb"><p><br>	Voor de mensen die niet meer weten in welk topic ze moeten posten en het niet uitmaakt hoe het FDK aanstaande, op 27-12-2011, heet. Wij zijn er bij. Ik organiseer het dit keer niet. Zo moeilijk is het trouwens niet. Pak de telefoon en reserveer voor 20 personen.</p><br></div>
+</article>
+<article class="post" data-ts="20111109214638" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2011-11-09 21:46</span></div>
+  <div class="pb">Ik beroep me op het eerdere voorbehoud dat ik maakte, en tik hem dit jaar af voor het FDK.<br><br>Hint: het volhardende eenmanskamp heeft er niets mee te maken.</div>
+</article>
+<article class="post" data-ts="20111110112043" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-11-10 11:20</span></div>
+  <div class="pb">Spijtig. Hierbij wil ik duidelijk maken dat mijn pogingen nooit bedoeld waren om boys te weren van het FDK maar louter en alleen om de juiste FDK naamgeving te benadrukken.</div>
+</article>
+<article class="post" data-ts="20111110113408" id="p4">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#4 · 2011-11-10 11:34</span></div>
+  <div class="pb">Mededeling van hoogste importantie.<br><br>De Cie oordeelt in unanimiteit dat:<br>overwegende de herhaaldelijke schending door Zijne Heiligheid de Straler (hierna te noemen: Holy One) van het FDK-bestand en gezien de indruk dat Hij niet van zins lijkt Zijn gedrag te verbeteren, Holy One wordt veroordeeld tot het betalen van de gehele drankrekening op het komende FDK. <br><br>Prosit.</div>
+</article>
+<article class="post" data-ts="20111110113921" id="p5">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#5 · 2011-11-10 11:39</span></div>
+  <div class="pb">Rectificatie:<br>De vorige posting was abusievelijk onder de naam van de volledige Cie gepost. Waar de Straler staat moet Oli4 gelezen worden. Om toch een beetje entre-nous bij die boys te zijn heeft hij namelijk de Cie schriftelijk laten weten graag de kosten van de drank voor zijn rekening te nemen. <br><br>Waarvan de Cie akte heeft genomen. Oli4 bedankt!</div>
+</article>
+<article class="post" data-ts="20111110133111" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2011-11-10 13:31</span></div>
+  <div class="pb">Wat een rommelbak bij de Cie. Kan de Cie zich niet beter bezig houden met het vinden en reserveren van een locatie ipv te mekkeren over financien. Straks is er geen eens een drankrekening.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

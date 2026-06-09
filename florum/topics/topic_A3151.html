@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De bak schrijft voor – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De bak schrijft voor</h1>
+<p class="tm">7 posts · started 2011-09-25 11:53 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110925115325" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2011-09-25 11:53</span></div>
+  <div class="pb"><p><br>	<em>&quot;Volgens het rapport van de BAK is het zogenaamde placebo-effect veel meer dan een &#39;ingebeeld&#39; of puur psychologisch effect, maar treden er na inname van een placebopil wel degelijk aantoonbare veranderingen op in de hersenen en elders in het lichaam.<br /><br>	<br /><br>	Artsen kunnen volgens de BAK placebo&#39;s voorschrijven als voldaan wordt aan drie voorwaarden:&nbsp;&quot;</em></p><br></div>
+</article>
+<article class="post" data-ts="20110926115913" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2011-09-26 11:59</span></div>
+  <div class="pb">Goed onderzocht, goed gecommuniceerd, BAK!</div>
+</article>
+<article class="post" data-ts="20110926120111" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-09-26 12:01</span></div>
+  <div class="pb">De vraag is dan wat zit er precies in die placebo-pillen dat ze toch werken? Ze zeggen wel dat er stoffen inzitten die geen invloed hebben..maar toch..</div>
+</article>
+<article class="post" data-ts="20110926130913" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2011-09-26 13:09</span></div>
+  <div class="pb">Het gaat niet om de chemische samenstelling van de pil, maar om het ritueel waarin een dokter jou een recept voorschrijft met het oog op jour genezing. Althans dat is de theorie.<br></div>
+</article>
+<article class="post" data-ts="20110926131317" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2011-09-26 13:13</span></div>
+  <div class="pb">Dat is een veronderstelling. Wat nou als de chemische samenstelling van placebo's bijvoorbeeld fluoxetine bevat? Stel nou dat ze oude voorraden pillen een nieuw leven gunnen als placebo ipv ze te vernietigen. Wie controleert dit?</div>
+</article>
+<article class="post" data-ts="20110926133621" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2011-09-26 13:36</span></div>
+  <div class="pb">Waarom je geen oude medicijnen zou willen vermalen tot placebo's? Goede vraag eigenlijk. Ik zou het zo snel niet weten.</div>
+</article>
+<article class="post" data-ts="20110926145951" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2011-09-26 14:59</span></div>
+  <div class="pb">omBAKken noemen ze dat.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

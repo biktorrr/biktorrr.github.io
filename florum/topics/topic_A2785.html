@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A Sudoku Challenger Appears – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">A Sudoku Challenger Appears</h1>
+<p class="tm">3 posts · started 2009-12-10 13:20 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091210132000" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-12-10 13:20</span></div>
+  <div class="pb"><object id="flashObj" width="420" height="236" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9/42806370001?isVid=1&publisherID=293884104" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="videoId=50173925001&linkBaseURL=http%3A%2F%2Fwww.time.com%2Ftime%2Fvideo%2Fplayer%2F0%2C32068%2C50173925001_1939607%2C00.html&playerID=42806370001&domain=embed&" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9/42806370001?isVid=1&publisherID=293884104" bgcolor="#FFFFFF" flashVars="videoId=50173925001&linkBaseURL=http%3A%2F%2Fwww.time.com%2Ftime%2Fvideo%2Fplayer%2F0%2C32068%2C50173925001_1939607%2C00.html&playerID=42806370001&domain=embed&" base="http://admin.brightcove.com" name="flashObj" width="420" height="236" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" swLiveConnect="true" allowScriptAccess="always" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object></div>
+</article>
+<article class="post" data-ts="20091210134400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-12-10 13:44</span></div>
+  <div class="pb">Oh my god. Een cheater!</div>
+</article>
+<article class="post" data-ts="20091210144900" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2009-12-10 14:49</span></div>
+  <div class="pb">Wei Whua Wong lijkt me ook geen zuivere graat. Bloeddoping zeg ik u.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

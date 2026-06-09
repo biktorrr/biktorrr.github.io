@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prijsvraag uit Egypte – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Prijsvraag uit Egypte</h1>
+<p class="tm">5 posts · started 2007-11-09 15:05 by VB (namens die Jazz)</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071109150500" id="p1">
+  <div class="ph"><span class="pa">VB (namens die Jazz)</span><span class="pm">#1 · 2007-11-09 15:05</span></div>
+  <div class="pb">Ik kreeg deze prijsvraag uit Egypte opgestuurd...<br><br><a href="http://staff.science.uva.nl/~vdeboer/floraboys/jazzegypte.jpg"><img src="http://staff.science.uva.nl/~vdeboer/floraboys/jazzegypte.jpg" width=300></a><br>(klikable plaatje)<br><br>Wat staat er op deze foto?<br><br>A. De jazzmaster geeft een masterclas ontspannen.<br>B. Jazzmaster heeft op de bazaar een la coste petje gekocht.<br>C. Floraboys de uitgebalanceerdste!</div>
+</article>
+<article class="post" data-ts="20071109150700" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-11-09 15:07</span></div>
+  <div class="pb">Da's overduidelijk antwoord A<!--90.46.19.213--></div>
+</article>
+<article class="post" data-ts="20071109150800" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-11-09 15:08</span></div>
+  <div class="pb">Zijn niet gewoon alle antwoorden goed?<br><br>Ziet er gezellig uit met al die colaatjes...<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071109153800" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2007-11-09 15:38</span></div>
+  <div class="pb">ik denk ook alle 3.. alhoewel floraboys de uitgebalanceerste hier ook goed bij past.<!--132.229.223.225--></div>
+</article>
+<article class="post" data-ts="20071109154500" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2007-11-09 15:45</span></div>
+  <div class="pb">ik mis alleen de tante op de foto.. is die ook nog mee? of stonder er al lama en/of kamelen?<!--132.229.223.225--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

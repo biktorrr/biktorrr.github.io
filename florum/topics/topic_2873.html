@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bad Religion: 11 juni? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bad Religion: 11 juni?</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2010-04-25 21:28 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100425212800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1&nbsp;·&nbsp;2010-04-25 21:28</span></div>
+  <div class="pb">Profesj? Drouille? jullie toevallig zin om het oude lijfje mee te sleuren naar "Bad Religion -30 years" in de Melkweg op vrijdag 11 juni?<br><br>Iemand anders?</div>
+</article>
+<article class="post" data-ts="20100425214300" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2&nbsp;·&nbsp;2010-04-25 21:43</span></div>
+  <div class="pb">Ik moet nog even de agenda's raadplegen maar sta hier zeker niet onwelwillend tegenover.</div>
+</article>
+<article class="post" data-ts="20100425221400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3&nbsp;·&nbsp;2010-04-25 22:14</span></div>
+  <div class="pb">Zie in dat geval ook een ander topic...</div>
+</article>
+<article class="post" data-ts="20100426074100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4&nbsp;·&nbsp;2010-04-26 07:41</span></div>
+  <div class="pb">Mooi. Oude rockers never die!</div>
+</article>
+<article class="post" data-ts="20100426083500" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5&nbsp;·&nbsp;2010-04-26 08:35</span></div>
+  <div class="pb">Deze oude botten zijn dan nog aan het bijkomen van Them Crooked Vultures, maar wellicht dat ik net als Vic dan al wel acte de presence kan geven.<br></div>
+</article>
+<article class="post" data-ts="20100426142900" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6&nbsp;·&nbsp;2010-04-26 14:29</span></div>
+  <div class="pb">Puntje is wel dat we niet al te lang moeten wachten met kaartjes kopen..</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

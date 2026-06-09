@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vrijdagavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vrijdagavond</h1>
+<p class="tm">10 posts · started 2008-09-05 07:48 by JK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080905074800" id="p1">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#1 · 2008-09-05 07:48</span></div>
+  <div class="pb">Ik heb wel zin om een biertje te pakken vanavond. Maakt mij niet uit Haarlem of Amsterdam (dan wel graag in de buurt van CS). Zijn er nog andere boys hier voor in?</div>
+</article>
+<article class="post" data-ts="20080905075400" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2008-09-05 07:54</span></div>
+  <div class="pb">Ik moet me laten inenten tegen Mexicanen.</div>
+</article>
+<article class="post" data-ts="20080905095200" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2008-09-05 09:52</span></div>
+  <div class="pb">Ik weet het nog niet. Amber is ziek.</div>
+</article>
+<article class="post" data-ts="20080905100300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-09-05 10:03</span></div>
+  <div class="pb">NEYT!</div>
+</article>
+<article class="post" data-ts="20080905120600" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-09-05 12:06</span></div>
+  <div class="pb">NEYT.<br><br>Geen potsers voor mij, ik ben met olick cultureel aan het genieten.</div>
+</article>
+<article class="post" data-ts="20080905131900" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2008-09-05 13:19</span></div>
+  <div class="pb">Ik tik 'm af vanavond.</div>
+</article>
+<article class="post" data-ts="20080905150400" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2008-09-05 15:04</span></div>
+  <div class="pb">Hm, het lijkt me dat het dan Haarlem wordt?<br><br>Lil' Professional, ben jij in de hizzay?</div>
+</article>
+<article class="post" data-ts="20080905152100" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2008-09-05 15:21</span></div>
+  <div class="pb">Haarlem ok. laten we anders even bellen.</div>
+</article>
+<article class="post" data-ts="20080905152300" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-09-05 15:23</span></div>
+  <div class="pb">prima.</div>
+</article>
+<article class="post" data-ts="20080905163300" id="p10">
+  <div class="ph"><span class="pa">Anonieme spotter</span><span class="pm">#10 · 2008-09-05 16:33</span></div>
+  <div class="pb">TN zit in Alphen film te kijken met collega's vanavond..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

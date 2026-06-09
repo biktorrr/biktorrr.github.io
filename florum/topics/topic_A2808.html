@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geniet mee van elegendarische albumcovers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Geniet mee van elegendarische albumcovers</h1>
+<p class="tm">4 posts · started 2010-01-04 16:57 by WBM</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100104165700" id="p1">
+  <div class="ph"><span class="pa">WBM</span><span class="pm">#1 · 2010-01-04 16:57</span></div>
+  <div class="pb">http://www.stevecarter.com/albumcovers.htm</div>
+</article>
+<article class="post" data-ts="20100112122600" id="p2">
+  <div class="ph"><span class="pa">Wbm</span><span class="pm">#2 · 2010-01-12 12:26</span></div>
+  <div class="pb">Ik zou bovenstaande site toch nog even extra willen pluggen bij met name vic, taimny, mudl en mitch... Ik vermoed dat dit enige emotie gaat losmaken... Legendaaaaaaries</div>
+</article>
+<article class="post" data-ts="20100112142300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2010-01-12 14:23</span></div>
+  <div class="pb">ah ja, deze site was mij al bekend, maar dat maakt m inderdaad niet minder hilarisch </div>
+</article>
+<article class="post" data-ts="20100112201000" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2010-01-12 20:10</span></div>
+  <div class="pb">steingut, ik geloof dat ik een aantal herken uit de platencollectie in Spa.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

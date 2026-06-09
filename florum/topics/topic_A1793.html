@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WK-dips – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WK-dips</h1>
+<p class="tm">8 posts · started 2006-06-29 13:00 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060629130000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-06-29 13:00</span></div>
+  <div class="pb">Er zijn altijd twee grote dips bij een wk/ek. Het moment dat NL wordt uitgeschakeld en het moment dat er niet langer iedere dag wedstrijden zijn. Meestal komt dip 1 na dip 2, waardoor dip 2 verzacht wordt. Nu wordt dip 2 slechts versterkt doordat die kikkerbillenvretende adoptielandgenoten van me er nog wel in zitten. <br><br>Tot zover, verder alles ok in Parijs!</div>
+</article>
+<article class="post" data-ts="20060629134200" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-06-29 13:42</span></div>
+  <div class="pb">En wij kunnen ons hier in de tussentijd amuseren met een wankelend kabinet.</div>
+</article>
+<article class="post" data-ts="20060629140100" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-06-29 14:01</span></div>
+  <div class="pb">het leven is vreselijk.</div>
+</article>
+<article class="post" data-ts="20060629152500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-06-29 15:25</span></div>
+  <div class="pb">Ik zit in Cambridge en vermaak me kostelijk. Tot mijn grote vreugde betalen ze me om hier naar schoolborden te staren: 200 Engelse ponden. En de accomodatie is voor nop...</div>
+</article>
+<article class="post" data-ts="20060629154100" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2006-06-29 15:41</span></div>
+  <div class="pb">Ondertussen ga ik voor de derde keer Dave interviewen...<br></div>
+</article>
+<article class="post" data-ts="20060629155500" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2006-06-29 15:55</span></div>
+  <div class="pb">Merlijn,<br>heb je al een "Nederland steunt Engeland tegen Portugal"-actie op touw gezet voor morgenavond?</div>
+</article>
+<article class="post" data-ts="20060629165900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2006-06-29 16:59</span></div>
+  <div class="pb">Morgen zit ik in rocking Swansea. Weet niet of ze in Wales zoveel geven om het wel en wee van het Engelse team. Ik hoorde dat ten tijde van Engeland tegen Trinidad en Tobago, de schotse pleinen getooid waren in de nationale kleuren van T&T. (Misschien had ik dat trouwens van jou, MB.)</div>
+</article>
+<article class="post" data-ts="20060701115000" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2006-07-01 11:50</span></div>
+  <div class="pb">Ik had het leuk gevonden om met z'n allen nog een wedstrijdje te kijken gisteren, maar op vrijdag is dat altijd lastig.<br>Misschien vanavond een herkansing? Evt is een potsertje in de stad nadat ik lara heb opgehaald van werk (22:00)ook wel chezelli.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

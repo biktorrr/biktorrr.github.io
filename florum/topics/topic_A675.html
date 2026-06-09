@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stem Winnie: hitsiger dan Femke – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Stem Winnie: hitsiger dan Femke</h1>
+<p class="tm">5 posts · started 2003-01-14 15:47 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030114154700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-01-14 15:47</span></div>
+  <div class="pb">als dit geen zetels trekt:<br><br>Lijsttrekker Winny De Jong van de Conservatieven.nl zal halfnaakt in de Panorama verschijnen die vanaf 15 januari in de winkels ligt.<br>In het blad staat naast de naaktfoto's ook een interview met de politica.<br>Een signeersessie voor de liefhebbers vindt plaats 15 januari vanaf 12 uur in tijdschriftenhandel Walk In aan de Herengracht 11 in Den Haag.</div>
+</article>
+<article class="post" data-ts="20030114155800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-01-14 15:58</span></div>
+  <div class="pb">Vrije dag is reeds opgenomen.</div>
+</article>
+<article class="post" data-ts="20030115021900" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-01-15 02:19</span></div>
+  <div class="pb">Aber die Winnie war doch ja keine Pornovedette</div>
+</article>
+<article class="post" data-ts="20030115133400" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-01-15 13:34</span></div>
+  <div class="pb">hmm het valt godzijdank mee:<br>http://www.angelfire.com/rnb/winny/</div>
+</article>
+<article class="post" data-ts="20030115134500" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2003-01-15 13:45</span></div>
+  <div class="pb">weinig creatief zeg.<br><br>iets met leer en zwepen enzo was beter geweest.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

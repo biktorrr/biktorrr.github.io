@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topvoetbal – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topvoetbal</h1>
+<p class="tm">7 posts · started 2002-10-21 15:38 by TuuT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021021153800" id="p1">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#1 · 2002-10-21 15:38</span></div>
+  <div class="pb">Aan de nationale hegemonie van Rosenborg BK komt maar geen einde. De trots uit Trondheim veroverde afgelopen weekeinde de elfde Noorse titel op rij en de zestiende in de clubhistorie. Rosenborg bleef in het uitduel met Sogndal IL steken op 2-2, maar werd door de nederlaag van naaste concurrent Molde FK (4-2 tegen Stab\æk IF) toch onbereikbaar. <br><br>Met de elfde landstitel op rij evenaart Rosenborg een Europees record dat in handen is van Skonto Riga. Die ploeg is bezig aan een soortgelijke serie als de Noren. De Letse grootmacht kan begin november zelfs haar twaalfde landstitel op rij veroveren en zou daarmee weer alleen recordhouder worden.<br><br>Real Madrid is hierbij maar een subtoppertje</div>
+</article>
+<article class="post" data-ts="20021022133800" id="p2">
+  <div class="ph"><span class="pa">Jose Blanco</span><span class="pm">#2 · 2002-10-22 13:38</span></div>
+  <div class="pb">Joder chico, no hables mal de Real Madrid. </div>
+</article>
+<article class="post" data-ts="20021022134500" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2002-10-22 13:45</span></div>
+  <div class="pb">dat bepahle we zelf wel.</div>
+</article>
+<article class="post" data-ts="20021022190700" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-10-22 19:07</span></div>
+  <div class="pb">zo, dat schelden gaat je al goed af, Zjoste B. Van wie leert je dat soort woordjes? Toch niet van de Chineesjes? Hoe staat het daar trouwens mee? </div>
+</article>
+<article class="post" data-ts="20021023132200" id="p5">
+  <div class="ph"><span class="pa">Joste Bianco</span><span class="pm">#5 · 2002-10-23 13:22</span></div>
+  <div class="pb">gepaald natuurlijk...</div>
+</article>
+<article class="post" data-ts="20021023132200" id="p6">
+  <div class="ph"><span class="pa">Joste Bianco</span><span class="pm">#6 · 2002-10-23 13:22</span></div>
+  <div class="pb">en gePedaald</div>
+</article>
+<article class="post" data-ts="20021023170800" id="p7">
+  <div class="ph"><span class="pa">JB</span><span class="pm">#7 · 2002-10-23 17:08</span></div>
+  <div class="pb">gepedaald zeker. Maar goed, schelden leer je door met Spanjaarden te praten en naar Real Madrid te gaan.<br><br>Trouwens gister zat ik zo dicht bij het veld dat ik even op tv was. Wel grappig dus. Overigens nog nooit zon beroerde 5 voetbal minuten gehad. Eerst de gelijkmaker in Bernabeu en vervolgens ook nog in de Arena, zelden is er heeft er zon harde GVD geklonken in Madrid.<br><br>Mzzl,<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

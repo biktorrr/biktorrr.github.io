@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lotgenoot – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lotgenoot</h1>
+<p class="tm">5 posts · started 2005-04-14 15:53 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050414155300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-04-14 15:53</span></div>
+  <div class="pb">Ik heb gerevalideerd met de middelste van deze drie kersverse ajacieden. Cees Keizer is de naam en hij heeft zojuist een contract getekend.<br><br><img src="http://www.ajax.nl/upload_mm/1981414280_1999999112_Kok_Keizer_en_Timisela_in_stadion_140405.jpg"><br><br>Zijn toelichting, waarin zijn referentie naar mij is weggeknipt, luidt:<br><br><i>Voor Cees Keizer was het telefoontje van zijn zaakwaarnemer dat hij een contract mocht tekenen een verrassing. ,,Ik ben dit seizoen voornamelijk geblesseerd geweest aan mijn knie. Eigenlijk ben ik pas een maand fit. Toen mijn zaakwaarnemer belde was ik dus ontzettend blij", vertelde de Volendammer, die een goede pass in huis heeft en over een goed inzicht beschikt. De 19-jarige middenvelder combineerde tot nu toe het voetbal met een studie Economie aan de Universiteit van Amsterdam. ,,En dat gaat goed, ik heb alle punten voor mijn studie nog gehaald. Ik denk wel dat het volgend jaar lastiger zal worden om beide te combineren. Maar hoe dat zal lopen, merk ik vanzelf."</i></div>
+</article>
+<article class="post" data-ts="20050414170400" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2005-04-14 17:04</span></div>
+  <div class="pb">He Merlijn, jij hebt volgens mij vast meer studiepunten en hogere cijfers dan deze jongeling: waarom hebben ze jou niet gebeld?</div>
+</article>
+<article class="post" data-ts="20050414180000" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2005-04-14 18:00</span></div>
+  <div class="pb">Leuk dat Frank Bloem ook bij Ajax gaat spelen. Hij staat mooi te stralen. </div>
+</article>
+<article class="post" data-ts="20050414234300" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-04-14 23:43</span></div>
+  <div class="pb">Hij lijkt wel verdomt veel inderdaad. Leuk dat die knakker toch z'n contract krijgt na 2 maandjes les van de VVWF. Dat ie er maar een boel in mag spuiten.</div>
+</article>
+<article class="post" data-ts="20050421232700" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2005-04-21 23:27</span></div>
+  <div class="pb">schijnt dat ene Maxwell ook wel geinteresseerd zou zijn</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

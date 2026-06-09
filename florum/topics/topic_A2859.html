@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rig in het nieuws – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rig in het nieuws</h1>
+<p class="tm">2 posts · started 2010-03-30 23:25 by Laura</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100330232500" id="p1">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#1 · 2010-03-30 23:25</span></div>
+  <div class="pb">hey allemaal, <br><br>hebben jullie het ochtend nieuws van RTL gezien afgelopen maandag? Daarin was Rig namelijk te zien <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br>http://www.rtl.nl/components/actueel/rtlnieuws/uitzendingen/miMedia/213196/213257.public.29579638.RTL_Ontbijtnieuws_0700.xml<br>en daar is de link, ze zit na het stuk over Barack Obama, ergens op een derde van het filmpje.</div>
+</article>
+<article class="post" data-ts="20100331103000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-03-31 10:30</span></div>
+  <div class="pb">Hehe, dat shot heb ik nu vanuit iets van 5 hoeken gezien. Hoe veel camera's waren daar wel niet?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

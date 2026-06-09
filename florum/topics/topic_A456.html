@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Naamwijziging – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Naamwijziging</h1>
+<p class="tm">5 posts · started 2002-03-27 14:56 by Wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020327145600" id="p1">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#1 · 2002-03-27 14:56</span></div>
+  <div class="pb">Na een korte zoektoch op internet naar Genetic Programming heb ik besloten dat ik vanaf nu wil leven onder de naam:<br><br>Venkat Venkatsubramanian <br><br>Bij deze wil ik ook graag Venkatsubramanian@floraboys.com claimen.</div>
+</article>
+<article class="post" data-ts="20020328022700" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2002-03-28 02:27</span></div>
+  <div class="ps">De Lowdown on Mr. Venkat</div><div class="pb"><src img="http://lips.ecn.purdue.edu/~lips/prof_venkat_photo.jpg"><br>Prof. Venkat Venkatasubramanian is University Faculty Scholar Professor of Chemical Engineering at Purdue University. He received his Ph. D. in Chemical Engineering from Cornell University in 1984, M.S. in Physics from Vanderbilt University in 1979, and B. Tech. in Chemical Engineering from the University of Madras, India, in 1977. Venkat worked as a Research Associate in Artificial Intelligence in the Department of Computer Science at Carnegie-Mellon University and taught at Columbia University before joining Purdue in 1988. At Purdue, Venkat directs the research efforts of several graduate students and co-workers in the Laboratory for Intelligent Process Systems. Prof. Venkatasubramanian's research contributions have been in the areas of process fault diagnosis and supervisory control, hazard and safety analysis, operating procedures synthesis for batch processes, product formulation and design using knowledge-based systems, neural networks, genetic algorithms, mathematical programming and statistical approaches. His teaching interests include courses in artificial intelligence, process design and control, statistical thermodynamics, and applied statistics. <br><br>Prof. Venkatasubramanian has published over 110 refereed papers, and delivered over 100 invited lectures and seminars, including six keynote lectures, at various international conferences and institutions all over the world. He has authored a three-volume CACHE case study on Knowledge-based Systems for Heuristic Classification Problems in Process Engineering and co-authored a monograph on Advanced Knowledge Representation. Venkat has chaired or co-chaired over thirty international meetings, conferences and sessions in the areas of artificial intelligence applications in process engineering. Thirteen doctoral and five masters students have graduated under Venkat's supervision. Venkat has been a consultant to several major global corporations and institutions such as Air Products, ALCOA, American Cynamid, Arthur D. Little, Amoco, Caterpillar, DowAgro Sciences, Exxon, Honeywell, Lubrizol, United Nations (UNIDO and UNDP), Indian Oil, ICI (U.K.), Nova Chemicals, G.D. Searle and others. <br><br>Prof. Venkatasubramanian's contributions have been recognized by several awards and honors. He was the 1990 recipient of the Eminent Overseas Lectureship Award from the Institution of Engineers in Australia. He was a guest co-editor of the Special Issue of Computers and Chemical Engineering on Neural Networks in 1992. In 1993, he was awarded the United Nations Development Program Invited Lectureship at the Indian Institute of Technology, Delhi, India. He received the Norris Shreve Award for Outstanding Teaching in Chemical Engineering in 1993. He is an academic trustee and Vice President of the Computer Aids for Chemical Engineering (CACHE) Corporation, a non-profit organization for the promotion of computers in chemical engineering education. He also served on the editorial board of the Process Safety Progress journal published by the American Institute of Chemical Engineers. He currently serves on the Editorial Board of Computers and Chemical Engineering, an international journal. His recent paper on fault diagnosis was awarded the CAST Directors Award for the Best Poster Presentation at the AIChE Annual meeting in Los Angeles, Nov 2000. In 1996, based on Prof. Venkatasubramanians research contributions, Industry week magazine selected him as "one of the fifty R&D stars in the United States whose achievements are shaping the future of our industrial culture and America's technology policy".<br><br><img src="http://lips.ecn.purdue.edu/~lips/prof_venkat_photo.jpg"><br><b>Wat een onwijze rakker,me dunkt.<b></div>
+</article>
+<article class="post" data-ts="20020328133400" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-03-28 13:34</span></div>
+  <div class="pb">witte venkat?</div>
+</article>
+<article class="post" data-ts="20020328163300" id="p4">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#4 · 2002-03-28 16:33</span></div>
+  <div class="pb">heerskoning.. ik weet eigenlijk zker dat zijn vrienden hem the "dudekoning" noemen.</div>
+</article>
+<article class="post" data-ts="20020328164700" id="p5">
+  <div class="ph"><span class="pa">VV</span><span class="pm">#5 · 2002-03-28 16:47</span></div>
+  <div class="pb">Witte Venkat, klinkt goed, net zoals ze Arnold Scholten de Witte Socrates noemen!<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

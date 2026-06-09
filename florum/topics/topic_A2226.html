@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>di-av-spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">di-av-spam</h1>
+<p class="tm">3 posts · started 2007-11-20 19:06 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071120190600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-11-20 19:06</span></div>
+  <div class="pb">Doe maar lekker mee...<br><br><a href="http://www.djtees.com/tshop/store/index.asp?gclid=COeqtL3k6o8CFQuuQwodshStNQ">50 Sint en Snoep Pietje Piet</a><br></div>
+</article>
+<article class="post" data-ts="20071120202100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-11-20 20:21</span></div>
+  <div class="pb">en dan nog eentje, lekker catchy...jammer dat het een maandje te laat is.<br><a href="http://www.youtube.com/watch?v=zZszKQOvHwE&feature=related"> Schönsten Arsch</a><br><!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20071121084700" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-11-21 08:47</span></div>
+  <div class="pb">arg, verkeerde link geplakt.<br><a href="http://s005.interlize.net/~aprilage/doemaarlekkermee.htm">hier</a> de echte 50 sint<br><br><!--193.173.46.126--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond?</h1>
+<p class="tm">10 posts · started 2006-02-18 11:24 by JK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060218112400" id="p1">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#1 · 2006-02-18 11:24</span></div>
+  <div class="pb">zijn er nog mensen in haarlem vanavond?</div>
+</article>
+<article class="post" data-ts="20060218121600" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-02-18 12:16</span></div>
+  <div class="pb">ikke wel, p0k0r?</div>
+</article>
+<article class="post" data-ts="20060218124900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-02-18 12:49</span></div>
+  <div class="pb">ik ben er ook en van de partij...<br><br>Pok0r (of iets anders) kan helaas niet aan de GOG. <br><br></div>
+</article>
+<article class="post" data-ts="20060218132400" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2006-02-18 13:24</span></div>
+  <div class="pb">jullie kunnen wel naar mij komen, maar ik wil wel later naar de kroeg.</div>
+</article>
+<article class="post" data-ts="20060218134800" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2006-02-18 13:48</span></div>
+  <div class="pb">Klinkt gezellig, ik denk dat ik wel van de partij ben.</div>
+</article>
+<article class="post" data-ts="20060218140400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-02-18 14:04</span></div>
+  <div class="pb">Present. Hooghe cheique komt neyt.</div>
+</article>
+<article class="post" data-ts="20060218142300" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-02-18 14:23</span></div>
+  <div class="pb">mooi, dan kunnen we met z'n seisen pok0rren. Ik ga dan waarschijnlijk niet mee naar de kroeg. Is de koff0r er al of moet ik nog maar een keer de fiches meenemen?<br></div>
+</article>
+<article class="post" data-ts="20060218151300" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2006-02-18 15:13</span></div>
+  <div class="pb">21.00? zelf drank meenemen.</div>
+</article>
+<article class="post" data-ts="20060218154400" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2006-02-18 15:44</span></div>
+  <div class="pb">ok, ik ben er 21u<br><br>De koffer is er nog niet en dat zal ook nog wel eventjes duren. Er bleek zoveel besteld te zijn dat het niet met het vliegtuig kon dus het komt per schip. Reken dus maar op een paar weken vertraging...</div>
+</article>
+<article class="post" data-ts="20060218192700" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2006-02-18 19:27</span></div>
+  <div class="pb">Ik laat bij nader inzien toch schieten deze keer. Veel plezier boys.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verjaardag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verjaardag</h1>
+<p class="tm">13 posts · started 2004-03-26 15:08 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040326150800" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2004-03-26 15:08</span></div>
+  <div class="pb">Vooral niet vergeten vanavond te komen op mijn verjaarsfeesie!!!Heb niet voor niets het huis opgeruimt en alles aan de kant gezet zodat we hopelijk niet met zijn alles bij elkaar op schoot hoeven zitten!!<br>TOT VANAVOND........</div>
+</article>
+<article class="post" data-ts="20040326152300" id="p2">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#2 · 2004-03-26 15:23</span></div>
+  <div class="pb">Nou lara waarschijnlijk heb je JUIST voor niets opgeruimd aangezien de floraboys bekend staan om het feit dat ze altijd alles kapot/vies maken op feestjes. <br><br>Tot vanavond.<br><br>PS Hoe laat verwacht je iedereen ook alweer?</div>
+</article>
+<article class="post" data-ts="20040326165900" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2004-03-26 16:59</span></div>
+  <div class="pb">Vanaf 9 uur zijn jullie welkom!!!!</div>
+</article>
+<article class="post" data-ts="20040326171000" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2004-03-26 17:10</span></div>
+  <div class="pb">EUH Joost heb juist opgeruimd zodat er zo min mogelijk stuk kan.........</div>
+</article>
+<article class="post" data-ts="20040326171900" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2004-03-26 17:19</span></div>
+  <div class="pb">Ah..leuk een uitdaging!</div>
+</article>
+<article class="post" data-ts="20040326185700" id="p6">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#6 · 2004-03-26 18:57</span></div>
+  <div class="pb">En nee we gaan niet met mijn nieuwe borden gooien hihihi</div>
+</article>
+<article class="post" data-ts="20040326204500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-03-26 20:45</span></div>
+  <div class="pb">hihihihi</div>
+</article>
+<article class="post" data-ts="20040327131800" id="p8">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#8 · 2004-03-27 13:18</span></div>
+  <div class="pb">Ik vond het erg gezellig gisteren. bedankt voor alle leuke cadeautjes en nog een fijn weekend verder!!</div>
+</article>
+<article class="post" data-ts="20040327132500" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-03-27 13:25</span></div>
+  <div class="pb">buhh, ik vond het geloof ik ook heel gezellig, het zal allemaal in de loop van de week wel weer boven komen.<br><br>Goeie sombrero trouwens</div>
+</article>
+<article class="post" data-ts="20040327134400" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-03-27 13:44</span></div>
+  <div class="pb">Geen last van je kringspier?</div>
+</article>
+<article class="post" data-ts="20040329101400" id="p11">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#11 · 2004-03-29 10:14</span></div>
+  <div class="ps">kringspier?</div><div class="pb">heb ik nog gekke dingen gemist?</div>
+</article>
+<article class="post" data-ts="20040329105400" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2004-03-29 10:54</span></div>
+  <div class="pb">ja dat vraag ik me nu zo ook af</div>
+</article>
+<article class="post" data-ts="20040329124600" id="p13">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#13 · 2004-03-29 12:46</span></div>
+  <div class="pb">Ik heb geruchten gehoord over een hele grote pot vaseline en iets met victor kringspier.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WANTED PTC – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WANTED PTC</h1>
+<p class="tm">2 posts · started 2003-12-20 23:44 by INTERPOL</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031220234400" id="p1">
+  <div class="ph"><span class="pa">INTERPOL</span><span class="pm">#1 · 2003-12-20 23:44</span></div>
+  <div class="pb">Interpol zoekt Hollandse drugshandelaar <br><br>Interpol is zoek naar een landgenoot. het gaat om de 24- jarige Victor de Boer, die door de Amerikaanse justitie wordtvgezocht wegens handel in verdovende middelen. de kans is groot dat Victor de Boer op dit moment in Nederland -of elders in Europa- verblijft. Ziet u de man of een van zijn handlangers waarschuw dan onmiddellijk de politie en benader de man -of het gezelschap waarin hij verkeert- niet zelf. In Nederland drukt of draait u 101 om direct verbinding te maken met het dichstbijzijnde politiebureau!<br><br>GEZOCHT<br>Familie naam: (DE) BOER <br>Voornaam: VICTOR<br><br>VVerdacht van: grootschalige handel in verdovende middelen <br>Gezocht door: SOUTHERN DISTRICT OF NEW YORK / NEW YORK / United States <br><br>Victor de Boer kan in het gezelschap zijn van:<br>VALDERAMA (RUIZ) JOSE GREGORIO, WITTE JOOST, HENAO BEATRIZ ELENA, BIG T, STERVEDETTE SEVENSTER en/of MANUEL VIRGILIO MARTINUS <br><br><br><br>http://www.hijonline.nl/ecNews.asp?ID=81&page=</div>
+</article>
+<article class="post" data-ts="20031221152200" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-12-21 15:22</span></div>
+  <div class="pb">Mooi masker he?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

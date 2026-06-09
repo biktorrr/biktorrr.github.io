@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gomorra – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gomorra</h1>
+<p class="tm">8 posts · started 2009-02-07 11:56 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090207115600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2009-02-07 11:56</span></div>
+  <div class="pb">Lara en ik willen vanavond zien hoe om 21:15 in de filmschuur maffiosi elkaar de hersens in slaan. Zijn er meer FloraDons en FloraDonnas ge\ïnteresseerd?</div>
+</article>
+<article class="post" data-ts="20090207125800" id="p2">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#2 · 2009-02-07 12:58</span></div>
+  <div class="pb">Ca en ik hadden onafhankelijk van jullie ook al dat idee opgevat. Even kijken of het lukt.</div>
+</article>
+<article class="post" data-ts="20090207153500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2009-02-07 15:35</span></div>
+  <div class="pb">Ben vanavond cultureel aan het genieten in A'dam.</div>
+</article>
+<article class="post" data-ts="20090207160300" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2009-02-07 16:03</span></div>
+  <div class="pb">ik heb voor mij en mijn ragazza een kaartje vastgelegd.<br>daarna nog een sambucaatje in de toneelschuur?</div>
+</article>
+<article class="post" data-ts="20090207172000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-02-07 17:20</span></div>
+  <div class="pb">Tube en Ca hebben ook kaartjes, wij staan bovenaan de reservelijst, dus hebben goede hoop. Wij zijn er 20.45u.<br><br></div>
+</article>
+<article class="post" data-ts="20090209111600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-02-09 11:16</span></div>
+  <div class="pb">En? Beetje een familiefilm?</div>
+</article>
+<article class="post" data-ts="20090209121400" id="p7">
+  <div class="ph"><span class="pa">Jose</span><span class="pm">#7 · 2009-02-09 12:14</span></div>
+  <div class="pb">Hm, het is niet echt een film voor het hele gezin</div>
+</article>
+<article class="post" data-ts="20090211130200" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2009-02-11 13:02</span></div>
+  <div class="pb">zowel aanrader als afrader.<br>Als je gaat voor een godfather-esque gangsterfilm zit je verkeerd. Geen gave one-liners, geen paardekoppen in bed en een konkelniveau van een modele kleuterklas.<br>Ondanks dat de film als 'rauw' en 'geweldadig' wordt getypeerd, vond ik dat alleszins tegenvallen. Dit ligt waarschijnlijk aan het feit dat Hollywood ons murw beukt op dit gebied. Ik zou de film eerder typeren als traag en matig samenhangend. Daarnaast voelde ik me op geen enkel moment verbonden met een van de karakters. Ook kreeg ik behoorlijke slappe penis van het camerawerk.<br>Dit alles komt doordat er duidelijk voor gekozen is een meer docu-stijl aan te houden, waarbij er slechts wordt verhaald i.t.t. stelling genomen. Daarmee geeft de film een aardig inkijkje in de prutput die Napels heet en zijn ook de beelden an sich interessant. Daarbij zijn randjongeren op scootertjes, vadsige ventjes op nikes met een baretta in de band van de trainingsbroek en kleuters in 10tonners af en toe om te gniffelen.<br>Als dit de realiteit in Napels is, is dat naar, maar niet schokkend. Dit gevoel komt voornamelijk bij mij op omdat er geen stelling wordt genomen en je daarmee op geen enkele manier 'root' voor een van de karakters uit de film. Voor mij roept de film ook op geen enkele manier op tot bezinning. Het enige wat bij mij een licht gefronste wenkbrauw opriep was de deus ex machina-esque mededeling aan het eind van de film waar wordt verteld dat er veel maffiageld in de nieuwe twin-towers zit.<br><br>Ik zou zeggen: Kijken, je laten informeren, mentaal archiveren en weer doorgaan met je leven.<br><br>sterren: ***<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

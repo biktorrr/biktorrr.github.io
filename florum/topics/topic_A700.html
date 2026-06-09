@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OP het verzoek om het park in te zaaien... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">OP het verzoek om het park in te zaaien...</h1>
+<p class="tm">4 posts · started 2003-02-03 14:26 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030203142600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-02-03 14:26</span></div>
+  <div class="pb">Geachte heer, mevrouw<br><br>Wij hebben uw melding ontvangen en doorgegeven aan de betreffende afdeling.<br><br>Met vriendelijke groeten<br><br>A. Taylor<br><br>Afdeling BWL<br></div>
+</article>
+<article class="post" data-ts="20030203154100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-02-03 15:41</span></div>
+  <div class="pb">Wat had je gevraagd? Om het Florapark in te zaaien, of de Hout, of allebei, of een kunstgrasveld op het Florapark, of in de Hout, of allebei?</div>
+</article>
+<article class="post" data-ts="20030203155100" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-02-03 15:51</span></div>
+  <div class="pb">Ik had me voorgedaan als een heer die het jammer vindt dat het park er zo zorgelijk bij ligt en die de jongens die zich daar, bij gebrek aan normale velden zo dicht in de buurt van het centrum, vermaken van harte een goed (ingezaaid)veld gunt.</div>
+</article>
+<article class="post" data-ts="20030203161100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-02-03 16:11</span></div>
+  <div class="pb">Ha ha, terecht! Dat zal die luie ambtenaren leren!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mirthe gefeliciteerdthe! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mirthe gefeliciteerdthe!</h1>
+<p class="tm">8 posts · started 2013-05-07 16:09 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130507160950" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2013-05-07 16:09</span></div>
+  <div class="pb"><p><br>	<span style="color: rgb(255, 255, 255); font-family: arial; font-size: medium; background-color: rgb(204, 0, 0);">Met je allereerste verjaardag! 1 jaar wordt je maar 1 keer zogezegd .</span></p><br></div>
+</article>
+<article class="post" data-ts="20130507173434" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2013-05-07 17:34</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20130507190602" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2013-05-07 19:06</span></div>
+  <div class="pb">Van harte, Mirthe!<br><br>Tevens, aan de vader van de jarige: kan me moeilijk aan de indruk onttrekken dat je mailadres gehackt is. Of je bent natuurlijk echt van mening dat ik heel erg gretig ben om te horen over de nieuwste schoenenmode.</div>
+</article>
+<article class="post" data-ts="20130507201809" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2013-05-07 20:18</span></div>
+  <div class="pb">Idemdito hiero, ouwe spammert. Maar toch gefeliciteerd hoor. Hoera voor Mirthe!</div>
+</article>
+<article class="post" data-ts="20130507202354" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2013-05-07 20:23</span></div>
+  <div class="pb">Een jaar alweer, jemig. Van harte!</div>
+</article>
+<article class="post" data-ts="20130510112022" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2013-05-10 11:20</span></div>
+  <div class="pb">Dank jullie boys! <br>Het was een mooie dag met zelfs een zelf gefabriceerde Elmo taart.<br><br>Mijn mailbox is inderdaad gehackt geweest, dus excuses voor de mogelijk wat ongepaste koopsuggesties.<br><br>Dat gold overigens niet voor de mail aan de Bode. Ik vind dat je toch echt toe was aan een nieuw paar schoenen. Het huidige paar geeft toch echt geen pas.</div>
+</article>
+<article class="post" data-ts="20130510114602" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2013-05-10 11:46</span></div>
+  <div class="pb">Ah, ik was al bang dat je raadgeving me tot radioloog om te scholen een impliciete afkeuring van mijn vele goede werk voor het bedrijsleven was.<br><br>Verder @BD, als ik je een suggestie mag doen: <img src="http://s10.postimg.org/6xobf2tth/labear.jpg">. For old times sake...</div>
+</article>
+<article class="post" data-ts="20130510114718" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2013-05-10 11:47</span></div>
+  <div class="pb">Tenslotte @MK: nog welgefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

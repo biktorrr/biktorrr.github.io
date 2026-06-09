@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bonjourtjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bonjourtjes</h1>
+<p class="tm">9 posts · started 2008-08-02 15:41 by Merlijn, de Panda en de Cliteur</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080802154100" id="p1">
+  <div class="ph"><span class="pa">Merlijn, de Panda en de Cliteur</span><span class="pm">#1 · 2008-08-02 15:41</span></div>
+  <div class="pb">Baquilles,<br><br>Vanuit die andere Lichtstad een hartelijk bonjourtjes naar jullie. We zijn veilig aangekomen na een voorspoedige reis in het Paris van Olivier de Paris. Zijn nieuwe appartement is beffoindre.<br><br>Opmerkelijk: na een stilte van ongeveer tien minuten deelde de Cliteur opeens mede: "Mijn ware passie is het uitrollen van leuke projectconceptjes."</div>
+</article>
+<article class="post" data-ts="20080805134700" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2008-08-05 13:47</span></div>
+  <div class="pb">Goed nieuws voor Haarlem, minder nieuws voor Parijs.<br><br>Het balletdanseresje, het kenniswerkertje en het worstendraaiertje komen weer jullie kant op. Ze passeren nu ongeveer de P\ériph\érique.</div>
+</article>
+<article class="post" data-ts="20080805135200" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2008-08-05 13:52</span></div>
+  <div class="pb">Het lijkt er sterk op alsof ik niets te doen heb nu de Boys en Girl weg zijn, maar in werkelijkheid moet ik binnen nu en 35 min een verhaal opsturen over bovenmatige oestersterfte in Fra. Maar eens hard aan de slag dus.</div>
+</article>
+<article class="post" data-ts="20080805145700" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-08-05 14:57</span></div>
+  <div class="pb">Waarschijnlijk heeft dat te maken met het dumpen van electronisch afval in Ghana door Ph*l*ps. Misschien kan de professor hier nog een korte toelichting op geven dit weekend?<br><br></div>
+</article>
+<article class="post" data-ts="20080806075000" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-08-06 07:50</span></div>
+  <div class="pb">Er waren twee geschikt dumpsite gevonden (na langdurige en diepgravende onderzoekingen): eentje in Ghana en eentje aan het Prinsenbolwerk in H'lem. Ik heb m'n uiterste best voor je gedaan om het in Ghana te dumpen. Een beetje dankbaarheid is op z'n plaats.</div>
+</article>
+<article class="post" data-ts="20080806085000" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2008-08-06 08:50</span></div>
+  <div class="pb">Hulde daarvoor inderdaad, dat is een goede keuze geweest. Als dank heb ik ervoor gezorgd dat KLF nu op 3FM is met "Justified & Ancient", wees er snel bij!</div>
+</article>
+<article class="post" data-ts="20080806085300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2008-08-06 08:53</span></div>
+  <div class="pb">Het was erg terecht allemaal in Parijs Oli4! En zoals een groot filosofe ooit zei: <br><br>If you want a rainbow, you have to put up with the rain</div>
+</article>
+<article class="post" data-ts="20080806103600" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2008-08-06 10:36</span></div>
+  <div class="pb">Hulde Jazzy, ik heb het weliswaar niet gehoord, maar de wereld is er wel een stukje mooier door geworden.</div>
+</article>
+<article class="post" data-ts="20080806122900" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2008-08-06 12:29</span></div>
+  <div class="pb">Ik ben begonnen met het kijken van The Daily Show. Erg terecht!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>&#x27; Lekker gek, lekker 24&#x27; – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">&#x27; Lekker gek, lekker 24&#x27;</h1>
+<p class="tm">7 posts · started 2002-10-09 14:05 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021009140500" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-10-09 14:05</span></div>
+  <div class="pb"><blockquote><br>Laat het niet zo zijn dat ik andere mensen dan mijn FLoravrienden voortrek, dus jullie de scoop...zaterrrrrdag 19 oktober vier ik mijn 24e verjaardag in mijn oude nieuwe huis..het schijnt nl. dat we beschikking hebben over de beneden verdieping. <br>Ik heb Han alvast uitgenodigd (daar de echte Kabouter P. op snoepreisje naar Thailand is) om met ons te daonse.<br>Na overweldigend succes van vorig jaar, zal de slogan  van deze editie luiden<big>' Lekker gek, lekker 24 ' </big>.<br>De wat offieci\ëlere  uitnodigingen komen eraan, maar dat jullie het alvast noteren.<br></><br></div>
+</article>
+<article class="post" data-ts="20021009164800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-10-09 16:48</span></div>
+  <div class="pb">Topshit<br></div>
+</article>
+<article class="post" data-ts="20021009165900" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2002-10-09 16:59</span></div>
+  <div class="pb">Gezellie hoor!</div>
+</article>
+<article class="post" data-ts="20021009202100" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-10-09 20:21</span></div>
+  <div class="pb">gezellig! Het is wel weer de dag dat 's middags het bokbierfestival in utrecht is, maar goed vorig jaar werd het er niet minder gezellig door.</div>
+</article>
+<article class="post" data-ts="20021009214000" id="p5">
+  <div class="ph"><span class="pa">tuuT</span><span class="pm">#5 · 2002-10-09 21:40</span></div>
+  <div class="pb">juist gezelliger als ik het me goed herinner</div>
+</article>
+<article class="post" data-ts="20021011124300" id="p6">
+  <div class="ph"><span class="pa">TN, het vette veest varke</span><span class="pm">#6 · 2002-10-11 12:43</span></div>
+  <div class="pb">lijkt me een duidelijk geval van 'tijmen's birthday: the sequal', is wel prima zo..hoef ik ook ietsie minder bier te kopen. :)<br><br>Heeft iemand Jitske's mobiele nr.? en die van Frank B.? Gijs ?:) kan ik die ook uitnodigen.<br></div>
+</article>
+<article class="post" data-ts="20021013175000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-10-13 17:50</span></div>
+  <div class="pb">Frank Bloem is te bereiken op 020-6865737<br><br>PS: Ons bezoek aan het Utrechts bokbierfestival is een dag vervroegd, naar vrijdagavond. Koop dus voor zaterdag maar extra veel in.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

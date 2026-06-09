@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keiharde Falers!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Keiharde Falers!!!</h1>
+<p class="tm">5 posts · started 2001-12-24 12:10 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011224121000" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2001-12-24 12:10</span></div>
+  <div class="pb">Waar waren jullie zaterdag. Ik helemaal door de ijskoude sneeuwstormen op mijn fietsje vanuit Hillegom naar de geboortegronden van de Floraboys. Is er helemaal niemand om mee te ballen.<br>Wat is dit voor instelling? Of was ik gewoon wat te vroeg zo tussen half3 en 3 uur?<br><br>KLote is dat, anderhalf uur door de kou voor niks. Ik geef daarom ook 6 punten voor de speler van de maand aan mijzelf omdat ik niet zo'n mietje ben. <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20011224132400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2001-12-24 13:24</span></div>
+  <div class="pb">Wow, jij moet wel 'n opperbikkel zijn. Waar was je<br>zondag eigenlijk?</div>
+</article>
+<article class="post" data-ts="20011224191500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-12-24 19:15</span></div>
+  <div class="pb">Stond toch ook nergens op het florum dat we zaterdag zouden balle? Zondag was gewoon een bikkel-sneeuw-wedstrijd!!</div>
+</article>
+<article class="post" data-ts="20011226113700" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2001-12-26 11:37</span></div>
+  <div class="pb">Altijd ballen, ook als er niks op het florum staat.<br></div>
+</article>
+<article class="post" data-ts="20011226123900" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2001-12-26 12:39</span></div>
+  <div class="pb">straks ballen, ook al staat het wel op het florum</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

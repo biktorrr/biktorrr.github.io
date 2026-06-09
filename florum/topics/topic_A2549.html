@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LELIJK – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">LELIJK</h1>
+<p class="tm">6 posts · started 2008-12-02 10:21 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081202102100" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2008-12-02 10:21</span></div>
+  <div class="pb">Ha die Boys. Stemt allen <a href="http://www.parijsblog.nl/2008/12/genomineerde-lelijkste-plekjes-van.html">hier</a>op het lelijkste plekje van Frankrijk.</div>
+</article>
+<article class="post" data-ts="20081202104200" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2008-12-02 10:42</span></div>
+  <div class="pb">ik vind ze juist allemaal erg mooi</div>
+</article>
+<article class="post" data-ts="20081202105000" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2008-12-02 10:50</span></div>
+  <div class="pb">Dat had ik zelf ook wel een beetje. Maar er zitten toch wel wat pareltjes van lelijkheid tussen.</div>
+</article>
+<article class="post" data-ts="20081202130300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-12-02 13:03</span></div>
+  <div class="pb">hm, als dat het lelijkste uit Frankrijk is dan moet de rest er wel uitzien als Disneyland.</div>
+</article>
+<article class="post" data-ts="20081202185600" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2008-12-02 18:56</span></div>
+  <div class="pb">Oja! Dat is lelijk! Waarom staat Disneyland er niet bij?</div>
+</article>
+<article class="post" data-ts="20081203104200" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2008-12-03 10:42</span></div>
+  <div class="pb">Die banlieus waren toch ook niet zo mooi? Ik kan me nog een camping herinneren tijdens interrail bij Parijs. Dat was toch verdraaid lelijk daar. <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

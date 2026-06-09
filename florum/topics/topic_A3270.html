@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groot Floraboys Leve-de-koningin-topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groot Floraboys Leve-de-koningin-topic</h1>
+<p class="tm">7 posts · started 2013-01-29 02:02 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130129020227" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2013-01-29 02:02</span></div>
+  <div class="pb"><p><br>	Hier een nieuw topiquille, waar koningsgezinde Boys uiting kunnen geven aan hun weemoed over de abdicatie van Beatrix. Eventuele niet-koningsgezinde of zelfs republikeinse Boys wordt vriendelijk verzocht, uit respect voor de gevoelens van de koningsgezinden, zich verre van dit topiquille te houden. Van onze kant zullen wij het dan natuurlijk respecteren wanneer er een of meerdere republikeinse topics geopend worden.</p><br><p><br>	Ik kan zeggen dat er voor mij een wereld uiteen valt. Ik begon me al oud te voelen, maar nu Trix weggaat...... Toch altijd een soortement tweede moeder voor me geweest. Haar betrokkenheid is altijd zo ontroerend geweest, zoals ze onlangs ook weer liet zijn bij het staatsbezoek aan Brunei.</p><br><p><br>	http://www.volkskrant.nl/vk/nl/2686/Binnenland/article/detail/3381077/2013/01/22/Beatrix-vecht-tegen-tranen-bij-toespraak.dhtml</p><br></div>
+</article>
+<article class="post" data-ts="20130129164134" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2013-01-29 16:41</span></div>
+  <div class="pb">*Tik*.<br><br>Hoewel ik niet zeker weet of bovenstaande posting van Bo D\é van cynisme is doordrenkt of niet: <br><br>Leve de Majesteit!<br>Hoera! Hoera! Hoera!</div>
+</article>
+<article class="post" data-ts="20130129173309" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2013-01-29 17:33</span></div>
+  <div class="pb">Hoera, hoera, hoera!<br><br>Zeg ik teveel als ik claim dat Beatrix in de top-3 van meest invloedrijke naoorlogse staatshoofden staat? Nee toch?<br><br></div>
+</article>
+<article class="post" data-ts="20130129181455" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2013-01-29 18:14</span></div>
+  <div class="pb">@PH: Nee hoor, geen cynisme. Het koningshuis is gewoon iets waarover we het eens zijn. Overigens zou ik je aanraden om je anti-republikeinse tirades op dit topic te houden, en niet op het Vive la republique-topic. Voor boys die alleen de koppen en het postingsaantal lezen lijkt het nu alsof het republikanisme heel erg in is op het Florum, hetgeen volgens mij wel meevalt. Misschien moesten we er zo maar eens over gaan stemmen.<br><br>Ik wil wel de gelegenheid te baat nemen (en ja, hier komt de ironie/het cynisme/sarcasme) om die republikeinse Boys een compliment te maken. Wat een dappere, weldenkende nonconformisten zijn het toch!</div>
+</article>
+<article class="post" data-ts="20130129224634" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2013-01-29 22:46</span></div>
+  <div class="pb">kijk aan, een compliment uit de Albert Verlinde school telt natuurlijk voor twee. Die tik ik graag aan.  </div>
+</article>
+<article class="post" data-ts="20130203211858" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2013-02-03 21:18</span></div>
+  <div class="pb">Bernard vroeg me dit filmpje te postuleren. Ik denk dat hij daarmee de discussie gewonnen heeft.<br><br><iframe width="420" height="315" src="http://www.youtube.com/embed/qAvildTXNHA" frameborder="0" allowfullscreen></iframe></div>
+</article>
+<article class="post" data-ts="20130212012911" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2013-02-12 01:29</span></div>
+  <div class="pb">Eventjes tussendoor: hulde aan onze Bea. Zonder haar moedige voorbeeld zou Jo-jo Ratzinger deze stap nooit hebben durven zetten.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

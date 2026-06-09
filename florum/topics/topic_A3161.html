@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tik &#x27;m aan voor die profesj – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tik &#x27;m aan voor die profesj</h1>
+<p class="tm">4 posts · started 2011-10-14 10:25 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111014102503" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2011-10-14 10:25</span></div>
+  <div class="pb"><p><br>	Hoe laat zaterdag en waar qua Profesj b-day party? Ik kon het topiquille al niet meer vinden, zo lang is het geleden.</p><br><p><br>	&nbsp;</p><br><p><br>	@ Webmastertje: De advanced editing environment verschijnt nog als je een nieue topic&nbsp;maakt.&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20111014121545" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2011-10-14 12:15</span></div>
+  <div class="pb">@Zeurpietje1980, je moet ook geen nieuwe topics aanmaken bekwiel, er zijn al genoeg over de b'day van de profesj.</div>
+</article>
+<article class="post" data-ts="20111014124356" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-10-14 12:43</span></div>
+  <div class="pb">Hij stond zelfs helemaal bovenaan! En nu onder dit topic.</div>
+</article>
+<article class="post" data-ts="20111014153353" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2011-10-14 15:33</span></div>
+  <div class="ps">UP</div><div class="pb"><br>deze posting om de posting van MK weer correct te maken.<br>Ik dacht dat Merlijn em moest aftikken wegens een andere beff happening.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

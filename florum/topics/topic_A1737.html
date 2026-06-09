@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amsterdam - Beijing Classic Car Endurance Rally 2006 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amsterdam - Beijing Classic Car Endurance Rally 2006</h1>
+<p class="tm">1 post · started 2006-04-05 13:09 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060405130900" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-04-05 13:09</span></div>
+  <div class="pb">Op 15 Juli gaat de Amsterdam - Beijing rally 2006 van start. Het idee is dat een horde klassieke auto's van de Dam via de oude zijde route(s) naar Beijing rijdt. RTL7 gaat dan tijdens de rally dagelijks een half uur hierover berichten.<br>Eigenlijk de enige reden waarom ik dit post is omdat mijn vader (in zijn vakantie) meegaat met dit spektakel, helaas niet in een klassieke landrover maar als bestuurder van een van de auto's van de cameraploegen van RTL7. Als je wil kan hij dus voor je de groeten doen aan Turkmenbashi.<br><a href="http://www.abr2006.com"> Hier </a> de link naar de site van de rally. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

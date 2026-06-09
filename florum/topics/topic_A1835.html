@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groeten uit Riva del Garda – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groeten uit Riva del Garda</h1>
+<p class="tm">2 posts · started 2006-08-28 12:27 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060828122700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-08-28 12:27</span></div>
+  <div class="pb">Afgelopen week elke kerk in Noord-Italie bezocht. Nu een weekje lekker nerden aan het Garda Meer. Groeten uit Italie dus. <br><br>Het alfabet hier komt redelijk overeen met het onze; maar de volgende tekens zitten wat explicieter op het toetsenbord:<br>ò\ç\àù\è\éù <br><br>latertjes</div>
+</article>
+<article class="post" data-ts="20060828141200" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-08-28 14:12</span></div>
+  <div class="pb">Goed werk. Ik schreef laatst een verhaal over de Russische connectie in Nice, jij ontfermt je over de perestrojkababes (Russinnen op zoek naar rijke mannen) aan het Gardameer. <br><br>Topvakantie verder nog toegewenst!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

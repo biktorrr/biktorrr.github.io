@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>In memoriam Leslie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">In memoriam Leslie</h1>
+<p class="tm">4 posts · started 2010-11-29 13:09 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101129130909" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2010-11-29 13:09</span></div>
+  <div class="pb">Vandaag is een zwarte dag in de geschiedenis van het genre van de doldwaze actie-komedie. Leslie, we zullen je missen!</div>
+</article>
+<article class="post" data-ts="20101129131017" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2010-11-29 13:10</span></div>
+  <div class="pb">Ik moest aan je denken toen ik het hoorde, Bernard.<br><br>Leslie, you will always be my number 1!!!</div>
+</article>
+<article class="post" data-ts="20101129132111" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2010-11-29 13:21</span></div>
+  <div class="pb">of 2 1/2? Of 33 1/3? Wat was het ook alweer?</div>
+</article>
+<article class="post" data-ts="20101129135348" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2010-11-29 13:53</span></div>
+  <div class="pb">RIP Leslie, de Grootste.<br><br>Quote uit 33 1/3:<br><br>Ed Hocken: You might end up dead!<br>Frank Drebin (Leslie): "You might end up dead" is my middle name.<br>Ed Hocken: What about Jane?<br>Frank Drebin: I don't know her middle name. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

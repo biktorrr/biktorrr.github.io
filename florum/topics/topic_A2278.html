@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Stipt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Stipt</h1>
+<p class="tm">3 posts · started 2008-01-24 16:09 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080124160900" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2008-01-24 16:09</span></div>
+  <div class="pb">De vraag in de internationale boys topic was wat ik eigenlijk aan het doen ben hier in de USA en Canada op Jazzy's belasting geld, behalve een heel ambitieus stippen project.<br><br>Ten eerste, dit is slechts een deel Jazzy's belastingeld, tenzij Jazzy natuurlijk ook Canadees en Amerikaanse belasting moet betalen. <br><br>Ten tweede, sorry dat ik minder van me heb laten horen, maar het is op momenten nogal hectisch geweest.<br>Maar goed, ik ben hier om mijn wetenschap die ik heb gedaan in mijn promotie te promoten bij andere instituten, door seminars te geven. Natuurlijk geeft me dit ook een kans om goede connecties op te bouwen.<br><br>Het lijstje instituten dat ik heb bezocht:<br>Univeristy of Texas, (austin)<br>University of Michigan, (Ann Arbor, by Detroit)<br>Harvard, (Boston)<br>Caltech (Pasadena, California) en <br>National research Council of Canada (Victoria, BC, Canda)<br><br>Natuurlijk zijn dit allemaal instituten waarbij ik een sollicitatie heb lopen (op sommige meer dan 1), net zoals in Munchen, waar ik eind volgend jaar wil gaan werken. Ik ben dan ook aan het kijken hoe het is om in die steden te wonen.<br>Op dit moment zit er zeker wel schot in de sollicitaties, maar daar komt later meer over.<br><br>Ik kom deze zondag weer terug.</div>
+</article>
+<article class="post" data-ts="20080124161400" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2008-01-24 16:14</span></div>
+  <div class="pb">Klinkt goed Timmie. Puike steden allemaal, lijkt me. Leuker dan München (op zich niets mis mee) als je het mij vraagt. Mocht je nog een gaatje vinden, dan - en ik denk hier uit naam van alle Boys 'n' Girls te spreken - zouden we ook graag een kleine sfeerimpressie tegemoet zien. Liefst met een vleugje melancholie, waar je goed in bent. Maar nu ben ik wel heel veeleisend. Keep up representing de Boys.<!--90.24.159.147--></div>
+</article>
+<article class="post" data-ts="20080124161500" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2008-01-24 16:15</span></div>
+  <div class="pb">check voor een foto-selectie<br><br>http://www.flickr.com/photos/8060531@N07/sets/72157603724626187/<!--24.69.2.33--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

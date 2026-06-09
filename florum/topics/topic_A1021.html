@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A floraboy is born. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">A floraboy is born.</h1>
+<p class="tm">4 posts · started 2003-10-20 12:49 by ANP</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031020124900" id="p1">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#1 · 2003-10-20 12:49</span></div>
+  <div class="pb">Haarlem Maandag,<br><br>Hedenacht om 0:45 is tegenover Little T.<br>Noah Puite<br>(4.5 kilo)<br><br>Geboren.<br><br>Noah Puite wordt door insiders nu al genoemd als een van steunpilaren van het gouden Florakids team van 2019. <br><br>ITS AIO kids zijn gewaarschuwd.</div>
+</article>
+<article class="post" data-ts="20031020132500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-10-20 13:25</span></div>
+  <div class="pb">Heey... Gefeliciteerd..<br>hierbij een gedicht:<br><br>       Noah is a Floraboy and he's OK,<br> He drinks al night and he drinks all day, hey!<br><br>            (herhaal een aantal keer)</div>
+</article>
+<article class="post" data-ts="20031020135200" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-10-20 13:52</span></div>
+  <div class="pb">geeffffffffeeeeeeeeelicciteerd!!!<br><br>een floraboy erbij geweldig!!<br><br>4,5 kilo!! als dat geen ijzersterke verdediger in spe is...<br></div>
+</article>
+<article class="post" data-ts="20031020145300" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-10-20 14:53</span></div>
+  <div class="pb">Gefeliciteerd Vincent! <br>Als ie net zo verbaal sterk is als zijn vader dan hoop ik dat ie je niet alle nachten van de week wakker houdt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

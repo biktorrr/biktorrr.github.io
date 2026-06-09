@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veni vidi vicipaedia – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Veni vidi vicipaedia</h1>
+<p class="tm">6 posts · started 2010-01-08 15:38 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100108153800" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2010-01-08 15:38</span></div>
+  <div class="pb">Waerde Gymnasiasten!<br><br>Wisten jullie dat er ook een wikipedia in het latijn was? Vrij terecht. Hier de <a href="http://la.wikipedia.org/wiki/Pagina_prima">Pagina Prima</a>.<br><br>Ave! Vicipaedia est opus commune, quo creetur encyclopaedia libera interretialis. </div>
+</article>
+<article class="post" data-ts="20100108155600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-01-08 15:56</span></div>
+  <div class="pb">misschien een idee om de Ioanni Minorem pagina te maken?</div>
+</article>
+<article class="post" data-ts="20100108182000" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2010-01-08 18:20</span></div>
+  <div class="pb">Terecht wel. Bv. dat ´Jakarta´ in het Latijn nog steeds ´Batavia´ heet.</div>
+</article>
+<article class="post" data-ts="20100108183000" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2010-01-08 18:30</span></div>
+  <div class="pb">Lieve Bode,<br><br>Batavia etiam nomen coloniale urbis Iakartae, Indonesiae civitatis caput<br><br>betekent:<br><br>Batavia was de koloniale naam van de stad Jakarta, de hoofdstad van Indonesi\ë.<br><br>Maar ja, niet iedereen date met de dochter van zijn lerares Latijn natuurlijk <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20100108192100" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2010-01-08 19:21</span></div>
+  <div class="pb">Kijk, daarvoor heb je nou een doortastende onderzoeksjournalist in je vriendenkring! Ik tikte heel onschuldig ´Barack Obama´ in in de vicipaedia, zag dat er stond dat hij in ´Batavia´ had gewoond, en heb geen nader onderzoek gedaan. Wat een misser! Mijn dank, ouwe Roodhaar.<br><br>Nu je ons trouwens toch op je universele kennis en inzicht vergast kun je ons misschien ook nog een keer de Eerste en Tweede Wet van de Thermodynamica uitleggen.</div>
+</article>
+<article class="post" data-ts="20100110170800" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2010-01-10 17:08</span></div>
+  <div class="pb">Errare humanum est, nuntie pie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voor iedereen die op het Staten Bolwerk woont – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Voor iedereen die op het Staten Bolwerk woont</h1>
+<p class="tm">8 posts · started 2007-02-12 12:28 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070212122800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-02-12 12:28</span></div>
+  <div class="pb">Die straat is een van de 4 straten in Haarlem die bij de vierhonderd vieze stadswegen staan. De normen voor luchtkwaliteit worden daar niet gehaald. <br><br>link: <br><a href="http://www.milieudefensie.nl/verkeer/publicaties/rapporten/top400viezestadswegen2007.pdf">http://www.milieudefensie.nl/verkeer/publicaties/rapporten/top400viezestadswegen2007.pdf</a> (pdf)</div>
+</article>
+<article class="post" data-ts="20070212133400" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-02-12 13:34</span></div>
+  <div class="pb">tis geloof ik al een verbetering met twee jaar geleden. Toen was het de meest vieze straat in Haarlem en ik geloof zelfs de Provincie, nog viezer dan de ergste in Amsterdam.<br><br>gewoon wat huizen langs de zandvoortselaan weghalen en de weg naar zandvoort 4 baans maken, dan hoeft er in de zomer i.i.g. niemand meer over de bolwerken naar de kust. <br><br></div>
+</article>
+<article class="post" data-ts="20070212162000" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2007-02-12 16:20</span></div>
+  <div class="pb">Amice,<br><br>Stond vandaag op Haarlem spoor 8 te kijken naar alle Hooghe Huijsen aldaar. Welke is nou van jou?<br><br></div>
+</article>
+<article class="post" data-ts="20070212190100" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2007-02-12 19:01</span></div>
+  <div class="pb">Dat van die vieze straten had ik ook gezien, vooral dat optrekken en afremmen en wachten voor stoplichten zorgt voor een slechte luchtkwaliteit. <br><br>@TN: die oplossing van jou zal niet gaan zolang er in Heemstede en Aerdenhout zoveel rijke en invloedrijke medeburgers wonen. Een tunnel achter het station in Haarlem is een haalbaarder alternatief. Alleen wel wat duur voor een stad met weinig geld in kas...</div>
+</article>
+<article class="post" data-ts="20070213081200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2007-02-13 08:12</span></div>
+  <div class="pb">Van het plan om de Zandvoortselaan te verbreden heb ik nog nooit gehoord. (Ongehoord slecht plan trouwens.) Wel is er ooit een plan geweest waarin de Randweg zou worden doorgetrokken van Haarlem Hoogh naar de rotonde bij mijn ouders achter. Over het huis van de Heilige Familie. Maar er gaan ook al lang geruchten over een *tunnel* die dezelfde punten moet verbinden.</div>
+</article>
+<article class="post" data-ts="20070215115000" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2007-02-15 11:50</span></div>
+  <div class="pb">Vertel eens Victor, wat jouw motivatie is om dit fijne feit te posten?</div>
+</article>
+<article class="post" data-ts="20070215122000" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2007-02-15 12:20</span></div>
+  <div class="pb">misschien is Paint geblocked op de UvA?</div>
+</article>
+<article class="post" data-ts="20070215154800" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2007-02-15 15:48</span></div>
+  <div class="pb">ik dacht, misschien wil je je huis kwijt voor weinig?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

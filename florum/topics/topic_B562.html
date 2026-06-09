@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nieuws – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">nieuws</h1>
+<p class="tm">4 posts · started 2005-01-24 14:10 by ANP</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050124141000" id="p1">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#1 · 2005-01-24 14:10</span></div>
+  <div class="pb">Ook de BigT blijft leed niet bespaart. hij blijkt nu afgelopen weekend tijdens een huiselijk weekend zijn grote rechterteen uit de kom te hebben gehad. Het is niet iets ernstigs, maar de fans vrezen na de rugblessure van Victor ook de kans dat de BigT de eerste wedstrijd van het nieuwe seizoen aan zich moet voorbij laten gaan<br><br>BigT zelf : ' Ik zal er staan' </div>
+</article>
+<article class="post" data-ts="20050124143200" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-01-24 14:32</span></div>
+  <div class="pb">respekt van de ene gewonde naar de andere.<br><br>Bo!<br></div>
+</article>
+<article class="post" data-ts="20050124153300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-01-24 15:33</span></div>
+  <div class="pb">Dit lijkt mij een nuttige aanvulling voor op de WikT, deze blessure zal immers voor veel mensen onbekend zijn. </div>
+</article>
+<article class="post" data-ts="20050127130600" id="p4">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#4 · 2005-01-27 13:06</span></div>
+  <div class="pb">het herstel van de BikT schijnt zeer voorspoedig te zijn. Hij zal namelijk vanavond alweer een testimonial spelen in Leiden. <br><br>De zorgen voor het nieuwe seizoen waren achteraf gezien wat voorbarig.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

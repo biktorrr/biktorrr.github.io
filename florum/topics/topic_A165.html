@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>balle dit weekend – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">balle dit weekend</h1>
+<p class="tm">3 posts · started 2001-08-02 17:50 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010802175000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2001-08-02 17:50</span></div>
+  <div class="pb">even een paar mededelingen over het ballen tijdens het komende weekend: <br>1. De mannetjes gaan vrijdag naar Praag voor een dag of 10. De komende 2 weekends zijn die dus uiteraard niet van de partij op het Florapark.<br>2. Ik kom zondagmiddag in ieder geval niet ballen ivm een bierfestijn in de Haarlemse binnenstad.<br>3. Zaterdag kan ik wel ballen maar ik wet niet of mijn knie het al weer aankan. Waarschijnlijk kom ik wel als er genoeg mensen zijn.<br>4. Zijn er wel genoeg mensen zaterdag? Ik denk van niet want vaste krachten als Victor(Itali\ë), Mer(Itali\ë), Wybren(Itali\ë), Sander(Praag), Tim(Leiden), Frank S.(Praag), Sicco(Itali\ë) <br>en de wat minder vaste krachten Maurits(Praag), Thijs(Praag), David(Itali\ë) zijn er in ieder geval niet.<br>Dan houden we over: 1, tube, ik(als ik het vocht uit mijn linkerknie op tijd heb weggezogen), WJ(wil "ondanks zijn flutconditie wel een balletje meetrappen")<br>en van de volgende vaste en minder vaste krachten weet ik niet of ze zaterdag beschikbaar zijn: Tijmen(?), Maarten D.(?), Mark(?)& DJ Erik Z(?).<br>En van Oli4 weet ik niet waar hij momenteel is, wanneer hij terugkomt en of hij überhaubt wel terugkomt. Als hij in Rusland door Tsjetjeense rebellen is ontvoerd, in Estland is gaan wonen omdat hij daar bij FC Flora een profcarri\ëre kan beginnen of in Polen vast zit omdat alles is overstroomd zal hij er voorlopig wel niet zijn op Het Park.<br><br>kortom: wie van de twijfelgevallen kunnen er zaterdag balle?</div>
+</article>
+<article class="post" data-ts="20010803015000" id="p2">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#2 · 2001-08-03 01:50</span></div>
+  <div class="pb">okay effe update.. ik kan zowel zaterdag als zondag, en tijmen alleen zondag als ik alles goed heb begrepen.. Maarten is als het goed is nog steeds in hillegom .. maar ik denk dat we dan nog steeds niet genoeg mensen hebben om lekker te ballen<br><br>Zaterdag: Michiel, Tube, Tim, Maarten(?), WJ (?),1<br>zondag : tijmen, tube(?), Tim, Maarten(?), WJ(?),1<br><br>Heel krapjes dan hoor..<br><br>Tim</div>
+</article>
+<article class="post" data-ts="20010803192500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-08-03 19:25</span></div>
+  <div class="pb">En Oli4 heeft een teken van leven gegeven door mij op te bellen, vanuit Nederland nog wel!! He is still alive!! Ik ga hem nu even terug bellen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

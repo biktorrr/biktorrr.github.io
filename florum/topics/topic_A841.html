@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flora Summer Tennis – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Flora Summer Tennis</h1>
+<p class="tm">5 posts · started 2003-07-09 23:46 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030709234600" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-07-09 23:46</span></div>
+  <div class="pb">WJ en 23 kunnen echt heel goed tennissen, dit valt me echt alles mee. Hoe deze jongens van de zaal naar het hardcourt overschakelen, fenomenaal!!!<br><br>De service van Merlijn is een zekerheidje, zijn schouder schijnt maar niet moe te worden. Joost heeft echt talent, en veel wilskracht!!! Tooppers zijn het dus!!<br><br>oja ik heb wel de baan met beiden heren aangeveegt, wat maakt mij dat???</div>
+</article>
+<article class="post" data-ts="20030710112000" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-07-10 11:20</span></div>
+  <div class="pb">een arrogante kwal? hehehe.</div>
+</article>
+<article class="post" data-ts="20030710114500" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-07-10 11:45</span></div>
+  <div class="pb">wacht maar tot mijn fysio zijn fiat geeft, dan zal ik jullie eens allemaal regelrecht van de baan meppen</div>
+</article>
+<article class="post" data-ts="20030710132900" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-07-10 13:29</span></div>
+  <div class="pb">je bedoelt de ballen van de baan meppen.</div>
+</article>
+<article class="post" data-ts="20030717154000" id="p5">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#5 · 2003-07-17 15:40</span></div>
+  <div class="pb">zijn er nog mensen die morgen middag/ avond willen tennisen? Ik ben namelijk wel te porren voor een mooie pot.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

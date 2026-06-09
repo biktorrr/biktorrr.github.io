@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zeeland video – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zeeland video</h1>
+<p class="tm">10 posts · started 2005-02-21 13:57 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050221135700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2005-02-21 13:57</span></div>
+  <div class="pb">Het lijkt me leuk om binnenkort de video maar eens te gaan kijken, mits victor zijn creatieve kunsten al heeft gebotvierd op het materiaal. Als het niet bij viktor kan, kan het ook vast wel bij mij thuis; bv. vrijdag?<br></div>
+</article>
+<article class="post" data-ts="20050221145100" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2005-02-21 14:51</span></div>
+  <div class="pb">aanstaande vrijdagavond? <br>Dat komt mij goed uit, ik ben present!</div>
+</article>
+<article class="post" data-ts="20050221155400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2005-02-21 15:54</span></div>
+  <div class="pb">mmmmmm, jarige schoonmoeder op vrijdag... Zaterdag is beter! Ben ook wel in voor de beker blamage trouwens.</div>
+</article>
+<article class="post" data-ts="20050221165100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2005-02-21 16:51</span></div>
+  <div class="pb">hmm, er gaan geruchten dat ca een feestje geeft -zaterdag- en het wel oke vind om dan de video te kijken. Dan slaan we meerdere vliegen in 1 klap, daar bepaalde boys familie verplichtingen hebben, en anderen altijd liever op zaterdag in haarlem zijn.<br></div>
+</article>
+<article class="post" data-ts="20050221171600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-02-21 17:16</span></div>
+  <div class="pb">Ok zeer terecht als er enkele kopieen beschikbaar zouden zijn.<br>Had jij nog dvd's van mij vic?</div>
+</article>
+<article class="post" data-ts="20050222111400" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2005-02-22 11:14</span></div>
+  <div class="ps">jarige schoonmoeder?</div><div class="pb">lekker belangrijk ;-)  </div>
+</article>
+<article class="post" data-ts="20050222114900" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2005-02-22 11:49</span></div>
+  <div class="pb">het wordt (afgaande op Ca) defintief zaterdag, als eerste agenda punt op de verjaardering.</div>
+</article>
+<article class="post" data-ts="20050222123000" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-02-22 12:30</span></div>
+  <div class="pb">ik probeer door mijn ziekte heen te bikkelen en de video zaterdag af te hebben...</div>
+</article>
+<article class="post" data-ts="20050222165000" id="p9">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#9 · 2005-02-22 16:50</span></div>
+  <div class="pb">allemaal duimen voor Vic, want de video is natuurlijk gaaf!<br><br>BikT en ik zullen ook present zijn op de "verjaardering" van Ca</div>
+</article>
+<article class="post" data-ts="20050223142700" id="p10">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#10 · 2005-02-23 14:27</span></div>
+  <div class="pb">zaterdagavond gaat mij helaas niet lukken... ;-(</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

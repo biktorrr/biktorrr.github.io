@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mobiel reklames op VI – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mobiel reklames op VI</h1>
+<p class="tm">2 posts · started 2003-10-30 13:44 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031030134400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-10-30 13:44</span></div>
+  <div class="pb">OP vi.nl zijn de vervelende Flashbanners aan de rechterkant tamelijk irritant aan het worden. Mijn popupkiller pakt ze er niet uit en als ik flash uitzet laadt mijn browser sites die nuttig zijn niet meer/goed. Ook heeft VI.nl ze zo slim gemaakt dat je ze met de rechtermuisknop niet uit kunt zetten. Welnu, ik heb ontdenkt dat als je rechtermuisknoppend de optie 'rewind' klikt hij em ook zo goed als uitschakeld. Dit ter bevordering van jullie surfplaisier.</div>
+</article>
+<article class="post" data-ts="20031030134500" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-10-30 13:45</span></div>
+  <div class="pb">uitschakelt</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

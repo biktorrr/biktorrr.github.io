@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>het grote hoe maak ik een link topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">het grote hoe maak ik een link topic</h1>
+<p class="tm">5 posts · started 2010-07-08 12:09 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100708120900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2010-07-08 12:09</span></div>
+  <div class="pb">http://www.mijnhomepage.nl/htmlcursus/les4.php<br><br>EN daarna een plaatje invoegen:<br><br>http://www.mijnhomepage.nl/htmlcursus/les5.php<br></div>
+</article>
+<article class="post" data-ts="20100708123100" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-07-08 12:31</span></div>
+  <div class="pb">Klik <a href="http://www.floraboys.com/expsel.php?id=2909"> hier</a> om terug te gaan naar het babbel topic.</div>
+</article>
+<article class="post" data-ts="20100708123300" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-07-08 12:33</span></div>
+  <div class="pb">Overigens erg mooi Amice, dat je geen links hebt gemaakt van bovenstaande URLs.</div>
+</article>
+<article class="post" data-ts="20100708130500" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-07-08 13:05</span></div>
+  <div class="pb">Expres amice, aangeklikte links komen in de webstats van zo'n site terecht en dan gaat die webmaster kijken wat voor site dit is en alles vrolijk meelezen, stukje privacy...</div>
+</article>
+<article class="post" data-ts="20100715074300" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2010-07-15 07:43</span></div>
+  <div class="pb">In het kader van 'hoe maak ik een linkje', hierbij <a href="http://www.idealize.nl/2010/07/app-inventor-laat-iedereen-android-apps-bouwen/">de link naar</a> 'hoe maak ik een linkje in een appje'...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

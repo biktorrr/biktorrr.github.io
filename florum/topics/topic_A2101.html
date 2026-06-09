@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Als een nat washandje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Als een nat washandje</h1>
+<p class="tm">9 posts · started 2007-07-15 18:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070715180200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-07-15 18:02</span></div>
+  <div class="pb">Zo schudde Rasmussen ze er vanaf vandaag. Goed geanticipeerd Cootje.</div>
+</article>
+<article class="post" data-ts="20070715180500" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2007-07-15 18:05</span></div>
+  <div class="pb">Rasmussen heeft 4-voudig succes:<br>ritzege<br>bolletjestrui<br>gele trui<br>rode rugnummer (meest strijdlustige renner vd dag)</div>
+</article>
+<article class="post" data-ts="20070716163200" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-07-16 16:32</span></div>
+  <div class="pb">en dan was ik nog de gele rugnummers vergeten (koppositie ploegenklassement)</div>
+</article>
+<article class="post" data-ts="20070716171800" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-07-16 17:18</span></div>
+  <div class="pb">krijg je daar dan ook extra geld voor in de echte wereld of punten in dat spelletje van je? Anders zou je ook de glimlach van z'n vrouw en de boost voor het Nederlandse/Deense wielrennen kunnen noemen<br></div>
+</article>
+<article class="post" data-ts="20070717095000" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2007-07-17 09:50</span></div>
+  <div class="pb">nee hoor, ook voor de rugnummers krijgen ploegen harde valuta.</div>
+</article>
+<article class="post" data-ts="20070723130000" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2007-07-23 13:00</span></div>
+  <div class="pb">heh, ik vind het echt een leuke tour tot nu toe. De chief die mij 2 jaar terug de poule opleverde in het geel, Boogerd en Dekker die elke mediatraining negeren in interviews en ook lekker doorfietsen en leuke fietsers als contador die het ook goed doen. Kon Amstrong niet een jaartje of wat eerder stoppen...<br></div>
+</article>
+<article class="post" data-ts="20070723132400" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2007-07-23 13:24</span></div>
+  <div class="pb">voor hen die naast zijn markante uitspraken ook het gebezigde vocabulaire van maarten ducrot bij willen houden: <a href="http://www.vandale.nl/opzoeken/wielerwoordenboek/a/">het van dale wieler woordenboek</a> (linkeballen, pedaalridder)<br><br>hier btw, voor op je werk.<br><a href="http://www.garnierstreamingmedia.com/asx/tour2007.asp"> laif end strieming </a><br></div>
+</article>
+<article class="post" data-ts="20070723144500" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2007-07-23 14:45</span></div>
+  <div class="pb">Elk nadeel heb ze voordeel, nu krijgen we weer volop berichten op het florum. Hoe ging je tentamen trouwens?</div>
+</article>
+<article class="post" data-ts="20070723150200" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2007-07-23 15:02</span></div>
+  <div class="pb">tentamen heb ik morgen. bedankt voor je sms btw.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

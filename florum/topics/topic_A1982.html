@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Pinkpopboys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Pinkpopboys</h1>
+<p class="tm">4 posts · started 2007-02-13 10:26 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070213102600" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2007-02-13 10:26</span></div>
+  <div class="pb">de Pumpkins sluiten Pinkpop af!<br><br>Dat wordt dus knallen op 26-27-28 mei</div>
+</article>
+<article class="post" data-ts="20070215092000" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-02-15 09:20</span></div>
+  <div class="pb">ik kan dan niet, ik moet dan met mijn auto wassen, de heg snoeien en daarna naar de schoonouders (evt. met hond) om vervolgens de volgende dag weer achteraan de file aan te sluiten.<br></div>
+</article>
+<article class="post" data-ts="20070215100200" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2007-02-15 10:02</span></div>
+  <div class="pb">heel erg terecht</div>
+</article>
+<article class="post" data-ts="20070215120400" id="p4">
+  <div class="ph"><span class="pa">jazzy</span><span class="pm">#4 · 2007-02-15 12:04</span></div>
+  <div class="pb">ik heb het niet zo op stinkende alto's dus ik sla deze keer over <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

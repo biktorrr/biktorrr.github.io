@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Klein Raadseltje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Klein Raadseltje</h1>
+<p class="tm">3 posts · started 2010-04-21 15:32 by Trotse Quizpapa-in-spe</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100421153200" id="p1">
+  <div class="ph"><span class="pa">Trotse Quizpapa-in-spe</span><span class="pm">#1 · 2010-04-21 15:32</span></div>
+  <div class="pb"><img src="http://img694.imageshack.us/img694/3474/p1010536h.jpg"><br></div>
+</article>
+<article class="post" data-ts="20100421155100" id="p2">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#2 · 2010-04-21 15:51</span></div>
+  <div class="pb">mooi bandje, ook al vraag ik me het af wie het is.<br>Heb zo mijn ideeen...</div>
+</article>
+<article class="post" data-ts="20100421162400" id="p3">
+  <div class="ph"><span class="pa">quizpapa</span><span class="pm">#3 · 2010-04-21 16:24</span></div>
+  <div class="pb">met het oog op de leesbaarheid een nieuwe topique geopend.<br>Deze mag 'gesloten' worden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

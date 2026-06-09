@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zaterdag feestje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zaterdag feestje</h1>
+<p class="tm">11 posts · started 2007-05-07 20:23 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070507202300" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-05-07 20:23</span></div>
+  <div class="pb">beste boys en girls,<br><br>Zaterdag is het tijd voor een feestje, ik ben vorige week jarig geweest (nog bedankt voor de vele felicitaties !) en we hebben natuurlijk ook nog steeds geen housewarming gegegeven, daar komt nu dus verandering in.<br><br>Jullie zijn welkom vanaf 20:30, laat het svp even weten als je komt.<br><br>Groeten,<br><br></div>
+</article>
+<article class="post" data-ts="20070507222500" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2007-05-07 22:25</span></div>
+  <div class="pb">MM Jammer dan kunnen T en ik niet, dan gaan we uiteten in Velsen misschien dat we daarna nog even komen.<br></div>
+</article>
+<article class="post" data-ts="20070508080700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-05-08 08:07</span></div>
+  <div class="pb">Op zekertjes! Knallen!</div>
+</article>
+<article class="post" data-ts="20070508090200" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2007-05-08 09:02</span></div>
+  <div class="pb">Laura moet werken, maar ik denk dat ik wel even langskom.</div>
+</article>
+<article class="post" data-ts="20070508095600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-05-08 09:56</span></div>
+  <div class="pb">Marije en ik zijn erbij, misschien iets later dan half negen.</div>
+</article>
+<article class="post" data-ts="20070509081300" id="p6">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#6 · 2007-05-09 08:13</span></div>
+  <div class="ps">present</div><div class="pb">ik ben ook present</div>
+</article>
+<article class="post" data-ts="20070509092100" id="p7">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#7 · 2007-05-09 09:21</span></div>
+  <div class="pb">ben d'r</div>
+</article>
+<article class="post" data-ts="20070509131700" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2007-05-09 13:17</span></div>
+  <div class="pb">present</div>
+</article>
+<article class="post" data-ts="20070510114800" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2007-05-10 11:48</span></div>
+  <div class="pb">ikkannie, helaas, ik heb met mijn roeiploegje een coach-bedank-avondje. </div>
+</article>
+<article class="post" data-ts="20070510160900" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2007-05-10 16:09</span></div>
+  <div class="pb">Hooghe teyding!</div>
+</article>
+<article class="post" data-ts="20070511083800" id="p11">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#11 · 2007-05-11 08:38</span></div>
+  <div class="pb">Lex en ik zijn een weekje naar de Provence en zijn er dus niet bij zaterdag. Veel plezier!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

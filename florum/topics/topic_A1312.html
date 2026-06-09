@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tel. nr. Wybren – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tel. nr. Wybren</h1>
+<p class="tm">8 posts · started 2004-10-04 10:15 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041004101500" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-10-04 10:15</span></div>
+  <div class="pb">Wat is het telefoonnummer van Wybren?</div>
+</article>
+<article class="post" data-ts="20041004112600" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-10-04 11:26</span></div>
+  <div class="pb">ik, ik mail het je wel. <br>Ik had em laatst weer eens een smsjes gestuurd, toen belde hij mij de volgende dag prompt op om het een en het ander te bespreken.</div>
+</article>
+<article class="post" data-ts="20041004143400" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2004-10-04 14:34</span></div>
+  <div class="pb">Heb nog niets ontvangen. Is zijn (enige) e-mailadres trouwens nog steeds haarlem@mail.com of heeft hij ook nog een andere?</div>
+</article>
+<article class="post" data-ts="20041004151600" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-10-04 15:16</span></div>
+  <div class="pb">gemaild naar oli4vb@gmail.com</div>
+</article>
+<article class="post" data-ts="20041005164400" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2004-10-05 16:44</span></div>
+  <div class="pb">Voorlopig is mijn computer een beetje te gefuckt om gmail te hebben. Kun je het naar oli4@voila.fr sturen? Of gewoon hier opschrijven, ik zie het gevaar niet zo.</div>
+</article>
+<article class="post" data-ts="20041005171100" id="p6">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#6 · 2004-10-05 17:11</span></div>
+  <div class="pb">hiero: <br>+31624750294</div>
+</article>
+<article class="post" data-ts="20041005174300" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-10-05 17:43</span></div>
+  <div class="pb">Tja..nu breekt de hel los en kun je Spa zeker vergeten. Ik denk dat Wybren net als Balkenende nu zijn sim kan weggooien. </div>
+</article>
+<article class="post" data-ts="20041005183200" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2004-10-05 18:32</span></div>
+  <div class="pb">Nou, Wybren ziet anders best de lol in van 1000 oproepen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mail van USC! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mail van USC!</h1>
+<p class="tm">1 post · started 2001-09-26 23:25 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010926232500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-09-26 23:25</span></div>
+  <div class="pb">naar aanleiding van een mailtje van mij aan hun over de inschrijfproblemen en de stand bijhouden kreeg ik dit terug:<br><br>Beste Victor,<br> <br>Inderdaad hebben wij de nodige problemen met ons nieuwe inschrijvingsysteem zoals je hebt gemerkt.<br>Hoewel de schuld van dit probleem geheel ligt bij de leverancier van het softwareprogramma, vinden wij dat uiteraard zeer vervelend en bieden wij onze excuses aan voor alle overlast die dat bij de deelnemers aan onze activiteiten veroorzaakt.<br>Inmiddels werkt het systeem weer sinds vandaag en kunnen we iemand binnen een minuut inschrijven.  De wachttijden tot nu toe waren ook  in onze ogen onaanvaardbaar lang. Naar verwachting blijft het systeem het nu goed doen en kunnen we jou dus volgende week voor aanvang van jouw wedstrijd inschrijven voor het zaalvoetbal.<br>Per 1 oktober gaan we op kaarten controleren, als het systeem het tenminste goed blijft doen, dat wil niet zeggen dat iedereen zich vóór 1 oktober moet hebben ingeschreven want dat kan gewoon ook bij het eerste bezoek aan het USC na 1 oktober.<br>Van belang is dat iedereen een kaart koopt (of heeft gekocht) voordat men vanaf 1 oktober deelneemt aan de sportactiviteiten van het USC.<br>In een apart mailtje vraag je wanneer de standen op onze site worden bijgewerkt. Zoals je al zelf meldde zou dat eind september gebeuren. Ik zal vanavond aan de wedstrijdleiding van het zaalvoetbal vragen of ze mij al een stand kunnen leveren zodat ik die deze week op de site kan zetten.<br>Groet,<br>namens het  USC,<br>Ruud Vos<br> <br>mooi werk dus Usc! En het USC voegt daden bij woorden...<br>kijk op de volgende page: http://www.org.uva.nl/usc/competities/zaalvoetbal/standen.html<br>et voila!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

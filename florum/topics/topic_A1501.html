@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Henk Bakker – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Henk Bakker</h1>
+<p class="tm">1 post · started 2005-05-27 12:09 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050527120900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-05-27 12:09</span></div>
+  <div class="pb">Artikeltje over onze lievelingsraadslid:<br><br>Het moet een bevreemdende ervaring zijn geweest voor de voorzitter van het Europees Parlement: de Spanjaard Josef Borrell. Hij was deze week te gast bij de Amsterdamse gemeenteraad en woonde er een bijeenkomst over de Europese grondwet bij. Vanaf de tribune liet een bonte groep van nee-stemmers haar afkeuring van de Europese grondwet blijken. Onder de nee-stemmers bevond zich gemeenteraadslid Henk Bakker van Leefbaar Amsterdam. Druk zwaaiend met een portret van Fortuyn en onbegrijpelijke taal uitslaand liet hij tegenover Borrell blijken dat hij het er niet mee eens was. De Spanjaard hoorde het gelaten aan, maar op het einde werd al het hollandse negativisme hem toch te veel een trok hij flink van leer tegen de in zijn ogen drogredeneringen van de nee-stemmers.<br><br>Nu zijn er nee-stemmers in allerlei kleuren en maten en we moeten de discussie vooral inhoudelijk blijven voeren. Maar even lachen tussendoor mag soms ook best. En in de rechterhoek van het nee-kamp valt regelmatig wat te lachen. Henk Bakker is naast gemeenteraadslid ook koopman op de Ten Katemarkt alwaar hij graag seksistische opmerkingen mag maken naar de passerende hoofddoekjes, aldus de hoofdstedelijke overlevering. Zijn onnavolgbare wijze van binnensmonds bazelen is al meerdere malen op voortreffelijke wijze gepersifleerd door Michiel Romeyn. Maar je kan ook m\ét Henk Bakker lachen: als je hem emailtjes stuurt uit naam van een zekere Jacqueline. Luuk Koelman, bekend van de brandbrieven, deed zich destijds voor als een struise Amsterdamse die wel eens wilde gaan cruisen met Henk in zijn bolide. Hijgerige Henkie hapte 100% toe...<br>meer <a href="http://www.koelman.com/brandbrieven/archief/000066.html">hier</a><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

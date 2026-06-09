@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TV NOORDWEST FAILLIET?!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">TV NOORDWEST FAILLIET?!!</h1>
+<p class="tm">5 posts · started 2003-05-12 17:06 by Lh</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030512170600" id="p1">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#1 · 2003-05-12 17:06</span></div>
+  <div class="pb">Ik sloeg ons weekelijks sufferdje open en kwam het volgende bericht kort samengevat tegen:<br><br>Het ziet er naar uit dat Noord West tv zijn langste tijd heeft gehad!Het wordt nu enkel nog draaiende gehouden door wel erge enthousiaste vrijwilligers. Het huidige personeel van Noord west Tv heeft namelijk al enkele maanden geen salaris ontvangen! Naar aanleiding hiervan hebben ze persoonlijk het failliesement voor N.W.TV aangevraagd... Dus dag Jantje U.!!!<br>Wordt vervolgd...........</div>
+</article>
+<article class="post" data-ts="20030513092200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-13 09:22</span></div>
+  <div class="pb">Tjezus... Dat begrijp je toch niet! Dan moeten we naar de gemeente om geld op te eisen voor onze zender. Als ze die voetbalclubs al 4,5 miljoen geven moeten ze dat *zeker* doen bij de regionale zender in beweging. Tube, misschien kun jij een paar formele brieven rondzenden?</div>
+</article>
+<article class="post" data-ts="20030513114300" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2003-05-13 11:43</span></div>
+  <div class="pb">al die utrecht, az en twente fans hebben volgens mij hun geld niet met formele brieven gekregen. ik denk dat we het toch meer in de richting van bedreigingen moeten zoeken en lekker-in-de-bek-liggende leuzes.</div>
+</article>
+<article class="post" data-ts="20030513132100" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-05-13 13:21</span></div>
+  <div class="pb">ik stel voor dat we naar het NWTV hoofdkwartier gaan en daar collectief de tong door de mond laten rollen als steunbetuiging aan Jantje Uriot.<br><br>Daarna kunnen we bij de provincie de boel kort en klein gaan slaan.</div>
+</article>
+<article class="post" data-ts="20030513135400" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-05-13 13:54</span></div>
+  <div class="pb">Dit is toch godsgeklaagd! Wie doet er nu wat aan!? Was Pim er nu nog maar geweest...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

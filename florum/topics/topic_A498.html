@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heavy Shit – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heavy Shit</h1>
+<p class="tm">4 posts · started 2002-05-28 11:02 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020528110200" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2002-05-28 11:02</span></div>
+  <div class="pb">Student: Victor de Boer<br><br>Begeleider: Jaap Murre<br><br>Titel: Point process memory models for optimising second language instruction<br><br>Doel van dit onderzoek is het construeren van een simulatie van het geheugen voor het leren van woorden in een tweede taal. Op grond van de simulatie wordt geprobeerd om de aanbieding van leermateriaal te optimaliseren. Fasering van het onderzoek:<br><br>Literatuuronderzoek: <br><br>Experimentele literatuur (tweede taalverwerving, spacing effecten); <br><br>Geheugentheorie\ën m.b.t. taalverwerving en spacing; <br><br>Inlezen in het puntproces geheugenmodel voor herinnering tijdens en na enkelvoudige en meervoudige aanbiedingen (Chessa & Murre); <br><br>Bestudering van de huidige versie van het computerprogramma Captain Mnemo (Murre). Hiermee worden oefeningen in een vreemde taal aangeboden (bijv. woordvertaling, gatenteksten), waarna de scores (goed/fout) van elk individueel getoetst item worden opgeslagen. <br><br>Ontwikkeling puntproces geheugenmodel met spacing-effecten: <br><br>Verfijning van het saturatiemodel voor de initi\ële encodering van geheugenrepresentaties (Murre & Chessa, 2001), waarin het aantal trials, het tijdstip van aanbieding en de aanbiedingsduur van iedere trial expliciet moeten worden opgenomen; <br><br>Parametrisatie aanbiedingsschemas. We hebben twee mogelijkheden bedacht: (i) leertrials worden op een eindig aantal tijdstippen aangeboden, zoals het dus in werkelijkheid gaat, en (ii) de totale leerstof wordt aangeboden volgens een continue tijdsverdeling. In optie (i) zouden we "online" kunnen optimaliseren, d.w.z. gegeven de optimale aanbiedingstijden tot en met trial n en de geschatte retentiefunctie dient de optimale aanbiedingstijd voor trial n + 1 te worden bepaald. De uitdrukking voor de retentiefunctie wordt echter behoorlijk lang naarmate het aantal trials toeneemt, zodat we zullen beginnen met optie (ii). <br><br>Validatie van het verfijnde model door het uitvoeren van statistische toetsen op bestaande multi-trial retentiedata, bijv. Glenberg (1976). <br><br>Schatting geheugenparameters en optimalisatie parameters aanbiedingsschemas: <br><br>Ontwikkeling van methoden voor de schatting van de parameters van het puntproces. In principe gaan we uit van verschillende leer- en vergeetparameters voor zowel proefpersonen als leeritems; <br><br>Welke factoren m.b.t. de aanbieding van leertrials worden geoptimaliseerd, alleen de aanbiedingstijden van de trials? <br><br>Wat is de te optimaliseren doelfunctie? Mogelijkheden: (i) verwachte retentie over een tijdsinterval, (ii) aantal leeritems dat beheerst wordt, uitgaande van een ondergrens voor de verwachte retentie op een bepaald tijdstip of tijdsinterval per item; <br><br>Wat voor soort optimalisatiemethoden zouden we voor (c) kunnen gebruiken? <br><br>Keuze leermateriaal. Verzameling en opslag data. (In samenspraak met Steve Jansen). <br><br>Implementatie van het puntproces model en de schattings- en optimalisatie-methoden. Captain Mnemo op Internet plaatsen m.b.v. programmering in Zope/ Python/MySQL. Dataverzameling zal dus plaatsvinden via Internet. <br><br>Data-analyse, validatie geheugenmodel, schrijven afstudeerscriptie. <br></div>
+</article>
+<article class="post" data-ts="20020528151200" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2002-05-28 15:12</span></div>
+  <div class="pb">???</div>
+</article>
+<article class="post" data-ts="20020528153600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-05-28 15:36</span></div>
+  <div class="pb">wie heeft dit nou weer opgezocht? Kenobi??<br>tis inderdaad wel heavy shit ja</div>
+</article>
+<article class="post" data-ts="20020528174400" id="p4">
+  <div class="ph"><span class="pa">Tymen</span><span class="pm">#4 · 2002-05-28 17:44</span></div>
+  <div class="pb">Ziet er lollig uit..een beetje te theoretisch gewouwel voor mij maar wel kewl.Heb je al uitkomsten?Ik gok dat methode (i) tot betere uitkomsten leidt dan (ii)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

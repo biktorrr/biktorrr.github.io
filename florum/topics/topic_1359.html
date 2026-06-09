@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 1359 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 1359</h1>
+<p class="tm">7 posts&nbsp;·&nbsp;started 2010-04-23 13:45 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100423134500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1&nbsp;·&nbsp;2010-04-23 13:45</span></div>
+  <div class="pb"><a href="http://www.huffingtonpost.com/2010/04/22/the-most-absurd-break-up_n_547764.html">Vrij briljante link op het FB vandaag</a></div>
+</article>
+<article class="post" data-ts="20100423144200" id="p2">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#2&nbsp;·&nbsp;2010-04-23 14:42</span></div>
+  <div class="pb">BREAKING NEWS<br><br>Domino Day 2010 afgelast <br>Uitgegeven: 23 april 2010 14:59 <br>Laatst gewijzigd: 23 april 2010 14:59 <br><br>AMSTERDAM - Domino Day krijgt geen editie 2010. Dat laat producent Endemol weten. De samenwerkende partijen konden niet genoeg geld bij elkaar krijgen voor de jaarlijkse recordpoging dominostenen omgooien. <br> <br>Endemol gaat ervan uit dat het festijn volgend jaar wel doorgaat.<br><br>"Domino Day heeft een heel complex financieringsmodel, omdat we ook samenwerken met buitenlandse zenders", laat een woordvoerder van Endemol weten.<br><br>"Vrijwel alle partijen hadden dit jaar minder budget door de kredietcrisis. We vinden het uiteraard heel jammer. Maar in 2011 staat het gewoon weer in de planning."<br><br>Afgelopen november werden er nog bijna 4,5 miljoen dominostenen omgegooid in Leeuwarden. Het spektakel was in dertien Europese landen op televisie te zien. Domino Day wordt al sinds 1998 gehouden. Alleen in 2003 ging het niet door, omdat de producent het format wilde herzien.<br></div>
+</article>
+<article class="post" data-ts="20100423145000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3&nbsp;·&nbsp;2010-04-23 14:50</span></div>
+  <div class="pb">Verdomme Tube, ik zit net met hetzelfde bericht onder mn control-V. <br><br>Arme mr. bigwheel...</div>
+</article>
+<article class="post" data-ts="20100423154000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4&nbsp;·&nbsp;2010-04-23 15:40</span></div>
+  <div class="pb">Oh my, nu gaan de Koreanen natuurlijk een record vestigen.</div>
+</article>
+<article class="post" data-ts="20100423161700" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5&nbsp;·&nbsp;2010-04-23 16:17</span></div>
+  <div class="pb">niet als we vooraf een aantal steentjes omgooien.</div>
+</article>
+<article class="post" data-ts="20100423173300" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6&nbsp;·&nbsp;2010-04-23 17:33</span></div>
+  <div class="pb">Zeg Tim... ga jij toevallig werksgewijs binnenkort naar Korea?</div>
+</article>
+<article class="post" data-ts="20100423181500" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7&nbsp;·&nbsp;2010-04-23 18:15</span></div>
+  <div class="pb">ehm, nee<br><br>Ik heb wel een uitnodiging om een keer op bezoek te komen bij een collaborator/vriendin die staf is in Seoul, maar er is geen geld (tenzij het Penose-fonds wat over heeft). </div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

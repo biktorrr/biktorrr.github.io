@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>naar 1/2 finale wk???? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">naar 1/2 finale wk????</h1>
+<p class="tm">1 post · started 2002-06-03 14:18 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020603141800" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-06-03 14:18</span></div>
+  <div class="pb">Het WK in Japan is het voetbalevenement van 2002.<br>Jij kunt er bij zijn, want Schiphol en Philips geven<br>de allerlaatste kaartjes voor de halve finale weg.<br>Het KLM vliegticket krijg je er bij! Nu maak je ook<br>nog kans op twee grote extra prijzen: een geavanceerde<br>draagbare CD speler van Philips en een kwartaalabonnement<br>op Sportweek!<br><br>Kijk snel op www.schiphol.nl/wkinjapan/ en doe mee!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

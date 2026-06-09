@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huilt van binnen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Huilt van binnen</h1>
+<p class="tm">7 posts · started 2001-06-18 00:56 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010618005600" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-06-18 00:56</span></div>
+  <div class="pb">Wil iemand svp even Erik 1 MVP punt geven dan is mijn vernedering echt compleet. <br><br></div>
+</article>
+<article class="post" data-ts="20010618180100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2001-06-18 18:01</span></div>
+  <div class="pb">ok</div>
+</article>
+<article class="post" data-ts="20010619162700" id="p3">
+  <div class="ph"><span class="pa">Big Bow Wow</span><span class="pm">#3 · 2001-06-19 16:27</span></div>
+  <div class="pb">Aaah. Zo erg speelde je nou ook weer niet hoor <br>Joost. Alleen moeten we constateren dat jij <br>niet meer zo goed speelt als je de eerste tien<br>keer deed toen je bij ons kwam of dat wij heel<br>veel beter zijn geworden. Dat laatste is niet<br>zo waarschijnlijk. Dus zul je de oorzaak toch<br>echt bij jezelf moeten gaan zoeken. Misschien<br>moet jou giga-ego maar 's 'n bescheidenheids-<br>training ondergaan. Wat dacht je d'r van om<br>volgende keer met Erik in de verdediging te <br>staan? Dan leer je nog 's wat de essentie van<br>ballen is! Verdedigen!</div>
+</article>
+<article class="post" data-ts="20010620135000" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-06-20 13:50</span></div>
+  <div class="pb">Sorry maar je kan mij een boel wijsmaken maar zeker niet dat ik een giga ego heb. Misschien lijkt dat zo maar het IS zeker niet zo.<br></div>
+</article>
+<article class="post" data-ts="20020805110500" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2002-08-05 11:05</span></div>
+  <div class="pb">een mooie discussie die wel een nieuw leven ingeblazen mag worden, dunkt mij</div>
+</article>
+<article class="post" data-ts="20020805162400" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2002-08-05 16:24</span></div>
+  <div class="pb">wow, oli4, echt goed research-werk!</div>
+</article>
+<article class="post" data-ts="20020806135900" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2002-08-06 13:59</span></div>
+  <div class="pb">moeten we trouwens niet weer eens punten gaan geven, kan je lachen</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

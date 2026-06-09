@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dieptrieste Dag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dieptrieste Dag</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2010-04-16 09:29 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100416092900" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2010-04-16 09:29</span></div>
+  <div class="pb">Vandaag wordt voor het eerst na 10 jaar een REVT gehouden <a href="http://staff.science.uva.nl/~marcelh/REVT/teams.html">zonder</a> die boys op het veld. Enkele quotes:<br><br>"waar zijn die rode homo's nou?" - Moeni-Moeni<br><br>"ik vond het altijd zo gezellig die jongens, vooral in de kleedkamers" - Taasje M.<br><br>"die inzet en durf, dat stond mij het meeste bij van de Floraboys. Ze streden altijd tot het eindsignaal. Alleen had ik ooit een tegengoal bij hun onterecht goedgekeurd daar lig ik nog wel eens wakker van" - Henk L.<br><br>"wie had ooit gedacht dat wij afscheid van hun moesten nemen" - Jan G.<br><br>Dit topic is bij deze opgensteld voor het posten van in memoria.</div>
+</article>
+<article class="post" data-ts="20100416103800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2&nbsp;·&nbsp;2010-04-16 10:38</span></div>
+  <div class="pb">*snik*</div>
+</article>
+<article class="post" data-ts="20100416104700" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3&nbsp;·&nbsp;2010-04-16 10:47</span></div>
+  <div class="pb">Ik herinner me --naast alle Flora heldendaden-- vooral een bepaald etentje in Turks pizzarestaurant 'Le Papillon'.<br><br>Dat de pizza's uiteindelijk met brommers van Domino's werden aangevoerd en dat de bieren lauw waren kon niets afdoen aan de vreugd om cultheld Kenzo weer te zien!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

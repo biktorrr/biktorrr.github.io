@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opgeserveerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Opgeserveerd</h1>
+<p class="tm">12 posts · started 2007-08-01 17:46 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070801174600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-08-01 17:46</span></div>
+  <div class="pb">Na 2 gesprekken bij Allianz hebben ze me vandaag een aanbod gedaan waar ik op ben ingegaan. De little trainee is dus nu per 15-08 <a href="http://en.wikipedia.org/wiki/Underwriter#Insurance_underwriting"> Little-Underwriter </a> bij Allianz Inkomensverzekeringen. Kan ik met een gerust hart de komende paar dagen vamos naar de Alpen. Als ik terug ben krijgen jullie een drankje van mij om het te vieren. Even voor het toekomst perspectief: mijn nieuwe Big Chief woont in Overveen op de hoek van de Bloemdaalse Weg en de Militairenweg, aan de rontonde bij dorp Overveen.</div>
+</article>
+<article class="post" data-ts="20070801181800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-08-01 18:18</span></div>
+  <div class="pb">Hooghe teydingh! Congraetulaetyes!<br><br>Hebben ze een leuke functie voor je gemaakt?</div>
+</article>
+<article class="post" data-ts="20070801202200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-08-01 20:22</span></div>
+  <div class="pb">Hey gefeliciteerd. Dan is het nog betrekkelijk snel gegaan, waar ga je werken??</div>
+</article>
+<article class="post" data-ts="20070801215400" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2007-08-01 21:54</span></div>
+  <div class="pb">Gefeliciteerd Tijmen!! <br>Hoe is het met je duits?</div>
+</article>
+<article class="post" data-ts="20070802023200" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2007-08-02 02:32</span></div>
+  <div class="pb">Zo, dat was een effectief staaltje van niet bij de pakken neer zitten en schouders eronder.<br><br>Respect! En veel succes!<br></div>
+</article>
+<article class="post" data-ts="20070802093100" id="p6">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#6 · 2007-08-02 09:31</span></div>
+  <div class="pb">gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20070802095100" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-08-02 09:51</span></div>
+  <div class="pb">Nou dan heb je ook weinig aan je WW-premie gehad. BEn jij vooralsnog de jobhop-koning. Allianz doet mij vooral denken aan een Haarlemsche voetbalclub van bedenkelijk niveau.</div>
+</article>
+<article class="post" data-ts="20070802101300" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2007-08-02 10:13</span></div>
+  <div class="pb">WW moet je eerst 26 weken voor gewerkt hebben, al weet ik niet of Ma Bruin daarvoor mee telt.<br><br>P.S. Voor de goede orde voor iedereen hier, de voetbalclub heet Alliance en niet Allianz. Stelletje gekken.</div>
+</article>
+<article class="post" data-ts="20070802110500" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2007-08-02 11:05</span></div>
+  <div class="pb">Joehoe!!</div>
+</article>
+<article class="post" data-ts="20070802123200" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2007-08-02 12:32</span></div>
+  <div class="pb">Dat is goede nieuws Little, gefeliciteerd! <br><br>Voorlopig moet het overigens maar even afgelopen zijn metgoedkope pogingen om de Floraboys gouden handdruk cup te bemachtigigen.</div>
+</article>
+<article class="post" data-ts="20070802133600" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2007-08-02 13:36</span></div>
+  <div class="pb">Muy respect! <br><br>Veel plezier met underwriten</div>
+</article>
+<article class="post" data-ts="20070803232800" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2007-08-03 23:28</span></div>
+  <div class="pb">Een hooghe laeghwriter indeed! Als je -als psycholoog zijnde- maar zorgt dat ik een hooghe premie krijg...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

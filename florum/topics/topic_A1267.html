@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dragostea Din Tei – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dragostea Din Tei</h1>
+<p class="tm">1 post · started 2004-08-11 14:28 by O-Zone</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040811142800" id="p1">
+  <div class="ph"><span class="pa">O-Zone</span><span class="pm">#1 · 2004-08-11 14:28</span></div>
+  <div class="pb">Overigens dien ik wel even te vermelden dat tevens de roemeense woorden niet geheel in roemeens gebruik zijn, daar het hier trouwens een paar moldavische roemeentjes betreft<br><br>Dragostea din tei, wordt ook wel gebruikt als aanduiding voor een onbeantwoorde liefde<br><br>x5 <br>Ma-ia-hii <br>Ma-ia-huu <br>Ma-ia-hoo <br>Ma-ia-haa <br>Alo, Salut, sunt eu, un haiduc, <br><br>Hallo, Hoi..Ik ben het, je redder in nood ( een haiduc is een soort ridder die met name mensen in nood dient te redden ..een soort Robin Hood zeg maar)<br><br><br>Si te rog, iubirea mea, primeste fericirea. <br><br>En ik smeek je, mijn lieveling, ik kan je vreugde brengen ( blij maken )<br><br>Alo, alo, sunt eu Picasso, <br><br>Hallo 2x , Ik ben het, Picasso<br><br>Ti-am dat beep, si sunt voinic, <br><br>ik heb je een belletje gegeven, en ik ben toegewijd <br>ofwel: Ik bel je alweer <br><br>Dar sa stii nu-ti cer nimic. <br><br>en ik zal je er niks voor terug vragen <br><br>Vrei sa pleci dar nu ma, nu ma iei, <br><br>ik weet dat je wilt gaan, maar waarom neem je me niet mee? <br><br>Nu ma, nu ma iei, nu ma, nu ma, nu ma iei. <br><br>neem je me niet mee, neem je me niet mee <br><br><br>Chipul tau si dragostea din tei, <br><br>je verschijning en de liefde in je <br><br>Mi-amintesc de ochii tai. <br><br>ik denk aan je ogen <br><br>Vrei sa pleci dar nu ma, nu ma iei, <br><br>ik weet dat je wil gaan, maar waarom neem je me niet mee? <br><br>Nu ma, nu ma iei, nu ma, nu ma, nu ma iei. <br><br>neem je me niet mee, neem je me niet mee <br><br>Chipul tau si dragostea din tei, <br><br>je verschijning en de liefde in je <br><br>Mi-amintesc de ochii tai. <br><br>ik denk aan je ogen <br><br>Te sun, sa-ti spun, ce simt acum, <br><br>Ik bel je, om je te vertellen, wat ik nu voel <br><br>Alo, iubirea mea, sunt eu, fericirea. <br><br>hallo?, mijn liefste, ik ben het, degene die je blij gaat maken<br><br>Alo, alo, sunt iarasi eu, Picasso, <br><br>Hallo, 2x, ik ben het weer, Picasso <br><br>Ti-am dat beep, si sunt voinic, <br><br>Ik heb je een belletje gegeven en ik ben toegewijd<br>Met andere woorden, ik heb je ALWEER gebeld<br><br>Dar sa stii nu-ti cer nimic. <br><br>maar ik zal je er niets voor terug vragen <br><br>Vrei sa pleci dar nu ma, nu ma iei, <br><br>Ik weet dat je weg wilt gaan, maar waarom neem je me niet mee <br><br>Nu ma, nu ma iei, nu ma, nu ma, nu ma iei. <br><br>neem je me niet mee, neem je me niet mee <br><br>Chipul tau si dragostea din tei, <br><br>je verschijning en de liefde in je <br><br>Mi-amintesc de ochii tai. <br><br>ik denk weer aan die ogen van je <br><br><br>x4 <br>Ma-ia-hii <br>Ma-ia-huu <br>Ma-ia-hoo <br>Ma-ia-haa <br><br><br>Resume: Deze jongen is stapelgek op een dame die zijn liefde niet beantwoord..sterker nog, ze gaat weg en laat hem lekker de vinketering krijgen. Overigens belt ie haar iets vaker dan goed voor hem is , wat trouwens niets uithaalt.<br>Hij wil haar redder in nood zijn, beschermen en vreugde brengen.<br><br>Tevens vind ie haar lekker en heeft ze een stel prachtige ogen.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

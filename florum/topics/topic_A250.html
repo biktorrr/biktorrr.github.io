@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PTC – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">PTC</h1>
+<p class="tm">3 posts · started 2001-09-21 13:50 by The New War :Gastspreker2</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010921135000" id="p1">
+  <div class="ph"><span class="pa">The New War :Gastspreker2</span><span class="pm">#1 · 2001-09-21 13:50</span></div>
+  <div class="pb">begrijp me goed, dit hele WTC-gebeuren is natuurlijk een <br>ramp/gruwelijkheid van grote omvang maar inderdaad, het is<br>natuurlijk zo dat het nou eenmaal erger is als er amerikanen<br>sterven dan bijvoorbeeld tienduizenden Irakeze kindjes <br>vanwege de boycott (en Saddam) of duizenden Soedanezen <br>(clinton)of desnoods Palestijnen. Of als de tamiltijgers<br>in het rond gaan schieten of Indonesie die complete geno-<br>ciden organiseert.<br><br>ik doe ook maar een gastspreek-duit in het zakje:<br>Good Old Chomsky met een paar quotes:<br><br>1)<br>The bin Laden network itself falls into a different category, and in fact its actions for 20 years have caused<br>great harm to the poor and oppressed people of the region, <br>who are not the concern of the terrorist networks. But they<br>do draw from a reservoir of anger, fear, and <br>desperation, which is why they are praying for a violent US <br>reaction,<br>which will mobilize others to their horrendous cause.<br><br><br>2)<br>In short, the crime is a gift to the hard jingoist right, those who hope to use force to control their domains. That is<br>     even putting aside the likely US actions, and what they will trigger -- possibly more attacks like this one, or<br>     worse. The prospects ahead are even more ominous than they appeared to be before the latest atrocities.<br>      <br>     As to how to react, we have a choice. We can express justified horror; we can seek to understand what may<br>     have led to the crimes, which means making an effort to enter the minds of the likely perpetrators. If we choose<br>     the latter course, we can do no better, I think, than to listen to the words of Robert Fisk, whose direct knowledge<br>     and insight into affairs of the region is unmatched after many years of distinguished reporting. Describing "The<br>     wickedness and awesome cruelty of a crushed and humiliated people,"<br><br><br>'bidden' voor een min of meer wijze oplossing die de VS<br>kiezen dus<br><br><br><br>nou zo kan ik (en good old chomsky) nog wel even doorgaan,<br><br><br>PTC klaar!<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20010921135000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-09-21 13:50</span></div>
+  <div class="ps">oja</div><div class="pb">subject en naam stonden andersom, damn<br></div>
+</article>
+<article class="post" data-ts="20010921135300" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2001-09-21 13:53</span></div>
+  <div class="ps">sorry ik kon dez niet voor mezelf houden:</div><div class="pb">Terwijl de Amerikaanse regering direct na de aanvallen op<br> New York alle<br>vliegtoestellen aan de grond zette, werd Michael Jackson <br>toch in een priv\é-jet<br>naar Californi\ë gevlogen.<br><br>De zanger was in New York voor de viering van zijn dertig<br>jarig jubileum op 7 en<br>10 september. Hij was van plan nog een aantal dagen in de<br> stad te blijven voor<br>andere werkzaamheden toen de aanslagen roet in het eten <br>gooiden, zo meldt<br>Ilsemusic.<br><br>jippie!<br>heerlijk<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

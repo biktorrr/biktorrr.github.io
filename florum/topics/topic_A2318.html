@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spannende weken – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Spannende weken</h1>
+<p class="tm">11 posts · started 2008-03-01 11:27 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080301112700" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2008-03-01 11:27</span></div>
+  <div class="pb">Volgens mij komt de tweede FloragirlBaby eraan volgende week? Spannend.....</div>
+</article>
+<article class="post" data-ts="20080303155700" id="p2">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#2 · 2008-03-03 15:57</span></div>
+  <div class="pb">Wie heeft het adres van Alexa en Michiel??? Ik heb nog een pakketje voor ze...<!--132.229.216.211--></div>
+</article>
+<article class="post" data-ts="20080303163700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-03-03 16:37</span></div>
+  <div class="pb">Vrouwelijke intuitie?<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080303172200" id="p4">
+  <div class="ph"><span class="pa">Drs Paardepik</span><span class="pm">#4 · 2008-03-03 17:22</span></div>
+  <div class="pb">Om de boel daaronder enigszins de boel te houden adviseren wij van Paardepik & Co(otje) onder de zinspreuk 'beter een snee in je buikje dan een snee in je sneetje' het keizersnee(tje). Succes!<!--91.141.229.80--></div>
+</article>
+<article class="post" data-ts="20080303183900" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2008-03-03 18:39</span></div>
+  <div class="pb">subtiel maar toch duidelijk. ik ga maar weer eens de logs in duiken. <!--62.163.198.174--></div>
+</article>
+<article class="post" data-ts="20080304080400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2008-03-04 08:04</span></div>
+  <div class="pb">Ben benieuwd<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080304081000" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2008-03-04 08:10</span></div>
+  <div class="pb">holy fuck, dat is inderdaad behoorlijk onsubtiel! Laat me weten bij wie ik een zak paardenstront kan laten bezorgen!<br><!--146.50.20.43--></div>
+</article>
+<article class="post" data-ts="20080304083600" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2008-03-04 08:36</span></div>
+  <div class="pb">mooi figuur, da's op zeker<!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080304124800" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2008-03-04 12:48</span></div>
+  <div class="pb">Ik HECHT maar niet veel waarde aan de adviezen van meneer Paardepik. <!--145.222.93.6--></div>
+</article>
+<article class="post" data-ts="20080304125200" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2008-03-04 12:52</span></div>
+  <div class="pb">hehehe<!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080304130700" id="p11">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#11 · 2008-03-04 13:07</span></div>
+  <div class="pb">Een olicke variatie op <i>"save your lovetrack, have a caesarian"</i>!<!--213.84.4.9--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

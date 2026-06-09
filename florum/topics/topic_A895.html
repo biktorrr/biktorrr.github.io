@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Holy Holy Holy Hoooooooly – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Holy Holy Holy Hoooooooly</h1>
+<p class="tm">9 posts · started 2003-09-16 12:32 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030916123200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-09-16 12:32</span></div>
+  <div class="pb">hij heeft een nieuwe text-update<br>voor de geinteresseerden, klik<br><a href="http://www.kuys.net">HierrrrrrrrrrrrrrrM/a></div>
+</article>
+<article class="post" data-ts="20030916123300" id="p2">
+  <div class="ph"><span class="pa">ptc</span><span class="pm">#2 · 2003-09-16 12:33</span></div>
+  <div class="pb">ojee slordig htmllen wordt hier meteen afgestraft</div>
+</article>
+<article class="post" data-ts="20030916131000" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2003-09-16 13:10</span></div>
+  <div class="pb">kenoobster.. mocht je dit lezen.. veel succes met je laatste loodjes en vakantie straks</div>
+</article>
+<article class="post" data-ts="20030916132900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-09-16 13:29</span></div>
+  <div class="pb">Wie nog niet de directe links naar het Florum en het zaalFlorum in zijn favorieten heeft kan van de volgende<br>adressen gebruik maken.<br><br>f.kuys.net -> FLORUM<br>zf.kuys.net -> zaalFLORUM</div>
+</article>
+<article class="post" data-ts="20030916142600" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-09-16 14:26</span></div>
+  <div class="pb">we zijn nu bezig de gehele site op dezelfde servert als die van het florum te zetten. Binnenkort dus gewoon weer ouderwets Floraboys.commen zonder downtime en tweederangs links...<br></div>
+</article>
+<article class="post" data-ts="20030917145900" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2003-09-17 14:59</span></div>
+  <div class="ps">cool</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030919041500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-09-19 04:15</span></div>
+  <div class="pb">Ah, www.jm-p.nl/flora is 'in business'.</div>
+</article>
+<article class="post" data-ts="20030919091600" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2003-09-19 09:16</span></div>
+  <div class="pb">Tsja, je kunt niet alles hebben. :)</div>
+</article>
+<article class="post" data-ts="20030919123600" id="p9">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#9 · 2003-09-19 12:36</span></div>
+  <div class="pb">kunnen ook al meteen de nieuwe fotos van de eerste zaalbalwedstrijd erbij?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

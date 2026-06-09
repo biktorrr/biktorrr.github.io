@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>komende wedstrijden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">komende wedstrijden</h1>
+<p class="tm">2 posts · started 2006-09-01 12:55 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060901125500" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2006-09-01 12:55</span></div>
+  <div class="pb">Even voor de goede orde<br><br>12 september: mijn meedoen is nog niet 100 % zeker. Ik ga het wel proberen, maar misschien zijn er voorbereidingen die op dat moment wel gedaan moeten worden. <br><br>26 (?) september + 5 Oktober: deze twee wedstrijden doe ik OP ZEKER niet mee. <br><br>Ik denk, ik meld het maar even.</div>
+</article>
+<article class="post" data-ts="20060901132400" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2006-09-01 13:24</span></div>
+  <div class="pb">OK Big, goed op tijd.<br><br>Dan volg ik je voorbeeld, ik ben er NEYT:<br>5 oktober<br>19 oktober<br><br>Ben dan in Ghana (op eigen kosten)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

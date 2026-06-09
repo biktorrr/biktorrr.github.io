@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contactadvertentie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Contactadvertentie</h1>
+<p class="tm">5 posts · started 2005-05-06 11:24 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050506112400" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2005-05-06 11:24</span></div>
+  <div class="pb">Internet tycoon zonder werkplek is op zoek naar mensen met een breedband internet verbinding voor enige uurtjes werktijd. Mijn eigen internet provider heeft me per ongeluk gedumpt. Een paar uurtjes achter een pc zouden mij erg gelukkig maken, huisdieren geen probleem. Omgeving Haarlem station, ftp aanwezig is een pre, ms outlook is ook handig. Geen sex.<br><br><br></div>
+</article>
+<article class="post" data-ts="20050506122900" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2005-05-06 12:29</span></div>
+  <div class="pb">Jammer van die laatste voorwaarde, anders kon ik je vast wel helpen.</div>
+</article>
+<article class="post" data-ts="20050506125100" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2005-05-06 12:51</span></div>
+  <div class="pb">niet echt omgeving haarlem, maar hier doet internet het perfect.</div>
+</article>
+<article class="post" data-ts="20050510004100" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2005-05-10 00:41</span></div>
+  <div class="pb">Ook voor mij is sex een vereiste Joost, dat weet je.</div>
+</article>
+<article class="post" data-ts="20050510004300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2005-05-10 00:43</span></div>
+  <div class="pb">Misschien is mijn broertje Casper een optie. Jouw leeftijd valt buiten zijn doelgroep en hij heeft onbeperkt internettoegang. Hij heeft denk ik alleen een wat ander dag/nachtritme... </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

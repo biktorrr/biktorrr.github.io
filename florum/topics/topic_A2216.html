@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bericht aan de Lil&#x27; Professional – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bericht aan de Lil&#x27; Professional</h1>
+<p class="tm">5 posts · started 2007-11-09 08:07 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071109080700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-11-09 08:07</span></div>
+  <div class="pb">Hier een bericht voor de Lil' van Lara (doorgebeld om 8.15u): <br><br>het was lekker gezellig in de kroeg en ze is nu naar huis.<br><br>--Einde bericht--</div>
+</article>
+<article class="post" data-ts="20071109130400" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2007-11-09 13:04</span></div>
+  <div class="pb">klinkt gezellig<!--146.50.20.43--></div>
+</article>
+<article class="post" data-ts="20071109154200" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2007-11-09 15:42</span></div>
+  <div class="pb">Verveelde me om half vier in de nacht en dacht kom we gaan mijn beltegoedkaart (hoe ouderwets) er even doorheen bellen. Toen ik nog 0.39 cent overhad dacht ik kom laat ik even Victor bellen! Weer eens wat anders hahaha. (Wel raar dat je met zo weinig toch nog wel een hele 2 minuten kan bellen ofzo!viel me weer eens mee)<br><br>Maar het was inderdaad gezellig en nee ik heb geen kater <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><!--200.2.190.156--></div>
+</article>
+<article class="post" data-ts="20071109160500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-11-09 16:05</span></div>
+  <div class="pb">ik stond helaas onder de douche wakker te worden, maar gelukkig is de Blije op dat tijdstip op haar scherpst<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071111152600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2007-11-11 15:26</span></div>
+  <div class="pb">gouwe meid is het toch.<br><br>Mij belde ze vanochtend. Ze moest na het stappen weer voor een tripje naar het ziekenhuis, nu omdat ze besloten had een glas dat tijdens het dansen op de grond was gevallen (kapot, had ze niet door) aan de kant te trappen.<br>een paar uurtjes en 4 hechtingen in haar voet later kon ze weer naar huis. Nu hopen dat ze die fotoverkiezing wint, dan kan ze lekker rustig dat boek lezen.<br><!--24.132.9.21--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

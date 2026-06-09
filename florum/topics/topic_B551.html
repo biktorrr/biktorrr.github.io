@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Revalidatie update? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Revalidatie update?</h1>
+<p class="tm">7 posts · started 2004-12-24 12:12 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041224121200" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-12-24 12:12</span></div>
+  <div class="pb">We zullen het er maandag gok ik wel over hebben, maar om alvast met voorkennis te kunnen praten; hoe is het met de revalidatie van onze twee zwaarst gewonden? Mer suggereert dat hij, laconiek moge het zijn, rondjes komt rennen rond het park. dat duidt op vooruitgang.En joost?<br></div>
+</article>
+<article class="post" data-ts="20041224125300" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-12-24 12:53</span></div>
+  <div class="pb">Jossyt S. heeft nog drie weken gips met krukken. Daarna zeker drie maanden revalideren. Afgezien van de jeuk en het onpraktische voelt het allemaal wel ok verder. <br><br>Ik kan trouwens inmiddels een hele kalkoen bewaren in mijn gips op de plek waar ik vroeger spiermassa had zitten. <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br></div>
+</article>
+<article class="post" data-ts="20041224131100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-12-24 13:11</span></div>
+  <div class="pb">Wat attent! Ik mag op zeker weer hardlopen. Hardlopen is namelijk niet erg riskant qua kruisband. Verder moet ik spiermassa kweken om zo sterk mogelijk de operatie in te gaan. Feitelijk zijn maar bovenbenen nu dus vijf maal zo sterk dan die van Jossyt S.<br><br>Dus als jullie nou even gaan voetballen dan ga ik rondjes rennen.</div>
+</article>
+<article class="post" data-ts="20041224141100" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2004-12-24 14:11</span></div>
+  <div class="pb">Merl: en dan na drie rondjes wachelen zeker je grote kabouterboek uit je tas halen?<br><br>Over mijn bovenbenen: Charisteas is een jood is alles wat ik daar over kwijt wil....<br><br></div>
+</article>
+<article class="post" data-ts="20041224141600" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2004-12-24 14:16</span></div>
+  <div class="pb">das mooi Josit.. kan je bij FDK gewoon je gips volstoppen en nog wat bestellen.. hebben we wat te eten voor FVK ( Floraboys vierde kerstdag)<br><br>Maar in ieder geval veel succes gewenst.</div>
+</article>
+<article class="post" data-ts="20041224155700" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-12-24 15:57</span></div>
+  <div class="pb">FVK ballen!</div>
+</article>
+<article class="post" data-ts="20041228094800" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2004-12-28 09:48</span></div>
+  <div class="pb">Nee MK, ik ben er nu ook niet. Daarentegen meld ik het nu van tevoren.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>15&amp;16 dec: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">15&amp;16 dec:</h1>
+<p class="tm">6 posts · started 2001-12-12 12:41 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011212124100" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2001-12-12 12:41</span></div>
+  <div class="pb">Wie komen er zaterdag en zondag ballen?<br>Ik kom beide dagen, alleen zondag ietsjes later ivm de topper Feyenoord-PSV.<br><br>Hmm, lekker mijn scheenbeschermers en voetbalsokken uitproberen!</div>
+</article>
+<article class="post" data-ts="20011213143200" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-12-13 14:32</span></div>
+  <div class="ps">hallo: hier moet jullie zijn!</div><div class="pb">ik ben er dus beide dagen. WJ ook, en victor alleen zaterdag. wie nog meer?</div>
+</article>
+<article class="post" data-ts="20011213164800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-12-13 16:48</span></div>
+  <div class="pb">Ok, Michiel, omdat je 't eerste was. Wel raar van Victor om<br>dan precies dezelfde topic te openen...<br><br>Ik kan zaterdag wel, en zondag hoogstwaarschijnlijk niet.<br>Ik ben voor de Hout: 't Florapark heeft vrij hard te lijden<br>onder onze uitspattingen.</div>
+</article>
+<article class="post" data-ts="20011214121200" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-12-14 12:12</span></div>
+  <div class="pb">tja, ik had gisteren in een nogal verdoofde bui gezegd dat ik er wel zou zijn. Aangezien ik sinds vandaag volledig, pijnstiller resistent ben denk ik dat het bij nader inzien toch niet door gaat voormij.<br><br>Hellaas, ik had graag MB zijn nije sokken bekeken <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20011214144500" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2001-12-14 14:45</span></div>
+  <div class="pb">ja zoals ik al zei: ik had <br>die van MB niet gezien dus,<br>zaterdag nog steeds prezent!</div>
+</article>
+<article class="post" data-ts="20011214153000" id="p6">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#6 · 2001-12-14 15:30</span></div>
+  <div class="pb">Volare!!!!!!!!!!!!!<br><br>Ben d'r zaterdag</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

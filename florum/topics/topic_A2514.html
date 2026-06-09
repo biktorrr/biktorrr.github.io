@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrij-Mi-Puzzle – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrij-Mi-Puzzle</h1>
+<p class="tm">6 posts · started 2008-10-10 14:31 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081010143100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2008-10-10 14:31</span></div>
+  <div class="pb">Boys,Girls..in ere hersteld nu victor het zo druk heeft met het proefschrijven. Niet al te moeilijk, dat houdt het laagdrempelig.<br><br>Lever de antwoorden bij mij in. De Eerste die alles goed heeft krijgt een smooie prijs.<br><br><a href=http://www.filedropper.com/floraboysvrijdagmiddagcryptolight><img src=http://www.filedropper.com/download_button.png width=127 height=145 border=0/></a><br /> <div style=font-size:9px;font-family:Arial, Helvetica, sans-serif;width:127px;font-color:#44a854;> <a href=http://www.filedropper.com > FileDropper Free File Hosting</a></div><br><br>of<br><br>http://www.filedropper.com/floraboysvrijdagmiddagcryptolight</div>
+</article>
+<article class="post" data-ts="20081010150000" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2008-10-10 15:00</span></div>
+  <div class="pb">Volgens mij doet hij het niet goed, maar dat kan ook aan de firewall op kantoor liggen.</div>
+</article>
+<article class="post" data-ts="20081010154400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-10-10 15:44</span></div>
+  <div class="pb">hier ook een no-show</div>
+</article>
+<article class="post" data-ts="20081010154700" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-10-10 15:47</span></div>
+  <div class="pb">ah, in tweede instantie wel gelukt. Ziet er helemaal neit zo makkelijk uit Lil, goed werk!<br><br></div>
+</article>
+<article class="post" data-ts="20081010162200" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2008-10-10 16:22</span></div>
+  <div class="pb">je moet als je op de button klikt nog wel even op "download this file" klikken. Kan allemaal heel even duren.<br><br>Lukt het een beetje? Oja, de cijfers vormen geen woord :)<br>is puur een hulpje bij het invullen</div>
+</article>
+<article class="post" data-ts="20081016170500" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2008-10-16 17:05</span></div>
+  <div class="pb">alleen vik heeft een poging gewaagd. Hij verdient de prijs.<br><br>Hier nogmaals alle vragen met, even naar beneden scrollen, de antwoorden.<br><br>1) Truckers communiceren via een laptop? (6)<br>2) Tim, Merlijn, Volendam. (12)<br>3) Jurriaan's favoriete album van Mike Oldfield (7,5)<br>4) Berend op afstand? Klinkt Illegaal! (7)<br>5) Kakker sport (6)<br>6) Sicco aanroepen in Australie klinkt als iets buitenaards<br>7) Plaats om gefilmd voetbal live te zien<br>8) Een retorische vraag met een ge\ïrriteerde ondertoon? Bij Victor hoeft dat niet. (2,2,5,4)<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>1)BAKKIE<br>2)GEPROMOVEERD<br>3)TUBULAR BELLS<br>4)VERBODE<br>5)BALLEN<br>6)COMATE<br>7)STUDIO<br>8)OF JE WORST LUST<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Site Upgedate! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Site Upgedate!</h1>
+<p class="tm">7 posts · started 2003-01-14 12:37 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030114123700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-01-14 12:37</span></div>
+  <div class="pb">Met toegang tot de server kan ik nu achterstallig onderhoud plegen en dat resulteerde voorlopig in drie vernieuwinkjes:<br><br>1. de links onderin het scherm zijn nu plaatjes geworden (nog niet helemaal goed, maar goed genoeg)<br>2. Timmie Tikt in een nieuw jasje!<br>3. De foto-pagina is geupdate!<br><br>tjek de vernieuwde stukjes en geef feedback of tips...</div>
+</article>
+<article class="post" data-ts="20030114123800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-01-14 12:38</span></div>
+  <div class="pb">het is nu allemaal wat meer in dezelfde stijl, dat leek me wel aardig. En allerlei 'verloren foto's' staan nu geindexeerd</div>
+</article>
+<article class="post" data-ts="20030114133000" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-01-14 13:30</span></div>
+  <div class="pb">Veranderingen zijn net zoals de Floraboys: semper cheique.</div>
+</article>
+<article class="post" data-ts="20030115100500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-01-15 10:05</span></div>
+  <div class="pb">Huh?! Vic, je had toch een mooie verrassing gemaakt voor de Florboys-site? Waar is i dan? Kan neit wachten.</div>
+</article>
+<article class="post" data-ts="20030115121200" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2003-01-15 12:12</span></div>
+  <div class="ps">waarom</div><div class="pb">onder in het scherm plaatjes van woorden gemaakt, zo is het minder scherp en dus minder mooi..<br><br></div>
+</article>
+<article class="post" data-ts="20030115132600" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-01-15 13:26</span></div>
+  <div class="pb">die plaatjes moeten inderdaad even scherper, maar ik heb hier geen photoshop en dergelijke en van bitmap naar gif enzo verneukt nogal veel... ik kijk even wat ik kan doen<br></div>
+</article>
+<article class="post" data-ts="20030116122900" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-01-16 12:29</span></div>
+  <div class="pb">zo zijn ze iig leesbaarder </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

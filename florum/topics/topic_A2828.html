@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REVT 2010 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">REVT 2010</h1>
+<p class="tm">6 posts · started 2010-02-16 13:33 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100216133300" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-02-16 13:33</span></div>
+  <div class="pb">Sja, wat willen we?<br><br><br><br>DOE MEE AAN HET 51e TRADITIONELE ROETERSEILANDVOETBALTOERNOOI<br>EDITIE 2010<br><br>     <br>WAT IS DAT?<br>EEN VOETBALTOERNOOI WAARIN DOOR TEAMS VAN 7 VOETBALLERS AFKOMSTIG UIT INSTITUTEN EN AFDELINGEN VAN HET ROETERSEILAND EN UIT DE WATERGRAAFSMEER GESTREDEN WORDT OM DE ROETERSEILANDBOKAAL 2010<br>WANNEER IS HET?       OP VRIJDAG 16  APRIL 2010**<br>WAAR VOETBALLEN WE? <br>OP HET COMPLEX VAN VV WV-HEDW, SPORTPARK MIDDENMEER, RADIOWEG BIJ DE KRUISLAAN.<br><br>WIE MOGEN MEEDOEN?<br>TEAMS VAN MAXIMAAL 10 MEDEWERKERS EN/OF STUDENTEN VAN INSTITUTEN EN AFDELINGEN GEVESTIGD OP HET ROETERSEILAND OF IN DE WATERGRAAFSMEER<br><br>MANNEN, OOK VROUWEN?<br>ER KUNNEN MANNENTEAMS MEEDOEN, MAAR OOK GEMENGDE TEAMS.<br><br>KOST DEELNAME IETS?<br>WE HEBBEN FINANCI\ËLE STEUN VOOR HET TOERNOOI. DAAROM MOET ELK TEAM SLECHTS EEN BIJDRAGE VAN   100, - PER TEAM BETALEN. TEVENS  IS ER EEN AANSLUITENDE BARBEQUE À   5,00 PER PERSOON.<br><br>HOE MOET JE JE OPGEVEN? 							            			 VRAGEN?<br>MET EEN HEEL TEAM  (DUS NIET INDIVIDUEEL!!)				         	Jan Geenevasen, tel. 5690<br>MAXIMAAL  AANTAL TEAMS: 20<br>			<br>Op de website een inschrijfformulier invullen en versturen naar:  J.A.J.Geenevasen@uva.nl<br><br>Zie ook de website: http://www.uva.nl/roeterseilandvoetbaltoernooi<br>** reservedatum bij afkeuring wordt: Vrijdag 23 april 2010<br></div>
+</article>
+<article class="post" data-ts="20100216142200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2010-02-16 14:22</span></div>
+  <div class="pb">Al heb ik een jaar lang geen bal geraakt, wel ben ik weer aan het fitnessen. Het REVT geeft mij weer inzicht in dat ik harder aan mijn conditie moet werken. Dat is altijd een goede reden dus ik doe mee.</div>
+</article>
+<article class="post" data-ts="20100216144100" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-02-16 14:41</span></div>
+  <div class="pb">Mogen we nog meedoen dan? Rekening houdend met Viks nieuwe werkgever is het dan wellicht prudent om minimaal 3 weesgegroetjes te bidden voordat we het veld betreden.<br></div>
+</article>
+<article class="post" data-ts="20100216152400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-02-16 15:24</span></div>
+  <div class="pb">Waarom zouden we niet mogen meedoen? Ik tik m trouwens aan.</div>
+</article>
+<article class="post" data-ts="20100216205100" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2010-02-16 20:51</span></div>
+  <div class="pb">Graag zou ik op REVT 2010 op de van mij bekende wijze aanwezig zijn. Jullie weten wel: delicieuze dribbels, delicieuze passes, delicieuze hakjes en delicieuze overstapjes, tot de tegenstanders huilend op het veld liggen en om hun moeders schreeuwen. Zeer waarschijnlijk zal ik 'm echter af moeten tikken.</div>
+</article>
+<article class="post" data-ts="20100312113100" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2010-03-12 11:31</span></div>
+  <div class="pb">Hmmmmm..geen REVT dit jaar??</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FDK 2014 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FDK 2014</h1>
+<p class="tm">7 posts · started 2014-09-29 04:47 by Cie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140929044722" id="p1">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#1 · 2014-09-29 04:47</span></div>
+  <div class="pb">De Cie is er weer vroeg bij dit jaar. Alles om de kaas, plofkip, varkensanus en -belangrijkste natuurlijk- Florissante gezelligheid te garanderen. Zo gaat het al jaren en zo zal het nog jaren gaan.<br><br>U bent uitgenodigd. Amen.<br></div>
+</article>
+<article class="post" data-ts="20140929045040" id="p2">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#2 · 2014-09-29 04:50</span></div>
+  <div class="pb">TVP</div>
+</article>
+<article class="post" data-ts="20140929045405" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2014-09-29 04:54</span></div>
+  <div class="pb">Goed bezig Cie! Ik heb er zin in.. Is er al nagedacht over de locatie? </div>
+</article>
+<article class="post" data-ts="20140929062039" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2014-09-29 06:20</span></div>
+  <div class="pb">Gast, doe 's niet zo kinderachtig, en herstel de normale link. Deze slag heb je een x-aantal jaar geleden al uitvoerig verloren, en de grap is er nu echt wel definitief af.</div>
+</article>
+<article class="post" data-ts="20140929110320" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2014-09-29 11:03</span></div>
+  <div class="pb">Relaxed BD, iedereen viert al jaren zijn/haar eigen FDK. Maar ik zou het leuk vinden als je er dit jaar bij kunt zijn...</div>
+</article>
+<article class="post" data-ts="20140929123148" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2014-09-29 12:31</span></div>
+  <div class="pb">He Cie, zal ik de locatie regelen?<br><br></div>
+</article>
+<article class="post" data-ts="20140929123336" id="p7">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#7 · 2014-09-29 12:33</span></div>
+  <div class="pb"><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

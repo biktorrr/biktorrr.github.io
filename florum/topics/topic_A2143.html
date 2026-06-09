@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>slavia praag - ajax – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">slavia praag - ajax</h1>
+<p class="tm">9 posts · started 2007-08-27 16:50 by joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070827165000" id="p1">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#1 · 2007-08-27 16:50</span></div>
+  <div class="pb">woensdag ballen kijken?<br></div>
+</article>
+<article class="post" data-ts="20070827213100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-08-27 21:31</span></div>
+  <div class="pb">Ik ga op zekertjes kijken, maar wel in Mokum.</div>
+</article>
+<article class="post" data-ts="20070827213400" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2007-08-27 21:34</span></div>
+  <div class="pb">doe dat nou niet bokkenlul, je weet hoe dat vorige keer afliep.<br><br>ik ga gezellig naar de little t (al weet de little t dat nog niet). </div>
+</article>
+<article class="post" data-ts="20070827230400" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-08-27 23:04</span></div>
+  <div class="pb">of ik kom naar jou<br></div>
+</article>
+<article class="post" data-ts="20070828095400" id="p5">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#5 · 2007-08-28 09:54</span></div>
+  <div class="pb">dat zou kunnen maar ik heb lara een periodieke roomraiders controle beloofd.</div>
+</article>
+<article class="post" data-ts="20070828103900" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2007-08-28 10:39</span></div>
+  <div class="pb">ik zal even kijken, maar misschien dat ik ook kom</div>
+</article>
+<article class="post" data-ts="20070828130100" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2007-08-28 13:01</span></div>
+  <div class="pb">okeetjes, dan ga ik maar eens die composthopen in mijn huis wegwerken. Wees welkom zij die komen willen. Ik heb bier, neem zelf -indien gewenst- versnaperingen mee. Dat en zakdoekjes voor de traantjes van vreugde, of verdriet.</div>
+</article>
+<article class="post" data-ts="20070830121400" id="p8">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#8 · 2007-08-30 12:14</span></div>
+  <div class="pb">hmmm.. Tampare United - Ajax volgende keer maar kijken?</div>
+</article>
+<article class="post" data-ts="20070830124200" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2007-08-30 12:42</span></div>
+  <div class="pb">Als jullie nog de kater willen wegdrinken, zou ik maar opschieten.<br><br><a href="http://www.nu.nl/news/1214888/37/Aanvoer_wijn_en_sterke_drank_in_gevaar.html">En wel hierom!</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

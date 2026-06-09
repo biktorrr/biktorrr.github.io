@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 23 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 23</h1>
+<p class="tm">5 posts · started 2003-06-05 10:14 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030605101400" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-06-05 10:14</span></div>
+  <div class="pb">Timmie Tikt 22<br><br>Onder hevige druk van Floraboys hooligans, waarvan schijnt dat die al afspraken hebben gemaakt om te gaan rellen bij het knooppunt Vianen met de hooligans van Top Oss, schrijf ik hier mijn column. Het cruciale punt is nu aangebroken voor ons. Zoals Gerrie Kneteman al daverend zei, de dood of de gladiolen. Tactische gelijkspellen zijn nu uit den boze. Goalies maken is het enige wat telt voor ons nu. Ballen in de buhne zijn leuk, maar ik mag iedereen er even aan herrineren dat we bij een toekomstig 0-0 practisch al uitgeschakeld zijn. Alleen een winstpartije geeft ons nog kansen om te blijven in het Theatre of Dreams 4 ook wel de Florena genoemd door de echte die hard fans. <br>Wie vertrouwd er niet op de combinatie Pit de Davids van Bussum en Merlijn, de Jaap Stam van Aerdenhout om de FLoraboys een gouden tijd te laten betreden. Ter bevordering heb ik enkele bekende nederlanders gepolst hoe zij meeleven met de Floraboys, voor de meeste een schijnend voorbeeld van een financieel gezonde club. <br>FRank de Boer : Jah.. wa kan ik zeggen he. Me broer Ronald heeft het nog vaak over zijn tijd dat hij maar met 3-0 werd ingemaakt door Frank Pitstra, terwijl ik met 4-0 verloor van Merlijn. Ja dan voel je je natuurlijk klote, maar om zo'n club nu inde problemen te zien doet mijn voetbalhart wel een beetje pijn eigelijk. <br>Ronald Koeman : Toen ik nog mijn zoontje bij de F-jes trainde in het nemen van vrije trappen (voor de reclame met het standin zoontje van Koeman red.), moesten we wel eens tegen de Florakids. De enige opdracht die ik ze mee kon geven was om maar met zijn allen in de goal te gaan liggen. Tegen voetbal van die F-jes kan zelfs Ajax niet op.<br><br>Mattea Kezman : Iek bin alteid vor die Floraboys. Tiegen Harry (van Raaij red.) zegt ik alteid dat ik erst naar Italien wiel gan, mar eigenleik wiel ik nar die FLoraboys.<br><br>Fillipo Inzaghi : Geweldig team, wist je zelfs dat ik na onze overwinning tegen Ajax zelfs Witte Joost een hand heb mogen schudden? Nou er zijn foto's van, die ik inposterformaat boven mijn bed heb hangen. Voor mij het toppunt van mijn seizoen. Zomaar Witte joost in een restaurant ontmoeten!!<br><br>Robin van Persie : Vroeger op het pleintje moest ik wel eens tegen de slagers van Bassant. Nou ik kan je zeggen als men mij de koning van de pleintjes noemt, dan zijn zij het keizerskoppel hoor, die Bassanti's Panna's, hooghouden en scoren. Allemaal en soms zelfs tegelijk. Als ik kon kwam ik ze zo helpen. <br><br>Henk Bres : FLORABOYS KAMPIOENEEEHH!!!!<br><br>Het hele professionele voetbal staat inderdaad achter ons. Dus ik zou zeggen laten we er vol tegen aan gaan. </div>
+</article>
+<article class="post" data-ts="20030605131000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-06-05 13:10</span></div>
+  <div class="pb">Ha ha! Eindelijk 's stuk over ballen en wat mij betreft de beste van allemaal.</div>
+</article>
+<article class="post" data-ts="20030605132500" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-06-05 13:25</span></div>
+  <div class="pb">ja mooi timmie, mooi stukje journalistiek. Leuk dat mijn jeugdvriend Pippo nog een cheique woordje meegeschreven heeft.<br></div>
+</article>
+<article class="post" data-ts="20030606113100" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-06-06 11:31</span></div>
+  <div class="pb">hehe, eindelijk heb ik de zaalbalpagina weer eens geupdate.<br>tegelijk heb ik timmies briljanet stuk bij de tt's gezet.<br><br>WJ, wil jij ook nog webmasteren? Mail me even, dan krijg je alle benodigde info</div>
+</article>
+<article class="post" data-ts="20030607062500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-06-07 06:25</span></div>
+  <div class="pb">Ik wist niet dat Fillipo beter Nederlands sprak dan Mateja. Zo zie je maar, Timme Tikts zijn altijd leerzaam!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

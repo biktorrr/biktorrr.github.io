@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>&lt;i&gt;Van&lt;/i&gt;&#x27;s nieuwe contract? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">&lt;i&gt;Van&lt;/i&gt;&#x27;s nieuwe contract?</h1>
+<p class="tm">4 posts · started 2003-12-10 13:23 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031210132300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-12-10 13:23</span></div>
+  <div class="pb">een mooie quote uit The Sun over Ruud's optreden gisteravond. <br><br>>><br>Another European supershow saw the deadly Dutchman score one and create another for Ryan Giggs with some magical footwork.<br><br>This week Manchester United will finally get the signature of manager Alex Ferguson on a new four-year deal.<br><br>The next thing they must do is tie up Van Nistelrooy for as long as the bloke can kick a ball straight.<<<br><br></div>
+</article>
+<article class="post" data-ts="20031211031100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2003-12-11 03:11</span></div>
+  <div class="pb">Er waren al geruchten dat Real Madrid Van Nistelrooij op de korrel had. Manchester kan maar beter snel zijn.</div>
+</article>
+<article class="post" data-ts="20031211125500" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-12-11 12:55</span></div>
+  <div class="pb">dat zijn ze dus ook, zeker als Beckham en Ronaldo gaan roepen dat ze het wel leuk zouden vinden als Ruudy bij hen komt ballen. Alzo:<br>MANCHESTER UNITED will offer to double Ruud Van Nistelrooys wages in a five-year deal worth £24MILLION.<br><br>The Dutch striker will be handed a £90,000-a-week contract before the New Year.<br><br></div>
+</article>
+<article class="post" data-ts="20031212015000" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-12-12 01:50</span></div>
+  <div class="pb">wel extreem gave text, het gekke is dat Van the Man helemaal niet zo goed is op het moment. Heb hem wel eens beter zien voetballen. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

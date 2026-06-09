@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>daar ben ik weer – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">daar ben ik weer</h1>
+<p class="tm">5 posts · started 2001-06-12 18:10 by mr. Smithuis</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010612181000" id="p1">
+  <div class="ph"><span class="pa">mr. Smithuis</span><span class="pm">#1 · 2001-06-12 18:10</span></div>
+  <div class="pb">H\é Gasten, <br>ik ben weer terug uit Salou, heb levenservaring opgedaan en ben volwassen geworden. Genoeg redenen voor jullie lijkt me om allemaal te komen voetballen zaterdag en zondag. <br>Skank</div>
+</article>
+<article class="post" data-ts="20010612200800" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2001-06-12 20:08</span></div>
+  <div class="pb">Als ik dit weekend weer kan lopen ben ik zeker van de partij!</div>
+</article>
+<article class="post" data-ts="20010613131500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-06-13 13:15</span></div>
+  <div class="pb">Ik zal er eveneens zijn, en wel met de goaltjes!<br>Florapark maar weer dit keer? aangezien de afwezigheid van brandnetels, het gemaaide gras aldaar en het veiligstellen van ons territoir(vorige week zaterdag is de ERECODE doorbroken doordat de ouwelullen met de homo-hesjes van het Vlooienveld hebben durven ballen op het Florapark). <br><br>Nou Het Florapark is dus ONS Florapark!!!!!! </div>
+</article>
+<article class="post" data-ts="20010613135100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-06-13 13:51</span></div>
+  <div class="pb">Die uitdaging neem ik aan. Klein ettertje. Ik stel<br>voor de ouwe wijze stramme bokken tegen hen die<br>zichzelf net volwassen hebben verklaard. Als dat<br>niet lukt, de jonkies leggen 't qua opkomst altijd<br>af tegen de ouwe bokken, moeten 'r maar 'n paar<br>transfers plaatsvinden. </div>
+</article>
+<article class="post" data-ts="20010615124300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-06-15 12:43</span></div>
+  <div class="ps">Feest!</div><div class="pb">He, mr. Smithuis,<br>kan ik jou feliciteren met je gymnasium-diploma?<br>Het zijn zeker mooie tijden voor je:<br>slagen, naar Salou, Spelert van de Maand Mei, Floraleague winnen in de laatste speelronde!<br><br>Je gaat zeker nog wel een groot feest geven op het Florapark (of ergens anders) waar de Floraboys natuurlijk ook allemaal uitgenodigd zijn? </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

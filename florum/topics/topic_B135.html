@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>avondballen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">avondballen?</h1>
+<p class="tm">9 posts · started 2002-08-05 14:42 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020805144200" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-08-05 14:42</span></div>
+  <div class="pb">woensdag avondballen?</div>
+</article>
+<article class="post" data-ts="20020805162700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-08-05 16:27</span></div>
+  <div class="pb">op het Florapark? hmm.. 't zou op zich moeten kunnen.</div>
+</article>
+<article class="post" data-ts="20020806104000" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-08-06 10:40</span></div>
+  <div class="pb">Zijn er nu maar 2 floracieten die op een woensdagavond hun favoriete spelletje willen spelen? En dit terwijl iedereen weer in den lande is.</div>
+</article>
+<article class="post" data-ts="20020806113400" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2002-08-06 11:34</span></div>
+  <div class="pb">in den lande, inderdaad, maar helaas niet in de regio</div>
+</article>
+<article class="post" data-ts="20020806123100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2002-08-06 12:31</span></div>
+  <div class="pb">Ook in den lande, maar in het gips.</div>
+</article>
+<article class="post" data-ts="20020806131100" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2002-08-06 13:11</span></div>
+  <div class="pb">Ja woensdagavond kan ik prima!</div>
+</article>
+<article class="post" data-ts="20020806141700" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2002-08-06 14:17</span></div>
+  <div class="pb">woensdag wordt lastig denk ik, of het moet na 21:00 zijn.<br><br></div>
+</article>
+<article class="post" data-ts="20020806151600" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-08-06 15:16</span></div>
+  <div class="pb">met z'n 3en voetballen, daar kom ik niet voor naar Haarlem. </div>
+</article>
+<article class="post" data-ts="20020806151700" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2002-08-06 15:17</span></div>
+  <div class="pb">Nou lekker veel animo<br><br>Dan ga ik morgen maar een sfeerrepo maken op de snitsweek en dus niet ballen</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>analist gunstig gestemd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">analist gunstig gestemd</h1>
+<p class="tm">6 posts · started 2003-06-11 10:36 by uw analist</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030611103600" id="p1">
+  <div class="ph"><span class="pa">uw analist</span><span class="pm">#1 · 2003-06-11 10:36</span></div>
+  <div class="pb">Gewoon weer een wedstrijd winnen. Dat was de opdracht die de coach van de Floraboys vooraf had meegegeven aan zijn team, aan het einde van de competitie. Nu de gemeente de het veld van de floracieten terugkocht en daarmee de financiele problemen uit de wereld waren, moest er alleen op sportief vlak navenat gepresteerd worden. <br>En dat deden de floraboys. Met de terugkeer van legende 'Witte' Joost S. Puite veerden de Floraboys op en lieten zij hun winnersmentaliteit gelden. Soeverein dwongen zij de tegenstander paniekvoetnbal af en forceerden vele fouten door goed jagen en dekken. Geen moment kon de tegenpartij in het spel komen en Jantje van Halst, die ondanks eerdere berichten over een einde aan zijn profcarriere toch in het veld stond, kon niet aan zijn spel toekomen. <br>Een mooie overwinning was het gevolg: 5-2.<br><br>Genoeg letters, de cijfers:<br><br>Tijmen: 8-<br>-- Gekke Harald keepte solide, maar geholpen door een uitstekende verdediging kreeg hij weinig echt moeilijke ballen te verduren. <br><br>Sicco: 8.5 <br>-- Sicco's best wedstrijd tot nu toe. Zat overal tussen, verdedigde foutloos. Aanvallend liggen er nog kansen voor dit talent.<br><br>Sander: 8<br>-- Deed precies wat nodig was: Jan van Halst uit het spel halen. Vormde goed duo met Sicco<br><br>Victor: 8-<br>-- Gaf veel druk naar voren waardoor de tegenstander weinig kon. Mocht wel een goal maken uit de 2 1/2 kans die hij kreeg. Uitstekende comeback van deze geblesseerde speler.<br><br>Merlijn: 8-<br>-- Speelde een solide wedstrijd met een slimme overtreding waar dat nodig was. <br><br>Frank P.: 8<br>-- Was voorin niet te stuiten en jaagde goed alle ballen af. Vormde goede aanvals-duo's en kwam zowaar af en toe meeverdedigen. Voor de goal soms onnavolgbaar.<br><br>Witte Joost: 9- *MAN OF THE MATCH<br>-- Een ware 'return of the legend'. Scoorde een zuivere hattrick en wist met zijn terugkeer de floraboys tot ouderwetse grootse taferelen te inspireren. Het bestuur moet nog diep in de portemonnee kijken of ze deze topspeler kunnen behouden.<br><br>Mark V. en Timmie waren niet aanwezig.<br><br> </div>
+</article>
+<article class="post" data-ts="20030611110200" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2003-06-11 11:02</span></div>
+  <div class="ps">geweldig</div><div class="pb">Zouden we toch degredatie ontlopen!!! Volgende keer gaan we weer helemaal los!!!</div>
+</article>
+<article class="post" data-ts="20030611114000" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2003-06-11 11:40</span></div>
+  <div class="pb">slimme overtreding achterin?<br><br>Ranzig knietje in jan van halst zijn maag bedoel je. De tuchtcommisie is de beelden aan het bekijken.</div>
+</article>
+<article class="post" data-ts="20030611135200" id="p4">
+  <div class="ph"><span class="pa">Fan, die eigenlijk geen fan mag heten</span><span class="pm">#4 · 2003-06-11 13:52</span></div>
+  <div class="pb">Dat was een klasse overtreding. Het was een 1-tegen-1 situatie en die werd keurig opgelost, met slechts een vrije trap als gevolg.</div>
+</article>
+<article class="post" data-ts="20030611140000" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-06-11 14:00</span></div>
+  <div class="pb">vond ik ook heel netjes, de scheidsrechter had het gewoon goed gezien.</div>
+</article>
+<article class="post" data-ts="20030611164800" id="p6">
+  <div class="ph"><span class="pa">Flabba</span><span class="pm">#6 · 2003-06-11 16:48</span></div>
+  <div class="pb"><br>Mannen ik ben trots op jullie. Ik zie het al weer helemaal voor me; die WJ die ouderwets liep te rammen op dat veld, geweldig. Ik kijk uit naar de laatste wedstrijd wanneer ik de score-machine weer live mag aanschouwen. De degradatie gaan we ontlopen daar ben ik nu zeker van, als het een beetje mee zit worden we nog twee na laatste.<br><br>Mark</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

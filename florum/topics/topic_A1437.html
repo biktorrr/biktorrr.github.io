@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wamberto&#x27;s huis nu echt in de fik – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wamberto&#x27;s huis nu echt in de fik</h1>
+<p class="tm">6 posts · started 2005-03-08 13:37 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050308133700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-03-08 13:37</span></div>
+  <div class="pb"><br>Wamberto ontbrak zondagochtend op de training van Standard Luik. De Braziliaanse ex-Ajacied was afwezig omdat zijn huis vroeg in de ochtend in brand stond.<br><br>Wamberto rook zelf onraad en wekte vouw en kinderen om hen in veiligheid te brengen. De schade bleef beperkt tot de benedenverdieping en werd veroorzaakt door een kortsluiting.<br><br>Toen Wamberto voor Ajax uitkwam, gebruikte de toenmalige coach Co Adriaanse al eens een dergelijk scenario om de in zijn ogen gebrekkige taalkennis van de aanvaller te testen.<br><br>Tijdens de training kreeg Adriaanse de indruk dat Wamberto hem niet goed begreep omdat hij altijd op dezelfde manier, met twee duimen omhoog, reageerde op zijn aanwijzingen.<br><br>Bij wijze van test riep Adriaanse: 'Wamberto, je huis staat in de fik!' De kleine dribbelaar antwoordde met beide duimen omhoog, en dus wist de trainer van Ajax genoeg. <br></div>
+</article>
+<article class="post" data-ts="20050308140500" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-03-08 14:05</span></div>
+  <div class="pb">Ja sterk stukje inderdaad, ik zie het al helemaal voor me.<br></div>
+</article>
+<article class="post" data-ts="20050308141200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-03-08 14:12</span></div>
+  <div class="pb">die kleine, dappere wamberto</div>
+</article>
+<article class="post" data-ts="20050308141400" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2005-03-08 14:14</span></div>
+  <div class="pb">Wat een legendarische figuur is Wambertó\é toch ook. Ik zie hem ook al staan met twee duimen omhoog voor zijn afgebrande huis. Jammer dat ik niet kan fotoshoppen. Is hij trouwens ooit nog Belgisch international geworden? Dat was ooit zijn plan, omdat hij realistisch genoeg was dat er bij Brazili\ë niet direct een basisplaats was weggelegd.</div>
+</article>
+<article class="post" data-ts="20050308142100" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2005-03-08 14:21</span></div>
+  <div class="pb">Die dappere Wamberto inderdaad.</div>
+</article>
+<article class="post" data-ts="20050308153000" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2005-03-08 15:30</span></div>
+  <div class="pb">Misverstand: het is kleine, dappere PIENAAR (die toch maar mooi het lef heeft met zijn vriendin op de vuist te gaan: zou ik niet durven).</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

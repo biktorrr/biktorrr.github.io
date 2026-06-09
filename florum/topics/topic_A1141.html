@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do-Mi-Spa – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Do-Mi-Spa</h1>
+<p class="tm">10 posts · started 2004-03-18 13:33 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040318133300" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-03-18 13:33</span></div>
+  <div class="pb">Het is weer donderdag<br>het is 13.30<br>Tijd voor de DONDERDAG MIDDAG SPAM-post van de week<br><br>vandaag <a href="http://www.moveon.org/censure/caughtonvideo/">Donald Rumsfeld</a></div>
+</article>
+<article class="post" data-ts="20040318133400" id="p2">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#2 · 2004-03-18 13:34</span></div>
+  <div class="pb">En deze over <a href="http://www.theonion.com/news/"> Donald Rumsfeld</a> is echt fucking hilarisch</div>
+</article>
+<article class="post" data-ts="20040318133600" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-03-18 13:36</span></div>
+  <div class="pb"><a href="http://www.gwu.edu/~nsarchiv/NSAEBB/NSAEBB82/press.htm">Donald Rumsfeld</a> en Saddam</div>
+</article>
+<article class="post" data-ts="20040318133800" id="p4">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#4 · 2004-03-18 13:38</span></div>
+  <div class="pb">en natuurlijk het <a href="http://www.nrbookservice.com/bookpage.asp?prod_cd=c6231">Donald Rumsfeld</a> action figure!<br><br>zo, das wel weer even leuk voor nu...</div>
+</article>
+<article class="post" data-ts="20040318151200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2004-03-18 15:12</span></div>
+  <div class="pb">Kan er een spam-filter op het florum komen? De spam loopt nu echt de spuigaten uit..... :)</div>
+</article>
+<article class="post" data-ts="20040318175200" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2004-03-18 17:52</span></div>
+  <div class="pb"><img src="http://images.cu2.nl/cu2.nl/267/512/0/pics/0.jpg"><br><br>En trots dattie is op zijn Haarlemse afkomst. Brrrrr</div>
+</article>
+<article class="post" data-ts="20040318215200" id="p7">
+  <div class="ph"><span class="pa">100%SHOCKED</span><span class="pm">#7 · 2004-03-18 21:52</span></div>
+  <div class="pb">DUDE waarom post je blote gasten zonder daarbij uit te leggen waarom je ze post? <br><br>Webmastert kan er hier misschien een keuringsdienst ingevoerd worden die per topic kijkt of het hetero veilig is? <br><IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br></div>
+</article>
+<article class="post" data-ts="20040319101900" id="p8">
+  <div class="ph"><span class="pa">VdB, spammert pur sang</span><span class="pm">#8 · 2004-03-19 10:19</span></div>
+  <div class="pb">ja ik vind dit ook wel wat ver gaan,...</div>
+</article>
+<article class="post" data-ts="20040319111900" id="p9">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#9 · 2004-03-19 11:19</span></div>
+  <div class="pb">kwas op Cu2 ff aan het gluren welke gasten uit haarlem rond onze leeftijd zichzelf te kijk hadden gezet; dit vonnik wel een prominente pik.</div>
+</article>
+<article class="post" data-ts="20040319150300" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-03-19 15:03</span></div>
+  <div class="pb">Ene larah uit Velsen schijnt daar ook rond te spoken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

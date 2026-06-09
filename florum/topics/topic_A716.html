@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trainer Floraboys onder Vuur – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Trainer Floraboys onder Vuur</h1>
+<p class="tm">1 post · started 2003-02-26 10:55 by de Oprechte Haerlemsche Courant</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030226105500" id="p1">
+  <div class="ph"><span class="pa">de Oprechte Haerlemsche Courant</span><span class="pm">#1 · 2003-02-26 10:55</span></div>
+  <div class="pb">Trainer Floraboys onder Vuur<br><br>door uw sportverslaggever<br><br>-- Nu de winst al drie wedstrijden uitblijft, begint de harde kern van de Flora-aanhang zich eindelijk te roeren. Er wordt geeist dat er koppen gaan rollen. Zoals gewoonlijk in het voetbal, zal de eerste waarschijnlijk die van de trainer zijn. Een der Tifosi die alleen anoniem in deze krant wil antwoorde op de vraag wat hij van het huidige spel vindt: "Die kankercoach moet opsodetiefen als hij dit soort gekut vol houdt. Ik kom hier om naar de winnende Floraboys te kijken, niet naar een stelletje achterlijke nachtegalen!". Ook het bestuur kreeg er van langs: "Kankermongolen..". <br>Desgevraagd meldde de persvoorlichter dat van een eventueel vertrek van de trainer van de Floracieten absoluut nog geen sprake is. Hij sprak van een 'tijdelijke dip' en voegde toe "We bekeren al geruime tijd door en als we de volgende bekerwedstrijd kunnen winnen is het publiek ook weer tevreden"</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

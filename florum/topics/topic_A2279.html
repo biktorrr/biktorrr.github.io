@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>breaking news – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">breaking news</h1>
+<p class="tm">11 posts · started 2008-01-24 22:28 by Story</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080124222800" id="p1">
+  <div class="ph"><span class="pa">Story</span><span class="pm">#1 · 2008-01-24 22:28</span></div>
+  <div class="pb"><img src="http://farm3.static.flickr.com/2275/2217558692_03a76f984d.jpg?v=0" alt="d"><br><br><img src="http://farm3.static.flickr.com/2305/2217558850_e9f35da67f.jpg?v=0" alt="style"></div>
+</article>
+<article class="post" data-ts="20080125091800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2008-01-25 09:18</span></div>
+  <div class="pb">Zeer fraaie kiek (en respectvol naar de BAK). Jammer dat die fotograag zo bewoog, maar hij zal wel zenuwachtig zijn geweest toen hij mij in het echt zag. Nergens voor nodig, ik ben heel normaal gebleven.<br><br>Wie weet waar deze kiek gemaakt is?<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080125092400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-01-25 09:24</span></div>
+  <div class="pb">dat is inderdaad nieuws!<br><br>gokje: De haag?<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080125092900" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-01-25 09:29</span></div>
+  <div class="pb">aha, een slim stukje speurwerk mijnerzijds doet me vermoeden dat het wel eens Leiden zou kunnen wezen<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080125093500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-01-25 09:35</span></div>
+  <div class="pb">Leiden?! Daar ben ik al meer dan een jaar niet geweest...<br><br>Aan de andere kant: ik zie er wel vrolijk uit en dat ben ik al drie jaar niet meer geweest.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080125093500" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-01-25 09:35</span></div>
+  <div class="pb">Verdomd rare lantaarnpalen daar in Leiden, ik dacht SAN FRAN!<br><br>Overigens: vanwege een zeer gespreide aandelenportefeuille (alles gespreid in Azie) :) zit ik enigszins op zwarte zaadjes. Een stevige pot poker (voornamelijk winst!) deze zaterdag zou mij prima uitkomen. Of is dit weekend het CarreneVal-uitje? Amice, is jouw place available?<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20080125101300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-01-25 10:13</span></div>
+  <div class="pb">Olick, we gaan knallen bij de Drouille.<br><br>Vervelend dat je nu juist krap bij kas zit, want binnenkort komen we ook nog 's je huisje ook aan gort slaan.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080125113700" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2008-01-25 11:37</span></div>
+  <div class="pb">Ah, Frisco.<br><br>Maar dat is niet heel erg 'Breaking'...<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080125125800" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2008-01-25 12:58</span></div>
+  <div class="pb">Ohja, wil Amice/VB dan de pokerset meenemen? Ennnn: ik denk dat de ghostposter mij nu ook te grazen heeft. Wat moet ik nu met een Zeefuik? Daarom: gaarne terughoudendheid  gevraagd wat betreft grammetjes coke, koevoeten, honkbalknuppels en mijn residence.<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20080125125800" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2008-01-25 12:58</span></div>
+  <div class="pb">En is het nou SANFRAN?!<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20080125132200" id="p11">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#11 · 2008-01-25 13:22</span></div>
+  <div class="pb">Woensel Noordnoordwest<!--90.24.159.147--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

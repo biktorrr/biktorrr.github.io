@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mobiele telefoon – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mobiele telefoon</h1>
+<p class="tm">8 posts · started 2005-05-19 15:38 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050519153800" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-05-19 15:38</span></div>
+  <div class="pb">Oproep aan Floraboys en -girls<br><br>Ik ben op zoek naar een mobiele telefoon. Gewoon eentje die belt en verder niets. Winkels verkopen die tegenwoordig niet meer. Ik moet er wel eentje hebben die niet na vijf minuten wegvalt, zoals mijn huidige. Dat is nogal lastig met al die extreem belangrijke mensen die mij altijd bellen...<br><br>Ligt er bij een van jullie zo'n geval weg te rotten? Ik ben bereid er een bescheiden bedrag voor te betalen. </div>
+</article>
+<article class="post" data-ts="20050520125900" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-05-20 12:59</span></div>
+  <div class="pb">Helaas Oli4, ik heb een perfecte modelletje voor je maar die zou ik zelf voor geen goud inruilen voor zo'n naar camera toestel met kansloze shit erop.<br><br></div>
+</article>
+<article class="post" data-ts="20050520143600" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2005-05-20 14:36</span></div>
+  <div class="pb">ik heb een siemens nog wat nog wat en die is echt prima..simpeltjes en alles doet het goed</div>
+</article>
+<article class="post" data-ts="20050520150500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-05-20 15:05</span></div>
+  <div class="pb">De bling-bling telefoon van de Biktie. Ik zou toeslaan, Olivier.</div>
+</article>
+<article class="post" data-ts="20050523101200" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-05-23 10:12</span></div>
+  <div class="pb">Ligt-ie weg te rotten, Timmie, of gebruik je hem?</div>
+</article>
+<article class="post" data-ts="20050523102600" id="p6">
+  <div class="ph"><span class="pa">Bigt</span><span class="pm">#6 · 2005-05-23 10:26</span></div>
+  <div class="pb">ik gebruik hem, maar deze telefoon is in de winkels spotgoedkoop.. moet je maar even naar informeren.</div>
+</article>
+<article class="post" data-ts="20050523110900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-05-23 11:09</span></div>
+  <div class="pb">op marktplaats.nl kan je tweedehands mobieltjes scoren. Ik neem aan dat je daar ook een fransoosische versie van hebt. Dan koop je voor een paar tientjes een mooie oude nokia oid.</div>
+</article>
+<article class="post" data-ts="20050523113400" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2005-05-23 11:34</span></div>
+  <div class="pb">Ik ben in een aantal winkels gaan kijken, maar daar betaal je minstens 100 euro als je er geen naai-abonnement bij wenst.<br><br>Ik zal eens op die marktplaats gaan kijken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

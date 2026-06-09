@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Donderdag ballen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Donderdag ballen?</h1>
+<p class="tm">12 posts · started 2001-07-10 18:00 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010710180000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-07-10 18:00</span></div>
+  <div class="pb">Hee Floravriendjes. Zullen we ter ere van onze Spaanse<br>vriend onze kicksen op donderdagavond onderbinden? Ik<br>stel 19.30 uur voor. Zeg even of je kunt dan wordt 't<br>vast gezellig!</div>
+</article>
+<article class="post" data-ts="20010710191800" id="p2">
+  <div class="ph"><span class="pa">LL Cool WJ</span><span class="pm">#2 · 2001-07-10 19:18</span></div>
+  <div class="pb">Een ode aan de penose lijkt mij prima, wat mij betreft staat mijn rentree (na een afwezigheid van 3 weken) dus donderdag op het programma.<br><br>Ik kan nu al niet wachten.<br><br></div>
+</article>
+<article class="post" data-ts="20010711094200" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2001-07-11 09:42</span></div>
+  <div class="pb">/me gaat er bij zijn</div>
+</article>
+<article class="post" data-ts="20010711124100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2001-07-11 12:41</span></div>
+  <div class="pb">Okidokelie, misschien daarna nog iets om de terugkomst van de Penose te vieren? Ditmaal met hem erbij het nog eens rustig overdoen.</div>
+</article>
+<article class="post" data-ts="20010711164200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-07-11 16:42</span></div>
+  <div class="pb">ik kan helaas niet<br></div>
+</article>
+<article class="post" data-ts="20010711200000" id="p6">
+  <div class="ph"><span class="pa">el penose</span><span class="pm">#6 · 2001-07-11 20:00</span></div>
+  <div class="ps">goedzo</div><div class="pb">Ik ben er uiteraard van de partij. We kunnen dan inderdaad iets gezelligs gaan doen. Of  willen jullie vanavond al wat gaan doen? dan wel niet met een voetbal, maar met kaarten of dobbelstenen ofzo.</div>
+</article>
+<article class="post" data-ts="20010711201200" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2001-07-11 20:12</span></div>
+  <div class="pb">Tja als dat nog geregeld kan worden dan ben ik van de partij.<br><br>Tel: 023 5511848 of 0900-WJ</div>
+</article>
+<article class="post" data-ts="20010712111200" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2001-07-12 11:12</span></div>
+  <div class="pb">Nu hebben we wel 'n beetje 'n probleem. We zijn<br>met vijf. Wybren en Olivier kunnen allebei niet,<br>en 't nummer van Frank hebbik niet. Als een van<br>jullie dat heeft, kan i dat dan opbellen en vra-<br>gen of i komt ballen. Als i daar te belazerd voor<br>is even op de site zetten?</div>
+</article>
+<article class="post" data-ts="20010712114800" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2001-07-12 11:48</span></div>
+  <div class="pb">Victor heeft het nummer van Frank...(en Maurits c.q. meerdere mannetjes?).</div>
+</article>
+<article class="post" data-ts="20010712140800" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2001-07-12 14:08</span></div>
+  <div class="pb">Kan een van jullie Victor bellen en dan daarna Frankje bellen?<br>Mij gaat 't niet meer lukken voor 18.oo uur...	</div>
+</article>
+<article class="post" data-ts="20010712193100" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2001-07-12 19:31</span></div>
+  <div class="pb">Heeft iemand dit al gedaan?</div>
+</article>
+<article class="post" data-ts="20010712193200" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2001-07-12 19:32</span></div>
+  <div class="pb">Vic is in gesprek sux!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

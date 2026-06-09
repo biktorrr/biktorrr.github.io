@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanmiddag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vanmiddag</h1>
+<p class="tm">11 posts · started 2008-01-11 09:09 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080111090900" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2008-01-11 09:09</span></div>
+  <div class="pb">Tube en ik hebben om 17.30 uur afgesproken in de Wildeman. Wie ook zin heeft in lekker bier om de werkweek af te sluiten, schuift aan!</div>
+</article>
+<article class="post" data-ts="20080111093100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-01-11 09:31</span></div>
+  <div class="pb">klinkt niet onaardig, ik ben er denkelijk bij, hoewel wat later. (na 18u)<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080111110100" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2008-01-11 11:01</span></div>
+  <div class="pb">Heden en morgen, op de bar in "In de Wildeman" REAL ALE, en wel:<br>GADDS' STORM WARNING dark ale 5% van de Ramsgate Brewery<br><br>Klinkt lekker. Ik ben helaas ziek :(<!--80.126.71.152--></div>
+</article>
+<article class="post" data-ts="20080111113400" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-01-11 11:34</span></div>
+  <div class="pb">neyt! <br>gaat het nog wel door zonder de bierhooligan?<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080111115700" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2008-01-11 11:57</span></div>
+  <div class="pb">Ik neem voor Ca waar<!--194.151.219.5--></div>
+</article>
+<article class="post" data-ts="20080111121500" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-01-11 12:15</span></div>
+  <div class="pb">respect. Er gaat niets boven een reunie met een dikke katert.<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080111135600" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-01-11 13:56</span></div>
+  <div class="pb">Ik ga cultureel genieten en moet overslaan.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080111143400" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2008-01-11 14:34</span></div>
+  <div class="pb">de Ilias?<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080111145500" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-01-11 14:55</span></div>
+  <div class="pb">Nee: een culturele bespiegeling van Arjan Ederveen<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080111145600" id="p10">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#10 · 2008-01-11 14:56</span></div>
+  <div class="pb">De Ilias is gewoon een langdradig oorlogsromanetje. Het zal toch minstens 'rouw siert electra' of 'Macbeth' moeten zijn.<!--62.41.69.18--></div>
+</article>
+<article class="post" data-ts="20080111150800" id="p11">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#11 · 2008-01-11 15:08</span></div>
+  <div class="pb">Arjan Ederveen schijnt nog leuker te zijn na een paar biertjes.<!--145.222.93.6--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

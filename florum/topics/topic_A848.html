@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>timmie check ff mijn punten – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">timmie check ff mijn punten</h1>
+<p class="tm">7 posts · started 2003-07-21 19:53 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030721195300" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-07-21 19:53</span></div>
+  <div class="pb">bij de 15e etappe, klopt niet denk ik??!11<br><br>mzzl</div>
+</article>
+<article class="post" data-ts="20030721221300" id="p2">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#2 · 2003-07-21 22:13</span></div>
+  <div class="pb">zeker wel.. maar dat is omdat s15 etappe 14 is.. s1 is de proloog, s2 de 1e etappe etc. gisteren had je echt maar 11 punten.</div>
+</article>
+<article class="post" data-ts="20030722095900" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-07-22 09:59</span></div>
+  <div class="ps">waaaaaat</div><div class="pb">damn het klopt dus echt... ;-(((</div>
+</article>
+<article class="post" data-ts="20030722100000" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2003-07-22 10:00</span></div>
+  <div class="ps">o dan is het goed</div><div class="pb">ik krijg dus nog punten voor armstrongs overwinning.. toppie!!</div>
+</article>
+<article class="post" data-ts="20030722115200" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2003-07-22 11:52</span></div>
+  <div class="pb">ja die staan er nu wel bij.. je bent me op 1 punt genadert. Sicco loopt nu uit. Zijn correcte top3 in zowel etappe als gele trui leveren al een tijd aardig wat punten op.<br><br>Maar ze zijn nog niet in Parijs.</div>
+</article>
+<article class="post" data-ts="20030722121800" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-07-22 12:18</span></div>
+  <div class="pb">tja  jammer dat sicco geen sprinters heeft.</div>
+</article>
+<article class="post" data-ts="20030723092500" id="p7">
+  <div class="ph"><span class="pa">famous</span><span class="pm">#7 · 2003-07-23 09:25</span></div>
+  <div class="ps">vind je?</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

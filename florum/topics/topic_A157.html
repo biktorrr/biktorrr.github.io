@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Obstructiegebeuren – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Obstructiegebeuren</h1>
+<p class="tm">4 posts · started 2001-07-12 23:09 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010712230900" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2001-07-12 23:09</span></div>
+  <div class="pb">Even een opfrissertje voor Maarten die de regels wel kent omdat hij het al 15 jaar speelt. Volgens de officiele regels is het dus obstructie of afhouden volgens het onderstaand punt. Alleen als je dus tussen een speler en de bal staat en dan de speler in diens loop belemmert is het een overtreden. En dus niet als iemand met de bal met de rug tegen een andere speler loopt. Er was dus geen sprake van afhouden of obstructie. Achteruit lopen met de bal tegen een andere speler valt onder het kopje duwen.<br><br>Regel 12 - Overtredingen en onbehoorlijk gedrag.<br><br>Een speler moet worden bestraft met het toekennen van een indirecte vrije schop indien hij \é\én van de volgende vijf overtredingen begaat:<br><br>3. Een tegenstander in diens loop belemmert, terwijl hij zelf de bal niet speelt, dat wil zeggen tussen een tegenstander en de bal doorloopt of zijn lichaam plaatst tussen de bal en de tegenstander met de bedoeling daar-mede zijn tegenstander te hinderen. <br><br><br>Iets heel anders maar ook wel interessant:<br><br>5.  Indien een speler de bal afschermt zonder hem aan te raken met de bedoeling te verhinderen dat een tegenstander de bal speelt, dan hindert hij, maar hij overtreedt regel 12.3 niet, omdat hij wordt geacht in het bezit van de bal te zijn en deze uit tactisch oogpunt afschermt, terwijl de bal binnen speelbereik blijft. In dit geval mag de speler worden aangevallen omdat hij in feite de bal speelt.<br><br>Dus mensen als je de bal op een metertje ofzo afschermt dan heb je de bal eigenlijk dus wel...dus be prepared.....<br>  <br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20010713092200" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2001-07-13 09:22</span></div>
+  <div class="pb">Dat gedrag van jou valt dus onder regel 12.3 .<br>Dus het was inderdaad geen obstructie, maar wel een actie die in een indirecte vrije trap op zou hebben moeten leveren.<br>Maar of wij het wel of niet geheel volgens de regels doen, vind ik dat we ons hier wel aan mogen houden. <br>En dat ik fout zou zijn door achteruit te lopen met de bal en dat jij mij dat verhindert zonder het spelen/veroveren van de bal op het oog hebbend, is dus niet juist.<br>Maar dat heb je gelukkig inmiddels ook al wel in de smiezen.</div>
+</article>
+<article class="post" data-ts="20010713134700" id="p3">
+  <div class="ph"><span class="pa">PtC</span><span class="pm">#3 · 2001-07-13 13:47</span></div>
+  <div class="ps">behehh</div><div class="pb">beeh beeh beeeeeeeeehhhhhhhh</div>
+</article>
+<article class="post" data-ts="20010713154500" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2001-07-13 15:45</span></div>
+  <div class="pb">Zou je nog een toelichting kunnen geven op wat je zojuist te melden wist, het is mij nog niet helemaal duidelijk PtC.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

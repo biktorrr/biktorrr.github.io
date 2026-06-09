@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flora-gezichten – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Flora-gezichten</h1>
+<p class="tm">8 posts · started 2009-03-13 13:17 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090313131700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-03-13 13:17</span></div>
+  <div class="pb">Picasaweb had een mooie nieuwe feature. Ze kunnen nu gezichten herkennen op foto's. Ik heb dat maar eens gedraaid en wat naam-tags bij foto's gezet. Erg handig als je al onze foto's van jezelf of bijvoorbeeld van Annie wil bekijken. <br><br>Check het op picasaweb.google.com login/ww floraboys@gmail.com/stadplustweecijfers<br><br>Overigens heb ik alleen voor/bijnamen gebruikt en geen emailadressen oid, dus privacy is redelijk gewaarborgd. Nog niet alle gezichten zijn gelabeld, dus als je daar zin in hebt.. </div>
+</article>
+<article class="post" data-ts="20090313133700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-03-13 13:37</span></div>
+  <div class="pb">Kostelijk.<br><br>Ik ziet lekker foto's te taggen, kom ik bij een kiek van de Tube. Hij geeft als suggesties: <br>1) Jurriaan<br>2) Nico<br>3) JLau</div>
+</article>
+<article class="post" data-ts="20090313140100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2009-03-13 14:01</span></div>
+  <div class="pb">Nogal verslavend dit. Hij suggereert Nico vrij vaak valt me op.</div>
+</article>
+<article class="post" data-ts="20090313141500" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2009-03-13 14:15</span></div>
+  <div class="pb">Hoge tijding dit, ik blijk samen met de Bode nogal op Alexa te lijken volgens Google. Ook opvallend, zodra er een kerstmuts te zien is weten ze zeker dat het om een bepaalde accountant gaat <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br>Leuk om te zien dat er nog foto's tussen zitten van toen iedereen nog 6 jaar oud was ofzo.<br></div>
+</article>
+<article class="post" data-ts="20090313142000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-03-13 14:20</span></div>
+  <div class="pb">het viel me in het begin op dat het programmaatje opvallend vaak dacht dat Michiel en Ca dezelfde persoon waren...</div>
+</article>
+<article class="post" data-ts="20090313142300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2009-03-13 14:23</span></div>
+  <div class="pb">overigens, ik had al een biktie, dus toevoegen van een baquille lijkt me overbodig...</div>
+</article>
+<article class="post" data-ts="20090313142700" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2009-03-13 14:27</span></div>
+  <div class="pb">Dat moet ik geweest zijn. Sorry hoor.</div>
+</article>
+<article class="post" data-ts="20090313150800" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2009-03-13 15:08</span></div>
+  <div class="pb">Je kan het beste per foto bekijken of het een biktie of een baquille is, meestal is dat vrij duidelijk.<br><br>Ook opmerkelijk, ik sta een keer op de foto in een restaurant waar ik nog nooit ben geweest naar mijn weten. Wellicht was de drankrekening toen nog afgekocht...<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

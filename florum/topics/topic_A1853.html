@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>domispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">domispam</h1>
+<p class="tm">4 posts · started 2006-09-21 13:57 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060921135700" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2006-09-21 13:57</span></div>
+  <div class="pb"><i>Persoonlijke gegevens van meer dan 650.000 spelers van het online spel Second Life liggen op straat na een succesvolle hackpoging. De inbraak is ontdekt op 6 september; hackers hebben zichzelf toegang verschaft tot de database via de webservers. <br><br>Hoewe het gat inmiddels gedicht is, hebben de hackers toegang gehad tot alle accountinformatie van de 650.000 gebruikers -- inclusief de wachtwoorden.</i><br><br>Zijn er nog gedupeerden die hun via ebay gekochte paarse monster kwijt zijn of valt de schade mee?</div>
+</article>
+<article class="post" data-ts="20060921155600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-09-21 15:56</span></div>
+  <div class="pb">neyt! <br><br>Gelukkig heb ik alleen maar radio geluisterd in de korte tijd dat ik met mijn tweede leven bezig was.<br><br>Best wel stupide trouwens dat second life...</div>
+</article>
+<article class="post" data-ts="20060924185200" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-09-24 18:52</span></div>
+  <div class="pb">grappig filmpje: <br><br>http://www.burorenkema.nl/2006/05/dossier_helpdesk.php<br></div>
+</article>
+<article class="post" data-ts="20060927093500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-27 09:35</span></div>
+  <div class="pb">leuk hoor</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

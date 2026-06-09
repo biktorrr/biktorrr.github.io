@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nog een keer HELP – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nog een keer HELP</h1>
+<p class="tm">9 posts · started 2005-11-03 08:59 by Lara</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051103085900" id="p1">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#1 · 2005-11-03 08:59</span></div>
+  <div class="pb">Nou in een van mijn vorige post heb ik al hulp gevraagd aan iedereen die mij wil helpen met onze (plus 2 klasgenoten) opdracht voor school. Nu mogen we een "zaalvoetbalteam" doen en houd ik wijs mijn mond over de vriendengroep daarbuiten. Ik wil even pijlen wie op welke datum kan en of we de 8 halen eventueel mogen Floragirls ook meewerken maar het liefst eerst de boys. De volgende data hadden we in het hoofd:<br>'s avonds Woensdag 23<br>Woensdag 30<br>Donderdag 1 of vrijdag 2 december<br>Eventueel kan het ook nog een zaterdag middag/late ochtend, mocht dit beter uitkomen.<br>Dus wie wil er mee doen en op welke datum?<br></div>
+</article>
+<article class="post" data-ts="20051103103600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-11-03 10:36</span></div>
+  <div class="pb">ik kan alle dagen behalve vrijdag 2 december. Dan moeten we namelijk voetballen. Dit zou voor jou misschien wel eens een goeie mogelijkheid kunnen zijn.</div>
+</article>
+<article class="post" data-ts="20051103135800" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-11-03 13:58</span></div>
+  <div class="pb">Mijn eerste post vanuit mijn nieuwe werkgever, maar vrijdag lijkt mij idd het verstandigst voor Lara. Heeft ze gelijk een hele hand vol boys.</div>
+</article>
+<article class="post" data-ts="20051104213500" id="p4">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#4 · 2005-11-04 21:35</span></div>
+  <div class="pb">Oke hoelaat moeten jullie voetballen? </div>
+</article>
+<article class="post" data-ts="20051107100000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-11-07 10:00</span></div>
+  <div class="pb">22u</div>
+</article>
+<article class="post" data-ts="20051107212100" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2005-11-07 21:21</span></div>
+  <div class="pb">OKe maar dat betekend dat het daarvoor moet gebeuren, ik vraag me af of dat gaat lukken?wie is er bereid om dan daarvoor naar Haarlem te komen?</div>
+</article>
+<article class="post" data-ts="20051108100300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-11-08 10:03</span></div>
+  <div class="pb">nee, dat is dan weer niet handig denk ik.. <br><br>Dan kan je het toch beter in het weekend doen.</div>
+</article>
+<article class="post" data-ts="20051108160500" id="p8">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#8 · 2005-11-08 16:05</span></div>
+  <div class="pb">Dacht dat lukt wle even maar blijkt toch lastiger dan gedacht, misschien een zaterdag middag?<br>Als we zoveel mogelijk floraboys (wel of geen zaalvoetballers) bij elkaar kunnen krijgen.Dan kunnen jullie daarna ballen op het veld misschien?</div>
+</article>
+<article class="post" data-ts="20051109103900" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2005-11-09 10:39</span></div>
+  <div class="pb">tja ik wil wel.. maar ja...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

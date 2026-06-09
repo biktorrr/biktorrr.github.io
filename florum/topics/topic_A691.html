@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrijdag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrijdag</h1>
+<p class="tm">8 posts · started 2003-01-28 10:58 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030128105800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-01-28 10:58</span></div>
+  <div class="pb">A.s. Vrijdag ben ik tot +/- 00:00 aan het werk, daarna zou ik het leuk vinden om ergens in de stad nog wat af te spreken. Jitske wil ook komen, maar kan helaas niet haar huis van te voren ter beschikking stellen.<br>Ik heb gezegd (met de betrokkenen hun welnemen) dat ze Merlijn, Viktor danwel de JurCade moest bellen.</div>
+</article>
+<article class="post" data-ts="20030128115600" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-01-28 11:56</span></div>
+  <div class="pb">ik moet die nacht om 5 uur met de bolide naar oostenrijk bolideren dus ik sla toch maar even over</div>
+</article>
+<article class="post" data-ts="20030128133900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2003-01-28 13:39</span></div>
+  <div class="pb">Knallen!</div>
+</article>
+<article class="post" data-ts="20030129171600" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-01-29 17:16</span></div>
+  <div class="pb">De nacht van vrijdag op zaterdag is hoogstwaarschijnlijk de laatste nacht dat Fleur en ik onze etage aan de WIllem de Zwijgerlaan delen, dus misschien dat we daar nog maar even van gaan genieten.</div>
+</article>
+<article class="post" data-ts="20030129182900" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-01-29 18:29</span></div>
+  <div class="pb">FEESTJE BIJ MICHIEL EN FLEUR DUS<br><br>ik kom naar NL!!</div>
+</article>
+<article class="post" data-ts="20030129184700" id="p6">
+  <div class="ph"><span class="pa">FdG</span><span class="pm">#6 · 2003-01-29 18:47</span></div>
+  <div class="pb">Noi, Oli4!</div>
+</article>
+<article class="post" data-ts="20030130092400" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2003-01-30 09:24</span></div>
+  <div class="pb">Een house-cooling party! Wat origineel. Moeten we zelf drank meenemen?</div>
+</article>
+<article class="post" data-ts="20030130101700" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2003-01-30 10:17</span></div>
+  <div class="pb">Ca en ik gaan vrijdag avond eerst naar een concert. misschien kunnen we iets in de stad afspreken?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

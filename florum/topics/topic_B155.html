@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2e wedstrijd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">2e wedstrijd</h1>
+<p class="tm">5 posts · started 2002-09-02 17:45 by sandOr</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020902174500" id="p1">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#1 · 2002-09-02 17:45</span></div>
+  <div class="pb">Wanneer is ie echt?</div>
+</article>
+<article class="post" data-ts="20020903133500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-09-03 13:35</span></div>
+  <div class="pb">ik hoop nog steeds de 17e, want dat wou ik dus verzetten, alleen ik heb nog geen officieel antwoord van het USC gekregen, maar dat ga ik vanavond halen...<br></div>
+</article>
+<article class="post" data-ts="20020903141100" id="p3">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#3 · 2002-09-03 14:11</span></div>
+  <div class="pb">er is toch ook een wedstrijd op 11 spetember? (speelden we een jaar gelden ook niet precies op de elfde?)</div>
+</article>
+<article class="post" data-ts="20020903151200" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-09-03 15:12</span></div>
+  <div class="ps">voetbal</div><div class="pb">verzetten,<br>dinsdag en donderdag komt mij niet zo heel goed uit. Of het moet na of om 10.30 zijn normaal gesproken.<br><br>Maar waarom dinsdag 17 verzetten???</div>
+</article>
+<article class="post" data-ts="20020904125800" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-09-04 12:58</span></div>
+  <div class="pb">ik ga nu het schema updaten zodat het up to date is qua upgedateheid, kijk daar dus.. volgende pot 11 september...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

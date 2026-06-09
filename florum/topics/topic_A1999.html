@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zaterdag poker? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zaterdag poker?</h1>
+<p class="tm">8 posts · started 2007-03-22 11:52 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070322115200" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2007-03-22 11:52</span></div>
+  <div class="pb">Boys, jullie worden me veel te vermogend. Het wordt weer tijd om geld te verspelen.<br><br>Jazzmaster en Biktie en Ik kunnen allemaal zaterdag pokeren. Wie doen er nog meer mee? <br>Holy? <br>Merl? <br>Tube?</div>
+</article>
+<article class="post" data-ts="20070322115500" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2007-03-22 11:55</span></div>
+  <div class="pb">Ik help graag dagdromende aio's uit de brand maar zaterdag kan ik niet. O ja, de komende twee weekenden daarna ook niet. </div>
+</article>
+<article class="post" data-ts="20070322145500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-03-22 14:55</span></div>
+  <div class="pb">Voorbereidingen voor Pasen aan het treffen? <br><br>Poker is toppie!</div>
+</article>
+<article class="post" data-ts="20070322160400" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-03-22 16:04</span></div>
+  <div class="pb">we moeten maar even contact houden over hoe het loopt met de verhuizing en de aftermath en dergelijke. Ik denk niet dat ik zin heb om de pokerkoffer de hele zaterdag mee te slepen nl.</div>
+</article>
+<article class="post" data-ts="20070322193600" id="p5">
+  <div class="ph"><span class="pa">jk</span><span class="pm">#5 · 2007-03-22 19:36</span></div>
+  <div class="pb">ik wil zaterdag wel, is er trouwens animo om vrijdag ergens een biertje te pakken? ben zelf wel voor een postwerkborrel in amsterdam.</div>
+</article>
+<article class="post" data-ts="20070324092200" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2007-03-24 09:22</span></div>
+  <div class="pb">is het nu al bekend waar en hoe laat het is?<br><br>Ik weet dat Victor evt met het idee speelde het in A'dam te doen, aangezien jullie Michiel aan het verhuizen zijn.<br><br>Laat het me in ieder geval even weten, anders bel ik rond een uur of 4 wel.</div>
+</article>
+<article class="post" data-ts="20070324125800" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2007-03-24 12:58</span></div>
+  <div class="pb">Hooghe teyding, moi sey erbey!<br>Haerloheym ofte Aemfredam?</div>
+</article>
+<article class="post" data-ts="20070324200400" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2007-03-24 20:04</span></div>
+  <div class="pb">Haarlem. Bij mij 20:30.Neem potsers mee.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

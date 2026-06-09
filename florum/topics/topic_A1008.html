@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7 okt, knalfeest – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">7 okt, knalfeest</h1>
+<p class="tm">3 posts · started 2003-10-01 16:09 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031001160900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-10-01 16:09</span></div>
+  <div class="pb">Op 7 oktober zal het damesdispuut van mijn zus een knalfuif geven in de Sinners, vanaf 22:00 uur. Het is zaak daar vroeg te zijn, heb ik vernomen, want het eerste bier is gratis. We zouden er na ballen heen kunnen. Laat a.j.b. even weten of je wel of niet komt. Toegang is E 5,-.</div>
+</article>
+<article class="post" data-ts="20031001171900" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-01 17:19</span></div>
+  <div class="pb">Is er dan geen CL voetbal op de buis?<br>Mocht dat niet zo zijn dan lijkt het me best lachen mits er genoeg animo voor is binnen de selectie.<br><br></div>
+</article>
+<article class="post" data-ts="20031003143500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2003-10-03 14:35</span></div>
+  <div class="pb">Lijkt me leuk. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

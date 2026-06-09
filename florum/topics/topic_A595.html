@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groeten uit Madrid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groeten uit Madrid</h1>
+<p class="tm">5 posts · started 2002-10-07 14:19 by Jose Blanco</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021007141900" id="p1">
+  <div class="ph"><span class="pa">Jose Blanco</span><span class="pm">#1 · 2002-10-07 14:19</span></div>
+  <div class="pb">¡ Hola chicos del flores! <br><br>¿ Como esta en Hollanda? Ik heb gehoord dat een van onze ereleden van Stichting vrienden van de Floraboys gister is overleden? Das jammer voor de penningmeester, scheelt weer contributie. Bovendien is het zielig voor de nabestaanden en.<br><br>Heb ik overigens wel eens verteld dat ik in het AMC in dezelfde kamer gelegen heb als z.k.h. Claus?? Stukje respect is dus niet misplaatst.<br><br>Hier in Madrid alles muy bien. Gisteravond is in Estudio Estadia Ronaldo unaniem tot kroonprins gekozen na zijn mooie doelpuntjes ala Oli4. Ze noemen hem al de Braziliaanse Famous, ken je nagaan!<br><br>Verder gaat alles toppie, ik ga zo lekker op Ajax.nl kijken wat de superjoden in Rotterdam hebben gedaan. Zal wel een nulletje of 2 zijn geworden aangezien de kuip eigenlijk net zo goed een veilige haven is voor Ajax als de Arena of de Vijverberg bv, das gewoon een ingecalculeerde driepunter. Maar goed, ik moet nog kijken dus ik zal oppassen met de hubris.<br><br>Tja voor de rest, mijn Spaans gaat best lekker, ik ben net uitgenodigd door een Chinese klasgenote om eens gratis langstekomen naar haar Bal (bar) especial con muchas chicas. Vraag me niet wat dat is maar ik geloof dat ik en nog een paar klasgenoten er van alles mogen nuttigen. Kortom gekkenhuis hier.<br><br>Mzzltv,<br><br>Js Blnc</div>
+</article>
+<article class="post" data-ts="20021007145100" id="p2">
+  <div class="ph"><span class="pa">Menno Buch</span><span class="pm">#2 · 2002-10-07 14:51</span></div>
+  <div class="ps">chinese meisjes</div><div class="pb">KLEIN MAAR FIJN..<br><br>PAALEEN!</div>
+</article>
+<article class="post" data-ts="20021007145600" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2002-10-07 14:56</span></div>
+  <div class="pb">en PEDAAAHLEE</div>
+</article>
+<article class="post" data-ts="20021009132700" id="p4">
+  <div class="ph"><span class="pa">JB</span><span class="pm">#4 · 2002-10-09 13:27</span></div>
+  <div class="pb">of niet.</div>
+</article>
+<article class="post" data-ts="20021011124400" id="p5">
+  <div class="ph"><span class="pa">W v H aka &#x27;de assistent&#x27;</span><span class="pm">#5 · 2002-10-11 12:44</span></div>
+  <div class="pb">lekkere dooddoenert</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

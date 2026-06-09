@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NIEUWE TT!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NIEUWE TT!!!</h1>
+<p class="tm">4 posts · started 2005-10-20 13:43 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051020134300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-10-20 13:43</span></div>
+  <div class="pb">Door BIK is mij verzocht de nodige aandacht te vragen voor een bepaalde wedsite: http://timmietikt.blogspot.com/ <br><br>Ik zeg: hulde, Bikkie!</div>
+</article>
+<article class="post" data-ts="20051020140000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-10-20 14:00</span></div>
+  <div class="pb">als eerbetoon aan dit fenomenale columntalent heb ik de Timmie Tikt pagina geupdate:<br><br>- TT34, TT35 en TT36 staan er nu op<br>- de verloren gewaande TT30 is TERECHT!<br>- Wie heeft TT31 ???<br>- We wachten op de brille van Bik in TT37!! (Het Huwelijk??, Malaise op het Park??,...)</div>
+</article>
+<article class="post" data-ts="20051020140200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-10-20 14:02</span></div>
+  <div class="pb">herstel, 30 hebben we toch niet terug. Wie o Wie???</div>
+</article>
+<article class="post" data-ts="20051021133100" id="p4">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#4 · 2005-10-21 13:31</span></div>
+  <div class="pb">altijd leuk, iets uit de oude doos!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

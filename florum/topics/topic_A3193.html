@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lage tijding – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lage tijding</h1>
+<p class="tm">3 posts · started 2011-12-31 14:32 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111231143237" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2011-12-31 14:32</span></div>
+  <div class="pb"><p><br>	Slecht nieuws boys, ik moet mijn my!ou fr@nken award alweer inleveren. Zoals jullie weten hebben we in het verleden nogal eens last gehad van spam op het florum. Het blijkt dat een van die (verwijderde) berichten is meegeteld in het aantal posting van het celeb topic. Ik heb zojuist de top 1000 berichten in dit topic nog eens gequeried en de echte winnaar is deze posting.</p><br><p><br>	<em>Neyt, wat een anticlimax. Mil0u - fucking - Fr@ncken is echt een C-celeb, hetgeen je weet zelf. Toen ze de eerste keer werd gespot was het al niks. Wat een deceptie. En dat je deze spotting ook al twee dagen voor je hebt gehouden zodat je die 1000 kon aantikken... ik heb er geen woorden voor.</em></p><br><p><br>	<em>Waarmee de prijs gaat naar.</em></p><br><p><br>	<em><img alt="" src="http://floraboys.com/onzin/de-echte-winnaar.jpg" style="width: 240px; height: 426px; " /></em></p><br><p><br>	Wellicht heb ik dan de geest van de wet overtreden, maar feitelijk was mijn posting toch echt de 999e.&nbsp;</p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20111231222700" id="p2">
+  <div class="ph"><span class="pa">Prijzencie</span><span class="pm">#2 · 2011-12-31 22:27</span></div>
+  <div class="pb">Tamelijk bizarre actie, lieve Jazz. Als winnaar van de Mil0u Fr3ncken Award mag je je eigenlijk Boy van het Jaar noemen: een eer waar pak 'm beet harcore-Boys als Mitch en de Tube alleen maar kunnen dromen. Bovendien is het uniek dat je iets doet wat zo'n impact heeft, dat je er bijna een jaar later nog zo'n grote prijs mee wint. En dan ga je zelf nog een keer met redeneringen komen waarom je de prijs toch niet zou mogen winnen. <br><br>Deze vlieger gaat trouwens sowieso niet op. De Cie is voor de Boys zoiets als wat het Politburo voor de Sovjet-Unie was. De waarheid is niet de waarheid, maar wat de Cie zegtdat de waarheid is. Het eenmanskamp heeft dit al eens mogen ervaren door voor te stellen dat we het FDK ook zouden noemen naar het jaar waarin het gevierd wordt. Dit tot hilariteit van alle Boys die de Cie trouw bleven. Zo is het hier ook: als de Cie zegt dat het de 1000ste posting was, en dat je actie een verpletterende negatieve uitwerking had op die Boys, dan is dat ook zo. Bastogne.<br><br>Overigens, Jazz, als je je tijd beter wilt besteden. Misschien kun je eens de managementstatistieken van 2010 en 2011 naast elkaar op het Florum publiceren. Dat we kunnen zien wat je aangericht hebt. </div>
+</article>
+<article class="post" data-ts="20120102182353" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2012-01-02 18:23</span></div>
+  <div class="pb">Ik ben er nog niet uit of je hier de schande mee wegpoetst of juist verergert, Jazzy. Als ik jou was zou ik er juist zo min mogelijk aandacht aan willen besteden en hopen dat deze schandvlek over een jaar of tien voldoende vervaagd is dat je er niet meer elke dag op wordt aangesproken. Maar goed, zo ben ik dan he.<br><br>Het idee dat mij een medaille wordt omgehangen staat me wel beffoindre aan. Misschien moet ik volgende jaar maar niet meer gevraagd worden als voorzitter van de Prijzencie. In de wandelgangen zijn er al boys - ik noem geen namen - die staan de trappelen om deze eervolle functie te bekleden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 21e/22e – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 21e/22e</h1>
+<p class="tm">12 posts · started 2002-09-13 22:26 by Mido</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020913222600" id="p1">
+  <div class="ph"><span class="pa">Mido</span><span class="pm">#1 · 2002-09-13 22:26</span></div>
+  <div class="pb">Tabeeee jongens, ik houd het voor gezien.</div>
+</article>
+<article class="post" data-ts="20020917133000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-09-17 13:30</span></div>
+  <div class="pb">hallo ik ben er komend weekend alleen zondag bij, zaterdag moet ik even filmen op de bruiloft van berends zus.<br><br>wie balt nog meer en wanneer?</div>
+</article>
+<article class="post" data-ts="20020917135800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-17 13:58</span></div>
+  <div class="pb">Ja hoor ik ben er. Twee dagen knijterhard ballen. Maurits, als je bang bent je enkels te breken moet je vooral niet komen, want ik ga er nog harder inkleunen.</div>
+</article>
+<article class="post" data-ts="20020918115100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-09-18 11:51</span></div>
+  <div class="pb">Brrrrrr...dan kom ik lekker ook niet..</div>
+</article>
+<article class="post" data-ts="20020918120600" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2002-09-18 12:06</span></div>
+  <div class="pb">sportieve wraak voor gister lijkt me niet meer dan op zijn plaats<br><br>zet maar twee aanwezigheidsvinkjes achter mijn naam</div>
+</article>
+<article class="post" data-ts="20020919190800" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2002-09-19 19:08</span></div>
+  <div class="pb">ik zal er in principe ook gewoon twee keer zijn.</div>
+</article>
+<article class="post" data-ts="20020920155700" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2002-09-20 15:57</span></div>
+  <div class="pb">IVM met het ontruimen van Kleverparkweg 16 IIhoog zal mijn aanwezigheid afhangen van mijn inpakvermogen e.d.<br><br>Ik gok dat ik er wel bij zal zijn.<br></div>
+</article>
+<article class="post" data-ts="20020920194300" id="p8">
+  <div class="ph"><span class="pa">tuuT</span><span class="pm">#8 · 2002-09-20 19:43</span></div>
+  <div class="pb">ook ik ben er waarschijnlijk alle twee de dagen... </div>
+</article>
+<article class="post" data-ts="20020921002800" id="p9">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#9 · 2002-09-21 00:28</span></div>
+  <div class="pb">ZA+ZO ZAL IK OP MIJN NIEUWE KICKSEN MERLIJN'S BEIDE BENEN BREKEN.</div>
+</article>
+<article class="post" data-ts="20020921003300" id="p10">
+  <div class="ph"><span class="pa">mauritts</span><span class="pm">#10 · 2002-09-21 00:33</span></div>
+  <div class="pb">Zza+zo zal ik mijn uiterste best doen om op mijn nieuwe kicksen merlijn zijn beide benen te breken.</div>
+</article>
+<article class="post" data-ts="20020921132600" id="p11">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#11 · 2002-09-21 13:26</span></div>
+  <div class="pb">kleine jongetjes moeten niet zo veel drinken<br><br>heb je er 5 minuten over gedaan om die tweede volzin op het Florum te plaatsen, Maurits?</div>
+</article>
+<article class="post" data-ts="20020921135300" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2002-09-21 13:53</span></div>
+  <div class="pb">Go Maurits...gedeeld leed is immers dragelijker dan in je eentje. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

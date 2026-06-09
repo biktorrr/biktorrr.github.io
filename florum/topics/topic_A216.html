@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inschrven Zaalvoetbal – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Inschrven Zaalvoetbal</h1>
+<p class="tm">4 posts · started 2001-08-30 13:20 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010830132000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2001-08-30 13:20</span></div>
+  <div class="pb">De apparatuur om je in te schrijven bij het USC is nog niet klaar. Je kan je dus nog niet inschrijven. Ik heb ze een mail gestuurd om te vragen wanner het dan wel kan.<br>In ieder geval zei die gast aan de balie dat er<br>geen consequenties zouden zijn als je je niet had<br>kunnen inschrijven voor de eerste wedstrijd.</div>
+</article>
+<article class="post" data-ts="20010830135800" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2001-08-30 13:58</span></div>
+  <div class="pb">Sjek hier voor inschrijvingstijd:<br><br>http://www.org.uva.nl/usc/nieuws/index.html</div>
+</article>
+<article class="post" data-ts="20010830170800" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2001-08-30 17:08</span></div>
+  <div class="pb">kun je je maandag a.s. inschrijven? <br>dan ben ik namelijk in A'dam en dan was ik van plan dat gelijk maar effe te cheffen..<br><br>TuuT</div>
+</article>
+<article class="post" data-ts="20010831155700" id="p4">
+  <div class="ph"><span class="pa">mK</span><span class="pm">#4 · 2001-08-31 15:57</span></div>
+  <div class="pb">Moet je ff op die site kijken dus...ik denk het eerlijk gezegd niet, meestal zijn ze niet zo snel heb ik gehoord.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

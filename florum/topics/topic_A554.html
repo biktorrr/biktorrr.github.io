@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>en deze is voor Maior: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">en deze is voor Maior:</h1>
+<p class="tm">1 post · started 2002-08-20 15:38 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020820153800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-08-20 15:38</span></div>
+  <div class="pb">Maandag 19 Augustus 2002 <br>  <br>Waterfiets beheerst de Amsterdamse gracht<br> <br><br> <br>Door Miranda Megens <br> <br>Jaarlijks stappen 125.000 toeristen op een waterfiets om de grachten van Amsterdam te verkennen. Canal Bike is met het milieuvriendelijke vervoermiddel al bijna twintig jaar alleenheerser op het water van de hoofdstad.<br><br>  <br>Amsterdam - Een Amerikaan stapt gemakkelijker op een waterfiets dan een Japanner. En een Engelsman eerder dan een Duitser. En de Nederlander? Die doet helemaal niet moeilijk over een tochtje per fiets op de Amsterdamse grachten.<br><br>Toch ligt een ritje per waterfiets in Amsterdam niet voor iedereen voor de hand, weet Felix Guttmann, oprichter en eigenaar van Canal Bike. Van de jaarlijkse drie miljoen betalende toeristen op de grachten kiezen de meesten toch voor 'gevaren worden'. Dus liever een ritje in een rondvaartboot dan zelf trappen.<br><br>Guttmann kan het weten. Al bijna twintig jaar is hij met zijn ruim honderd waterfietsen (nagenoeg) alleenheerser op de grachten van Amsterdam. <br><br>Toen hij zijn bedrijf in 1984 begon, zat de economie in het slop, was de binnenstad van Amsterdam onaantrekkelijk en was het toerisme naar de hoofdstad nog in opkomst. <br><br>Niet gehinderd door de slechte economische omstandigheden begon Guttmann, terug van een wereldreis en klaar met zijn studie, financiers te zoeken voor zijn onderneming.<br><br>,,Je kunt het je bijna niet voorstellen, maar begin jaren tachtig waren de grachten nog doodstil,'' blikt Guttmann terug. ,,Je zag alleen de traditionele rondvaartboten. <br><br>Ik vroeg me af waarom niemand bootjes verhuurde.'' Het kostte Guttmann een jaar om vergunning en financiering voor zijn plan rond te krijgen. <br><br>Een venture capitalist, een samenwerkingsverband van onder andere Rabobank en Delta Lloyd, financierde mee voor 200.000 gulden. ,,Zo'n bedrag is nu natuurlijk peanuts,'' lacht Guttmann. ,,Maar toen was ik er blij mee.''<br><br>Guttmann trok zijn financiers over de streep met een doorwrocht bedrijfsplan. Vanaf het begin wilde hij de zaken groot aanpakken: hij koos ervoor om met honderd waterfietsen te starten vanaf vier locaties in de binnenstad. ,,Honderd bootjes zijn leuk, maar duizend: dat is een plaag op de grachten. Met die honderd bootjes namen we toch in een keer een dominante positie in. We waren heel zichtbaar. <br><br>Als we klein waren gestart, hadden we meteen een ander bedrijf op onze nek gehad. Of had de gemeente later kunnen zeggen: 'waarom wil je uitbreiden, het gaat toch goed?'.''<br><br>Inmiddels is de binnenstad van Amsterdam aardig opgeknapt en stromen toeristen het hele jaar door toe. Canal Bike breidde uit met Canal Bus: een lijndienst per boot door de grachten. Het bedrijf biedt nu werk aan zeventig mensen. Guttmann voelt er niets voor zijn activiteiten in het buitenland voort te zetten. Exploitatie naar andere steden evenmin; hij vond alleen Utrecht groot genoeg en verhuurt daar nu veertien fietsen.<br><br>Op het water is het de afgelopen twintig jaar veel drukker geworden. Guttmann: ,,In het begin stapten mensen nog spontaan op een waterfiets om in de zomer 's avonds het Prinsengrachtconcert bij te wonen. <br><br>Nu ligt de gracht al drie dagen van tevoren vol. En net als op straat maken mensen ook te veel lawaai of zijn er boten die overlast bezorgen. <br><br>Maar Amsterdam vanaf het water: dat verveelt nooit.''<br> <br>(bron: Rotterdams Dagblad)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

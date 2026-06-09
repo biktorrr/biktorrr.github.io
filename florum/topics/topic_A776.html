@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HAPPY BIRTHDAY JOSIT – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">HAPPY BIRTHDAY JOSIT</h1>
+<p class="tm">8 posts · started 2003-05-02 11:42 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030502114200" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-05-02 11:42</span></div>
+  <div class="pb">Jose Blanco verjaart vandaag, alweer 24. Wat een oude lul! Gefeliciteeeeeerd!!!</div>
+</article>
+<article class="post" data-ts="20030502123200" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-05-02 12:32</span></div>
+  <div class="pb"><img src="http://www.floraboys.com/misc/alsahaf1.jpg"><br><br><br><br>Joost, die goeie ouwe Al-Sahaf is weer eens aan het liegen hoor, ik feliciteer je natuurlijk wel...</div>
+</article>
+<article class="post" data-ts="20030502124400" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-05-02 12:44</span></div>
+  <div class="pb">Jezus wat een ouwe lul. Zal wel over de top heen zijn nu, voetbalgewijs dan. Ik zou zeggen: <br><br>F\élicitations</div>
+</article>
+<article class="post" data-ts="20030502125800" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-05-02 12:58</span></div>
+  <div class="pb">Ook gefeliciteerd van mij en lara, Goudlokje.Als cadeau mag je naar de kapper als je weer thuis bent.</div>
+</article>
+<article class="post" data-ts="20030502135900" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2003-05-02 13:59</span></div>
+  <div class="pb">gefeliciteerd ouwe verhuurde topspits! Komt die vrouw van Inzaghi nog langs?</div>
+</article>
+<article class="post" data-ts="20030502144800" id="p6">
+  <div class="ph"><span class="pa">FdG</span><span class="pm">#6 · 2003-05-02 14:48</span></div>
+  <div class="pb">Cumpleanos feliz!<br></div>
+</article>
+<article class="post" data-ts="20030502151600" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2003-05-02 15:16</span></div>
+  <div class="pb">gracias de todos, tis hier overigens een super dag dus das wel mooi. Lekker 24 graden heel symbolisch.<br><br>Overigens. Over zon 30 dagen kom ik terug naar NL. En Merlijn, ik geloof dat ik je sms'je niet helemaal niet begreep. Ik zou ongetwijfeld een koningskoppel kunnen vormen met de Timmenizer maar zolang de sponsor mijn vliegticket weigert te betalen moet ik voorlopig vooral in Spanje schitteren.<br><br>Mzzl, <br><br>P.S. Tymen, na het 6 december drama met de schenker wedstrijd ben ik zeer gesteld op mijn lange blonde lokken......</div>
+</article>
+<article class="post" data-ts="20030502161100" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2003-05-02 16:11</span></div>
+  <div class="pb">uiteraard ook namens mij un cumpleanos como nunca antes</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

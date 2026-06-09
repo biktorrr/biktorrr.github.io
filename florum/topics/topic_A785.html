@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>met hangende pootjes.... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">met hangende pootjes....</h1>
+<p class="tm">3 posts · started 2003-05-13 14:17 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030513141700" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2003-05-13 14:17</span></div>
+  <div class="pb">Via de verzamelde pers wil ik bij deze mijn excuses aanbieden aan alle floracieten en met name merlijn. In eerdere persmededeling is de indruk gewekt dat ik nooit meer met hem in een team wil spelen. Dit mag dan waar zijn maar nu ik heb vernomen dat er op 10 en 25 juni cruciale wedtsrijden op het programma staan wil ik graag mijn ego en trots bij het grofvuil zetten en de oppermachtigheid van Merlijn verklaren,<br><br><br>Hopende hiermee een mooi plek in de basis afgedwongen te hebben verblijf ik.<br><br>W.J. </div>
+</article>
+<article class="post" data-ts="20030513143000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-13 14:30</span></div>
+  <div class="pb">Mooi! Mooi! We kunnen altijd versterking voor in de breedte gebruiken! <br><br>Wanneer plan je terug te komen? Dan ga ik dan wel op Schiphol handtekeningen uitdelen zodat jij niet zoveel bekijks trekt. *gniffel*</div>
+</article>
+<article class="post" data-ts="20030514125800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-05-14 12:58</span></div>
+  <div class="ps">altijd lekker</div><div class="pb">om een publiekswissel te krijgen, josit je krijgt wel een paar speelminuten hoor.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

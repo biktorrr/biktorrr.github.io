@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>weer een jaar ouder – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">weer een jaar ouder</h1>
+<p class="tm">9 posts · started 2010-07-26 12:30 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100726123000" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2010-07-26 12:30</span></div>
+  <div class="pb">en dit keer is het onze Franse reporter<br><br>Gefeliciteert Oli4</div>
+</article>
+<article class="post" data-ts="20100726124300" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2010-07-26 12:43</span></div>
+  <div class="pb">Baiser sacr\é! Er is weer een bewogen jaar in het leven van deze Flora-expat voorbij. Waarin hij een gevierd auteur werd, contacten aanknoopte met megalomane Afrikaanse politici, en nieuwe liefde vond. En zich in allerlei avonturen waagde waar we het ook misschien maar beter niet meer over kunnen hebben. <br><br>Wat zal het komende jaar allemaal in petto hebben? Zoals hij zelf zou zeggen <br><br>Vive la R\épublique, et vive Olivier !<br></div>
+</article>
+<article class="post" data-ts="20100726125300" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-07-26 12:53</span></div>
+  <div class="pb">Sacrebleu wat een teydinck!<br>Beffoindre, *tik* en gefeliciteerd.<br>Nu is het wachten op de 'taart' van Mk.</div>
+</article>
+<article class="post" data-ts="20100726145800" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2010-07-26 14:58</span></div>
+  <div class="pb">gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20100726150200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2010-07-26 15:02</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20100726151500" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2010-07-26 15:15</span></div>
+  <div class="pb">Het was even aanpoten maar dan heb je ook wel een leuke thematische verrassing.<br><img src="http://www.tomrunia.nl/imgscript/img/5aaf46b2.png"><br><br>Helemaal voor jou Oli4!! </div>
+</article>
+<article class="post" data-ts="20100726163400" id="p7">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#7 · 2010-07-26 16:34</span></div>
+  <div class="pb">Gefeliciteerd ook van ons (moi et babyboy).<br></div>
+</article>
+<article class="post" data-ts="20100726220500" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2010-07-26 22:05</span></div>
+  <div class="pb">Gelicisachertorte!</div>
+</article>
+<article class="post" data-ts="20100802080700" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2010-08-02 08:07</span></div>
+  <div class="pb">Heeeee, hartelijk dank Boys. Toepasselijke taart! Een wat late reactie, want internetloos anderhalf weekje achter de rug in Itali\ë. Zeer aan te raden, zowel het internetloze gedeelte als de bestemmingen: Stresa aan het Lago Maggiore, Montecatini in Toscane en Napels.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

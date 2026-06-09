@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verhuizing Merrel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verhuizing Merrel</h1>
+<p class="tm">4 posts · started 2010-01-07 11:08 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100107110800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-01-07 11:08</span></div>
+  <div class="pb">Hier een foto van de drie heersende bakkies bij Merlijns verhuizing:<br><table style="width:auto;"><tr><td><a href="http://picasaweb.google.nl/lh/photo/ajYuTpfXW7DT1ksOY3o2Yg?feat=embedwebsite"><img src="http://lh6.ggpht.com/_WG47yzFkIB4/S0WzFR_TLaI/AAAAAAAAAU4/qptRoXp3N70/s144/IMAGE_485.jpg" /></a></td></tr><tr><td style="font-family:arial,sans-serif; font-size:11px; text-align:right">Van <a href="http://picasaweb.google.nl/floraboys2/VerhuizingMerlijn?feat=embedwebsite">Verhuizing Merlijn</a></td></tr></table></div>
+</article>
+<article class="post" data-ts="20100107110900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-01-07 11:09</span></div>
+  <div class="pb">de rest staat hier:<br><table style="width:194px;"><tr><td align="center" style="height:194px;background:url(http://picasaweb.google.nl/s/c/transparent_album_background.gif) no-repeat left"><a href="http://picasaweb.google.nl/floraboys2/VerhuizingMerlijn?feat=embedwebsite"><img src="http://lh5.ggpht.com/_WG47yzFkIB4/S0Wyzr4Sj7E/AAAAAAAAAVY/DmJIj2jna78/s160-c/VerhuizingMerlijn.jpg" width="160" height="160" style="margin:1px 0 0 4px;"></a></td></tr><tr><td style="text-align:center;font-family:arial,sans-serif;font-size:11px"><a href="http://picasaweb.google.nl/floraboys2/VerhuizingMerlijn?feat=embedwebsite" style="color:#4D4D4D;font-weight:bold;text-decoration:none;">Verhuizing Merlijn</a></td></tr></table></div>
+</article>
+<article class="post" data-ts="20100107113500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2010-01-07 11:35</span></div>
+  <div class="pb">Fraai! Jammer alleen dat je niet het shot hebt van die neger die op het platform naar boven komt surfen.</div>
+</article>
+<article class="post" data-ts="20100107141400" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2010-01-07 14:14</span></div>
+  <div class="pb">Nee, op dat moment was mijn handje eraf aan het vriezen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

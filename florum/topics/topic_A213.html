@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPA: Ze dissen ons – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SPA: Ze dissen ons</h1>
+<p class="tm">1 post · started 2001-08-29 12:56 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010829125600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-08-29 12:56</span></div>
+  <div class="pb">jemig wel populair dat Spa <br>Lees Maar effe:<br><br>De nieuwe naam van de Socialistische Partij (SP) in Vlaanderen is op internet<br>razendsnel ingepikt. De voorzitter van de Nationalistische Studentenvereniging,<br>gelieerd aan het Vlaams Blok, heeft de twee meest logische domeinnamen<br>gekaapt, zo meldt woensdag De Standaard. <br><br>De SP wil voortaan door het leven onder de naam SP Anders, kortweg Spa. Dat<br>heeft SP-voorzitter Patrick Janssens begin deze week bekendgemaakt, maar<br>hij heeft verzuimd alvast een naam te reserveren voor een webpagina. De<br>webplek www.spa.be is al sinds jaar en dag in handen van de bekende<br>producent van mineraalwaters. Sinds deze week zijn www.sp-anders.be en<br>www.spanders.be gereserveerd door voorman Hans Verreyt van de<br>nationalistische studenten. Volgens Verreyt is het een 'studentikoze grap'. Ook<br>www.sp-a.be is al geclaimd. <br><br>De SP Anders kan nog wel de internationale domeinnamen sp-anders.com,<br>sp-anders.net, sp-anders.org, spanders.net en spanders.org registeren. Op<br>woensdagmorgen waren deze domeinnamen nog vrij. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

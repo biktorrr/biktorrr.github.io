@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nouveau numÃ©ro – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nouveau numÃ©ro</h1>
+<p class="tm">6 posts · started 2009-11-30 14:22 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091130142200" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-11-30 14:22</span></div>
+  <div class="pb">Ha die Boys<br><br>Als het goed is hebben jullie een mail ontvangen met mijn nieuwe telnr. Met al die fans die op de raarste tijdstippen bellen met de meest oneerbare verzoeken zag ik geen andere mogelijkheid.*<br><br>Aangezien nogal wat providerts mijn mail al dan niet terecht voor spam aanzien, hier het nr: nulnul33.zes.17.87.97.9zes<br><br>Laatste drie cijfers zijn trouwens een leuke oefening Frans (waar je de nummers per tweetal zegt). <br><br>Stuur me svp ook even jullie nrs toe per mail.<br><br>* werkelijkheid: verloren in de bios</div>
+</article>
+<article class="post" data-ts="20091130142800" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2009-11-30 14:28</span></div>
+  <div class="pb">Soixante Neuf?<br>Noisante Seuf?</div>
+</article>
+<article class="post" data-ts="20091130160200" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2009-11-30 16:02</span></div>
+  <div class="pb">Jezus, ik ben niet echt besoindre scherp vandaag. <br><br>Het juiste nummer is nulnul driedrie 6 17 97 87 9zes<br><br>Dank Ca!<br><br>Geloof ook dat ik nummers en cijfers door elkaar haalde. Enfin, het eind spreek je dus uit als quatre-vingt-dix-sept, quatre-vingt-sept, quatre-vingt-seize. Vrij hardcore. Met soixante-neufen heeft het voor 1 keer niets te maken.</div>
+</article>
+<article class="post" data-ts="20091130160300" id="p4">
+  <div class="ph"><span class="pa">Knaquille</span><span class="pm">#4 · 2009-11-30 16:03</span></div>
+  <div class="pb">Je m'appelle le Knaquille</div>
+</article>
+<article class="post" data-ts="20091130193200" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-11-30 19:32</span></div>
+  <div class="pb">bienvenuetjes monsieur le knaquille!</div>
+</article>
+<article class="post" data-ts="20091130230500" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2009-11-30 23:05</span></div>
+  <div class="pb">Et depuis quelques semaines, je marche dans sept canaux en m\ême temps</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 20/21 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 20/21</h1>
+<p class="tm">8 posts · started 2003-09-18 12:16 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030918121600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-09-18 12:16</span></div>
+  <div class="pb">Ik ben helaas blessedados,en moet op advies van de fysio/masseur nog anderhalve week niet rennen/skieten. Ik wil wel alvast peilen. Dan weet het of het zin heeft om evt. te komen kijken.<br><br>Za:nee<br>Zo:nee</div>
+</article>
+<article class="post" data-ts="20030918123100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-09-18 12:31</span></div>
+  <div class="pb">zaJah<br>zoJah</div>
+</article>
+<article class="post" data-ts="20030918135800" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-09-18 13:58</span></div>
+  <div class="pb">HBC is afgelast dus <br><br>zaterdag ja<br>zondag met Jeannine naar de Ikea.</div>
+</article>
+<article class="post" data-ts="20030918142600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-09-18 14:26</span></div>
+  <div class="pb">zaja<br>zoja</div>
+</article>
+<article class="post" data-ts="20030918143500" id="p5">
+  <div class="ph"><span class="pa">DaV</span><span class="pm">#5 · 2003-09-18 14:35</span></div>
+  <div class="pb">Familie omstandigheden, zaneezonee</div>
+</article>
+<article class="post" data-ts="20030919042000" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2003-09-19 04:20</span></div>
+  <div class="pb">vanwege logistieke complicaties<br>zanee zonee </div>
+</article>
+<article class="post" data-ts="20030919133000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2003-09-19 13:30</span></div>
+  <div class="pb">za ja<br>zo misschien</div>
+</article>
+<article class="post" data-ts="20030919140900" id="p8">
+  <div class="ph"><span class="pa">lolbroek</span><span class="pm">#8 · 2003-09-19 14:09</span></div>
+  <div class="ps">zozo</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cheska bij AP – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cheska bij AP</h1>
+<p class="tm">6 posts · started 2005-11-11 15:42 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051111154200" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-11-11 15:42</span></div>
+  <div class="pb">Ik moet even een heeeeeel goed nieuwtje kwijt. Cheska is in vaste dienst aangenomen op het Nederlandse bureau van The Associated Press, het grootste persbureau ter wereld. Ze gaat nieuws vertalen, bewerken en selecteren. Ze hebben haar gekozen uit 130 kandidaten!!!!!!!!!!!!!</div>
+</article>
+<article class="post" data-ts="20051111160000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2005-11-11 16:00</span></div>
+  <div class="ps">Wow!</div><div class="pb">Breng maar mijn felicitaties over! <br>En we drinken er vanavond wel een borrel op <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20051111180000" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2005-11-11 18:00</span></div>
+  <div class="pb">cool!</div>
+</article>
+<article class="post" data-ts="20051113104300" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2005-11-13 10:43</span></div>
+  <div class="pb">Jeetje uit zoveel mensen gekozen worden wat een eer!Gefeliciteerd en succes!</div>
+</article>
+<article class="post" data-ts="20051113124700" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-11-13 12:47</span></div>
+  <div class="pb">Respect! Ik heb trouwens nog een mooi persbericht over tweedehands boeken liggen hier, waar kan ik die naartoe sturen?<br><br></div>
+</article>
+<article class="post" data-ts="20051113133400" id="p6">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#6 · 2005-11-13 13:34</span></div>
+  <div class="pb">gefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

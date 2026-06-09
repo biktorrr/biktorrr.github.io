@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 1783 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 1783</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2008-08-28 09:32 by Mans</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080828093200" id="p1">
+  <div class="ph"><span class="pa">Mans</span><span class="pm">#1&nbsp;·&nbsp;2008-08-28 09:32</span></div>
+  <div class="pb">Ha Joost, scherp opgemerkt. Had inderdaad even een sabattical, maar je weet wat ze zeggen: "wie niet zaagt wie niet wint"!</div>
+</article>
+<article class="post" data-ts="20080910140500" id="p2">
+  <div class="ph"><span class="pa">Zaagmans</span><span class="pm">#2&nbsp;·&nbsp;2008-09-10 14:05</span></div>
+  <div class="pb">Vanuit mijn eigen topic: gefelicizaagd jarige!</div>
+</article>
+<article class="post" data-ts="20080917135200" id="p3">
+  <div class="ph"><span class="pa">Zaagzaagzaag</span><span class="pm">#3&nbsp;·&nbsp;2008-09-17 13:52</span></div>
+  <div class="pb">Zaag</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

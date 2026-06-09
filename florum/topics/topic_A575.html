@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rije verjaart! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rije verjaart!</h1>
+<p class="tm">9 posts · started 2002-09-10 12:57 by Rije</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020910125700" id="p1">
+  <div class="ph"><span class="pa">Rije</span><span class="pm">#1 · 2002-09-10 12:57</span></div>
+  <div class="pb">Hallo Floraboys 'n Gals,<br> ik vier zaterdag 21 september mijn 21ste verjaardag (dat is makkelijk onthouden) en ik doe dat in de Irish pub op het Houtplein. Mochten jullie het leuk vinden om langs te komen, dan zijn jullie van harte welkom!<br><br> Rije<br><br>ps: Ome murdel, als ik jouw verjaardag in de weg zit dan moet je dat maar even zeggen, want ik ben best flexibel daarin.</div>
+</article>
+<article class="post" data-ts="20020910170600" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2002-09-10 17:06</span></div>
+  <div class="pb">Rije lijkt me leuk alleen zit ik dan in Madrid alvast een hele fijn dag in ieder geval.<br><br></div>
+</article>
+<article class="post" data-ts="20020911123100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-11 12:31</span></div>
+  <div class="pb">Nou ja Rije, je zit me eigenlijk wel in de weg. Maar omdat je 't eerst bent, heb ik niet zoveel recht van spreken. Puntje is ook dat Berends zus dan gaat trouwen, dus dat we er dan misschien niet de hele tijd bij kunnen zijn. Ik meende dat jij ook meehielp bij de trouwerij...</div>
+</article>
+<article class="post" data-ts="20020911135300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-09-11 13:53</span></div>
+  <div class="pb">even stukje info, het feest gaat hoogstwaarschijnlijk niet door op die dag, meer info volgt</div>
+</article>
+<article class="post" data-ts="20020911143900" id="p5">
+  <div class="ph"><span class="pa">Rije</span><span class="pm">#5 · 2002-09-11 14:39</span></div>
+  <div class="ps">toch maar niet</div><div class="pb">Jullie hebben allemaal weer gelijk, het kan helemaal niet en ik zit alles in de weg. En naast de bruiloft van de zus moet ik zelf nog optreden ook. Lekker is dat, vier je je verjaardag, is er helemaal niemand, en ben je er zelf ook nog eens niet. <br><br>Vandaar dat ik het dan toch maar vrijdag doe, zelfde tijd, zelfde plek.<br><br></div>
+</article>
+<article class="post" data-ts="20020913152800" id="p6">
+  <div class="ph"><span class="pa">Mat Herben</span><span class="pm">#6 · 2002-09-13 15:28</span></div>
+  <div class="ps">Gefeliciteerd</div><div class="pb">Van harte Gefeliciteerd Marije, namens mij en de hele fractie. Mocht je op je 21e eventueel beschikbaar zijn voor de functie van staatsecretaris, hou ik mij van harte aanbevolen!<br><br>Mat  </div>
+</article>
+<article class="post" data-ts="20020918174600" id="p7">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#7 · 2002-09-18 17:46</span></div>
+  <div class="pb">Hola Rije, <br>alsnog van harte gefeliciteerd met je verjaardag. Veel plezier vrijdag. Ik kan helaas niet.<br>Nos vemos,<br></div>
+</article>
+<article class="post" data-ts="20020920154100" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2002-09-20 15:41</span></div>
+  <div class="pb">beter laat dan nooit<br><br>GEFELICITEERD<br><br>ik moet morgen om 6uur werken dus helaas geen pubbezoek voor mij<br><br></div>
+</article>
+<article class="post" data-ts="20020928164300" id="p9">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#9 · 2002-09-28 16:43</span></div>
+  <div class="ps">Hoezo laat?</div><div class="pb">Ik ben pas laat met reageren. Alsnog gefeli Marije, ik tsjek het forum niet zo regelmatig meer, nu ik een uitgerangeerd floracied ben.... moet mij ook maar weer eens op de eeuwige jachtvelden des flora's doen verschijnen, edoch er weinig tijd buitenom werk en het reguliere voetbal rest.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

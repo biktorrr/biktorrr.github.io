@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WK2006-basis11 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WK2006-basis11</h1>
+<p class="tm">10 posts · started 2004-06-26 13:53 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040626135300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-06-26 13:53</span></div>
+  <div class="pb">Tijmen gaat de Johan D uithangen en komt nu alvast met de opstelling voor de WK-11 van 2006:<br><br>------------Stekelenburg-----------<br><br>-Dejong--Heitinga--Hofland---Bouma--<br><br>--Sneijder----v.Persie----v.d.Vaart--<br><br>---de Ridder--v.Nistelrooy---Robben--<br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20040626144700" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2004-06-26 14:47</span></div>
+  <div class="pb">wissel v. Persie en Sneijder even om..  en ik vermoed dat ook de Ridder dan nog niet zo goed is... </div>
+</article>
+<article class="post" data-ts="20040627235800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2004-06-27 23:58</span></div>
+  <div class="pb">daar klopt geen hout van.<br><br>We kunnen wel een leuk pouletje maken, 5 euro inleg (ik bewaar de pot wel ;-) <br><br></div>
+</article>
+<article class="post" data-ts="20040628130900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-06-28 13:09</span></div>
+  <div class="pb">Hallo..het is al over 2 jaar...denk dat een leeuwendeel van de huidige selectie ook nog meekan...Van der Sar..Van Bommel..Bronckhorst..Van der Meyde...als je het WK van jong-Oranje bedoelt hoef je alleen maar RvN er uit te halen. :)</div>
+</article>
+<article class="post" data-ts="20060605020100" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-06-05 02:01</span></div>
+  <div class="pb">na wat graafwerk deze weer eens te voorschijn getoverd. Blijkt zoals altijd de waarheid in het midden te liggen.<br>Hoe ik toen aan hofland en bouma kwam....keine ahnung.<br>  </div>
+</article>
+<article class="post" data-ts="20060605124300" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2006-06-05 12:43</span></div>
+  <div class="pb"><img src='http://www.vi.nl/vi/upload/241421_340_1149456058421-DeHaanHuntelaar01_Pics_465.jpg'></div>
+</article>
+<article class="post" data-ts="20060605134500" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-06-05 13:45</span></div>
+  <div class="pb">@ foto:<br>ik vind het skitterend, maar niemand die er overdag ook maar 1 minuut zendtijd aan wil besteden op de tv. Snappik niet, dit is toch een geweldige prestatie, beter dan een kwartfinale van een A-internationalWK? En de eerste keer dat ik in een stuk op Vi.nl een uitroepteken lees.<br>Een 4e ronde Roland Garros is uiteraard ook erg belangrijk...</div>
+</article>
+<article class="post" data-ts="20060605160000" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2006-06-05 16:00</span></div>
+  <div class="pb">Dat ben ik met je eens Tijmen. Gellukig is er altijd nog Floraboys.com die er wat welverdienden aandacht aan besteed.<br><br></div>
+</article>
+<article class="post" data-ts="20060605202100" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2006-06-05 20:21</span></div>
+  <div class="pb">Hmmmm.. 3 van de 4..niet slecht.,.....En wat Jong Oranje betreft..prima...ik wacht met smart op het EK 2008.</div>
+</article>
+<article class="post" data-ts="20060605203100" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2006-06-05 20:31</span></div>
+  <div class="pb">beloofd veel inderdaad, hoewel die fransen ook een aardig balletje kunnen trappen..wordt een leuke rematch over een paar jaar. Ajax moet btw NU die rechtshalf Kahlenberg van denemarken halen, toppertje.<br><br>Ik ga maar eens een voorspelling invullen, kijken of ik jullie wat geld afhandig kan maken.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

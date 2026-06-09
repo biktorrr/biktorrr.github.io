@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Boulevard – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Boulevard</h1>
+<p class="tm">12 posts · started 2006-11-22 10:07 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061122100700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-11-22 10:07</span></div>
+  <div class="pb">even iets anders, ik hoorde vandaag dat ons aller Aaf B.C. een boek uitgebracht heeft met de titel 'het jaar dat ik dertig werd'. Daarin schrijft ze over een relatie met meneertje knipperlicht. Goedemorgen Nederland wist vanmorgen te onthullen dat deze beste man niemand minder is dan Arnon Grunberg.<br>Dat betekend dat een niet nader genoemde floraboy opgelucht adem kan halen. Gedumpt worden voor een van 'slands topschrijvers is geen schande.</div>
+</article>
+<article class="post" data-ts="20061122102500" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-11-22 10:25</span></div>
+  <div class="pb">In de categorie "ancient history"...</div>
+</article>
+<article class="post" data-ts="20061122103600" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2006-11-22 10:36</span></div>
+  <div class="pb">Wie?</div>
+</article>
+<article class="post" data-ts="20061122103900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2006-11-22 10:39</span></div>
+  <div class="pb">Als je dit nog niet wist.........waar was je de afgelopen drie jaar?</div>
+</article>
+<article class="post" data-ts="20061122111000" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-11-22 11:10</span></div>
+  <div class="pb">niet aan het flaneren over welk een boulevard dan ook.<br><br>deze laat ik biggyiaans aan me passeren</div>
+</article>
+<article class="post" data-ts="20061122111300" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2006-11-22 11:13</span></div>
+  <div class="pb">Ok, over welke Floraboy gaat dit precies? Oli, Sicco? </div>
+</article>
+<article class="post" data-ts="20061122125300" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2006-11-22 12:53</span></div>
+  <div class="pb">He, betrek mij hier niet in! Ik ben heel trouw aan ABC, ik lees elke ochtend braaf haar column in de NRC next (ouder wordend klein meisje dat zich verbaast over de wondere wereld). </div>
+</article>
+<article class="post" data-ts="20061122150900" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2006-11-22 15:09</span></div>
+  <div class="pb">Nou Cootje, ik vroeg me dus af welke Floraboy gedumpt is door ABC. Mijn excuses als ik jou ook als kanshebber beschouwde. Naast mijn primary suspect heb ik besloten dat Merlijn en Misha wellicht ook als dark horse kunnen fungeren. </div>
+</article>
+<article class="post" data-ts="20061122153200" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2006-11-22 15:32</span></div>
+  <div class="pb">Ik lees ook altijd Aaf!</div>
+</article>
+<article class="post" data-ts="20061122161200" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2006-11-22 16:12</span></div>
+  <div class="pb">Ik neem aan dat ze niet meer op de Roetersstraat woont.</div>
+</article>
+<article class="post" data-ts="20061122162700" id="p11">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#11 · 2006-11-22 16:27</span></div>
+  <div class="pb">Aha, aangezien deze boy geen kranten leest maar wel over alles wat met eten te maken heeft (inclusief Brinta verpakkingen) had ik even moeite de autrice van een culinaire gids te koppelen aan NRC next.<br>ergo, voor biggy.<a href="http://nl.wikipedia.org/wiki/Aaf_Brandt_Corstius"> ABC</a><br>Ik wet niet welke boy haar behitst heeft, die jiddische gok zou het voor mij iig niet doen.<br><br></div>
+</article>
+<article class="post" data-ts="20061122163400" id="p12">
+  <div class="ph"><span class="pa">zeer hoog zwevende kiezer</span><span class="pm">#12 · 2006-11-22 16:34</span></div>
+  <div class="pb">Ad Bos Colectief?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

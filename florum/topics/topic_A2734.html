@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stukje stijl – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Stukje stijl</h1>
+<p class="tm">8 posts · started 2009-09-06 02:19 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090906021900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-09-06 02:19</span></div>
+  <div class="pb"><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/pjcZulxe8ok&hl=nl&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/pjcZulxe8ok&hl=nl&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></div>
+</article>
+<article class="post" data-ts="20090906022000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-09-06 02:20</span></div>
+  <div class="pb">Niet doorzappen, kijken.<br><br><object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/xHfvo_mY-tg&hl=nl&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/xHfvo_mY-tg&hl=nl&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object></div>
+</article>
+<article class="post" data-ts="20090906022700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2009-09-06 02:27</span></div>
+  <div class="pb">Ook namens Graspol-Jan en Zwikje.</div>
+</article>
+<article class="post" data-ts="20090906023000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-09-06 02:30</span></div>
+  <div class="pb">En natuurlijk ook Piet-Jezus en Tupperware.</div>
+</article>
+<article class="post" data-ts="20090906023500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2009-09-06 02:35</span></div>
+  <div class="pb">Staat een homo te dichtbij me<br>dus ik vraag nog: rot eens op<br>nou dat deed i niet<br>dus ik ram 'm voor z'n kop</div>
+</article>
+<article class="post" data-ts="20090906023900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-09-06 02:39</span></div>
+  <div class="pb">Een vriend van mij zit nu in Afganistan<br>die was voor de lol gaan schieten op de Taliban.<br>Dat is dan ook verboden.<br>He, waarom zitten ze d'r dan?!<br>Dat is bij wet verboden.</div>
+</article>
+<article class="post" data-ts="20090907094900" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2009-09-07 09:49</span></div>
+  <div class="pb">Ha dag Olicke, was je van het padje? Beffoindre!</div>
+</article>
+<article class="post" data-ts="20090908214500" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2009-09-08 21:45</span></div>
+  <div class="pb">Goed werk, Merlin. Wie zegt er dat er anderen nodig zijn om FsK te genereren? </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

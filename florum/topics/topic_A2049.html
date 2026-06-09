@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maandag klussen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Maandag klussen</h1>
+<p class="tm">6 posts · started 2007-05-25 08:10 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070525081000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-05-25 08:10</span></div>
+  <div class="pb">Boys, girls,<br><br>Nieuwe ronde nieuwe kansen: Maandag ga ik naar Eindhoven om het pandje op te kalefateren: schoonmaken, gordijnen ophangen, wasmachine installeren (als i er dan is), kast in elkaar sleutelen, WC bril installeren, etc. <br><br>Ik hoop met de luxewagen van m'n ouders op en neer naar Eindhoven te gaan en kan helden ophalen en terugbrengen.<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20070525093900" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-05-25 09:39</span></div>
+  <div class="pb">er is 's avonds geen quiz hoorde ik, dus noteer mij maar voor de hele dag. Als je met de auto vannuit je ouders gaat kan ik wel naar H-Ae komen met de trein. <br>Moet ik nog Taimny Toolkit meenemen, schuur-/boormachine etc?<br><br></div>
+</article>
+<article class="post" data-ts="20070525101800" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-05-25 10:18</span></div>
+  <div class="pb">ik kan er ook bij zijn<br></div>
+</article>
+<article class="post" data-ts="20070525113900" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2007-05-25 11:39</span></div>
+  <div class="pb">Is er zondag niets te doen? Dan kan ik namelijk wel helpen...</div>
+</article>
+<article class="post" data-ts="20070525120300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-05-25 12:03</span></div>
+  <div class="pb">hmmm. Ik zou graag willen maar we gaan zondag en maandag onze vloer leggen en hebben daarvoor ook een afspraak voor hulp gemaakt. <br>Zoals gezegd kun je wel m'n gordijnen meenemen, als je ze wil tenminste.<br><br>om het goed te maken kom ik binnenkort een avondje Eindhoven onveilig maken.</div>
+</article>
+<article class="post" data-ts="20070525151500" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2007-05-25 15:15</span></div>
+  <div class="pb">Toppertje! Ik heb op zeker technische hulp nodig. Dus:<br><br>@ TN: neem je boor mee en andere tools<br><br>@ Vic: gezelligjes<br><br>@ Co: Zondag wou ik naar de Ikea gaan (als i open is), dus wees welkom om gezellig lampjes uit te zoeken!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

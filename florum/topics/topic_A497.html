@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beachbop 2002 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Beachbop 2002</h1>
+<p class="tm">8 posts · started 2002-05-26 19:11 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020526191100" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2002-05-26 19:11</span></div>
+  <div class="pb">Sunday 26 May 2002<br>Lido Bloemendaal : Beachbop<br>Jayh Samson<br>Chew Fu Phat<br>Eric de Man<br><br>------------------------------------------------------------<br><br>Sunday 26 May 2002<br>Woodstock : Beachbop<br>Systex (NL)<br>dj Funk d Void (UK)<br>dj Marnix, dj Tommy, dj Josz (NL)<br><br>------------------------------------------------------------<br><br>Sunday 26 May 2002<br>De Kust : Beachbop<br>dj Ti\ësto<br>dj Funkerman<br>dj Dazzle<br><br>------------------------------------------------------------<br><br>Sunday 26 May 2002<br>De Zomer : Beachbop<br>dj Chaos<br>dj L-Dopa<br>dj Adi-J<br><br>------------------------------------------------------------<br><br>Ik ga vanavond ff sjekken...als het niet te hard regent.<br></div>
+</article>
+<article class="post" data-ts="20020526191200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-05-26 19:12</span></div>
+  <div class="pb">Verder<br><br>Sunday 30 June 2002<br>All beachhouses : Beachbop<br><br>Sunday 28 July 2002<br>All Beachhouses : Beachbop<br><br>Sunday 25 August 2002<br>All beachhouses : Beachbop<br><br>Sunday 1 September 2002<br>All beachhouses : Final Party or the year aka Beachbop<br></div>
+</article>
+<article class="post" data-ts="20020526191800" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-05-26 19:18</span></div>
+  <div class="pb">http://www.soulplanet.net/bloemendaal/bloemendaal.mp3</div>
+</article>
+<article class="post" data-ts="20020526192000" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-05-26 19:20</span></div>
+  <div class="pb">http://www.beachbop.com/b_1.html<br></div>
+</article>
+<article class="post" data-ts="20020526200700" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2002-05-26 20:07</span></div>
+  <div class="pb">op zich een goed idee, alleen hoe wil je daar naar toe gaan en willen er nog meer mensen mee?</div>
+</article>
+<article class="post" data-ts="20020527004300" id="p6">
+  <div class="ph"><span class="pa">Tymen</span><span class="pm">#6 · 2002-05-27 00:43</span></div>
+  <div class="pb">Ik ben voor,als ik er was geweest.Was zeker lollig vorig jaar en de jaren daarvoor trouwens ook...maar het is wel leuker als het niet regent..en er wat meer mensen meegaan<br>volgende keer misschien</div>
+</article>
+<article class="post" data-ts="20020527141300" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-05-27 14:13</span></div>
+  <div class="pb">tis nu toch elke laatste4 zonbdag van de maand? <br>Ik wil de volgende wel mee.. slachu</div>
+</article>
+<article class="post" data-ts="20020527160400" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2002-05-27 16:04</span></div>
+  <div class="pb">Was koel...geen slecht weer...veel mensjes...alleen niet zo lang geweest....vooral Tiesto aangezien.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

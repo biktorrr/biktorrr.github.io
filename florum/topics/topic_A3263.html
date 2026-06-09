@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doemsdag Topiquille – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Doemsdag Topiquille</h1>
+<p class="tm">7 posts · started 2012-12-21 12:46 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20121221124600" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1 · 2012-12-21 12:46</span></div>
+  <div class="pb"><p><br>	Hier nog geen directe signalen van de komst van het Rijk Gods, poolomkering of zondvloed. Zo zie ik ons FDK 2013 nog wel halen. Hoe gaat het bij jullie?</p><br></div>
+</article>
+<article class="post" data-ts="20121221125610" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2012-12-21 12:56</span></div>
+  <div class="pb">Ik ben wel lichtelijk flatulent, misschien een voorteken?</div>
+</article>
+<article class="post" data-ts="20121223163841" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2012-12-23 16:38</span></div>
+  <div class="pb">Nou, daar zijn we genadig vanaf gekomen. </div>
+</article>
+<article class="post" data-ts="20121223204003" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2012-12-23 20:40</span></div>
+  <div class="pb">behalve de Twinkies dan<br><br><a href="http://www.someecards.com/usercards/viewcard/MjAxMi01ODNiZjc2NzAwMzQ5Y2Fm"><img src="http://static.someecards.com/someecards/usercards/MjAxMi01ODNiZjc2NzAwMzQ5Y2Fm.png" alt="someecards.com - So, Twinkies, which were supposed to survive a nuclear holocaust, die 3 weeks before the end of the world? Well Played, Mayans..." /></a></div>
+</article>
+<article class="post" data-ts="20121225153012" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2012-12-25 15:30</span></div>
+  <div class="pb">Lieve Mona,<br><br>Zojuist ben ik vol in mijn bakkes geürineerd door een baby van twee weken oud. Dit lijkt mij een duidelijk signaal dat het einde der tijden voor de deur staat. Wat moet ik nu nog met al mijn airmiles? Graag spoedig antwoord.<br><br>P.S. Gister vond ik in de luier van bovengenoemde baby een okerkleurig portret van onze nieuwe staatssecretaris van natuur en landbouw, ik weet nog niet hoe dit te duiden. Zie ik spoken door slaapgebrek of doen we wellicht iets verkeerd met de voeding? <br><br></div>
+</article>
+<article class="post" data-ts="20121225234007" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2012-12-25 23:40</span></div>
+  <div class="pb">Amice, dat kan geen toeval zijn. Ik scheet gisteren spontaan een letter S. En daarna een heerlijke spetter douche overigens...</div>
+</article>
+<article class="post" data-ts="20121226175400" id="p7">
+  <div class="ph"><span class="pa">Mona</span><span class="pm">#7 · 2012-12-26 17:54</span></div>
+  <div class="pb">Beste Joost,<br><br>Dat was vast even schrikken zeg! Maar ik kan je geruststellen:<br><br>Kinderen van twee weken oud kennen nog niet het verschil tussen een drol en een trol. Dat jullie dus een dikke trol in de luier aantroffen is een euvel dat wel vaker voorkomt tijdens deze fase, niks om je zorgen over te maken dus. Pak die ontspanning maar weer.<br><br>Liefs,<br><br>Mona</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

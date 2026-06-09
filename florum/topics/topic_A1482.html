@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEIT – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NEIT</h1>
+<p class="tm">3 posts · started 2005-04-29 16:21 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050429162100" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2005-04-29 16:21</span></div>
+  <div class="pb">DEN HAAG - Misdaadverslaggever Peter R. de Vries heeft zijn eigen politieke partij opgericht. De Vries wil met de Partij voor Rechtvaardigheid, Daadkracht en Vooruitgang (PRDV) meedoen aan de verkiezingen van 2007. De journalist werkt in de PRDV samen met oud-politievoorlichter Klaas Wilting en Jan Nagel, oprichter van Leefbaar Hilversum. <br><br></div>
+</article>
+<article class="post" data-ts="20050429162400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-04-29 16:24</span></div>
+  <div class="pb">zoooo terecht dat Jan Nagel weer aan het bikkelen is... Zooo terecht...</div>
+</article>
+<article class="post" data-ts="20050429163700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-04-29 16:37</span></div>
+  <div class="pb">Ze gaan voor 12 tot 16 zetels. Is het neyt besoindre.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

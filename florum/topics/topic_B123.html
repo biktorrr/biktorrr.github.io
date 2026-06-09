@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Balveldje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Balveldje</h1>
+<p class="tm">13 posts · started 2002-06-29 12:33 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020629123300" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2002-06-29 12:33</span></div>
+  <div class="pb">Misschien iets om het Florapark te ontzien, in de buurt van het CIOS in overveen ligt een mooi balveldje met kleine goaltjes. Ik zag dat vanochtend toen ik daar aan het lopen was.</div>
+</article>
+<article class="post" data-ts="20020629140100" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2002-06-29 14:01</span></div>
+  <div class="pb">bij het oude marine hospitaal of daar tegenover de boerderij van kraantjelek (met die kamelen)?<br>Ik weet nl. wel dat er op dat langoedje een groot veld is waar ik geloof alleen het CIOS zo nu en dan wat doet en de scouting zit daar ook in de buurt.Maar dat was al weer een tijd geleden...het kan best zijn dat die gasten weer verhuisd zijn..naar bijvoorbeeld de plaats van het marinehospitaal.<br></div>
+</article>
+<article class="post" data-ts="20020629171400" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-06-29 17:14</span></div>
+  <div class="pb">laten we het inderdaad zo centraal mogelijk houden</div>
+</article>
+<article class="post" data-ts="20020629182100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-06-29 18:21</span></div>
+  <div class="pb">Bij Middenduin, dus stukje duinlustweg op. Is vlak bij het ouderlijk huis van de Tube, bus 7.</div>
+</article>
+<article class="post" data-ts="20020630183100" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-06-30 18:31</span></div>
+  <div class="pb">vroeger was ik voor geweest, nu denk ik mmmnoi</div>
+</article>
+<article class="post" data-ts="20020701111900" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2002-07-01 11:19</span></div>
+  <div class="pb">ben voor om dat eens te proberen. je kunt lopen vanaf station overveen of met bus 7 (uitstappen bij Tubes ouderlijk huis). Dan ben je er zo.</div>
+</article>
+<article class="post" data-ts="20020701191700" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2002-07-01 19:17</span></div>
+  <div class="pb">In de zomer zijn er toch niet zo veel mensjes.....ik loop er nog wel eens langs om te kijken voor hoeveel personen dat veldje geschikt is.</div>
+</article>
+<article class="post" data-ts="20020702100000" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-07-02 10:00</span></div>
+  <div class="pb">Het Florapark ligt er trouwens toch wel redelijk bij de laatste weken? </div>
+</article>
+<article class="post" data-ts="20020702115200" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2002-07-02 11:52</span></div>
+  <div class="pb">Ja, dat vind ik ook. Het is niet echt nodig om te verkassen.</div>
+</article>
+<article class="post" data-ts="20020702122600" id="p10">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#10 · 2002-07-02 12:26</span></div>
+  <div class="pb">huh? jij was toch deze hele topic begonnen<br>?</div>
+</article>
+<article class="post" data-ts="20020703165800" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2002-07-03 16:58</span></div>
+  <div class="pb">Ja dat klopt victor, als het weinig tekst omvat blijk jij toch nog iets bij te kunnen houden.</div>
+</article>
+<article class="post" data-ts="20020703180700" id="p12">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#12 · 2002-07-03 18:07</span></div>
+  <div class="pb">het Florapark is wel echt een bagger veld, wat mij betreft zijn alternatieven zeker interessant.</div>
+</article>
+<article class="post" data-ts="20020704111200" id="p13">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#13 · 2002-07-04 11:12</span></div>
+  <div class="pb">Ja, als het een beter veld is, kunnen we 't altijd 's pro-<br>beren. Als 't niks is, zijn we zo weg. Ik bedoel, de Flora-<br>boys trainen wel op het beste veld, natuurlijk.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

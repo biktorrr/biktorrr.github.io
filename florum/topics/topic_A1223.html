@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADVOCAAT SUCKS – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ADVOCAAT SUCKS</h1>
+<p class="tm">13 posts · started 2004-06-19 23:31 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040619233100" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2004-06-19 23:31</span></div>
+  <div class="pb">LEKKER KLOTTEEHH DICK!!!<br><br>Wat een shit wissel</div>
+</article>
+<article class="post" data-ts="20040620030700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-06-20 03:07</span></div>
+  <div class="pb">LUL!</div>
+</article>
+<article class="post" data-ts="20040620114900" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2004-06-20 11:49</span></div>
+  <div class="pb">EXTREME KLOOTZAK!!!!!!<br><br></div>
+</article>
+<article class="post" data-ts="20040620121300" id="p4">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#4 · 2004-06-20 12:13</span></div>
+  <div class="pb">hersenloze zak diaree !</div>
+</article>
+<article class="post" data-ts="20040620140700" id="p5">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#5 · 2004-06-20 14:07</span></div>
+  <div class="pb"><div style="font-size: 28 px;">PIJN !</div></div>
+</article>
+<article class="post" data-ts="20040620151100" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2004-06-20 15:11</span></div>
+  <div class="pb">ik heb op de engelsen de 2e helft gekeken. Die zeiden continue:<br>als dit de finale was geweest, hadden we een fantastisch EK gehad. Die hadden het te doen met de Nederlanders aangezien de Duitsers volgens hen gewoon geen recht hebben om door te gaan.<br><br>Maar wat een wedstrijd en wat ongelooflijk kut dat het zo liep.</div>
+</article>
+<article class="post" data-ts="20040620154300" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-06-20 15:43</span></div>
+  <div class="pb">Waar was je BigT? We hebben je gemist.</div>
+</article>
+<article class="post" data-ts="20040621104300" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2004-06-21 10:43</span></div>
+  <div class="pb">Robben eruidt, BigT er nied bij.</div>
+</article>
+<article class="post" data-ts="20040621143600" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2004-06-21 14:36</span></div>
+  <div class="pb"><img src="http://members.home.nl/gtsttheclown/Plaatjes/advocaat.jpg"><br><br><img src="http://img16.photobucket.com/albums/v47/Foo_niks/6fuk.gif"></div>
+</article>
+<article class="post" data-ts="20040621152800" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-06-21 15:28</span></div>
+  <div class="pb">Hier nog een<br><br><img src="http://www.prinshendrikkade.com/modules/PNphpBB2/files/dick.jpg"></div>
+</article>
+<article class="post" data-ts="20040625220800" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2004-06-25 22:08</span></div>
+  <div class="pb"><img src="http://www.telegraaf.nl/multimedia/archive/00421/wisselbeker_421391a.jpg"></div>
+</article>
+<article class="post" data-ts="20040626160900" id="p12">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#12 · 2004-06-26 16:09</span></div>
+  <div class="pb">DICK ADVOCAAT<br>(Holland)<br>Age: 56<br>Salary: £650,000<br>Euro 2004<br>Quarter-finals*<br>Value per game: (so far) £216,666</div>
+</article>
+<article class="post" data-ts="20040706174000" id="p13">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#13 · 2004-07-06 17:40</span></div>
+  <div class="pb">DIkkie gaat dus per 1 augustus bamos en willem met hem (die ik trouwens gister de rotonde bij de korte verspronkweg zag nemen in zijn dikke zwarte wagen).<br> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

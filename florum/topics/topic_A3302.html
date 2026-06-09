@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ingrijpen in syrie? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ingrijpen in syrie?</h1>
+<p class="tm">6 posts · started 2013-08-28 11:31 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130828113152" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2013-08-28 11:31</span></div>
+  <div class="pb">Nou boys, wat denken jullie? Assad terug naar het stenen tijdperk bombarderen? Ons niet in de maling laten nemen door de cia of de boel daar hoe dan ook de boel laten? Mijn voorstel is verder dit topic zoveel mogelijk fact free te houden, das wel een keer leuk toch?</div>
+</article>
+<article class="post" data-ts="20130828114640" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2013-08-28 11:46</span></div>
+  <div class="pb">Stond ik toch mooi bijna vier dagen aan kop met Hansje jr! </div>
+</article>
+<article class="post" data-ts="20130828120223" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2013-08-28 12:02</span></div>
+  <div class="pb">Een duivels dilemma Jazz. Als de VS met minimale bombardementen op vliegvelden een no-fly zone zouden kunnen realiseren zou dat mijns inziens wel eens de minst slechte optie kunnen zijn.</div>
+</article>
+<article class="post" data-ts="20130828193348" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2013-08-28 19:33</span></div>
+  <div class="pb">Ik vind de rol van Israel interessant en zou daar graag een analyse over lezen. Naar verluidt hebben zij de smoking gun aan Obama geleverd. Ze zullen daarmee anticiperen op Amerikaanse inmenging en een mogelijke escalatie door Iran. </div>
+</article>
+<article class="post" data-ts="20130831180417" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2013-08-31 18:04</span></div>
+  <div class="pb">Ik wil even mijn verontwaardiging uitspreken over die walgelijke tea-sipping surrender monkeys. Jezus, bedanken ze de Amerikanen zo voor hun redding tijdens de Tweede Wereldoorlog. Maar gelukkig kunnen de Amerikanen nu terugslaan. Destijds, met de cheese-eating surrender monkeys (nu die dappere Republique Francaise, die rug aan rug met God's own country de vrijheid verdedigt), hadden ze eigenlijk geen poot om op te staan, en moesten ze hun toevlucht nemen tot het ombenoemen van verschillende soorten voedsel. Maar nu is het anders. De huidige, door recessie getroffen Britse economie heeft nog twee inkomstenbronnen: (uiteraard) EU-subsidies, en geld dat teruggestuurd wordt door Britse acteurs die werk hebben gevonden in de tv-serie Game of Thrones. HBO moet ze er allemaal in een keer uitgooien, en vervangen door acteurs met keurige Amerikaanse accenten. </div>
+</article>
+<article class="post" data-ts="20130831195412" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2013-08-31 19:54</span></div>
+  <div class="pb"><br><a hreaf="http://www.hypable.com/2013/08/29/game-of-thrones-adds-tremes-michiel-huisman-to-cast-but-who-will-he-play/>of Michael Huisman natuurlijk </a><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

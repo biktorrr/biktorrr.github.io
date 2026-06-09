@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpaDingetjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SpaDingetjes</h1>
+<p class="tm">9 posts · started 2001-11-14 12:18 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011114121800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2001-11-14 12:18</span></div>
+  <div class="pb">De fotoos zullen zsm volgen.Ik heb ze al gebegluurd,nu moet ik ze nog renamen en converteren.Ik ben alleen tamelijk verbolgen over het feit dat sommigen onder ons nauwelijks tot helemaal niet hebben opgelet toen ik uitlegde hoe je met deze camera fotoos moet maken.Ik geloof dat er 3 zijn die helemaal niet zijn bewogen de rest of niet helemaal ,of erger.Ook zeker leuk al die kiekjes over de destructie van HSDS..maar dus allemaal mislukt..dan hadden we dus nog 10 fotoos meer kunnen nemen...<br>Goed.Genoeg gemekker over de fotoos, sommige zijn nog best cool zoals de bloteasspicture en nog een paar van  hangende/etende dudes.Ik zal ze morgen oploaden.<br><br>Oja...Ik heb nog wat nameting gedaan.Afhankelijk van het borrelglaasje zal je bij een HoP ongeveer 1,8 tot 2,4 liter bier innemen.Als je sherryglaasjes helemaal vol zou doen zou je denk ik zelfs uitkomen op de drie liter die er eerst voor stond.Met die kleine glaasjes in Spa kom je op ongeveer 1,8 a 2 liter uit.</div>
+</article>
+<article class="post" data-ts="20011114125300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2001-11-14 12:53</span></div>
+  <div class="pb">Da's dus nog minder dan 'n fles Martini per uur. Dat valt<br>me echt tegen: dat drink ik makkelijk in 'n uur. Of mis-<br>schien ook niet. Nou ja, het was gezellig.</div>
+</article>
+<article class="post" data-ts="20011114131800" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2001-11-14 13:18</span></div>
+  <div class="pb">Tijmen, hoe ga ik mijn sp(u)(e)llen terugkrijgen?</div>
+</article>
+<article class="post" data-ts="20011114145600" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-11-14 14:56</span></div>
+  <div class="pb">Niet Maarten, die kolonisten is voor Gijs.<br><br></div>
+</article>
+<article class="post" data-ts="20011114150500" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2001-11-14 15:05</span></div>
+  <div class="pb">Leuk kadootje inderdaad. Heb ik er ook nog een stem in of niet? :-(</div>
+</article>
+<article class="post" data-ts="20011115141000" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-11-15 14:10</span></div>
+  <div class="pb">Gijs bedankt je hartelijk. Hij zei 't wel intens te vinden<br>dat i dat zomaar kreeg, maar 't wel "hapsteburdi" te vinden.</div>
+</article>
+<article class="post" data-ts="20011115145400" id="p7">
+  <div class="ph"><span class="pa">MK</span><span class="pm">#7 · 2001-11-15 14:54</span></div>
+  <div class="ps">Dat was ik dus</div><div class="pb">BABSTEBURDIE SNARFSNARF<br>Die tweede TN was MK of toch GAIS!</div>
+</article>
+<article class="post" data-ts="20011115202800" id="p8">
+  <div class="ph"><span class="pa">GIJS</span><span class="pm">#8 · 2001-11-15 20:28</span></div>
+  <div class="pb">Nee, ik was het...ik heb kolonisten nu!!!!!</div>
+</article>
+<article class="post" data-ts="20011116125500" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2001-11-16 12:55</span></div>
+  <div class="pb">heej,<br>daggais</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

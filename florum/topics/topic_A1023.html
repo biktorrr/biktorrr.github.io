@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uiteten met de spelersvrouwen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Uiteten met de spelersvrouwen</h1>
+<p class="tm">6 posts · started 2003-10-27 13:10 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031027131000" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-10-27 13:10</span></div>
+  <div class="pb"><img src="http://www.prinshendrikkade.net/gallery/canons50/2003_09_21/big/IMG_0821.jpg"><br></div>
+</article>
+<article class="post" data-ts="20031027205600" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-27 20:56</span></div>
+  <div class="pb">eehhmm?</div>
+</article>
+<article class="post" data-ts="20031027212700" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-10-27 21:27</span></div>
+  <div class="pb">lekker groot<br></div>
+</article>
+<article class="post" data-ts="20031028062700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-10-28 06:27</span></div>
+  <div class="pb">Was dit niet ter ere van Marije's verjaardag in Donatelli's of iets dergelijks, ik kan mij er maar bar weinig van herinneren. </div>
+</article>
+<article class="post" data-ts="20031028094300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-10-28 09:43</span></div>
+  <div class="pb">Hoe kan het toch dat dit soort dingen altijd uitlekken een dag voor we moeten spelen!? Hey, sorry Vic, het stelde niks voor, hoor. </div>
+</article>
+<article class="post" data-ts="20031028115900" id="p6">
+  <div class="ph"><span class="pa">PTc</span><span class="pm">#6 · 2003-10-28 11:59</span></div>
+  <div class="pb">ach, als je je vriendin een keertje moet uitlenen om te winnen, dan doe je dat als Floraciet gewoon...<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

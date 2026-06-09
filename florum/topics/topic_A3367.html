@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kerstbiertjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kerstbiertjes</h1>
+<p class="tm">7 posts · started 2014-12-17 22:04 by Penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20141217220413" id="p1">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#1 · 2014-12-17 22:04</span></div>
+  <div class="pb"><p><br>	Zijn er nog plannen voor biertjes met of zonder verloren zonen de komende kerstvakantie? Zondag bijvoorbeeld in Amsterdam zou kunnen.</p><br></div>
+</article>
+<article class="post" data-ts="20141219135822" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2014-12-19 13:58</span></div>
+  <div class="pb">Vanavond Amsterdam? Maandag-avond amsterdam? Dit weekend zit ik in HAarlemmetjes</div>
+</article>
+<article class="post" data-ts="20141219183806" id="p3">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#3 · 2014-12-19 18:38</span></div>
+  <div class="pb">Maandag is een mogelijkheid tot een optie. Nog andere boys die willen aanhaken?</div>
+</article>
+<article class="post" data-ts="20141220144432" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2014-12-20 14:44</span></div>
+  <div class="pb">Ik ben tot derde kerstdag in Zweden.</div>
+</article>
+<article class="post" data-ts="20141222150813" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2014-12-22 15:08</span></div>
+  <div class="pb">Lukt mij niet Co. </div>
+</article>
+<article class="post" data-ts="20141222165136" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2014-12-22 16:51</span></div>
+  <div class="pb">Ah, de GFK '16, de Grote Floraboys Kerstborrel, dit jaar vallend op 22 december... In Amsterdam ben ik 'r denkelijk bij. 't IJ?</div>
+</article>
+<article class="post" data-ts="20141222171505" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2014-12-22 17:15</span></div>
+  <div class="pb">Voor Haarlem zou ik open staan. Amsterdam tik ik voor kerst even af.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

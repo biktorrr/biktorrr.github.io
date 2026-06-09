@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manchester United – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Manchester United</h1>
+<p class="tm">6 posts · started 2002-01-06 22:58 by Wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020106225800" id="p1">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#1 · 2002-01-06 22:58</span></div>
+  <div class="pb">2-0 Achter 20 minuten voor tijd.<br><br>Ruudje van N. erin en dan gewoon binnen 10 minuten 3-2 voorstaan. Respect voor Van the Man.</div>
+</article>
+<article class="post" data-ts="20020106225900" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2002-01-06 22:59</span></div>
+  <div class="pb">Trouwens, wie heeft er gezien hoe Huga Camps over die bokster heen kwijlde? (Sunday United) Dat was echt genant.</div>
+</article>
+<article class="post" data-ts="20020107114800" id="p3">
+  <div class="ph"><span class="pa">Merlijn &quot;Materiaalmannetje&quot; Sevenster</span><span class="pm">#3 · 2002-01-07 11:48</span></div>
+  <div class="pb">Nou, da's toch gewoon zijn manier van interviewen?<br>Ik heb niks bijzonders gemerkt, eigenlijk.</div>
+</article>
+<article class="post" data-ts="20020107132400" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-01-07 13:24</span></div>
+  <div class="pb">volgens mij zat ie onder tafel haar gewoon een beetje<br>te begunstigen.. echt net sonja en mick jaggert, getsie<br><br>ruud=heersen AEM</div>
+</article>
+<article class="post" data-ts="20150213233203" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2015-02-13 23:32</span></div>
+  <div class="pb">mch, can you share your opinion on louis van ga al enriching your language? His translations from Dutch have been getting a lot of attention here.</div>
+</article>
+<article class="post" data-ts="20150216160807" id="p6">
+  <div class="ph"><span class="pa">MCH</span><span class="pm">#6 · 2015-02-16 16:08</span></div>
+  <div class="pb">Hi Joost,<br>Well the thing is, there are so many English clubs currently being managed by non-English speakers that LvGs mangling of English hasnt made that much of an impression. With the exception of Wenger and Houiller, whose English is excellent, LvGs (rather idiosyncratic) Dutch English is not much worse than  Mourinhos strange dialect and considerably more comprehensible than Capellos monosyllabic gruntings, for instance.<br><br>That said, because Im a football nerd I do sometimes watch LvGs press conferences and they can be really strange. Now the Manchester press pack are still haunted by the way Ferguson used to treat them  hed lie to them as a matter of course and even ban journalists who had the temerity to ask difficult questions (try doing that in Spain). Now add the unmitigated disaster of last year with Moyes, and this means none of them have been too hostile yet.<br><br>So, back to the LvG press conference I saw  bland, deferential questions from the still-chastened journos, non-answers from LvG. He then started pontificating on the importance of the juice system in Man Utds football.  What can he mean? Maybe the fitness staff hes brought from Holland have come up with a miracle system for giving players more energy? (juice being old-fashioned American slang for fuel). He kept on about juice for a couple of minutes, to general bemusement, before pointing to Giggs and saying that he was a product of the juice system.<br><br>Then the penny dropped - ahhh, the youth system. Rather interestingly though, nobody dared to point out his error (unlike what would happen in Barcelona or Munich). Louis probably thought the problem was the journalists lack of intelligence rather than his rather special English.<br><br>So in short, yes Louis English isnt great, but were so used to foreign players and managers that it doesnt raise too many eyebrows, add this to the North Korea-style atmosphere that Ferguson cultivated, and the fact that Moyes was such a loser has meant hes had a pretty easy ride, despite the fact that the football has been pretty unconvincing so far.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

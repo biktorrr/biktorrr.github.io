@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bierbuik mythe? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bierbuik mythe?</h1>
+<p class="tm">1 post · started 2003-09-27 15:10 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030927151000" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-09-27 15:10</span></div>
+  <div class="pb"><br>LONDEN - Britse wetenschappers hebben de hardnekkige mythe ten gronde gericht over de relatie tussen het drinken van bier en de buikomvang. Bier blijkt helemaal geen bierbuik te veroorzaken, zo meldde de Britse krant The Times zaterdag op gezag van onderzoeker Martin Marmot van University College London. <br><br>Een groep wetenschappers die het fenomeen bierbuik wilde onderzoeken, ging uit van de geijkte idee\ën dat veel bier onlosmakelijk verbonden is aan de buikomvang. "Maar we vonden dat er weinig echte bewijzen voor zijn in de wetenschappelijke literatuur'', aldus Marmot. <br><br>Om de zaak diepgravend te onderzoeken, vertrok het team naar Tsjechi\ë dat claimt de hoogste bierconsumptie per hoofd van de bevolking te kennen ter wereld. Onderzoek onder en groep vana bijn 2000 mensen leidde tot de opmerkelijke conclusie dat er geen significante relatie bestaat tussen bierconsumptie en bierbuiken. Sterker nog; vrouwen die bier plachten te drinken, wogen over de hele linie genomen minder dan vrouwen die helemaal geen bier dronken. <br><br>In het onderzoek, dat is gepubliceerd in het wetenschappelijke tijdschrift European Journal of Clinical Nutrition, hebben de wetenschappers factoren als roken meegewogen. Echte verschillen tussen Tsjechische bieren en Brits bier vonden ze ook niet."De Tsjechen brouwen uitstekend bier, maar het bevat hetzelfde aantal calorie\ën en dezelfde hoeveelheden suiker en alcohol", aldus Marmot<br><br>(van de moedersite: Prinshendrikkade.com)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

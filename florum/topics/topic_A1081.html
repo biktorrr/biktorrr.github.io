@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puerto Rico= gamen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Puerto Rico= gamen</h1>
+<p class="tm">11 posts · started 2004-01-01 14:29 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040101142900" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-01-01 14:29</span></div>
+  <div class="pb">De Noordegraafjes (lees:ik) hebben een nieuw spel <a href="http://www.spellengek.nl/recensies/puertorico.htm"> Puerto Rico </a>. Ik heb gister met Lara en Bart-de-buurman een proefdraai gedaan. Het is een wat moeilijk spel om in te komen maar opzich zit het super in elkaar en biedt buiten het spel an sich genoeg cheique terminolgie om ons mee te vermaken ('privilege', Hacienda, etc). Nu leek het me leuk om a.s vrijdag een oudhollandse spelbijeenkomst te doen op het Kleverpark, zodat we dit spel met echte 'masters of gaming' kunnen uitproberen.<br><br>Wie's voor?</div>
+</article>
+<article class="post" data-ts="20040101154000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2004-01-01 15:40</span></div>
+  <div class="pb">sounds like a plan...</div>
+</article>
+<article class="post" data-ts="20040101162500" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-01-01 16:25</span></div>
+  <div class="pb">Ok....ik zal er zijn maar moet je dan niet werken?</div>
+</article>
+<article class="post" data-ts="20040101163100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-01-01 16:31</span></div>
+  <div class="pb">ma brown's gaat pas weer volgende week open</div>
+</article>
+<article class="post" data-ts="20040101163800" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2004-01-01 16:38</span></div>
+  <div class="pb">lijkt me fijn.. J-L@u moet werken dus ik ben er ook </div>
+</article>
+<article class="post" data-ts="20040101175700" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-01-01 17:57</span></div>
+  <div class="pb">Ik hoor dus net dat ik naar The Return of the King moet morgen en die is pas na half tien afgelopen. Dus ik ben er niet. Misschien wel later maar dat spel zal ongetwijfeld te lang duren.</div>
+</article>
+<article class="post" data-ts="20040101192600" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-01-01 19:26</span></div>
+  <div class="pb">Kan trouwens wel morgen overdag allemaal leuke dingen doen. Niemand in voor een sessie vanaf 1u ofzo? Buiten is het toch maar koud.</div>
+</article>
+<article class="post" data-ts="20040101221200" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2004-01-01 22:12</span></div>
+  <div class="pb">ik ben nog steeds voor, ook smiddags</div>
+</article>
+<article class="post" data-ts="20040101225800" id="p9">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#9 · 2004-01-01 22:58</span></div>
+  <div class="pb">'s middags moeten we andere dingen doen zoals fietsen kopen, e.d.Dus helaas is alleen 's avonds een optie.</div>
+</article>
+<article class="post" data-ts="20040102164100" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2004-01-02 16:41</span></div>
+  <div class="pb">Tube en ik zijn nu bier aan het brouwen en vanavond ga ik maar eens niet een master of gaming uithangen.</div>
+</article>
+<article class="post" data-ts="20040102172700" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2004-01-02 17:27</span></div>
+  <div class="pb">Ik bel vanavond na de film wel even.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

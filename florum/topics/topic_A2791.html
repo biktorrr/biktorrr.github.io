@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>All I want for X-mas – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">All I want for X-mas</h1>
+<p class="tm">9 posts · started 2009-12-17 12:26 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091217122600" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-12-17 12:26</span></div>
+  <div class="pb">Bakken,<br><br>Worden jullie ook zo gelukkig van <a href="http://www.youtube.com/watch?v=_ymlnxMZkXA">All I want for X-mas is you</a> op de radio? Deel dat dan met die boys als je 'm weer hoort en tik 'm aan in dit topic!</div>
+</article>
+<article class="post" data-ts="20091217124700" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2009-12-17 12:47</span></div>
+  <div class="pb">Tja op mijn werk hebben ze Sky radio dus das dan ongeveer 3 x tik in de afgelopen 4 uur!<br>  </div>
+</article>
+<article class="post" data-ts="20091217131800" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2009-12-17 13:18</span></div>
+  <div class="pb">kwestie van BNR luisteren of 1lleg@@l d0wnlo@den</div>
+</article>
+<article class="post" data-ts="20091217133200" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2009-12-17 13:32</span></div>
+  <div class="pb">Oh mijn god, trauma's van vakkenvullen bij AH Hillegom komen boven, waar deze cd (die ongeveer een half uur duurt) heel december gans de dag in de DJ Repeatmodus stond. </div>
+</article>
+<article class="post" data-ts="20091217134400" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2009-12-17 13:44</span></div>
+  <div class="pb">Vakkenvullen bij AH Hillegom! Dat betekent dat alle goeds dat je verder nog in je leven overkomt je volledig gegund is. Ik zal nooit meer jaloers op je zijn. </div>
+</article>
+<article class="post" data-ts="20091217171500" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2009-12-17 17:15</span></div>
+  <div class="pb">Kerstmis brengt alle booys tezamen.<br></div>
+</article>
+<article class="post" data-ts="20091217174800" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2009-12-17 17:48</span></div>
+  <div class="pb">Tik</div>
+</article>
+<article class="post" data-ts="20091218090600" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2009-12-18 09:06</span></div>
+  <div class="pb"><a href="http://www.youtube.com/watch?v=UHlhF_eOHeQ">Deze </a> is anders een welkome afwisseling...<br>NSFW<br></div>
+</article>
+<article class="post" data-ts="20091218092500" id="p9">
+  <div class="ph"><span class="pa">George</span><span class="pm">#9 · 2009-12-18 09:25</span></div>
+  <div class="ps">Albertheijnhillegommuziek</div><div class="pb">Vanochtend zes keer. Nummer blijkt ook tune van kerstperiode NL1. Mijn reactie is idd nog rdelijk positief in tegenstelling tot wanneer ergens poingpoingpoingpoooingpopopopopoooing WHAM losgaat met last christmas. Dan ben ik in staat als een tijmen met een bijl hard en trefzeker de hifi van de desbetreffende winkelier te splijten. Daarna ben ik in staat het hele gebouw op te blazen om ieder spoor uit te wissen. Niet van de bende maar van de muziek.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

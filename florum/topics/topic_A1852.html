@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto&#x27;s trouwerij Big T en Jlau – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto&#x27;s trouwerij Big T en Jlau</h1>
+<p class="tm">7 posts · started 2006-09-21 12:24 by Fotograaf</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060921122400" id="p1">
+  <div class="ph"><span class="pa">Fotograaf</span><span class="pm">#1 · 2006-09-21 12:24</span></div>
+  <div class="pb">waar blijven de eerste foto's???</div>
+</article>
+<article class="post" data-ts="20060921141200" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-09-21 14:12</span></div>
+  <div class="pb">er zijn een paar leuke, ik zal kijken of ik ze op de florahyves kan krijgen.</div>
+</article>
+<article class="post" data-ts="20060921155500" id="p3">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#3 · 2006-09-21 15:55</span></div>
+  <div class="pb">stuur ze anders gezipt naar mij, dan kunnen ook de niet-hyvers ze bekijken</div>
+</article>
+<article class="post" data-ts="20060921171700" id="p4">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#4 · 2006-09-21 17:17</span></div>
+  <div class="pb">De foto's heb ik toch maar op Hyves gezet geen idee hoe dat werkt met Zippen enzo, sorry (je moet me nog maar eens een lesje geven Vic).<br>Maar ze staan hier http://laraha.hyves.nl ook te bekijken voor mensen die geen hyves hebben.</div>
+</article>
+<article class="post" data-ts="20060922104700" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-09-22 10:47</span></div>
+  <div class="pb">cool zeg, er zitten erg leuke foto's bij.<br><br>Zeker materiaal voor een nieuwe floraboys-voorpagina.</div>
+</article>
+<article class="post" data-ts="20060922190700" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2006-09-22 19:07</span></div>
+  <div class="pb">merkwaardige toevalligheid...<br><br>Na megahit 'Laura' heeft volksheld Jan Smit nu een knaller van een nummer op z'n nieuwe cd genaamd 'Tobago'<br></div>
+</article>
+<article class="post" data-ts="20060927093500" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2006-09-27 09:35</span></div>
+  <div class="pb">wat toevallig...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

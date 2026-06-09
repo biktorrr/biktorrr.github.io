@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic B459 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic B459</h1>
+<p class="tm">13 posts · started 2004-05-31 17:49 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040531174900" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2004-05-31 17:49</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20040531204700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-05-31 20:47</span></div>
+  <div class="pb">Lekker handig zo'n topic zonder naam openen. NOT</div>
+</article>
+<article class="post" data-ts="20040601180700" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2004-06-01 18:07</span></div>
+  <div class="ps">Deze was titelloos.</div><div class="pb">Zal wel een foutje van iemand geweest zijn, nu kan ik het onderwerp opgeven toch?</div>
+</article>
+<article class="post" data-ts="20040601182200" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-06-01 18:22</span></div>
+  <div class="pb">Nee, dat kan niet. Alleen hardcore nerds weten hoe ze in dit topic kunnen posten.</div>
+</article>
+<article class="post" data-ts="20040604113100" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-06-04 11:31</span></div>
+  <div class="pb">hehe, hardcore hoezo?</div>
+</article>
+<article class="post" data-ts="20040604113400" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2004-06-04 11:34</span></div>
+  <div class="pb">wel lollig dit hoor, maar ik denk dat iedereen die heel kort nadenkt dit zo ziet. <br></div>
+</article>
+<article class="post" data-ts="20040604114100" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2004-06-04 11:41</span></div>
+  <div class="pb">Op topics in 'de toekomst' replyen, da's ook schijtlollig. Kijken of als die echt worden aangemaakt jouw reply er dan staat.<br><br></div>
+</article>
+<article class="post" data-ts="20040604114200" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-06-04 11:42</span></div>
+  <div class="pb">Kun je doen....nerd</div>
+</article>
+<article class="post" data-ts="20040604124100" id="p9">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#9 · 2004-06-04 12:41</span></div>
+  <div class="pb">:p<br></div>
+</article>
+<article class="post" data-ts="20040604200800" id="p10">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#10 · 2004-06-04 20:08</span></div>
+  <div class="pb">lekker bezig jongens....<br></div>
+</article>
+<article class="post" data-ts="20040605183100" id="p11">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#11 · 2004-06-05 18:31</span></div>
+  <div class="pb">tsja, beetje jammer weer<br></div>
+</article>
+<article class="post" data-ts="20040607114900" id="p12">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#12 · 2004-06-07 11:49</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20040607115700" id="p13">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#13 · 2004-06-07 11:57</span></div>
+  <div class="pb">kan je ze niet gewoon verwijderen Jossit?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

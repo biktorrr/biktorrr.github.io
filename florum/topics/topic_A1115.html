@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DonderdagMiddagSpam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">DonderdagMiddagSpam</h1>
+<p class="tm">11 posts · started 2004-02-19 11:27 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040219112700" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-02-19 11:27</span></div>
+  <div class="pb">om maar een traditie te kweken:<br>een nieuwe editie van...<i>DonderdagMiddagSpammmmmm</i><br></div>
+</article>
+<article class="post" data-ts="20040219112800" id="p2">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#2 · 2004-02-19 11:28</span></div>
+  <div class="ps">Monsterscores in Indiase voetbalcompetitie</div><div class="pb"><br> Bron: Voetbal International<br><br>Vier clubs uit de Indiase provincie Goa zijn in de beslissende fase om promotie naar de regionale hoogste klasse geschorst door de Indiase voetbalbond. Curtorim Gym en Wilfred Leisure stonden beiden aan top door een onderling gelijkspel. Alleen met monsterscores zouden de clubs elkaar voor kunnen blijven. <br><br>In de laatste wedstrijd bleven deze scores dan ook niet uit. Curtorim Gym won met 61-1 van het opeens verrassend zwak spelende Sangolda Lightning. Wilfred Leisure kwam niet verder dan 55-1 tegen het evenmin in vorm verkerende Dona Paula Sports.<br><br>De voetbalbond was van mening dat er aan de twee duels een luchtje van omkoping zat en schorstte allevier de ploegen. Bovendien raadde de bond de clubs aan om hun besturen voor eeuwig te royeren.</div>
+</article>
+<article class="post" data-ts="20040219114000" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-02-19 11:40</span></div>
+  <div class="ps">nog maar eentje</div><div class="pb"><a href="http://www.ripolot.com/cgi-bin/gk-license.pl?text=Floraboy&level=2">Terechte Bolide!</a></div>
+</article>
+<article class="post" data-ts="20040219130900" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-02-19 13:09</span></div>
+  <div class="pb"><h3>V. de boer ziet in 1984 zijn eerste Feyenoord-Ajax.</h3><br><br><img src="http://www.medialunchbox.com//pics/soccerfan.jpg"><br><br><br></div>
+</article>
+<article class="post" data-ts="20040219131800" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2004-02-19 13:18</span></div>
+  <div class="pb">Dit mannetje mist alleen nog zijn hitler jugend pakje</div>
+</article>
+<article class="post" data-ts="20040220153800" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-02-20 15:38</span></div>
+  <div class="pb">De hele foto is leuker, dan zie je dat hij op de schouders van zijn vader zit.</div>
+</article>
+<article class="post" data-ts="20120809161638" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2012-08-09 16:16</span></div>
+  <div class="pb">Voor Merlijn: <br><img src='http://www.overgangstergirls.nl/wp-<br>content/uploads/2012/08/bolt-tricks-kid.gif'></div>
+</article>
+<article class="post" data-ts="20120809161704" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2012-08-09 16:17</span></div>
+  <div class="pb">http://www.overgangstergirls.nl/wp-content/uploads/2012/08/bolt-tricks-kid.gif</div>
+</article>
+<article class="post" data-ts="20120809172243" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2012-08-09 17:22</span></div>
+  <div class="pb">Dit pareltje wordt mij onthouden door de Universiteit vanwege "Nudity". Ik zal er vanavond naar kijken!</div>
+</article>
+<article class="post" data-ts="20120809180850" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2012-08-09 18:08</span></div>
+  <div class="pb">Ik dacht dat je wel weer wat nudity kon gebruiken!</div>
+</article>
+<article class="post" data-ts="20120810193702" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2012-08-10 19:37</span></div>
+  <div class="pb">Maar goed dat dergelijke vunzigheid geblokt wordt!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

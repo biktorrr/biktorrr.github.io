@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie tikt het EK – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie tikt het EK</h1>
+<p class="tm">4 posts · started 2004-06-15 10:16 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040615101600" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2004-06-15 10:16</span></div>
+  <div class="pb">Na een korte warmup bij de Tube dit weekend, komt het er toch echt van. Timmie tikt het EK. We hebben 6 wedstrijden gehad en met Duistland - Nederland voor de deur is het maar eens tijd om te gaan kijken bij de anderen. Tsjechie - Letland moet absoluut geen verassing worden, de Tsjechen winnen dat wel. Nederland - Duitsland heb ik eigenlijk geen flauw idee. Het kan alle kanten op gaan maar ik denk dat dat wel een prachtige wedstrijd wordt. Maar eerst de 12 andere ploegen:<br><br>Beste team: Zweden, leuk fris voetbal waarmee ze heel ver kunnen komen.<br><br>Beste Speler: Zinedine Zidane, als je zo een wedstrijd in 1 minuut beslist ben je de beste.<br><br>Slechtste team: Zwitserland, gaat geen potten breken.<br><br>Slechtste speler: Trezeguet, had 1 goed balcontact.<br><br>Wanneer-de-bal-spelen award: Johan Vogel.<br><br>Bep-bakhuis award: Henke Larsson<br><br>gekke-clown-in-het-doel schoen: Barthez<br><br>Hoe-stop-ik-een-penalty masterclass: Barthez<br><br>Hoe-maak-ik-de-nederlanders-gek-in-de-finale masterclass: Barthez<br><br>Ik-blijf-lekker-thuis popcornzak: Pippo Inzaghi en Rinus Michels<br><br>Gelul-en gezwam AH pakket: Studio Sportzomer, Portugal in Oranje, Villa BvD.<br><br>wij-zijn-terecht: Franz Beckenbauer en Johan Cruyff.<br><br>Gisteren zag ik ook Johan op de tv oreren, en ik heb het gevoel dat ook dit toernooi zijn glanstoernooi moet gaan worden. Onnavolgbaar snoerde hij alle andere analytici de mond met een uitleg waar je alleen maar van kan dromen. Volgens hem speelt Oranje met een arrogante superioriteitsgevoel de Duitsers van de mat, zonder seedorf, en met van de Vaart op de flanken. En eerlijk gezegd ben ik dat met hem eens. <br>Johan, jij staat voor oranje, en ik sta achter jou.</div>
+</article>
+<article class="post" data-ts="20040615105800" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-06-15 10:58</span></div>
+  <div class="pb">*dromerige zucht*<br>Ik durf alleen meneer Cruijf tegen meneer Cruijf te zeggen.<br>Soms wilde ik dat ik net zo groots kon zijn en kon denken als meneer de Big T.<br></div>
+</article>
+<article class="post" data-ts="20040615112300" id="p3">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#3 · 2004-06-15 11:23</span></div>
+  <div class="pb">wonderschon</div>
+</article>
+<article class="post" data-ts="20040615112900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-06-15 11:29</span></div>
+  <div class="pb">Twaalf keer top!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

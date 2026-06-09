@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>videoband – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">videoband</h1>
+<p class="tm">5 posts · started 2002-01-08 13:57 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020108135700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-01-08 13:57</span></div>
+  <div class="pb">ik heb net een email  gekregen van schenker met de <br>vraag of zij misschien een kopie van de band kunnen <br>ontvangen, en of hier kosten aan verbonden zouden zijn,<br><br>wie beheert de band, kunnen er kopieen van gemaakt en <br>zo ja dan kunnen we er een voor schenker krijgen als <br>een stukje natrappen naar de schenkerianen toe</div>
+</article>
+<article class="post" data-ts="20020108152700" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-01-08 15:27</span></div>
+  <div class="ps">wil videoband ook</div><div class="pb">hebben.</div>
+</article>
+<article class="post" data-ts="20020108152800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-01-08 15:28</span></div>
+  <div class="ps">in ieder</div><div class="pb">geval zien</div>
+</article>
+<article class="post" data-ts="20020108162400" id="p4">
+  <div class="ph"><span class="pa">Merlijn &quot;Schaar, Schaar&quot; Sevenster</span><span class="pm">#4 · 2002-01-08 16:24</span></div>
+  <div class="pb">Nou ik heb 'm nu al zes maal gezien en hij blijft schit-<br>terend. Hij is op het moment bij Joost. Ik heb geen idee<br>hoe of dat je zo'n ding kopieert, dus dat laat ik over<br>aan de Film & Televisiewetenschapper. Als ik 't foldertje<br>goed heb bekeken, studeert i daarvoor.</div>
+</article>
+<article class="post" data-ts="20020109001300" id="p5">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#5 · 2002-01-09 00:13</span></div>
+  <div class="pb">Tja hellaas, mijn derdejaars vak videos kopieren voor mongolen (7 punten- verplichte basiscursus) had ik net een 5 voor. Ik weet dus net niet hoe dat werkt.<br><br>Ik zal binnenkort even kijken waar ik het kan kopieren, bij "ons" op de faculteit is ergens een illegaal kopieer hok waar heel Amtserdam zijn snuff films komt kopieeren ik zou niet weten waarom die van ons daar niet tussen kan passen. <br><br>Als gebaar richting Schenker wil ik best ff een kopietje exra maken. Maar dan wel voor belachelijk veel geld. Je bent een woekerjood of je bent het niet. Ik schat de prijs van een dubbele DVD. Vraag maar of ze dat goed vinden. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

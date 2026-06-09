@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>afgelopen twee wedstrijden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">afgelopen twee wedstrijden</h1>
+<p class="tm">12 posts · started 2004-12-21 09:35 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041221093500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-12-21 09:35</span></div>
+  <div class="pb">ik wou ondanks het debacle toch maar de zaalbalpagina eens updaten. Wie hebben er ook al weer en hoe vaak gescoord.<br><br>vorige wedstrijd: 5-1 (1x???)<br>Deze wedstrijd: 9-8 (6x maarten 1x Biktie 1x???)</div>
+</article>
+<article class="post" data-ts="20041221100200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-12-21 10:02</span></div>
+  <div class="pb">9-8?! Goed om te zien dat de Biktie op scherp stond.</div>
+</article>
+<article class="post" data-ts="20041221102500" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2004-12-21 10:25</span></div>
+  <div class="pb">1x een eigen doelpunt voor een tegenstander, door een assist van mij. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20041221113100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-12-21 11:31</span></div>
+  <div class="pb">1x eigendoelpunt..:D</div>
+</article>
+<article class="post" data-ts="20041221113900" id="p5">
+  <div class="ph"><span class="pa">Erica T.</span><span class="pm">#5 · 2004-12-21 11:39</span></div>
+  <div class="pb">Goed bezig Maarten zes goals in een wedstrijd maken betekent dat je een absolute super topper bent.<br><br>Verdedigers, schande 9 goals tegen is vrij genant. Toch zijn jullie ook kanjers normaal gesproken.<br><br></div>
+</article>
+<article class="post" data-ts="20041221121000" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-12-21 12:10</span></div>
+  <div class="pb">Vergeet die directe vrije trap van mij niet :D</div>
+</article>
+<article class="post" data-ts="20041221123900" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2004-12-21 12:39</span></div>
+  <div class="pb">Vorige wedstrijd scoorde Maarten na een briljante assist via de lat van mij. Stukje bescheidenheid gebeuren.</div>
+</article>
+<article class="post" data-ts="20041221133400" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2004-12-21 13:34</span></div>
+  <div class="pb">Over die goede ouwe tijd gesproken, toen ik nog heerste over het canvas had ik een slechte dag als we twee goals tegen kregen. Acht is echt genant.</div>
+</article>
+<article class="post" data-ts="20041221134000" id="p9">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#9 · 2004-12-21 13:40</span></div>
+  <div class="pb">9 Mer.. we verloren..</div>
+</article>
+<article class="post" data-ts="20041221135400" id="p10">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#10 · 2004-12-21 13:54</span></div>
+  <div class="pb">ik was er nog twee minuten uit + pingel tegen.</div>
+</article>
+<article class="post" data-ts="20041222134500" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2004-12-22 13:45</span></div>
+  <div class="pb">ok de boel is geupdate</div>
+</article>
+<article class="post" data-ts="20041222151200" id="p12">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#12 · 2004-12-22 15:12</span></div>
+  <div class="pb">Ha, das goed nieuws, ik zie dat jullie er 11 ingespoten hebben en dus toch gewonnen hebben. Goed werk boyz!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

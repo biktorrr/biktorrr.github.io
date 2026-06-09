@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tijdelijke link voor Tour de Floraboys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">tijdelijke link voor Tour de Floraboys</h1>
+<p class="tm">3 posts · started 2003-06-18 15:50 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030618155000" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-06-18 15:50</span></div>
+  <div class="pb">HEY webmastert,<br><br>is het mogelijk een makkelijke tijdelijk link op de homepage te krijgen naar die strakke poule site op de homepage van Big T... of moeten we het doen met een lullig linkje in links???</div>
+</article>
+<article class="post" data-ts="20030618163800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-06-18 16:38</span></div>
+  <div class="pb">hij staat nu op de voorpagina, boven de foto-fader. Als je m niet ziet, moet je even refreshen.</div>
+</article>
+<article class="post" data-ts="20030618172100" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-06-18 17:21</span></div>
+  <div class="ps">ongelovelijk</div><div class="pb">snel gedaan Vic, toppie!!! Nu even de tour gaan hypen en dan doen er lekker veel mensen mee</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JEYT! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">JEYT!</h1>
+<p class="tm">7 posts&nbsp;·&nbsp;started 2010-04-29 10:43 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100429104300" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1&nbsp;·&nbsp;2010-04-29 10:43</span></div>
+  <div class="pb">Highest of high tides,<br>mijn laatste ok is zojuist binnen. Ik ga 30 September 12u promoveren, bakkies.<br><br><br><br>hellyeah!</div>
+</article>
+<article class="post" data-ts="20100429110900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2&nbsp;·&nbsp;2010-04-29 11:09</span></div>
+  <div class="pb">High tide! Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20100429111400" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3&nbsp;·&nbsp;2010-04-29 11:14</span></div>
+  <div class="pb">JEYT</div>
+</article>
+<article class="post" data-ts="20100429111900" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4&nbsp;·&nbsp;2010-04-29 11:19</span></div>
+  <div class="pb">ik mis de puzzle :)<br><br>Goed werk, gefeliciteerd.</div>
+</article>
+<article class="post" data-ts="20100429120600" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5&nbsp;·&nbsp;2010-04-29 12:06</span></div>
+  <div class="pb">Mooi, mooi. Komt mij geheel toevallig ook qua tijd een stuk beter uit...</div>
+</article>
+<article class="post" data-ts="20100429171400" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6&nbsp;·&nbsp;2010-04-29 17:14</span></div>
+  <div class="pb">High tide!</div>
+</article>
+<article class="post" data-ts="20100429195100" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7&nbsp;·&nbsp;2010-04-29 19:51</span></div>
+  <div class="pb">Toppie dat het nu op zekers is!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emergency Signs – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Emergency Signs</h1>
+<p class="tm">5 posts · started 2003-03-24 12:55 by Lara</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030324125500" id="p1">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#1 · 2003-03-24 12:55</span></div>
+  <div class="ps">Verjaardag</div><div class="pb">Ik ben alweer bijna jarig!!Mochten jullie zinnen hebben nog even langs te komen dan kan dat op 5 april.Misschien tot dan ??<br>Lara</div>
+</article>
+<article class="post" data-ts="20030325145200" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-03-25 14:52</span></div>
+  <div class="pb">Deze stond op het PHK forum, wel jammer van de pop-ups maar zeker de moeite waard om alle ambigue warningsign te lezen.<br>http://www.uspoliticsforum.com/emergency/</div>
+</article>
+<article class="post" data-ts="20030325145600" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-03-25 14:56</span></div>
+  <div class="pb">http://www.uspoliticsforum.com/emergency/<br><br>van de PHK-moedersite.<br>wel jammer van de pop-ups, maar zeker lollig om te bekijken. Eigenlijk is de officiele site waar deze paradie op gebaseerd is ook om te lachen maar dan van triestheid."Don't be afraid, be prepared!" (www.ready.gov)</div>
+</article>
+<article class="post" data-ts="20030325153600" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-03-25 15:36</span></div>
+  <div class="pb">gaat lekker met het forum...</div>
+</article>
+<article class="post" data-ts="20030326051100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-03-26 05:11</span></div>
+  <div class="pb">You know the world is in trouble when:<br><br>The best rapper is a white guy.<br>The best golfer is a black guy.<br>The French are calling the Americans arrogant.<br>And the Germans don't want to go to war.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

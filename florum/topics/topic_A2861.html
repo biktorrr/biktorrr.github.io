@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goed nieuws en slechts nieuws – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Goed nieuws en slechts nieuws</h1>
+<p class="tm">5 posts · started 2010-04-09 09:08 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100409090800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2010-04-09 09:08</span></div>
+  <div class="pb">Luinge niet verder als arbiter<br> <br>ZEIST - Roelof Luinge be\ëindigt na dit seizoen zijn loopbaan als scheidsrechter. Voetbalbond KNVB heeft aangegeven dat zijn contract niet verlengd wordt. De 54-jarige arbiter heeft als eerbetoon de bekerfinale tussen Feyenoord en Ajax toegewezen gekregen, meldde de KNVB donderdag.<br><br>Luinge floot in zijn carri\ère tot nu toe 846 wedstrijden in het betaalde voetbal, waarvan 541 in de Eredivisie. Zijn eerste wedstrijd in het betaald voetbal was op 29 oktober 1983: NAC-VVV (0-0).<br><br>De KNVB sprak de wens uit dat Luinge in de toekomst nog een rol bij de bond gaat vervullen. Beide partijen gaan daarover in gesprek. ''Luinge is een kleurrijk en ervaren man, die op zijn hoogtepunt stopt. Dat is te prijzen. Natuurlijk laten we zijn afscheid niet ongemerkt voorbij gaan. De bekerfinale is een prachtig affiche. Hij verdient die wedstrijd'', aldus manager competitiezaken Gijs de Jong.<br><br>Luinge had zijn loopbaan graag nog met een jaar verlengd. ''Ik heb al die jaren met veel plezier op het veld gestaan. Afscheid nemen valt me zwaar. De keuze ligt echter bij de KNVB en die respecteer ik. Een aanstelling bij de bekerfinale in de Kuip aan het einde van mijn carri\ère is natuurlijk fantastisch', aldus de arbiter. (ANP) <br>08-04-10 17:59</div>
+</article>
+<article class="post" data-ts="20100409093000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2010-04-09 09:30</span></div>
+  <div class="pb">Kan i Ajax mooi naar een eclatante overwinning fluiten. Wat is er nou mooier voor zo'n man?</div>
+</article>
+<article class="post" data-ts="20100409104400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2010-04-09 10:44</span></div>
+  <div class="pb"><i>Luinge is een kleurrijk en ervaren man, die op zijn hoogtepunt stopt. </i><br><br>Wat een rare tekst over iemand die je ontslaat. Beetje alsof je iemand een mes in z'n rug zet en dan mijmeren dat ie veel te jong is overleden...<br><br></div>
+</article>
+<article class="post" data-ts="20100409122200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-04-09 12:22</span></div>
+  <div class="pb">Wat ben je weer kritisch, Jazzy. Die mensen van PR weten anders ook niet hoe ze het moeten verkopen.</div>
+</article>
+<article class="post" data-ts="20100409125100" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2010-04-09 12:51</span></div>
+  <div class="pb">Mooie FB-bijdrage van iemand afgelopen woensdag:<br><br>"Waarom koopt Ajax die Messi eigenlijk niet?"</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

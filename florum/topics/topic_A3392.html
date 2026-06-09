@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bannert voor Merijn – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bannert voor Merijn</h1>
+<p class="tm">12 posts · started 2016-03-31 15:37 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160331153747" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2016-03-31 15:37</span></div>
+  <div class="pb"><p><br>	In het kader van de wederopstanding van het Florum een nieuwe bannert. Geen animatie, geen lensflare, gewoon ouderwetsch met paint gemaakt.&nbsp;</p><br><p><br>	Hoera voor Merijn!</p><br></div>
+</article>
+<article class="post" data-ts="20160331160042" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2016-03-31 16:00</span></div>
+  <div class="pb">Hoera voor Merijn en een diepe buiging voor de oneindige creativiteit van de VicT!</div>
+</article>
+<article class="post" data-ts="20160331233405" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2016-03-31 23:34</span></div>
+  <div class="pb">Te gekke foto!</div>
+</article>
+<article class="post" data-ts="20160401010541" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2016-04-01 01:05</span></div>
+  <div class="pb">Respect voor Merijn. En tevens voor Co en Wendy, die de magische grens van twee doorbroken hebben. Tegen de vergrijzing!</div>
+</article>
+<article class="post" data-ts="20160401122911" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2016-04-01 12:29</span></div>
+  <div class="pb">Ja, Boo Dee. Het is natuurlijk wel makkelijk aanmoedigen vanaf de zijlijn. Sla eens gauw aan het bezwangeren zou ik zeggen! </div>
+</article>
+<article class="post" data-ts="20160401211738" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2016-04-01 21:17</span></div>
+  <div class="pb">Maar er moet toch ook een Boy de eeuwige student en bakkaloor zijn! Het is toch niet 'Floraboys Conformistenboys'!</div>
+</article>
+<article class="post" data-ts="20160402101251" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2016-04-02 10:12</span></div>
+  <div class="pb">Je hoeft toch ook niet meteen te settelen, Braafste? Biologisch is het nog steeds het effici\ëntst om je zaad te planten en er dan weer vandoor te bakkaloren.</div>
+</article>
+<article class="post" data-ts="20160402112536" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2016-04-02 11:25</span></div>
+  <div class="pb">Jeijt, dat is waar, maar: ik kom hier bij uitsluiting Amerikaansen tegen. Of zo af en toe een Duitse. En moet ik mijn kostelijk en kostbaar Bode-zaad verspillen ten bate van de BV VS of de BV BRD? Dat moeten we niet met elkaar willen, denkelijk. </div>
+</article>
+<article class="post" data-ts="20160402140030" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2016-04-02 14:00</span></div>
+  <div class="pb">Ach Berney, als jij die studentes niet bezwangert doet iemand anders het wel. En van kleine appelwangetjes kan de wereld er nooit te veel hebben. Dus laat het maar eens een paar maandjes flink klotsen dat kostbare zaad. </div>
+</article>
+<article class="post" data-ts="20160402165143" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2016-04-02 16:51</span></div>
+  <div class="pb">Wir schaffen das, met allemaal kleine brave Bodetjes, let's make America great again!</div>
+</article>
+<article class="post" data-ts="20160710004515" id="p11">
+  <div class="ph"><span class="pa">Ook</span><span class="pm">#11 · 2016-07-10 00:45</span></div>
+  <div class="pb">In ieder geval heeft O zijn zaad weer flink laten klotsen Berney. En met prachtig resultaat! Daar hoort een bannert bij, daar hoort een bannert bij!</div>
+</article>
+<article class="post" data-ts="20160710004855" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2016-07-10 00:48</span></div>
+  <div class="pb">'Ook', 'Ook'?! Dat was ik natuurlijk brave iPhone.<br>Stop de tijd. Wie anders zou zo'n waarheid als een koe zo erudiet en smaakvol kunnen verwoorden?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

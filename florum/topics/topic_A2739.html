@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FDK 2009 - Belangrijk – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FDK 2009 - Belangrijk</h1>
+<p class="tm">10 posts · started 2009-09-10 01:32 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090910013200" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2009-09-10 01:32</span></div>
+  <div class="pb">Beste Boys<br><br>Ik heb net vandaag goedkeuring gekregen van mijn baas voor een redelijke terechte trip in Europa deze December, maar dit is dan goed nieuws inclusief Kerst in Nederland.<br><br>Dit geeft natuurlijk wel een mooie gelegenheid die elke boy of girl die het topic heeft gelezen nu wel ziet aankomen.<br><br>Als FDK op 27 December is, dan zijn Laura en ik er dus gewoon bij, uit Amerika. Maar alleen als het dan is. Een dag later kan zeer waarschijnlijk niet, dat door terugvluchten naar de US of A. <br><br>Ik dacht laat ik het nu maar op het florum zetten..</div>
+</article>
+<article class="post" data-ts="20090910014700" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-09-10 01:47</span></div>
+  <div class="pb">Over Floratijd gesproken, FDK 2009 was toch echt vorig jaar. Maar bij FDK 2010 begroet ik Biggy & J-Lau graag op 27.12.</div>
+</article>
+<article class="post" data-ts="20090910085900" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2009-09-10 08:59</span></div>
+  <div class="pb">Naast een klok hebben we kennelijk ook een kalender nodig. BigT, kun jij die niet maken? Inclusief hoe laat, waar (Boston, Parijs, Heidelberg, Amsterdam, Eindhoven, Den Haag, Haarlem) en in welke windrichting de zon en maan ondergaan en opkomen?</div>
+</article>
+<article class="post" data-ts="20090910090300" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2009-09-10 09:03</span></div>
+  <div class="pb">oli4:? is het tegenwoordig hip om het FDK te noemen naar het volgende jaar? Of heeft Vic het toen gepland, die zit er wel vaker wat naast qua data.<br><br></div>
+</article>
+<article class="post" data-ts="20090910100000" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2009-09-10 10:00</span></div>
+  <div class="pb">Perfect dat jullie erbij zijn Tim, dan kan jij de organisatie weer mooi doen. Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20090910160000" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2009-09-10 16:00</span></div>
+  <div class="pb">het is 2009, na 31 december is het 2010. FDK is op de 27e december, dus in 2009, dus FDK 2009<br><br>tenminste, in de VS<br><br>Kalender kan je hieronder vinden<br><br>2009</div>
+</article>
+<article class="post" data-ts="20090910160400" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2009-09-10 16:04</span></div>
+  <div class="pb">Het was vorig jaar Merlijn die besloot wat eigenlijk FDK 2008 had moeten zijn FDK 2009 te noemen. Omdat ik hem niet op zijn verjaardag wil afvallen zal ik er vanuit gaan dat dit opzet was. Dat hij in een hogere werkelijkheid verkeerde waar we een jaar verder waren. De logica eist dan inderdaad wel dat we dit jaar FDK 2010 vieren.<br><br>Overigens, Biggy, ik vind het leuk dat je erbij bent, zeker aangezien ik, als jij in Heidelberg langskomt, zeer waarschijnlijk zelf net op wereldreis ben. </div>
+</article>
+<article class="post" data-ts="20090910161400" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2009-09-10 16:14</span></div>
+  <div class="pb">Wat een fijne kalender! Ik zie dat we morgen 'analrape' doen en overmorgen een viagraatje mogen slikken!</div>
+</article>
+<article class="post" data-ts="20090910163700" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2009-09-10 16:37</span></div>
+  <div class="pb">HA! druk schema boys!</div>
+</article>
+<article class="post" data-ts="20090910164600" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2009-09-10 16:46</span></div>
+  <div class="pb">Weet je meteen waar er op jouw computer vaak naar wordt gezocht Ca (ik ben benieuwd wat deze agenda voor de 'brave' Bode in petto heeft)!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

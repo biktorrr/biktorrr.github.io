@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mooi voetbalberichtje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mooi voetbalberichtje</h1>
+<p class="tm">2 posts · started 2003-06-06 13:22 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030606132200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-06-06 13:22</span></div>
+  <div class="pb">Achtjarige regelt oefenduel met Liverpool<br><br><br>Een achtjarig ventje uit het Britse Fleetwood heeft de droom van elke Britse amateurclub binnengehaald; een oefenduel met een grote club. Liverpool komt binnenkort in de voorbereiding op het nieuwe seizoen op bezoek, voor een oefenduel met thuisclub Fleetwood Town.<br><br>Het begon na een bezoekje aan Euro Disney in Parijs, toen Dominic Hoyle tijdens de terugreis naar Groot-Brittanni\ë in het vliegtuig naast Liverpool-manager G\érard Houllier kwam te zitten. Beiden raakten aan de praat over voetbal en konden het goed met elkaar vinden. <br><br>Hoyle greep de gelegenheid aan om Houllier te vragen voor een oefenduel tegen de club van zijn vader Mick. Die vond dat wel een goed idee en zo kreeg het gezin later een telefoontje vanuit Liverpool, waarin werd bevestigd dat de club naar Fleetwood zou komen.<br></div>
+</article>
+<article class="post" data-ts="20030606132600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-06-06 13:26</span></div>
+  <div class="pb">Heersend! Jammer dat dat bij de Floraboys niet meer kan, he. Daar merk je toch aan de we echt een bedrijf zijn geworden na die berusgang.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

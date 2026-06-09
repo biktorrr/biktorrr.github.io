@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feeling like a woman – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Feeling like a woman</h1>
+<p class="tm">1 post · started 2003-10-31 20:44 by Feminist</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031031204400" id="p1">
+  <div class="ph"><span class="pa">Feminist</span><span class="pm">#1 · 2003-10-31 20:44</span></div>
+  <div class="pb">Feeling like a woman<br> <br>On a transatlantic flight, a plane passes through a severe storm. The turbulence is awful, and things go from bad to worse when one wing is struck by lightning.  One woman in particular loses it. <br><br>Screaming, she stands up in front of the plane.  "I'm too young to die!" she wails.  "Well, if I'm going to die, I want my last minutes on Earth to be memorable!  I've had  plenty of sex in my life, but no one has ever made me really feel like a woman!  Well I've had it!  Is there ANYONE on this plane who can make me feel like a WOMAN??" <br><br>For a moment, there is silence.  Everyone has forgotten their own peril, and they all stare, riveted, at the desperate woman in the front of the plane. <br><br>Then, a man stands up in the rear of the plane. "I can make you feel like a woman," he says.  He's gorgeous.  Tall, built, with long, flowing black hair and jet black eyes, he starts to walk slowly up the aisle, unbuttoning his shirt one button at a time.  No one moves. <br><br>The woman is breathing heavily in anticipation as the stranger approaches. He removes his shirt.  Muscles ripple across his chest as he reaches her, and extends the arm holding his shirt to the trembling woman, and whispers: <br><br>"Iron this." </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

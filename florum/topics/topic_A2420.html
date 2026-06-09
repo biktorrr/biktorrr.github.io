@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opening praktijk – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Opening praktijk</h1>
+<p class="tm">7 posts · started 2008-07-02 20:23 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080702202300" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2008-07-02 20:23</span></div>
+  <div class="pb">Lieve Boys en Girls<br>Op zaterdag 2 augustus vanaf 16:00 uur zijn jullie welkom in mijn praktijk om een glasje lekkere koude wijn te drinken voor de opening van mijn kunstzinnige therapie praktijk; Therapie voor verlies. <br>Dus kom allemaal gezellig langs, en neem dan vooral folders mee om weer door te geven <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> ,op de Zijlstraat 44 (oude postkantoor aan de Gedempe oude gracht) tot dan en in ieder geval een fijne vakantie.<br><br>Liefs Lara</div>
+</article>
+<article class="post" data-ts="20080702203800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-07-02 20:38</span></div>
+  <div class="pb">kewl, ik ben erbij!</div>
+</article>
+<article class="post" data-ts="20080702211900" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2008-07-02 21:19</span></div>
+  <div class="pb">Klinkt goed, felicidades ! Hoop erbij te zijn.</div>
+</article>
+<article class="post" data-ts="20080703084700" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-07-03 08:47</span></div>
+  <div class="pb">Cool inderdaad, ik ben erbij!</div>
+</article>
+<article class="post" data-ts="20080703085400" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2008-07-03 08:54</span></div>
+  <div class="pb">Yeyt!</div>
+</article>
+<article class="post" data-ts="20080802205100" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2008-08-02 20:51</span></div>
+  <div class="pb">Bedankt iedereen die naar mijn opening is gekomen vandaag. Helaas (zoals altijd met dit soort dingen) heb ik niet iedereen kunnen spreken, maar het was naar mijn idee een succes. <br>Bedankt voor alle mooie bloemen, cadeautjes en complimentjes dat doet me goed!<br><br>Liefs Lara</div>
+</article>
+<article class="post" data-ts="20080805134900" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2008-08-05 13:49</span></div>
+  <div class="pb">Ik hoop dat het gaat draaien gelijk een tierelier, Lara. Succes!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

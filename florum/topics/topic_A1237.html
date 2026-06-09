@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FINALE? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FINALE?</h1>
+<p class="tm">7 posts · started 2004-06-30 17:50 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040630175000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2004-06-30 17:50</span></div>
+  <div class="pb">Finale?</div>
+</article>
+<article class="post" data-ts="20040630184900" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-06-30 18:49</span></div>
+  <div class="pb">Feest bij de Tube!!</div>
+</article>
+<article class="post" data-ts="20040701000400" id="p3">
+  <div class="ph"><span class="pa">Mooi</span><span class="pm">#3 · 2004-07-01 00:04</span></div>
+  <div class="ps">NIET</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20040701102700" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-07-01 10:27</span></div>
+  <div class="pb">neyt<br></div>
+</article>
+<article class="post" data-ts="20040701230200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2004-07-01 23:02</span></div>
+  <div class="pb">Zitten die Duitsers toch weer in de finale...!!!</div>
+</article>
+<article class="post" data-ts="20040701230300" id="p6">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#6 · 2004-07-01 23:03</span></div>
+  <div class="pb">in de vorm van een stel knotsgekke grieken ja. Respect voor Rehhagel. Als Advocaat optaast hoop ik dat Keizer Otto samen met Bruckner coach van NL wordt. <br><br></div>
+</article>
+<article class="post" data-ts="20040702084100" id="p7">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#7 · 2004-07-02 08:41</span></div>
+  <div class="pb">Het wordt een MERKwaardige wedstrijd...:)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

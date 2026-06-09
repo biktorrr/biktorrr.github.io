@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>misverstand – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">misverstand</h1>
+<p class="tm">10 posts · started 2005-02-24 16:48 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050224164800" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2005-02-24 16:48</span></div>
+  <div class="pb">gasten begrijp ik nou goed dat onze landskampioen vanavond niet op tv is te zien in de uefa cup?<br><br></div>
+</article>
+<article class="post" data-ts="20050224172000" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2005-02-24 17:20</span></div>
+  <div class="pb">is t niet besoindre?<br></div>
+</article>
+<article class="post" data-ts="20050224172300" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2005-02-24 17:23</span></div>
+  <div class="pb">het is zeker neit besoindre ! </div>
+</article>
+<article class="post" data-ts="20050224182700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-02-24 18:27</span></div>
+  <div class="pb">Rustig Jossyt, op zowel RTL5 als op Eurosport worden de Ajaxjoden uitgezonden. Als dat niet besoindre is weet ik het ook niet meer.</div>
+</article>
+<article class="post" data-ts="20050224223500" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2005-02-24 22:35</span></div>
+  <div class="pb">jammer dat ze op beide netten het schip ingaan....</div>
+</article>
+<article class="post" data-ts="20050224234700" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2005-02-24 23:47</span></div>
+  <div class="pb">wel slim dat ze de enige nederlandse club die doorgaat op een vroeger tijdstip uitzenden, dan ben zo zo dronken dat je de rest niet meer bewust hoeft mee te maken....<br></div>
+</article>
+<article class="post" data-ts="20050224234700" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-02-24 23:47</span></div>
+  <div class="pb">*hik*</div>
+</article>
+<article class="post" data-ts="20050225103000" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-02-25 10:30</span></div>
+  <div class="pb">ja je klonk wel een beetje aangeschoten toen ik belde :)</div>
+</article>
+<article class="post" data-ts="20050225122000" id="p9">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#9 · 2005-02-25 12:20</span></div>
+  <div class="pb">ik vind het allemaal om te huilen, ik vond alle wedstrijden een martelgang om te volgen... en ik in mijn naiviteit nog denken dat als het op het ene kanaal slecht gaat ik wel een leuke wedstrijd op een andere kon zien.<br>Mijn moeder wil het liefst zsm van UPC af, misschien moet ik haar overhalen een schotel te halen of op mnr. de Mol te abonneren, kan je toch vaak voetbal kijken met een kans op een mooie pot zonder slecht voetbal en/of debiele supporters.</div>
+</article>
+<article class="post" data-ts="20050225125700" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2005-02-25 12:57</span></div>
+  <div class="pb">Ik heb alleen Ajax en Ax gezien en vooral Ajax was echt een aanfluiting. Echt zo'n stel laffe mannetjes. Tijdrekken terwijl je 2-1 achter staat is echt waanzin en in die zin is het jammer genoeg terecht dat het geinsprireerde Auxerre won. Wel erg jammer... <br><br>Dat ook alleen de club doorgaat die tegen een Tweede liga club moet. Zijn we dan zo slecht aan het worden?<br><br>*snik*</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

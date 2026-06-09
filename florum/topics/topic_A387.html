@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MK + WJ – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">MK + WJ</h1>
+<p class="tm">4 posts · started 2002-01-06 15:02 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020106150200" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-01-06 15:02</span></div>
+  <div class="pb">we vertrekken volgende week zaterdagochtend om 04.30<br><br>jullie kunnen die avond ervoor bij ons in bussum slapen.<br><br>reisverzekering geregelt????<br><br><br>mazzel<br><br>Frank</div>
+</article>
+<article class="post" data-ts="20020107132500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-01-07 13:25</span></div>
+  <div class="pb">have fun en bord ze dudes, make me proud en <br>doe even een 10cm of pure redemption voor mij frank!</div>
+</article>
+<article class="post" data-ts="20020109003200" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-01-09 00:32</span></div>
+  <div class="pb">veel plijzier! </div>
+</article>
+<article class="post" data-ts="20020109172100" id="p4">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#4 · 2002-01-09 17:21</span></div>
+  <div class="ps">heeft zich maar even 3 dubbel verzekerd</div><div class="pb">mochten er mensen nog tietenkaarten willen ontvangen dan moeten die ff hun adres posten.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

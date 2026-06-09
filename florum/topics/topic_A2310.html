@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond</h1>
+<p class="tm">10 posts · started 2008-02-22 14:18 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080222141800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-02-22 14:18</span></div>
+  <div class="pb">Boys, zijn hullie nog wat van plan in Haarlem? ik ben eerst met de kingies naar de toneelschuur, maar later op de avond/nacht wel in voor een (b)tje denk ik </div>
+</article>
+<article class="post" data-ts="20080222142900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2008-02-22 14:29</span></div>
+  <div class="pb">Als we nou iets in A'dam doen, kom ik er aan. H'lem is me iets te ver.<br><br>Filmpje pakken in de hoofdstad?<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080222150900" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-02-22 15:09</span></div>
+  <div class="pb">cloverfield?<!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080222151500" id="p4">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#4 · 2008-02-22 15:15</span></div>
+  <div class="pb">Cloverfield is dus niet echt de moeite waard!!! Ga m maar gewoon downloaden...<br>Ik wordt absoluut niet misselijk van bewegende camera's (zoals in Blair Witch), maar bij Cloverfield had ik wel af en toe van die momentjes...Dus succes als je toch besluit te gaan!<!--132.229.216.236--></div>
+</article>
+<article class="post" data-ts="20080222153600" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2008-02-22 15:36</span></div>
+  <div class="pb">Na een avondje doorzakken in de kroeg met Maior gisteren en met het vooruitzicht van een duits themafeest morgen doe ik het vanavond even lekker rustig aan. Thuis op de bank wel te verstaan. <!--145.222.93.6--></div>
+</article>
+<article class="post" data-ts="20080222153900" id="p6">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#6 · 2008-02-22 15:39</span></div>
+  <div class="pb">Cloverfield rules<br><br><br><!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080222155900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-02-22 15:59</span></div>
+  <div class="pb">Cloverfield draait om 22:10 in de Munt.<br><br>Kunnen we daarvoor nog een hapje eten en een drankje doen.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080222161800" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-02-22 16:18</span></div>
+  <div class="pb">kortom een avondvullend programma met voor ieder wat wils.<br>Tot nu toe staan de Cloverfield fans in mijn directe omgeving nog krap voor, dus het wordt spannend.<br><br>Ik bel zo wel even prof.<br><br><!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080222162100" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-02-22 16:21</span></div>
+  <div class="pb">Dan ga ik de trein aan A'dam aantikken.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080223103300" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2008-02-23 10:33</span></div>
+  <div class="pb">Ik sluit me aan bij het cliteur kamp. Bijzonder terechte film! Eerste film in jaren waarbij ikzelf iets van angst/paniek heb gevoeld. Vooral de "dit gebouw staat niet meer rechtop maar we willen toch graag naar binnen" scene was ouderwets ontspannen. <!--62.163.193.48--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

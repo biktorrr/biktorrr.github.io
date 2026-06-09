@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy birthday: The pit – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Happy birthday: The pit</h1>
+<p class="tm">11 posts · started 2009-08-14 13:38 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090814133800" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-08-14 13:38</span></div>
+  <div class="pb">Omdat niet iedereen een link nodig heeft om verjaardagen te onthouden: Franklin J. P. van harte gefeliciteerd met je 30ste verjaardag!<br><br></div>
+</article>
+<article class="post" data-ts="20090814134900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2009-08-14 13:49</span></div>
+  <div class="pb">Gefeliciteerd Pitmans!!</div>
+</article>
+<article class="post" data-ts="20090814135100" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2009-08-14 13:51</span></div>
+  <div class="pb">De diepe wijsheid en linguistische spitsvondigheid van ´de Pit´ zijn voor mij al jaren een bron van vreugde. Ik zou hier graag een aantal van zijn inzichten willen delen, maar het fatsoen laat dat helaas niet toe. In plaats daarvan feliciteer ik hem dus gewoon maar.</div>
+</article>
+<article class="post" data-ts="20090814141200" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2009-08-14 14:12</span></div>
+  <div class="pb">Frankie P. ook al dertig. Moet niet gekker worden! </div>
+</article>
+<article class="post" data-ts="20090814141200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2009-08-14 14:12</span></div>
+  <div class="pb">Pitmeister congratuliert!</div>
+</article>
+<article class="post" data-ts="20090814141400" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2009-08-14 14:14</span></div>
+  <div class="pb">Gefeliciteerd Pit! Moge jij binnenkort het Florum weer eens onderspuiten.</div>
+</article>
+<article class="post" data-ts="20090814141800" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2009-08-14 14:18</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20090814142500" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2009-08-14 14:25</span></div>
+  <div class="pb">Van harte! Je kan je cadeautje komen incasseren.</div>
+</article>
+<article class="post" data-ts="20090814145200" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2009-08-14 14:52</span></div>
+  <div class="pb">gevizzl!</div>
+</article>
+<article class="post" data-ts="20090814154500" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2009-08-14 15:45</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20090816224700" id="p11">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#11 · 2009-08-16 22:47</span></div>
+  <div class="pb">beetje laat maar ik was een weekje in New Hampshire aan het rondtouren.. nog gefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

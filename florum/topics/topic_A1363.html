@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biggie T, shine your light on me – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Biggie T, shine your light on me</h1>
+<p class="tm">4 posts · started 2004-11-25 11:37 by Flora-anoniempje</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041125113700" id="p1">
+  <div class="ph"><span class="pa">Flora-anoniempje</span><span class="pm">#1 · 2004-11-25 11:37</span></div>
+  <div class="pb"><i>Biggie T is naast stervoetballer en taalvirtuoos ook mensenvriend *en* mensenkenner. In de rubriek "Biggie T, shine your light on me" beantwoordt hij vragen van lezers.</i><br><br>Lieve Biggie T,<br><br>Ik ben een Floragirl en mijn Floraboy is nogal flatulent. Ook als we gezellig thuis op de bank Duitse krimi's zitten te kijken flatuleert hij er rustig op los. Hij lijkt er zelfs trots op te zijn. Heb jij een idee wat ik kan doen?, want soms moet ik echt kokhalzen van de meur.<br><br>Kusje,<br><br>Flora-anoniempje</div>
+</article>
+<article class="post" data-ts="20041125134600" id="p2">
+  <div class="ph"><span class="pa">Biggie T</span><span class="pm">#2 · 2004-11-25 13:46</span></div>
+  <div class="pb">Beste Anoniempje,<br><br>Misschien moet je die inmiddels ontdooide curryworst verwijderen uit de endeldarm van je Floraboy. Dat scheelt zeker 50% flatules. Verder is regelmatig bitterballen frituren altijd goed voor het maagdarmstelsel.<br><br>En als je het echt even niet meer weet... relativeer je ellende met de wijze woorden van een groot Floraboys denker: "Flatulentia non olet".<br><br></div>
+</article>
+<article class="post" data-ts="20041125135400" id="p3">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#3 · 2004-11-25 13:54</span></div>
+  <div class="pb">Misschien heeft Patty Brard nog een plaatsje voor een zekere spoeling?</div>
+</article>
+<article class="post" data-ts="20041125182000" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2004-11-25 18:20</span></div>
+  <div class="pb">haha kostelijk allemaal. Ik ben trouwens wel benieuwd wie deze Floragirl is nu Lara suggereerd dat zij het niet was.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

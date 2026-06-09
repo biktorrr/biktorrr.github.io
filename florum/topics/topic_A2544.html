@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>URGENT &amp; BELANGRIJK – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">URGENT &amp; BELANGRIJK</h1>
+<p class="tm">11 posts · started 2008-11-26 12:22 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081126122200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2008-11-26 12:22</span></div>
+  <div class="pb">Baquilles,<br><br>Dit is van levensbelang: Is er iemand, die de komende dagen in de buurt van Emmeloord is? Of kent iemand een Baquille, die komende dagen in de buurt van Emmeloord is?</div>
+</article>
+<article class="post" data-ts="20081126123400" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2008-11-26 12:34</span></div>
+  <div class="pb">Ik kan dit alleen oppakken door het bij iemand anders neer te leggen.</div>
+</article>
+<article class="post" data-ts="20081126130200" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-11-26 13:02</span></div>
+  <div class="pb">Ik zou even googelen op emmeloord + baquille<br><br>Anders ff op marktplaats kijken, die zitten in Emmeloord als ik me niet vergis.<br><br>Hoezo overigens? Heb je weer 85 kilo schroot-trofeeen gekocht?</div>
+</article>
+<article class="post" data-ts="20081126133100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-11-26 13:31</span></div>
+  <div class="pb">Ik heb ze nog niet gekocht, maar dit is echt een buitenkansje. <br><br>23 stuks; categorie: hengelsport<br></div>
+</article>
+<article class="post" data-ts="20081126133200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-11-26 13:32</span></div>
+  <div class="pb">Maar die geitenneuker doet niet aan verzenden. Dit weet natuurlijk ook wel dat i op een goudmijn zit.</div>
+</article>
+<article class="post" data-ts="20081126133800" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2008-11-26 13:38</span></div>
+  <div class="pb">Een collega van mij woont in de Noordoostpolder maar ik ben er nog niet heilig van overtuigd dat ik het beetje respect wat ik heb opgebouwd in drie jaar te grabbel moet gooien voor enkele hengelsporttrofeeen. Neemt niet weg dat ik vanwege het grote belang toch ernstig twijfel.</div>
+</article>
+<article class="post" data-ts="20081126135900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-11-26 13:59</span></div>
+  <div class="pb">COME ON, HOLY!!! COME ON.<br><br>Je handelen zal niet onbeloond blijven!</div>
+</article>
+<article class="post" data-ts="20081126154800" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2008-11-26 15:48</span></div>
+  <div class="pb">ik zal hier eens een paar van die trekker-rijdende buitendienstmedewerkers vragen of ze wel eens buurten in de Noord-Oostpolder. We hebben so-en-so een hooggewaardeerde relatie in Urk.</div>
+</article>
+<article class="post" data-ts="20081126162100" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2008-11-26 16:21</span></div>
+  <div class="pb">Mijn nominatie voor topic van het jaar heb je in ieder geval te pakken.</div>
+</article>
+<article class="post" data-ts="20081126181200" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2008-11-26 18:12</span></div>
+  <div class="pb">Stap 1 in een belangrijke en ongetwijfeld langdurige onderhandeling:<br><br><i>Hoi hAoAaAgAy,<br><br>Voor je collectie trofeeen wil graag 20 euro betalen. <br><br>Helaas ben ik niet in staat de trofeeen bij jou op te halen. Zou het niet mogelijk zijn ze toch te verzenden? Ik zal dan graag de portokosten op me nemen.<br><br>Met vriendelijke groet</i><br><br>De A's in z'n naam heb ik er even tussengezet om m'n onderhandelingspositie niet weg te gevn.</div>
+</article>
+<article class="post" data-ts="20081127083900" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2008-11-27 08:39</span></div>
+  <div class="pb">URGENTE & BELANGRIJKE MEDEDELING INGETROKKEN<br><br>EINDE BERICHT</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

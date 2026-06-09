@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FireFox Sneller – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FireFox Sneller</h1>
+<p class="tm">2 posts · started 2005-01-21 14:49 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050121144900" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2005-01-21 14:49</span></div>
+  <div class="pb">Voor de mensen die uren moeten wachten totdat het florum geladen is.<br><br>Op verschillende blogs circuleert een truc waardoor de snelheid van de open-bronbrowser Firefox aanzienlijk valt op te krikken. Nadeel is wel dat webservers sneller overbelast kunnen raken.<br><br>De 'truc' behelst in feite een aanpassing aan de instellingen van Firefox. Door enkele kleine ingrepen (zie onder) laat Firefox webpagina's veel sneller zien. Dit is mogelijk omdat de browser tegelijkertijd meerdere connecties naar de server opent. De snelheidswinst is in sommige gevallen opmerkelijk te noemen. Nadeel is dat de webserver waarop de bezochte site staat wordt geconfronteerd met een veelvoud aan verbindingen in plaats van een enkele, waardoor bij een groot aantal bezoekers de server sneller overbelast raakt.<br><br>Tegenstanders van de Firefox-truc roepen mensen dan ook op van de aanpassingen niet door te voeren. Als teveel mensen er gebruik van maken, zouden webservers massaal crashen, vrezen zij. Anderen stellen dat door de vele connecties elke surfer minder lang data ophaalt bij een webserver, en daardoor de extra belasting wordt gecompenseerd door een kortere verbindingstijd.<br><br>De angst van serverbeheerders lijkt voorlopig ongefundeerd. De truc is al enkele weken bekend en reeds vele malen toegepast. Tot op heden zijn er geen gevallen gerapporteerd waarbij een site uit de lucht verdween door de vele connecties die door een Firefox-browser worden gelegd.<br><br>De aanpassingen aan Firefox worden op de volgende manier aangebracht. In de adresbalk van de browser voert u about:config in. U krijgt vervolgens een reeks instellingen te zien, alfabetisch geordend. In de lijst moet u drie velden aanpassen: bij network.http.pipelining moet de waarde veranderen naar "true", bij network.http.pipelining.maxrequest vult u de waarde 25 in en ook bij network.http.proxy.pipelining moet "true" staan. Ten slotte cre\ëert u een nieuwe variabele door met de rechtermuis te klikken en voor New/Integer te kiezen. U geeft deze variabele de naam nglayout.initialpaint.delay en de waarde 0.<br><br>De pipelining-variabelen die worden aangepast verwijzen eigenlijk naar een experimentele functie in de Firefox-browser. De Mozilla Foundation maakt geen geheim van de functionaliteit maar waarschuwt wel dat niet alle proxy- en webservers het ondersteunen. Door het flexibele karakter van de browser zijn er zo nog meer aanpassingen mogelijk. Meer trucs en informatie vindt u op deze webpagina van de Mozilla Foundation.</div>
+</article>
+<article class="post" data-ts="20050121164700" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2005-01-21 16:47</span></div>
+  <div class="pb">woot dat scheelt een hoop! En eindelijk ook geen timed out errors bij het laden van het PHKforum<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

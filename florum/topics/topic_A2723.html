@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verhaaltje voor het slapen gaan – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verhaaltje voor het slapen gaan</h1>
+<p class="tm">11 posts · started 2009-08-28 02:07 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090828020700" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-08-28 02:07</span></div>
+  <div class="pb"><object width="400" height="302"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2113477&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=2113477&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="302"></embed></object><p><a href="http://vimeo.com/2113477">Once upon a time...</a> from <a href="http://vimeo.com/user115775">Capucha</a> on <a href="http://vimeo.com">Vimeo</a>.</p></div>
+</article>
+<article class="post" data-ts="20090828112400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2009-08-28 11:24</span></div>
+  <div class="pb">ook leuk als ochtendverhaaltje hoor. <br></div>
+</article>
+<article class="post" data-ts="20090828133600" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2009-08-28 13:36</span></div>
+  <div class="pb">Djeezes, de laatste dagen wel weinig interactie op ons  interactieinstrument...</div>
+</article>
+<article class="post" data-ts="20090828135400" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2009-08-28 13:54</span></div>
+  <div class="pb">Tijd voor de delicieuze om weer eens wat FsK te cre\ëren. </div>
+</article>
+<article class="post" data-ts="20090828164200" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-08-28 16:42</span></div>
+  <div class="pb">WTF?<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20090828165300" id="p6">
+  <div class="ph"><span class="pa">Ca produceert ook eens een onbegrrijpelijke afko</span><span class="pm">#6 · 2009-08-28 16:53</span></div>
+  <div class="pb">KZF?</div>
+</article>
+<article class="post" data-ts="20090828170800" id="p7">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#7 · 2009-08-28 17:08</span></div>
+  <div class="pb">@Ca Je bedoelt KFC waarschijnlijk?<br><br>WTF betekent What the fuck, daarmee doel ik op het feit dat er mensen zijn die het internet misbruiken om er filmpjes van Franse kleuters op te zetten. Dat is nou net niet waar het internet voor bedoeld is (namelijk wetenschap en porno). </div>
+</article>
+<article class="post" data-ts="20090828171300" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2009-08-28 17:13</span></div>
+  <div class="pb">en rebussen </div>
+</article>
+<article class="post" data-ts="20090828173000" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2009-08-28 17:30</span></div>
+  <div class="pb">Ollie: Wat wil je dat ik doe? Ik moet natuurlijk wel iets om mee te werken hebben. Ik kan wel zeggen dat ik alle Floraboys vuile teringhonden vind (bij deze dan maar), maar als ik dat zo uit het niets zeg blijft het zo nietszeggende in de lucht hangen. De kans met zoiets veel FsK te genereren is nogal gering.</div>
+</article>
+<article class="post" data-ts="20090830223500" id="p10">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#10 · 2009-08-30 22:35</span></div>
+  <div class="pb">Wat gaaf! Geef mijn een kind met zo'n fantasie...</div>
+</article>
+<article class="post" data-ts="20090831121400" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2009-08-31 12:14</span></div>
+  <div class="pb">Dat kan je beter direct tegen de trainee zeggen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

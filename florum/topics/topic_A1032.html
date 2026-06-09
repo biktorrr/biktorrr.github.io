@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Duinrell – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Duinrell</h1>
+<p class="tm">10 posts · started 2003-11-03 16:19 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031103161900" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2003-11-03 16:19</span></div>
+  <div class="pb">Is het misschien leuk om eens wat met zijn alle floraboys en girls te doen? Naar Tikibad/winterefteling  of zoiets andere ideeen zijn ook welkom!Nou ik hoor wel wat we er van vinden.</div>
+</article>
+<article class="post" data-ts="20031103162500" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-11-03 16:25</span></div>
+  <div class="pb">Hmmmm, dit klinkt wel grappig. Misschien kunnen we met een eventueel kampioensfeest dit in gedachten houden.</div>
+</article>
+<article class="post" data-ts="20031104114300" id="p3">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#3 · 2003-11-04 11:43</span></div>
+  <div class="pb">lijkt me wel leuk! Ik ben wel voor iets als de Efteling of Sixflags ofzo</div>
+</article>
+<article class="post" data-ts="20031106161900" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2003-11-06 16:19</span></div>
+  <div class="pb">sixflags zou wel lachen zijn, gaat dat alleen niet dicht in de winter?</div>
+</article>
+<article class="post" data-ts="20031106162300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-11-06 16:23</span></div>
+  <div class="pb">Probleem is dat ik nooit op zaterdag en zondag kan, want dan moet ik ballen...<br></div>
+</article>
+<article class="post" data-ts="20031106162400" id="p6">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#6 · 2003-11-06 16:24</span></div>
+  <div class="pb">als alle floraboys meegaan, wordt er dus niet gebald en kan jij dus ook mee stervedette!</div>
+</article>
+<article class="post" data-ts="20031106171400" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-11-06 17:14</span></div>
+  <div class="pb">kerstvakantie?<br></div>
+</article>
+<article class="post" data-ts="20031106205400" id="p8">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#8 · 2003-11-06 20:54</span></div>
+  <div class="pb">Kerstvakantie is een goed idee dan kunnen we misschien door de weeks?Ik heb even gekeken en sixflags is eind oktober al dicht gegaan de efteling is nog wel open.Heb even het stukje uit de site geknipt met d eopeningstijden:<br>De Winter Efteling is geopend op 6, 7, 12, 13 en 14 december 2003, van 19 december 2003 tot en met 4 januari 2004 (m.u.v. 1 januari 2004) <br>en op 9, 10, 11, 16, 17 en 18 januari 2004. <br>De openingstijden zijn dagelijks van 11.00 uur tot 20.00 uur. Op vrijdag 12 en 19 december 2003, woensdag 31 december 2003 en op vrijdag 9 en<br>16 januari 2004 tot 18.00 uur. Tijdens de Midwinteravond op 17 januari 2004 tot 24.00 uur.<br><br>Maar misschien is er nog een ander park ook open?</div>
+</article>
+<article class="post" data-ts="20031107100000" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2003-11-07 10:00</span></div>
+  <div class="pb">ik ben overigens anderhalve maand geleden al naar de efteling geweest... Een ander park heeft dus wel enige voorkeur wat mij betreft.<br></div>
+</article>
+<article class="post" data-ts="20031107133800" id="p10">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#10 · 2003-11-07 13:38</span></div>
+  <div class="pb">Het probleem is dat er zoveel gesloten is in de winter.Maar roep maar wat had je in gedachten?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

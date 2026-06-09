@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys -- Zwart – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys -- Zwart</h1>
+<p class="tm">2 posts · started 2002-03-19 18:24 by De schrijvende pers</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020319182400" id="p1">
+  <div class="ph"><span class="pa">De schrijvende pers</span><span class="pm">#1 · 2002-03-19 18:24</span></div>
+  <div class="pb"><B>Floraboys en Zwart delen punten</B><br><br>De Floraboysselectie steunen op drie pijlers: "Holy" Misha, "Famous" Frank en Joost "Puite". Van hen is "Holy" Misha de stabielste en constantste pijler gebleken. Loodste hij Floraboys niet eigenhandig naar de titel in de kampioenswedstrijd? Ook nu weer tegen Zwart -- koploper -- konden de Floraboys op hem rekenen. Fel als altijd was hij de speler die het tempo bepaalde en de lijnen uitzette.<br><br><BR><br><br>Op de tweede pijler "Famous" Frank kun je geen wonderen bouwen: Dromerig staat de opportunistische spits de ballen af te wachten. Het moet gezegd, Hij vormt in zijn eentje een volwaardige aanvalslinie, maar zijn handelingssnelheid is niet zijn grootste kracht, waardoor aanvallen in de kiem gesmoord worden. Zijn enorme ego lijkt voor de flegmatieke spits het grootste obstakel te zijn om tot goed samenspel te komen.<br><br><BR><br><br>Een minder stabiele pijler is Joost "Puite" gebleken, herhaaldelijk geplaagd, kwam hij vele wedstrijden niet op het nivo dat van hem verwacht mag -- en moet -- worden. Tot heden: de Floraboys hebben in hem hun derde pijler teruggevonden. Met een goal en een assist was hij aanvallend aanwezig, maar ook verdedigend was hij dwingend aanwezig. Tot opluchting van velen heeft hij zijn experiment van zone-dekking gestaakt. <br><br><BR><br><br>Om een brug te bouwen, heb je niet slechts pijlers nodig: Deze dienen ook deugdelijk verbonden te zijn. En dat waren ze. Vooral "11" Maarten speelde een van zijn sterkste partijen -- getuige onder meer een goal. Hoewel hij veelvuldig de grenzen van het toelaatbare tart, door met hooggeheven been in te komen, komt hem dit niet op een berisping te staan. Deze inzet is typerend voor zijn speelstijl: dienend in het groepsbelang.<br><br><BR><br><br>Eveneens het groepsbelang respecterend, bikkelt Oli "4" zich een weg over het canvas. Scorend vermogen is hem niet gegund, maar zijn passes op "Famous" Frank komen opvallen vaak aan. Helaas kon dat niet gezegd worden over de uitworpen van de gelegenheidsgoalie: "0" Victor. Maar daar houdt de kritiek op "0" Victor eigenlijk op, want verder is hij een waardige <I>stand-in</I> voor "Tuut" Tim gebleken. Vooral zijn voetballende kwaliteiten zijn, in vergelijking met "Tuut" Tim, een verademing. Wat een domper voor "0" Victor dan toch dat hij in de slotfase van de wedstrijd een slippertje maakt en Zwart de bal op een presenteerblaadje aanreikt. gelukkig dat "Holy" Misha die blaam zuiverde door 28 seconden voor tijd de gelijkmaker (4-4) bij te laten schrijven. Eind goed al goed. <br><br><BR><br><br>Het gelijkspel is een stand die terecht is gezien het spelbeeld. Met het oog op consolidatie in de tweede poule doen de Floraboys goede zaken tegen Zwart. Het is maar zeer de vraag of de Floraboys betere zaken hadden gedaan als "Tuut" Tim en "23" Merlijn van de partij waren geweest, en "MB" Michiel niet vroegtijdig geblesseerd was uitgevallen.</div>
+</article>
+<article class="post" data-ts="20020320132100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-03-20 13:21</span></div>
+  <div class="pb">Volgende keer weer het normale bedrag?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

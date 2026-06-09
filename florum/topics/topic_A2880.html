@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jazzmaster Hoezee – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Jazzmaster Hoezee</h1>
+<p class="tm">12 posts · started 2010-05-02 11:04 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100502110400" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2010-05-02 11:04</span></div>
+  <div class="pb"><h1>Gefelicitaart</h1><br><img src="http://www.tomrunia.nl/imgscript/img/fc6fc1a2.jpg"><br>Met dank aan D66. Ook veel succes met Ajax vandaag, ik heb de taartkleuren er speciaal op aangepast!</div>
+</article>
+<article class="post" data-ts="20100502110600" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2010-05-02 11:06</span></div>
+  <div class="pb">nog vele jaren Jazzmaster!</div>
+</article>
+<article class="post" data-ts="20100502112400" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-05-02 11:24</span></div>
+  <div class="pb">Amice, van harte!</div>
+</article>
+<article class="post" data-ts="20100502115100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2010-05-02 11:51</span></div>
+  <div class="pb">gefeliciteerd die jazzzzz!</div>
+</article>
+<article class="post" data-ts="20100502115300" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2010-05-02 11:53</span></div>
+  <div class="pb">high tide, dank jullie wel!</div>
+</article>
+<article class="post" data-ts="20100502115300" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2010-05-02 11:53</span></div>
+  <div class="pb">jazzy gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20100502122700" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2010-05-02 12:27</span></div>
+  <div class="pb">Hoewel je altijd aan de verkeerde kant staat (D66, Ajax) wil ik je toch van harte feliciteren, lieve Jazz.</div>
+</article>
+<article class="post" data-ts="20100502125900" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2010-05-02 12:59</span></div>
+  <div class="pb">Zelfs op zijn verjaardag krijgt da Jazzzz nog een flinke sneer te verduren uit Berlijn. Niets van aantrekken, Zjoste, we zien elkaar over drie uurtjes op het Leidseplein.<br><br>En gefeliciteerd natuurlijk!</div>
+</article>
+<article class="post" data-ts="20100502133500" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2010-05-02 13:35</span></div>
+  <div class="pb">Jazz- Je weet dat al mijn zure opmerkingen puur uit genegenheid voortkomen.</div>
+</article>
+<article class="post" data-ts="20100502144300" id="p10">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#10 · 2010-05-02 14:43</span></div>
+  <div class="pb">GEFELICITEEEEEERD. Dat het maar geluk mag brengen voor de wedstrijd van nu....</div>
+</article>
+<article class="post" data-ts="20100502174600" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2010-05-02 17:46</span></div>
+  <div class="pb">Mixed tide. Gefeliciteerd in ieder geval met je verjaardag. Zoals de Bode, in een vriendelijke bui, zou zeggen: nog vele jazzjaren.</div>
+</article>
+<article class="post" data-ts="20100502194400" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2010-05-02 19:44</span></div>
+  <div class="pb">Gefeliciteerd met je verjaardag en met de 2e plaats! ;-)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

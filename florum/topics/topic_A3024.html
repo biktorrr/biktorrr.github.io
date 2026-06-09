@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Haardvuur+Dawkins=lol – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Haardvuur+Dawkins=lol</h1>
+<p class="tm">2 posts · started 2010-11-26 20:01 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101126200156" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-11-26 20:01</span></div>
+  <div class="pb">Boys,<br><br>Bijzonder grappig, Richard Dawkins die zijn hatemail voorleest<br><a href="http://www.youtube.com/watch?v=-ZuowNcuGsc"> Blasphemer!</a><br></div>
+</article>
+<article class="post" data-ts="20101129085559" id="p2">
+  <div class="ph"><span class="pa">Anna</span><span class="pm">#2 · 2010-11-29 08:55</span></div>
+  <div class="ps">Wehehe</div><div class="pb">Stephen Fry had 'm op zijn twitter staan, daar had ik het 'm gevonden. Maar hulde! Zijn fantastische stem geeft de hate-mail echt iets extra's</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

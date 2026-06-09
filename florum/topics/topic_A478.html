@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tijd voor iets nieuws? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tijd voor iets nieuws?</h1>
+<p class="tm">5 posts · started 2002-05-08 13:44 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020508134400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-05-08 13:44</span></div>
+  <div class="pb">Ik vroeg me af of de mensen die dat kunnen/erover gaan weers eens een keer weer de titelpagina kunnen aanpassen.Ik vind Heinz echt top,maar hij mag wel weer eens opzouten...de site is al weer twee maanden terug ofzo.<br><br>Wack gerard joling?wie speelt dat nog<br>etc.<br><br>Misschien een leuke foto,boodschap o.i.d. Ik weet vast dat Misha wel wat kan verzinnen,en dan maar doorspelen naar Merlijn om de discussie "Wat heeft Optimus Prime in godesnaam te maken met de floraboys?"te voorkomen<br></div>
+</article>
+<article class="post" data-ts="20020508183400" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-05-08 18:34</span></div>
+  <div class="pb">Heb geen FTP meer..CuteFTP ging zeiken over registratie voor het eerst in 4 jaar...en ik weet het login/wachtwoord van de site ook niet meer..want die was een keer veranderd ivm een nieuwe server. Mark is in Zurich.....En zo te zien was mijn andere probleempje al opgelost...Floraboys.com zou namelijk deze maand verlopen..maar de heer Duwel heeft dat al opgevangen.<br><br>Maar kortom niemand kan dus wat veranderen.<br><br>Whois: Floraboys.com<br>Record last modified: 2002-04-25 01:27:02 UTC by [CORE-66]<br>Record created: 2001-04-24 16:35:49 UTC by [CORE-66]<br>Record expires: 2003-04-24 09:37:05 UTC</div>
+</article>
+<article class="post" data-ts="20020508205600" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2002-05-08 20:56</span></div>
+  <div class="pb">de domeinnaam gaat alleen vervallen als ik stop met betalen van de jaarlijkse registratiekosten. <br><br>Je hebt dus een lifetime cadeautje Misha.<br>Uiteraard verwacht ik dan ook wel lifetime feesten. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20020508224400" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-05-08 22:44</span></div>
+  <div class="ps">the new wack</div><div class="pb">ik weet al wie we moeten wacken die linksextreme lul die Pim Fortuyn heeft vermoord. Wie kan er van die mega klojo een foto vinden???</div>
+</article>
+<article class="post" data-ts="20020515143000" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-05-15 14:30</span></div>
+  <div class="ps">verandering!!!!</div><div class="pb">wie is de nieuwe wack!!???</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

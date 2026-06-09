@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Domispammert – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Domispammert</h1>
+<p class="tm">8 posts · started 2007-11-15 10:33 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071115103300" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-11-15 10:33</span></div>
+  <div class="pb"><a href="http://www.burorenkema.nl/2007/11/buro_den_haag_van_harte_voorzitterschap.php">zo grappig</a></div>
+</article>
+<article class="post" data-ts="20071115154200" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-11-15 15:42</span></div>
+  <div class="pb">erg grappig<!--83.202.187.150--></div>
+</article>
+<article class="post" data-ts="20071115212500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-11-15 21:25</span></div>
+  <div class="pb">vond het vmbo eindexamen toen grappiger.<br>deze is een beetje lafjes, evenzogoed wel lollig.<br>Kan GC geen filmpjes in elkaar draaien, die dan wel het hooghe Flora-humor niveau halen? Ik zit te denken aan veel hoes, bitches en penissen.<br><br><!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20071116101400" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2007-11-16 10:14</span></div>
+  <div class="pb">dat je daar veel aan zit te denken is al een tijdje duidelijk<!--80.126.71.152--></div>
+</article>
+<article class="post" data-ts="20071116155900" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2007-11-16 15:59</span></div>
+  <div class="pb">Hier: virtuele Ho's 'n Bitches:<br><br>Als je mee wilt doen, let me know!<br><br><object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/oO7i2l2Rg_A&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/oO7i2l2Rg_A&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object><!--82.134.255.90--></div>
+</article>
+<article class="post" data-ts="20120426231529" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2012-04-26 23:15</span></div>
+  <div class="pb">Te midden van al het politieke geweld wil ik graag nog de aandacht vestigen op de film Iron Sky..deze draait inmiddels in NL en volgens een collega die net is geweest is het een echte aanrader... Dus mis hem niet!<br><br><a href="http://www.imaginefilmfestival.nl/films/iron-sky">http://www.imaginefilmfestival.nl/films/iron-sky</a></div>
+</article>
+<article class="post" data-ts="20120427121735" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2012-04-27 12:17</span></div>
+  <div class="pb">Staat inderdaad hoog op het lijstje. Voor de Bode: Ons Udo speelt ook weer een robbertje mee.<br></div>
+</article>
+<article class="post" data-ts="20120429124435" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2012-04-29 12:44</span></div>
+  <div class="pb">dit is de film waarbij wij bij de Jelgerts ons afvroegen of er naast Nazis in SPace ook Nazi Pr0n zou bestaan...<br><br>Nazi's zijn net als pindasaus, alles wordt er beter door.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

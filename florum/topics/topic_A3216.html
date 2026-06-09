@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open dag â¬rik Z: leesbaar – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Open dag â¬rik Z: leesbaar</h1>
+<p class="tm">3 posts · started 2012-04-11 00:07 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120411000742" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2012-04-11 00:07</span></div>
+  <div class="pb"><br>Hey Tijmen, woon jij nog in regio Haarlem?<br><br>We hebben promo-project op de zaak (is voor zeg maar oud-psychiatrische patienten, waaronder ik)maar we zijn een compleet grafisch buro, zaterdag open dag lol</div><br>-----<br>Ik heb geloof ik al plannen...<br>Jullie? het gaat btw om </strong><a href="http://www.printenpixels.nl/">http://www.printenpixels.nl/</a><br><br>aha, hij vervolgt:<br>-----<br>Haarlem oost, ik ook man waar ergens?<br>ach, die open dag was ook niet mijn idee of zo die dingen krijg je altijd te laat te horen van de organisatie ik zou het echt beter zelf kunnen lol<br>Laten we anders een keer weer daten of zo... lijkt me leuk om even bij te praten<br>Kan je ook het andere kantje van het succes-verhaal van de meeste stedelijk mensen horen lol<br>-----<br><br>Jullie horen het, die Stedelijkers zijn allen stuk voor stuk succesverhalen....*kuch bastiaan K* </div>
+</article>
+<article class="post" data-ts="20120411113257" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2012-04-11 11:32</span></div>
+  <div class="pb">Woord van de dag is webstatistieken profesj. Maar leuk dat je nog contact hebt.</div>
+</article>
+<article class="post" data-ts="20120411123536" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2012-04-11 12:35</span></div>
+  <div class="pb">dank je Jazz, mijn relatie met DJ is inderdaad als een warm bad.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

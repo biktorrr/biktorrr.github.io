@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dOnDErrrDag-MIDDAG-SPAMSpamspamspam.... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dOnDErrrDag-MIDDAG-SPAMSpamspamspam....</h1>
+<p class="tm">4 posts · started 2004-03-04 14:11 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040304141100" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-03-04 14:11</span></div>
+  <div class="pb">ik zie dat er al een aantal mensen begonnen zijn om hun bagger te posten, maar nu is hier dan de eerste officiele DOnderdagMIddagSPAm...<br><br><a href="http://www.theonion.com/news/">Jezus wil creative control over zijn volgende film</a><br><br>hihihi en hahaha<br><br>komt u maar met andere/betere SPAM<br><br>morgen weer een puuzl<br></div>
+</article>
+<article class="post" data-ts="20040304151700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-03-04 15:17</span></div>
+  <div class="pb">MWUUUH, veelsteveel tekst, veelsteweinig plaatjes. MWUUUH!!!</div>
+</article>
+<article class="post" data-ts="20040304161900" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-03-04 16:19</span></div>
+  <div class="pb">Minder tekst meer plaatjes, aangaande het phenomeen "Engrish"(Grappig Japans-Engels, bekend geworden door All Your Base Are Belong To Us.<br><a href="http://www.engrish.com/recent.php"> Engrish rules! </a><br></div>
+</article>
+<article class="post" data-ts="20040304164400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-03-04 16:44</span></div>
+  <div class="pb">en de mooiste is (onder het kopje drinks)<br><img src="http://www.engrish.com/image/thumbnails/biggy.jpg"><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

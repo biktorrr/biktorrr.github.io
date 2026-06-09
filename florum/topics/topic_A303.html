@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hellepie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hellepie</h1>
+<p class="tm">2 posts · started 2001-10-18 22:11 by Frank</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011018221100" id="p1">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#1 · 2001-10-18 22:11</span></div>
+  <div class="pb">Witte Joost je moet helpen!<br>Mijn gemene tweelingbroer Frank (the Pit) geeft zichzelf heel erg veel punten en dat is gemeen! </div>
+</article>
+<article class="post" data-ts="20011019101700" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2001-10-19 10:17</span></div>
+  <div class="ps">punten</div><div class="pb">geven aan mij zelf.. dit is echt niet het geval..<br>ik heb hier niets mee te maken,, ik distantier mij hiervan..<br>wat een beschuldigingen zeg... o o o<br><br>ik hoorde dit ook al van merlijn maar als ik niet speel kan <br>ik toch ook geen punten hebben... vreemde zaak hoor</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

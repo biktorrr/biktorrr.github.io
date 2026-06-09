@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biggit up for Sic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Biggit up for Sic</h1>
+<p class="tm">7 posts · started 2003-09-29 10:41 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030929104100" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-09-29 10:41</span></div>
+  <div class="pb">Rea-spectaaaa on da bee ai ar tea ache dee ai why!<br>to da jizzy!</div>
+</article>
+<article class="post" data-ts="20030929113300" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-09-29 11:33</span></div>
+  <div class="pb">booyaka booyaka, sikbok 4ffr!</div>
+</article>
+<article class="post" data-ts="20030929125000" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-09-29 12:50</span></div>
+  <div class="pb">Heeft Sicco dit keer z'n ding gedaan met de vrouw van Marco Borsato ofzo?</div>
+</article>
+<article class="post" data-ts="20030929130600" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2003-09-29 13:06</span></div>
+  <div class="pb">My man in da house. S to i to double C to tha Hans Hoogervorst. Jojojo.nog vele<br>jaren.</div>
+</article>
+<article class="post" data-ts="20030929141400" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-09-29 14:14</span></div>
+  <div class="pb">Ooooooooooooooh, c'est son anniversaire. Nou, dat hij maar joyeux moge zijn.</div>
+</article>
+<article class="post" data-ts="20030929151200" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-09-29 15:12</span></div>
+  <div class="pb">hiep hiep.</div>
+</article>
+<article class="post" data-ts="20031003202000" id="p7">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#7 · 2003-10-03 20:20</span></div>
+  <div class="ps">twenty five</div><div class="pb">dank danke danke</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

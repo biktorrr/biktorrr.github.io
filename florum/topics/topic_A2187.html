@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>het is weer vrijdag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">het is weer vrijdag</h1>
+<p class="tm">11 posts · started 2007-10-12 10:46 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071012104600" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2007-10-12 10:46</span></div>
+  <div class="pb">Boys, het is vanavond weer vrijdagavond, en dat betekent dat het weekend weer gevierd kan worden! Wie zijn er vanavond present om zeg 18.30? En heeft er nog iemand suggesties voor locatie. Ik ben wel voor het Heineken-plein, de beiaard bijvoorbeeld. </div>
+</article>
+<article class="post" data-ts="20071012104600" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-10-12 10:46</span></div>
+  <div class="pb">Ik ben erbij. Als voorstel voor een locatie zeg ik Eindhoven! Kunnen we Merlijn morgen helpen klussen, die woont daar in de buurt.</div>
+</article>
+<article class="post" data-ts="20071012105700" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-10-12 10:57</span></div>
+  <div class="pb">Niets liever dan dat. Helaas mag ik morgen naar zo'n oergezegellige familiedag. Dus iedereen is vanavond in Eindhoven de gekste aan het wezen?</div>
+</article>
+<article class="post" data-ts="20071012130400" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-10-12 13:04</span></div>
+  <div class="pb">ik ben er niet, maar Eindhoven zou wel zeker mijn tweede keus zijn geweest.</div>
+</article>
+<article class="post" data-ts="20071012135000" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2007-10-12 13:50</span></div>
+  <div class="pb">Woensel-Zuid. Potsers staan koud.<br><br>@Co: enkele reis Ehv-A'dam Amstel is maar 1 uur. Dus je kunt gerust mee voor het eerste deel.</div>
+</article>
+<article class="post" data-ts="20071012135200" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2007-10-12 13:52</span></div>
+  <div class="pb">holy fuck Co ligt het nou aan mij of begin jij de nieuwe mitsjel te worden met je familiedagen?<br><br>Ik ben ook voor Eindhoven.</div>
+</article>
+<article class="post" data-ts="20071012160500" id="p7">
+  <div class="ph"><span class="pa">VVV Eindhoven</span><span class="pm">#7 · 2007-10-12 16:05</span></div>
+  <div class="pb">Eindhoven is ook de ideale stad om familiedagen te houden</div>
+</article>
+<article class="post" data-ts="20071014134100" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-10-14 13:41</span></div>
+  <div class="pb">...nou dat hebben we gemerkt. </div>
+</article>
+<article class="post" data-ts="20071014135300" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2007-10-14 13:53</span></div>
+  <div class="pb">missie geslaagd?</div>
+</article>
+<article class="post" data-ts="20071015102700" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2007-10-15 10:27</span></div>
+  <div class="pb">zekers. Ik heb ook nog een gecodeerde voodoo spreuk op de muur geschilderd, zodat het kampioenschap dit jaar niet in Eindhoven gevierd zal worden.</div>
+</article>
+<article class="post" data-ts="20071015103400" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2007-10-15 10:34</span></div>
+  <div class="pb">Een zeer subtiele voodoo spreuk mag ik wel zeggen. Ans en Mien waren er ook zeer over te spreken!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

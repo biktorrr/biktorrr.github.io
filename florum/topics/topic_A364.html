@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eind van de onzekerheid! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Eind van de onzekerheid!</h1>
+<p class="tm">4 posts · started 2001-12-07 15:06 by WJ alias De Kale</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011207150600" id="p1">
+  <div class="ph"><span class="pa">WJ alias De Kale</span><span class="pm">#1 · 2001-12-07 15:06</span></div>
+  <div class="pb">Mannen,<br><br>Gisteravond waren er geruchten in de wandelgangen dat Schenker - Real overgespeeld zou worden. In dit geval zou S winnen en maximaal 13 punten kunnen halen. Net als wij MITS we van AEL B4 zouden winnen. Oftewel we zouden eigenlijk nog helemaal geen kampioen zijn.<br><br>MAAAR.......<br><br>Een kort bezoek aan het USC heeft duidelijkheid geboden.<br>Schenker heeft VERLOREN van AEL B4 en kan ons dus nooit meer inhalen. Voorl Real geld hetzelfde.<br><br></div>
+</article>
+<article class="post" data-ts="20011207163800" id="p2">
+  <div class="ph"><span class="pa">PTKC</span><span class="pm">#2 · 2001-12-07 16:38</span></div>
+  <div class="ps">Poopie The Kale Clown says:</div><div class="pb">KAMPIOOONE<br>KAMPIOOONE<br>OLE OLE OLE<br><br>KAMPIOOONE<br>KAMPIOOONE<br>OLE OLE OLE</div>
+</article>
+<article class="post" data-ts="20011207193400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-12-07 19:34</span></div>
+  <div class="pb">Pak van me hart!</div>
+</article>
+<article class="post" data-ts="20011208235100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-12-08 23:51</span></div>
+  <div class="pb">WOW WOW WOW, dan zijn we kampioen. Dat moeten<br>we vieren over 'n anderhalve maand! WOW WOW WOW</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

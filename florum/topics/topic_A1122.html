@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zeeland – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zeeland</h1>
+<p class="tm">8 posts · started 2004-02-26 10:57 by Lh</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040226105700" id="p1">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#1 · 2004-02-26 10:57</span></div>
+  <div class="pb">Als er nog mensen mee heen willen rijden naar Zeeland wij vertrekken omongeveer half 6 vanaf Den Haag met de wagen naar Zeeland.<br>Indien er nog intersse voor is moet je maar effies bellen naar Tijmen of naar mij.</div>
+</article>
+<article class="post" data-ts="20040226115000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-02-26 11:50</span></div>
+  <div class="pb">Misschien dat je even Sicco kunt peilen. Ik weet niet precies wat i van plan is, maar als i moet werken (in Den Haag) dan maakt i misschien van jullie aanbod gebruik.<br><br>Persoonlijk zit ik in de wagen van de Biktie.</div>
+</article>
+<article class="post" data-ts="20040226120700" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-02-26 12:07</span></div>
+  <div class="pb">ik heb van Frank begrepen dat zij er smiddags al zijn (rond een uur of twee/drie) en aangezien wij (de Biktie & Friends) om een uur of 19u/19.30u aankomen, eten wij gewoon mee in de twee beren.<br><br>Dat heb ik dus afgesproken met Frank. Als er nou mensen nog veel later willen komen, moeten die maar even bellen over of ze meeeeeeten<br></div>
+</article>
+<article class="post" data-ts="20040226132300" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2004-02-26 13:23</span></div>
+  <div class="pb">OK, ik rijd mee met Tijmen. Wij zijn er ook voor zevenen. Dus eten ook graag mee. Ik heb dan vast honger als twee beren.</div>
+</article>
+<article class="post" data-ts="20040226144400" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-02-26 14:44</span></div>
+  <div class="pb">Fleur en ik zullen ook zo rond 18 a 19 uur aankomen en eten dus mee. </div>
+</article>
+<article class="post" data-ts="20040305105700" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2004-03-05 10:57</span></div>
+  <div class="pb">Nog legendarische dingen gebeurd?</div>
+</article>
+<article class="post" data-ts="20040305111100" id="p7">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#7 · 2004-03-05 11:11</span></div>
+  <div class="pb">er is een video...</div>
+</article>
+<article class="post" data-ts="20040305112800" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2004-03-05 11:28</span></div>
+  <div class="pb">wanneer op dvd te verkrijgen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

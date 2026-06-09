@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Koninginenach Ballen Verzetten??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Koninginenach Ballen Verzetten???</h1>
+<p class="tm">9 posts · started 2004-04-14 09:25 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040414092500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-04-14 09:25</span></div>
+  <div class="pb">Floraboys,<br><br>donderdag 29 april moeten wij zaalballen, helaas alt dit samen met Koninginenach. Nu wilde Sicco en ik geloof ook Biktie dat ik dit ging proberen te verzetten. Ik denk niet dat dat makkelijk wordt, maar het valt te proberen MITS er anderen dezelfde mening gedaan zijn. Laat u horen alhier dus, dan zal ik het morgen regelen.<br><br>Tevens moet ik voor de oude wedstrijd van de 25e mei nog een nieuwe datum zien te vinden. </div>
+</article>
+<article class="post" data-ts="20040414101300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-04-14 10:13</span></div>
+  <div class="pb">Feitelijk ben ik er 29 april niet, dus mij zou het uitstekend uitkomen om de wedstrijd te verzetten.</div>
+</article>
+<article class="post" data-ts="20040414104700" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-04-14 10:47</span></div>
+  <div class="pb">tis mij om het even, daar we ook daarna nog kunnen knallen. Maar als er meerdere mensen tegen ballen zijn, dan ben ik voor verschuiven</div>
+</article>
+<article class="post" data-ts="20040414110500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-04-14 11:05</span></div>
+  <div class="pb">Ik zie dat de enige soepele manier van ruilen is met FC Gorgeous op 14 mei. Ik kom dan net teruggevlogen uit Griekenland, maar das prima te doen. <br><br>Ik zal dat morgen aan ze vragen en anders gaat het denk ik niet lukken. Ik ga er trouwens van uit dat ze niet zo happig zijn om te verhuizen naar K-nacht.</div>
+</article>
+<article class="post" data-ts="20040414111500" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2004-04-14 11:15</span></div>
+  <div class="pb">ik ben er zeker neit op 29 april.. ik kan gewoon niet..</div>
+</article>
+<article class="post" data-ts="20040414112300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-04-14 11:23</span></div>
+  <div class="pb">gewoon, gewoon... <br><br>dat is dus ONgewoon Biktie</div>
+</article>
+<article class="post" data-ts="20040414200300" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2004-04-14 20:03</span></div>
+  <div class="pb">verzetten!</div>
+</article>
+<article class="post" data-ts="20040415132600" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2004-04-15 13:26</span></div>
+  <div class="pb">Mijn mening was al gegeven. Lijkt me dat VIc met de verzet consensus uit de voeten kan (proberen dan)</div>
+</article>
+<article class="post" data-ts="20040417124000" id="p9">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#9 · 2004-04-17 12:40</span></div>
+  <div class="pb">mij boeit het niet heel erg.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

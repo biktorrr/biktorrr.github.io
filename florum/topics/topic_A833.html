@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Discobar Galaxie CD! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Discobar Galaxie CD!</h1>
+<p class="tm">2 posts · started 2003-07-04 20:25 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030704202500" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2003-07-04 20:25</span></div>
+  <div class="pb">Zou iemand deze kunnen downloaden??? Zou wel heel terecht zijn. <br><br>Tracklisting Discobar Galaxie<br><br>01 --- - listen to da sound<br>02 groove armada - superstylin'<br>03 technotronic - pump up the jam<br>04 moloko - sing it back<br>05 anita ward - ring my bell<br>06 dave clarke - shake your booty<br>07 bucketheads - the bomb (these sounds fall into my mind)<br>08 trio - da da da (i don't love you, you don't love me, aha aha aha)<br>09 --- - say what?<br>10 fun fun - happy station<br>11 bohannon - let's start to dance again<br>12 yello - bostich (n'est-ce pas)<br>13 fatboy slim - fucking in heaven<br>14 hithouse - jack to the sound of the underground<br>15 lipps inc - funkytown<br>16 cameo - word up<br>17 musical youth - pass the dutchie<br>18 massilia soundsystem - la fille du selecta<br>19 kris kross - jump<br>20 freestylers - b boy stance<br>21 --- - come again<br>22 bucks fizz - the land of make believe<br>23 natural born chillers - rock the funky beat<br>24 apollo 4 40 - lost in space (theme)<br>25 krs-one - sound of da police<br>26 house of pain - jump around<br>27 conquistador - argentina<br>28 young black teenagers - tap the bottle<br>29 naughty by nature - hip hop hooray<br>30 de la soul - me, myself & i<br>31 wham - young guns (go for it)<br>32 indeep - last night a dj saved my life<br>33 erotic dissidents - move your ass & feel the beat<br>34 george clinton - atomic dog<br>35 coolio - 1 2 3 4 (sumpin' new)<br>36 curtis blow - the breaks<br>37 --- - ding dang dong<br>53 raffaella carra - a far l'amore comincia tu (liebelei)<br> <br></div>
+</article>
+<article class="post" data-ts="20030704203000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2003-07-04 20:30</span></div>
+  <div class="pb">terecht afsluitend nummer trouwens! </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

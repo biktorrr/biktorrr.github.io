@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lord of the Rings *spoed* – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lord of the Rings *spoed*</h1>
+<p class="tm">5 posts · started 2002-01-09 17:23 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020109172300" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2002-01-09 17:23</span></div>
+  <div class="pb">Dudez, wie heeft er zin om vanavond in AdaM naar de Lord of the Rings te gaan?  <br><br>Bel me ff (023-5511848 of 0641286100)<br><br></div>
+</article>
+<article class="post" data-ts="20020109195400" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2002-01-09 19:54</span></div>
+  <div class="pb">ikniet</div>
+</article>
+<article class="post" data-ts="20020110113900" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2002-01-10 11:39</span></div>
+  <div class="pb">als je em nu nog niet gezien hebt kan je maar beter helemaal niet gaan..<br>En btw. in Les2Alpes draaien ze em vast ook...<br>"TU... NE... PASSES.... RIEN!!!"</div>
+</article>
+<article class="post" data-ts="20020110132500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-01-10 13:25</span></div>
+  <div class="pb">Nee dank je.</div>
+</article>
+<article class="post" data-ts="20020110165800" id="p5">
+  <div class="ph"><span class="pa">wJ</span><span class="pm">#5 · 2002-01-10 16:58</span></div>
+  <div class="pb">EHM Tn volgens mij lag ik tijdens de premiere in het ziekenhuis. In zaltbomel hebben ze geen bioskoop dus vandaar.<br><br>Maar goed, iedereen is er dus al naar toe geweest en dus wordt het over 6 maanden eenzaam op de bank nara de video kijken vrees ik.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

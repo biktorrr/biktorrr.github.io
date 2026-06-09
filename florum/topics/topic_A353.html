@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toeval bestaat niet... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Toeval bestaat niet...</h1>
+<p class="tm">4 posts · started 2001-11-26 15:01 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011126150100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-11-26 15:01</span></div>
+  <div class="pb">'n Vluchtige blik op de MVP-verkiezing leert dat Holy<br>en ik beiden met 23 punten bovenaan staan. Wat 'n eer<br>om op gelijke hoogte met de Zon te staan! Die 23 pun-<br>ten zullen wel 'n aardige geste uit zijn koker zijn.<br><br>Bedankt Heiligheid!</div>
+</article>
+<article class="post" data-ts="20011126190600" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2001-11-26 19:06</span></div>
+  <div class="pb">Weest maar blij dat je geen hoogtevrees hebt!</div>
+</article>
+<article class="post" data-ts="20011127001400" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2001-11-27 00:14</span></div>
+  <div class="pb">dat zijn dus drie middagen drie punten van mij...omdat ik je gewoon super de beste vind Mer.En Di Stefano natuurlijk.<br>Je zal van't weekend ookwel weer geskitterd hebben,jammer dat ik er niet was..Ik zou de reis erheen er misschien nog wel voor overgehad hebben.<br></div>
+</article>
+<article class="post" data-ts="20011127172300" id="p4">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#4 · 2001-11-27 17:23</span></div>
+  <div class="pb">Merlijn was echt VRESELIJK goed, zelden zijn de erecodes mannen zo vernederd. Merlijn wist op het eind niet eens meer hoeveel assists en goals hij nou gemaakt had, iedereen probeerde het bij te houden maar het is gewoon niet gelukt.<br><br>RESPECT DUS<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

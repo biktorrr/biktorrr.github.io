@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hahahahahahaha – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hahahahahahaha</h1>
+<p class="tm">7 posts · started 2006-03-03 13:39 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060303133900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-03-03 13:39</span></div>
+  <div class="pb">hij hoort misschien in het voetbalflorum, maar ik vind eigenlijk dat iedereen hier van mag genieten:<br><br><a href="http://www.vkmag.com/media/rafaelvandervaartscoort/">van der Vaart scoort</a></div>
+</article>
+<article class="post" data-ts="20060303205000" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2006-03-03 20:50</span></div>
+  <div class="pb">Oke, het risico bestaat dat jullie dit allemaal gewoon gezien hebben maar deze is te grappig om niet te delen.<br><br>Marco van Basten geeft na Nederland Ecuador een persconferentie. Hij legt een Duitse journalist iets uit en als hij klaar is vraagt hij in het Duits (oprecht geinteresseerd lijkt het)  wat Duitsland heeft gedaan tegen Italie. De journalist antwoord dat Duitsland met 4-1 verloren heeft. Iedereen lacht een beetje zenuwachtig en van Basten kijkt enigzins gegeneerd rond. Om vervolgens zich excuserend tegen de journalist te zeggen "Ich habe das nicht gewust". <br><br></div>
+</article>
+<article class="post" data-ts="20060303205500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-03-03 20:55</span></div>
+  <div class="pb">ik had het niet gezien, en dus moest ik nu alsnog grinnikken.<br>die bondcoach toch...</div>
+</article>
+<article class="post" data-ts="20140212182931" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2014-02-12 18:29</span></div>
+  <div class="pb"><img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/t1/1620804_10203269206711624_486055536_n.jpg"><h2>HAHAHAHAHAHAHAHAHA</h2><h1>HAHAHAHAHAHAHAHAHA</h1><h4>HAHAHAHAHAHAHAHAHA</h4><h3>HAHAHAHAHAHAHAHAHA</h3><h3>HAHAHAHAHAHAHAHAHA</h3><h4>HAHAHAHAHAHAHAHAHA</h4></div>
+</article>
+<article class="post" data-ts="20140212191250" id="p5">
+  <div class="ph"><span class="pa">H. Tml</span><span class="pm">#5 · 2014-02-12 19:12</span></div>
+  <div class="pb"><h1>!!<br><h2>, <h2>, <h2>!<br><h3>!!</div>
+</article>
+<article class="post" data-ts="20140212191501" id="p6">
+  <div class="ph"><span class="pa">H. Tml</span><span class="pm">#6 · 2014-02-12 19:15</span></div>
+  <div class="pb">Bedoelde natuurlijk < h2 >, < h2 >, < h2 >!!<br> < h3 >, < h4 >, < h1 >!<br> < h2 >, < h2 >!</div>
+</article>
+<article class="post" data-ts="20140212204601" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2014-02-12 20:46</span></div>
+  <div class="pb">L orienteert zich al op onze verzameling dictator-boeken en antwoord:<br>Moehahahaha</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

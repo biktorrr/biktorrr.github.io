@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amsterdam Tournament 8 augustus – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amsterdam Tournament 8 augustus</h1>
+<p class="tm">8 posts · started 2008-07-12 10:39 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080712103900" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2008-07-12 10:39</span></div>
+  <div class="pb">he LG Amsterdam Tournament 2008 <br>Vriendschappelijk Toernooi<br>Vrijdag 8 augustus<br>19.00 uur: FC Internazionale - Sevilla FC<br>21.15 uur: AFC Ajax - Arsenal FC<br>Let op: het gekochte ticket is geldig voor beide wedstrijden op vrijdag 8 augustus.<br><br>Komend seizoen worden we wel echt kampioen, wie wil hier naar toe?</div>
+</article>
+<article class="post" data-ts="20080712164400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2008-07-12 16:44</span></div>
+  <div class="pb">Ik</div>
+</article>
+<article class="post" data-ts="20080712214400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-07-12 21:44</span></div>
+  <div class="pb">Klinkt goed.</div>
+</article>
+<article class="post" data-ts="20080715120900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2008-07-15 12:09</span></div>
+  <div class="pb">Het zou wel een uitgelezen kans zijn om Ajax te zien verliezen, ik vrees toch dat San Marco voor een ommekeer zou kunnen zorgen.</div>
+</article>
+<article class="post" data-ts="20080716114100" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2008-07-16 11:41</span></div>
+  <div class="ps">3 x</div><div class="pb">3 echte Fans dus, die ook in mindere tijden hun club steunen.. Heel mooi. <br><br>Daar we nog clubkaarten hebben moeten we nog even wachten met kaarten kopen... Joost als jij je clubkaart eerder ontvangt laat het dan ff weten..<br><br> Vanaf zaterdag 21 juni 2008 09:00u <br> Ajax SCC-, Sup.CC-, AJS.CC- en KCC-houders <br> Vanaf woensdag 25 juni 2008 09:00u <br> Ajax SCC-, Sup.CC-, AJS.CC-, KCC- en CC-houders <br> Vanaf zaterdag 28 juni 2008 09:00u <br> Vrije verkoop zonder Club Card verplichting <br></div>
+</article>
+<article class="post" data-ts="20080725144500" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2008-07-25 14:45</span></div>
+  <div class="ps">kaartjes</div><div class="pb">De kaartjes zijn al maand in vrije verkoop zie ik net, <br>ik ga morgen kaartjes kopen dus mochten er nog last-minute fans zijn.....</div>
+</article>
+<article class="post" data-ts="20080730203200" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2008-07-30 20:32</span></div>
+  <div class="ps">Vak 129</div><div class="pb">Het vak voor de echte fans! </div>
+</article>
+<article class="post" data-ts="20080731074500" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2008-07-31 07:45</span></div>
+  <div class="pb">Heel goed!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

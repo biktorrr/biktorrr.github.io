@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Colonel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">The Colonel</h1>
+<p class="tm">4 posts · started 2004-11-21 12:56 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041121125600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-11-21 12:56</span></div>
+  <div class="pb">Hier het hele mooie verhaal.<br><a href="http://www.kfc.com/about/colonel.htm"> the colonel </a><br><br>en mooie shirts!<br><a href="http://kfc.speedfc.com/"> Bucket the system! </a><br></div>
+</article>
+<article class="post" data-ts="20041122091800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-11-22 09:18</span></div>
+  <div class="pb">Dag lieve KFC, met je inferieure kipafval, dahaag</div>
+</article>
+<article class="post" data-ts="20041122102000" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-11-22 10:20</span></div>
+  <div class="pb">Ja..het was wel raar om zondag wakker te worden en dan stukjes bot tussen je tanden te voelen en niet meer kunnen herinneren wat er gebeurd is.</div>
+</article>
+<article class="post" data-ts="20041122170200" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-11-22 17:02</span></div>
+  <div class="pb">Ik vond nog allemaal mooie couponnetjes in de auto, misschien kunnen we gewoon floraboys-3ekerstdag bij de KFC vieren?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>paniek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">paniek</h1>
+<p class="tm">9 posts · started 2008-02-09 13:08 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080209130800" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2008-02-09 13:08</span></div>
+  <div class="pb">boys, de little t neemt al anderhalf uur z'n telefoon niet op. Kan iemand misschien de politie bellen? Mijn beltegoed is op.</div>
+</article>
+<article class="post" data-ts="20080209143900" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2008-02-09 14:39</span></div>
+  <div class="pb">Bij mij neemt hij anders wel op hoor.<!--82.95.195.221--></div>
+</article>
+<article class="post" data-ts="20080209180700" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2008-02-09 18:07</span></div>
+  <div class="pb">Bij mij ook. Hij maakte overigens wel enigszins vreemde geluiden, een soort ritmisch gebeuren en een grote knal... Maarreh amice en VB, even offtopic: gaan we nou toch bij Joost pokeren? Top! Ben erbij...<!--89.205.168.182--></div>
+</article>
+<article class="post" data-ts="20080209181800" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-02-09 18:18</span></div>
+  <div class="pb">hijzelf niet, dus lijkt me een slecht plan<!--82.204.25.6--></div>
+</article>
+<article class="post" data-ts="20080209193000" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-02-09 19:30</span></div>
+  <div class="pb">Klinkt als een panieksituatie!!!<br><br>Maar, triple Jazz, ik weet dat je me in het ootje neemt, want 112 kun je ook zonder beltegoed bellen.<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080210112900" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-02-10 11:29</span></div>
+  <div class="pb">Olicke: morgen <a href="http://www.nu.nl/news/1429058/10/Maandag_11_2_wordt_eerste_Europese_112-dag.html" target="_blank">Europese 112 dag</a>!<!--84.86.224.97--></div>
+</article>
+<article class="post" data-ts="20080211081300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-02-11 08:13</span></div>
+  <div class="pb">Ha, goed dat je het zegt. Die kan ik niet zomaar voorbij laten gaan.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080212101700" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-02-12 10:17</span></div>
+  <div class="pb">Hee professor, ik lees dat je weer hebt toegeslagen!<br><br>TURNHOUT - Een copulerend koppel heeft ophef veroorzaakt in het station van het Belgische Turnhout. Een voorbijganger hoorde zoveel rumoer uit de toiletten komen dat hij verontrust de politie belde.<br><br>Politiepatrouilles kwamen met luide sirenes aangereden. Bij controle bleek het om een koppel te gaan dat in een wc-hok de liefde aan het bedrijven was. In opperste staat van opwinding werden de nodige decibels geproduceerd, meldden Belgische media dinsdag.<br><br>De twee gingen vrijuit. Ze waren immers niet zichtbaar voor bezoekers van het station. Volgens een getuige waren opvallend veel politiewagens uitgerukt. <!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080212102300" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-02-12 10:23</span></div>
+  <div class="pb">In Belgie nemen ze je tenminste serieus als verontruste burgerman. In Ehv moest ik smeken of ze niet ajb spoedig langs wilden komen. En van een zwaailicht was al helemaal geen sprake.<!--194.171.252.100--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

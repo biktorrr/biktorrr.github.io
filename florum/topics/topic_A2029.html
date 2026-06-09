@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4 mei: brouwerij &#x27;t ij – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">4 mei: brouwerij &#x27;t ij</h1>
+<p class="tm">8 posts · started 2007-05-02 22:09 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070502220900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-05-02 22:09</span></div>
+  <div class="pb">Boys, girls,<br><br>Vrijdag is het weer zover: snoeihard borrelen in brouwerij 't ij. Mis het niet!!! Ik zit er al vanaf een uur of 5.<br><br>Komt allen,</div>
+</article>
+<article class="post" data-ts="20070502222800" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-05-02 22:28</span></div>
+  <div class="pb">Met een nonalcoholisch & sober moment 20.00u - 20.02u I assume. En: wat doen we met de 5e mei? Haerloheym ofte Aemferdolami?</div>
+</article>
+<article class="post" data-ts="20070502225100" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-05-02 22:51</span></div>
+  <div class="pb">4 mei ben ik in Amsterdam bij Robert en Anne-Floor. Zaterdag moet ik werken, maar pas om 6uur. Daarvoor heb ik nog wel zin om langs de kraampjes te struinen en in het park naar wat muziekjes te luisteren.</div>
+</article>
+<article class="post" data-ts="20070502231900" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2007-05-02 23:19</span></div>
+  <div class="pb">Ik ben er bij, gezellig in de zon op het terras.<br>'t treft dat Brouwerij 't IJ altijd al sluit om 20 uur.</div>
+</article>
+<article class="post" data-ts="20070503174200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-05-03 17:42</span></div>
+  <div class="pb">Hee Merl, zullen we van tevoren even een paar rondjes Java/KNSM-eiland lopen?</div>
+</article>
+<article class="post" data-ts="20070504092900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2007-05-04 09:29</span></div>
+  <div class="pb">Fok je me nou?!<br><br>Ca komt ook naar 't IJ.</div>
+</article>
+<article class="post" data-ts="20070504093600" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-05-04 09:36</span></div>
+  <div class="pb">nou dan ben ik er ook bij (niet bij een eventueel renfestijn overigens)</div>
+</article>
+<article class="post" data-ts="20070504105400" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-05-04 10:54</span></div>
+  <div class="pb">chezellich!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

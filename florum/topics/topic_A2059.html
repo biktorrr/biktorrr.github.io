@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wamberto II – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wamberto II</h1>
+<p class="tm">5 posts · started 2007-06-04 13:35 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070604133500" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2007-06-04 13:35</span></div>
+  <div class="pb"><br><br>Ajax maakte maandag bekend dat het Richard Danilo Maciel Sousa Campos voor een jaar heeft vastgelegd. Campos is de zoon van oud-Ajacied Wamberto en was al jeugdspeler bij de Amsterdammers. De speler ligt nu tot de zomer van 2010 vast.</div>
+</article>
+<article class="post" data-ts="20070604141900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-06-04 14:19</span></div>
+  <div class="pb">Tereeecht, <br>ik ben benieuwd wie die als eerste doorgesmst had.</div>
+</article>
+<article class="post" data-ts="20070604152900" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2007-06-04 15:29</span></div>
+  <div class="pb">godverdegodverdegodver</div>
+</article>
+<article class="post" data-ts="20070605130200" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2007-06-05 13:02</span></div>
+  <div class="pb">Richard Danilo Maciel Sousa Campos heeft zijn eerste profcontract op zak. De oudste zoon van oud-Ajacied Wamberto <i>(33)</i> tekende tot medio 2010.<br>De <i>zeventienjarige</i> Danilo.<br><br>Die goeie ouwe Wamberto was er veel op tijd bij blijkbaar.</div>
+</article>
+<article class="post" data-ts="20070605144600" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2007-06-05 14:46</span></div>
+  <div class="pb">Kleine geile Wamberto</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

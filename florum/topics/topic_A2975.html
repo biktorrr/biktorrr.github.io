@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Victor doctor est – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Victor doctor est</h1>
+<p class="tm">12 posts · started 2010-09-30 13:20 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100930132000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2010-09-30 13:20</span></div>
+  <div class="pb">Onder het motto 'het is pas echt zo als het op Florum staat' hier een getuigenis dat Victor niet zes jaar uitsluitend heeft gepaint van onze belastingcenten, maar dat hij ook mooi werk heeft afgeleverd, dat hij met verve heeft verdedigd en waarvoor zijn hooggeleerde opponenten veel waardering hadden.<br><br>Felicitatii, doctore</div>
+</article>
+<article class="post" data-ts="20100930135400" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2010-09-30 13:54</span></div>
+  <div class="pb">Mooi!<br>in 1997 beginnen met studeren en in 2010 promoveren....maakt dat 6 jaar niet een tikkeltje optimistisch?</div>
+</article>
+<article class="post" data-ts="20100930153500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2010-09-30 15:35</span></div>
+  <div class="pb">Doctor te salute</div>
+</article>
+<article class="post" data-ts="20100930225700" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2010-09-30 22:57</span></div>
+  <div class="pb">Ita est.</div>
+</article>
+<article class="post" data-ts="20101001002300" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2010-10-01 00:23</span></div>
+  <div class="pb">Mooi nieuws inderdaad. Congraties.</div>
+</article>
+<article class="post" data-ts="20101001100100" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2010-10-01 10:01</span></div>
+  <div class="pb">hoe bevalt het speeltje, iDoc ?<br></div>
+</article>
+<article class="post" data-ts="20101001102500" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2010-10-01 10:25</span></div>
+  <div class="pb">Girls, Boys, allereerst superbedankt voor jullie bijdrage aan de feestvreugde gisteren. Ik vond het een ontzettend leuke dag. En natuurlijk onwijs bedankt voor het bizar vette kado! Ik probeer hem al nakaterend aan de raat te krijgen :)</div>
+</article>
+<article class="post" data-ts="20101001112900" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2010-10-01 11:29</span></div>
+  <div class="pb">mooi mooi,<br>Ik wil ook bij deze Merlijn bedanken voor de skitterende toespraak. Vic fileren met een zijdezacht mesje, hoogh.<br><br></div>
+</article>
+<article class="post" data-ts="20101001125500" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2010-10-01 12:55</span></div>
+  <div class="pb">Amen, ik heb van jullie allemaal genoten.</div>
+</article>
+<article class="post" data-ts="20101001160300" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2010-10-01 16:03</span></div>
+  <div class="pb">Ja, ik heb vandaag meerdere mensen gesproken die allemaal net zo genoten hebben van Merl's toespraak als het leidend voorwerp.<br><br>Dank!</div>
+</article>
+<article class="post" data-ts="20101001173700" id="p11">
+  <div class="ph"><span class="pa">IJ-nazi</span><span class="pm">#11 · 2010-10-01 17:37</span></div>
+  <div class="pb">Doet de Draaier dit nu expres?</div>
+</article>
+<article class="post" data-ts="20101001173700" id="p12">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#12 · 2010-10-01 17:37</span></div>
+  <div class="pb">Merls toespraak was inderdaad een parel, hulde! Erg mooie dag!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

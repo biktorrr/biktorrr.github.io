@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huilt van binnen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Huilt van binnen</h1>
+<p class="tm">4 posts&nbsp;·&nbsp;started 2001-06-18 00:56 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010618005600" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1&nbsp;·&nbsp;2001-06-18 00:56</span></div>
+  <div class="pb">Wil iemand svp even Erik 1 MVP punt geven dan is mijn vernedering echt compleet. <br><br></div>
+</article>
+<article class="post" data-ts="20010618180100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2&nbsp;·&nbsp;2001-06-18 18:01</span></div>
+  <div class="pb">ok</div>
+</article>
+<article class="post" data-ts="20010619162700" id="p3">
+  <div class="ph"><span class="pa">Big Bow Wow</span><span class="pm">#3&nbsp;·&nbsp;2001-06-19 16:27</span></div>
+  <div class="pb">Aaah. Zo erg speelde je nou ook weer niet hoor <br>Joost. Alleen moeten we constateren dat jij <br>niet meer zo goed speelt als je de eerste tien<br>keer deed toen je bij ons kwam of dat wij heel<br>veel beter zijn geworden. Dat laatste is niet<br>zo waarschijnlijk. Dus zul je de oorzaak toch<br>echt bij jezelf moeten gaan zoeken. Misschien<br>moet jou giga-ego maar 's 'n bescheidenheids-<br>training ondergaan. Wat dacht je d'r van om<br>volgende keer met Erik in de verdediging te <br>staan? Dan leer je nog 's wat de essentie van<br>ballen is! Verdedigen!</div>
+</article>
+<article class="post" data-ts="20010620135000" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4&nbsp;·&nbsp;2001-06-20 13:50</span></div>
+  <div class="pb">Sorry maar je kan mij een boel wijsmaken maar zeker niet dat ik een giga ego heb. Misschien lijkt dat zo maar het IS zeker niet zo.<br></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

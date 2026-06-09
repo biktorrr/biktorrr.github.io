@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weekend 18/19 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Weekend 18/19</h1>
+<p class="tm">13 posts&nbsp;·&nbsp;started 2001-11-14 12:57 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011114125700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1&nbsp;·&nbsp;2001-11-14 12:57</span></div>
+  <div class="pb">Live goes on. Wie komen er dit weekend ballen? Ik wel,<br>met goals.</div>
+</article>
+<article class="post" data-ts="20011114130600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2&nbsp;·&nbsp;2001-11-14 13:06</span></div>
+  <div class="pb">Sorry, 18/19 moet natuurlijk 17/18 zijn.</div>
+</article>
+<article class="post" data-ts="20011114143600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3&nbsp;·&nbsp;2001-11-14 14:36</span></div>
+  <div class="pb">weet het nog niet, moet monteren, <br>reken dus maar niet op mij (sux)</div>
+</article>
+<article class="post" data-ts="20011114143600" id="p4">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#4&nbsp;·&nbsp;2001-11-14 14:36</span></div>
+  <div class="ps">Is niet erg mijn beste</div><div class="pb">En ik ben weer van de partij na een tijdelijke afwezigheid. Daarvoor mijn excuses. Dat wordt een tegen een, wie zal winnen?</div>
+</article>
+<article class="post" data-ts="20011114145800" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5&nbsp;·&nbsp;2001-11-14 14:58</span></div>
+  <div class="pb">Merlijn want met zijn mega poten wint hij het pispotten en ben ik dus bij hem.<br><br></div>
+</article>
+<article class="post" data-ts="20011114170100" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6&nbsp;·&nbsp;2001-11-14 17:01</span></div>
+  <div class="ps">nee wacht</div><div class="pb">nee toch niet monteren, <br>ik ben er dus za/zo bij!<br></div>
+</article>
+<article class="post" data-ts="20011114192300" id="p7">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#7&nbsp;·&nbsp;2001-11-14 19:23</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20011114192400" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8&nbsp;·&nbsp;2001-11-14 19:24</span></div>
+  <div class="pb">Ondanks de op-me-hoofd-staan-stoel-omval-act doen mijn beide knietjes het weer, ikke zal er beide dagen bij zijn.</div>
+</article>
+<article class="post" data-ts="20011115141100" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9&nbsp;·&nbsp;2001-11-15 14:11</span></div>
+  <div class="pb">Dat maakt 5. COME ON!!!</div>
+</article>
+<article class="post" data-ts="20011115141300" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10&nbsp;·&nbsp;2001-11-15 14:13</span></div>
+  <div class="ps">Je serai l</div><div class="pb">Contre toutes mes habitudes, je serai au champ de Flora. Pour les b\ètas: ik ben er. Zeker op zaterdag, misschien op zondag.</div>
+</article>
+<article class="post" data-ts="20011115145300" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11&nbsp;·&nbsp;2001-11-15 14:53</span></div>
+  <div class="pb">Tijmen zei ook dat i kwam. Hij weigert 't op 't Florum te zetten.<br>Daar moeten we respect voor hebben. Dat maakt 7. COME ON!!!</div>
+</article>
+<article class="post" data-ts="20011115145600" id="p12">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#12&nbsp;·&nbsp;2001-11-15 14:56</span></div>
+  <div class="ps">In da hauwwzzz</div><div class="pb">jajajajaja..7 it is! representa</div>
+</article>
+<article class="post" data-ts="20011115160900" id="p13">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#13&nbsp;·&nbsp;2001-11-15 16:09</span></div>
+  <div class="ps">De 8! De 8!</div><div class="pb">Wie maakt ons losch? SandOr?!? Jaah!! Vier tegen vier. Hoppetaa!!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

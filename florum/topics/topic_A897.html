@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iets voor de scheids van dinsdag? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">iets voor de scheids van dinsdag?</h1>
+<p class="tm">3 posts · started 2003-09-18 02:11 by wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030918021100" id="p1">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#1 · 2003-09-18 02:11</span></div>
+  <div class="pb">Roemeense heksen vervloeken arbiter Meier<br><br>14/9/2003  20:23<br><br>In Roemeni\ë is de 2-2 tegen Denemarken hard aangekomen. Erg hard. Vooral over de gelijkmaker van de Denen ver in blessuretijd zijn de voetbalfans woest. Scheidsrechter Urs Meier is nu de gebeten hond. <br>De Zwitserse arbiter leidde in Kopenhagen het EK-kwalificatieduel. Volgens de Roemenen kende Meier de Denen een onterechte strafschop toe en telde hij veel te veel blessuretijd bij waardoor Martin Laursen in de 95ste minuut de 2-2 kon maken.<br><br>Roemeni\ë is nu kansloos voor directe plaatsing voor het EK 2004 in Portugal en moet op de laatste speeldag hopen dat Noorwegen en/of Bosni\ë-Herzegovina de tweede plaats niet inpikken. <br><br>Als wraak publiceerde een Roemeense krant het e-mailadres van Meier. Het leverde de ervaren scheidsrechter zo'n 14.000 onvriendelijke berichten op. Maar Meier moet ook vrezen voor meer onconventionele acties. <br><br>Zo zouden zeven heksen uit de Craiova een vloek over hem hebben uitgesproken. Als de vloek werkt, krijgt Meier zijn ene voet niet meer voor zijn andere en vergaat hem de kunst om op een fluitje te blazen. <br></div>
+</article>
+<article class="post" data-ts="20030918103500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-09-18 10:35</span></div>
+  <div class="pb">dit filmpje voor is vrij hilarisch:<br><a href="http://www.donpixel.com/video/?v=030916154212">THE GAY REFEREE</a></div>
+</article>
+<article class="post" data-ts="20030918140200" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-09-18 14:02</span></div>
+  <div class="pb">tja ik kan nou wel gaan lopen roepen dat dit flauw en stigmatiserend is. Maar das natuurlijk niet waar. Tis gewoon leuk.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

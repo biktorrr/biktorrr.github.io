@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys koffietijd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys koffietijd</h1>
+<p class="tm">12 posts · started 2012-02-09 12:48 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120209124826" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2012-02-09 12:48</span></div>
+  <div class="pb"><p><br>	Booys, 11u: tijd voor koffie. Geniet ervan!</p><br></div>
+</article>
+<article class="post" data-ts="20120209132055" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2012-02-09 13:20</span></div>
+  <div class="pb">Normaal is 10u koffietijd hoor..met Quinty. 11u is meer Koffie Max tijd volgens mij. Maar prossit bij deze!</div>
+</article>
+<article class="post" data-ts="20120209133434" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2012-02-09 13:34</span></div>
+  <div class="pb">Prossit. Overigens geinspireerd door het welterustentopic.</div>
+</article>
+<article class="post" data-ts="20120209134420" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2012-02-09 13:44</span></div>
+  <div class="pb">Thanks...wij mogen idd best wat vaker stilstaan bij deze kleine geneugtes.</div>
+</article>
+<article class="post" data-ts="20120210125127" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2012-02-10 12:51</span></div>
+  <div class="pb">HOps, daar gaan we weder, op naar de koffiemachien<br></div>
+</article>
+<article class="post" data-ts="20120210125341" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2012-02-10 12:53</span></div>
+  <div class="pb">Lekker hoor. Even genieten. Momentje voor jezelf.</div>
+</article>
+<article class="post" data-ts="20120210125439" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2012-02-10 12:54</span></div>
+  <div class="pb">hoho, met de collegae he?<br></div>
+</article>
+<article class="post" data-ts="20120210131031" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2012-02-10 13:10</span></div>
+  <div class="pb">Koffieapparaat is kapot...</div>
+</article>
+<article class="post" data-ts="20120210132044" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2012-02-10 13:20</span></div>
+  <div class="pb">Dan mag je naar huis toch?</div>
+</article>
+<article class="post" data-ts="20120210132733" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2012-02-10 13:27</span></div>
+  <div class="pb">Mijn Nespresso cups zijn op en ik weiger om die bagger uit ons Douwe Egberts-automaat te drinken. Net een cup geleend van een conculegaatje, maar dat drinkt toch niet zo ontspannen.</div>
+</article>
+<article class="post" data-ts="20120210135634" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2012-02-10 13:56</span></div>
+  <div class="pb">Hebben jullie wel een starbucks in het Chicago office?</div>
+</article>
+<article class="post" data-ts="20120210143619" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2012-02-10 14:36</span></div>
+  <div class="pb">In het ziekenhuis zit een Argo tea. Hell yeah!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Di-Mi-Spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Di-Mi-Spam</h1>
+<p class="tm">6 posts · started 2006-09-26 14:44 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060926144400" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-09-26 14:44</span></div>
+  <div class="pb">Mijn nieuwe voltijd bezigheid (Vic's painttijd ontnemen) brengt mij tot het volgende spammetje:<br><br><a href="http://forums.lfconline.com/showthread.php?t=45686">Liedjes voor Katwijk's Modelzoon</a><br></div>
+</article>
+<article class="post" data-ts="20060926163800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-09-26 16:38</span></div>
+  <div class="pb">*stopt even met painten*<br><br>HAHAHAHA! steengoed..<br><br>*paint onverstoord verder*</div>
+</article>
+<article class="post" data-ts="20090929105000" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2009-09-29 10:50</span></div>
+  <div class="pb">Zojuist op de radio een advertentie voor een (nieuwe) no-nonsense glossy. Denk daar maar eens over na.<br><br>P.S. Gefeliciteerd trouwens baquilles, het is weer Deeeehnsdag</div>
+</article>
+<article class="post" data-ts="20090929153000" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2009-09-29 15:30</span></div>
+  <div class="pb">wow, dat was wel een hele ouwe post die je daar oprakelde Jazzy. <br><br>HEt is overigens inderdaad DEEEHNSDAG<br><br>*paint ook drie jaar later weer onverstoord verder...</div>
+</article>
+<article class="post" data-ts="20130710163143" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2013-07-10 16:31</span></div>
+  <div class="pb">CONIFY, we hebben met al dat goeie nieuws meer corny nodig.<br><br><br><a href="http://www.cornify.com" onclick="cornify_add();return false;"><img src="http://www.cornify.com/assets/cornify.gif" width="61" height="16" border="0" alt="Cornify" /></a></div>
+</article>
+<article class="post" data-ts="20130715191122" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2013-07-15 19:11</span></div>
+  <div class="pb">Vast al gezien, maar om <a href="http://www.nu.nl/media/3525232/amerikaanse-tv-zender-blundert-met-namen-piloten-san-francisco.html" target="foekjoe">dit bericht</a> heb ik bijna moeten huilen van het lachen (zonder te veel verwachtingen te willen wekken)...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

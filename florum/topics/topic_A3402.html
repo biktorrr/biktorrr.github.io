@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groot Floraboys GoT-topiquille met spoilers t/m aflevering 3 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groot Floraboys GoT-topiquille met spoilers t/m aflevering 3</h1>
+<p class="tm">1 post · started 2016-05-21 16:15 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160521161539" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2016-05-21 16:15</span></div>
+  <div class="pb"><p><br>	Het wordt verwarrend op deze manier, maar het moest maar. Ik hoop aflevering 4 en 5 op maandag bij het Draaiertje te zien,</p><br><p><br>	Bij GoT is de vraag altijd: wordt er gehoorzaamd aan het cliche, of niet? Het einde van aflevering 3 komt mooi met het cliche overeen. We hebben het in talrijke films en series gezien: de held ziet het niet meer, de held loopt weg, bekijk het maar zegt de held. Wat gebeurt er vervolgens? De held komt ALTIJD terug. ALTIJD.&nbsp;</p><br><p><br>	Het zou mooi zijn als in dit geval de held gewoon echt weg loopt, en weg blijft. Bovendien is er een mooi voorbeeld uit de klassieke literatuur. In Oedipus in Kolonnos komen er gezanten bij de in ballingschap levende Oedipus aan. Kan hij niet terugkomen en de stad Thebe redden? Oedipus scheldt drie aktes lang op Thebe, en blijft vervolgens gewoon lekker waar die is. Zou mooi zijn als we zoiets ook van Jon Snow zouden kunnen verwachten, maar helaas, hij is geen meester van de beschimping. Geen Tyrion Lannister, zogezegd.&nbsp;</p><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

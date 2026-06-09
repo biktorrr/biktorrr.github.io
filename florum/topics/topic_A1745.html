@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FC Haarlem - FC Zwolle ?? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FC Haarlem - FC Zwolle ??</h1>
+<p class="tm">10 posts · started 2006-04-12 10:06 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060412100600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-04-12 10:06</span></div>
+  <div class="pb">Het kan jullie niet ontgaan zijn dat Haarlem gisteren uit zwolle op 1-1 heeft gehouden en dus een goede uitgangspositie heeft voor de tweede play-off wedstrijd vrijdag. <br><br>Ik wil er graag heen. Wie wil er mee?</div>
+</article>
+<article class="post" data-ts="20060412103400" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-04-12 10:34</span></div>
+  <div class="pb">kenser, ik moet werken :( Ik had het er ookal met mijn collega maarten over gehad...ik zal hem eens bellen; ik geloof dat hij goedkoper kan, dan kan ik misschien iets voor zij die kunnen gaan iets regelen.</div>
+</article>
+<article class="post" data-ts="20060412115100" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-04-12 11:51</span></div>
+  <div class="pb">de collega zegt dat hij via zijn andere baan aan kaarten kan komen maar weet niet of dit op deze korte termijn kan...<br>als het kan laat ik het weten.<br></div>
+</article>
+<article class="post" data-ts="20060412131900" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-04-12 13:19</span></div>
+  <div class="pb">ja, anders betaal ik gewoon 14,-.<br>kan ik ook wel lijen.</div>
+</article>
+<article class="post" data-ts="20060412190700" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2006-04-12 19:07</span></div>
+  <div class="pb">Red and blue lions!</div>
+</article>
+<article class="post" data-ts="20060412193300" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2006-04-12 19:33</span></div>
+  <div class="pb">Hoe laat is die grap? Ik vind het op zich ook wel eens leuk om naar Haarlem te gaan.</div>
+</article>
+<article class="post" data-ts="20060413094600" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-04-13 09:46</span></div>
+  <div class="pb">wedstrijd begint om 20u. Terecht dat je meegaat. Ik zal vanavond ook nog even Mitchell en Tube vragen.</div>
+</article>
+<article class="post" data-ts="20060413132200" id="p8">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#8 · 2006-04-13 13:22</span></div>
+  <div class="pb">terecht, net uigevonden dat een nieuwe AIO hier seizoenskaart van Haarlem heeft en er ook heen gaat morgen...<br><br>Ik denk dat ik misschien ook mee ga, klinkt gaaf. Later meer..</div>
+</article>
+<article class="post" data-ts="20060414175000" id="p9">
+  <div class="ph"><span class="pa">Jazzmaster</span><span class="pm">#9 · 2006-04-14 17:50</span></div>
+  <div class="pb">Het is ongelofelijk. VicT en ikT mogen met de BikT mee naar Haarlem. De kaartjes zijn binnen !<br><br>Smerige truc trouwens, op de site 14 euro voor een kaartje vragen en als je dan na twintig minuten fietsen bij het stadion staat er direct 15 euro per kaartje van maken. Gellukig had ik nog drie euro extra op zak om een bakkie kibbeling te kopen. <br><br>Voor de andere trouwe fans: noem drie spelers van Haarlem zonder daarbij Google te gebruiken.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20060414191900" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2006-04-14 19:19</span></div>
+  <div class="pb">Dwight Ketting, Ruud Gullit en Bikkie Bakkie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

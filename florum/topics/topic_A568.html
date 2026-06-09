@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dit vond ik in mijn mailbox: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dit vond ik in mijn mailbox:</h1>
+<p class="tm">1 post · started 2002-09-06 10:03 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020906100300" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-09-06 10:03</span></div>
+  <div class="pb">Beste lezers van de nieuwsbrief. <br> <br>Het consumenten programma 'KASSA' van de VARA heeft PINT en ook PINT Regio Noord Holland benaderd met het verzoek mee te willen werken aan een consumentenproeverij van bier uit blik. Aangezien PINT een organisatie is van bierconsumenten ligt het voor de hand dat PINT hiervoor benaderd werd. Daar de test op een camping in Noord Holland wordt gehouden is ook PRNH benaderd. Kassa heeft in totaal 50 mensen nodig. Een aantal daarvan wordt gevonden op de camping, maar het grootste deel (veertig) moet daarbuiten gezocht worden. Het panel moet min of meer een dwarsdoorsnede vormen van de Nederlandse samenleving. Men is dan ook vooral ook op zoek naar vrouwelijke bierconsumenten. De leeftijd ligt tussen de 20 en 70 jaar, maar men verwacht van de camping met name ouderen te halen, dus zoekt men buiten de camping vooral in de categorie 20 - 40. <br> <br>De gegevens: De proeverij vindt plaats op een camping in Noord Holland (waarschijnlijk Bakkum). De proeverij begint om 15.00 uur en duurt tot 18.00 uur. De VARA wil vervoer gaan regelen. Onder voorbehoud vertrekt er om 14.00 uur een bus uit Amsterdam. Dat hangt natuurlijk een beetje af van waar men de mensen vandaan haalt.<br> <br>Per persoon worden er vijf verschillende pilseners uit blik getest, houdt daar rekening mee als u met eigen vervoer zou willen komen, uiteraard hoeft niet het hele blik geledigd te worden !!!<br> <br>Omdat wij niet uw adres willen doorgeven, zal u zich zelf moeten aanmelden bij ons en wel op zeer korte termijn. Wat wij nodig hebben is een naam, een telefoonnummer, leeftijd en geslacht, dat sturen wij dan door naar PINT landelijk en naar de VARA. Uiteraard gaan deze twee organisaties er ook vertrouwelijk mee om. U wordt dan benaderd door iemand van Kassa, hetzij telefonisch hetzij via e-mail. Zoals u ziet zijn een aantal punten nog onder voorbehoud, dus nadere informatie wordt dan ook verstrekt. Aangezien de opname al woensdag is (het is niet anders) zouden wij graag uiterlijk zondag een reactie hebben, we hebben dan nog de tijd alles door te melden naar de VARA. <br> <br>Aangezien het een consumententest betreft, staat het natuurlijk vrij ook niet-lezers van de nieuwsbrief aan te melden. Graag zelfs.<br> <br>Mocht u interesse hebben geeft u dan op door de gegevens te mailen naar prnh@pint.nl. U kunt dan op basis van de definitieve gegevens beoordelen of u in staat bent mee te doen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

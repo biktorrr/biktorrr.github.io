@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>les photos du olivier de paris – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">les photos du olivier de paris</h1>
+<p class="tm">3 posts · started 2006-11-21 10:27 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061121102700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-11-21 10:27</span></div>
+  <div class="pb">olivier vroeg me de volgende fotos op het florum te knallen (fotos zijn clickable, nog grotere versies zijn ook verkrijgbaar):<br><a href="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoA001.jpg"><img src="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoAT001.jpg"></a><br><br>Floraboys op de thee bij Nicolae Ceausescu<br><br><a href="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoA002.jpg"><img src="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoAT002.jpg"></a><br><br>"Met de bus naar Harlem via Amsterdam" <br><br><a href="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoA003.jpg"><img src="http://www.science.uva.nl/~vdeboer/floraboys/oli4/photoAT003.jpg"></a></div>
+</article>
+<article class="post" data-ts="20061121102900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-11-21 10:29</span></div>
+  <div class="pb">ik heb de volgorde een beetje vernaggelt, maar een beetje floraboy snapt wel wat waarbij hoort.</div>
+</article>
+<article class="post" data-ts="20061121104100" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-11-21 10:41</span></div>
+  <div class="pb">zie ook voorpagina</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

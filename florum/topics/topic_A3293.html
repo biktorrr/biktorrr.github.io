@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adopteer een Frans stel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Adopteer een Frans stel</h1>
+<p class="tm">4 posts · started 2013-06-15 00:02 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130615000205" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2013-06-15 00:02</span></div>
+  <div class="pb"><p><br>	Boys&#39;n&#39;girls,</p><br><p><br>	Toevalligerwijs willen zowel da Jimbo and da Wife op vrijdag 5 en 6 juli bij mij logeren alsook een goede Frans/Nederlandse vriendin en haar vriend. Ik had het da Jimbo reeds toegezegd en meer mensen wordt lastig. This is where you come in: is er toevallig iemand op vakantie die data die het niet erg zou vinden als dit zeer nette, georganiseerde (geen overdrijving) paar bij hen zou logeren?</p><br><p><br>	Mercietjes !</p><br></div>
+</article>
+<article class="post" data-ts="20130617153029" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2013-06-17 15:30</span></div>
+  <div class="pb">Wij zijn helaas niet in het land en er logeert iemand anders in ons huisje, denkelijk onmogelijk dus..</div>
+</article>
+<article class="post" data-ts="20130617214110" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2013-06-17 21:41</span></div>
+  <div class="pb">Helaas, wij zijn juist zelf in verband met afsluitingen van water en riolering dan gedwongen in een ander onderkomen.<br></div>
+</article>
+<article class="post" data-ts="20130625142628" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2013-06-25 14:26</span></div>
+  <div class="pb">Dank voor het meedenken. Oplossing gevonden: ze kunnen in ons oude huisje. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

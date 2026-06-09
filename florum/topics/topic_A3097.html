@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>steekpenninkje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">steekpenninkje</h1>
+<p class="tm">3 posts · started 2011-05-17 07:30 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110517073049" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2011-05-17 07:30</span></div>
+  <div class="pb">Vermeende fraude bij Philips Medical Polen. In Amerika wordt een zelfde soort omkoperites onderzocht. Mer, hoeveel etentjes heb jij ingepland met de directeuren van Cigna en Metlife?</div>
+</article>
+<article class="post" data-ts="20110517133223" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2011-05-17 13:32</span></div>
+  <div class="pb">Beste Tijmen,<br><br>Bedankt voor de vraag en de getoonde interesse in mijn werkgever. Helaas kan ik je geen informatie verstrekken over dit specifieke onderwerp. Ik verwijs je daarom door naar de afdeling voorlichting van Philips Electronics Nederland BV. Hopelijk kunnen zij jouw vragen beantwoorden.<br><br>Met vriendelijke groet,</div>
+</article>
+<article class="post" data-ts="20110517152251" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2011-05-17 15:22</span></div>
+  <div class="pb"><IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br>Meijers had eenzelfde statement aangaande de fik bij ChemiePack Moerdijk.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

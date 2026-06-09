@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lucky Ajax – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lucky Ajax</h1>
+<p class="tm">8 posts · started 2002-11-13 12:43 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021113124300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-11-13 12:43</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20021113124400" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2002-11-13 12:44</span></div>
+  <div class="pb">Verliezen en toch winnen..da's weer eens wat anders, we/ze lijken we italianen. Ik denk dat Andre nu wel al zijn 'credits' bij zijn oude maten heeft opgebruikt.</div>
+</article>
+<article class="post" data-ts="20021113130300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-11-13 13:03</span></div>
+  <div class="pb">Urs Meier + lijnrechters = stelletje uitfluiters.<br><br>Maar ja ik geef het je te doen: negentig minuten lang met een alpenhoorn van 10 meter op je rug rondzeulen over het veld en dan toch die wedstrijd behoorlijk fluiten. Is gewoon bovenmensenlijk. Even respect naar mezelf: ik heb de hele wedstrijd gezien, de drie minuten absolute horror uit Noorwegen incluis.<br><br>Even vraagje naar de poster van de vorige opmerking: zou je je laatste mededeling woord voor woord kunnen verklaren, ik begrijp er werkelijk niets van.</div>
+</article>
+<article class="post" data-ts="20021113133400" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-11-13 13:34</span></div>
+  <div class="pb">Heia Norge <br>Heia Norge<br>Heia Norge</div>
+</article>
+<article class="post" data-ts="20021113133900" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-11-13 13:39</span></div>
+  <div class="pb">die laatste noorse minuten waren een werkelijke kwelling, en zeker die hoekschop die Sonny nog even vrij voor de goal zet en hem dan rakelings overkoppen. Ik ben benieuwd hoeveel hartaanvallen dat heeft veroorzaakt.</div>
+</article>
+<article class="post" data-ts="20021113135100" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-11-13 13:51</span></div>
+  <div class="pb">zelfs deze jongen uit het kamp van de feyand zat op het puntje van zijn stoel...<br>felicidados</div>
+</article>
+<article class="post" data-ts="20021114160300" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2002-11-14 16:03</span></div>
+  <div class="pb">ok typefoutje:<br>*ze lijken weL italianen<br>*met Andre doelde ik op Bergdolmo</div>
+</article>
+<article class="post" data-ts="20021114175300" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2002-11-14 17:53</span></div>
+  <div class="pb">Oh, nou snap ik het.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

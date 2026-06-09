@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lekker gek: ballen 10 of 11 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lekker gek: ballen 10 of 11</h1>
+<p class="tm">12 posts · started 2005-12-09 13:10 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051209131000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-12-09 13:10</span></div>
+  <div class="pb">Ik zou graag een keer ballen dit weekend en ben beide dagen in principe beschikbaar. En jullie?</div>
+</article>
+<article class="post" data-ts="20051209131300" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2005-12-09 13:13</span></div>
+  <div class="pb">za ja <br>zo ja<br>het liefst maar 1 van de twee, welke maakt me dan niet uit.<br>voor de verandering.<br></div>
+</article>
+<article class="post" data-ts="20051209132100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-12-09 13:21</span></div>
+  <div class="pb">Helaas: ben in Londen (met Vic en Zik).</div>
+</article>
+<article class="post" data-ts="20051209154100" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2005-12-09 15:41</span></div>
+  <div class="pb">terecht, dan gaat de timmie timer de 200 dagen makkelijk halen.<br></div>
+</article>
+<article class="post" data-ts="20051209161300" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-12-09 16:13</span></div>
+  <div class="pb">Misschien dat dit helpt.<br><br>Zajazoja</div>
+</article>
+<article class="post" data-ts="20051209164400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2005-12-09 16:44</span></div>
+  <div class="pb">Als ik me niet vergis had BIK aangekondigd dit weekend naar Haarlem te komen. Jullie zouden je aan kunnen sluiten bij de erecode. Althans julle zouden het kunnen proberen, want of die ouwe knarren happig zijn om vijf keer een panna te krijgen alvorens een doelpunt te incasseren is maar zeer de vraag.</div>
+</article>
+<article class="post" data-ts="20051210111600" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2005-12-10 11:16</span></div>
+  <div class="pb">Veel plezier in Londen.<br><br>Michiel, Joost, BikT?<br><br>Een van beide dagen?</div>
+</article>
+<article class="post" data-ts="20051210113800" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2005-12-10 11:38</span></div>
+  <div class="pb">Op zich zou ik vandaag kunnen, nog meer gegadigden?<br><br></div>
+</article>
+<article class="post" data-ts="20051210133800" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2005-12-10 13:38</span></div>
+  <div class="pb">Heb Michiel nog gebeld, maar die reageert niet. In het gunstigste geval zijn we dus met zijn vieren en hebben we een redelijke kans het tegen de erecodedudes op te nemen. Daarvoor kom ik helaas Amsterdam niet uit. <br><br>Ben wel nog steeds in voor morgen. Als we dat nu eens vandaag konden kortsluiten...<br><br>We hebben al MK, TN, mij. Toch al de helft, wie nog?</div>
+</article>
+<article class="post" data-ts="20051210145600" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2005-12-10 14:56</span></div>
+  <div class="pb">Welja count me in.</div>
+</article>
+<article class="post" data-ts="20051211120900" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2005-12-11 12:09</span></div>
+  <div class="pb">Boys ik heb een plan. 200 meter ten noorden van het station is er een betonnen veldje met kleine metalen doeltjes. Perfect voor een potje 2 x 2. Daar kunnen we dus prima vlammen met z'n vieren. <br><br>15:00?</div>
+</article>
+<article class="post" data-ts="20051211155500" id="p12">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#12 · 2005-12-11 15:55</span></div>
+  <div class="pb">Sorry, ik had het al weer opgegeven</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

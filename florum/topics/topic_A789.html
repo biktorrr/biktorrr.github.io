@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt REVT – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt REVT</h1>
+<p class="tm">4 posts · started 2003-05-18 21:07 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030518210700" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-05-18 21:07</span></div>
+  <div class="pb">Natuurlijk kan het ook niet uitblijven. Timmie tikt REVT.<br>Ik zal me niet houden aan een live verslag, daarvoor is de convetionele pers, maar ik zal eerder een sfeerverslag brengen.<br><br>Zonnig is toch wel het woord wat me nu te binnen schiet na het REVT. Een weekend weelderige zeikende spierpijn en een licht verbrand rechterarmpje die ik kennelijk meer in de zon heb gebruikt tijdens de wedstrijden. Dat is hetgene wat ik heb overgehouden aan het jaarlijkse terugkerende toernooi waar de floraboys hun roots hebben liggen. We waren bijna geheel compleet met slechts drie uitgehuurde spelers die we moesten missen. De kenoobster was natuurlijk bij ons zoals altijd, helaas na afloop zijn kabeltjes niet. <br>Joost en Oli4, de twee mediterranee scouts, waren afwezig. Iets wat niet werd gevoeld. Het doelsaldo uiteindelijk met 12-5 voor, was een record voor de floraboys in productie. <br><br>Onmisbaar en natuurlijk overal aanwezig op het veld was Taasje. Ikzelf zie mijn moment of glory die dag toen hij mij aansprak om zijn fluitje weg te brengen. Een moment dat ik nooit zal vergeten. Alhoewel het leek alsof de Floraboys op alle fronten werden tegengewerkt door de arbitrale leiding, met vergeten doelpunten en een penalty die niet werd gegeven, waar iedereen het mee eens was dat dat er een was. Helaas ging de beker aan onze neuzen voorbij, wat voor mij een goede reden wordt om terug te komen.<br><br>Moeni-Moeni de angstgegner was weer van de partij en stuitten pas in de finale op hun angstgegner, de Ruimtelijke Wetenschappen. <br>Tenslotte een paar insiders:<br>- Appel from Hell<br>- Wie was er weer te laat?<br>- Floragirls team volgend jaar debutant?<br>Een goeie middag waar het goed voelde om eindelijk weer eens te kunnen winnen.  </div>
+</article>
+<article class="post" data-ts="20030519092200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-19 09:22</span></div>
+  <div class="pb">Ik vind 'm mooi, maar jammer dat je te bescheiden bent om even te vermelden wie er ook alweer glorieus bovenaan staan in het topscorersklassement. Dat waren Frank en de Big T, met beiden 3 goals.</div>
+</article>
+<article class="post" data-ts="20030519102000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-05-19 10:20</span></div>
+  <div class="pb">wij waren toch de angstgegner van Moeni Moeni? <br>nou ja toch een mooie doch korte TT, ik zal 'm er weer eens bij zetten.</div>
+</article>
+<article class="post" data-ts="20030519135200" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-05-19 13:52</span></div>
+  <div class="pb">Misschien dat ik nog last heb van de bal in mijn gezicht van vorig jaar maar hoe zat het ook alweer precies met mijn kabeltjes? Het is allemaal een beetje wazig.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 21 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 21</h1>
+<p class="tm">4 posts · started 2003-04-24 15:12 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030424151200" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-04-24 15:12</span></div>
+  <div class="pb">Tranen met tuiten<br><br>We leven in een zeer veranderlijke wereld. De ene dag ben je een vredelievende dierenactivist met een pistool, de volgende dag moet je in beroep gaan tegen een straf van wel 12 jaar, terwijl de moordenaar van Rowenda Rikkers (meisje van Nulde, en van Rotterdam en van Maastricht ergens geloof ik), slechts 8 jaar had gekregen. En dan gaat het OM in beroep omdat ze dit te laag vinden?<br>Ook blijkt Saddam meer zin in chocola te hebben dan in chemische wapens, en het enige wapen dat hij had is al in Hongkong afgegaan voordat het in Amerika was. En bovenal hebben ze het SARS genoemd, terwijl op de doos toch echt BASRA stong.(Bush Anti Saddam Return Surprise). Ja daar zou ik ook in een bunker van gaan zitten. <br>Mensen weten de laatste tijd niet meer waar ze het moeten zoeken. (Bij de SGP in ieder geval nooit meneer Zalm en Balkenende!!!) Zijn de gruwelscenarios over irak met een gigantische Al Sayaf sisser afgelopen, blijken alle Chinezen ineens ziek. Zelfs de commerciele tour van Manchester united als Support act voor de Floraboys Globetrotters is helaas afgelast.<br>Verandering is meestal goed, maar in de hedendaagse media worden dit soort veranderingen als compleet evil afgedaan. Het meeste effect wat een virus als Sars heeft is een betere resistentie tegen griep ten koste van wat chinezen. DE totale paniek die er in de media heerst (lang leve de Telegraaf daarvoor) is volgens mij een effect wat iedereen bang maakt. Tuurlijk je moet SARS niet onderschatten, maar er zijn in een stad van 12 miljoen mensen zoals Hongkong, slechts 1000 mensen besmet en 200 overleden. Dat is 0.02 %. Echt panisch kan ik er niet van worden als je al bedenkt dat keukentrapjes meer slachtoffers eisen. </div>
+</article>
+<article class="post" data-ts="20030424164600" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-04-24 16:46</span></div>
+  <div class="pb">huh, heb ik nou een Timmie tikt gemist? ik dacht dat de vorige TT nummertje 19 had..<br>nouja geeftniks. Hij staat weer waar hij hoort, rechtsonder.<br><br>Trouwens weer een onvervalst toppertje, TImmie!</div>
+</article>
+<article class="post" data-ts="20030424164700" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-04-24 16:47</span></div>
+  <div class="pb">o daaaar staat TT20, een onvervalste topper, weetje wat zet ik die er ook nog even bij.</div>
+</article>
+<article class="post" data-ts="20030425092200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-04-25 09:22</span></div>
+  <div class="pb">Het heeft er alle schijn van dat onze Timmie sneller tikt dan het licht. Hoewel deze wat korter is dan normaal vind ik 'm sterk.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

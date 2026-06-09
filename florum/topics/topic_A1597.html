@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuwe frontpage – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuwe frontpage</h1>
+<p class="tm">7 posts · started 2005-10-12 14:43 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051012144300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-10-12 14:43</span></div>
+  <div class="pb">Mag ik mijn grote waardering uitspreken over de nieuwe frontpage! Driewerf hulde! Afgelopen middag heb ik mijn AIO-bestaan verrijkt door drie uur onafgebroken naar de nieuwe frontpage te kijken. Het is natuurlijk per seconde pijnlijker om aan te zien, maar als dit de enige manier is om Biggy tot ballen over te halen, dan is het geoorloofd.</div>
+</article>
+<article class="post" data-ts="20051012144300" id="p2">
+  <div class="ph"><span class="pa">FFF</span><span class="pm">#2 · 2005-10-12 14:43</span></div>
+  <div class="pb">driewerf hulde! <br><br>Hup die peer-pressure erop!</div>
+</article>
+<article class="post" data-ts="20051012144400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-10-12 14:44</span></div>
+  <div class="pb">ja, hij is er mooi opgekomen. ook hulde aan de bedenker.</div>
+</article>
+<article class="post" data-ts="20051012193300" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-10-12 19:33</span></div>
+  <div class="pb">Beste FFF, een echte hooligan weet helemaal niet wat peer pressure is. <br><br>Zelf hou ik niet van kwalificaties naar anderen toe. Ik respecteer Bik zijn keuze al betreur ik het als mens danwel Floraboy. </div>
+</article>
+<article class="post" data-ts="20051013113200" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-10-13 11:32</span></div>
+  <div class="pb">Minstens even erg:<br><br>Er zijn 188 dagen verstreken sinds de laatste Timmie Tikt</div>
+</article>
+<article class="post" data-ts="20051013212800" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-10-13 21:28</span></div>
+  <div class="pb">Ai, die doet zeer.</div>
+</article>
+<article class="post" data-ts="20051014214600" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2005-10-14 21:46</span></div>
+  <div class="pb">Moet je voor de grap eens tellen hoeveel dagen er zijn verstreken voor de een-na-laatste TT. Huillie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

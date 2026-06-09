@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>housewarming – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">housewarming</h1>
+<p class="tm">2 posts · started 2008-03-21 17:38 by Kirrie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080321173800" id="p1">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#1 · 2008-03-21 17:38</span></div>
+  <div class="pb"><br>Voor wie morgen naar de housewarming komt even iets aangaande het parkeren. Bij ons in de buurt is het betaald parkeren (1.90 per uur) tot 22:00. Het makkelijkst is het om in de Parkstraat te parkeren. Als dat niet lukt in de Paleisstraat,Noordeinde, de Prinsessewal, of de Noordwal. <br>Als je gratis wil parkeren kan dat in de archipelbuurt of de wijk naast het malieveld (bij de Weissenbruchstraat)maar dat is wel een eind lopen. Als je met de trein komt is het 2 haltes met tram 10,16 of 17 of ongeveer 8 minuten lopen vanaf CS. <br><br>Tot morgen!<br><br>ps: voor wie de laatste trein mist is er een tweepersoons luchtbed zonder pomp ;-) <br></div>
+</article>
+<article class="post" data-ts="20080323001600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-03-23 00:16</span></div>
+  <div class="pb">skitterend huisje hoor. <br><!--82.204.25.6--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

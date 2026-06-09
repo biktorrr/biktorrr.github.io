@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gelijkheid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gelijkheid</h1>
+<p class="tm">3 posts · started 2017-11-18 09:54 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20171118095411" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2017-11-18 09:54</span></div>
+  <div class="pb"><p><br>	https://www.nytimes.com/2017/11/17/upshot/income-inequality-united-states.html?src=trending&amp;module=Ribbon&amp;version=context&amp;region=Header&amp;action=click&amp;contentCollection=Trending&amp;pgtype=article</p><br><p><br>	&nbsp;</p><br><p><br>	Artikel in de New York Times, waaruit blijkt dat Nederland het enige moderne land is waar de ongelijkheid sinds 1980 niet is toegenomen. Nederland is dientengevolge nu het gelijkste land van de wereld.</p><br></div>
+</article>
+<article class="post" data-ts="20171118095455" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2017-11-18 09:54</span></div>
+  <div class="pb">Ik schrijf dit toe aan Hansie Spekman en zijn nivelleringsfeest. </div>
+</article>
+<article class="post" data-ts="20171122012054" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2017-11-22 01:20</span></div>
+  <div class="pb">Nou, mooi gewerkt hoor Hansie. En nou opkrassen. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

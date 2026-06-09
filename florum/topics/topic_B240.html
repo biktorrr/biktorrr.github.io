@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stukje Floraboys boven? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stukje Floraboys boven?</h1>
+<p class="tm">3 posts · started 2003-02-20 11:10 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030220111000" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-02-20 11:10</span></div>
+  <div class="pb">gister of huilen met de pet op?</div>
+</article>
+<article class="post" data-ts="20030220111500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-02-20 11:15</span></div>
+  <div class="pb">2-1 verloren, gelijkspel was verdiend geweest. <br>Tis niet anders</div>
+</article>
+<article class="post" data-ts="20030220120900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-02-20 12:09</span></div>
+  <div class="pb">Ben benieuwd naar de cijfers van de Timmenizer. Was jammer van die laatste goal tegen, verdienden ze niet. De laatste vijf minuten waren we misschien wat teveel aan het aanvallen, maar ik dacht ook dat er nog wel wat te halen viel... Geen ballen in de buhne, toch jammer.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

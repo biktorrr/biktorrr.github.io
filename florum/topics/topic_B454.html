@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dinsdag 25 mei Zaalballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dinsdag 25 mei Zaalballen</h1>
+<p class="tm">9 posts · started 2004-05-22 13:07 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040522130700" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2004-05-22 13:07</span></div>
+  <div class="pb">Present?<br><br>Niet Present?<br>Famous<br><br></div>
+</article>
+<article class="post" data-ts="20040522144100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-05-22 14:41</span></div>
+  <div class="pb">Wel present <i>MK</i>.</div>
+</article>
+<article class="post" data-ts="20040522175200" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2004-05-22 17:52</span></div>
+  <div class="pb">was die niet verzet naar een andere datum? aangezien ik dan misschien had kunnen afstuderen.. <br>maar wat dus niet doorging door mijn enkel?</div>
+</article>
+<article class="post" data-ts="20040522201500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-05-22 20:15</span></div>
+  <div class="pb">Geen Idee.</div>
+</article>
+<article class="post" data-ts="20040522202200" id="p5">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#5 · 2004-05-22 20:22</span></div>
+  <div class="pb">Mag je in Leiden niet afstuderen als je geen gezonde enkels hebt of begrijp ik je verkeerd Bik?<br><br>Ikzelf ben gewoon van de partij.</div>
+</article>
+<article class="post" data-ts="20040523002500" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2004-05-23 00:25</span></div>
+  <div class="pb">2 weken thuiszitten en je hele schema aan gort..maar goed.. achteraf had ik ook met een gezonde enkel die datum net niet gehaald.</div>
+</article>
+<article class="post" data-ts="20040523214900" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2004-05-23 21:49</span></div>
+  <div class="ps">verzet</div><div class="pb">zou kunnen kloppen ja dat deze wedstrijd was verzet naar woensdagavond 23.00 ofzo,, hoe zit dit ook alweeR?</div>
+</article>
+<article class="post" data-ts="20040523224900" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2004-05-23 22:49</span></div>
+  <div class="pb">ja woensdag inderdaad. ik probeerde die gast te bellen voor definitieve confirmatie. Ik probeer het morgen nog een keer en dan laat ik het zsm weten.<br><br>DINSDAG IN IEDER GEVAL NIET!!!<br><br>HOUDT WOENSDAG VRIJ!!!</div>
+</article>
+<article class="post" data-ts="20040524123800" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2004-05-24 12:38</span></div>
+  <div class="pb">Alweer tegen Eintracht Schwalbe? Volgens het schema hebben we daar al twee keer tegen gespeeld, ach een derde keer kan ook leuk zijn.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

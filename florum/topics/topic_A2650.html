@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vragen over Europa? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vragen over Europa?</h1>
+<p class="tm">7 posts · started 2009-05-14 22:30 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090514223000" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-05-14 22:30</span></div>
+  <div class="pb">Wellicht niet iedereen z'n partij, maar een goede kans om wat vip spottings te verzamelen voor op het florum!<br><br><i>Vragen over Europa? Stel ze 16 mei aan Alexander Pechtold!<br><br>Op zaterdag 16 mei bezoekt Alexander Pechtold in het kader van de Europese Verkiezingen Haarlem. De Tweede Kamerfractievoorzitter beantwoordt tussen 15.00  17.00 uur op de Oude Groenmarkt in Haarlem vragen over Europa. <br><br>Tijdens het D66 Europa Spreekuur wil de partij vooroordelen wegnemen die bestaan over Europa.Sophie in t Veld is ook aanwezig. </i></div>
+</article>
+<article class="post" data-ts="20090515001300" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-05-15 00:13</span></div>
+  <div class="pb">Even een kleine hulde voor Zjostes al zeker enkele maanden (zo niet veel langer) aanhoudende politieke engagement. Misschien heb je een zieltje gewonnen, ik overweeg serieuzer dan ooit D66 te stemmen, al is het in Europees verband altijd wat jammer dat je dan eigenlijk ook een beetje VVD stemt.</div>
+</article>
+<article class="post" data-ts="20090515180700" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2009-05-15 18:07</span></div>
+  <div class="pb">mmm Europesche verkiezingen.. ik had me vast moeten registreren.. oh well..</div>
+</article>
+<article class="post" data-ts="20090515235500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2009-05-15 23:55</span></div>
+  <div class="pb">Geeft niet tim, het maakt toch niet uit wat je stemt.<br><br>*gooit olie op vuur*</div>
+</article>
+<article class="post" data-ts="20090516000800" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2009-05-16 00:08</span></div>
+  <div class="pb">ben ik wel mee eens hoor Kenobi.. had nog nooit Europeesch gestemd.</div>
+</article>
+<article class="post" data-ts="20090518083700" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2009-05-18 08:37</span></div>
+  <div class="pb">lara en ik konden ternauwernood aan de klopjacht van de D'66 hunting party ontkomen. Zaterdag dreven zij onwetend winkelend publiek op over de gehele breedte van de grote houtstraat, om ze zo in de klauwen van Alexandertje te manoeuvreren. "Je leven, of een foldertje...niet vergeten te stemmen hoor" </div>
+</article>
+<article class="post" data-ts="20090518104900" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2009-05-18 10:49</span></div>
+  <div class="pb">haha, zo was het inderdaad helemaal, je weet toch!<br><br>Hoogtepuntje: corpulente veertiger die tegen haar 15 vriendinnen gilt dat ze met Kamiel Eurlings op de foto wil, dat heb ik even subtiel verbeterd.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

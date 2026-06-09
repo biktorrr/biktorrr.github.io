@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WEDSTIJD GERUILD!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WEDSTIJD GERUILD!!!</h1>
+<p class="tm">4 posts · started 2001-10-10 13:35 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011010133500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-10-10 13:35</span></div>
+  <div class="pb">hallo FloBo's het is gelukt met ruilen.<br>We ruilen met de koninklijken (ook wel de <br>tampeloerieten genoemd) en verhuizen dus van <br><br>12 november naar 20 november!!!<br><br>Update het even in je agenda en WJ/Holy update ook <br>even het schema op deze site AUB<br><br></div>
+</article>
+<article class="post" data-ts="20011010134200" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-10-10 13:42</span></div>
+  <div class="pb">Joehoe!!!!!!!!<br>SPA, here we come!<br>en van je heeeeelaahelahelahooolala...he!!</div>
+</article>
+<article class="post" data-ts="20011010145500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-10-10 14:55</span></div>
+  <div class="pb">Toppie geregeld ouwe Kointakte-persoon!</div>
+</article>
+<article class="post" data-ts="20011010165100" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2001-10-10 16:51</span></div>
+  <div class="ps">even helemaal:</div><div class="pb">Beste victor,<br><br>Bij deze de bevestiging  van de onderstaande ruil.<br>Ter kennisgeving ook gemaild naar Real Tampeloeritas en Zeker van de beker.<br><br>Maurice Maas<br><br>----- Original Message -----<br>From: victor de boer<br>To: usc@usc.uva.nl<br>Sent: Monday, October 08, 2001 1:36 PM<br>Subject: ruilen wedstrijd<br><br><br>geacht USC-bestuur<br><br>wij (de Flora Boys) moeten 12 november een wedstrijd spelen tegen het team<br>Zeker van de Beker (het gaat hier om zaalvoetbal). nu willen we dit<br>verzetten. We hebben het team Real Tampeloeritas bereid gevonden met ons van<br>wedstrijd te ruilen een week later(de 20e).<br>Beide wedstrijden zijn uitwedstrijden dus dat moet geen probleem opleveren.<br><br>Graag zou ik dus van jullie bevestigd krijgen dat het goed is dat wij die<br>wedstrijd omruilen.<br><br>Even alle info op een rijtje:(Zaalvoetbal Derde Klasse A)<br>ouwe situatie:<br>12 nov ZvdB - FloraBoys<br>20 nov ZvdB - Real Tam.<br><br>gewenste nieuwe situatie:<br>12 nov ZvdB - Real Tam.<br>20 nov ZvdB - FloraBoys<br><br>wij wachten op Uw bevestigning.<br>mvg.<br><br>Victor de Boer (contactpers. FloraBoys)<br><br><br> <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

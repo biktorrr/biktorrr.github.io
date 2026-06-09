@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Joost de verlosser??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Joost de verlosser???</h1>
+<p class="tm">7 posts · started 2003-05-06 14:35 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030506143500" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-05-06 14:35</span></div>
+  <div class="pb">Hey Joosssie, wanneer kom je precies terug?? <br><br>Precies op tijd om ons voor degredatie te behoeden hopelijk? <br><br>Nou ik zou zeggen neuk je daar nog even een slag in de rondte want in NL geld ook voor jou weer geen     voor de wedstrijd!! </div>
+</article>
+<article class="post" data-ts="20030506145500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-06 14:55</span></div>
+  <div class="pb">Er gaan geruchten dat Joost onlangs niet 24 is geworden, maar 34! Om toch in de selectie opgenomen te worden heeft Joost willens en wetens met z'n paspoort gesodemieterd. Toen het bestuur daarachter is gekomen hebben ze 'm naar Spanje gestuurd om daar af te kunnen bouwen. Het is dus niet waarschijnlijk dat Joost ooit nog met ons zal ballen. <br><br>Jammer, want persoonlijk vond ik het leuk om met 'm te ballen...</div>
+</article>
+<article class="post" data-ts="20030512160700" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2003-05-12 16:07</span></div>
+  <div class="pb">schandalig die Merlijn, <br><br>De bedoeling is om na een beschijding feestje met de real madrid jongens na manchester terug te keren naar NL. Als er dan nog iets te verlossen valt ben ik van de partij. Met het mes tussen mijn tanden......<br><br>Succes op het Revt !!<br><br></div>
+</article>
+<article class="post" data-ts="20030515091900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-05-15 09:19</span></div>
+  <div class="pb">Beetje treurige week voor de Merengues..de derde plaats in de competitie en vreed uit de CL gekicked worden. Trouwens Figo mag die penalty wel vaker zo nemen, kan Van der Sar hem ook een keertje stoppen......</div>
+</article>
+<article class="post" data-ts="20030515110100" id="p5">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#5 · 2003-05-15 11:01</span></div>
+  <div class="ps">zzz</div><div class="pb">He, Hij is er weer! Kenobi, moest jij de hele nacht opblijven of juist vroeg opstaan om CL te kijken? Nou ja maakt niet uit je drinkt all night en slaapt all day anyway... toch?</div>
+</article>
+<article class="post" data-ts="20030515111300" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-05-15 11:13</span></div>
+  <div class="pb">goeie penalty, maarja hij had wel z'n Figo drinking shirt aan dus hij zal het wel laat gemaakt hebben,</div>
+</article>
+<article class="post" data-ts="20030515182800" id="p7">
+  <div class="ph"><span class="pa">Mwah</span><span class="pm">#7 · 2003-05-15 18:28</span></div>
+  <div class="pb">Het is nu 3:28 australische tijd..ff checken of dit 24/7 computer lab..wel echt 24/7 open is......</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

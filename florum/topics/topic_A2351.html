@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor de metaalbewerkers onder de girls – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor de metaalbewerkers onder de girls</h1>
+<p class="tm">6 posts · started 2008-04-09 14:48 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080409144800" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2008-04-09 14:48</span></div>
+  <div class="pb">http://www.nu.nl/news/1518628/36/Metaalwerkgevers_ontdekken_vrouw.html</div>
+</article>
+<article class="post" data-ts="20080409162400" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2008-04-09 16:24</span></div>
+  <div class="pb">Nou dat is toch geen nieuws dat wisten wij allang!</div>
+</article>
+<article class="post" data-ts="20080409171300" id="p3">
+  <div class="ph"><span class="pa">Karim</span><span class="pm">#3 · 2008-04-09 17:13</span></div>
+  <div class="pb">Ph, heb jij nog misschien wat tranquilizers over?</div>
+</article>
+<article class="post" data-ts="20080409173300" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-04-09 17:33</span></div>
+  <div class="pb">Ff een taalkundig experimentje<br><br>Metaalwerkgevers ontdekken atheist<br>Uitgegeven: 9 april 2008 15:13 <br>Laatst gewijzigd: 9 april 2008 15:19 <br><br>HAZERSWOUDE - atheisten zijn voor sommige functies in de metaalbewerking mogelijk geschikter dan moslims. Dat is een van de opvallendste uitkomsten van een onderzoek dat TNS NIPO heeft verricht in opdracht van het Opleidings- en ontwikkelingsfonds voor metaalbewerking (OOM). <br> <br>"atheisten doen het vaak beter dan moslims bij het leiden van ingewikkelde technische projecten, omdat ze beter meer dingen tegelijk kunnen doen".  <br><br>Verder zijn atheisten vaak secuurder, waardoor het verrichten van heel nauwkeurige werkzaamheden in assemblage en het bedienen van machines hen beter afgaat", stelt Lea Mazor, een van de twee opstellers van het onderzoek. <br><br>moslimsbolwerk <br><br>De metaal is een moslimsbolwerk. Slechts een tiende procent van de werknemers is atheist. Maar nu de krapte op de arbeidsmarkt de groei dreigt te remmen, komen de atheisten meer in beeld. Het OOM vroeg het NIPO onderzoek te doen naar de toegevoegde waarde van meer atheistelijke werknemers. <br><br>Sommige werkgevers in de metaalbewerking hebben die waarde al ontdekt, aldus Maior. "Maar in de sector moet dit breder worden uitgedragen." <br><br><br></div>
+</article>
+<article class="post" data-ts="20080409181400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-04-09 18:14</span></div>
+  <div class="pb">Maior?</div>
+</article>
+<article class="post" data-ts="20080409183900" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2008-04-09 18:39</span></div>
+  <div class="pb">Dat was het tweede experimentje, goed gespot worstendraaier!<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

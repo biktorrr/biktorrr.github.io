@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zoek de fout – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zoek de fout</h1>
+<p class="tm">4 posts · started 2004-09-15 11:29 by Analist</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040915112900" id="p1">
+  <div class="ph"><span class="pa">Analist</span><span class="pm">#1 · 2004-09-15 11:29</span></div>
+  <div class="pb">dit staat bij de uitslagen: <br>Wat klopt er niet?<br><br>Floraboys Pantofolo d'Oro  20:45  4  11-1  </div>
+</article>
+<article class="post" data-ts="20040915122000" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2004-09-15 12:20</span></div>
+  <div class="pb">haha, <br><br>Is het toch nog goed afgelopen...</div>
+</article>
+<article class="post" data-ts="20040915122200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-09-15 12:22</span></div>
+  <div class="pb">overigens, zoek hier de fout maar eens in:<br><br>2-sep 21:45 1 04A01 Lokomotiv VIAE - Still '04 16 - 4 <br><br>en de stand in die poule:<br> Derde Klasse A            gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br> 1 Lokomotiv VIAE              1    1   0   0    2    16 -   4    0/ 0   0/ 0<br> 2 Nog geen pepernoot          1    1   0   0    2     8 -   2    0/ 0   0/ 0<br> 3 FSA Winstwaarschuwing       1    1   0   0    2     6 -   2    0/ 0   0/ 0<br> 4 H.D. Furiosus               1    0   0   1    0     2 -   6    0/ 0   0/ 0<br> 5 Still '04                   1    0   0   1    0     4 -  16    0/ 0   0/ 0<br> 6 Kempen 1903                 1    0   0   1   -1     2 -   8    2/ 1   0/ 0<br></div>
+</article>
+<article class="post" data-ts="20040916181900" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2004-09-16 18:19</span></div>
+  <div class="pb">Bik T, 'Kempen 1903', is dat je opa??</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

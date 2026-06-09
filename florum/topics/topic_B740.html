@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaalvoetbal Volgend Seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaalvoetbal Volgend Seizoen</h1>
+<p class="tm">10 posts · started 2006-06-27 09:39 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060627093900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-06-27 09:39</span></div>
+  <div class="pb">Wie doen er leuk mee volgend jaar?</div>
+</article>
+<article class="post" data-ts="20060627101400" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2006-06-27 10:14</span></div>
+  <div class="pb">Ik doe zeker heel leuk mee volgend jaar.<br><br>MAAR: ik zit als het goed is dan ook in het bestuur van GroenLinks Amsterdam. Dat betekent dat ik vaker door de week 's avonds andere verplichtingen heb. Nu was ik er eigenlijk altijd, maar volgend seizoen kan het voorkomen dat ik er enkele wedstrijden niet bij ben.</div>
+</article>
+<article class="post" data-ts="20060627131100" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2006-06-27 13:11</span></div>
+  <div class="pb">ik doe ook zeker mee<br><br>MAAR: ik ben van begin september tot half oktober er niet en er komen nog wat reizen aan. Ook ik zal er soms niet bij kunnen zijn<br><br>VRAAG: misschien een extra man vergeleken met vorig jaar?</div>
+</article>
+<article class="post" data-ts="20060627135100" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-06-27 13:51</span></div>
+  <div class="pb">Ik ben erbij, waar kan met auto. Kan zoals altijd niet voorspellen hoe mijn toekomst eruit ziet, maar ik zie het op de korte termijn niet drastich veranderen. <br>Verder de volgende paar puntjes:<br>* extra man = top. Maar dan moeten we wel eerst weten wie er so-en-so meedoen.<br>* Mijn voorkeur gaat uit naar de maandag/dinsdag avond. Zeker niet op de vrijdag. Ik wil nu alvast melden dat elke vrijdagavond, onafhankelijk van gamen of andere activiteiten, ik niet aanwezig kan zijn.<br>* Justified - Ancient : FLORABOYS<br></div>
+</article>
+<article class="post" data-ts="20060627150100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2006-06-27 15:01</span></div>
+  <div class="pb">Ik doe ook mee. Als dat nog mag tenminste gezien mijn productie van dit jaar.</div>
+</article>
+<article class="post" data-ts="20060628164600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-06-28 16:46</span></div>
+  <div class="pb">Als ik mee kan doen ben ik van de partij. Maar het is me op het moment allemaal niet zo duidelijk. Later meer!</div>
+</article>
+<article class="post" data-ts="20060630115400" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2006-06-30 11:54</span></div>
+  <div class="pb">Penose, anders kan Sabrina wel even jouw taken overnemen tijdens het voetballen als zij gekozen wordt. Ik zag net dat zij ook op de lijst staat. Jasper Groen is trouwens ook al oud-CSR. Wellicht moeten wij allen lid worden van Groenlinks en op de andere kandidaten stemmen, zodat wij er zeker van zijn dat Cootje onze steun en toeverlaat zal worden.</div>
+</article>
+<article class="post" data-ts="20060630120900" id="p8">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#8 · 2006-06-30 12:09</span></div>
+  <div class="pb">stukje tijdsdruk: <br><br>we moeten voor 1 augustus betalen en dergelijke om zeker te zijn van een plek in de competitie.</div>
+</article>
+<article class="post" data-ts="20060630185300" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2006-06-30 18:53</span></div>
+  <div class="pb">Ik heb vorig jaar een maand besteed om Joost over de streep te trekken. Wie doet het dit jaar...</div>
+</article>
+<article class="post" data-ts="20060701095500" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2006-07-01 09:55</span></div>
+  <div class="pb">hijzelf, omdat hij zijn club niet in de steek laat.<br><br>Hoeveel is de teambijdrage Vik, dan spuit ik dat over naar je.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

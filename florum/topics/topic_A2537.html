@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Een apart geklede jongen, maar waar het tussen de oren wel goed zit – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Een apart geklede jongen, maar waar het tussen de oren wel goed zit</h1>
+<p class="tm">11 posts · started 2008-11-18 12:11 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081118121100" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2008-11-18 12:11</span></div>
+  <div class="pb">Je kent het wel. Dinsdagmiddag, uurtje of twaalf, eens even jezelf googlen. Stuit ik <a href="http://www.stellingwerf.nl/index.php?n_id=74866&s_id=587">hierop</a>.<br><br>Een apart geklede jongen, maar waar het tussen de oren wel goed zit, ook al zou je dat misschien niet denken. <br><br>Vrij raak gekwalificeerd. Ik heb serieus geen enkel idee hoe ze daar op de naam van dat karakter zijn gekomen.</div>
+</article>
+<article class="post" data-ts="20081118131100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-11-18 13:11</span></div>
+  <div class="pb">misschien googleden ze op "Venetiaans blond feyenoord"</div>
+</article>
+<article class="post" data-ts="20081118154900" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2008-11-18 15:49</span></div>
+  <div class="pb">Freaky. Maar de kwalificatie is misschien toch wel iets aan de complimenteuze kant.</div>
+</article>
+<article class="post" data-ts="20081118164300" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-11-18 16:43</span></div>
+  <div class="pb">Ik zou me er niet zo'n zorgen over maken, er zijn ook genoeg toneelstukken met een Bode, films over de BigT en concerten gegeven door een Jazzmaster. Zelfs een Floraboy van de tweede categorie (*Florawijsgeren et al 2008) heeft nog een eigen sector in de maatschappij. </div>
+</article>
+<article class="post" data-ts="20081118165900" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-11-18 16:59</span></div>
+  <div class="pb">je bedoelt <a href="http://cootje.com/">cootje.com</a></div>
+</article>
+<article class="post" data-ts="20081118174200" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2008-11-18 17:42</span></div>
+  <div class="pb">Ha, een speciale fansite zelfs zie ik. </div>
+</article>
+<article class="post" data-ts="20081118184100" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2008-11-18 18:41</span></div>
+  <div class="pb">Het moet gezegd, als Boode heb ik over media-aandacht niet te klagen. Met name de sympathieke manier waarop ik werd neergezet door Jack Nicholson in ´The Postman Always Rings Twice´ heeft me erg getroffen. </div>
+</article>
+<article class="post" data-ts="20081118185800" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2008-11-18 18:58</span></div>
+  <div class="pb">nog niet eens gesproken over <a href="http://en.wikipedia.org/wiki/Booty_Call">Booty Call ...</a><br><br></div>
+</article>
+<article class="post" data-ts="20081118220500" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2008-11-18 22:05</span></div>
+  <div class="pb">O ja, jullie hebben gelijk. <a href="http://www.merl.com/">Merl</a> heeft ook gewoon zijn eigen fansite.</div>
+</article>
+<article class="post" data-ts="20081119084000" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2008-11-19 08:40</span></div>
+  <div class="pb">Moi saeght: www.cheique.nl</div>
+</article>
+<article class="post" data-ts="20081119093900" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2008-11-19 09:39</span></div>
+  <div class="pb"><a href="http://www.thedjlist.com/djs/FRANKIE_P/">Frankie P</a> natuurlijk</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

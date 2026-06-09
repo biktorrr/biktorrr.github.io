@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>henk bakkert – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">henk bakkert</h1>
+<p class="tm">2 posts · started 2003-07-04 17:10 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030704171000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-07-04 17:10</span></div>
+  <div class="pb">Tegen de Amsterdamse politicus en marktkoopman Henk Bakker senior (63) loopt een onderzoek naar ernstig strafbare feiten (poging tot doodslag en/of zware mishandeling, en bedreiging met de dood). Bakker zit samen met zijn zoon Henk Bakker jr. in de gemeenteraad van de hoofdstad voor het door hemzelf opgerichte Leefbaar Amsterdam.<br><br>De aangiftes tegen Bakker zijn gedaan door een ex-vriendin van het raadslid, de 28-jarige Leilah Miller (ex-coke verslaafde en voormalig raamprostituee), en door zijn vroegere lijfwacht, de 51-jarige Chris de Vries. Hij zou beiden met de dood bedreigd hebben toen Miller de relatie met Bakker be\ëindigde en naar haar ex-vriend De Vries vluchtte.<br><br>Miller beschuldigt de fractieleider van Leefbaar Amsterdam er bovendien van dat hij coke voor haar haalde en dat hij zelf zeer stevig drinkt, en bovendien rohypnol en valium slikt. Ook moest ze 'vreemde seks' met Bakker uitvoeren: ''Ik moest ammoniak en nagelremover gebruiken bij de seks. Ik moest zelfs naalden bij hem zetten op allerlei plaatsen.''<br><br>Bakker senior wil zelf niet op de zaak ingaan en laat de woordvoering over aan zijn zoon. De jonge Bakker zegt beide personen inderdaad te kennen, maar van aangiftes niets te weten. <br><br>Opspraak<br><br>Het is overigens niet de eerste keer dat de lokale politicus Bakker in opspraak komt: In 1995 werd hij veroordeeld tot een voorwaardelijke boete van 500 gulden wegens het verspreiden van pamfletten waarin wordt gesproken over 'criminele illegalen en criminele asielzoekers, die 'onze steden bezoeken om een graantje mee te pikken'. <br>In 2000 eindigde hij na een inspraakavond in Oud-West in de cel, nadat hij met stoelen was gaan gooien.<br><br>De vrouw van Bakker vluchtte in de jaren tachtig naar een Blijf-van-mijn-lijfhuis. Bakker verspreidde vervolgens de geheime adressen van deze opvanghuizen en begon een advertentiecampagne om haar terug te krijgen.<br><br>In 1992 richtte Bakker sr. Leefbaar Amsterdam op, en in 1994 haalde hij daarmee een zetel in de deelraad van Oud-West. Vorig jaar haalde hij twee zetels in de gemeenteraad.<br>=<br><br><br>Voor een uitgebreidere beschrijving van het gebeuren raadpleegt men het artikel uit het Parool.</div>
+</article>
+<article class="post" data-ts="20030704200400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2003-07-04 20:04</span></div>
+  <div class="pb">Ja heel mooi. Henk, Henk en Bep zeggen gewoon wat ze denken en ze doen wat ze zeggen.<br><br>Henk sr. met die jonge hoer dat me wel een beetje aan Jambers denken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

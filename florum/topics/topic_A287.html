@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Penoses Verlanglijssie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Penoses Verlanglijssie</h1>
+<p class="tm">12 posts · started 2001-10-10 15:35 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011010153500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-10-10 15:35</span></div>
+  <div class="pb">-Bowie CD earthling<br><br>-een boek van Chomsky over globalisering, ken ik niet, zoek maar uit. Lijkt me wel wat voor jou gezien jr interesse voor hem<br><br>-Boek moral philosohy from Montaigne to Kant geschreven door Schneewind<br></div>
+</article>
+<article class="post" data-ts="20130929101908" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2013-09-29 10:19</span></div>
+  <div class="pb">Boekjes al uit, Penose? Oh nee, de boys uit die tijd kennende kreeg je waarschijnlijk een boekenbon van 10 van 12 man <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> <br><br>Hoe dan ook: van harte gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20130929105436" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2013-09-29 10:54</span></div>
+  <div class="pb">felicitaties! Maak er maar eens een mooie dag van lieve Penose</div>
+</article>
+<article class="post" data-ts="20130929115255" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2013-09-29 11:52</span></div>
+  <div class="pb">Haaaaaa, een beffoindre jaardag gewenst!</div>
+</article>
+<article class="post" data-ts="20130929124241" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2013-09-29 12:42</span></div>
+  <div class="pb">Grootse hulde, olijcke Penocchio! En nog vele!</div>
+</article>
+<article class="post" data-ts="20130930094145" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2013-09-30 09:41</span></div>
+  <div class="pb">Nog gefeliciteerd, Co! En succes met verhuizen!</div>
+</article>
+<article class="post" data-ts="20130930185503" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2013-09-30 18:55</span></div>
+  <div class="pb">Happy belated birthday, Pendule!</div>
+</article>
+<article class="post" data-ts="20130930230824" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2013-09-30 23:08</span></div>
+  <div class="pb">Dank jullie. Ik moet eerlijk zeggen dat ik er zelf nauwelijks bij stil heb gestaan. Gisteren ingepakt, vandaag verhuisd. Wij zitten de komende twee weken bij schoonmoeder totdat huis echt af is. Zal dan (voor het eers) gebruik maken van facebook om wat voor/na pictures te sturen.</div>
+</article>
+<article class="post" data-ts="20131001123625" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2013-10-01 12:36</span></div>
+  <div class="pb">Klinkt spannend. Hebben ze een sauna bij je schoonmoeder?</div>
+</article>
+<article class="post" data-ts="20160929134854" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2016-09-29 13:48</span></div>
+  <div class="pb">Gefeliciteerd Penose !!</div>
+</article>
+<article class="post" data-ts="20160929140849" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2016-09-29 14:08</span></div>
+  <div class="pb">van harte Co!</div>
+</article>
+<article class="post" data-ts="20160930041512" id="p12">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#12 · 2016-09-30 04:15</span></div>
+  <div class="pb">Gefeliciteerd Penose!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prijzenkast... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Prijzenkast...</h1>
+<p class="tm">5 posts · started 2006-11-08 15:46 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061108154600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-11-08 15:46</span></div>
+  <div class="pb">de vraag gonst al een tijdje....<br>Kan er dit jaar een derde FDK-trofee op BigT's naam worden geschreven ?...</div>
+</article>
+<article class="post" data-ts="20061108161000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-11-08 16:10</span></div>
+  <div class="pb">Mitch, BIK:<br> deze is voor jullie</div>
+</article>
+<article class="post" data-ts="20061108173400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2006-11-08 17:34</span></div>
+  <div class="pb">Ik wil Bik graag de kans gunnen om de cup voor de derde keer op rij in ontvangst te mogen nemen. Dat zou echt een unicum zijn in de geschiedenis van de Floraboys. <br><br>Ik stel wel voor het Derde Kerstdagdiner dit keer de zaterdag VOOR Kerst te plannen (de 23ste). Dit in verband met mensen die werken of in het buitenland zijn tussen Kerst en Oud&Nieuw (zoals ik dit jaar).<br></div>
+</article>
+<article class="post" data-ts="20061108203700" id="p4">
+  <div class="ph"><span class="pa">MK</span><span class="pm">#4 · 2006-11-08 20:37</span></div>
+  <div class="pb">Heb ik net mijn vakantie vervroegd omdat ik rekening heb gehouden met derde kerstdag..is het weer niet goed..!!! Geef maar gewoon toe Mitch dat je derde kerstdag was vergeten!!! :)</div>
+</article>
+<article class="post" data-ts="20061109093100" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2006-11-09 09:31</span></div>
+  <div class="pb">Beste Boys<br><br>de vraag kwam inderdaad al op en ik wil best ook weer wat proberen te regelen.<br><br>ik zal zometeen een postje maken. Het gaat vooral om de dag begrijp ik..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

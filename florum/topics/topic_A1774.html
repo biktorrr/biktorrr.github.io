@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heb je naasten (12 jarigen) lief – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heb je naasten (12 jarigen) lief</h1>
+<p class="tm">5 posts · started 2006-05-31 17:55 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060531175500" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-05-31 17:55</span></div>
+  <div class="pb">Zijn <a href="http://www.nvd.nu/prog_mei_2005.html">deze</a> gasten serieus?<br>Let met name op 'speerpunt' 9 en standpunt 1.7</div>
+</article>
+<article class="post" data-ts="20060531184500" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-05-31 18:45</span></div>
+  <div class="pb">In ieder geval zo serieus dat de Franse krant <a href="http://www.liberation.com/page.php?Article=386450">Lib\ération</a> er een serieus verhaal aan wijdt</div>
+</article>
+<article class="post" data-ts="20060531192500" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-05-31 19:25</span></div>
+  <div class="pb">en zo serieus dat ze op RTL boulevard waren. Behoorlijk dubieus allemaal. </div>
+</article>
+<article class="post" data-ts="20060531212000" id="p4">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#4 · 2006-05-31 21:20</span></div>
+  <div class="pb">Overigens Little T. door te linken naar de website van deze pipos verhoog je hun Google pagerank. Dat betekent dat het makkelijker wordt om hun website te vinden en ze dus meer bezoekers gaan krijgen. Met andere woorden ben jij ze aan het helpen om hun kinderporno imperiumpje te vergroten. Als mijn kinderen over 20 jaar iets overkomt sue ik je ass eraf...</div>
+</article>
+<article class="post" data-ts="20060601103700" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2006-06-01 10:37</span></div>
+  <div class="pb">maar deze gasten zijn dus WEL serieus. Beetje bizar en goed walgelijk.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

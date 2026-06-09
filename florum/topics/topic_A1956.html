@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floragirls Tea – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floragirls Tea</h1>
+<p class="tm">11 posts · started 2007-01-15 16:10 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070115161000" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2007-01-15 16:10</span></div>
+  <div class="pb">Hoi Floragirls<br>Tijmen heeft een High Tea voor ons gereserveerd op 18 februari van drie tot vijf uur. De kosten zijn  16,50 deze kunnen we gewoon daar, dan betalen.<br>Ik moet nog even een exact aantal doorgeven aan het restaurant.<br>Ik heb staan wie er mee gaan:<br>Marije<br>Rigtje<br>Kirsten<br>Laura<br>Carolijn<br>Jeannine<br>Lara<br><br>Wendy?<br>Alexa?<br><br>Laat zo snel mogelijk weten als je niet kan.<br><br></div>
+</article>
+<article class="post" data-ts="20070115182200" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2007-01-15 18:22</span></div>
+  <div class="pb">Hai Lara, fijn dat het geregeld is. Met dank aan Tijmen! Gaat hij ons nog bedienen... <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br>Ik ben er dus zeker bij, gezellig!<br>liefs Rig</div>
+</article>
+<article class="post" data-ts="20070118090400" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2007-01-18 09:04</span></div>
+  <div class="pb">misschien kunnen we nog wat feministische gespreksthema's op het menu zetten. Of niet?<br><br>Ok.... laat maar...</div>
+</article>
+<article class="post" data-ts="20070121111500" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2007-01-21 11:15</span></div>
+  <div class="pb">Omdat ik verder niks heb gehoord van mensen die niet in het lijstje staan bevestig ik vandaag de reservering voor 7 personen.<br></div>
+</article>
+<article class="post" data-ts="20070121122700" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2007-01-21 12:27</span></div>
+  <div class="pb">Sicco zei vrijdag dat Wendy waarschijnlijk wel wil komen</div>
+</article>
+<article class="post" data-ts="20070121130000" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2007-01-21 13:00</span></div>
+  <div class="pb">Sicco ik wil Wendy wel mailen maar ik heb geen email adres van haar! Kan je me dat mailen o.i.d dan kan ik haar nog vragen of ze wil komen.<br></div>
+</article>
+<article class="post" data-ts="20070121160000" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-01-21 16:00</span></div>
+  <div class="pb">ik heb het doorgestuurd. Ze moet nog kijken of ze moet werken ofzo dan.</div>
+</article>
+<article class="post" data-ts="20070122181500" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-01-22 18:15</span></div>
+  <div class="pb">Ik had Alexa al wel op de hoogte gebracht. Ik zal nog es vragen. </div>
+</article>
+<article class="post" data-ts="20070122181600" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2007-01-22 18:16</span></div>
+  <div class="pb">Ok, er is al gereserveerd zie ik. </div>
+</article>
+<article class="post" data-ts="20070122184200" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2007-01-22 18:42</span></div>
+  <div class="pb">michiel, alexa kan uiteraard nog gewoon komne. IK zou voor lara de reservering vastzetten, maar omdat het nog niet echt nodig was (we zitten op die dag nog niet helemaal vol) heb ik het laten staan als tussen de 7-9 personen..daar kan lexie makkelijk bij.</div>
+</article>
+<article class="post" data-ts="20070123113100" id="p11">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#11 · 2007-01-23 11:31</span></div>
+  <div class="pb">Kennen jullie <a href="http://www.geenstijl.nl/mt/archieven/045845.html" target="_blank">deze</a> al? (Hooghe)theekransjes zijn dus ook weer helemaal in. Veel plezier!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

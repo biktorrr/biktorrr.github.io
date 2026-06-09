@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kuys.net – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">kuys.net</h1>
+<p class="tm">9 posts · started 2003-08-14 12:17 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030814121700" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-08-14 12:17</span></div>
+  <div class="pb">Hee mensen, <br><br>heb net weer eens Kuys.net gekeken, maar ik vrees toch dat MK niet gaat terugkeren naar NL om de floraboys uit het slop te trekken. Gezien zijn relaxte houding op de foto;s kan hij natuurlijk hier naar toe komen en zijn reputatie op het spel zetten of daar de vrouwen gek blijven maken.. <br>tja ehh moeilijke keus?!</div>
+</article>
+<article class="post" data-ts="20030814145900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-08-14 14:59</span></div>
+  <div class="ps">hehe, stukje bloemlezinggebeuren</div><div class="pb"><img src="http://looze.net/~misha/photogallery6/pages/a-melb2.htm" width=300><br><br><img src="http://looze.net/~misha/photogallery6/pages/d-fra3.htm" width=300><br><br><img src="http://looze.net/~misha/photogallery6/pages/g-diving10.htm" width=300><br><br><img src="http://looze.net/~misha/photogallery6/pages/c-byr5.htm" width=300></div>
+</article>
+<article class="post" data-ts="20030814150100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-08-14 15:01</span></div>
+  <div class="pb">hey waarom lukt dat nou weer niet...<br>hier de links dan maar:<br><a href="http://looze.net/~misha/photogallery6/pages/a-melb2.htm">foto 1</a> <a href=="http://looze.net/~misha/photogallery6/pages/d-fra3.htm">foto 2</a> <a href=="http://looze.net/~misha/photogallery6/pages/g-diving10.htm">foto 3</a> <a href=="http://looze.net/~misha/photogallery6/pages/c-byr5.htm">foto 4</a> </div>
+</article>
+<article class="post" data-ts="20030814150200" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-08-14 15:02</span></div>
+  <div class="pb">godverde...<br>dit keer lukt het wel:<br><a href="http://looze.net/~misha/photogallery6/pages/a-melb2.htm">foto 1</a> <a href="http://looze.net/~misha/photogallery6/pages/d-fra3.htm">foto 2</a> <a href="http://looze.net/~misha/photogallery6/pages/g-diving10.htm">foto 3</a> <a href="http://looze.net/~misha/photogallery6/pages/c-byr5.htm">foto 4</a> </div>
+</article>
+<article class="post" data-ts="20030814150300" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-08-14 15:03</span></div>
+  <div class="pb">vooral de laatste is vrij holy</div>
+</article>
+<article class="post" data-ts="20030814161000" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-08-14 16:10</span></div>
+  <div class="pb">In het kader van "praise yourself" vind ik foto 2 wel vrij goed. </div>
+</article>
+<article class="post" data-ts="20030815041700" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-08-15 04:17</span></div>
+  <div class="pb">Ik hoop dat ze net zo'n genot zijn om te bekijken als ze voor mij waren om te poseren.</div>
+</article>
+<article class="post" data-ts="20030825094200" id="p8">
+  <div class="ph"><span class="pa">CA</span><span class="pm">#8 · 2003-08-25 09:42</span></div>
+  <div class="pb">Ik vind deze toch het holiest<br>http://looze.net/~misha/photogallery6/pages/d-fra5.htm</div>
+</article>
+<article class="post" data-ts="20030825101600" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2003-08-25 10:16</span></div>
+  <div class="pb">wow!, ja die had ik nog niet gespot... deze wint zeker de nummer 1 prijs vor holiest of holiest foto!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

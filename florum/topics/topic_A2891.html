@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ma-Av-Spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ma-Av-Spam</h1>
+<p class="tm">9 posts · started 2010-05-17 19:00 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100517190000" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-05-17 19:00</span></div>
+  <div class="pb">Mocht er vanavond weer nix op de tv zijn en al je boeken zijn uit, kijk dan even op <a href="http://www.huffingtonpost.com/2010/05/03/the-funniest-personal-ads_n_559890.html">deze skitterende compilatie contactadvertenties</a> verzameld op de terechte site van Huffington Post.</div>
+</article>
+<article class="post" data-ts="20100518214100" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-05-18 21:41</span></div>
+  <div class="pb">Ok s noem eens een vrolijke film met dit aanstelijke muziekje erin:<br><br><object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/Bsg73N0eUZk&hl=nl_NL&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Bsg73N0eUZk&hl=nl_NL&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object></div>
+</article>
+<article class="post" data-ts="20100524134900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2010-05-24 13:49</span></div>
+  <div class="pb"><object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/Hn_Qi588ZkU&hl=en_US&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/Hn_Qi588ZkU&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object></div>
+</article>
+<article class="post" data-ts="20100525132700" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2010-05-25 13:27</span></div>
+  <div class="pb">Djiez, wilde even met jullie delen dat ik op 'het' WCIT (World Congress on IT) sta en dat het SHAAAAI is. Djiez, had ook nooit moeten denken dat dit flitsend zou worden met ICT-ers! <br><br>Ok, wel minder saai: Kroes *spotting dus* kondigde hier net aan geen Premier te willen worden. Maar voor de rest: shaaaai.</div>
+</article>
+<article class="post" data-ts="20100525171900" id="p5">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#5 · 2010-05-25 17:19</span></div>
+  <div class="pb">Sterkte . Ik zit met mn bus in de file, misschiwn dat dat opvrolijkt</div>
+</article>
+<article class="post" data-ts="20100525200900" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2010-05-25 20:09</span></div>
+  <div class="pb">straks songfestival op TV! Tube zit zich al te verheugen!</div>
+</article>
+<article class="post" data-ts="20100525222900" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2010-05-25 22:29</span></div>
+  <div class="pb">@Jazz<br><br>Godfathertje?*<br><br>(*)een hertje dat je een voorstel doet dat je niet kan weigeren.</div>
+</article>
+<article class="post" data-ts="20100526091200" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2010-05-26 09:12</span></div>
+  <div class="pb">Helelmaal correct amice, wat bedoel je precies met dat hertje?</div>
+</article>
+<article class="post" data-ts="20100526114800" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2010-05-26 11:48</span></div>
+  <div class="pb">Kwinkslag'lijke woordspeling, hoezo? <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

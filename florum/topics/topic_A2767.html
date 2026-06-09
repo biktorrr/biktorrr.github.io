@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bouwkaveltje aan de JanGijzenKade? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bouwkaveltje aan de JanGijzenKade?</h1>
+<p class="tm">2 posts · started 2009-11-02 14:29 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091102142900" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2009-11-02 14:29</span></div>
+  <div class="pb"> Nijpende financi\ële zorgen voor Haarlem<br><br>02/11/2009 10:41<br><br>Haarlem dreigt door financi\ële problemen ten onder te gaan. De Eerstedivisionist heeft snel geld nodig om te overleven in het betaald voetbal.<br><br>'Het kan niet zo zijn dat er geen betaald voetbal meer is in de tiende stad van Nederland', zei Haarlem-voorzitter Dick Hulsebosch tegen RTV Noord-Holland. 'We doen een dringend beroep op iedereen om ons te helpen.'<br><br>De belastingdienst legde afgelopen week beslag op de tegoeden van Haarlem, dat daardoor niet aan de verplichtingen kan voldoen. De afgelopen twee maanden sprong een externe financier bij om de salarissen te kunnen betalen.<br><br>'Natuurlijk baart de situatie ons zorgen, maar wij moeten gewoon ons werk doen', zei trainer Jan Zoutman. 'Ik heb goede hoop dat de gemeente Haarlem niet laat vallen en dat we in elk geval het seizoen kunnen afmaken. Dat is wel zo netjes.' </div>
+</article>
+<article class="post" data-ts="20091102150500" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2009-11-02 15:05</span></div>
+  <div class="pb">Stukje RKC aan het Spaarne. Er zijn trouwens al lang plannen voor nieuwbouw aan de JGK maar gezien de vertraging in de verhuizing naar de waarderpolder zijn die nog niet van start gegaan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

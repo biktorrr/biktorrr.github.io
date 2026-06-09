@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mk – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mk</h1>
+<p class="tm">2 posts · started 2004-05-14 17:33 by VrijMiMop</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040514173300" id="p1">
+  <div class="ph"><span class="pa">VrijMiMop</span><span class="pm">#1 · 2004-05-14 17:33</span></div>
+  <div class="pb">Lopen 2 drollen door de over straat die met het leger naar irak gaan. Komt er een diarree langgelopen: He, oorlog voeren lijkt me wel vet, mag ik ook mee?<br><br>Nee, zeggen de drollen. Oorlog is alleen voor harde jongens. </div>
+</article>
+<article class="post" data-ts="20040515210000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-05-15 21:00</span></div>
+  <div class="pb">goed te zien dat het florum op vrijmi ook in leven wordt gehouden bij mijn afwezigheid</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

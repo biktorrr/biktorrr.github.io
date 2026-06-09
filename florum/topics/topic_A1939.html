@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weer een groot democratisch leider minder – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Weer een groot democratisch leider minder</h1>
+<p class="tm">11 posts · started 2006-12-21 08:53 by JK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061221085300" id="p1">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#1 · 2006-12-21 08:53</span></div>
+  <div class="pb">President Turkmenistan overleden <br><br>Uitgegeven: 21 december 2006 08:29 <br>Laatst gewijzigd: 21 december 2006 08:45 <br><br>ASHGABAT - De autoritaire president van Turkmenistan Saparmurat Nijazov is donderdag overleden aan een hartstilstand. Dat meldden Turkmeense hoffunctionarissen. Nijazov was 66 jaar. <br><br>"Turkmenbashi de Grote is overleden", meldde de staatstelevisie, vergezeld van beelden van de nationale vlag voor een zwarte achtergrond.  <br> <br>De president voor het leven regeerde twintig jaar met ijzeren hand over Turkmenistan. Mensenrechtenorganisaties omschreven zijn bewind als een van de meest repressieve ter wereld. <br><br>De bevolking zijn alle burgerlijke en democratische rechten ontnomen, mensen verdwenen spoorloos na showprocessen en op last van de staat werden Nijazov en zijn familie als goden vereerd. <br><br></div>
+</article>
+<article class="post" data-ts="20061221101200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2006-12-21 10:12</span></div>
+  <div class="pb">Diepe droevenis<br></div>
+</article>
+<article class="post" data-ts="20061221103000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-12-21 10:30</span></div>
+  <div class="pb">neyt!</div>
+</article>
+<article class="post" data-ts="20061221104700" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-12-21 10:47</span></div>
+  <div class="pb">Ben al sinds vanmorgen in diepe rouw...</div>
+</article>
+<article class="post" data-ts="20061221110700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-12-21 11:07</span></div>
+  <div class="pb">Dat was even droevig wakker worden tijdens het Radio1 journaal vanmorgen.</div>
+</article>
+<article class="post" data-ts="20061221113100" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-12-21 11:31</span></div>
+  <div class="pb">Eigenlijk meer: met een traan en een lach</div>
+</article>
+<article class="post" data-ts="20061221114300" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2006-12-21 11:43</span></div>
+  <div class="pb">ter nagedachtenis doet een mens wat hij kan doen: De frontpage is aangepast met gepaste rouw. <br><br>Ook heb ik met hulp van merrel een mooie post over m gemaakt op GC.nl:<br><br>http://www.geencommentaar.nl/index.php/2006/12/21/turkmenbashi_top_tien</div>
+</article>
+<article class="post" data-ts="20061225100100" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2006-12-25 10:01</span></div>
+  <div class="pb">hij is bijgezet in een smooi mausoleum.<br><br>En ook op deze kerstmis gaan onze gedachten uit naar de one and only sexmachine...James Brown. RIP<br></div>
+</article>
+<article class="post" data-ts="20061225130600" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2006-12-25 13:06</span></div>
+  <div class="pb">Wel noemenswaardig is dat dit al in 1991 was voorspeld door L.A. Style.</div>
+</article>
+<article class="post" data-ts="20120530110930" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2012-05-30 11:09</span></div>
+  <div class="pb">Goed nieuws, een <a href="http://www.volkskrant.nl/vk/nl/2668/Buitenland/article/detail/3262786/2012/05/29/Dictator-Mugabe-benoemd-tot-VN-ambassadeur-voor-toerisme.dhtml">Groot Democraat heeft een leuk nieuw baantje gekregen</a>.</div>
+</article>
+<article class="post" data-ts="20120530141632" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2012-05-30 14:16</span></div>
+  <div class="pb">Ik dacht even dat het ging om Job zijn nieuwe job bij de politie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

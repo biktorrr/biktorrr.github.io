@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VAKANTIE!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VAKANTIE!!!</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2001-06-22 18:08 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010622180800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1&nbsp;·&nbsp;2001-06-22 18:08</span></div>
+  <div class="pb">Als hier nou even iedereen meldt wanneer hij (of zij) op vakantie is, weet de rest dat ook weer. Dan weet Maarten BikkelhardDuwel bijv. ook dat hij niet iedere weekenddag naar Het Florapark hoeft te komen.<br><br><br>Ik ben er niet van zondag 1 juli tot en met dinsdag 31 juli.<br>Zaterdag 30 juni is mijn laatste baldag, zaterdag 4 augustus weer mijn eerste.<br><br>Ik vrees dat ik dus niet zulke hoge ogen zal gaan gooien voor de "Speler van de maand Juli-verkiezing".<br><br></div>
+</article>
+<article class="post" data-ts="20010622234200" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2&nbsp;·&nbsp;2001-06-22 23:42</span></div>
+  <div class="pb">Even namens een enorm grote gang.<br><br>23 Juli tot 7 Augustus is de vakantie van VC, Merlijn, Wybren, Sicco, en WJ. </div>
+</article>
+<article class="post" data-ts="20010623143500" id="p3">
+  <div class="ph"><span class="pa">Lort Gob</span><span class="pm">#3&nbsp;·&nbsp;2001-06-23 14:35</span></div>
+  <div class="ps">Vakantie</div><div class="pb">Ik ben pleite van 6 juli tot ongeveer 6 augustus</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

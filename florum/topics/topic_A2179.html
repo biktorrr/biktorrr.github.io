@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oproep voor Triple Jazz – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Oproep voor Triple Jazz</h1>
+<p class="tm">12 posts · started 2007-10-04 10:13 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071004101300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-10-04 10:13</span></div>
+  <div class="pb">WAT IS JE EMAILADRES!!! ALLE MAILTJES BOUNCEN (OF BLIJVEN ONBEANTWOORD)!!!</div>
+</article>
+<article class="post" data-ts="20071004103100" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2007-10-04 10:31</span></div>
+  <div class="pb">probeer eens voornaam@achternaam.nl</div>
+</article>
+<article class="post" data-ts="20071004124400" id="p3">
+  <div class="ph"><span class="pa">TJ</span><span class="pm">#3 · 2007-10-04 12:44</span></div>
+  <div class="pb">Oftewel tripple@jazz.com</div>
+</article>
+<article class="post" data-ts="20071004133500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2007-10-04 13:35</span></div>
+  <div class="pb">Goeie, maar die kreeg ik dus terug.</div>
+</article>
+<article class="post" data-ts="20071004133500" id="p5">
+  <div class="ph"><span class="pa">jazzzzzzzzzzzz</span><span class="pm">#5 · 2007-10-04 13:35</span></div>
+  <div class="pb">probeer tripple@jazzzzzzzzzzzz.nl </div>
+</article>
+<article class="post" data-ts="20071004134300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-10-04 13:43</span></div>
+  <div class="pb">of jazzy@datisdiejazzzzzz.nl<br></div>
+</article>
+<article class="post" data-ts="20071004135100" id="p7">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#7 · 2007-10-04 13:51</span></div>
+  <div class="pb">feitelijk heb ik op alle mailtjes die iets over ambilight televisies gaan een autoresponder ingesteld, kan het daar mee te maken hebben? Ook "Philips producten in de ramsj" komt er niet meer door.<br><br>voornaam@achternaam.nl zou prima moeten werken...</div>
+</article>
+<article class="post" data-ts="20071004161600" id="p8">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#8 · 2007-10-04 16:16</span></div>
+  <div class="pb">dat adres laat ik bij deze maar even naar den biktie forwarden, bedankt voor de extra spam!</div>
+</article>
+<article class="post" data-ts="20071004163500" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2007-10-04 16:35</span></div>
+  <div class="pb">Ik registreer twee verbale panna's.</div>
+</article>
+<article class="post" data-ts="20071004222500" id="p10">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#10 · 2007-10-04 22:25</span></div>
+  <div class="pb">Nou wijs ze maar eens aan dan!</div>
+</article>
+<article class="post" data-ts="20071005075000" id="p11">
+  <div class="ph"><span class="pa">de bladen</span><span class="pm">#11 · 2007-10-05 07:50</span></div>
+  <div class="pb">censuur op het florum!<br><br>post geschrapt door webmaster!<br><br>begin van het einde?!</div>
+</article>
+<article class="post" data-ts="20071005081400" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2007-10-05 08:14</span></div>
+  <div class="pb">Ik zou toch zweren dat Bikkie Bakkie je tot twee maal toe door de benen speelde...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

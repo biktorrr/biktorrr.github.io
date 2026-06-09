@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painten ?n Humor bijhouden? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Painten ?n Humor bijhouden?</h1>
+<p class="tm">3 posts · started 2006-04-06 12:48 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060406124800" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-04-06 12:48</span></div>
+  <div class="pb">Doet biktorr nu ook <a href="http://tweakers.net/nieuws/41920/Universiteit-Amsterdam-peilt-humeur-bloggers.html">dit </a> al?<br></div>
+</article>
+<article class="post" data-ts="20060406132700" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-04-06 13:27</span></div>
+  <div class="pb">hehe, helaas. Dat is een lab hier 50 meter verder. Mooi onderzoek wel. Ze konden aan de gemoedstoestanden van de myspace-tienermeisjes precies zien wanneer het nieuwe Harry Potter Boek uitkwam. (nervous)</div>
+</article>
+<article class="post" data-ts="20060406142000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-04-06 14:20</span></div>
+  <div class="pb">ghe, terecht. Misschien is dit een terrein waar jij en Mitsj iets kunnen beginnen..marktonderzoek en placing nav de gemoedstoestand van bloggers. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

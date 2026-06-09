@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPAthema: tijdloosheid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SPAthema: tijdloosheid</h1>
+<p class="tm">15 posts · started 2002-11-20 21:35 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021120213500" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-11-20 21:35</span></div>
+  <div class="pb">Wat dachten jullie ervan om het 'thema' tijdloosheid weer eens uit de kast te halen? Ik ben voor.</div>
+</article>
+<article class="post" data-ts="20021121094700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-11-21 09:47</span></div>
+  <div class="pb">Voor</div>
+</article>
+<article class="post" data-ts="20021121114000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-11-21 11:40</span></div>
+  <div class="pb">niet echt voor. Mijn Spa is meestal al tijdloos genoeg.<br></div>
+</article>
+<article class="post" data-ts="20021121125600" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2002-11-21 12:56</span></div>
+  <div class="pb">tijdloos!!!!!!!!!!!</div>
+</article>
+<article class="post" data-ts="20021121133400" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2002-11-21 13:34</span></div>
+  <div class="pb">Voor,alleen wel een klokkie mee voor HoPpen</div>
+</article>
+<article class="post" data-ts="20021121171400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2002-11-21 17:14</span></div>
+  <div class="pb">Hoe houd je dan bij hoe lang een 'hour of power' duurt?</div>
+</article>
+<article class="post" data-ts="20021121171500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2002-11-21 17:15</span></div>
+  <div class="pb">Immers al een klok mee is geen tijdloosheid meer.<br>Keukenwekker?</div>
+</article>
+<article class="post" data-ts="20021121183600" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-11-21 18:36</span></div>
+  <div class="pb">keukenwekker, stopwatch, er valt wel iets op te verzinnen lijkt mij.</div>
+</article>
+<article class="post" data-ts="20021121200700" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2002-11-21 20:07</span></div>
+  <div class="pb">Aantal rondjes dat Erik rond het huis rent...</div>
+</article>
+<article class="post" data-ts="20021124004900" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10 · 2002-11-24 00:49</span></div>
+  <div class="pb">hoe weten we dan wanneer het vijf uur biertijd (eerder mag, om vijf uur moet) is?</div>
+</article>
+<article class="post" data-ts="20021124132400" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2002-11-24 13:24</span></div>
+  <div class="pb">Die biertijd was toch al lang losgelaten? Met auto's is het tegenwoordig geen probleem meer om voldoende vocht naar boven te krijgen.</div>
+</article>
+<article class="post" data-ts="20021125132900" id="p12">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#12 · 2002-11-25 13:29</span></div>
+  <div class="pb">gewoon bier consumeren als de geest/maag daarom vraagt.<br>5 uur, schmijf schmuur</div>
+</article>
+<article class="post" data-ts="20021126223800" id="p13">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#13 · 2002-11-26 22:38</span></div>
+  <div class="pb">Biertijd is: wanneer je vindt dat het biertijd is.</div>
+</article>
+<article class="post" data-ts="20021128122500" id="p14">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#14 · 2002-11-28 12:25</span></div>
+  <div class="pb">Biertijd is geen tijd het is een gevoel.</div>
+</article>
+<article class="post" data-ts="20021128133900" id="p15">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#15 · 2002-11-28 13:39</span></div>
+  <div class="pb">Wat is er in godsnaam met de Floraboys pagina aan de hand?!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

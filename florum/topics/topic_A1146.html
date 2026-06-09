@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>wie leent mij ff een AJAX CLUBCARD – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">wie leent mij ff een AJAX CLUBCARD</h1>
+<p class="tm">5 posts · started 2004-03-20 18:18 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040320181800" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2004-03-20 18:18</span></div>
+  <div class="pb">ik wil namelijk ff 2 kaartjes hebben voor AJAX-GRONINGEN</div>
+</article>
+<article class="post" data-ts="20040320185300" id="p2">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#2 · 2004-03-20 18:53</span></div>
+  <div class="pb">ik heb er wel \é\én die je mag lenen. Zal 'm maandag meenemen.</div>
+</article>
+<article class="post" data-ts="20040320193900" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2004-03-20 19:39</span></div>
+  <div class="ps">topshit</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20040324123300" id="p4">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#4 · 2004-03-24 12:33</span></div>
+  <div class="pb">hmm, ik had een bij me. Zal 'm vrijdag ook meenemen.<br><br></div>
+</article>
+<article class="post" data-ts="20040324135300" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2004-03-24 13:53</span></div>
+  <div class="ps">thanks anaway</div><div class="pb">was het vergeten aan jou te vragen josit, maar Big T had ook een clubcard bij zich dus die heb ik even geleend</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>paasweekend skieen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">paasweekend skieen?</h1>
+<p class="tm">7 posts · started 2007-03-31 11:43 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070331114300" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-03-31 11:43</span></div>
+  <div class="pb">Boys, <br><br>Wie heeft er zin om het paaswekend te gaan skieen ergens? Vrijdagmiddag vertrekken - maandag weer terug.<br><br>Wie biedt?<br><br></div>
+</article>
+<article class="post" data-ts="20070331151800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-03-31 15:18</span></div>
+  <div class="pb">Gaat niet lukken voor mij.</div>
+</article>
+<article class="post" data-ts="20070401205700" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-04-01 20:57</span></div>
+  <div class="pb">deze jongen heeft wel iets beters te doen dan zijn stokken te breken zo vlak voor een aantal belangrijke balwedstrijden.</div>
+</article>
+<article class="post" data-ts="20070401220800" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-04-01 22:08</span></div>
+  <div class="pb">Ik ga misschien die zaterdag ergens nabij Toronto skieen jullie zijn welkom om aan te schuiven in de rij voor de skilift. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20070402175200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-04-02 17:52</span></div>
+  <div class="pb">Ik ga lekker klussen het paasweekeinde</div>
+</article>
+<article class="post" data-ts="20070403103000" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-04-03 10:30</span></div>
+  <div class="pb">helaasjes, ik kan ook niet.</div>
+</article>
+<article class="post" data-ts="20070403153700" id="p7">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#7 · 2007-04-03 15:37</span></div>
+  <div class="pb">Ik heb het helaas veel te druk met eieren zoeken. Anders had ik graag mee gegaan! <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

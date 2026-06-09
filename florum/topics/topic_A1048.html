@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dirty Sanchez: wat het echt is (rated 16+) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dirty Sanchez: wat het echt is (rated 16+)</h1>
+<p class="tm">6 posts · started 2003-11-20 13:53 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031120135300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-11-20 13:53</span></div>
+  <div class="ps">S.B.A.I.V</div><div class="pb">Shade Berti Alles Ist Vorbei.<br><br><img src="http://bilder.bild.t-online.de/BTO/sport/aktuell/2003/11/20/buehnenteaser/01__1244350-01__sport__berti,property=Bild.jpg"><br><br>Hier een paar mooie stukjes, allen met Sneijdert als 'Key Man'.<br><br><a href="http://www.thesun.co.uk/article/0,,2002390000-2003532580,,00.html"> the sun </a><br><a href="http://www.mirror.co.uk/sport/sporttop/content_objectid=13641179_method=full_siteid=50143_headline=-BERTI%2DS%2DDREAM%2DIN%2DTATTERS%2D-name_page.html">The mirror</a><br><br><a href="http://www.manutd.com/news/fullstory.sps?inewsid=46798"> man. united homepage</a><br><br><a href="http://www.sport.scotsman.com/index.cfm?id=1279932003"> Scotsman.com :) </a><br></div>
+</article>
+<article class="post" data-ts="20031120135400" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-11-20 13:54</span></div>
+  <div class="ps">test</div><div class="pb">test</div>
+</article>
+<article class="post" data-ts="20031120174100" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-11-20 17:41</span></div>
+  <div class="pb">Ik meen mij nog een gaaf geprek met de Tube te herinneren van een paar jaar terug waar hij met een blosje op zijn kaken vertelde over "Gerbelling" en "Donkey Punches"...<br>hier nog een paar mooie<br><br><a href="http://www.tomorrowideation.com/getoffended/Shirtpages/dirty.html"> DIRRRTY SANCHEZ </a><br><br><br><marquee> 1 in da stink ,2 in da pink ! </marquee></div>
+</article>
+<article class="post" data-ts="20031120174200" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-11-20 17:42</span></div>
+  <div class="pb">hmm, daar waren ze dus<br>en uiteraard is het 'gesprek'.</div>
+</article>
+<article class="post" data-ts="20031120175500" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2003-11-20 17:55</span></div>
+  <div class="pb">en dan nog een paar<br><a href="http://www.tomorrowideation.com/getoffended/TheList.html"> Glossary of Perversion </a><br><br>Voordat jullie met je vragen komen: Ja, ik spendeer mijn gehele dag (vaak ook werk- en voetbaltijd) met het opzoeken van dit soort informatie.</div>
+</article>
+<article class="post" data-ts="20031121145300" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-11-21 14:53</span></div>
+  <div class="pb">En *wat* voor informatie...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

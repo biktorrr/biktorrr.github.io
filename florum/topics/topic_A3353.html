@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic waarvan je wist dat het zou komen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic waarvan je wist dat het zou komen</h1>
+<p class="tm">5 posts · started 2014-09-09 01:30 by Topic waarvan je wist dat het zou komen-nazi</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140909013004" id="p1">
+  <div class="ph"><span class="pa">Topic waarvan je wist dat het zou komen-nazi</span><span class="pm">#1 · 2014-09-09 01:30</span></div>
+  <div class="pb"><p><br>	Sorry, dit moet echt even. De slechte spellers en schrijvers onder de Boys mogen van mij veel, maar hier moet een grens getrokken worden. Gezien de mentaliteit van de Flora-ouders wordt dit topic natuurlijk binnen de kortste keren groter dan het Celeb spotting-topic en het Quote van de dag-topic bij elkaar, en dan is het niet te accepteren dat het zo&#39;n gammel geconstrueerde zin als titel heeft.</p><br></div>
+</article>
+<article class="post" data-ts="20140909144511" id="p2">
+  <div class="ph"><span class="pa">Ewbank</span><span class="pm">#2 · 2014-09-09 14:45</span></div>
+  <div class="pb">Hm, ik weet niet zeker of dit een trollenactie is of dat de nazi het echt niet goed begrijpt. Ik ga maar uit van het eerste..</div>
+</article>
+<article class="post" data-ts="20140909171853" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2014-09-09 17:18</span></div>
+  <div class="pb">Deze lieve nazi beseft denkelijk niet dat taal zich ontwikkelt door gebruik en dat dit een grammaticale constructie is die je wist dat zou gaan komen.</div>
+</article>
+<article class="post" data-ts="20140909175533" id="p4">
+  <div class="ph"><span class="pa">de je-weet-toch-hippie</span><span class="pm">#4 · 2014-09-09 17:55</span></div>
+  <div class="pb">je-weet-toch</div>
+</article>
+<article class="post" data-ts="20140909180037" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2014-09-09 18:00</span></div>
+  <div class="pb">Deze lieve nazi verdient een achterlijke-nachtegaal-award</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huwelijksdiner – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Huwelijksdiner</h1>
+<p class="tm">7 posts · started 2006-09-13 11:04 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060913110400" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-09-13 11:04</span></div>
+  <div class="pb">Boys, girls,<br><br>Tussen de huwelijkse inzegening van Biggy en JLau en het feest is er genoeg tijd om ergens te gaan eten. Ik stel voor ergens in H'stede (Binnenweg?).<br><br>Frank en Rigtje zien dit ook wel zitten. Wie doet er nog meer mee?<br><br>Als H'stede-ambassadeur weet Co misschien nog een leuke bar-bistro-dancing waar we los kunnen gaan.</div>
+</article>
+<article class="post" data-ts="20060913111000" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2006-09-13 11:10</span></div>
+  <div class="pb">er is natuurlijk altijd het pannenkoekenhuis van heemstede, dat is vrij dicht bij. Lijkt mij een goed idee. Wie gaan er mee? Dan reserveerd ik wel.</div>
+</article>
+<article class="post" data-ts="20060913114400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-09-13 11:44</span></div>
+  <div class="pb">ja leuk, count me in. <br>Marije niet.</div>
+</article>
+<article class="post" data-ts="20060913201900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2006-09-13 20:19</span></div>
+  <div class="pb">Lijkt mij ook leuk!</div>
+</article>
+<article class="post" data-ts="20060915115300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-09-15 11:53</span></div>
+  <div class="pb">Alexa en ik moeten werken vandaag en halen het niet om op tijd voor de pannenkoeken te zijn. Tot op het feest!</div>
+</article>
+<article class="post" data-ts="20060927093600" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-09-27 09:36</span></div>
+  <div class="pb">ik vond het erg gezellig</div>
+</article>
+<article class="post" data-ts="20060927105300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2006-09-27 10:53</span></div>
+  <div class="pb">Anders ik wel</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

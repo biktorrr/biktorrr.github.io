@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bikkelen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bikkelen</h1>
+<p class="tm">9 posts · started 2005-02-08 13:38 by joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050208133800" id="p1">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#1 · 2005-02-08 13:38</span></div>
+  <div class="pb">Rugbyfan ontmant zichzelf na weddenschap<br><br>Uitgegeven: 8 februari 2005 07:27 <br><br>LONDEN - Een 26-jarige Welshman heeft een bijzonder pijnlijke weddenschap verloren. Hij had beloofd zijn ballen af te zullen snijden als het rugbyteam van Wales zou winnen van Engeland. Wales won. En de Welshman hield woord, zoals het een goede Brit betaamt. Hij ligt in zorgwekkende toestand in een ziekenhuis, berichtte het tabloid The Daily Mirror dinsdag. <br><br>De man liep na de wedstrijd van de kroeg naar zijn huis en keerde even later terug met zijn afgesneden testikels in zijn hand, tot grote schrik van de overige stamgasten. Zij waren er van overtuigd dat hij een grapje maakte. <br><br><br>Volgens de politie stond de man al geruime tijd te boek als een psychisch probleemgeval. Wales boekte in Cardiff overigens met 11-9 zijn eerste thuisoverwinning op Engeland in twaalf jaar.<br><br>van nu.nl</div>
+</article>
+<article class="post" data-ts="20050208134000" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2005-02-08 13:40</span></div>
+  <div class="pb">Idee voor een volgend kampioenschap?</div>
+</article>
+<article class="post" data-ts="20050208142200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-02-08 14:22</span></div>
+  <div class="pb">Misschien dat castratieangst de heren nog kan motiveren, want eeuwige roem doet ze allang niets meer...<br></div>
+</article>
+<article class="post" data-ts="20050209110600" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-02-09 11:06</span></div>
+  <div class="pb">Misschien beter om te koppelen aan een eventueele degradatie.</div>
+</article>
+<article class="post" data-ts="20050209111700" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-02-09 11:17</span></div>
+  <div class="pb">Consequent blijven:<br><br>Misschien beeter om te koppelen aan een eventueele degraadaatie.</div>
+</article>
+<article class="post" data-ts="20050209132400" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-02-09 13:24</span></div>
+  <div class="pb">Boeieen</div>
+</article>
+<article class="post" data-ts="20050209141400" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-02-09 14:14</span></div>
+  <div class="pb">gaast!</div>
+</article>
+<article class="post" data-ts="20050209222400" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2005-02-09 22:24</span></div>
+  <div class="pb">Oli4 kaal voor het komende kampioenschap is voor mij een betere motivatie. <br>Ik heb namelijk de wens om ooit een groep spelertjes aan te leveren voor de F-junioren van FC Floraboys.</div>
+</article>
+<article class="post" data-ts="20050321120100" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2005-03-21 12:01</span></div>
+  <div class="pb">Wat zou onze vriend gedaan hebben na het behalen van de Grand Slam?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

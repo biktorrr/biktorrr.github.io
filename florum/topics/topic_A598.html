@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F?licitations ? Tijmen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">F?licitations ? Tijmen</h1>
+<p class="tm">13 posts · started 2002-10-16 10:37 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021016103700" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-10-16 10:37</span></div>
+  <div class="pb">Gefeliciteerd Tijmen<br>Helaas kan ik er niet bij zijn op je partee, maar ik verzeker je dat ik een Beaujelaistje extra zal opentrekken, op jouw gezondheid</div>
+</article>
+<article class="post" data-ts="20021016113100" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-10-16 11:31</span></div>
+  <div class="ps">gefeliciteerd</div><div class="pb">ouwe lul!!</div>
+</article>
+<article class="post" data-ts="20021016140300" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-10-16 14:03</span></div>
+  <div class="pb">ja, Tijmen, van harte!<br><br>ook met het bijzetten van het kabinet-Balkenende 1 trouwens.</div>
+</article>
+<article class="post" data-ts="20021016141800" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-10-16 14:18</span></div>
+  <div class="pb">Een mooier cadeau dan de LPF uit de kamer kan je je niet wensen!</div>
+</article>
+<article class="post" data-ts="20021016174200" id="p5">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#5 · 2002-10-16 17:42</span></div>
+  <div class="pb">Feliz Cumpleanos!<br>Gefeliciteerd en tot zaterdag.<br></div>
+</article>
+<article class="post" data-ts="20021017133700" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-10-17 13:37</span></div>
+  <div class="pb">van Hartesteijn old boy<br></div>
+</article>
+<article class="post" data-ts="20021022125700" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2002-10-22 12:57</span></div>
+  <div class="pb">Mocht de bokke(n)lul ooit terug komen uit India, heb ik mezelf alvast voorgenomen hem nooit mee te laten doen aan Machiavelli...kan ik met me ouwe aars gewoon altijd beginnen...<br><br>Bedankt allen.</div>
+</article>
+<article class="post" data-ts="20121016190349" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2012-10-16 19:03</span></div>
+  <div class="pb">Ik las net over alle drama en frustratie achter het scherm de afgelopen weken bij de profesj. En nu zit de vijf ook al weer een tijdje in de klok voordat hij ook maar \é\én felicitatie binnen heeft op het Florum. Van harte, mon cher PHK-boy!</div>
+</article>
+<article class="post" data-ts="20121016203824" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2012-10-16 20:38</span></div>
+  <div class="pb">Hulde en congratulaten!</div>
+</article>
+<article class="post" data-ts="20121016212643" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2012-10-16 21:26</span></div>
+  <div class="pb">Nog vele dwergenboeken profesj! </div>
+</article>
+<article class="post" data-ts="20121017025349" id="p11">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#11 · 2012-10-17 02:53</span></div>
+  <div class="pb">Lieve lieve Terts, nog vele vele jaren!</div>
+</article>
+<article class="post" data-ts="20121017105031" id="p12">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#12 · 2012-10-17 10:50</span></div>
+  <div class="pb">Dank dank, zeker voor de degene met de dubbele /driedubbele felicitationes. (IRL, facebook,florum)<br><br>Ik bewaar de boeken voor de donkere dagen rond kerst, lekker in een luie stoel met een schoteltje aardappelkroketjes. Bliss.<br>Dan moet ik ergens begin 2019 klaar zijn.</div>
+</article>
+<article class="post" data-ts="20121017183643" id="p13">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#13 · 2012-10-17 18:36</span></div>
+  <div class="pb">Van hi ha harte nog profesj!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

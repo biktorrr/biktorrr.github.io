@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys (geen) bekeraars – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys (geen) bekeraars</h1>
+<p class="tm">8 posts · started 2006-01-09 09:19 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060109091900" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2006-01-09 09:19</span></div>
+  <div class="pb">He, ik keek net even naar het nieuwe programma, wat er uiteraard nog niet is. Maar hte viel mij daarbij op dat we niet mee lijken te doen met de beker. Klopt dit? Ik had nog niet begrepen dat we onszelf daarvoor hadden uitgesloten.<br><br></div>
+</article>
+<article class="post" data-ts="20060109100300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-01-09 10:03</span></div>
+  <div class="pb">ik ben hierover in mailcontact (voorlopig alleen van mijn kant) met de USC mensen. <br><br>Feit is wel dat ik doordat ik vorige keer ziek was nog niet het formulier met bekeraanmelding heb kunnen inleveren. Dus er bestaat een grote kans dat dit jaar het bekerfeest aan ons voorbijtrekt.</div>
+</article>
+<article class="post" data-ts="20060109121100" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-01-09 12:11</span></div>
+  <div class="pb">Het kan ook zijn dat alle tweevoudig kampioenen pas in de halve finale hoeven in te stromen. <br><br>Mits we echt niet ingeloot kunnen worden kan Sicco misschien een sudden death playoff met Locomotiv Viae regeln om een plaats in de beker.<br></div>
+</article>
+<article class="post" data-ts="20060110102200" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-01-10 10:22</span></div>
+  <div class="ps">kutje</div><div class="pb">Beste Victor,<br> <br>Het is niet meer mogelijk je op te geven voor de bekercompetitie, die is al volledig gepland.<br>Ik zet je bij deze wel op de reservelijst.<br> <br>Met vriendelijke groet,<br> <br>Marco H***</div>
+</article>
+<article class="post" data-ts="20060111131100" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2006-01-11 13:11</span></div>
+  <div class="pb">Nou ja dan kunnen we ons volledig concentreren op de competitie (ik zeg maar wat). Wat betreft de VIAE teams: de naam VIAE is uit de teamnamen verdwenen, daar de vereniging reeds is opgeheven. <br>Locomotiv VIAE heet nu Der angstgegner (nr.1 in de 4e klasse).<br>Dynamo VIAE heet nu Dynamo Grebbeberg (nr.3 in de 3e klasse) <br>In de laatste ben ik volgend seizoen mede actief.</div>
+</article>
+<article class="post" data-ts="20060111151700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2006-01-11 15:17</span></div>
+  <div class="pb">In dat geval Sicco, regel ff een playoff met Dynamo Grebbeberg.</div>
+</article>
+<article class="post" data-ts="20060111155100" id="p7">
+  <div class="ph"><span class="pa">VB`</span><span class="pm">#7 · 2006-01-11 15:51</span></div>
+  <div class="pb">dynamo grebbeberg? smakeloos gewoon.</div>
+</article>
+<article class="post" data-ts="20060111155600" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2006-01-11 15:56</span></div>
+  <div class="pb">Of nog beter: Der angstgegner. Ik wil ook wel weer 's scoren.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

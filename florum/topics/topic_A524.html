@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>speciaal voor Timmie (dit is geen spam!) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">speciaal voor Timmie (dit is geen spam!)</h1>
+<p class="tm">3 posts · started 2002-06-24 15:53 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020624155300" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-06-24 15:53</span></div>
+  <div class="pb">Flitspalen voor bescherming fietsers  <br>Veiligheid Randweg moet beter  <br>HAARLEM - De vele ongelukken op de Westelijke Randweg in Haarlem vragen om drastische maatregelen, vinden provincie en politie. Daarom komen er op korte termijn veertien flitspalen bij, twee op elke kruising. Later volgt mogelijk de aanleg van tunnels of bruggen voor fietsers en voetgangers.<br><br> <br>De N208 in Haarlem - ofte wel Westelijke Randweg, in Haarlem-Noord Delftlaan - staat bekend als het drukste en gevaarlijkste stuk provinciale weg van Noord-Holland. Alleen al in de jaren 1998 tot en met 2000 vonden er negen dodelijke ongevallen plaats en raakten 91 mensen ernstig gewond.<br><br>Veel ongelukken worden veroorzaakt door hardrijden. Volgens de politie brachten ad hoc verkeerscontroles automobilisten er tot op heden niet toe zich aan de snelheidslimiet te houden, ook al worden er duizenden bekeuringen per week uitgedeeld.<br><br>De plaatsing van veertien permanente flitspalen moet daar verandering in brengen. Elk van de zeven kruisingen krijgt er twee - \é\én voor elke rijrichting. De camera's klikken ook als iemand door rood rijdt. De palen moeten in juli/augustus in werking treden.<br><br>Het verkeershandhavingsteam van de politie hoopt met de flitspalen vooral een betere bescherming te bieden aan fietsers en voetgangers, in ieder geval tot er ingrijpender maatregelen zijn genomen. Een werkgroep van de provincie onderzoekt hoe dat het best kan gebeuren. Vooral de aanleg van ongelijkvloerse kruisingen - bruggen en tunnels - voor fietsers en voetgangers wordt serieus overwogen. Het kan nog wel enkele jaren duren voordat deze voorzieningen werkelijkheid zijn.<br><br>De kruising met de Orionweg bij het Mendelcollege wordt volgens een politiewoordvoerster als eerste aangepakt, naar verwachting in augustus. De fietsers, veelal scholieren, krijgen volgens de zegsvrouw een bredere strook om over te steken. Ook gaat het verkeerslicht voor fietsers langer op groen. Hierdoor kunnen er meer fietsers tegelijk oversteken. De hoop is dat ze dan minder snel geneigd zijn door rood te rijden. <br><br>Daarnaast zijn er plannen het aantal rijbanen ter hoogte van het Kennemer Sportcenter te verminderen, om zo het verkeer te dwingen langzamer te rijden.  <br></div>
+</article>
+<article class="post" data-ts="20020625125000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-06-25 12:50</span></div>
+  <div class="pb">heheh</div>
+</article>
+<article class="post" data-ts="20020626101100" id="p3">
+  <div class="ph"><span class="pa">TN,gniffelend in zijn vuistje</span><span class="pm">#3 · 2002-06-26 10:11</span></div>
+  <div class="pb">HoPpakee,zo de randweg over </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

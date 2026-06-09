@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sterkte Tim en Laura! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Sterkte Tim en Laura!</h1>
+<p class="tm">12 posts · started 2012-11-02 17:37 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20121102173740" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2012-11-02 17:37</span></div>
+  <div class="pb">Terwijl de latente bashings over en weer vliegen in het verkiezingentopic lees ik op facebook dat de 20 weken echo van  Tim en Laura slecht nieuws opleverde. Heel veel sterkte en positieve vibes richting Zoetermeer!</div>
+</article>
+<article class="post" data-ts="20121102175857" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2012-11-02 17:58</span></div>
+  <div class="pb">Ook via dit communicatieinstrument veel positieve vibes richting Zoetermeer. Sterkte Tim en Laura!</div>
+</article>
+<article class="post" data-ts="20121102212459" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2012-11-02 21:24</span></div>
+  <div class="pb">Veel sterkte inderdaad, Tim en Laura.</div>
+</article>
+<article class="post" data-ts="20121103131358" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2012-11-03 13:13</span></div>
+  <div class="pb">Veel sterkte Tim en Laura. Ook van S of course.</div>
+</article>
+<article class="post" data-ts="20121116150439" id="p5">
+  <div class="ph"><span class="pa">Laura en Tim</span><span class="pm">#5 · 2012-11-16 15:04</span></div>
+  <div class="pb">Beste boys<br><br>Na het hele slechte nieuws bij de 20 weken echo en de punctie en MRI erna, hebben we de afgrijselijke beslissing moeten nemen om de zwangerschap af te breken. Afgelopen woensdag morgen is onze kleine meisje, Kindje geboren. <br>Ze zal, samen met de andere kindjes die het niet halen in het ziekenhuis, worden gecremeerd en de as zal worden uitgestrooid over het Sterrenveldje op de begraafplaats in Leiden. We zijn nu weer thuis, aan het herstellen. Dankjewel voor jullie berichtjes, gebed, kaarsjes en knuffels....<br>ze helpen ons enorm.</div>
+</article>
+<article class="post" data-ts="20121116151251" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2012-11-16 15:12</span></div>
+  <div class="pb">Heel vervelend om te horen, L & T. Ik wens jullie heel veel sterkte toe!</div>
+</article>
+<article class="post" data-ts="20121116170807" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2012-11-16 17:08</span></div>
+  <div class="pb">Ja, dat is naar nieuws. Ik wens jullie heel veel sterkte.</div>
+</article>
+<article class="post" data-ts="20121116172853" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2012-11-16 17:28</span></div>
+  <div class="pb">*tik* :(</div>
+</article>
+<article class="post" data-ts="20121116190423" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2012-11-16 19:04</span></div>
+  <div class="pb">Wat een ontzettend akelig nieuws. Heel veel sterkte Tim en Laura. </div>
+</article>
+<article class="post" data-ts="20121116191149" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2012-11-16 19:11</span></div>
+  <div class="pb">Poeh, dat moet een heftige beslissing zijn geweest. Veel sterkte.</div>
+</article>
+<article class="post" data-ts="20121116215422" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2012-11-16 21:54</span></div>
+  <div class="pb">Erg slecht en heftig nieuws. Gecondoleerd en heel veel sterkte gewenst, Tim en Laura...</div>
+</article>
+<article class="post" data-ts="20121117093227" id="p12">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#12 · 2012-11-17 09:32</span></div>
+  <div class="pb">Ook Wendy en ik leven met jullie mee. Heel veel sterkte!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajax opvolging – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ajax opvolging</h1>
+<p class="tm">2 posts · started 2005-02-26 16:04 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050226160400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2005-02-26 16:04</span></div>
+  <div class="pb">Van de shortlist van kandidaten om Ronald Koeman op te volgen springen de volgende namen er het meest uit: Jol, Blind en ten Cate<br><br>Ik was een spurs forum aan het aflopen, daar zijn een aantal mensen de volgende mening toebedaan:<br>Re: Ajax want Jol (Score: 1)<br>by tony0379 on Saturday, 26 February 2005 (13:54:17) GMT<br>(User Info | Send a Message)<br><big>ajax can go fuck themselves </big></div>
+</article>
+<article class="post" data-ts="20050226170400" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-02-26 17:04</span></div>
+  <div class="pb">Blind lijkt me niks. Ten Cate zit dagelijks op het strand en is assistent bij misschien wel de beste ploeg van Europa en Jol is net twee maanden bezig. Weinig hoopvol allemaal. De naam Foppe de Haan hoor je ook eigenlijk niet terwijl dat vast wel een kandidaat zou kunnen zijn.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

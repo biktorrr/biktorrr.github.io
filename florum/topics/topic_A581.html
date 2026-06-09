@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Machlas is Een Beschnitte ! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Machlas is Een Beschnitte !</h1>
+<p class="tm">1 post · started 2002-09-14 01:27 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020914012700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-09-14 01:27</span></div>
+  <div class="pb">Mido wil in winterstop weg bij ajax <br><br>Mido is ontevreden en wil weg bij Ajax. De spits werd tegen Groningen al na een half uur door Koeman gewisseld. Nadat Mido hoorde dat hij tegen FC Zwolle niet in de basis zou beginnen, liet hij tegenover AT5 Nieuws weten in de winterstop zijn geluk in Itali\ë of Engeland te willen zoeken. <br>Koeman was vrijdagmiddag nog niet op de hoogte van het besluit van Mido. Vorig jaar liet Mido zijn ontevredenheid eveneens blijken over zijn plek in het elftal. Na een goed gesprek met Koeman volgde een uitstekende periode. <br>"Tijdens de volgende transferperiode verlaat ik Ajax. Honderd procent." <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

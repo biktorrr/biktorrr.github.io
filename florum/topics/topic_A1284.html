@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Big T- Forever – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Big T- Forever</h1>
+<p class="tm">15 posts · started 2004-09-05 12:39 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040905123900" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2004-09-05 12:39</span></div>
+  <div class="pb">TIMMIE GEFELICITEERD!!!!</div>
+</article>
+<article class="post" data-ts="20040905134700" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-09-05 13:47</span></div>
+  <div class="pb">BigT gefeliciteerd.</div>
+</article>
+<article class="post" data-ts="20040905135400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2004-09-05 13:54</span></div>
+  <div class="pb">ja Big T, nog vele blessurevrije jaren gewenst!</div>
+</article>
+<article class="post" data-ts="20040906102800" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-09-06 10:28</span></div>
+  <div class="pb">beter laat dan nooit: <br><br>Biktie 4ffr!!</div>
+</article>
+<article class="post" data-ts="20040906110900" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-09-06 11:09</span></div>
+  <div class="pb">in navolging van de Nomads,<h1> BFFB! </h1><br></div>
+</article>
+<article class="post" data-ts="20120905132502" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2012-09-05 13:25</span></div>
+  <div class="pb">Muchas felicidades aan el GranT</div>
+</article>
+<article class="post" data-ts="20120905144752" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2012-09-05 14:47</span></div>
+  <div class="pb">Gefeliciteerd Bak. Overigens moest ik vandaag ook opeens aan Steve Irwin denken. Vreemd...</div>
+</article>
+<article class="post" data-ts="20120905164844" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2012-09-05 16:48</span></div>
+  <div class="pb">Gefeliciteerd Baqwiel!</div>
+</article>
+<article class="post" data-ts="20120905183712" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2012-09-05 18:37</span></div>
+  <div class="pb">Van harte, Biki-baka! Dat je nog maar vele Nederlandse elftallen weg mag tikken!</div>
+</article>
+<article class="post" data-ts="20120905184534" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2012-09-05 18:45</span></div>
+  <div class="pb">Gefeliciteerd, Tim!</div>
+</article>
+<article class="post" data-ts="20120905185417" id="p11">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#11 · 2012-09-05 18:54</span></div>
+  <div class="pb">Dr. Van Kempen, felicidados</div>
+</article>
+<article class="post" data-ts="20120905200712" id="p12">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#12 · 2012-09-05 20:07</span></div>
+  <div class="pb">Gefeliciteerd Baquille!</div>
+</article>
+<article class="post" data-ts="20120905223739" id="p13">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#13 · 2012-09-05 22:37</span></div>
+  <div class="pb">Van Harte!</div>
+</article>
+<article class="post" data-ts="20120906002327" id="p14">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#14 · 2012-09-06 00:23</span></div>
+  <div class="pb">Gefeliciteerd natuurlijk!</div>
+</article>
+<article class="post" data-ts="20120907160633" id="p15">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#15 · 2012-09-07 16:06</span></div>
+  <div class="pb">dank iedereen. Zit nu midden tussen de dozen, die richting een stad der kakkerlakken verscheept gaan worden vandaag</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

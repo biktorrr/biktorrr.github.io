@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Je m&#x27;appelle – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Je m&#x27;appelle</h1>
+<p class="tm">9 posts · started 2010-09-29 14:24 by Je m&#x27;appelle</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100929142400" id="p1">
+  <div class="ph"><span class="pa">Je m&#x27;appelle</span><span class="pm">#1 · 2010-09-29 14:24</span></div>
+  <div class="pb">Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle Je m'appelle </div>
+</article>
+<article class="post" data-ts="20100929143200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2010-09-29 14:32</span></div>
+  <div class="pb">Le baquille, I presume?<br><br>Gevalletje van PVOG?</div>
+</article>
+<article class="post" data-ts="20100929143300" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2010-09-29 14:33</span></div>
+  <div class="pb">Et moi, je m´appelle Bernard Delicieux!</div>
+</article>
+<article class="post" data-ts="20100929144400" id="p4">
+  <div class="ph"><span class="pa">Merlin</span><span class="pm">#4 · 2010-09-29 14:44</span></div>
+  <div class="pb">Vous appellez le Baquille et Bernard Delicieux.</div>
+</article>
+<article class="post" data-ts="20100929145800" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-09-29 14:58</span></div>
+  <div class="pb">et moi <br>"Le Petit Professional"<br><br>ou <br><br>"Petite Tierce"</div>
+</article>
+<article class="post" data-ts="20100929151900" id="p6">
+  <div class="ph"><span class="pa">TripleJzz</span><span class="pm">#6 · 2010-09-29 15:19</span></div>
+  <div class="pb">Le ma\ître de jazz \à votre service.</div>
+</article>
+<article class="post" data-ts="20100929155700" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2010-09-29 15:57</span></div>
+  <div class="pb">Ah, ben oui, \ça, c'est une topique tout \à fait \à mon goût, Moi, je m'appelle Olivier de Paris.</div>
+</article>
+<article class="post" data-ts="20100929161300" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2010-09-29 16:13</span></div>
+  <div class="pb">pvog pvog pvog pvog pvog pvog pvog pvog pvog inderdaad</div>
+</article>
+<article class="post" data-ts="20100929181100" id="p9">
+  <div class="ph"><span class="pa">C&#x27;est Ca</span><span class="pm">#9 · 2010-09-29 18:11</span></div>
+  <div class="pb">dat was ik dus niet http://www.geenstijl.nl/mt/archieven/2010/09/dit_is_europa_aanranding_in_pa.html<br><br>toch en vliegenpoepje vergeten bij geenstijl</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

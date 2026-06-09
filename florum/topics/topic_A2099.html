@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanavond in Amsterdam... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vanavond in Amsterdam...</h1>
+<p class="tm">11 posts · started 2007-07-13 15:07 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070713150700" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2007-07-13 15:07</span></div>
+  <div class="pb">Ik heb met Price Waterhouse Tube afgesproken om 19 uur in cafe Stevens op de Nieuwmarkt. </div>
+</article>
+<article class="post" data-ts="20070713150800" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-07-13 15:08</span></div>
+  <div class="pb">Dus wie nog zin heeft in een hapje en een drankje op de vrijdagavond weet waar ie wezen moet</div>
+</article>
+<article class="post" data-ts="20070713151200" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-07-13 15:12</span></div>
+  <div class="pb">VWSicco is present</div>
+</article>
+<article class="post" data-ts="20070713152300" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-07-13 15:23</span></div>
+  <div class="pb">Ik zit met 11 studiegenootjes op het Heinekenplein te borrel en daarna te dineren in 18-20. Mochten jullie nog wat extra gezelligheid zoeken schroom dan niet om aan te schuiven. </div>
+</article>
+<article class="post" data-ts="20070713152500" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-07-13 15:25</span></div>
+  <div class="pb">ik ben in Haarlem bij de verjaardag van Rob Kingie, als dat vroeg afgelopen is bel ik nog wel even een rondje.</div>
+</article>
+<article class="post" data-ts="20070713161900" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2007-07-13 16:19</span></div>
+  <div class="pb">atomic Ca is er ook</div>
+</article>
+<article class="post" data-ts="20070713165100" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2007-07-13 16:51</span></div>
+  <div class="pb">Oli-Else4 zit vermoedelijk in een cocktailbar aan de Champs-Elys\ées. Wie zin heeft aan te schuiven, schrome dat niet.</div>
+</article>
+<article class="post" data-ts="20070713170600" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-07-13 17:06</span></div>
+  <div class="pb">Ik ga knallen met Sandu. Misschien dat ik later een belletje geef.</div>
+</article>
+<article class="post" data-ts="20070713174100" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2007-07-13 17:41</span></div>
+  <div class="pb">ben met lara mijn afstudeerkado aan het verbrassen. Misschien dat er 's avonds nog animo is om in Haarlem iets af te spreken, anders zien we jullie morgen middag. Ik neem een bal mee.<br></div>
+</article>
+<article class="post" data-ts="20070713191100" id="p10">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#10 · 2007-07-13 19:11</span></div>
+  <div class="pb">stellar Tim zit in Atlanta aan een burger.. ook hier zijn mensen welkom</div>
+</article>
+<article class="post" data-ts="20070714031100" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2007-07-14 03:11</span></div>
+  <div class="pb">Toppie Knalluh!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

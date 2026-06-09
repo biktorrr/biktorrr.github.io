@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 15 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 15</h1>
+<p class="tm">4 posts · started 2003-02-16 16:59 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030216165900" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-02-16 16:59</span></div>
+  <div class="pb">Timmie tikt voetbal<br><br>Op veler verzoek, na een dan, een Timmie tikt over voetbal.<br>Het is weer half februari. Februari is altijd de tijd van de ommekeren. De winter vervaagd langzaam en zowel de Chamiones league als de nationale competities komen weer op gang. DE eerste krokussen steken de kop op in de selecte gebieden  van het florapark waar de grond niet is omgeploegd door de noeste winterse traningsarbeid van het glorieuze team dat zijn naam leent van dit eeuwenoude rustpunt in Haarlem Centrum. Februari en maart zijn de maanden van de ommekeer. Seizoenen kunnen hier gebroken of gered worden in het hedendaagse voetbal. De korste weg naar eeuwige roem in de USC beker ligt open voor iedereen en teams verwisselen van samenstelling. <br><br>Februari is als gene ander de tijd om extreem te gaan bikkelen en alles achter je te laten. Zelf de DJ in Talinn steunt met grote happenings in havenloodsen de vooruitgang in het nieuwe usc seizoen. Joost in Madrid heeft zelfs toegezegd een minuut aan ons te denken in zijn spaanse paradijs. Kenobi verlegt zijn dag-nacht ritme om de floraboys live op tv te kunnen volgen. Saddamn heft onder grote druk zijn censuurwet op in Irak zodat het nationale team van Irak de videobeelden van de FLoraboys ter lering zullen nemen.<br>Al dat alleen maar als gevolg van het feit dat februari de tijd is van de ommekeer. De lente komt er alweer aan en zodra het april is, komt de tijd van de afrekening. En daarna is het te laat.  DE bekers zijn vergeven, de degradatie onafwendbaar en het Roetereiland toernooi slechts een redmiddel dan een glorietocht.<br><br>Februari, laatste wintermaand en scherprechter in een eventuele grachtentocht. De oranje replica shirts vliegen nu nog als warme broodjes over de toonbank, maar na februari begint het echte oordeel. Zal 23 het buhneklassement winnen. Zal Victor zijn vorm behouden. Zal tijmen zijn doel leeghouden. Zou Sicco nog komen? Vragen die een echte columnist niet kan beantwoorden. </div>
+</article>
+<article class="post" data-ts="20030217094100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-02-17 09:41</span></div>
+  <div class="pb">Potverdikkeme, ik sta op scherp!</div>
+</article>
+<article class="post" data-ts="20030217111700" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-02-17 11:17</span></div>
+  <div class="pb">ik commit mezelf aan vormbehoud...<br><br>overigens staat deze --mooie-- TT nu weer bij de andere<br></div>
+</article>
+<article class="post" data-ts="20030217140900" id="p4">
+  <div class="ph"><span class="pa">TN quote Timmie</span><span class="pm">#4 · 2003-02-17 14:09</span></div>
+  <div class="pb">"Ik ben niet alleen collumnist, ik ben ook een INSPIHREEDOHR."<br><br>Jakkere en bikkele..het heilige vuur in mij brandt en verzengt!.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

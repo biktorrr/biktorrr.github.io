@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S.B.A.I.V – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">S.B.A.I.V</h1>
+<p class="tm">7 posts · started 2003-11-20 13:52 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031120135200" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-11-20 13:52</span></div>
+  <div class="pb">Shade Berti Alles Ist Vorbei.<br><br><img src="http://bilder.bild.t-online.de/BTO/sport/aktuell/2003/11/20/buehnenteaser/01__1244350-01__sport__berti,property=Bild.jpg"><br><br>Hier een paar mooie stukjes, allen met Sneijdert als 'Key Man'.<br><br><a href="http://www.thesun.co.uk/article/0,,2002390000-2003532580,,00.html"> the sun </a><br><b href="http://www.mirror.co.uk/sport/sporttop/content_objectid=13641179_method=full_siteid=50143_headline=-BERTI%2DS%2DDREAM%2DIN%2DTATTERS%2D-name_page.html">The mirror</b><br><br><c href="http://www.manutd.com/news/fullstory.sps?inewsid=46798"> man. united homepage</c><br><br><d href="http://www.sport.scotsman.com/index.cfm?id=1279932003"> Scotsman.com :) </d><br></div>
+</article>
+<article class="post" data-ts="20031120135500" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-11-20 13:55</span></div>
+  <div class="pb">Sorry de links nog een keer<br><a href="http://www.thesun.co.uk/article/0,,2002390000-2003532580,,00.html"> the sun </a><br><a href="http://www.mirror.co.uk/sport/sporttop/content_objectid=13641179_method=full_siteid=50143_headline=-BERTI%2DS%2DDREAM%2DIN%2DTATTERS%2D-name_page.html">The mirror</a><br><br><a href="http://www.manutd.com/news/fullstory.sps?inewsid=46798"> man. united homepage</a><br><br><a href="http://www.sport.scotsman.com/index.cfm?id=1279932003"> Scotsman.com :) </a><br></div>
+</article>
+<article class="post" data-ts="20031120142800" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-11-20 14:28</span></div>
+  <div class="pb">Wesley moet zich een beetje inhouden in interlands, anders zijn we hem zo kwijt bij Ajax.</div>
+</article>
+<article class="post" data-ts="20031120153400" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-11-20 15:34</span></div>
+  <div class="pb">Ik heb gehoord dat van Eijden heeft gezegd dat Sneijder te koop is voor 165 miljoen euro.</div>
+</article>
+<article class="post" data-ts="20031120153500" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-11-20 15:35</span></div>
+  <div class="pb">deze is ook extreem gaaf.<br><br><img src="http://www.ajax.nl/upload_mm/1974719238_1999999425_ned-schot_sneijder_hoog.jpg"></div>
+</article>
+<article class="post" data-ts="20031120170800" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2003-11-20 17:08</span></div>
+  <div class="pb">ik kan alleen nergens vinden wat "wegdudelen" is >:D</div>
+</article>
+<article class="post" data-ts="20031120184000" id="p7">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#7 · 2003-11-20 18:40</span></div>
+  <div class="pb"><a href="http://www.wirsinddabei.nl">wirsinddabei</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

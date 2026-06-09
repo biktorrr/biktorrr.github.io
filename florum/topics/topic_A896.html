@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ruud van N chatsessie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ruud van N chatsessie</h1>
+<p class="tm">7 posts · started 2003-09-18 02:07 by wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030918020700" id="p1">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#1 · 2003-09-18 02:07</span></div>
+  <div class="pb">Ajax is bij Van Nistelrooy favoriet voor de Nederlandse titel. 'Schrijf Feyenoord nooit af, daarvoor is de club en zijn de supporters te fanatiek. Maar PSV zal van goede huize moeten komen om Ajax te verslaan.' En het Nederlandse voetbal in het algemeen is er niet op achteruit gegaan. 'Want met Feyenoord, dat de UEFA cup won in 2002, en Ajax, vorig jaar in de kwartfinale van de Champions League, zijn we helemaal terug!'<br><br>'Van der Vaart is fantastisch. Hij wordt een van de beste <br>spelers in de historie van het Nederlands voetbal', voorspelt Van Nistelrooy. Maar volgens hem is Mateja Kezman op dit moment de beste speler op de Nederlandse velden. 'Meest gedreven speler en super goalscorer, onmisbaar voor PSV. Hij gaat het nu ook in de Champions League doen! Zidane vind ik de beste speler van de wereld, zijn rust, overzicht, techniek en balans, sjezus wat is deze man goed!', zei Van The Man. 'Ik zou wel eens met Valderrama willen spelen, lijkt me wel coole dude!' <br><br></div>
+</article>
+<article class="post" data-ts="20030918112900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-09-18 11:29</span></div>
+  <div class="pb">Zeker typefout: op de site van VI stond het volgende:<br><br><I>'Ik zou wel eens met DJ Erik Z willen spelen, lijkt me wel coole dude!'</I> <br><br>Nou Ruud, eat your hart out: ik heb met de DJ gespeeld.</div>
+</article>
+<article class="post" data-ts="20030918123000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-09-18 12:30</span></div>
+  <div class="pb">wel allemaal een beetje inkoppertjes van ruud</div>
+</article>
+<article class="post" data-ts="20030918145800" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-09-18 14:58</span></div>
+  <div class="pb">is dat niet altijd zo met Ruud ?<br><br>(zo, die was echt te makkelijk, een inkoppertje zogezegd.)</div>
+</article>
+<article class="post" data-ts="20030919041500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-09-19 04:15</span></div>
+  <div class="pb">Ruud heeft goed opgelet bij de mediatrainingen van PSV.</div>
+</article>
+<article class="post" data-ts="20030919132300" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2003-09-19 13:23</span></div>
+  <div class="pb">"Maar volgens hem is Mateja Kezman op dit moment de beste speler op de Nederlandse velden. 'Meest gedreven speler en super goalscorer, onmisbaar voor PSV. Hij gaat het nu ook in de Champions League doen!"<br><br>dit heeft 'ie zeker VOOR woensdagavond gezegd.</div>
+</article>
+<article class="post" data-ts="20030919132400" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2003-09-19 13:24</span></div>
+  <div class="pb">Ruud moet z'n dikke schijtbek houden en goals scoren voor zijn land net als Raffel. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

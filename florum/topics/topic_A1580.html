@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floranimation – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floranimation</h1>
+<p class="tm">4 posts · started 2005-09-26 12:07 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050926120700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-09-26 12:07</span></div>
+  <div class="pb">even kijken of dit werkt:<br><div align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="700" height="500"><br>    <param name="movie" value="player.swf?id=1127729000-146502334""1127729000-146502334""><br>    <param name="quality" value="high"><br>    <embed src="player.swf?id=1127729000-146502334""1127729000-146502334"" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="700" height="500"></embed><br>  </object><br></div></div>
+</article>
+<article class="post" data-ts="20050926120800" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2005-09-26 12:08</span></div>
+  <div class="pb">hmm. Kijk anders even <a href="http://www.fabrica.it/flipbook/flipbook_player.php?id=1127729000-146502334">hierrrrr</a>. Ter aanmoediging voor vanavond.</div>
+</article>
+<article class="post" data-ts="20050926121800" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2005-09-26 12:18</span></div>
+  <div class="pb">taking Paint to new levels</div>
+</article>
+<article class="post" data-ts="20051001001900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-10-01 00:19</span></div>
+  <div class="pb">gast.....</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

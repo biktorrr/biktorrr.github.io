@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schandaal in Madrid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Schandaal in Madrid</h1>
+<p class="tm">1 post · started 2003-03-10 18:09 by El pais</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030310180900" id="p1">
+  <div class="ph"><span class="pa">El pais</span><span class="pm">#1 · 2003-03-10 18:09</span></div>
+  <div class="pb">Madrid 25 graden 10 Maart 2003<br><br>Wederom is ex-floraciet Jose Blanco betrokken bij een schandaal. De hoop van de Haarlemse dependance in Madrid ,die dit jaar topscoorder is en onlangs benoemd werd tot captain, was te lui om op tijd op te komen draven. Waar de wedstrijd omn 13:00 stipt begon kwam de verwaande vedette pas 10 minuten voor tijd opdraven. Zijn excuus dat hij dacht dat de wedstrijd om 15:00 zou beginnen viel niet goed bij het bestuur, dat hem vervolgens voor onbepaalde tijd schorste. Hiernaast eiste JB nog een basisplaats op, hetgeen niet bepaald intelligent genoemd kan worden.<br><br>Tot zover deze reportage over Florabopys Madrid het sterrenequipe zonder leider die met 4-2 de boot in gingen, een stand die overigens al op het bord stond toen JB het veld in kwam.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

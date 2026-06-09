@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pubquiz vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Pubquiz vanavond</h1>
+<p class="tm">12 posts · started 2008-11-10 15:50 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081110155000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2008-11-10 15:50</span></div>
+  <div class="pb">Misschien wat last minute, maar zijn er vijf mensen te porren voor een revival van de oude kleiduivenschietert? Het is toch om 21u? O'Brians, Houtplein.</div>
+</article>
+<article class="post" data-ts="20081110160400" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2008-11-10 16:04</span></div>
+  <div class="pb">helas, ik heb andere plannen. Er komen wat draken, ezels, mexicanen en wat overleden amerikaanse presidenten langs op de Kleverparkweg.<br></div>
+</article>
+<article class="post" data-ts="20081110162500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-11-10 16:25</span></div>
+  <div class="pb">familiedag?</div>
+</article>
+<article class="post" data-ts="20081110162500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2008-11-10 16:25</span></div>
+  <div class="pb">11 november is toch pas morgen?!</div>
+</article>
+<article class="post" data-ts="20081111184100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2008-11-11 18:41</span></div>
+  <div class="pb">Ja, hoe slaan de boys zich eigenlijk door Sint Maarten heen?</div>
+</article>
+<article class="post" data-ts="20081111184700" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2008-11-11 18:47</span></div>
+  <div class="pb">wij hebben beneden 1 zakje snickers, meer dan genoeg... met drie blaffende honden banjeren de kids een blokje om.</div>
+</article>
+<article class="post" data-ts="20081112101500" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2008-11-12 10:15</span></div>
+  <div class="pb">wij hebben de hele avond met een grote bak snoep naar de deurbel zitten staren, maar helaas..<br><br>Alles is dus voor bassie</div>
+</article>
+<article class="post" data-ts="20081112111500" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-11-12 11:15</span></div>
+  <div class="pb">wat de droevig beeld Victie, wil je dit soort dingen niet meer posten, anders maak je zelfs de bode nog weemoedig.<br></div>
+</article>
+<article class="post" data-ts="20081112113300" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2008-11-12 11:33</span></div>
+  <div class="pb">Bij ons is 1 plukje kinderen langs geweest en heeft waarschijnlijk direct aan alle anderen doorverteld dat er op nr. 169 slechts mandarijnen en pepernoten te halen waren. De rest van de avond hebben we niemand meer gezien.<br><br>Maar het was al meer dan vorig jaar, toen we deden alsof we er niet waren.</div>
+</article>
+<article class="post" data-ts="20081112113500" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2008-11-12 11:35</span></div>
+  <div class="pb">Ik heb fijn mandarijntjes en zakjes met pepernoten en GoldBaren uitgedeeld. De komende dagen mag ik genieten van elk uur een mandarijn.</div>
+</article>
+<article class="post" data-ts="20081112114800" id="p11">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#11 · 2008-11-12 11:48</span></div>
+  <div class="pb">gewoon het land verlaten, werkt altijd.</div>
+</article>
+<article class="post" data-ts="20081112141400" id="p12">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#12 · 2008-11-12 14:14</span></div>
+  <div class="pb">maar dan mis je vrolijke kinderstemmetjes! Vind je het niet diep ontroerend om een dreumes van 3 zijn uiterste best te zien doen om \én maat te houden \én de tekst niet te verkloten, al zwaaiende met zijn zelf geknutselde creatie dat met een beetje fantasie op een lampion lijkt, maar net zo makkelijk de kattenbak-lining van eergisteren had kunnen zijn.<br><br>Wat ben je toch een hardvochtig creatuur Tube! </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

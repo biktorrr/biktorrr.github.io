@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanavond: 13 juni – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vanavond: 13 juni</h1>
+<p class="tm">6 posts · started 2003-06-13 09:32 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030613093200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-06-13 09:32</span></div>
+  <div class="pb">Chiefs,<br><br>Zijn er mensen onder jullie met wilde plannen? The Big T stelde voor om morgen (zaterdag) de wereldwijde DVD-release te laten plaatsvinden. Maar is de DVD dan al klaar en kan de Tube ons dan wel huisvesten? <br><br>Dan zouden we vanavond bijvoorbeeld naar Zandvoort kunnen gaan en om 21:00 uur bij een strandtent afspreken. Roseetje drinken -- heerlijk! -- en dan later nog naar Haarlem gaan.<br><br>Nog andere ideeen? <br></div>
+</article>
+<article class="post" data-ts="20030613122100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-06-13 12:21</span></div>
+  <div class="pb">HALLOOO!!! Kom 's door!</div>
+</article>
+<article class="post" data-ts="20030613122800" id="p3">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#3 · 2003-06-13 12:28</span></div>
+  <div class="pb">ben er pas morgen.. anders was het een zeer puik idee..lekker al mijn dure centjes verpatsen..</div>
+</article>
+<article class="post" data-ts="20030613123200" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-06-13 12:32</span></div>
+  <div class="pb">van mij hoeft t niet zo heel nodig, maar als iedereen het hartstikke leuk vindt ben ik van de partij.</div>
+</article>
+<article class="post" data-ts="20030613142800" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-06-13 14:28</span></div>
+  <div class="pb">Zou graag een verfrissende avondduik nemen, maar met al die sociale spanning hier kan ik vanzelfsprekend niet gemist worden. Voor de liefhebber: morgen staat er een stuk van mij bij Kunst in Parool over het Franse rockfenomeen Johnny Hallyday.</div>
+</article>
+<article class="post" data-ts="20030613153700" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-06-13 15:37</span></div>
+  <div class="pb">Tjeetje, jij blijft ook maar relevante stukken schrijven. Hulde aan jou.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

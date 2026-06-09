@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajax geplaatste ploeg  voor CL – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ajax geplaatste ploeg  voor CL</h1>
+<p class="tm">2 posts · started 2003-06-08 23:14 by wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030608231400" id="p1">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#1 · 2003-06-08 23:14</span></div>
+  <div class="pb">Op 25 juli is de loting voor de derde voorronde van de UEFA Champions League. Ajax is bij die loting een van de geplaatste ploegen, en ontloopt zo de meeste topteams die zich niet rechtstreeks plaatsten voor het eindtoernooi.<br><br>Enkele van de niet geplaatste ploegen voor de derde voorronde, waar Ajax wel tegen kan loten, zijn: Club Brugge, Rosenborg, Wisla Krakow, Grasshopper Club, Dinamo Zagreb, Benfica, Grazer AK, Shaktar Donetsk, Partizan Belgrado, Maccabi Tel Aviv, CSKA Sofia, Austria Wien, MTK Boedapest en CSKA Moskou.<br><br>  </div>
+</article>
+<article class="post" data-ts="20030609130800" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2003-06-09 13:08</span></div>
+  <div class="ps">nou dat is appeltje eitje dus</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

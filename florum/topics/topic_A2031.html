@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gert blijft geld binnenharken – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gert blijft geld binnenharken</h1>
+<p class="tm">2 posts · started 2007-05-04 12:27 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070504122700" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-05-04 12:27</span></div>
+  <div class="pb">Studio 100 heeft weer een paar nieuwe knallers in het assortiment. Na samson&gert, K3 en Piet Piraat (kom maar door met die google hits) hebben ze nu Big&Betsy...een pipilangkous-kloon en een flatulerend varkentje. Luister hier naar hun belangrijke windjes lied. Potentieel de nieuwe zomerknaller van de boys.<br>http://www2.studio100.be/bigbetsy/Podium/singles/windjeslied.htm<br><br>Sorry de snorrie<br></div>
+</article>
+<article class="post" data-ts="20070504132100" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-05-04 13:21</span></div>
+  <div class="pb">Er zijn trouwens ook plannen om een Plopsaland te bouwen bij Ahoy in Rotterdam.<br>Misschien een idee om het hele land om te toveren in 1 groot Plopsaland.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

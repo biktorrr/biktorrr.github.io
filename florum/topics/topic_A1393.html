@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fotosite en Prijzenkast geupdate – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Fotosite en Prijzenkast geupdate</h1>
+<p class="tm">11 posts · started 2005-01-14 12:21 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050114122100" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-01-14 12:21</span></div>
+  <div class="pb">Hallo lieve floraboys en girls,<br><br>Op de twee bovengenoemde pagina's staat allerlei mooie nieuwe info. Ik zou het maar als de sodemieter gaan bekijken.</div>
+</article>
+<article class="post" data-ts="20050114135700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-01-14 13:57</span></div>
+  <div class="pb">Ik vind het er besoindre uitzien.</div>
+</article>
+<article class="post" data-ts="20050114164900" id="p3">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#3 · 2005-01-14 16:49</span></div>
+  <div class="pb">ah dankjewel merl,<br><br>op jou kan ik tenmiste rekenen :'|</div>
+</article>
+<article class="post" data-ts="20050114173200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-01-14 17:32</span></div>
+  <div class="pb">De vraag is wat nu de belangrijkste prijs is. De Schenkercup is natuurlijk fantastisch omdat i zo gigantisch is. Die twee kampioenschappen waren een volksfeest... Maar de manier waarop Biktie het derde kerstdagdiner organiseerde overtrof alles...</div>
+</article>
+<article class="post" data-ts="20050117141400" id="p5">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#5 · 2005-01-17 14:14</span></div>
+  <div class="pb">echt puik werk Vic!<br>Maar kunnen de foto's van Zeelande niet ook als thumbnails??? Dat is wel makkelijker om te bekijken enzo.</div>
+</article>
+<article class="post" data-ts="20050117145700" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-01-17 14:57</span></div>
+  <div class="pb">kan wel, maar niet door mij :) <br><br>die staan niet onder mijn beheer</div>
+</article>
+<article class="post" data-ts="20050118100900" id="p7">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#7 · 2005-01-18 10:09</span></div>
+  <div class="pb">bij wie staan ze onder beheer dan? Dan moet die persoon ze als thumbnails zetten...</div>
+</article>
+<article class="post" data-ts="20050118113100" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-01-18 11:31</span></div>
+  <div class="pb">Tegemoetkoming aan veeleisende jl@u :)<br><br>hier via de noclickimageviewer van flabber.nl te zien<br><a href="http://nciv.flabber.nl/index.php?nciv_id=604986">thumbs</a><br><br></div>
+</article>
+<article class="post" data-ts="20050118113200" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2005-01-18 11:32</span></div>
+  <div class="pb">Die foto's worden beheerd door Frankie P. en ik vind het vrij ver gaan om te suggereren dat hij hier zijn tijd aan moet besteden voor ons gemak. </div>
+</article>
+<article class="post" data-ts="20050118163400" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2005-01-18 16:34</span></div>
+  <div class="pb">vond ik ook, daarom heb ik mijn werktijd er maar ingestoken, dan betaalt iedereen een beetje mee...</div>
+</article>
+<article class="post" data-ts="20050119114800" id="p11">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#11 · 2005-01-19 11:48</span></div>
+  <div class="pb">mijn dank is groot!<br>Hulde...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

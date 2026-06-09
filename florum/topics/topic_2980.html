@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2980 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2980</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2010-10-26 14:45 by Alexander</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101026144500" id="p1">
+  <div class="ph"><span class="pa">Alexander</span><span class="pm">#1&nbsp;·&nbsp;2010-10-26 14:45</span></div>
+  <div class="pb"><img src="http://i.picasion.com/pic32/ac0ac039a34ecd0a3acec539da1c4f2c.gif"><br><br>Saaaaaai. Kan ik al naar huis?</div>
+</article>
+<article class="post" data-ts="20101026161800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2&nbsp;·&nbsp;2010-10-26 16:18</span></div>
+  <div class="pb">Tja, ik heb de lijst met quotes van Roemer gezien en dan zou ik ook zo zuchten. The rent is too damn high and the coffee is to damn expensive! <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> 20 uiro centen per kopje.<br><br><br></div>
+</article>
+<article class="post" data-ts="20101027075000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3&nbsp;·&nbsp;2010-10-27 07:50</span></div>
+  <div class="pb">saai on topique:<br>Hier de AM signalen, met een stuk weteschappelijk onderzoek naar de voorsgestelde afschaffing van provisie.<br><a href="http://www.amweb.nl/Nieuwsbrief.lynkx?id=132149"> Stukje naar beneden scrollen</a><br><br>FYI. Deze Profesj adviseert alleen complexe financiele producten.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

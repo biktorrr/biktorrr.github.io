@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FC Utrecht-verdediger Di Tommaso (26) overleden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FC Utrecht-verdediger Di Tommaso (26) overleden</h1>
+<p class="tm">6 posts · started 2005-11-29 11:54 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051129115400" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2005-11-29 11:54</span></div>
+  <div class="pb">Bizar, die toch puike verdediger was net zo oud als wij....</div>
+</article>
+<article class="post" data-ts="20051129124300" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2005-11-29 12:43</span></div>
+  <div class="pb">Ben jij niet 27?</div>
+</article>
+<article class="post" data-ts="20051129124300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-11-29 12:43</span></div>
+  <div class="pb">Ben jij niet 27?</div>
+</article>
+<article class="post" data-ts="20051129163900" id="p4">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#4 · 2005-11-29 16:39</span></div>
+  <div class="pb">zet jullie, mij niet, toch aan het denken zoiets<br></div>
+</article>
+<article class="post" data-ts="20051129183100" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2005-11-29 18:31</span></div>
+  <div class="pb">ongeveer net zo oud als wij dan, mister weijsneuijs.<br>Lekker, ook nog een kindje van twee achterlatende...naja bij een aardbeving gaan er al gauw 100000 mensen dood.</div>
+</article>
+<article class="post" data-ts="20051130124500" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-11-30 12:45</span></div>
+  <div class="pb">van ouderdom nog meer. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

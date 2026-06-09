@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sophie&#x27;s Choice voor de Poephooghe Cheique? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Sophie&#x27;s Choice voor de Poephooghe Cheique?</h1>
+<p class="tm">2 posts · started 2007-03-30 14:02 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070330140200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-03-30 14:02</span></div>
+  <div class="pb">Waar ligt je loyaliteit poep en poephooghe?<br><br>'Verbod overheidsinvestering in Second Life'<br>RIJSWIJK - De jongerenorganisatie van het CDA, het CDJA, pleit voor een Second Life-verbod voor overheidsinstellingen. De jonge CDA'ers willen voorkomen dat overheden meer belastinggeld investeren in 'bouwprojecten' in de virtuele wereld op internet. Het is een ongezonde commerci\ële hype, zo liet het CDJA donderdag weten.<br><br><a href="http://www.telegraaf.nl/i-mail/61167771/CDJA:_verbied_investering_overheid_in_Second_Life.html">lees verder</a><br></div>
+</article>
+<article class="post" data-ts="20070330171900" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-03-30 17:19</span></div>
+  <div class="pb">zie ook mijn post in de do mi spam :)<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

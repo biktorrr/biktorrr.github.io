@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>verjaardagspicknick – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">verjaardagspicknick</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2008-08-29 07:11 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080829071100" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1&nbsp;·&nbsp;2008-08-29 07:11</span></div>
+  <div class="pb">Aangezien ik volgende week ook jarig ben, wilde ik jullie ook uitnodigen voor een mooie picknick<br><br>Wanneer: volgende week zondag (7 september) <br>Waar: Florapark (als het weer goed is) <br>Hoe Laat: Uur of zes.<br><br>Bijzonderheden: Neem ook vooral wat mee, Laura en ik zorgen wel voor brood en dranken. <br><br>Mocht het weer niet goed zijn, dan kijk ik of we kunnen uitwijken naar ergens anders.</div>
+</article>
+<article class="post" data-ts="20080829084400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2&nbsp;·&nbsp;2008-08-29 08:44</span></div>
+  <div class="pb">Ik ben dan in Rotterdam voor een verjaardag.</div>
+</article>
+<article class="post" data-ts="20080829085500" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3&nbsp;·&nbsp;2008-08-29 08:55</span></div>
+  <div class="pb">Helaas pindakaas, Kirsten en ik zitten dan in Malaga.</div>
+</article>
+<article class="post" data-ts="20080829142200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4&nbsp;·&nbsp;2008-08-29 14:22</span></div>
+  <div class="pb">Dan ben ik er bij, denkelijk</div>
+</article>
+<article class="post" data-ts="20080829151200" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5&nbsp;·&nbsp;2008-08-29 15:12</span></div>
+  <div class="pb">MMM Dan zijn Tijmen en ik snowboarden, maar waarschijnlijk redden we een picknick wel om 6 uur.<br></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florapoll: BD laten opnemen in deze lijst? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florapoll: BD laten opnemen in deze lijst?</h1>
+<p class="tm">4 posts · started 2010-12-08 14:49 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101208144913" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-12-08 14:49</span></div>
+  <div class="pb">Boys,<br>Ik liep tegen <a href="http://www.i-cynic.com/fame.asp#alltime">deze site</a> aan. Besoindre.<br>Mijn persoonelijke favorieten: Voltaire en Jezus. Toch miste ik 1 grote naam: Bernard Delicieux (tenzij hij onder het pseudoniem Schopenhauer is opgenomen)<br><br>Wat jullie?<br></div>
+</article>
+<article class="post" data-ts="20101208164304" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2010-12-08 16:43</span></div>
+  <div class="pb">Beetje flauw dit, lieve Terts. Ik maak je op een ander topic een ´onderhands compliment´ (dat je als depressieveling een mislukking bent, wil dus zeggen dat je een prettig, positief iemand bent), en jij roept me meteen maar tot een van de grootste cynici van de wereldgeschiedenis uit. Ik zie niet waar ik het aan verdiend heb.</div>
+</article>
+<article class="post" data-ts="20101208165846" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-12-08 16:58</span></div>
+  <div class="pb">zie dat dan als een groot compliment van mij. Zoals jij mijn positieve prijst, prijs ik jouw oprechte -en groottijds vermakelijke- cynisme.<br>Laten wij het houden op dat mensen altijd een kwaliteit die zij zelf ontberen waarderen in anderen.<br><br>Kom hier, dan krijg je een knuffel <br></div>
+</article>
+<article class="post" data-ts="20101208172541" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2010-12-08 17:25</span></div>
+  <div class="pb">Knuffel aanvaard. Tevens plezier gewenst met je huiselijke idylle.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stukje motivatie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Stukje motivatie</h1>
+<p class="tm">5 posts · started 2002-07-02 12:37 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020702123700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2002-07-02 12:37</span></div>
+  <div class="pb">Beste Floracieden,<br><br>Ik vind het leuk om af en toe te zaalballen, maar vind het 't leukst om dat te doen met mensen die dat ook leuk vinden. Als Michiel het niet meer leuk vindt, stopt i. Prima. In dat kader weet ik niet precies hoe ik Maartens antwoord, op mijn vraag of i wou fluiten, moet plaatsen:<br><br><i>Ben te beroerd om te fluiten. Heb geen zin om me 3 kwartier te moeten ergeren aan slecht voetbal en commentaar op mijn enthousiasme als scheids.</i><br>  </div>
+</article>
+<article class="post" data-ts="20020702124000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-07-02 12:40</span></div>
+  <div class="pb">In het kader van de openheid, mijn reactie. Daar zou ik het in <br>dezen graag bij willen laten:<br><br><i>Beste Maarten,<br><br>wat 'n kutstreek! Alsof ik het leuk vind om te fluiten. Ik <br>heb Misha voor je gebeld. Hij neemt 't nu van je over. Tot <br>vanavond<br><br>-- Merlijn.<br><br>P.S. Hoe gemotiveerd ben jij om volgend jaar door te gaan <br>met zaalvoetbal? Op deze manier hoef je van mij niet per se<br>mee te doen.</i></div>
+</article>
+<article class="post" data-ts="20020703141500" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-07-03 14:15</span></div>
+  <div class="ps">om jan peter</div><div class="pb">even aan te halen : (nee niet die jan peter van de kampioenswedstrijd) hier neemt men duidelijk niet zijn verantwoordelijkheid!! Er moeten conclusies getrokken worden en dan alsnog verantwoordelijkheid genomen worden door deze of genen.. dunkt mij</div>
+</article>
+<article class="post" data-ts="20020703165400" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2002-07-03 16:54</span></div>
+  <div class="pb">Ik heb inderdaad niet voldoende motivatie om het vol te blijven houden. Vind het best gezellig enzo, maar om heel eerlijk te zijn, vallen mijn kwaliteiten in de zaal me tegen. Ik zit me aan m'n eigen knullighied te ergeren. Gaan teveel dingen fout. Weet niet of dat een kwestie van aanpassen is, maar denk dat ik gewoon er niet voor in de wieg ben gelegd om te zaalvoetballen.<br><br>Heb dit seizoen afgemaakt, maar teken niet bij.<br>Dit gebrek aan motivatie wordt ook weerspiegeld door mijn onbereidheid te fluiten, maar ook omdat ik er echt geen hol aan vind al weet ik dat het wel moet gebeuren en dat er altijd iemand de lul voor is.</div>
+</article>
+<article class="post" data-ts="20020704135100" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-07-04 13:51</span></div>
+  <div class="pb">Maarten en MB bedankt voor het afgelopen seizoen, zie ook andere topic</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

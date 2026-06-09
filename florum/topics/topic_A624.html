@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys - Madrid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys - Madrid</h1>
+<p class="tm">7 posts · started 2002-11-11 18:11 by El pais</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021111181100" id="p1">
+  <div class="ph"><span class="pa">El pais</span><span class="pm">#1 · 2002-11-11 18:11</span></div>
+  <div class="pb">Geinspireerd door het ster optreden van de Floraboys jongsleden Donderdag tegen de Psycho Marine Officers heeft Floraboys dependance Madrid dit weekend snoeihard uitgehaald tegen hun tegenstander. Eindstand 14 - 2.<br><br>Topscoorder met 3 doelpunten was ene Jose Blanco een vertegenwoordiger van het wereld beroemde Haarlemse totaalvoetbal. De rechtshalf van Los chicos del florre droeg zijn drie doelpunten op aan de makers van de 4 ! doelpunten van de hoofdmacht in Amsterdam, Frank Pitstra, Mark Vlaar en Victor de Boer. <br>Na afloop verklaarde de onzelfzuchtige Blanco dat deze overwinning en zijn drie goals weliswaar een hoogtepunt in zijn carriere betekenden maar dat hij nog verheugder was door de 4-1 overwinning van zijn ´amigos´ in het vaderland.<br>Volgens Blanco´s elementaire berekeningen zijn de Floraboys nu zeker veilig voor degredatie, een belangrijk feit waar ze vorig jaar nog 10 wedstrijden en een slopende Play-Off wedstrijd voor nodig hadden.   <br><br>Via deze weg wil Jose Blanco bovendien zijn uitdrukkelijke wens uitspreken dat de Floraboys dit jaar het linker rijtje halen. Een wens die (rekening houdend met de kwaliteit van de selectie) zeker niet vergezocht is.<br><br><br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20021112093000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-11-12 09:30</span></div>
+  <div class="pb">Nou, dat is toch mooi om te horen. Stukje respect uit Madrid. Waar blijven eigenlijk de successtory's van Oli4?</div>
+</article>
+<article class="post" data-ts="20021113094500" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-11-13 09:45</span></div>
+  <div class="pb">Welke wil je horen Merlijn?<br><br>De successtory dat ik een bar heb ontdekt (Port d'Amsterdam) waar ze Nederland 2 hebben?<br>De successtory dat ik Hollandse vriendinnen (blond) heb gevonden die in voetbal ge\ïnteresseerd zijn?<br>De successtory dat ik morgen Jean-Marie Le Pen ga interviewen?<br>De successtory dat ik volgende week op repo ga in Marseille?</div>
+</article>
+<article class="post" data-ts="20021113111800" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-11-13 11:18</span></div>
+  <div class="pb">Boeiuh, waar blijven de successtory's dat jij vanaf linksachter zes man op z'n DJ's dolt en de bal dan in de kruising puntert?</div>
+</article>
+<article class="post" data-ts="20021113133700" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2002-11-13 13:37</span></div>
+  <div class="pb">Ooh, je bedoelt de successtory waarin ik een TGV naar Lyon nam om rattengif te stoppen in het voedsel van de spelers van de plaatselijke Olypmique. </div>
+</article>
+<article class="post" data-ts="20021113135300" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-11-13 13:53</span></div>
+  <div class="pb">hierbij draag ik mijn kop-goal van morgen vast op aan de Floraboys in den vreemde</div>
+</article>
+<article class="post" data-ts="20021114003300" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-11-14 00:33</span></div>
+  <div class="pb">OLI4, kun je wat meer vertellen over die tweede successtory??</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

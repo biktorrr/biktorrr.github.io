@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mamispam:Rembo – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mamispam:Rembo</h1>
+<p class="tm">12 posts · started 2008-08-11 10:19 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080811101900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-08-11 10:19</span></div>
+  <div class="pb"><a href="http://www.ad.nl/cultuur/2513717/Filmpje_Een_hit_dankzij_taakstraf.html">E\én der Rembo's knalt een nieuwe carriere in</a></div>
+</article>
+<article class="post" data-ts="20080811120700" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2008-08-11 12:07</span></div>
+  <div class="pb">Wat een slecht stuk, wat een moeilijk lauwe koning!</div>
+</article>
+<article class="post" data-ts="20080811123500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-08-11 12:35</span></div>
+  <div class="pb">Pfff, wat gaat het toch snel allemaal... Af- en aantikken is uit... Nu is het allemaal moeilijk en lauw. Geen idee wat het betekent.</div>
+</article>
+<article class="post" data-ts="20080811141000" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-08-11 14:10</span></div>
+  <div class="pb">Je weet toch ouwe? </div>
+</article>
+<article class="post" data-ts="20080811164700" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-08-11 16:47</span></div>
+  <div class="pb">vet cool?</div>
+</article>
+<article class="post" data-ts="20080811172600" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-08-11 17:26</span></div>
+  <div class="pb">Met het Mona toetje van de maand ben je altijd hip jongens!</div>
+</article>
+<article class="post" data-ts="20080812151400" id="p7">
+  <div class="ph"><span class="pa">Magic Nerds Rule!!!</span><span class="pm">#7 · 2008-08-12 15:14</span></div>
+  <div class="pb"><img src="http://vtipy.netroof.eu/data/images/chuck-norris-magic-the-gathering-card.jpg"></div>
+</article>
+<article class="post" data-ts="20080812151600" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2008-08-12 15:16</span></div>
+  <div class="pb">YEYT!!<br><br><img src="http://www.terminally-incoherent.com/blog/wp-content/uploads/2007/01/that-ass.jpg"></div>
+</article>
+<article class="post" data-ts="20080812151600" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2008-08-12 15:16</span></div>
+  <div class="pb">Neyt...</div>
+</article>
+<article class="post" data-ts="20080812151900" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2008-08-12 15:19</span></div>
+  <div class="pb">Bedoelde deze:<br><br><img src="http://www.platformvirtuelewerelden.nl/that-ass.jpg"><br><br>YEYTTTT!</div>
+</article>
+<article class="post" data-ts="20080812182900" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2008-08-12 18:29</span></div>
+  <div class="pb">Tik 'm aan Olijcke <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br><br>Ik tim m trouwens ook aan voor de streetwise nerden humor (moeten daar nou streepjes tussen merlijn?) van de worstendraaier. </div>
+</article>
+<article class="post" data-ts="20080813074200" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2008-08-13 07:42</span></div>
+  <div class="pb">Ik zou zeggen dat het nerdenhumor is, maar ben niet 100% zeker. Nog een dilemma is waarop streetwise slaat. Op de humor of op de mensen wier soort humor het is. In het eerste geval is het duidelijk streetwise nerdenhumor; in het tweede misschien wel streetwise-nerdenhumor.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

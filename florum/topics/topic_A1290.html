@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bijlmernamen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bijlmernamen</h1>
+<p class="tm">2 posts · started 2004-09-09 12:50 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040909125000" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-09-09 12:50</span></div>
+  <div class="pb">Las net dit lijstje in het Parool van dinsdag:<br><br>Populairste jongensnamen in Zuidoost:<br>1 Mohamed<br>2 Mohammed<br>3 Kevin<br>4 Michael<br>5 Jeffrey<br>6 Mohammad<br>7 David<br>8 Jonathan<br>9 Lorenzo <br>10 Giovanni<br><br>De meisjes zijn nog leuker:<br>1 Priscilla<br>2 Melissa<br>3 Naomi<br>4 Samantha<br>5 Stephanie<br>6 Jessica<br>7 Sarah<br>8 Jennifer<br>9 Deborah<br>10 Sharon<br><br>Weten we ook weer hoe de toekomstige Ajaxtalenten heten<br></div>
+</article>
+<article class="post" data-ts="20040909134400" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-09-09 13:44</span></div>
+  <div class="pb">Gaaf ook dat er drie keer mohammed in de top 10 staat. Voor de ajax joden is het wel jammer dat Sharon als meisjes naam te boek staat. Zou wel mooi door de Arena schalmen: doelpunten maker...... David Sharon !!<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto&#x27;s van PTC in da halfpipe – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto&#x27;s van PTC in da halfpipe</h1>
+<p class="tm">4 posts · started 2002-03-11 16:54 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020311165400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-03-11 16:54</span></div>
+  <div class="pb">hallo voor wie mij wil zien heersen in de sneeuw:<br><br>www.angelfire.com/art/bolide2000/smlyn<br><br>onder het kopje 'fotoos'</div>
+</article>
+<article class="post" data-ts="20020312104200" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-03-12 10:42</span></div>
+  <div class="ps">dat</div><div class="pb">is ff vlammen in de halfpipe!! cool dude!<br><br>was trouwens dat ene meisje wat altijd aan je hangt niet mee?</div>
+</article>
+<article class="post" data-ts="20020313125100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-03-13 12:51</span></div>
+  <div class="pb">En die ene met die rode jas en die zwarte broek is zeker<br>je moeder? Die kan d'r nog niet zoveel van. Jammer dat 'r<br>geen kiekjes van jou bij staan.</div>
+</article>
+<article class="post" data-ts="20020313134300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-03-13 13:43</span></div>
+  <div class="pb">ik zou graag willen zeggen..<br>Heeeeeeheeeeeehhh<br><br>en Pitstra: nee de blije rije was niet mee, <br>die zat thuis achter de geraniums</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

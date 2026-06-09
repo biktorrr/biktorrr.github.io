@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heel goed 2010! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heel goed 2010!</h1>
+<p class="tm">10 posts · started 2010-01-01 00:49 by Achterhoekse Floraboys &amp; -girls</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100101004900" id="p1">
+  <div class="ph"><span class="pa">Achterhoekse Floraboys &amp; -girls</span><span class="pm">#1 · 2010-01-01 00:49</span></div>
+  <div class="pb">Alle Achterhoekse Floraboys en Floragirls wensen een ieder die dit leest vanuit Voorst een zeer beffoindre 2010!<br><br>Goede voornemens onder meer:<br>- meer kwaliteit<br>- minder praten met Ch3r13<br>- beter worden<br>- nog beter worden<br>- trouwen<br>- kinderen<br>- meer Party & Co<br>- een lieve vriendin<br>- enz.<br><br>Nieuwe floraboys modewoord voor 2010:<br><br>............ (to be announced).</div>
+</article>
+<article class="post" data-ts="20100101011200" id="p2">
+  <div class="ph"><span class="pa">Acda en De Munnik</span><span class="pm">#2 · 2010-01-01 01:12</span></div>
+  <div class="pb">Ons voornemen: minder vaak de schoonmaker op het verkeerde feest zijn...</div>
+</article>
+<article class="post" data-ts="20100101180500" id="p3">
+  <div class="ph"><span class="pa">wbm</span><span class="pm">#3 · 2010-01-01 18:05</span></div>
+  <div class="pb">gangmaker op t verkeerde feest, maar schoonmaker is ook wel des feestmaands</div>
+</article>
+<article class="post" data-ts="20100101230700" id="p4">
+  <div class="ph"><span class="pa">anoniempje</span><span class="pm">#4 · 2010-01-01 23:07</span></div>
+  <div class="pb">wijze les voor 2010: if the balls don't touch it's not gay!</div>
+</article>
+<article class="post" data-ts="20100102131600" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2010-01-02 13:16</span></div>
+  <div class="pb"><h2>Bonn\ée Ann\ée Boys</h2> <br><br>ook namens kersverse Floragirl in denial ML<br><br>(overzichtstechnischgewijselijk prefereer ik toch 1 topiquille)</div>
+</article>
+<article class="post" data-ts="20100102131700" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2010-01-02 13:17</span></div>
+  <div class="pb">G\ênant. <br><br><h2>Bonne Ann\ée</h2> <br><br>bedoel ik natuurlijk.</div>
+</article>
+<article class="post" data-ts="20100102232500" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2010-01-02 23:25</span></div>
+  <div class="pb">En natuurlijk gelukkig nieuwjaar baquilles!</div>
+</article>
+<article class="post" data-ts="20100105071900" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2010-01-05 07:19</span></div>
+  <div class="pb">Wie in de Achterhoek had eigenlijk de kinderen als goed voornemen?</div>
+</article>
+<article class="post" data-ts="20100105131400" id="p9">
+  <div class="ph"><span class="pa">Anonieme moedertjes</span><span class="pm">#9 · 2010-01-05 13:14</span></div>
+  <div class="pb">En toen was het stil...</div>
+</article>
+<article class="post" data-ts="20100105161200" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2010-01-05 16:12</span></div>
+  <div class="pb">Nou zeg, inderdaad. Maar Deeeehnsdag schijnt dan ook uit te zijn dit jaar...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

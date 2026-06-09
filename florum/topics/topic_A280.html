@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shallalaa 4-2 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Shallalaa 4-2</h1>
+<p class="tm">6 posts · started 2001-10-05 02:29 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011005022900" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2001-10-05 02:29</span></div>
+  <div class="pb">Vik is lam ole oleee...viktor die is lam olee oleee!<br>4-2 4-2 en de floraboys maar scoren van aggter en van voren!<br><br>FLoraboys oookeee olee oleee!!<br></div>
+</article>
+<article class="post" data-ts="20011005024000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-10-05 02:40</span></div>
+  <div class="pb">viktor is helemaal niet zo lam, <br>valt best mee, hij ging net proberen<br>met zijn oogjes dicht zijn nase aan <br>te raken en dat ging best flex, ik ben <br>de DJ (harddrugsking nr 1) niet!<br><br>FLORABOYS OKEE OLEE OLEE!!!!(heleboel keer)</div>
+</article>
+<article class="post" data-ts="20011005113100" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-10-05 11:31</span></div>
+  <div class="ps">Floraboys kampioenuh</div><div class="pb">Floraboys kee ole ole.<br><br>Nou ViC je had alle recht om lam te zijn hoor. Gister zijn er 8 helden opgestaan en dat mag best gevierd worden.<br><br></div>
+</article>
+<article class="post" data-ts="20011005133800" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-10-05 13:38</span></div>
+  <div class="pb">Heejehejehejehejehejehooooh......heehee..hoohoo!!!!!Heejehejehejehejehejehooooh......heehee..hoohoo!!!!!<br><br>Wij worden kampioen!!!! Wij worden kampioen!!!! wij worden kampioen!!!! Wij worden kampioen!!!!<br><br>We love you Floraboys, we do!<br>We love you Floraboys, we do!<br>We love you Floraboys, we do!<br>Oooh.....Floraboys, we love you!!<br><br>Forza Floraboys, ole ole ole!! ole ole ole!!<br>Forza Floraboys, ole ole ole!! ole ole ole!!<br><br></div>
+</article>
+<article class="post" data-ts="20011005135000" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2001-10-05 13:50</span></div>
+  <div class="pb">okey ik was het wel,<br>maar inderdaad dat was omdat we HELDE ZIJN<br><br>huj huj huj huj huj<br>florabooooooys<br>florabooooooys!!!</div>
+</article>
+<article class="post" data-ts="20011005140200" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2001-10-05 14:02</span></div>
+  <div class="pb">Walk on, walk oooohhhnnn,  with hope in your heart,<br>and you'lle neeeehheheeeeevveeeeeerr  waaalk alooooonnneee.<br><br><br>You'le neeeeeeeeeeeevvveeeeeeeerrrrrrrr walk alone.<br><br><br>En nou allemaal !<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

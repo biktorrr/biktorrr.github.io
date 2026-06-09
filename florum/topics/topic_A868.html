@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor alle fans... Andre gaat scheiden! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor alle fans... Andre gaat scheiden!</h1>
+<p class="tm">1 post · started 2003-08-13 11:24 by PTspammingC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030813112400" id="p1">
+  <div class="ph"><span class="pa">PTspammingC</span><span class="pm">#1 · 2003-08-13 11:24</span></div>
+  <div class="pb">Andr\é Hazes gaat scheiden<br>Bron: Telegraaf<br><br>De 52-jarige zanger Andr\é Hazes gaat scheiden van zijn 33-jarige vrouw Rachel. Dat heeft een woordvoerder van het productiebedrijf van de artiest woensdag gezegd. De twee waren ruim twaalf jaar getrouwd. Het paar heeft de beslissing pas onlangs genomen. "Het is allemaal heel pril. Andr\é verblijft momenteel niet meer thuis. Rachel blijft ook in de toekomst het management van Andr\é runnen", zegt een woordvoerder.<br><br>Na de populaire documentaire 'Zij gelooft in mij', die over Hazes ging, werd ook Rachel een bekende Nederlander. Rachel was als kind al een groot fan van Andr\é Hazes. Ze is de dochter van een van Andr\é's beste vrienden. Toen ze een jaar of veertien was, zongen de twee samen een duet (Een beetje verliefd). Andr\é Hazes is voor het huwelijk met Rachel twee keer eerder getrouwd geweest.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vrijmispam: minister memory – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vrijmispam: minister memory</h1>
+<p class="tm">6 posts · started 2007-02-23 11:47 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070223114700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-02-23 11:47</span></div>
+  <div class="pb">Een leuk en leerzaam spel, u gebracht door een van neerlands topweblogs: geencommentaar.nl<br><br><a href="http://www.geencommentaar.nl/index.php/2007/02/23/gc_presenteert_ministermemory">Wie weet alle ministers bij de departementen?</a></div>
+</article>
+<article class="post" data-ts="20070302105900" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-03-02 10:59</span></div>
+  <div class="pb">5 minuut 03, maar goed dat ik in Frankrijk zit...</div>
+</article>
+<article class="post" data-ts="20070302120600" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2007-03-02 12:06</span></div>
+  <div class="pb">ha.. lekker 5:02 gescoort.. (en ja dat is echt puur toeval!)<br></div>
+</article>
+<article class="post" data-ts="20070302133200" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2007-03-02 13:32</span></div>
+  <div class="pb">Het is wel duidelijk wie hier bij het Rijk werkt: 2:14</div>
+</article>
+<article class="post" data-ts="20070303110000" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-03-03 11:00</span></div>
+  <div class="pb">hoppatee 56 seconden!</div>
+</article>
+<article class="post" data-ts="20070303111100" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2007-03-03 11:11</span></div>
+  <div class="pb">Geen flauw idee, veel te veel linkse luitjes in ieder geval.<br><br><b>Ceterum censeo dat er vanavond gepokerd esse...</b></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

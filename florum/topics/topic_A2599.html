@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resto in Haarlem – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Resto in Haarlem</h1>
+<p class="tm">9 posts · started 2009-02-20 14:46 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090220144600" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-02-20 14:46</span></div>
+  <div class="pb">Meeliftend op het succes van het - nu al legendarische - culinaire topic, een vraag, vooral gericht aan de Victors, de Ca's en de Tubes onder de Boys. De levensgenieters, zo u wilt. Op 1 maart wordt mijn moeder 60 en mijn broeder en ik willen haar meenemen naar een goed restaurant in Haarlem. Aangezien wij de kwaadsten niet zijn, mag onze vader ook mee. Wie heeft er tips? Geld speelt (niet echt) een rol. Het moet vooral goed zijn en sfeervol. Het hoeft niet overdreven chique. Ik overweeg de opvolger van de Componist, maar laat me graag inspireren.</div>
+</article>
+<article class="post" data-ts="20090220144600" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-02-20 14:46</span></div>
+  <div class="pb">En nu maar hopen dat mijn moeder niet tot de stiekeme Florum-meelezers hoort.</div>
+</article>
+<article class="post" data-ts="20090220153400" id="p3">
+  <div class="ph"><span class="pa">Broertje</span><span class="pm">#3 · 2009-02-20 15:34</span></div>
+  <div class="pb">Was dat haakje na 'niet' bedoeld of gaan we nu toch 50/50 doen? De zin wordt er dan niet echt mooier op maar de boodschap wel, denk ik.</div>
+</article>
+<article class="post" data-ts="20090220161400" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2009-02-20 16:14</span></div>
+  <div class="pb">Bro, je hebt helemaal gelijk. Laten we gewoon maar zeggen: geld speelt geen rol. Jij betaalt alles en bent bob, ok? Ik bel alvast de Bokkedoorns.</div>
+</article>
+<article class="post" data-ts="20090220163400" id="p5">
+  <div class="ph"><span class="pa">crit.</span><span class="pm">#5 · 2009-02-20 16:34</span></div>
+  <div class="pb">Toppie broer! Floraboys en -girls, we zijn er uit. Bedankt voor jullie inzet!</div>
+</article>
+<article class="post" data-ts="20090220174200" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2009-02-20 17:42</span></div>
+  <div class="pb">Of Stempels, of die Italiaan in de Schaghelstraat of Frankestraat (hoe heet ie ook alweer?)</div>
+</article>
+<article class="post" data-ts="20090220200800" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2009-02-20 20:08</span></div>
+  <div class="pb">Het restaurant dat nu zit waar Lambermonts vroeger zat (L zit nu in lokatie Componist/Luca) is een goede vistoko. Toen ik er was wel een beetje leeg, maar als je vertelt dat er een beroemd internationaal journalist komt dan wordt het ook nog gezellig. <br><br>Geestig maar niet vreemd dat dit bij jou ook speelt (net als alle surprisefeestjes voor dertigers enzo)... Mijn broeder en ik nemen ons mam komende week voor een ontbijtje mee naar een bekend Amsterdams hotel waar ze (het) Brood gewoon van de stoep schrapen :)...</div>
+</article>
+<article class="post" data-ts="20090221172200" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2009-02-21 17:22</span></div>
+  <div class="pb">Dat Vis en Ko leek me wel cool, maar is zondag dicht. Helaasjes.</div>
+</article>
+<article class="post" data-ts="20090304231600" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2009-03-04 23:16</span></div>
+  <div class="pb">Nog even voor de record: het is uiteindelijk Merkelbach geworden nabij de Penose, op landgoed Frankendael. Een daverend succes. Goed eten, mooie plek, goede bediening: onze moeder heeft een onvergetelijke verjaardag gehad. Aanradertje dus.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

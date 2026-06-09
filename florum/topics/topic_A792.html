@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajax huurlingen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ajax huurlingen</h1>
+<p class="tm">5 posts · started 2003-05-21 11:27 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030521112700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-05-21 11:27</span></div>
+  <div class="pb">Ik vroeg me vanmorgen af wat er nou gebeurd was Met Daniel Cruz, de belofte voor de positie(s) die Maxwell nu in plaats van hem inneemt. Toen herinnerde ik me dat die (natuurlijk) naar GBA was gegaan.Na wat snuffelen hier de update.<br><br>21/5/2003 - Walker en Quansah terug naar Ajax; Cruz en Obodai blijven bij GBA<br><br>BRON: Germinal Beerschot<br><br>GBA heeft bekendgemaakt dat de Ajax huurlingen Cruz en Obodai nog een jaar bij Germinal Beerschot blijven. Kwame Quansah en Fronio Walker keren echter terug naar Ajax. Het ligt voor de hand dat zij zich bij Jong Ajax zullen voegen. Volgens de Belgische club is het de bedoeling van Ajax om Aaron Mokoena te verkopen. Voor hem bestaat belangstelling van diverse clubs. Lukt een verkoop niet dan zou hij opnieuw uitgeleend kunnen worden aan GBA. Of er nog andere spelers aan GBA worden uitgeleend is op dit moment nog onzeker. De financiele deelneming in GBA wordt aan het einde van dit seizoen beeindigd, maar de sportieve samenwekring zal gewoon doorgaan.<br><br></div>
+</article>
+<article class="post" data-ts="20030521125700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-05-21 12:57</span></div>
+  <div class="pb">Stukje copy-paste-journalistiek, maar wel informatief. </div>
+</article>
+<article class="post" data-ts="20030521142200" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-05-21 14:22</span></div>
+  <div class="pb">Is dit een indirecte aanval op mijn journalistieke werkwijze?</div>
+</article>
+<article class="post" data-ts="20030521145400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-05-21 14:54</span></div>
+  <div class="pb">Nee toch? Misschien had ik beter kunnen zeggen:<br><br>"In tegenstelling tot het werk van internationale topjournalisten is dit een copy-paste-stukje. Maar wel informatief."<br><br>Maarja, om nou in elke reactie meteen weer te refereren naar internationale topjournalisten wordt zo voorspelbaar. </div>
+</article>
+<article class="post" data-ts="20030523143900" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2003-05-23 14:39</span></div>
+  <div class="pb">was ook als geen andere journalistiek bedoeld. Ik was nog niet langs geweest op ajax.netwerk.to .Todat google me erheen leidde</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

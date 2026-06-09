@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ek-spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ek-spam</h1>
+<p class="tm">3 posts · started 2004-06-21 12:26 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040621122600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-06-21 12:26</span></div>
+  <div class="pb">deze site van de bbc is echt heel vet: je kan er goals en andere momenten virtueel bekijken, vanuit andere hoeken, slo-mo enzovoorts (Shockwave alert)<br><a href="http://www.bbc.co.uk/virtualreplay/euro2004/index.shtml">LINKieLINKie</a></div>
+</article>
+<article class="post" data-ts="20040621144000" id="p2">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#2 · 2004-06-21 14:40</span></div>
+  <div class="pb">Dit is ook een fraai artikel. <br><br>----------------------------------------------------<br>Croatia's Jolie dodgers <br>Many Croatia fans would give up a date with Angelina Jolie to watch their team beat England on Monday. <br><br>In a survey more than 40% said the Tomb Raider star would not be able to persuade them to give up their seat in front of the telly. <br><br>And over half of those questioned insisted they would rather see a game of football than carry out sexual fantasies with their partners. <br><br>The poll was conducted by brewing company Carlsberg ahead of Croatia's clash with England in Lisbon. <br><br>Either the Croats really are incredibly passionate about their football - or they're Jolie good liars. <br><br><br>Mott's the story? <br><br>England fans can have a bet on what cliche BBC commentator John Motson will use first in the Croatia game. <br><br><br>Bookmakers Paddy Power have a come up with a series of phrases and their relevant odds, with all bets off if Motty fails to deliver any of them. <br><br>If you think Wayne Rooney will play another blinder, "Boy Wonder" is available at 13/2. "It's a little known fact" is 10s, while "Goran Ivanisevic" comes in at 14/1. <br><br>Pessimists might plump for the "last-chance saloon" option at 20/1, or "England are out" at 28/1, while a lively outsider with odds of 66/1 is: "Checked by the man in the chequered shirt." <br><br>And the phrase you are most unlikely to hear pass Motty's lips on Monday? <br><br>"That's the most open game of attacking football we've seen in this tournament". <br><br>----------------------------------------------------<br><br></div>
+</article>
+<article class="post" data-ts="20040621160600" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2004-06-21 16:06</span></div>
+  <div class="pb">Wel grappig....<br><br> Tsjechische speler Marek Heinz vermeende buitenechtelijke zoon van Tsjechische coach Brückner. Zou Bosvelt de buitenechtelijke zoon van Advocaat zijn?<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

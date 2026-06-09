@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zaterdagavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zaterdagavond</h1>
+<p class="tm">9 posts · started 2006-10-27 11:34 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061027113400" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2006-10-27 11:34</span></div>
+  <div class="pb">Hey Boys<br><br>Ik vroeg me af wat er nu precies zaterdagavond gedaan gaat worden. Ik heb wel zin om in een of ander formaat wat te doen.<br><br>Dus mijn vragen<br><br>Amsterdam bokbierfestival zaterdag avond?<br>of Bruxelles / ander cafe in Haarlem?<br>wie allemaal?<br>hoe laat?</div>
+</article>
+<article class="post" data-ts="20061027181100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-10-27 18:11</span></div>
+  <div class="pb">ik denk dat iedereen die kan op het bierfestival zit.</div>
+</article>
+<article class="post" data-ts="20061028134700" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-10-28 13:47</span></div>
+  <div class="pb">De olijcke cheique en ik zijn voor een pokerfestijn. Nog meer liefhebbers?</div>
+</article>
+<article class="post" data-ts="20061028140900" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2006-10-28 14:09</span></div>
+  <div class="pb">Ik ben er vanavond vanaf ongeveer 20 uur en 23 uur denk ik. we bellen!?</div>
+</article>
+<article class="post" data-ts="20061028141900" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-10-28 14:19</span></div>
+  <div class="pb">deze jongen zou graag een kaartje leggen, ben helaas al met de fam. Hakemulder aan het dineren. <br></div>
+</article>
+<article class="post" data-ts="20061028142500" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2006-10-28 14:25</span></div>
+  <div class="pb">Ok dat was onduidelijk en de plannen zijn veranderd: ik heb met Sicco afgesproken om 16 uur in de Beurs van Berlage. </div>
+</article>
+<article class="post" data-ts="20061028173900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-10-28 17:39</span></div>
+  <div class="pb">ik ben wel in haarlem, pokeren klinkt goed. Ik heb alleen niemands telefoonnummer meer dus als jullie mij kunnen bellen, graag.<br><br>Tube heeft de pokerset overigens.</div>
+</article>
+<article class="post" data-ts="20061028180500" id="p8">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#8 · 2006-10-28 18:05</span></div>
+  <div class="pb">Floraboys telepathische boys, VB die post dat hij graag gebeld wil worden en binnen tien minuten heb ik het gevoel (zonder het florum gelezen te hebben) dat ik VB maar eens moet gaan bellen. Talpa zal wel geinteresseerd zijn.<br></div>
+</article>
+<article class="post" data-ts="20061028195000" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2006-10-28 19:50</span></div>
+  <div class="pb">gekkenhuis, nog nieuws verder?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

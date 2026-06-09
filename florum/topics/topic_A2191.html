@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De nieuwe Dan Brown! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De nieuwe Dan Brown!</h1>
+<p class="tm">3 posts · started 2007-10-17 15:13 by Bol.com</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071017151300" id="p1">
+  <div class="ph"><span class="pa">Bol.com</span><span class="pm">#1 · 2007-10-17 15:13</span></div>
+  <div class="pb">Als in een gierput in Eindhoven een lijk wordt aangetroffen met een PSV sjaaltje in zijn mond, kan de lokale politie maar 1 ding doen.<br>Met een concorde wordt Biktie Sesetoko (specialist in virtuele panna's) overgevlogen uit Chili. <br>Zijn zoektocht brengt hem als snel naar het appartement van een Sudoku goeroe... <br><br>Wat hij hier aantreft heeft zelfs Sesetoko nog nooit gezien, een bank waar je aan kan zien dat er duistere dingen op zijn gedaan, <br>meer Philips producten dan er bitterballen in een frituurpan kunnen en een fel witte muur waar een geheime boodschap op lijkt te staan.<br><br>Als Sesetoko met zijn sterrenkijker de muur beter bekijkt is het hem allemaal duidelijk. <br>Een groep zionisten heeft een machtig complot gesmeed met als doel een rituele huldiging met een zilveren schaal op het Leidscheplein in Amsterdam.<br><br>Is Sesetoko op tijd om de zionisten nog te stoppen voor het te laat is? Of heeft hij er de kracht niet meer voor?<br><br>Lees het nu in de nieuwe Dan Brown.</div>
+</article>
+<article class="post" data-ts="20071017151700" id="p2">
+  <div class="ph"><span class="pa">boekenverkoper.nl</span><span class="pm">#2 · 2007-10-17 15:17</span></div>
+  <div class="pb">de vraag is 'Wil Sesetoko de zionistische conspiracy wel tegenhouden? of maakt dit eindelijk een einde aan een langdurige brabantse dictatuur?'<br><br>ook verkrijgbaar als 2e hands op boekenverkoper.nl!</div>
+</article>
+<article class="post" data-ts="20071017211900" id="p3">
+  <div class="ph"><span class="pa">Tweedehands Boeken</span><span class="pm">#3 · 2007-10-17 21:19</span></div>
+  <div class="ps">Tweedehands Boeken</div><div class="pb"><a href="http://www.boekenverkoper.nl">Tweedehands boeken koop ik altijd bij Boekenverkoper.nl</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

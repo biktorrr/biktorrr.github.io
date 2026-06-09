@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Woe-Mi-Spa – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Woe-Mi-Spa</h1>
+<p class="tm">9 posts · started 2007-03-07 15:47 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070307154700" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-03-07 15:47</span></div>
+  <div class="pb">Lara, Marije, Jeannine en Ca opgepast...<a href="http://www.nu.nl/news/1000012/14/Serieaanrander_actief_rond_Haarlem.html">Lonely heeft zijn werkterrein verlegt.</a><br></div>
+</article>
+<article class="post" data-ts="20070311181700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2007-03-11 18:17</span></div>
+  <div class="pb"><img src=http://img338.imageshack.us/img338/7734/noodsj3.jpg"></div>
+</article>
+<article class="post" data-ts="20070311181900" id="p3">
+  <div class="ph"><span class="pa">Dj Repeat</span><span class="pm">#3 · 2007-03-11 18:19</span></div>
+  <div class="pb"><img src="http://img338.imageshack.us/img338/7734/noodsj3.jpg"></div>
+</article>
+<article class="post" data-ts="20070312100900" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-03-12 10:09</span></div>
+  <div class="pb">is t niet poep en poep hoogh?</div>
+</article>
+<article class="post" data-ts="20070312212000" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-03-12 21:20</span></div>
+  <div class="pb">Hoog!</div>
+</article>
+<article class="post" data-ts="20070313105300" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2007-03-13 10:53</span></div>
+  <div class="pb">Ze hebben mijn tanden weggefotosjopt!<br>Toch hoogh <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20070320101300" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2007-03-20 10:13</span></div>
+  <div class="pb">Rellen met Wolter<br>http://www.ad.nl/binnenland/article1190963.ece<br></div>
+</article>
+<article class="post" data-ts="20070320125800" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-03-20 12:58</span></div>
+  <div class="pb">Enigzins off-topic, maar niet minder belangrijk.</div>
+</article>
+<article class="post" data-ts="20070320132400" id="p9">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#9 · 2007-03-20 13:24</span></div>
+  <div class="pb">hehe. run wolter run!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

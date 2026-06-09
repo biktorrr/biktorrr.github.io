@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen</h1>
+<p class="tm">10 posts · started 2002-01-25 11:09 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020125110900" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-01-25 11:09</span></div>
+  <div class="pb">Recognize...<br>14:30 straight from A'dam, crashin'  down on da park to kick it with the homies.<br>Biggie up.</div>
+</article>
+<article class="post" data-ts="20020125122000" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-01-25 12:20</span></div>
+  <div class="pb">Straight from A'dam? ???</div>
+</article>
+<article class="post" data-ts="20020125122000" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-01-25 12:20</span></div>
+  <div class="pb">Ballen is trouwens ander florum :)</div>
+</article>
+<article class="post" data-ts="20120526173830" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2012-05-26 17:38</span></div>
+  <div class="pb">Geloof het of niet, maar het ziet er aleszins naar uit dat ik zo meteen ga ballen in het Florapark:<br><br><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=florapark&amp;aq=&amp;sll=52.395296,4.92003&amp;sspn=0.011313,0.027595&amp;ie=UTF8&amp;hq=florapark&amp;t=m&amp;ll=52.394854,4.919473&amp;spn=0.013618,0.032015&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=florapark&amp;aq=&amp;sll=52.395296,4.92003&amp;sspn=0.011313,0.027595&amp;ie=UTF8&amp;hq=florapark&amp;t=m&amp;ll=52.394854,4.919473&amp;spn=0.013618,0.032015" style="color:#0000FF;text-align:left">Grotere kaart weergeven</a></small></div>
+</article>
+<article class="post" data-ts="20120526175110" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2012-05-26 17:51</span></div>
+  <div class="pb">Ik kijk uit naar je sfeerrapportage. In floradorp schijnen vrij bijzondere mensen te wonen...</div>
+</article>
+<article class="post" data-ts="20120526175716" id="p6">
+  <div class="ph"><span class="pa">Beffoindre-nazi</span><span class="pm">#6 · 2012-05-26 17:57</span></div>
+  <div class="pb">Er wonen geen bijzondere mensen in Floradorp, lieve Tube: er wonen beffoindre mensen.</div>
+</article>
+<article class="post" data-ts="20120527144924" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2012-05-27 14:49</span></div>
+  <div class="pb">Stralend weer, parkje voor onszelf en ballen dat het een aard had. Ballen gaat altijd door!</div>
+</article>
+<article class="post" data-ts="20160713224849" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2016-07-13 22:48</span></div>
+  <div class="pb">Een beetje troost in deze donkere dagen, een Bergkampiaanse assist tijdens het EK onder 19 van de grote Ajax belofte Abdelhak 'Appie' Nouri.<br><br><iframe width="560" height="315" src="thttps://www.youtube.com/embed/_ZGXCcrEOO8" frameborder="0" allowfullscreen></iframe></div>
+</article>
+<article class="post" data-ts="20170823163105" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2017-08-23 16:31</span></div>
+  <div class="pb">Ballen?</div>
+</article>
+<article class="post" data-ts="20170824072727" id="p10">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#10 · 2017-08-24 07:27</span></div>
+  <div class="pb">Toch even een slikkesteijn-momentje. Laatste postuul in dit topic ging over Arme Appie Nouri. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

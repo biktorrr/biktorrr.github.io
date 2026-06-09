@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huwe-lijjjjjjjjjjjjjjjk! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Huwe-lijjjjjjjjjjjjjjjk!</h1>
+<p class="tm">5 posts · started 2011-04-29 10:09 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110429100955" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1 · 2011-04-29 10:09</span></div>
+  <div class="pb"><iframe src="http://nos.nl/journaal24.html" width="570" height="325" frameborder="0"  style="overflow:hidden;" scrolling="no"></iframe></div>
+</article>
+<article class="post" data-ts="20110429110758" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2011-04-29 11:07</span></div>
+  <div class="pb">zit al een tijdje met een half oog naar de achterkant van 'de zus' te kijken. Besoindre.<br></div>
+</article>
+<article class="post" data-ts="20110429111639" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2011-04-29 11:16</span></div>
+  <div class="pb">Die was mij ook opgevallen ja...</div>
+</article>
+<article class="post" data-ts="20110429163001" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2011-04-29 16:30</span></div>
+  <div class="pb">Ik dacht dat HET huwelijk pas over een week is.</div>
+</article>
+<article class="post" data-ts="20110429184512" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2011-04-29 18:45</span></div>
+  <div class="pb">Uh, dudes, royalism sounds like socialism and socialism is bad. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

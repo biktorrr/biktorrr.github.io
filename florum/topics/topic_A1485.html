@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hawaiiparty! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hawaiiparty!</h1>
+<p class="tm">2 posts · started 2005-05-02 11:00 by JL@u</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050502110000" id="p1">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#1 · 2005-05-02 11:00</span></div>
+  <div class="pb">Hallo lieve Floraboys en -girls!<br><br>Aanstaande zaterdag (7mei) geven Tim en ik een welcome-home party met als thema, hoe kan het ook anders: Hawaii.<br>Jullie zijn natuurlijk de belangrijkste gasten, dus komt allen! Neem je kokosnoten en schreewerige hawaii-shirts mee en kom gezellig party-en. Wij zorgen voor wat tropische sfeeren drank/hapjes :)<br><br>dus samenvattend:<br>Wat: Hawaii welcome-home party<br>Waar: huis van Tim en Laura in Leiden<br>Wanneer: 7 mei aanstaande<br>Hoe laat: vanaf 20:00 uur</div>
+</article>
+<article class="post" data-ts="20050502142300" id="p2">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#2 · 2005-05-02 14:23</span></div>
+  <div class="ps">Hawaii</div><div class="pb">damn, helaas kan ik niet komen. <br><br>Succes met limbo dansen!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

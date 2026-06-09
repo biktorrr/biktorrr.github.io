@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nou VIC... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nou VIC...</h1>
+<p class="tm">5 posts · started 2004-05-14 22:16 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040514221600" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2004-05-14 22:16</span></div>
+  <div class="pb">GezochtStuur ons nu je rondreisavontuur wat jij ooit beleefd hebt op Interrail en maak kans op een Interrail-ticket t.w.v.  210,-!<br><br>--------------------------------------------------------------------------------<br><br>Wij zijn op zoek naar leuke, gekke en originele rondreisverhalen die jullie beleefd hebben met Interrail. Daarmee kunnen wij iedereen die dat wil op een unieke manier laten kennismaken met de manier van reizen die Interrail heet.<br>Dus kruip in je pen en stuur ons jouw eigen Interrail-Experience en laat anderen jullie avontuur mee-beleven. Maak het nog aantrekkelijker door er foto's bij te plaatsen.<br>Vergeet niet je naam, adres, telefoonnummer en geboortedatum bij je inzending te vermelden.<br>Alle inzendingen worden eigendom van NS Internationaal. NS Internationaal behoud zich het recht voor om het verhaal evt. te bewerken of  in te korten. <br>interrail@ns.nl<br></div>
+</article>
+<article class="post" data-ts="20040515111000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-05-15 11:10</span></div>
+  <div class="pb">Dat moet een makkie zijn. Ben benieuwd welke parel uit de kroon der Interrailvertellingen het wordt.</div>
+</article>
+<article class="post" data-ts="20040515113000" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-05-15 11:30</span></div>
+  <div class="pb">Ik gok op een schijtertje.</div>
+</article>
+<article class="post" data-ts="20040515205600" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-05-15 20:56</span></div>
+  <div class="pb">jawel, d'rbij!</div>
+</article>
+<article class="post" data-ts="20040515205800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2004-05-15 20:58</span></div>
+  <div class="pb">eh negeer eerst bovenstaande post.<br><br>Klinkt heel mooi inderdaad, ik heb een schier oneindige hoeveelheid verhalen. Maar om nou elke prijs binnen te gaan slepen is ook weer zo ..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

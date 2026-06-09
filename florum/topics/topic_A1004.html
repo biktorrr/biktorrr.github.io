@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fotosessie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Fotosessie</h1>
+<p class="tm">7 posts · started 2003-09-25 22:17 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030925221700" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2003-09-25 22:17</span></div>
+  <div class="pb">Hallo ik heb jullie hulp hard nodig.Ik moet een opdracht maken voor mijn 'toekomstige' werkgever.Namelijk foto's maken van groepen en dan ook van elk persoon apart!Dus nou wilde ik jullie zondag op de foto zetten in jullie voetbaltenue?!? Dus trek je mooiste voetbal pakje aan en dan gaan we een leuke groepsfoto maken?!?>!<br>Please jullie zullen me er erg mee helpen<br><br>Groetjes Lara</div>
+</article>
+<article class="post" data-ts="20030925232200" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-09-25 23:22</span></div>
+  <div class="pb">hmm kom dus niet ballen maar voor de fan s wil ik m'n tenuee nog wel een keer aandoen.</div>
+</article>
+<article class="post" data-ts="20030926104600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-09-26 10:46</span></div>
+  <div class="pb">okido, moeten we in oranje of is elk tenue in orde?</div>
+</article>
+<article class="post" data-ts="20030926151400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-09-26 15:14</span></div>
+  <div class="pb">In prinkiep is elk tenue goed, het gaat erom dat ze moet kunnen aantonen dat ze groepjes mensen goed op de kiek kan zetten om zo een go te krijgen om teams in de regio te gaan fotograferen. Lara vertelde me dat ze rond half 5,  5uur  kon komen. </div>
+</article>
+<article class="post" data-ts="20030927231400" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2003-09-27 23:14</span></div>
+  <div class="pb">Nou het maakt me allemaal niet uit al komen jullie naakende!Maar ik moet dus zoals tijmen al zei hierboven een groep mensen op de foto kunnen zetten.Ik ga rond kwart voor vijven bij jullie zijn moet eerst tot kwart voor vier werken en dan snel een trein halen en naar het florapark fietsen waar ik trouwens nog nooit!!!geweest ben en dat als floragirl!schandalig niet?Nou ik hoop morgen veel mensen aan te treffen om op de kiek te kunnen zetten tot dan.</div>
+</article>
+<article class="post" data-ts="20030928171500" id="p6">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#6 · 2003-09-28 17:15</span></div>
+  <div class="pb">Super hoor nou mijn foto's zijn op de post!nog voordat de zondaglichting was geweest dus das mooi.Bedankt allemaal!<br></div>
+</article>
+<article class="post" data-ts="20030929113600" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-09-29 11:36</span></div>
+  <div class="pb">hoera, we kunnen niet wachten tot de kiekjes hier te bewonderen zijn :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

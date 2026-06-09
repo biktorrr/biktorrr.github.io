@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor de pit en mark vlaar – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor de pit en mark vlaar</h1>
+<p class="tm">3 posts · started 2002-09-18 13:50 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020918135000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-09-18 13:50</span></div>
+  <div class="pb">In Hoorn zijn veel verdrietige en ongeruste kattenliefhebbers te vinden. Reden is dat de afgelopen 3 maanden maar liefst 17 katten verdronken zijn.<br><br>In vrijwel alle gevallen betreft het katten uit de wijk Kersenboogerd in de omgeving van de Radboutgracht en de Enigenburggracht. Buurtbewoners hebben de gemeente Hoorn gevraagd of er in de grachten vlonders kunnen worden geplaatst, zodat als een kat in het water wordt gegooid, het beest nog ergens op kan klimmen. <br><br>Onduidelijk is tot nu toe wie de kattenmoordenaar is. Vijf jaar geleden was er ook een dierenbeul in de Kersenboogerd actief. Een beloning leverde toen geen dader op.</div>
+</article>
+<article class="post" data-ts="20020918144600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-09-18 14:46</span></div>
+  <div class="pb">Kersenbochchcherd</div>
+</article>
+<article class="post" data-ts="20020923205400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-09-23 20:54</span></div>
+  <div class="ps">tja ehh</div><div class="pb">ik woon daar dus al iets van 3  jaar niet meer dusseh<br><br>IT WASN't MEE!!!!!!!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

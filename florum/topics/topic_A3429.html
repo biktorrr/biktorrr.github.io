@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Het nieuwe Webmaster van Likmevestje topiek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Het nieuwe Webmaster van Likmevestje topiek</h1>
+<p class="tm">8 posts · started 2017-11-01 11:38 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20171101113855" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2017-11-01 11:38</span></div>
+  <div class="pb">HALLO WAAROM DOET DE SEARCH HET NIET MEER, WAAR ZIJN ALLE OUDE TOPICS FIX T EVEN JA EINDE BERICHT</div>
+</article>
+<article class="post" data-ts="20171101202447" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2017-11-01 20:24</span></div>
+  <div class="pb">@VB: Ik neem het je niet kwalijk, want je had het oorspronkelijke topic niet bij de hand, maar dit gaat dus niet werken. Lijkt me sterk dat de Jazz hierop reageert. Het moet volgens mij 'Webmastertje van likmevessie' zijn (dat 'likmevessie' kan ook 'likmevestje' zijn idd, dat weet ik niet zeker.) Tevens is het cruciaal dat je hem in de eerste posting met 'pikkie' aanspreekt. </div>
+</article>
+<article class="post" data-ts="20171103215650" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2017-11-03 21:56</span></div>
+  <div class="pb">Eens met de BOde. Deze wanhoopskreet heeft in zijn huidige vorm geen kans van slagen. Misschien moet je je bloedeigen zusje als lokaas gebruiken?</div>
+</article>
+<article class="post" data-ts="20171106042842" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2017-11-06 04:28</span></div>
+  <div class="pb">De sublieme consulentenpoezie van 'Deze wanhoopskreet heeft in zijn huidige vorm geen kans van slagen' had mijn Quote van de Dag of Poetische Gedachte van de Dag kunnen zijn. Maar ja, die brave Webmaster, he...</div>
+</article>
+<article class="post" data-ts="20171115153549" id="p5">
+  <div class="ph"><span class="pa">Webmaster</span><span class="pm">#5 · 2017-11-15 15:35</span></div>
+  <div class="pb">Wrahahahaaa... dit is mijn manier om de Boys aan het posten te krijgen. Als er niet gepost wordt in een topic dan verdwijnt het!</div>
+</article>
+<article class="post" data-ts="20171117010639" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2017-11-17 01:06</span></div>
+  <div class="pb">Ik ga er van uit dat dit niet de echte webmaster is. Deze ghostposter wil graag lollig zijn over het graf van het Florum, en faalt hopeloos. </div>
+</article>
+<article class="post" data-ts="20171117232446" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2017-11-17 23:24</span></div>
+  <div class="pb">Hoogh en beffoindre, en heil aan onze webmastert! En het was idd 'likmevestje', en niet 'likmevessie'. Dat zijn dus dingen die belangrijk zijn om te weten!</div>
+</article>
+<article class="post" data-ts="20171122132731" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2017-11-22 13:27</span></div>
+  <div class="pb">Mooi, dan houden we het op een gelijkspel, lieve Bode.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

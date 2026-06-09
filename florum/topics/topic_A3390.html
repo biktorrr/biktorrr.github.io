@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>In memoriam de Verlosser – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">In memoriam de Verlosser</h1>
+<p class="tm">9 posts · started 2016-03-24 23:12 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160324231242" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2016-03-24 23:12</span></div>
+  <div class="pb"><p><br>	De Verlosser schijnt overleden te zijn. Tja. Het is misschien te vroeg voor een in memoriam. Met dit bijltje hebben we vaker gehakt. Net als eerdere verlossers staat Johan over twee dagen gewoon weer op uit de dood.</p><br></div>
+</article>
+<article class="post" data-ts="20160324232838" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2016-03-24 23:28</span></div>
+  <div class="pb">RIP JC</div>
+</article>
+<article class="post" data-ts="20160326215139" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2016-03-26 21:51</span></div>
+  <div class="pb">Zoals het nu gaat doet Johan zo het ligt uit op het florum. Op zich zou ik dat best mooi vinden. <br></div>
+</article>
+<article class="post" data-ts="20160327005935" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2016-03-27 00:59</span></div>
+  <div class="pb">Een "In memoriam de Verlosser" als laatste topic ooit op het Florum. Ja, is misschien maar beter zo. Want, met alle respect voor de atletische prestaties van die Boys, heb ik toch liever niet dat het eindigt met het Hardlooptopic. </div>
+</article>
+<article class="post" data-ts="20160327171802" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2016-03-27 17:18</span></div>
+  <div class="pb">Amen</div>
+</article>
+<article class="post" data-ts="20160327202510" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2016-03-27 20:25</span></div>
+  <div class="pb">RIP FLORUM</div>
+</article>
+<article class="post" data-ts="20160328100026" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2016-03-28 10:00</span></div>
+  <div class="pb">Neyt gast.</div>
+</article>
+<article class="post" data-ts="20160330003936" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2016-03-30 00:39</span></div>
+  <div class="pb">Pasen is gekomen, pasen is gegaan, de Verlosser is niet opgestaan. <br><br>De noodkreet van de Jazz over de toestand van het Florum maakt ondertussen een paar lauwe reacties van een a twee woorden los. Duistere dagen.</div>
+</article>
+<article class="post" data-ts="20160331234336" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2016-03-31 23:43</span></div>
+  <div class="pb">Je moet GELOVEN Bode.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

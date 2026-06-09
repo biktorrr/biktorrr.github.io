@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WJ en VIC verjaardag!!! 1 juni – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WJ en VIC verjaardag!!! 1 juni</h1>
+<p class="tm">6 posts · started 2002-05-23 14:07 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020523140700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-05-23 14:07</span></div>
+  <div class="pb">Hallo vrienden en vriendinnen, <br><br>aangezien een tijdje terug WJ's verjaardag in de soep liep (doordat hij er zelf stiekem tussenuit piepte) En Victor's verjaardag de 26e is, hebben we besloten het net zoals vorig jaar met zijn tweetjes gezelligerwijs gecombineerd te vieren. <br><br>Dit gaat gebeuren op ZATERDAG 1 JULI in de(nieuwe) kamer van WJ. Dat is op de prinsessekade te Haarlem, voor degenen die dat niet weten (dat is overigens aan JOUW kant van de randweg, Tim). Daar zijn jullie vanaf iets van 20.30u welkom om een drankje te drinken, een hapje te knabbelen, een kadootje te geven en dergelijke. <br><br>Omdat de capaciteit in de kamer beperkt is willen we vragen of jullie niet in de wilde weg mensen gaan uitnodigen (Voor Tijmen en Tim en dergelijken: Aanhang uiteraard wel) en of jullie even willen MAILEN of jullie al dan niet komen!<br><br>tot dan, <br><br>WJ&V<br></div>
+</article>
+<article class="post" data-ts="20020523152600" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2002-05-23 15:26</span></div>
+  <div class="pb">Ik neem aan ook hier (net als in de mail)<br> 1 JUNI<br></div>
+</article>
+<article class="post" data-ts="20020523160600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-05-23 16:06</span></div>
+  <div class="pb">jaja...buhh</div>
+</article>
+<article class="post" data-ts="20020524201000" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2002-05-24 20:10</span></div>
+  <div class="pb">benner</div>
+</article>
+<article class="post" data-ts="20020528175000" id="p5">
+  <div class="ph"><span class="pa">Tymen</span><span class="pm">#5 · 2002-05-28 17:50</span></div>
+  <div class="pb">Tijmen heeft op het net binnengekomen rooster gekeken voor Juni en ziet dat zowel Laura als Tijmen zich dienen te presenteren bij de Dr.Anton Philipszaal...slinks als ie is heeft tijmen al weer al zijn onuitputtelijke bronnen van gelikte charme en overredingskracht aangeboord en zo zijn dienst met \éen van de twee collega's die op die avond niet hoefde te werken weten te ruilen.Dit gezegd hebbende gok ik dat dus Laura,in tegenstelling tot le moi,niet aanwezig zal zijn op Joost en Vik feessie.</div>
+</article>
+<article class="post" data-ts="20020529155000" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-05-29 15:50</span></div>
+  <div class="pb">toppie, doch knalluh<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

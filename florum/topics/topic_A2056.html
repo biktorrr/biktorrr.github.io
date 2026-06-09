@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Little T gefeliciteerd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Little T gefeliciteerd!</h1>
+<p class="tm">9 posts · started 2007-05-30 11:36 by Floraboys.com redactie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070530113600" id="p1">
+  <div class="ph"><span class="pa">Floraboys.com redactie</span><span class="pm">#1 · 2007-05-30 11:36</span></div>
+  <div class="pb">De redactie van Floraboys.com wil bij deze de Little T feliciteren met het behalen van zijn bul. Van harte Little!</div>
+</article>
+<article class="post" data-ts="20070530115900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-05-30 11:59</span></div>
+  <div class="pb">Een nieuw hoofdstuk uit de moderne geschiedenis wordt afgesloten. Beffoindre!</div>
+</article>
+<article class="post" data-ts="20070530122600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-05-30 12:26</span></div>
+  <div class="pb">The end of an era.<br><br>Gefeliciteerd ouwe quiz-maat.</div>
+</article>
+<article class="post" data-ts="20070530130700" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2007-05-30 13:07</span></div>
+  <div class="pb">heet van de pers<br><br>ik was er net bij en het was erg leuk. Tijmen nogmaals van harte!</div>
+</article>
+<article class="post" data-ts="20070530133300" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-05-30 13:33</span></div>
+  <div class="pb">Dude onwijs gefeliciteerd! </div>
+</article>
+<article class="post" data-ts="20070530144800" id="p6">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#6 · 2007-05-30 14:48</span></div>
+  <div class="ps">Gefeliciteerd!</div><div class="pb">Gefeliciteerd! Het heeft wat jaren gekost, maar dan heb je ook wat! </div>
+</article>
+<article class="post" data-ts="20070530213500" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2007-05-30 21:35</span></div>
+  <div class="pb">Zelfs de Franse pers raakt er niet over uitgeschreven. Gefeliciteerd !</div>
+</article>
+<article class="post" data-ts="20070531103000" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2007-05-31 10:30</span></div>
+  <div class="pb">Heel erg bedankt voor jullie aanwezigheid gister en nogmaals voor de support in welke vorm dan ook om deze studie nog afgerond te krijgen.<br>Ik heb me goed vermaakt gister en ik zal de collage een mooie plek geven.</div>
+</article>
+<article class="post" data-ts="20070531161300" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2007-05-31 16:13</span></div>
+  <div class="pb">Wat kunnen we bij jou (<a href="http://www.akkermans.nl/AenP/Default.aspx?PageRelationID=953" target="_blank">A&P</a>) allemaal krijgen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

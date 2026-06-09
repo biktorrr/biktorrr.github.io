@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys laatste replies RSS feed – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys laatste replies RSS feed</h1>
+<p class="tm">11 posts · started 2010-05-19 17:59 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100519175900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-05-19 17:59</span></div>
+  <div class="pb">Hallo Boys, ik heb me de afgelopen twee uur even gestort op het maken van een nieuwe RSS feed voor floraboys.com.<br><br>Deze geeft je de laatste tien replies. Als je dan op eentje klikt, dan wordt je naar het desbetreffende topic gelinkt op de site. Speciaal voor boys met Iphones, Android bakken en andere smartphones, maar je kan 'm ook in een andere rss-reader gebruiken.<br><br>Ik gebruik m zelf al 10 minuten en het bevalt primaatjes. <br><br>De url van de rss feed is <a href="http://floraboys.com/xmlfeed_mob1.php">http://floraboys.com/xmlfeed_mob1.php</a><br><br>Met dank aan die Jazz voor al zijn php files ter referentie. Verbeteringen of suggesties daarvoor zijn welkom!</div>
+</article>
+<article class="post" data-ts="20100519181300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-05-19 18:13</span></div>
+  <div class="pb">Okeee, er is meteen al een verbeterde versie, met de topicnaam in de rss-titel en een betere url:<br><br><a href="http://floraboys.com/xmlfeed_mob.php">http://floraboys.com/xmlfeed_mob.php</a></div>
+</article>
+<article class="post" data-ts="20100519210300" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-05-19 21:03</span></div>
+  <div class="pb">top, ik pas mijn homepage (igoogle) meteen aan, ook handig voor die smartphone inderdaad</div>
+</article>
+<article class="post" data-ts="20100520081200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-05-20 08:12</span></div>
+  <div class="pb">Holy fuck! Dit is echt een experience. Spannende propositie!</div>
+</article>
+<article class="post" data-ts="20100520081500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2010-05-20 08:15</span></div>
+  <div class="pb">Bug report:<br>De timestamp werkt niet *mekker*</div>
+</article>
+<article class="post" data-ts="20100520084100" id="p6">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#6 · 2010-05-20 08:41</span></div>
+  <div class="pb">Huu echt niet? Welke is fout dan? Overigens haal ik alle data uit Jazzy's database,...<br></div>
+</article>
+<article class="post" data-ts="20100520090500" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2010-05-20 09:05</span></div>
+  <div class="pb">Alle posts hebben dezelfde timestamp, namelijk de laatste. Toen jouw post bv. verscheen kregen alle andere posts dezelfde timestamp als die van jou. Die is 12:36 AM trouwens... misschien verkeerde tijdzone?</div>
+</article>
+<article class="post" data-ts="20100520112200" id="p8">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#8 · 2010-05-20 11:22</span></div>
+  <div class="pb">Ah nee, dat is de timestamp van wanneer je de rss pagina ververst/aanroept. Daarnaast heb ik in de titel ook de mysql timestamp staan. Dat is het postmoment.</div>
+</article>
+<article class="post" data-ts="20100520122000" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2010-05-20 12:20</span></div>
+  <div class="pb">Hmmkay. Ik vind het nogal beffoindre.</div>
+</article>
+<article class="post" data-ts="20100520125200" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2010-05-20 12:52</span></div>
+  <div class="pb">Klop jij als dank anders even een Flora WK poultje in elkander?</div>
+</article>
+<article class="post" data-ts="20100521213700" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2010-05-21 21:37</span></div>
+  <div class="pb">Samsung Pixon hiero tikt hem ook aan!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

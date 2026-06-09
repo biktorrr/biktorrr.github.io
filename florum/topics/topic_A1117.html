@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrrrrrrijdagmiddag-Rrraaaadsel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrrrrrrijdagmiddag-Rrraaaadsel</h1>
+<p class="tm">8 posts · started 2004-02-20 13:21 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040220132100" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-02-20 13:21</span></div>
+  <div class="pb">ok, een nieuwe week, een nieuw vrijdagmiddagraadsel.<br><br>Dit keer een lastige rebus (Power to Paint!)<br><br><img src="http://members.chello.nl/j.smitskamp1/vic/rebus1.gif"><br><br><br></div>
+</article>
+<article class="post" data-ts="20040220133700" id="p2">
+  <div class="ph"><span class="pa">neef Karel</span><span class="pm">#2 · 2004-02-20 13:37</span></div>
+  <div class="pb">Wat??? Vloraboois Cupvaaiters???</div>
+</article>
+<article class="post" data-ts="20040220142100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-02-20 14:21</span></div>
+  <div class="pb">Haha, ik vind 'm sterk. Al had je het beter een "fonetische rebus" kunnen noemen want nu is die arme neef van Karel helemaal van slag. Die vlaai is natuurlijk leuk omdat onze katholieke vrienden gaan carnavallen. <br><br>[Ik vind degene die post onder neef van Karel niet grappig.]</div>
+</article>
+<article class="post" data-ts="20040220142200" id="p4">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#4 · 2004-02-20 14:22</span></div>
+  <div class="pb">goed werk neef karel, het was me een breinbreker.<br><br>vooral op de vlaai heb ik de nodige uurtjes lopen zwoegen</div>
+</article>
+<article class="post" data-ts="20040220150000" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2004-02-20 15:00</span></div>
+  <div class="pb"><h2>Floraboys Cupfighters !</h2><br></div>
+</article>
+<article class="post" data-ts="20040220152400" id="p6">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#6 · 2004-02-20 15:24</span></div>
+  <div class="pb">ja Jossyt S. wint!<br><br>Het gaat er niet om wie als eerste het goede antwoord geeft, maar HOE je dat doet!</div>
+</article>
+<article class="post" data-ts="20040220154000" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-02-20 15:40</span></div>
+  <div class="pb">Nou in ieder geval heeft de belastingbetaler verloren!!!!!</div>
+</article>
+<article class="post" data-ts="20040220163300" id="p8">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#8 · 2004-02-20 16:33</span></div>
+  <div class="pb">de belastingbetaler betaalt ook voor een stukje entertainment :D</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

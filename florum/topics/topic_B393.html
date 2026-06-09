@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VERGEET HET EK – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VERGEET HET EK</h1>
+<p class="tm">3 posts · started 2003-12-21 02:06 by Een groot denker</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031221020600" id="p1">
+  <div class="ph"><span class="pa">Een groot denker</span><span class="pm">#1 · 2003-12-21 02:06</span></div>
+  <div class="pb">Geachte lezer, <br><br>Het volgende stuk "Vergeet het EK" is verplichte kost voor elke Nederlandse voetballiefhebber met realiteitszin. <br><br>Ik stuur het u op opdat u het verspreiden kunt aan andere Nederlanders met realiteitszin. Het is niet leuk maar het moet. <br><br>Titel: VERGEET HET EK <br><br>Vandaag, na het verlies in Glasgow, heb ik nagedacht over aanstaande woensdag. Al snel ontdekte ik dat het praktisch gezien onmogelijk is dat Nederland het EK haalt. Het is een kwestie van logica. <br><br>Nederland kan de play-offs alleen maar winnen als ze de Schotten in Amsterdam met twee doelpunten verschil verslaan: 2-0; 3-1; 4-2; 13-11. <br><br>De rest leidt onherroepelijk tot verlies. Kijk en huiver: <br><br>Verlies op woensdag = Verlies play-offs <br>Gelijkspel op woensdag = Verlies play-offs <br>1-0 overwinning = extra tijd = penalties = Verlies play-offs <br><br>Met andere woorden, alleen 2-0, 3-1 of 4-2 volstaat. Op papier is het dus mogelijk om het EK te halen. Op gras niet. Wie immers moet die doelpunten maken? Van Nistelrooij scoort alleen als hij door Vodafone gesponsord wordt, Kluivert is balmoe en Makaay, zoals alom bekend, is allergisch voor Schotse noppen. Bovendien, hoe moet Oranje voorkomen dat de Schotten een uitglijder van Frank de Boer genadeloos afstraffen? <br><br>Het enige wat de Schotten hoeven te doen, is iedere Nederlander die ook maar een schoenveter in het strafschopgebied drapeert, keihard onderuit schoffelen = penalty = geen doelpunt. <br><br>Er zitten eenvoudigweg teveel voorwaarden verbonden aan een 2-0 overwinning. De donderwolk die boven ons nationaal team hangt zal niet binnen een aantal dagen verdampen. We hebben het opnieuw verbruist. <br><br>Helaas. Duitsland 2006, Here We Come. Vers bloed doet Oranje goed. Van der Meyde, Van der Vaart, Van Persie moeten het gaan doen. <br><br>Ondergetekende zal er niet zijn om de nieuwe garde te steunen. Op naar de ambassade om me een Duits-Braziliaanse nationaliteit aan te meten. Heil Samba. <br><br>Met vriendelijke groet, <br>Ingmar Vriesema <br>ivriesema@yahoo.com <br><br>PS: Overzicht van verlies door penalties <br><br>EK 1992: Nederland verliest van Denemarken in strafschoppenserie. Van Basten mist. <br><br>EK 1996: Nederland verliest van Frankrijk in strafschoppenserie. Specialist Seedorf mist. <br><br>WK 1998: Nederland verliest van Brazilie in strafschoppenserie. Kluivert mist. <br><br>EK 2000: Nederland mist vijf penalties tegen Italie. Frank de Boer mist er twee. Kluivert mist in de reguliere speeltijd. Recentelijk bevestigde NASA dat op het vliegend projectiel dat afgelopen mei op Mars is geland inderdaad het logo van Euro-2000 te onderscheiden valt. De Amerikaanse krantenkop in vertaling: "Lancering bal Stam groot succes". <br><br>PPS: Jullie denken wellicht: heeft de briefschrijver niets beters te doen dan nutteloze informatie spuien over het Nederlands elftal? Antwoord: nee. Er is niets zo lekker als het rondwentelen in het vuil van ons nationale voetbaltrauma dat in Munchen in 1974 ontstond, in Munchen in 1988 een korte dood stierf, om zich vervolgens permanent te manifesteren in het nieuwe millennium. <br><br>(ivriesema@yahoo.com)<br></div>
+</article>
+<article class="post" data-ts="20031221153000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-12-21 15:30</span></div>
+  <div class="pb">ehhm?</div>
+</article>
+<article class="post" data-ts="20031221205300" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-12-21 20:53</span></div>
+  <div class="pb">ja dit is \é\én of andere knakker die zichzelf een groot orakel vindt. Vond het wel grappig in retrospectief.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

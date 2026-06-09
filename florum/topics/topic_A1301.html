@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floragirls levensgenieters? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floragirls levensgenieters?</h1>
+<p class="tm">7 posts · started 2004-09-24 14:48 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040924144800" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2004-09-24 14:48</span></div>
+  <div class="pb">Nederlandse vrouwen consumeren 90 liter drank per jaar<br><br>Als het op zuipen aankomt dan blijken Nederlandse vrouwen tot de top drie van Europa te behoren. Alleen de Engelse en Duitse dames gieten jaarlijks nog meer alcohol naar binnen. Bij de consumptie van alcohol onder Europese vrouwen komt Nederland op de derde plaats. Een onderzoek gehouden door het marketingbureau Datamonitor wijst dit uit, zo meldt de Britse krant The Times vandaag.<br><br>Britse vrouwen consumeerden in 2003 gemiddeld 120 liter aan alcoholbevattende dranken. Duitse vrouwen doen er amper voor onder met 119 liter. Op gepaste afstand volgen de Nederlandse dames, die nog altijd goed zijn voor 90 liter consumptie aan alcoholische drankjes.<br><br>Het drankgebruik onder vrouwen neemt sterk toe, zo bleek ook uit dit onderzoek. Zo nam in Groot-Brittanni\ë de consumptie tussen 1998 en 2003 met 25 procent toe. Ook in Nederland zuipen vrouwen steeds meer. Een groter wordend aantal vrouwen krijgt te maken met alcoholverslaving.</div>
+</article>
+<article class="post" data-ts="20040924224500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2004-09-24 22:45</span></div>
+  <div class="pb">Nou Misha, dan moet je kirrie met haar enkele zoete witte wijn nog wat bijbrengen <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20040925112700" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-09-25 11:27</span></div>
+  <div class="pb">De Draagmoeder van de Floraboys wil daar graag aan toevoegen dat Coebergh ook heel lekker is, en ook, lekker gezellig.</div>
+</article>
+<article class="post" data-ts="20040925114500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-09-25 11:45</span></div>
+  <div class="pb">haha, erg gezellig inderdaad</div>
+</article>
+<article class="post" data-ts="20040926010800" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-09-26 01:08</span></div>
+  <div class="pb">over levensgenieters gesproken, de Floraboys kunnen er ook wat van...</div>
+</article>
+<article class="post" data-ts="20040926011600" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2004-09-26 01:16</span></div>
+  <div class="pb">Ik bedoel dus eigenlijk dat Floraboys vooral genieten van hun slaap....</div>
+</article>
+<article class="post" data-ts="20040926011700" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-09-26 01:17</span></div>
+  <div class="pb">en krimi's</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

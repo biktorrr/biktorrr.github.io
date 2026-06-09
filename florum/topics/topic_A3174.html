@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Het FDK – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Het FDK</h1>
+<p class="tm">1 post · started 2011-10-28 20:13 by Cie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111028201346" id="p1">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#1 · 2011-10-28 20:13</span></div>
+  <div class="pb"><p><br>	Lieve boys en girls, om het overzicht te behouden hierbij een schoon en fris topic voor het komend FDK.</p><br><p><br>	&nbsp;</p><br><p><br>	Locatie: Over de locatie wordt nog nagedacht, maar er zijn al veel liefhebbers voor een herhaling van de locatie van het&nbsp;vorig FDK&nbsp;te weten De Jopenkerk. Daarnaast is de Cie zeer geinteresseerd in welke boys en kussens zij dit jaar mogen verwelkomen!</p><br><p><br>	&nbsp;</p><br><p><br>	Aangemelde FDK-gangers tot nu toe:</p><br><p><br>	- David &amp; Sigrid<br /><br>	- Die Jazz &amp; Die Tante<br /><br>	- Mitch &amp; Alexa (misschien)<br /><br>	- BikT &amp; JL@u<br /><br>	- Tube &amp; CA<br /><br>	- Oli4 &amp; Merel (misschien)<br /><br>	- VB &amp; Panda<br /><br>	- Straler &amp; Kirrie</p><br><p><br>	-Merlijn</p><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

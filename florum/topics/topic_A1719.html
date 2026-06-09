@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>St. Patrick&#x27;s – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">St. Patrick&#x27;s</h1>
+<p class="tm">6 posts · started 2006-03-17 11:31 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060317113100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-03-17 11:31</span></div>
+  <div class="pb">Vandaag st. Patricks. Zijn er boys en girls die zin hebben om vanavond in een rokerige ierse pub te gaan hangen om bier te drinken, te luisteren naar live lollige jig muziek en te kijken naar Gaelic football (heerse!).<br></div>
+</article>
+<article class="post" data-ts="20060317123200" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-03-17 12:32</span></div>
+  <div class="pb">Ik had net een mail rondgestuurd naar de in Amsterdam werkende/woonachtige Floraboys/girls om na het werk wat te gaan drinken in brouwerij 't IJ. Ik weet nog niet of ik het laat wil maken.</div>
+</article>
+<article class="post" data-ts="20060317133300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-03-17 13:33</span></div>
+  <div class="pb">ik ga vanavond naar de toneelschizzle en ik wil daarna wel een biertje nuttigen in het Haerlemsche. Zijn er rond 0.00u nog Boys in haarlem?</div>
+</article>
+<article class="post" data-ts="20060317142500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-03-17 14:25</span></div>
+  <div class="pb">Ben in A'dam vanavond.</div>
+</article>
+<article class="post" data-ts="20060317172100" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2006-03-17 17:21</span></div>
+  <div class="pb">misha, mitch, alexa en ik gaan iig naar 't ij</div>
+</article>
+<article class="post" data-ts="20060317181800" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2006-03-17 18:18</span></div>
+  <div class="pb">ok, andere keer maar weer. Ik kijk nog wel ff, anders ga ik proberen in het weinige licht mijn nieuwe speakers in de auto te zetten.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groot Floraboys Diep buigen voor de Bak-topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groot Floraboys Diep buigen voor de Bak-topic</h1>
+<p class="tm">4 posts · started 2014-06-19 00:55 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140619005511" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2014-06-19 00:55</span></div>
+  <div class="pb"><p><br>	Een nieuw topic, voor alle Boys die diep moeten buigen voor de Bak. En dat zijn dus n principe alle Boys.</p><br><p><br>	Maar in dit topic hebben we het dan met name over de Jazz en mijn eigen zelvers. Afgelopen vrijdag zei ik nog tegen de Jazz: &#39;Je hebt normale cognitieve dissonantie, en dan heb je mensen die in een parallelle realiteit leven.&#39; Dat sloeg toen op de Bak. Nu blijkt dat de Jazz en ik in een parallelle realitait hebben gewoond.</p><br><p><br>	Ik geef Del Bosque ook wel een beetje de schuld. Je denkt, die man wint het WK en het EK, en ook nog twee keer de Champions League, die zal het dus wel weten. Maar hallo. Je hebt drie doelpunten nodig, en je wisselt Torres voor Costa, en Pedro voor Cazorla. Zet er anders een extra aanvaller bij, als het verder toch niets uitmaakt..</p><br><p><br>	Voor mij is de rust dat ik nu wel zeker weet dat ik de Floraboy-poule niet zal winnen. Kan ik me 100% op onze jongens concentreren.</p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20140619005905" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2014-06-19 00:59</span></div>
+  <div class="pb">Een goed initiatief Bernard!<br><br>En we buigen met zijn allen voor de baq!<br><br>Was het ook niet de baq die suggereerde dat Olivier tijdens de finale NL argentinie in slaapmzou vallen? Daar hou ik me dan maar aan vast.</div>
+</article>
+<article class="post" data-ts="20140709021958" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2014-07-09 02:19</span></div>
+  <div class="pb">Ik buig opnieuw diep voor de Bak, die weken geleden al de volgende prognose deed.<br><br>´Brazilie? De druk in eigen land is gigantisch. Dat gaat op een of andere manier wel mis.´<br><br>Hier valt dus geen speld tussen te krijgen. Goed gewicheld!<br><br>Andere voorspellingen uit dezelfde Timmie Tikt zijn dan wellicht wat verontrustend:<br>´Gaat NL of Spanje wereldkampioen worden? Nee, dat zeker niet.´<br><br>En dan deze:<br>´Mijn gok is toch Argentinie.´<br><br>Brrrrr!<br><br></div>
+</article>
+<article class="post" data-ts="20140709103756" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2014-07-09 10:37</span></div>
+  <div class="pb">hey Bode, <br><br>ik zal zelf de eerste zijn die op de banken staat te juichen als ik de laatste fout heb en vanavond de Legende van Louis een vervolg krijgt (ik zeg, Clasie die in zijn eentje een hele wedstrijd Messi neutraliseert en 2 goals maakt). <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

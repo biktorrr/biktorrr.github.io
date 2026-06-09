@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schokkend nieuws! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Schokkend nieuws!</h1>
+<p class="tm">4 posts · started 2004-03-05 15:07 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040305150700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2004-03-05 15:07</span></div>
+  <div class="pb"><h1>Victor de Boer is aan het thuiswerken!!!</h1><br><br>Maar we weten natuurlijk allemaal dat <H1>thuiswerken</h1> synoniem is voor big time <h1>lanterfanten</h1>. In plaats van schatten van wijsheid voor de wereld te ontbloten, is hij <H1>cryptogrammen</h1> aan het maken. Hij komt er zelfs doodleuk voor uit dat hij die bedenkt terwijl hij op <h1>de wc</h1> zit. Daar heeft hij blijkbaar wel tijd voor, nu hij <h1>thuiswerkt.</h1></div>
+</article>
+<article class="post" data-ts="20040305152700" id="p2">
+  <div class="ph"><span class="pa">Gastrecensent</span><span class="pm">#2 · 2004-03-05 15:27</span></div>
+  <div class="pb">Schitterend verwoord, een sublieme synergie van vorm en inhoud.- Het parool.<br><br>De nieuwe Peter R. de Vries is eindelijk opgestaan - De telegraaf.<br><br>Prins Sevenster de Gekste strikes again in post-carnavals weekend. - Eindhovense courant.</div>
+</article>
+<article class="post" data-ts="20040305160300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-03-05 16:03</span></div>
+  <div class="pb">Had ik dat geweten dan had ik even aangebeld toen ik langskwam...kan dit voortaan niet over de sms....??</div>
+</article>
+<article class="post" data-ts="20040306141900" id="p4">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#4 · 2004-03-06 14:19</span></div>
+  <div class="pb">ik zal voortaan een persbericht de deur uitdoen.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

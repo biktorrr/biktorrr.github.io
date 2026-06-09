@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opvolger NoordwestTV? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Opvolger NoordwestTV?</h1>
+<p class="tm">2 posts · started 2003-08-22 16:40 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030822164000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2003-08-22 16:40</span></div>
+  <div class="pb">Regio krijgt eigen commerci\ële tv-zender HAARLEM -  De Haarlemse regio krijgt per 1 oktober een nieuwe regionale commerci\ële televisiezender: Noordhollands Nieuws Netwerk (NNN). Met Multikabel is een overeenkomst gesloten over doorgifte in de gemeenten Heemstede, Bennebroek, Bloemendaal, Haarlemmerliede en Spaarnwoude, Velsen en Haarlemmermeer. In Haarlem is de nieuwe zender net te laat voor een plek op de kabel van UPC. Op zijn vroegst wordt dat 1 september 2004 alsnog mogelijk.<br><br>Centraal in de programmering staat het nieuwsmagazine, met nieuws uit de betreffende gemeenten. Daarnaast komen er achtergronden en reportages, gecombineerd met uitzendingen over mode, consumentenzaken, sport, koken en kunst. ,,Die algemene programma's komen van Regio Nieuws Netwerk, dat al op 1 september in Rotterdam met commerci\ële televisie begint. De opzet is om veel samen te werken, ook met andere regionale zenders. Niet iedereen moet het wiel opnieuw uitvinden, maar samenwerken met programma's, techniek en het werven van adverteerders'', legt NNN-adviseur Chu uit. Chu was voorheen directeur/eigenaar van Noordwest TV. Die zender ging in juni failliet.<br><br>,,Toen waren we al rond met de groep rond Leo Houkamp van de Rotterdamse zender. Helaas waren we net te laat voor de curator. Nu beginnen we echt met een schone lei. Een aantal mensen van Noordwest kan zo weer aan de slag'', aldus Chu. Overigens wil de zender juist op personeel bezuinigen door journalistiek en camerawerk te combineren: camerajournalisten die zelf ook opnemen.<br><br>Dat NNN niet in de voetsporen van Noordwest kan treden, betekent dat opnieuw een plek op de kabelnetten moest worden veroverd. Met Multikabel is dat nu gelukt, bevestigt Multikabel-manager Rijkhof. Met Haarlem (UPC) nog niet. ,,Ze kunnen geen beroep doen op de oude rechten van Noordwest. Juist op 1 september gaat de nieuwe zenderindeling in. De plek van Noordwest wordt niet opgevuld, omdat we via de natuurlijke weg het aantal zenders in Haarlem willen beperken. Als ze toch op de kabel willen, kan dat op zijn vroegst over een jaar, bij de volgende zenderverdeling'', laat UPC-woordvoerder Van de Aart weten.<br><br>Frans van den Berg maandag 18 augustus 2003</div>
+</article>
+<article class="post" data-ts="20030825101800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-08-25 10:18</span></div>
+  <div class="pb">is jantje U. al gecont(r)acteerd?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spammerts – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Spammerts</h1>
+<p class="tm">7 posts · started 2007-01-23 16:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070123160200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-01-23 16:02</span></div>
+  <div class="pb">Het wordt toch echt te irritant. <br>Jazzy doe er iets aan.<br>Misschien instellen dat je "Naam" niet langer mag zijn dan 7 characters? (merlijn is de langste)<br><br>Kan je dan ook meteen instellen dat posts over werk niet willen/kunnen uitvoeren i.v.m. thuiswerken, verhuizen en hoebahoppen meteen ook wordt geweerd?<br><br>Deze post lijkt me, omdat de alliteraties ontbreken, snel en gemakkelijk te begrijpen.</div>
+</article>
+<article class="post" data-ts="20070123161700" id="p2">
+  <div class="ph"><span class="pa">Commander</span><span class="pm">#2 · 2007-01-23 16:17</span></div>
+  <div class="pb">Tegen</div>
+</article>
+<article class="post" data-ts="20070123164900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-01-23 16:49</span></div>
+  <div class="pb">ik vind het idee om alleen korte namen toe te laten wel een slimme eigenlijk, als we nou gewoon alleen maa namen van 2 letters gebruiken komt er geen spammert meer in.<br><br>Overigens vindt ik je tweede zin toch wat lastiger te begrijpen, ondanks het weglaten van de alliteraties.</div>
+</article>
+<article class="post" data-ts="20070124091000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2007-01-24 09:10</span></div>
+  <div class="pb">Alleen twee-letterige namen? Daar ben ik tegen! "Merlijn" is de meest gebruikte naam, daar ben ik trots op en dat moet zo blijven.<br><br>Misschien dat we iemand kunnen inhuren die met de hand dergelijke posts verwijdert uit de database?</div>
+</article>
+<article class="post" data-ts="20070124094700" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-01-24 09:47</span></div>
+  <div class="pb">we kunnen ook een vaste lijst met namen in de php formhandler zetten. Dan kan dus wel iedereen met 'Merlijn' of 'MK' posten, maar niet meer met 'Lonely D.' of 'Biggy Sttyyyyyyyle'</div>
+</article>
+<article class="post" data-ts="20070124102900" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2007-01-24 10:29</span></div>
+  <div class="pb">mee eens, ik zal er naar kijken maar over 2 uur moet ik in het vliegtuig zitten naar valencia dus dit gaat pas volgende week lukken.<br><br>Gr,<br><br>Joost<br><br>ps Vic moet ik nog de groeten doen aan Vicenco?</div>
+</article>
+<article class="post" data-ts="20070124133400" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2007-01-24 13:34</span></div>
+  <div class="pb">ja doe dat, ik weet niet precies waar hij woont, maar als je in je lonely op een terassje een 'Agua de Valencia' neemt, vindt hij jou wel.<br><br>Valencia-tip: de enige echte 'Holy Grail' in Catedral de Santa Mar\ía de Valencia. Daar is Indiana Jones lang naar op zoek geweest en daar staat ie gewoon.<br>Steengoed!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

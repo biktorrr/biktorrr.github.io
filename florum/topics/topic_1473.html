@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 1473 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 1473</h1>
+<p class="tm">10 posts&nbsp;·&nbsp;started 2005-04-20 08:18 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050420081800" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1&nbsp;·&nbsp;2005-04-20 08:18</span></div>
+  <div class="pb">bericht van timmie van elders:<br>"woot WOW doet het hier in Hawaii op de berg.. maar ik ben wel kapot door de hoogte"  </div>
+</article>
+<article class="post" data-ts="20050420092400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2&nbsp;·&nbsp;2005-04-20 09:24</span></div>
+  <div class="pb"><h1>Habemus Bikkie!</h1></div>
+</article>
+<article class="post" data-ts="20050420121400" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3&nbsp;·&nbsp;2005-04-20 12:14</span></div>
+  <div class="pb">Tsja.... als je dan toch op hawaii zit, waarom zou je dan niet gaan zitten gamen. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20050420124400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2005-04-20 12:44</span></div>
+  <div class="pb">Tn als je dan toch als pr man van de biktie fungeert, wat betekent die zin in hemelsnaam?</div>
+</article>
+<article class="post" data-ts="20050420131700" id="p5">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#5&nbsp;·&nbsp;2005-04-20 13:17</span></div>
+  <div class="pb">hij heeft dan eem beetje last van hoogteziekte...<br><br>en speciaal voor de liefhebbers, de link naar de webcam die als het goed is, op Tim gericht staat als ie aan het werk is: <br>http://www.jach.hawaii.edu/weather/jac/<br><br>De site wordt geloof ik elke 10 minuten ge-refresht...dus je ziet hem idd niet bewegen!</div>
+</article>
+<article class="post" data-ts="20050420132600" id="p6">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#6&nbsp;·&nbsp;2005-04-20 13:26</span></div>
+  <div class="pb">Die zinsnede was inderdaad in leesbaar nederlands geschreven maar dat woot stukje ervoor is me niet helemaal duidelijk J-Lau. </div>
+</article>
+<article class="post" data-ts="20050420132600" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7&nbsp;·&nbsp;2005-04-20 13:26</span></div>
+  <div class="pb">ha terecht, alleen zie ik nu helegaar niks. Wanneer is Bikkie daar aan het Tikken?<br></div>
+</article>
+<article class="post" data-ts="20050420133800" id="p8">
+  <div class="ph"><span class="pa">TN de L33t Sp34ker</span><span class="pm">#8&nbsp;·&nbsp;2005-04-20 13:38</span></div>
+  <div class="pb">w00t= algemene uitdrukking van verukking/exstase<br>WoW= world of warcraft, mondiaal 3rdperson RPG (:lees brillen-spel)</div>
+</article>
+<article class="post" data-ts="20050420144800" id="p9">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#9&nbsp;·&nbsp;2005-04-20 14:48</span></div>
+  <div class="pb">FYI: Ik heb contactlenzen.</div>
+</article>
+<article class="post" data-ts="20050420164900" id="p10">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#10&nbsp;·&nbsp;2005-04-20 16:49</span></div>
+  <div class="pb">ik zit nu nog te acclimatiseren.. vanaf donderdag tot en met donderdag volgende week zit ik elke nacht van half 2 tot half 10 ( voor jullie gewoon overdag) achter die webcam.. <br><br>en ik heb een spel meegenomen zodat ik hier overdag, als ik niet aan het slapen ben, ook nog wat te doen heb.. anders wordt het hier wel heel erg eenzaam.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

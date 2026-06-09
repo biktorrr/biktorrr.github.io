@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>legt het nog een keer uit...... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">legt het nog een keer uit......</h1>
+<p class="tm">1 post · started 2003-01-19 20:32 by De man van Yvonne Keuls</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030119203200" id="p1">
+  <div class="ph"><span class="pa">De man van Yvonne Keuls</span><span class="pm">#1 · 2003-01-19 20:32</span></div>
+  <div class="pb">Wees een grote meid en weet nu maar eens hoe de toiletbril werkt. Als ie omhoog staat, doe je hem gewoon naar beneden. Voor ons moet ie omhoog, voor jullie naar beneden. Wij hebben evenveel recht van spreken "dat de bril weer verkeerd stond". Laten we er over ophouden. <br><br>De verjaardag, trouwdag en moederdag moeten niet telkens een eindeloze <br>speurtocht naar dat ene, perfecte cadeautje zijn. Soms denken we gewoon <br>niet aan jullie. Leer er maar mee omgaan. <br><br>Haar afknippen? Doe het niet. Nooit. Lang haar is altijd mooier dan <br>kort. Mannen zijn bang voor het huwelijk, onder meer omdat getrouwde <br>vrouwen onmiddellijk hun haar afknippen en je dan een leven lang aan dat rattenkoppie vastzit. <br><br>Winkelen is GEEN plezierig tijdverdrijf en daar blijven we bij. <br><br>Huilen is en blijft te allen tijde chantage. <br><br>Zeg wat je wilt. Hierover kunnen we duidelijk zijn: terloopse <br>aanwijzingen werken niet, duidelijke aanwijzingen werken niet, <br>zonneklare aanwijzigen werken niet... Zeg nou gewoon eens wat je wilt! <br><br>Een beetje vent heeft maximaal drie paar schoenen. Hoe komen jullie <br>erbij dat je ook maar iets aan ons zult hebben om het best passende paar van de dertig bij die ene je-weet-wel-jurk te vinden? <br><br>Ja en nee zijn prima antwoorden op bijna iedere vraag. <br><br>Deel je problemen alleen met ons als je een oplossing zoekt. Zo zitten <br>we in elkaar: we lossen problemen graag op. Voor medeleven heb je je <br>vriendinnen. <br><br>Wat we een half jaar geleden zeiden, telt niet mee in onze discussie van <br>vandaag. Sterker nog, iedere uitspraak ouder dan een week is verlopen en van nul en generlei waarde. <br><br>Als jullie je niet kleden als de meisjes op de H&M posters, verwacht van ons dan niet dat we op welke slijmbal van tv dan ook lijken. <br><br>Als je je dik voelt, dan ben je dat waarschijnlijk ook. Vraag ons niet <br>naar onze mening daarover. Voortaan weigeren we ieder antwoord op een <br>dergelijke vraag. <br><br>Als een opmerking voor twee\ërlei uitleg vatbaar is en de ene uitleg <br>maakt je boos of verdrietig, dan bedoelden we dus die andere <br>mogelijkheid. <br><br>Laat ons lonken. Gluren doen we, of jullie willen of niet: het is een <br>aangeboren mannentrekje. <br><br>Vraag een man om iets voor je te doen, of vertel hem hoe je iets gedaan <br>wilt hebben. Maar weet nou eens dat die twee dingen niet samen gaan. <br>Als je het toch al beter weet, doe het dan zelf. <br><br>Christopher Columbus had geen aanwijzingen nodig, wij ook niet. <br><br>Alle mannen zien maximaal zestien kleuren. Probeer maar even met je <br>Windows scherminstellingen hoe dat er uitziet. Perzik is voor ons gewoon fruit en we hebben geen flauw benul wat 'mauve' is. <br><br>Als ie jeukt, wordt er gekrabt. Da's de aard van het beestje. <br><br>We kunnen geen gedachtelezen en dat zegt niets over of we wel van je <br>houden. <br><br>Als mannen vragen of er iets is en je geeft aan dat er niets aan de hand is, dan heeft de ervaring geleerd dat je liegt, maar dat laten we graag zo omdat we niet van geouwehoer houden. <br><br>Stel je een vraag waarop je het antwoord niet wilt weten, reken dan op <br>een antwoord dat je niet had willen horen. <br><br>Als we ergens naar toe gaan, is wat je me nu laat zien altijd prima <br>geschikt om te dragen. Echt waar. <br><br>Vraag niet waar we aan denken als je niet tegen gesprekken kan over de <br>Betuwelijn, de problematiek van het navelpluisje, de geest van Pim en <br>hoe je aan de loop van een meisje kan zien of ze nog maagd is. <br><br>Je hebt wel iets om aan te trekken. <br><br>Het is noch in jouw, noch in ons belang om samen de Vivatest te doen, <br>ongeacht waar die over gaat. <br><br>Ja, we zijn altijd dol op bier, zoals jullie op handtassen. <br><br>Ik ben in vorm. Dat buikje hoort bij die vorm. <br><br>Dank dat je dit alles ter harte neemt. Als het een nachtje op de bank <br>wordt, dan geeft dat niet: dat is net kamperen en daar zijn we ook dol <br>op. <br><br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

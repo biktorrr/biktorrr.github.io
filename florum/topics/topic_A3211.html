@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groot Floraboys Om zijn daden en zijn doen-topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Groot Floraboys Om zijn daden en zijn doen-topic</h1>
+<p class="tm">6 posts · started 2012-03-17 21:28 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120317212855" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2012-03-17 21:28</span></div>
+  <div class="pb"><p><br>	Hier een topicje om, los van specifieke toernooien, over het Nederlands elftal te kunnen praten. Ik heb, een paar maanden voor het EK, de volgende optimistische observaties:</p><br><p><br>	1. De heren Van Persie, Huntelaar en Robben steken werkelijk in uitzonderlijk goede vorm.</p><br><p><br>	2. Royston Drenthe en &#39;Urby et Orby&#39; Emanuelson zijn, na een tijd in de wildernis, bij hun clubs nu vaste waarden aan het worden, hetgeen Bert straks extra opties voor het gebied tussen verdediging en middenveld geeft.</p><br></div>
+</article>
+<article class="post" data-ts="20120317221253" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2012-03-17 22:12</span></div>
+  <div class="pb">Sneijder daarentegen overtuigt laatstelijk niet.</div>
+</article>
+<article class="post" data-ts="20120318000144" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2012-03-18 00:01</span></div>
+  <div class="pb">ik ben heel erg bang dat Robben nog te grazen wordt genomen door een Duitse slager uit Dresden ofzo. <br><br>Sneijder daarentegen kan niets meer winnen dit seizoen en zit met de problemen bij Inter. Die gaat alleen maar supergretig naar Oekraine afreizen. </div>
+</article>
+<article class="post" data-ts="20120318123211" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2012-03-18 12:32</span></div>
+  <div class="pb">en lekker uitgerust! <br><br>Ik zou me meer zorgen maken over Xavi en Iniesta die straks 90 wedstrijden in de benen hebben waarvan 9 tegen Madrid. </div>
+</article>
+<article class="post" data-ts="20120319190458" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2012-03-19 19:04</span></div>
+  <div class="pb">altijd mooi die jaren met een non-stop sportzomer. EK, Tour en Olypische Spelen.<br>Gaan er nog boys naar een van deze evenementen? Ik wilde tot een jaar geleden graag naar de openingsceremonie van de OS, maar ik zie het er niet meer van komen.<br><br></div>
+</article>
+<article class="post" data-ts="20120326165456" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2012-03-26 16:54</span></div>
+  <div class="pb">ik zat trouwens ook te denken:<br><br>als Affelay weer fit is/wordt heeft die net genoeg wedstrijdritme en trainingservaring met Barcelona om wel iets te kunnen bereiken. Zeker als 'supersub' is dat niet slecht. <br><br>Nu nog de NL-se verdediging..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

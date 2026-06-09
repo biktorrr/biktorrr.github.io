@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kijkersvraag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">kijkersvraag</h1>
+<p class="tm">9 posts · started 2003-11-17 20:34 by Joop van T.</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031117203400" id="p1">
+  <div class="ph"><span class="pa">Joop van T.</span><span class="pm">#1 · 2003-11-17 20:34</span></div>
+  <div class="pb">Aan welke voetbalhumor liefhebbende kennis hebben wij deze foto te danken?<br><br><img src="http://www.itxasodominguez.com/d/bizaro.gif" border="0"></div>
+</article>
+<article class="post" data-ts="20031118000900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-11-18 00:09</span></div>
+  <div class="pb">ieieieieieieiwwwwwwwwwwwwwwwwwwwwwww</div>
+</article>
+<article class="post" data-ts="20031118033900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2003-11-18 03:39</span></div>
+  <div class="pb">Zit ik mij hier toch vreselijk te schamen middenin de computerruimte!!!!!!!!!!!!!!! Redelijk obsessief dit plaatje.</div>
+</article>
+<article class="post" data-ts="20031118093600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-11-18 09:36</span></div>
+  <div class="pb">Hahaha. Wat een leuke verassing op de vroege morgen. Ik weet 't!</div>
+</article>
+<article class="post" data-ts="20031118105600" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-11-18 10:56</span></div>
+  <div class="pb">Ik heb ook zo mijn idee\ën</div>
+</article>
+<article class="post" data-ts="20031118113100" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-11-18 11:31</span></div>
+  <div class="pb">t begint mij ook te dagen</div>
+</article>
+<article class="post" data-ts="20031118130100" id="p7">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#7 · 2003-11-18 13:01</span></div>
+  <div class="pb">distantieer me hier volledig van.<br>Jakkes.</div>
+</article>
+<article class="post" data-ts="20031118134400" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2003-11-18 13:44</span></div>
+  <div class="pb">ik zie geen tattoos, dus Mer is het niet.</div>
+</article>
+<article class="post" data-ts="20031126132700" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2003-11-26 13:27</span></div>
+  <div class="pb">Ok, ik zal hem inkoppen: het is de Penose in een hotel boven een nachtwinkel met een Nederlandssprekende Chinese in Madried.  </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

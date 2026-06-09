@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ALLEMAAL VRIJHOUDEN!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ALLEMAAL VRIJHOUDEN!!!</h1>
+<p class="tm">7 posts · started 2001-08-25 15:04 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010825150400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-08-25 15:04</span></div>
+  <div class="pb">yo dudesters,<br><br>gezien het feit dat we niet helemaal onbeslagen <br>ten ijs willen komen de 11e is er een grote oefen-<br>pot gepland (met zaalbalregels e.d.) op de zaterdag <br>daarvoor dat is dus ZATERDAG DE ACHTSTE SEPTEMBER!!!!!<br><br>hou deze VRIJ als je een Zaal-FloraBoy bent.<br>Dit is verplicht!!!! >:-|<br><br>Poopie Out!!</div>
+</article>
+<article class="post" data-ts="20010825194000" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2001-08-25 19:40</span></div>
+  <div class="pb">Anders die dag iets van 1,5 uur eerder komen daar oid? Inballen...heeft iemand trouwens een zaalvoetbalbal..die zijn kleiner dan normale veldballen..<br><br>En asfalttraining bij geel-wit een keer oid? Keeperstraining ingooi, hoekschoppen ook?????</div>
+</article>
+<article class="post" data-ts="20010826132300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2001-08-26 13:23</span></div>
+  <div class="ps">Opstelling?</div><div class="pb">Net zoals dit team?<br><br>http://www.hbc.tmfweb.nl/de_opstelling.htm :)</div>
+</article>
+<article class="post" data-ts="20010904145800" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-09-04 14:58</span></div>
+  <div class="pb">wordt er dus niet gewoon gebald?</div>
+</article>
+<article class="post" data-ts="20010904145900" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2001-09-04 14:59</span></div>
+  <div class="ps">addendum</div><div class="pb">of bedoelde je met die 'training' van as. Zaterdag een 'gewoon' potje ballen op het park?</div>
+</article>
+<article class="post" data-ts="20010905004800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-09-05 00:48</span></div>
+  <div class="pb">W.m.b. gaan we op dat asfaltveld bij Geel-Wit voetballen, i.p.v. op 't Florapark c.q. de Hout. Dat is i.d.g. ook beter voor 't gras, omdat 'r 'n zondvloed over Haarlem neerdaalt, m.i. Ik heb wel 'n rubberen bal, maar of dat 'n echte officiele zaalvoetbalbal is betwijfel ik.</div>
+</article>
+<article class="post" data-ts="20010905115300" id="p7">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#7 · 2001-09-05 11:53</span></div>
+  <div class="ps">Ballleeeen</div><div class="pb">Zaterdag ben ik van de partij,, bij het in-zaalballen buiten... ofzo... trouwens vind ik het een goed plan om met z'n allen even een zaalbal te kopen,, kost niet veel en is wel lekker om wat in te ballen,, voordat we de tegenstanders ros gaan geven toch??<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

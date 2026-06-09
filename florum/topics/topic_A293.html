@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What makes life 103% – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">What makes life 103%</h1>
+<p class="tm">1 post · started 2001-10-15 23:54 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011015235400" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2001-10-15 23:54</span></div>
+  <div class="pb">We have all been to those meetings where someone wants over 100  percent. <br><br>How about achieving 103 percent? Here's a little math that might  prove helpful in the future. <br><br>What makes life 100 percent? <br><br>If A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>can be represented as: <br>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25  26 <br><br>Then, <br>H  A R  D W  O  R  K is: <br>8  1 18 4 23 15 18 11 = 98% only <br><br>K   N  O  W  L E  D  G  E is: <br>11 14 15 23 12 5  4  7  5 = 96% only <br><br>But, <br>A   T  T I  T  U  D   E is: <br>1  20 20 9 20 21  4   5 = 100 % <br><br>However, <br>B  u   l  l S  h  i  t  is: <br>2  21 12 12 19  8  9  20 = 103% <br><br>It stands to reason that hard work and knowledge will get you close, but attitude and b.s. will put you over the top!  <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

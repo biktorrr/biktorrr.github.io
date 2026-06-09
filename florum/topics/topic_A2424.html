@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>tijdens het werk – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">tijdens het werk</h1>
+<p class="tm">4 posts · started 2008-07-05 10:47 by Tour Kijken</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080705104700" id="p1">
+  <div class="ph"><span class="pa">Tour Kijken</span><span class="pm">#1 · 2008-07-05 10:47</span></div>
+  <div class="pb">http://tour2008.nos.nl/live/index<br><br>Blij dat ik moet werken de komende 3 weken! Lekker de Tour kijken...</div>
+</article>
+<article class="post" data-ts="20080706155600" id="p2">
+  <div class="ph"><span class="pa">Workaholic</span><span class="pm">#2 · 2008-07-06 15:56</span></div>
+  <div class="pb">Ik ben vandaag speciaal aan het werk gegaan om de Tour te kunnen kijken...</div>
+</article>
+<article class="post" data-ts="20080707064700" id="p3">
+  <div class="ph"><span class="pa">Lekker vroeg</span><span class="pm">#3 · 2008-07-07 06:47</span></div>
+  <div class="pb">Ochtendstond heeft goud in de mond</div>
+</article>
+<article class="post" data-ts="20080814101400" id="p4">
+  <div class="ph"><span class="pa">ixRdByrOASM</span><span class="pm">#4 · 2008-08-14 10:14</span></div>
+  <div class="ps">ZyBiPpawHQoixSyC</div><div class="pb">mkiaQ4  <a href="http://hnywrzviigur.com/">hnywrzviigur</a>, [url=http://doiyxpphqgen.com/]doiyxpphqgen[/url], [link=http://fvbqpszlqqjk.com/]fvbqpszlqqjk[/link], http://abznmhpkohhw.com/</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

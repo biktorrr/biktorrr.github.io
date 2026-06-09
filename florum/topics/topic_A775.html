@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cheeky Cheeky! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cheeky Cheeky!</h1>
+<p class="tm">5 posts · started 2003-05-02 10:25 by PTbloggingC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030502102500" id="p1">
+  <div class="ph"><span class="pa">PTbloggingC</span><span class="pm">#1 · 2003-05-02 10:25</span></div>
+  <div class="pb">KLM-piloten op matje na 'cockpitmeeting' met Cheeky Girls<br><br>AMSTERDAM - Twee piloten van de KLM zijn op het matje geroepen omdat zij tijdens een vlucht naar Londen de sexy Cheeky Girls in de cockpit hebben toegelaten. Dat schrijft De Telegraaf vrijdag. Volgens inzittenden van de kleine Fokker F50 begon het vliegtuig hevig te schudden op het moment dat de twee dames de cockpit betraden. E\én persoon verklaarde zelfs dat een 'girl' op de knie van een piloot zat. <br><br>De twee Engelse dames reisden van Rotterdam naar Londen nadat zij op Koninginnedag in de havenstad hadden opgetreden. Zij werden naar eigen zeggen uitgenodigd door de piloten, die uitleg wilden geven over de instrumenten. De passagiers klaagden na de vlucht over de onrustige vlucht. Zo zei \é\én persoon bang te zijn geweest neer te storten.<br><br>Een KLM-woordvoerder noemde het 'onzin' dat er in de cockpit onrechtmatige dingen zouden zijn gebeurd. Zij schreef de onrustige vlucht toe aan de harde wind. De piloten worden wel op de vingers getikt omdat zij zich niet gehouden hebben aan de nieuwe veiligheidsvoorschriften. <br><br></div>
+</article>
+<article class="post" data-ts="20030502125900" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-05-02 12:59</span></div>
+  <div class="pb">Engels????<br><br>Viva Romania</div>
+</article>
+<article class="post" data-ts="20030502130600" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-05-02 13:06</span></div>
+  <div class="ps">wat een cheeky bastards</div><div class="pb">die piloten! RESPECT !!!!!</div>
+</article>
+<article class="post" data-ts="20030502153000" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-05-02 15:30</span></div>
+  <div class="pb">beetje flauw dit, iedereen weet dat de enige reden om piloot te worden, het toelaten van sexy dames tot de cockpit is. (en ze daarna op je knie laten zitten) respect voordie piloten dus.</div>
+</article>
+<article class="post" data-ts="20030503172300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2003-05-03 17:23</span></div>
+  <div class="pb">harde wind ja. De KLM heeft Al-Sahhaf zeker in dienst genomen!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

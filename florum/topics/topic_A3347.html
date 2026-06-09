@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bier vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bier vanavond</h1>
+<p class="tm">11 posts · started 2014-07-25 16:33 by Penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140725163344" id="p1">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#1 · 2014-07-25 16:33</span></div>
+  <div class="pb"><p><br>	Nog boys die niet de app lezen en toch vanavond een biertje willen drinken in Amsterdam?</p><br></div>
+</article>
+<article class="post" data-ts="20140725163512" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2014-07-25 16:35</span></div>
+  <div class="pb">Kweenie. Hoe laat zou deze gebbert dan plaats moeten hebben?</div>
+</article>
+<article class="post" data-ts="20140725171348" id="p3">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#3 · 2014-07-25 17:13</span></div>
+  <div class="pb">In de buurt van Amsterdam CS. Mitch kon ook, die zal best een goede suggestie hebben. Tijd 21.00</div>
+</article>
+<article class="post" data-ts="20140725190551" id="p4">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#4 · 2014-07-25 19:05</span></div>
+  <div class="pb">Bode wat zegt jouw glazen bol?</div>
+</article>
+<article class="post" data-ts="20140725201328" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2014-07-25 20:13</span></div>
+  <div class="pb">21.00 i.d.b.v. tik ik 'm voor aan</div>
+</article>
+<article class="post" data-ts="20140725214924" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2014-07-25 21:49</span></div>
+  <div class="pb">Gaat nu denkelijk moeilijk worden. Over een uur gaat het los, en ik heb nog geen toko doorgekregen. Goed, ik snap, jullie zijn gewend aan mensen die mobiele telefoons hebben e.d. </div>
+</article>
+<article class="post" data-ts="20140725215257" id="p7">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#7 · 2014-07-25 21:52</span></div>
+  <div class="pb">Het is de wildeman. Dat gaat je lukken bode!</div>
+</article>
+<article class="post" data-ts="20140725215323" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2014-07-25 21:53</span></div>
+  <div class="pb">Wildeman over een uur! Wybren komt misschien ook nog!</div>
+</article>
+<article class="post" data-ts="20160402150854" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2016-04-02 15:08</span></div>
+  <div class="pb">Boys, vanavond biertje doen in haarlem, om de florumrevival te vieren?</div>
+</article>
+<article class="post" data-ts="20160402164952" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2016-04-02 16:49</span></div>
+  <div class="pb">Oei, klinkt aanlokkelijk, maar ik bier vanavond in 't Amsterdam-Noordse</div>
+</article>
+<article class="post" data-ts="20160402221152" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2016-04-02 22:11</span></div>
+  <div class="pb">Tik. 21.15u in brieljant</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flinty&#x27;s – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Flinty&#x27;s</h1>
+<p class="tm">3 posts · started 2006-10-12 13:57 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061012135700" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-10-12 13:57</span></div>
+  <div class="pb">Afgelopen week was ik door een oud studiegenoot (thans AIO) van mij gevraagd om hem en zijn band te komen bekijken. Tot mijn verbazing was het optreden in Haarlem in een tent waar ik nog nooit van gehoord had; <a href="http://www.flintys.nl/">Flinty's.</a><br>Mochten jullie je ooit in een nostalgische bui afvragen waar de geest van het Lange Heertje is heengewaait, dan kan ik jullie nu vertellen waar zij is neergestreken. Voor hen die -voor old times sake- zich weer even 18 willen wanen en zich willen mengen tussen de zoekende, recalcitrante jeugd om een goedkoop biertje te drinken, muziekje te luisteren, gratis te tafelvoetballen of in de halfpipe te knallen.<br><br>Daarentegen is er voor zitten in een beschaafd caf\é, meimeren over huizenprijzen, huwelijken en arbeidsrelaties onder het genot van een stukje geitenkaas en een potsertje ook veel te zeggen. Ik moet zaterdag wel werken, maar kan daarna best met liefhebbers een heel klein drankje drinken.<br></div>
+</article>
+<article class="post" data-ts="20061013131300" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-10-13 13:13</span></div>
+  <div class="pb">Die Flinty's is wel alleen op vrijdag en niet zo laat open zo te zien. <br><br>In De Flinty's is er elke vrijdagavond een kroeg. Deze is genaamd: 'De Flinty's Kroeg'. Van acht tot twaalf 's avonds kan je hier op normale avonden een drankje drinken, spelletjes als trictrac spelen en tafelvoetballen onder het genot van wat muziek, vari\ërend van Punk tot Reggae en van hip-hop tot elektronisch. </div>
+</article>
+<article class="post" data-ts="20061013160700" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-10-13 16:07</span></div>
+  <div class="pb">het is ook niet voor nix een jongeren centrum. Als je voor de grap bij links kijk zie je de lijst met de gebruikelijke maatschappelijke partners...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

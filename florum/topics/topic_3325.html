@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 3325 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 3325</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2014-04-18 04:46 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140418044647" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1&nbsp;·&nbsp;2014-04-18 04:46</span></div>
+  <div class="pb">Beter laat dan nooit: ik registreerde geen verbale panna van de MCH omdat hij het gewraakte woord keurig tussen aanhalingstekens plaatste. Ik zou eerder een verbale plie registreren. Maar, zoals me zelf al aanvoelde, de Baquille was niet te beroerd om je in een moment van verwarring door de benen te spelen. Geregistreerd!</div>
+</article>
+<article class="post" data-ts="20140419152313" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2&nbsp;·&nbsp;2014-04-19 15:23</span></div>
+  <div class="pb">Iedereen, mezelf incluis, werd een beetje afgeleid door <i>twee</i>, maar de VP van MCH zat 'm waarschijnlijk hierin: The middle class idyll is to live in <a href="https://www.google.nl/search?q=argentinie+oostelijke+handelskade&source=lnms&tbm=isch&sa=X&ei=315SU8CqBoSOO4KQgLAF&sqi=2&ved=0CAcQ_AUoAg&biw=1417&bih=675&dpr=0.9">a house which at least looks old</a></div>
+</article>
+<article class="post" data-ts="20140419152425" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3&nbsp;·&nbsp;2014-04-19 15:24</span></div>
+  <div class="pb"><a href="https://www.google.nl/search?q=argentinie+oostelijke+handelskade&source=lnms&tbm=isch&sa=X&ei=315SU8CqBoSOO4KQgLAF&sqi=2&ved=0CAcQ_AUoAg&biw=1417&bih=675&dpr=0.9">Link doet wat moeilijk, hopelijk nu beter</a></div>
+</article>
+<article class="post" data-ts="20140419152509" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4&nbsp;·&nbsp;2014-04-19 15:25</span></div>
+  <div class="pb">Lekker bezig blijven<a>https://www.google.nl/search?q=argentinie+oostelijke+handelskade&source=lnms&tbm=isch&sa=X&ei=315SU8CqBoSOO4KQgLAF&sqi=2&ved=0CAcQ_AUoAg&biw=1417&bih=675&dpr=0.9</a></div>
+</article>
+<article class="post" data-ts="20140419154229" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5&nbsp;·&nbsp;2014-04-19 15:42</span></div>
+  <div class="pb">@Oli4: Nu zie ik 'm pas. Subtiel en venijnig van de MCH. Ik heb überhaupt wel een beetje met je te doen. Jij had het natuurlijk gehad met de panna's van de Bigt en (als ik het mag zeggen) de bashings van mijzelf, en hoopte met de MCH een bondgenoot op het Florum binnen te halen. Echter, wat gebeurt er? Ondanks zijn taalachterstand heeft de MCH bijna onmiddellijk in de gaten hoe de kaarten op het Florum geschud zijn, en dat hij er meer bij te winnen heeft om jou ook te bashen. Wat hij dan ook onophoudelijk doet, waardoor jij je zo mogelijk nog eenzamer voelt.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

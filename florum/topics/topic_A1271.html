@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mitsh housewarming? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mitsh housewarming?</h1>
+<p class="tm">7 posts · started 2004-08-16 14:48 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040816144800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-08-16 14:48</span></div>
+  <div class="pb">Zijn er nog plannnen om in de nabije toekomst een paar drankjes te drinken in je nieuwe huisje, Michiel?<br>Eventueel kunnen we ook iets triviaals als de sluitingsceremonie nemen als excuus.<br></div>
+</article>
+<article class="post" data-ts="20040816161000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2004-08-16 16:10</span></div>
+  <div class="pb">Nou, Tijmen goed dat je erover begint..<br>Mijn nieuwe adres is:<br>Czaar Peterstraat 171-2<br>1018 PJ Amsterdam<br><br>Een Housewarming is niet zo een-twee-drie te verwachten aangezien ik tot 1 september hard met mijn scriptie bezig ben en verder omdat er nog niets in mijn huis is, ook geen elektriciteit bijvoorbeeld...<br>September wordt daarentegen natuurlijk 1 grote feestmaand met hopelijk een housewarming, een afstudeer en een verjaardagsfeest of een combinatie van al dat moois.</div>
+</article>
+<article class="post" data-ts="20040816164000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-08-16 16:40</span></div>
+  <div class="pb">geef anders een sloopfeest <i>voor</i>dat je je huisje inricht. Dan kunnen we daar drie dagen lang drinken, slapen kotsen en tv-kijken op de grond! Bikkelodeon!</div>
+</article>
+<article class="post" data-ts="20040816165500" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2004-08-16 16:55</span></div>
+  <div class="pb">moet ik natuurlijk wel kabel en elektriciteit hebben...</div>
+</article>
+<article class="post" data-ts="20040816171300" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-08-16 17:13</span></div>
+  <div class="pb">agregraat en antenne...of inhacken op de schotel van de marrokaanse onderbuurman?<br><br></div>
+</article>
+<article class="post" data-ts="20040816171400" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2004-08-16 17:14</span></div>
+  <div class="pb">anders kunnen we ons ook prima vermaken met op de muren trommelen en het tapijt onderzeiken.<br></div>
+</article>
+<article class="post" data-ts="20040817150200" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2004-08-17 15:02</span></div>
+  <div class="pb">Organiseert het buurthuis geen leuke activiteiten...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

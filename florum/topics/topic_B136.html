@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gehandicapt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">gehandicapt</h1>
+<p class="tm">12 posts · started 2002-08-07 00:16 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020807001600" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-08-07 00:16</span></div>
+  <div class="pb">hey misha, hoelang zit je nog in het gips, misschien kunnen we met jou wel aan het gras zitten tussen de rolstoelen bij de championsleaque met ajax. Oja veel beterschap natuurlijk!!</div>
+</article>
+<article class="post" data-ts="20020807121600" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-08-07 12:16</span></div>
+  <div class="pb">Tot 10 september nog, daarna revalideren voor een week ofzo. </div>
+</article>
+<article class="post" data-ts="20020808175200" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-08-08 17:52</span></div>
+  <div class="ps">een week</div><div class="pb">maar revalideren?????? heb je dan nu loopgips ofzo.. </div>
+</article>
+<article class="post" data-ts="20020808175200" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-08-08 17:52</span></div>
+  <div class="ps">een week</div><div class="pb">maar revalideren?????? heb je dan nu loopgips ofzo.. </div>
+</article>
+<article class="post" data-ts="20020808180500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2002-08-08 18:05</span></div>
+  <div class="pb">Nee, dat is dus het kutte, ik heb geen loopgips..omdat ik dus geen enkele steun om me voetje mag zetten. Die dokter redeneerde zo van ...dude als ik jou loopgips geef ga jij er proberen op te lopen...en dat is nu niet de bedoeling.....mannetje...onbelast houden zal jij je kuitbeentje BRAHAHAHAAHAHAHHAAHWWHWAHA!!!</div>
+</article>
+<article class="post" data-ts="20020809113100" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2002-08-09 11:31</span></div>
+  <div class="pb">onnavolgbaar, geen tien kilo gips die daar verandering in brengt</div>
+</article>
+<article class="post" data-ts="20020812171600" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-08-12 17:16</span></div>
+  <div class="pb">niet zeiken holy! Balle!</div>
+</article>
+<article class="post" data-ts="20020812203400" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2002-08-12 20:34</span></div>
+  <div class="pb">Dat waren nou precies mijn woorden tegen die overbetaalde chirurg-dude.</div>
+</article>
+<article class="post" data-ts="20020813103500" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2002-08-13 10:35</span></div>
+  <div class="pb">Misha,<br>wat is er waar van het gerucht dat jij Margreet (bij sommigen ook wel bekend als "Dikke Margreet") als persoonlijke verzorgster tijdens jouw revalidatie hebt ingehuurd?<br><br>Het lijkt me dat je dan wel weer snel de oude bent.</div>
+</article>
+<article class="post" data-ts="20020813171100" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2002-08-13 17:11</span></div>
+  <div class="pb">Vooralsnog moet ik een persoonlijke verzorgster ontberen. Margreet was even langsgekomen om cadeautjes te geven en thee te drinken met Didi en Jaap. Heel gezellig, zouden meer mensen moeten doen.</div>
+</article>
+<article class="post" data-ts="20020814100200" id="p11">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#11 · 2002-08-14 10:02</span></div>
+  <div class="pb">druk druk druk. Zit de hele week in Amsterdam normaal gesproken. Misschien vrijdag- of zaterdagavond?? Neem ik de vakantiekiekjes mee, gezellig.</div>
+</article>
+<article class="post" data-ts="20020814100300" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2002-08-14 10:03</span></div>
+  <div class="pb">Ik vind het wel mooi: de CSR op audi\ëntie in Huize Kuys aan de Zijlweg.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

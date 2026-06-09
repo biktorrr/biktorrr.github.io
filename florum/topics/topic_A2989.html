@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lichtpuntje in donkere tijden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lichtpuntje in donkere tijden</h1>
+<p class="tm">8 posts · started 2010-10-25 09:19 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101025091900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-10-25 09:19</span></div>
+  <div class="pb"><object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/-z4iw8Ppo1o?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/-z4iw8Ppo1o?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object></div>
+</article>
+<article class="post" data-ts="20101025093500" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-10-25 09:35</span></div>
+  <div class="pb">Ok, duurt te lang... Wordt het later nog heel leuk?<br></div>
+</article>
+<article class="post" data-ts="20101025133300" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-10-25 13:33</span></div>
+  <div class="pb">En dan nu een VROLIJKE NOOT!<br><br><img src="http://img838.imageshack.us/img838/3829/lindak.jpg" width="300"><br><br>Ok, wie 'em het eerst ziet!</div>
+</article>
+<article class="post" data-ts="20101025134100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2010-10-25 13:41</span></div>
+  <div class="pb">tik</div>
+</article>
+<article class="post" data-ts="20101025134200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2010-10-25 13:42</span></div>
+  <div class="pb">Tik + gniffel</div>
+</article>
+<article class="post" data-ts="20101025134600" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2010-10-25 13:46</span></div>
+  <div class="pb"><img src="http://img207.imageshack.us/img207/2779/linda2h.jpg"></div>
+</article>
+<article class="post" data-ts="20101025135000" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2010-10-25 13:50</span></div>
+  <div class="pb">hehe, flasback!</div>
+</article>
+<article class="post" data-ts="20101025144000" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2010-10-25 14:40</span></div>
+  <div class="pb">hehe<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

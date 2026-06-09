@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monsterverkoop NXS OOK VOOR DAMES! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Monsterverkoop NXS OOK VOOR DAMES!</h1>
+<p class="tm">3 posts · started 2005-05-13 14:51 by Lara</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050513145100" id="p1">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#1 · 2005-05-13 14:51</span></div>
+  <div class="pb">NO EXCESS & ITS NOIZE<br><br>MONSTERVERKOOP ZOMER 2005<br><br>NU OOK NO EXCESS DAMESCOLLECTIE!!!!<br><br>DONDERDAG 26 MEI<br>10:00 - 21:00<br><br>VRIJDAG 27 MEI<br>10:00 - 21:00<br><br>ZATERDAG 28 MEI<br>10:00 - 15:00<br><br>ADRES:<br>NO EXCESS B.V.<br>AIRPORT BUSINESS PARK<br>NEW YORKSTRAAT 70<br>1175 RD LIJNDEN<br><br>ROUTEBESCHRIJVING:<br><br>VANUIT UTRECHT<br>A2 RICHTING AMSTERDAM<br>A9 RICHTING HAARLEM/ALKMAAR<br>A9 AFSLAG S106 RICHTING LIJNDEN<br>BIJ ROTONDE LINKSAF, INDUSTRIETERREIN LIJNDEN<br>VOLGENDE ROTONDE RECHTDOOR<br>DIRECT 1E LINKS DAARNA MET DE BOCHT MEE NAAR RECHTS.<br>U ZIET ONS PAND NA 50 MTR AAN UW LINKERHAND LIGGEN.<br><br>VANUIT ROTTERDAM/DEN HAAG<br>A4 RICHTING AMSTERDAM<br>AFSLAG A9 RICHTING HAARLEM/ALKMAAR<br>A9 AFSLAG S106 RICHTING LIJNDEN<br>BIJ ROTONDE LINKSAF, INDUSTRIETERREIN LIJNDEN<br>VOLGENDE ROTONDE RECHTDOOR<br>DIRECT 1E LINKS DAARNA MET DE BOCHT MEE NAAR RECHTS.<br>U ZIET ONS PAND NA 50 MTR AAN UW LINKERHAND LIGGEN.<br><br>VANUIT AMSTERDAM<br>A10 RICHTING DEN HAAG. DEZE GAAT<br>OVER IN DE A4 WAARNA JE DE AFSLAG A9 RICHTING<br>ALKMAAR/HAARLEM NEEMT.<br>NA 1500 METER NEEMT U DE AFSLAG S106 RICHTING LIJNDEN<br>BIJ ROTONDE LINKSAF, INDUSTRIETERREIN LIJNDEN<br>VOLGENDE ROTONDE RECHTDOOR<br>DIRECT 1E LINKS DAARNA MET DE BOCHT MEE NAAR RECHTS.<br>U ZIET ONS PAND NA 50 MTR AAN UW LINKERHAND LIGGEN.</div>
+</article>
+<article class="post" data-ts="20050513165500" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2005-05-13 16:55</span></div>
+  <div class="ps">heb je aandelen NXS?</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20050513172700" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2005-05-13 17:27</span></div>
+  <div class="pb">Ha nou dat nog net niet hihi, nee het is mijn 'oude'stage bedrijf, maar aangezien Tim en Misha wel eens zijn wezen shoppen bij de uitverkoop, misschien willen ze weer gaan (als ze zelf niet ook al een mailtje erover hebben ontvangen)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

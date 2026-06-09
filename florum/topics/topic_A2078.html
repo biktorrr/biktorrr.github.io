@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen kijken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen kijken?</h1>
+<p class="tm">5 posts · started 2007-06-23 10:51 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070623105100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-06-23 10:51</span></div>
+  <div class="pb">Jong Oranje staat in de finale tegen de racistische Serviers. Leuk om met z'n allen te kijken dusjes.</div>
+</article>
+<article class="post" data-ts="20070623111000" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2007-06-23 11:10</span></div>
+  <div class="pb">Tijmen wil wel bij Vic komen kijken, of anders bij Joost</div>
+</article>
+<article class="post" data-ts="20070623140400" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-06-23 14:04</span></div>
+  <div class="pb">Nou Merlijn, het moge duidelijk zijn. Je bent wel van harte welkom in Den Haag hoor.</div>
+</article>
+<article class="post" data-ts="20070623142500" id="p4">
+  <div class="ph"><span class="pa">Jeannine</span><span class="pm">#4 · 2007-06-23 14:25</span></div>
+  <div class="pb">Joost mag ook wel bij Victor gaan kijken</div>
+</article>
+<article class="post" data-ts="20070623150500" id="p5">
+  <div class="ph"><span class="pa">Lydia</span><span class="pm">#5 · 2007-06-23 15:05</span></div>
+  <div class="pb">Wordt er nog ergens gezellig gegeten met z'n allen? Merlijn moet nodig weer wat vitamines binnen krijgen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mooie emails – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mooie emails</h1>
+<p class="tm">3 posts · started 2006-09-24 21:20 by Jazz</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060924212000" id="p1">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#1 · 2006-09-24 21:20</span></div>
+  <div class="pb">ik heb deze week een computerkast op marktplaats gezet (gratis). Vervolgens ben ik getrakteerd op onderstaande pareltjes. Vooral de laatste is prachtig.<br><br><hr><br> <br>Hallo <br><br>Zou het wat zijn voor me kinderen <br><br>kunnen ze er spelletjes op doen ??  <br><hr><br>REACTIE<br>Beste M, <br><br>Het is geen compleet werkende pc. Er moet nog een harde schijf in en dan zelf installeren. <br><hr><br><br>Dat begrijp ik <br>dank U voor U mededeling <br>maar heeft U wat meer gegevens ?? <br>want ja de spelletjes vragen toch wel wat van een pc <br><br>verneem graag van U <br><hr><br>REACTIE<br>De pc is een jaar of 5 oud en heeft volgens mij iets van 256 mb geheugen, verder kan ik er weinig over vertellen. U mag hem gratis in Haarlem afhalen. <br><hr><br>REACTIE<br>Dit weekend zou goed uitkomen, wellicht kunt u mij even bellen op 06-xxxxxxxx<br><hr><br>me beltegoed is ff op <br>dus als we het afkunnen per mail drukt de kosten <br>ik woon zelf ook te Haarlem <br>dus mailt U maar waar en wanneer het U uitkomt kijk ik of iki misbaar ben voor me kinderen<br><hr><br>De computer is helaas zojuist opgehaald door iemand anders. <br><hr><br>Oh lekker dan <br>ik vraag waar en wanneer en ben weg want moet boodschappe doen <br>ik kom terug en lees de mail en reageer terug <br>en krijg hij is al opgehaald <br>kon U U adress wel aan die persoon geven ?? <br>maar het zal wel allemaal <br><br>bedankt voor niets <br><br>Prettig weekend <br><br></div>
+</article>
+<article class="post" data-ts="20060925094400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2006-09-25 09:44</span></div>
+  <div class="pb">Hahaha. Wel lullig van jou dat je die taalfilosoof met een kluitje het riet in stuurt.<br><br>Het zal allemaal wel.</div>
+</article>
+<article class="post" data-ts="20060925111300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-09-25 11:13</span></div>
+  <div class="pb">haha, <br><br>lekker bedankt voor niets jazzmaster</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

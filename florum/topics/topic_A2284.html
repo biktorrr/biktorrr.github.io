@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>super wednesday in  estudio estadio – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">super wednesday in  estudio estadio</h1>
+<p class="tm">5 posts · started 2008-01-30 11:43 by joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080130114300" id="p1">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#1 · 2008-01-30 11:43</span></div>
+  <div class="pb">Boys,<br><br>vanavond super wednesday in  estudio estadio. Ajax-psc en Feijnoord-AZ.<br><br></div>
+</article>
+<article class="post" data-ts="20080130120000" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2008-01-30 12:00</span></div>
+  <div class="pb">Ja, goed idee. Ik ga alleen al met Mitch eindelijk weer eens hardlopen. Het mag toch niet gebeuren dat onze buiken die van Alexa in gaan halen. <!--62.41.69.18--></div>
+</article>
+<article class="post" data-ts="20080130134900" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2008-01-30 13:49</span></div>
+  <div class="pb">wilde je net gaan mailen. Ik ben zo rond 20:20 bij je huis. Pot vangt om 20:45 aan.<br><!--193.173.46.126--></div>
+</article>
+<article class="post" data-ts="20080130141700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-01-30 14:17</span></div>
+  <div class="pb">Voor mij is het een Woenselse woensdag<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080130150300" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-01-30 15:03</span></div>
+  <div class="pb">klinkt wel vrolijk. Ik schuif misschien later ook aan.<!--146.50.23.35--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Introduce Gezocht - 26 Mei – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Introduce Gezocht - 26 Mei</h1>
+<p class="tm">4 posts · started 2007-05-11 15:01 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070511150100" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2007-05-11 15:01</span></div>
+  <div class="pb">Hallotjes, ik zoek nog \é\én dispensant om mee te doen aan een ING voetbaltournooi op zaterdag 26 mei in Harderwijk. Er wordt gespeeld met 11 man op een groot veld met helften van 12 minuten. Mocht je interesse hebben dan hoor ik het graag. Andere collega's zijn ook op zoek dus het kan zijn dat de plek al vergeven is maar dat post ik dan wel hier.<br><br><B>Bericht</B><br>Ook dit jaar zullen op de velden van VVOG in Harderwijk teams van ING-medewerkers strijden om de ING voetbalbokaal. Wederom zijn we te gast bij VVOG, de gastvrijheid van de Veluwenaren is groot. Met veel plezier ontvangen zij nu al een paar jaar de ING-afvaardiging. <br>Alle medewerkers van ING kunnen zich met een elftal veldvoetballers inschrijven.<br><br><i>Het toernooi</i><br>Op het toernooi gelden veldvoetbalregels van de KNVB, en er zijn offici\ële scheidsrechters. Er wordt in poules gespeeld en de wedstrijden duren 2 x 12 minuten.<br>U kunt zich alleen per team inschrijven, en ieder team zorgt voor eigen kleding. Ook dient elk team een teamleider aan te stellen en te zorgen voor een grensrechter bij de te spelen wedstrijden.<br><br><i>Programma</i><br>09.00 uur  09.30 uur Ontvangst van de teams<br>10.00 uur  17.15 uur Toernooi <br>15.30 uur  18.30 uur Afsluitend buffet en prijsuitreiking<br><br><i>Deelname en kosten</i><br>Inschrijving voor het ING Voetbaltoernooi staat open voor alle (oud-) medewerkers van ING.<br>U kunt zich alleen per team inschrijven.<br>Een team bestaat uit ING-medewerkers, aangevuld met maximaal 4 introduc\és (maximaal 15 teamleden in totaal). <br><br>De kosten voor deelname aan het voetbaltoernooi zijn  10,00 per teamspeler. Voor elke supporter die ook van de faciliteiten (zoals hieronder vermeld) gebruik wenst te maken, wordt  12,50 in rekening gebracht.<br><br>Bij de eigen bijdrage is inbegrepen:<br>- deelname aan het toernooi<br>- 2 consumpties per persoon<br>- lunch<br>- afsluitend buffet en dessert<br>Overige consumpties zijn voor eigen rekening. Bij afzeggingen in de laatste 2 weken voor het toernooi volgt geen restitutie van de eigen bijdrage.<br><br><i>Inschrijving</i><br>Degene die zich tot teamleider opwerpt, vult het inschrijfformulier in en vermeldt de teamleden en het aantal huisgenoten/supporters dat met het team zal meekomen. Per mail zal later aan de teamleiders een opgave gevraagd worden met de namen en personeelsnummers van de spelers.<br>Om in te schrijven voor dit evenement vult u het aanmeldingsformulier in onderaan deze site.<br><br>De teamleiders krijgen een week voor het toernooi gedetailleerde informatie, zoals de gang van zaken bij het toernooi en de routebeschrijving. Wij verzoeken hen om de teamleden op de hoogte te houden.<br></div>
+</article>
+<article class="post" data-ts="20070511205300" id="p2">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#2 · 2007-05-11 20:53</span></div>
+  <div class="pb">lijkt me leuk</div>
+</article>
+<article class="post" data-ts="20070514081200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-05-14 08:12</span></div>
+  <div class="pb">Hey Joost, super dat je mee wil doen. Ik check dinsdag even wat en hoe precies (ook qua vervoer) en dan houd ik je verder op de hoogte. </div>
+</article>
+<article class="post" data-ts="20070515135500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-05-15 13:55</span></div>
+  <div class="pb">Leuk feit: we spelen samen met een oom van Dirk Kuijt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

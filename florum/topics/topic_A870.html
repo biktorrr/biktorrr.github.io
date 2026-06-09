@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPITSENSPEL GELANCEERD – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SPITSENSPEL GELANCEERD</h1>
+<p class="tm">1 post · started 2003-08-13 16:18 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030813161800" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2003-08-13 16:18</span></div>
+  <div class="pb">SPITSENSPEL GELANCEERD - koop en verkoop spelers op de transfermarkt <br> <br>Ajax Netwerk is een samenwerking aangegaan met het Spitsenspel (voorheen <br>Transferspel). In dit spel kruip je in de huid van een voetbalmakelaar <br>en kun je winst maken door spelers te kopen en verkopen op de <br>transfermarkt. Bij deelname krijg je 100 miljoen euro welke je kunt <br>besteden aan de aankoop van spelers uit de eredivisie. Indien spelers goed <br>presteren tijdens competitiewedstrijden worden de spelers niet alleen meer <br>waard, ook leveren ze dan bonuspunten op.<br> <br>Voor de winnaars zijn zeer aantrekkelijke geldprijzen beschikbaar. De <br>totale prijzenpot kan oplopen tot 9.000 euro, de hoofdprijs kan oplopen tot <br>maar liefst 3.600 euro! Tijdens de registratieprocedure zal je gevraagd <br>worden om je deelname actief te maken door het \é\énmalig sturen van een sms <br>bericht. De kosten daarvan bedragen slechts 0,9 euro.<br> <br>Op het moment dat je je registreert kun je je aanmelden voor de subleague <br>van Ajax Netwerk, zodat je tegen de andere leden van Ajax Netwerk uit kunt <br>komen. Je doet dan nog steeds mee voor de grote prijzen. Op Ajax Netwerk <br>zullen we aandacht besteden aan de ranglijst van de sub-league van Ajax<br>Netwerk. Het wachtwoord voor de subleague Ajax Netwerk is 'ajax'. Speel<br>mee met je gebruikersnaam van Ajax Netwerk zodat we je kunnen herkennen. <br><br>Meld je nu aan voor het Spitsenspel:<br>http://ajax.netwerk.to/spitsenspel/<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zuipen vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zuipen vanavond</h1>
+<p class="tm">10 posts · started 2007-06-15 11:23 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070615112300" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2007-06-15 11:23</span></div>
+  <div class="pb">Ik wil de discussie over poker iets uitbreiden. Ik ben zo en zo groot voorstander van hard zuipen vanavond (niet om het een of ander). Als ik daarbij ga pokeren, wordt de kans inderdaad groot dat Misha me leegklopt. Dus optie is dat we dan maar niet gaan pokeren, of allemaal verplicht hard zuipen tijdens het pokeren. Maar goed de vraag is iig waar zien wel elkaar om een uurtje of zes?</div>
+</article>
+<article class="post" data-ts="20070615113200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-06-15 11:32</span></div>
+  <div class="pb">Goed plan, Co. Ik stel de hoofdstad voor.</div>
+</article>
+<article class="post" data-ts="20070615121900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-06-15 12:19</span></div>
+  <div class="pb">Wat een gemekker allemaal, we drinken toch altijd bier tijdens het poker? Volgens mij zijn hullie gewoon te lui om naar Haarlem te komen. Maar goed, met deze attitude zal er inderdaad wel niet gepokerd worden. <br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20070615133900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-06-15 13:39</span></div>
+  <div class="pb">Ik stel voor dat wij elkaar zien om 18u in het hol van de rat om dan eerst te gaan pokoren (zuipen vrij) en als ik dan genoeg geld heb om de avond te bekostigen het op een zuipen te zetten. Als SK even bier haalt vooraf dan krijgt ie dat later van ons terug!</div>
+</article>
+<article class="post" data-ts="20070615134900" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-06-15 13:49</span></div>
+  <div class="pb">geen slecht idee, als Cootje er mee instemt en er een 4e pokeraar aanschuift (Merrel?/Poep en poephooghe)</div>
+</article>
+<article class="post" data-ts="20070615135400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2007-06-15 13:54</span></div>
+  <div class="pb">Het alternatief is eerst zuipen en dan wachten op het geld van Jossit en Franky.</div>
+</article>
+<article class="post" data-ts="20070615144200" id="p7">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#7 · 2007-06-15 14:42</span></div>
+  <div class="pb">Geld van mij en Jossit?<br>No way, ik win met poker! <br>En ik ga biertjes drinken vanavond!</div>
+</article>
+<article class="post" data-ts="20070615165100" id="p8">
+  <div class="ph"><span class="pa">merlijn</span><span class="pm">#8 · 2007-06-15 16:51</span></div>
+  <div class="pb">ik kom ook, merlijn zijnde<br></div>
+</article>
+<article class="post" data-ts="20070615170000" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2007-06-15 17:00</span></div>
+  <div class="pb">ok ik heb net CO gesproken, en we zijn om 18u welkom aan de eerste jan van der heijden straat<br><br>Merlijn, Holy K. en ik zijn daar dan dus. Tot dan dan.</div>
+</article>
+<article class="post" data-ts="20070615171500" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2007-06-15 17:15</span></div>
+  <div class="pb">en Co heeft ook fiches neem ik aan?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

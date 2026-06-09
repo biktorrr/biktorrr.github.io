@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Celebrity Spotting – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Celebrity Spotting</h1>
+<p class="tm">4 posts · started 2006-09-25 11:22 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060925112200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-09-25 11:22</span></div>
+  <div class="pb">Wie: stedelijk gym. leraren: Schuurman, Hennink, Baronner, Jansen, Hooft, Gert de concierge, Sol en zo nog wat die na de zondvloed van '98 kwamen. Clara van Dijk.<br>Waar: Ma Brown's Restaurant<br>wanneer: zondag middag.<br>Besoindreheden: Haarlem is een gehucht. Een exwerknemer van MaBrown's hield een babyshower met z'n vrouw, die aardsrijkskunde geeft op het stedelijk. <br>Juffie Sol wilde me zoenen, alwin en peter wilden leuk babbelen. De rest wist niet dat ik bestond, inclusief 2 ex-klassedocenten (hennink en jansen). Pijnlijk afClara is een vriendin van de aardrijkskunde juffie en was daarom aanwezig.Voor hen die het boeit; ze is nu strafpleiter in Maastricht. Jullie moesten de groeten hebben, ze was vooral gecharmeerd te horen dat Mitjell een mooie planologische baan bij de gemeente had...<br>een update van haar ex-stedelijke vriendinnetjes (waaronder een bekend chelliste) zal ik hier niet posten.</div>
+</article>
+<article class="post" data-ts="20060925112500" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-09-25 11:25</span></div>
+  <div class="pb"><i>Pijnlijk af</i>Clara is een vriendin van de aardrijkskunde juffie en was daarom aanwezig<br>weggevallen/edit: jammergenoeg niet aanwezig, mevr. Sevenster.<br>:)<br></div>
+</article>
+<article class="post" data-ts="20060925133100" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-09-25 13:31</span></div>
+  <div class="pb">Mooie spotting bij Pieck: De manser.<br><br>Bijzonderheden: schijnt definitief gestopt te zijn met zijn studie.<br><br></div>
+</article>
+<article class="post" data-ts="20060925150300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-25 15:03</span></div>
+  <div class="pb">spotting:<br><br>Taasje M.<br>hij had een vrolijke smile op zijn gezicht...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

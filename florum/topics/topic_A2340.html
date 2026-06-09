@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ballenkijken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ballenkijken?</h1>
+<p class="tm">9 posts · started 2008-03-26 13:30 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080326133000" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-03-26 13:30</span></div>
+  <div class="pb">gaan we vanavond nog leuk ergens ballen kijken (ten noorden van de rivieren?)</div>
+</article>
+<article class="post" data-ts="20080327103400" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2008-03-27 10:34</span></div>
+  <div class="pb">Ik heb drie hele boeiende minuten gezien, met een schitterend doelpunt van Heitinga.<br><br>Gerelateerde quiz vraag, in welk restaurant in Haarlem heeft de jazzmaster twee avonden op een rij gegeten deze week?<!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080327114900" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2008-03-27 11:49</span></div>
+  <div class="pb">ik gok op dema snacks<!--146.50.20.43--></div>
+</article>
+<article class="post" data-ts="20080327115900" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-03-27 11:59</span></div>
+  <div class="pb">Restaurant "Chez Jeannine"?<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20080327190900" id="p5">
+  <div class="ph"><span class="pa">crit</span><span class="pm">#5 · 2008-03-27 19:09</span></div>
+  <div class="pb">Zeg dan Joost, het wordt vervelend.<!--80.127.90.16--></div>
+</article>
+<article class="post" data-ts="20080328020700" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2008-03-28 02:07</span></div>
+  <div class="pb">Ja Zjoste, waar hing je in godesnaam uit?<!--82.123.27.36--></div>
+</article>
+<article class="post" data-ts="20080328081400" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2008-03-28 08:14</span></div>
+  <div class="pb">De chinese muur? Lekker dichtbij, maar toch er even uit.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080328083200" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-03-28 08:32</span></div>
+  <div class="pb">herstel, drie avonden op een rij inmiddels. <br><br>Het goede antwoord: het restaurant van een bepaalde zweedse meubelgigant waar ze ook keukens verkopen.<!--80.127.126.150--></div>
+</article>
+<article class="post" data-ts="20080328083500" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2008-03-28 08:35</span></div>
+  <div class="pb">gehaktbullar?<!--132.229.223.225--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

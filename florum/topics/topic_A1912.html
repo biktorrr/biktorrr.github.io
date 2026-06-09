@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iPod – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">iPod</h1>
+<p class="tm">6 posts · started 2006-11-18 13:02 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061118130200" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-11-18 13:02</span></div>
+  <div class="pb">Uit de VS kom je niet iets cooler terug dan je erheen ging. E\én naam is voldoende: Clara van Dijk. <br>Nu is mij dat ook overkomen: ik ben ineens lid van de iPod-generatie geworden met een zwaar terecht apparaatje waarop ik mijn hele cd-collectie zo'n tien keer kwijt kan en dan ook nog ruimte over heb voor zowel pod- als vodcasts (oh me). <br>Nu vroeg ik mij af - op internet vind ik het niet echt - of er Floraboys zijn die weten hoe je nummers van de ene iPod via de iTunes-bibliotheek op een andere knalt. Ik heb het idee dat ik alleen de ene door de andere kan vervangen, niet aanvullen.</div>
+</article>
+<article class="post" data-ts="20061118130200" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-11-18 13:02</span></div>
+  <div class="pb">Net iets cooler, bedoel ik</div>
+</article>
+<article class="post" data-ts="20061118130300" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-11-18 13:03</span></div>
+  <div class="pb">dat ik een mooie voor Timmie,Misha of een van de PHK-vriendjes..die zitten allemaal dik in de Apple producten.<br></div>
+</article>
+<article class="post" data-ts="20061118133800" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2006-11-18 13:38</span></div>
+  <div class="pb">Ik zou een aparte itunes library aanhouden voor je ipod. Dus een library voor de muziek op je harde schijf en een library voor je muziek op de ipod. Verder raad ik aan om automatisch synchroniseren uit te zetten. Apple heeft namelijk wel zoiets ingebouwd dat je niet makkelijk al je muziek van een ipod naar een andere kunt kopieren. De ipod is door het synchroniseren in principe beperkt tot 1 pc, dit moet je dus handmatig omzeilen.</div>
+</article>
+<article class="post" data-ts="20061118161400" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2006-11-18 16:14</span></div>
+  <div class="pb">je kunt dit alles vermijden door inderdaad handmatig te updaten ipv automatisch updaten (staat wel ergens in je preferences)  van de ene ipod naar de computer naar de andere.. <br><br>Ik gebruik namelijk 2 computers voor 1 iPod en dat is hetzelfde principe. <br><br>Dat lukt vrij gemakkelijk. Het duurt alleen lang als de hoeveelheid wat groot is.</div>
+</article>
+<article class="post" data-ts="20061120105900" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2006-11-20 10:59</span></div>
+  <div class="pb">Merci, ik ga het proberen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S?go - Sarko – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">S?go - Sarko</h1>
+<p class="tm">4 posts · started 2007-05-03 11:12 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070503111200" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2007-05-03 11:12</span></div>
+  <div class="pb">Geen moeilijke foto's dit keer op mijn blog, maar een quiz waaraan alle boys 'n girls mee kunnen doen en mooie prijzen kunnen winnen. Het enige wat je hoeft te doen is de winnaar van de Franse verkiezingen te voorspellen (er zijn nog 2 kanshebbers) en het juiste percentage. </div>
+</article>
+<article class="post" data-ts="20070503132600" id="p2">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#2 · 2007-05-03 13:26</span></div>
+  <div class="pb">ingevuld!<br><br>ben trouwens de enige die volgens mij nog gelooft in de overwinning van Seglene Royal</div>
+</article>
+<article class="post" data-ts="20070503151300" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2007-05-03 15:13</span></div>
+  <div class="pb">Ik vermoed dat Ca de hoop op een feministische landslide nog niet heeft opgegeven, maar heb daar inderdaad nog geen sporen van gezien op m'n weblog.</div>
+</article>
+<article class="post" data-ts="20070504094000" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2007-05-04 09:40</span></div>
+  <div class="pb">Ik heb een raadseltje voor jullie: Je heet Bayrou, je zegt geen voorkeur te hebben voor 1 van de 2 presidentskandidaten. Ook zeg je, wanneer je zaterdag gaat stemmen, dit niet op kandidaat Sarkozy zal zijn. Op wie stem je dan?<br>De winnaar verdient een geheel onverzorgde reis naar clichy-sur-bois.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaterdag de 30e: Borgia? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaterdag de 30e: Borgia?</h1>
+<p class="tm">6 posts · started 2004-10-26 23:50 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041026235000" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-10-26 23:50</span></div>
+  <div class="pb">Met dank aan tegoedbonnen van mijn werk heb ik vandaag een nieuw 'bordspel' aangeschaft: Borgia. Het leek me leuk om dit met een aantal mensen uit te proberen aanstaande zaterdag (de 30e), nadat al mijn familie nog eens is langsgekomen voor mij en mijn vader.<br>Als Jurriaan iets op die datum gepland wil hebben dan vervalt dit alles uiteraard.</div>
+</article>
+<article class="post" data-ts="20041027102700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2004-10-27 10:27</span></div>
+  <div class="pb">Ik ben op het Bokbierfestival en heb daarna nog een feestje van een collega.</div>
+</article>
+<article class="post" data-ts="20041027124000" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2004-10-27 12:40</span></div>
+  <div class="pb">Feestje van een collega?......<br></div>
+</article>
+<article class="post" data-ts="20041027145300" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2004-10-27 14:53</span></div>
+  <div class="pb">Ik ben zelf allerlei spellen aan het uitproberen op:<br>www.spellenspektakel.nl</div>
+</article>
+<article class="post" data-ts="20041027165500" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2004-10-27 16:55</span></div>
+  <div class="pb">ik geef t een jeyt</div>
+</article>
+<article class="post" data-ts="20041028083200" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2004-10-28 08:32</span></div>
+  <div class="pb">Lijkt me ook wel gezellig.... Waar was het ?? O bij jou Tijmen! Nou gezellig ik zal er zijn... hihihihi</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

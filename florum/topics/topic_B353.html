@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 18/19 okt. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 18/19 okt.</h1>
+<p class="tm">6 posts · started 2003-10-16 13:50 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031016135000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-10-16 13:50</span></div>
+  <div class="pb">Komt allen ballen: ik heb al in geen maand meer gras geroken en  kom per seconde een halve kilo aan. <br><br>zajazonee</div>
+</article>
+<article class="post" data-ts="20031016135500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-10-16 13:55</span></div>
+  <div class="pb">zajazonee</div>
+</article>
+<article class="post" data-ts="20031016183000" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2003-10-16 18:30</span></div>
+  <div class="pb">za nee<br>zo nee</div>
+</article>
+<article class="post" data-ts="20031017134900" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-10-17 13:49</span></div>
+  <div class="pb">za nee<br>zo ja</div>
+</article>
+<article class="post" data-ts="20031018093000" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-10-18 09:30</span></div>
+  <div class="pb">za nee <br>zo nee</div>
+</article>
+<article class="post" data-ts="20031018154400" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2003-10-18 15:44</span></div>
+  <div class="pb">Ik was iets te voorbarig denk ik, Ik wil eerst dinsdag afwachten als ik als opkomende keepert toch iets minder hoef te rennen en te trappen als op het park. <br>Helaas zal ik daarom moeten zeggen ook<br>zo nee<br><br>Mocht het nou zo zijn dat er 7 mensen zijn, dan kan ik me evt. misschien wel als laatste man/kieper (uit de tijd dat Michiel ook zoiets deed) komen. Ik wil graag, maar liever nu rustig en dan niet weer alles 'stuk', dan te gretig :)<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Das Phantoom – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Das Phantoom</h1>
+<p class="tm">2 posts · started 2004-10-13 11:56 by Jossyt citeerd</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041013115600" id="p1">
+  <div class="ph"><span class="pa">Jossyt citeerd</span><span class="pm">#1 · 2004-10-13 11:56</span></div>
+  <div class="pb">Je hebt dus wel degelijk nog echte spitsen. Zoals Makaay, slim vooral. Of het nu om Tenerife, Deportivo La Coruña of Bayern München ging; altijd zocht hij clubs uit die op het veld graag de ruimte vóór zich hebben. Dan wordt Makaay r\ápido y letal, zoals hij werd neergezet in de Spaanse lyriek. Snel en dodelijk. Oh ja, over de voetballer zonder make-up is mooie po\ëzie geschreven. Torminator noemen ze hem in Duitsland al. Omdat-ie de hitman van het voetbal is. Altijd en overal is het raak, wekelijks dansen de netten met hem mee.<br><br>Alleen niet in Oranje, oh wonder, waar slechts veertien keer een bondscoach het aandurfde hem in de basis op te nemen. Deze aanvaller is niet geboetseerd voor het combinatievoetbal in de kleine ruimte dat het Nederlands elftal wil spelen, zo heet het. En hij schijnt wat lui te zijn op het trainingsveld. Nou en? De woedende scoringsdrift van de spits ontstijgt elk systeem, elk tactisch bedenksel en elk voorbehoud. Makaay maakt in de negentigste minuut 2-2 tegen Borussia Dortmund, Makaay maakt in blessuretijd van het bekerduel met VfL Osnabrück de 3-2, Makaay dompelt Ajax in crisis... Ofwel, een voetballer vertelt zijn levensverhaal met zijn voeten.<br></div>
+</article>
+<article class="post" data-ts="20041013115800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-10-13 11:58</span></div>
+  <div class="pb">net 3 seconden te laat ontdek ik stomme fout in bovenstaand topic. Excuses.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bernard DÃ©licieux – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bernard DÃ©licieux</h1>
+<p class="tm">11 posts · started 2010-03-08 14:36 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100308143600" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2010-03-08 14:36</span></div>
+  <div class="pb">Ik wilde dit toch even met jullie delen.<br><br>http://fr.wikipedia.org/wiki/Bernard_D%C3%A9licieux</div>
+</article>
+<article class="post" data-ts="20100308163500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2010-03-08 16:35</span></div>
+  <div class="pb">ha een protestant, vanaf de VU: I approve <a href="http://translate.google.nl/translate?hl=nl&sl=fr&tl=nl&u=http%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FBernard_D%25C3%25A9licieux">NL vertaling</a></div>
+</article>
+<article class="post" data-ts="20100309091500" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2010-03-09 09:15</span></div>
+  <div class="pb">Een beetje smerig dat je jezelf hebt gegoogled Bernard. </div>
+</article>
+<article class="post" data-ts="20100309132100" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2010-03-09 13:21</span></div>
+  <div class="pb">Ik geloof dat ik je even niet volg, Viktie. Toen Luther zijn stellinkjes tegen de kerk spijkerde lag dhr. Delicieux al enige eeuwen onder de zoden. </div>
+</article>
+<article class="post" data-ts="20100309140600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-03-09 14:06</span></div>
+  <div class="pb">'avant la lettre' bedoelde Vikkie denkwetelijk.<br></div>
+</article>
+<article class="post" data-ts="20100310094400" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2010-03-10 09:44</span></div>
+  <div class="pb">Denkzekerwetelijk</div>
+</article>
+<article class="post" data-ts="20100310173500" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2010-03-10 17:35</span></div>
+  <div class="pb">wel een on-succesvolle protestant dus..</div>
+</article>
+<article class="post" data-ts="20100310174400" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2010-03-10 17:44</span></div>
+  <div class="pb">Ik zie ´m (mezelf) niet zozeer als een kerkhervormer, maar eerder als een mensenrechtenactivist. <br><br>Overigens merk ik wel dat ik me bij de voornaam ´Bernard´ (Frans uitgesproken) veel meer senang voel dan bij de voornaam ´Berend´. Misschien dat ik wel de eerste Boy word die z´n naam officieel laat veranderen.</div>
+</article>
+<article class="post" data-ts="20180503173000" id="p9">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#9 · 2018-05-03 17:30</span></div>
+  <div class="ps">PH</div><div class="pb">Ik geloof helegaar niet dat Macron <a href ="https://www.ad.nl/buitenland/franse-president-macron-complimenteert-australische-collega-met-zijn-lekkere-vrouw~a9efd2d6/" target="bodelicieux">een foutje maakte</a>. Keiharde referentie aan die boys, en \é\én met name! Beff</div>
+</article>
+<article class="post" data-ts="20180504000221" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2018-05-04 00:02</span></div>
+  <div class="pb">Dat was deze boy dus!</div>
+</article>
+<article class="post" data-ts="20180507091544" id="p11">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#11 · 2018-05-07 09:15</span></div>
+  <div class="pb">Mijn dank, PH, een belangwekkende bijdrage. Cruciaal is dat 'delicieux' te vertalen is als 'lekker' wanneer het wordt betrokken op bv. een dampend bord erwtensoep met rookworst of een tube Droste-flikken, maar dat het in geval van een persoon toch eerder met 'verfijnd', 'geraffineerd', of 'met klasse' vertaald dient te worden, en dat, kortom, de ranzige associaties die sommige Boys, crypto-nichten dat het zijn, bij mijn bijnaam hebben, misplaatst zijn. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

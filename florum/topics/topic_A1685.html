@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quantum Maior – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Quantum Maior</h1>
+<p class="tm">10 posts · started 2006-02-05 23:19 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060205231900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2006-02-05 23:19</span></div>
+  <div class="pb">Tijdens Feijenoord - Ajax waren Vic, Merrel en ik in de studio. Daar gebeurde iets ongelofelijks. <br><br>10 minuten na rust kwam Maior namelijk binnen, en dan niet de Maior van nu, maar eentje uit 2026 (en dus 20 jaar ouder). Hij zag er gezond uit en had een kind van een jaar of 6 bij zich. <br><br>Ons herkende hij natuurlijk niet, maar wij hem gelukkig wel, Vic heeft nog een foto geprobeerd te maken. Maar zoals alle Quantum fenomenen was hij zeer lastig op de kiek te krijgen. Wellicht kan Vic nog wat helderheid proberen te photoshoppen. Het was namelijke serieyoussouf een ongelofelijk moment. 15 minuten later kon Merrel nog steeds alleen maar "MMmmmmmaaaaiioooor" over z'n lippen krijgen.<br><br></div>
+</article>
+<article class="post" data-ts="20060205232000" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2006-02-05 23:20</span></div>
+  <div class="pb">Nog meer goed nieuws. Over 2 weken staan de cupfighters naast niveanazi, nu ook met quantum maior bovenaan bij Google. Gefeliciteerd boys.</div>
+</article>
+<article class="post" data-ts="20060206093200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-02-06 09:32</span></div>
+  <div class="pb">zo terecht was de QM.</div>
+</article>
+<article class="post" data-ts="20060206135000" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2006-02-06 13:50</span></div>
+  <div class="pb">Jullie hebben je toch niet teveel laten afleiden he door deze figuur? <br>De tweede helft was namelijk zeer de moeite waard! </div>
+</article>
+<article class="post" data-ts="20060206185100" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2006-02-06 18:51</span></div>
+  <div class="pb">Klopt, dankzij QM kan ik me alleen de eerste 40 minuten herinneren <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br><br></div>
+</article>
+<article class="post" data-ts="20060209110600" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2006-02-09 11:06</span></div>
+  <div class="pb">quantum fenomenen zijn prima op de kiek te nemen (bijvoorbeeld een bose einstein condensaat). Overigens lijkt mij tijdreizen meer iets voor superstring theorie.</div>
+</article>
+<article class="post" data-ts="20060209111100" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-02-09 11:11</span></div>
+  <div class="pb">d's dussnie waar. ALs je feitelijk Quantum Peruanen kan hebben dan zijn Quantum Maior's niet uitgesloten, vraag maar aan Vik.<br>AL moet ik toegeven dat een SuperstringMaior ook niet gek is.</div>
+</article>
+<article class="post" data-ts="20060210223500" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2006-02-10 22:35</span></div>
+  <div class="pb">hoezo vraag maar aan vik?<br>Ik weet heus het meest van quantum.</div>
+</article>
+<article class="post" data-ts="20060211000200" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2006-02-11 00:02</span></div>
+  <div class="pb">ach, maar ja ik weet gewoon veel over dingen</div>
+</article>
+<article class="post" data-ts="20060211131900" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2006-02-11 13:19</span></div>
+  <div class="pb">Mooie posts zo rond middernacht!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

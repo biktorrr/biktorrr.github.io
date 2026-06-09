@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>12/13 okt. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">12/13 okt.</h1>
+<p class="tm">8 posts · started 2002-10-08 15:35 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021008153500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-10-08 15:35</span></div>
+  <div class="pb">balle balle?<br>ik za+zo</div>
+</article>
+<article class="post" data-ts="20021008155700" id="p2">
+  <div class="ph"><span class="pa">tuuT</span><span class="pm">#2 · 2002-10-08 15:57</span></div>
+  <div class="pb">ook timmie is zeer waarschijnlijk present.. za en zo</div>
+</article>
+<article class="post" data-ts="20021008184200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-10-08 18:42</span></div>
+  <div class="pb">zo + za (lekker gek)</div>
+</article>
+<article class="post" data-ts="20021009135400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2002-10-09 13:54</span></div>
+  <div class="pb"><br>ben er, voor de verandering. 'K ga alvast virtueel pispotten tegen Timmie. Ik kies Mer als eerste, das duidelijk...wat een wonderkicksen.<br>btw. voor hen die het nog niet ter ore waren gekomen, ik woon nu 'op kamers' op de kleverparkweg. Adres=<br>Kleverparkweg 16<br>2023 CE Haarlem<br>023-5260708 (persoonlijk,vergeet/wis alle oude nummers muv mijn mobiele nummer 06-41462142)<br></div>
+</article>
+<article class="post" data-ts="20021009144600" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2002-10-09 14:46</span></div>
+  <div class="pb">lekker balluh za en zo</div>
+</article>
+<article class="post" data-ts="20021009202300" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2002-10-09 20:23</span></div>
+  <div class="pb">ja hoor, lekker ballen.<br>Tube, ik dacht dat we dit weekend gingen brouwen.<br>Dan wordt het waarschijnlijk alleen zaterdag ballen.</div>
+</article>
+<article class="post" data-ts="20021011093900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2002-10-11 09:39</span></div>
+  <div class="pb">De weervoorspelling zei dat het zou gaan regenen dit weekend. Zullen we, als het regent, in de Hout ballen?</div>
+</article>
+<article class="post" data-ts="20021011112200" id="p8">
+  <div class="ph"><span class="pa">TN de chilly homo</span><span class="pm">#8 · 2002-10-11 11:22</span></div>
+  <div class="pb">lijkt me opzich met die oostenwind sowieso geen slecht idee.brrrrr...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

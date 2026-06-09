@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hamas hamas en andere foto&#x27;s – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hamas hamas en andere foto&#x27;s</h1>
+<p class="tm">6 posts · started 2004-12-29 01:42 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041229014200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-12-29 01:42</span></div>
+  <div class="pb">ik had nog wat mooie Foto's op mijn telefoontje staan en dankzij mijn gloednieuwe Bluetooth USB adapter kan ik ze nu aan de wereld tonen dus:<br><br>Jossyt aan het gas:<br><img scr="http://staff.science.uva.nl/~vdeboer/floraboys/jossyt2.jpg"><br><br>Jossyt's knie gekoeld<br><img scr="http://staff.science.uva.nl/~vdeboer/floraboys/jossyt1.jpg"><br><br>En nog een mooie van het florapark<br><img scr="http://staff.science.uva.nl/~vdeboer/floraboys/florapark.jpg"></div>
+</article>
+<article class="post" data-ts="20041229014400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-12-29 01:44</span></div>
+  <div class="ps">ik bedoel dus:</div><div class="pb"><br>Jossyt aan het gas:<br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/jossyt2.jpg"><br><br>Jossyt's knie gekoeld<br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/jossyt1.jpg"><br><br>En nog een mooie van het florapark<br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/florapark.jpg"></div>
+</article>
+<article class="post" data-ts="20041229121400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2004-12-29 12:14</span></div>
+  <div class="pb">Artistieke foto's zeg, ik wist niet dat Paint een blur filter had. Het verbaasd me overigens niks dat dat gas in regenboog kleur blijkt te zijn, ik heb nog steeds de meest bizarre dromen.</div>
+</article>
+<article class="post" data-ts="20041229131900" id="p4">
+  <div class="ph"><span class="pa">BikT</span><span class="pm">#4 · 2004-12-29 13:19</span></div>
+  <div class="pb">ik moet zeggen de smile op Tijmen gezicht is ook alsof die aan dat gas heeft geleurd</div>
+</article>
+<article class="post" data-ts="20041229141000" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-12-29 14:10</span></div>
+  <div class="pb">das mijn -ik heb geen bloed meer in mijn benen,auw, maar joost heeft zijn knie niet op de juiste plaats, dus niet mieten- grimas.</div>
+</article>
+<article class="post" data-ts="20041230171300" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2004-12-30 17:13</span></div>
+  <div class="pb">btw. nu kan je ook (mocht je daar behoefte aan hebben) .mid files naar je telefoon 'toothen', kan je je simpsons-tone weer kosteloos in gebruik nemen.<br>http://www.midi4u.com/tv/shows/</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

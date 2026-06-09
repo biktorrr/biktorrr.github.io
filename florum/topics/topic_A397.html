@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>wow, bekeruitslagen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">wow, bekeruitslagen</h1>
+<p class="tm">2 posts · started 2002-01-15 13:46 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020115134600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-01-15 13:46</span></div>
+  <div class="pb">djeezz,.. hebben jullie de bekeruitslagen al bekeken?<br>ik zie een 22-0, 18-0, 21-2, 1-15 etc...<br><br>maar de tampeloerieten hebben gewonnen, das wel weer leuk <br>voor ze, net zoals ZvdB. Schenker heeft helaas dik verloren<br>en zullen we in de beker dus niet tegenkomen,net zoals<br>de vrinden van AEL b4</div>
+</article>
+<article class="post" data-ts="20020115134800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-01-15 13:48</span></div>
+  <div class="ps">britney</div><div class="pb">ook leuk:<br><br>Het acteerdebuut van Britney Spears is met een hoop gelach ontvangen. De honderden bezoekers die waren uitgenodigd voor de voorstelling van Crossroads in Londen, amuseerden zich vooral om de potsierlijke sc\ènes waarin Britney haar hit 'I'm Not A Girl, Not Yet A Woman' als po\ëzie brengt bij een kampvuur. <br><br>Ook bleek ook de sc\ène waarin Britney haar vader (Dan Akroyd) meldt dat ze 'een ritje met Ben' heeft gemaakt, te zorgen voor een enorme lachpartij. Het rumoer was zelfs zo luid dat de laatste minuten van de film niet meer te verstaan waren.<br><br>hier moeten we dus heen<br>:)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

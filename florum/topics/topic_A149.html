@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eerste Ajax-training – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Eerste Ajax-training</h1>
+<p class="tm">5 posts · started 2001-07-04 11:40 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010704114000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-07-04 11:40</span></div>
+  <div class="pb">Beste voetbalvriendjes,<br><br>Ajax zal morgen (donderdag) om 10.30 uur aanvangen<br>met de eerste training. Ik ga daar vrij zeker naar<br>toe. Kan ik een van jullie veleiden. Kost niets en<br>vindt plaats op 't trainingsveld naast de ArenA.</div>
+</article>
+<article class="post" data-ts="20010704232900" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2001-07-04 23:29</span></div>
+  <div class="pb">Kost tijd, dus kost wel wat. Kost ook nog eens moeite om naar A*** te gaan kijken.<br><br>Maar mag je meedoen aan de training? Kan nooit geen kwaad toch? <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br>Hoop dat je leuk naar al die jonge jongens hebt kunnen kijken en er van genoten hebt. :-p</div>
+</article>
+<article class="post" data-ts="20010705140400" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-07-05 14:04</span></div>
+  <div class="pb">Ik was 'r hoor! 'k Heb ze allemaal gezien: Zlatan, Mido,<br>Wamberto... 't Was steengoed. Vooral 't oefenpotje was<br>lachuh, maar ze hadden 'n beetje weirde regels die ik<br>niet helemaal begreep, maar keeper Lobont ook niet. Dus<br>toen brulde Co "Hee, Bogdan waar ben je met je koppie?"<br>Alleen Witschge niet gezien...</div>
+</article>
+<article class="post" data-ts="20010705220300" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-07-05 22:03</span></div>
+  <div class="ps">Autonome poezie</div><div class="pb">Zlatan Zlatan<br>Zlatan Zlatan<br><br>Zlatan Zlatan<br>Zlatan Zlatan<br><br>We worden kampioen ! Jajajaja<br><br>Zlatan Zlatan<br>Zlatan Zlatan<br><br>Zlatan Zlatan<br>Zlatan Zlatan<br><br>We worden kampioen ! <br><br>Trouwens volgens ajax.nl zit Witsche er gewoon bij.<br><br><br></div>
+</article>
+<article class="post" data-ts="20010712185700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-07-12 18:57</span></div>
+  <div class="pb">WitschGe? had het zeker wel naar z´n zin!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

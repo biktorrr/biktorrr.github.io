@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>donderdag nacht – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">donderdag nacht</h1>
+<p class="tm">2 posts · started 2005-03-18 22:21 by Jan Mulder</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050318222100" id="p1">
+  <div class="ph"><span class="pa">Jan Mulder</span><span class="pm">#1 · 2005-03-18 22:21</span></div>
+  <div class="pb">In de serie "De donderdag nacht" doen we vandaag de Frans Hals buurt aan in Haarlem. Tijdstip: 6:45 <br><br>Interviewer: meneer mag ik vragen wat u zo vroeg aan het doen bent?<br><br>Jossyt S Puite: Luister, feitelijk ben ik een voetbal tegen de muur aan het schieten. Maar das logisch.<br><br>Interviewer: Maar waarom doet u dat in godsnaam op dit tijdstip?<br><br>Jossyt S. Nou dat zit zo, je baas die wil dat je om 9:00 op m'n werk ben, en het FFF eist dat je 22 April wedstrijdfit ben dus dan moet je wel.<br><br>Interviewer: het FFF?<br><br>Jossyt S. Tja das een groep hardcore hooligans van de Floraboys, een kampioensclub nog niet lang gelee. En als de FFF iets eist, dan kan je daar maar beter aan voldoen. <br><br>Interviewer: Dus je staat om 6:30 op om te gaan trainen voor je club? <br><br>Jossyt S. Nou trainen, je heb al 1500 kilo aan gewichten lopen pompen en nu moet je van de fysio dus 200 keer een bal schieten. Maar mijn teamgenoot de VVWF traint 8 uur per dag, dat red je natuurlijk niet dus trainen vind je een groot woord. <br><br>Interviewer: meneer S. Puite dank voor uw inspirerende betoog. Succes op het REVT.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20050319123800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-03-19 12:38</span></div>
+  <div class="pb">terecht zo te horen dat je goed bezig bent Jossit</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

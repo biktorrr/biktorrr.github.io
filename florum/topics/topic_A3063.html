@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exitpoll – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Exitpoll</h1>
+<p class="tm">14 posts · started 2011-03-02 13:46 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110302134643" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2011-03-02 13:46</span></div>
+  <div class="pb">1 stem voor de eerste gay op de lijst van GL (nr 4) en hier ten huize ook 1 voor - waarschijnlijk - de PvdA.<br><br>Overigens: hier ten huize, omdat ik me vandaag officieel heb ingeschreven aan de Wilhelminastraat in Amsterdam. Dat is de eerste keer dat ik - voor het gezag - Vogelenzang verlaat. Een emotioneel moment, zullen jullie begrijpen.</div>
+</article>
+<article class="post" data-ts="20110302151113" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2011-03-02 15:11</span></div>
+  <div class="pb">Is dit een verkapte manier om te zeggen dat je samenwoont?<br><br>Zoniet: PvdA++.</div>
+</article>
+<article class="post" data-ts="20110302174859" id="p3">
+  <div class="ph"><span class="pa">Pit</span><span class="pm">#3 · 2011-03-02 17:48</span></div>
+  <div class="pb">PVV+</div>
+</article>
+<article class="post" data-ts="20110302180858" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2011-03-02 18:08</span></div>
+  <div class="pb">Dat samenwonen geschiedt vooral op papier. De emotie betrof vooral het verliezen van mijn Vogelenzangse adres na 31 jaar. <br><br>Wat betekenen trouwens +'en?</div>
+</article>
+<article class="post" data-ts="20110302181605" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2011-03-02 18:16</span></div>
+  <div class="pb">niet-gestemd-want-niet-stemrechtig++<br></div>
+</article>
+<article class="post" data-ts="20110302193052" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2011-03-02 19:30</span></div>
+  <div class="pb">Dat is programmeerslang voor "verhoog de variabele PvdA met 1".</div>
+</article>
+<article class="post" data-ts="20110302202107" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2011-03-02 20:21</span></div>
+  <div class="pb">$d66++;<br></div>
+</article>
+<article class="post" data-ts="20110302222250" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2011-03-02 22:22</span></div>
+  <div class="pb">GL, eerste Amsterdammer op de lijst (toevallig ook lijsttrekker)</div>
+</article>
+<article class="post" data-ts="20110303070741" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2011-03-03 07:07</span></div>
+  <div class="pb">2x neit gestemd</div>
+</article>
+<article class="post" data-ts="20110303092644" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2011-03-03 09:26</span></div>
+  <div class="pb">GL++</div>
+</article>
+<article class="post" data-ts="20110303142727" id="p11">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#11 · 2011-03-03 14:27</span></div>
+  <div class="pb">marijke vos ++</div>
+</article>
+<article class="post" data-ts="20110303144629" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2011-03-03 14:46</span></div>
+  <div class="pb">@Ca: Lijst Neit?</div>
+</article>
+<article class="post" data-ts="20110303150845" id="p13">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#13 · 2011-03-03 15:08</span></div>
+  <div class="pb">Stem tegen, stem Lijst Neyt!<br><br>Zeg nee, stem Neyt!<br><br>Beff</div>
+</article>
+<article class="post" data-ts="20110303155203" id="p14">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#14 · 2011-03-03 15:52</span></div>
+  <div class="pb">Lijst Neyt, voor een Hooghe Teijdt!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Professionele Prijs – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Professionele Prijs</h1>
+<p class="tm">5 posts · started 2009-07-16 14:21 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090716142100" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2009-07-16 14:21</span></div>
+  <div class="pb">Allianz Inkomen als beste uit IG&H-onderzoek<br><br>Allianz Inkomensverzekeringen is in het performanceonderzoek Inkomen van IG&H op de eerste plaats ge\ëindigd. Generali, in 2008 nog op nummer \é\én, ging naar de tweede plek. Allianz scoorde vooral goed op de onderdelen primair proces, <h2>de binnendienst<h3> en het accountmanagement.<br><br>Allianz komt uit op een score van 104 en was vorig jaar derde. Generali behaalde een score van 103, tegenover 104 in 2008. De Amersfoortse, ASR, De Goudse, Nationale-Nederlanden en Delta Lloyd zien hun score ten opzichte van het marktgemiddelde (gesteld op 100) dalen. NN maakt een duikeling van de vijfde naar de achtste plek en is onder het marktgemiddelde beland. Delta Lloyd zakt in 2009 verder onder het marktgemiddelde, maar handhaaft zich net op de negende plaats. Reaal, Aegon, Klaverblad en Av\éro Achmea scoorden beter dan het voorgaande jaar, waarbij Reaal en Aegon iets boven het marktgemiddelde uitkomen. Av\éro bungelt onderaan, maar scoort wel fractioneel beter dan het jaar daarvoor.<br><br>De tussenpersonen die meededen aan het onderzoek (ruim 1.100) beoordeelden onder meer het primaire proces, de digitale dienstverlening, de binnendienst, het accountmanagement, de producten en de intermediairondersteuning van de inkomensverzekeraar</div>
+</article>
+<article class="post" data-ts="20090716142100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2009-07-16 14:21</span></div>
+  <div class="pb">hmm, fijn schreeuwen in html...excuses.</div>
+</article>
+<article class="post" data-ts="20090716143000" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2009-07-16 14:30</span></div>
+  <div class="pb">Terwijl je toch zou zeggen dat er bij Allianz de laatste tijd niet zoveel veranderd is. Waar zou deze verbeterde prestatie vandaan komen?</div>
+</article>
+<article class="post" data-ts="20090716145100" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2009-07-16 14:51</span></div>
+  <div class="pb">Dat moet die invloed van die Little Professional zijn. Ka-tsjing.<br><br>Ze kunnen op zich nog wel iemand gebruiken om een leesbaar persbericht op te stellen waarin woorden als performanceonderzoek en primair proces niet voorkomen. Wellicht ken ik nog wel iemand.</div>
+</article>
+<article class="post" data-ts="20090716223600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2009-07-16 22:36</span></div>
+  <div class="pb">Jeyt..pas maar op dat NN je niet weg gaat kopen!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

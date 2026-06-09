@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DoMiSpa – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">DoMiSpa</h1>
+<p class="tm">8 posts · started 2004-04-08 14:45 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040408144500" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-04-08 14:45</span></div>
+  <div class="pb">http://www.laughlab.co.uk/<br><br>De site met de bewezen leukste grap van de wereld en verder met wat leuke mopjes en andere grappige feitjes.<br><br>En misschien is dit leuk voor als we weer kampioen worden? Is maar 60$ per gouweballetje<br><img src=http://www.goldenmine.com/images/P1238_t.jpg"><br><br>of anders <a href="http://www.goldenmine.com/search.asp?him=&her=&pricerange=above1000&producttype_id=0&colortype_id=0&keyword=&pagenum=5&action=nextprevious&x=32&y=10">deze </a>met je eigen naam erin :)<br></div>
+</article>
+<article class="post" data-ts="20040408145900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-04-08 14:59</span></div>
+  <div class="pb">ah ja, de domispa! heerlijk gewoon.<br><br>Hier een mooie voor de <a href="http://www.jesusdressup.com/">PaasDagen</a></div>
+</article>
+<article class="post" data-ts="20040408162100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-04-08 16:21</span></div>
+  <div class="pb">Maak anders even de stembanden los voor de paaszangen...<br><br><a href="http://www.dr.dk/skum/cigarfar/growl.asp">Lekker meezingen!!</a></div>
+</article>
+<article class="post" data-ts="20040408172100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-04-08 17:21</span></div>
+  <div class="pb">ook weer (Ivm de paasdagen) eens langsgaan bij<br>www.eeggs.com</div>
+</article>
+<article class="post" data-ts="20040408173700" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-04-08 17:37</span></div>
+  <div class="pb">Net gehoord op de gang:<br><br><H1>Alles klaar, klapsigaar!</h1><br><br></div>
+</article>
+<article class="post" data-ts="20040408180100" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-04-08 18:01</span></div>
+  <div class="pb">spam van hooghe qualiteyt!</div>
+</article>
+<article class="post" data-ts="20040410125000" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-04-10 12:50</span></div>
+  <div class="pb">Jeidt! Spam Op Zeker<br><br><a href="http://www.xs4all.nl/~jkuys/test1.gif">Test 1</a> (1.920 mb!)<br><a href ="http://www.xs4all.nl/~jkuys/test2.gif">Test 2</a> (334 kb)<br><a href="http://www.xs4all.nl/~jkuys/test3.gif">Test 3>/a> (572 kb)<br></div>
+</article>
+<article class="post" data-ts="20040413132800" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2004-04-13 13:28</span></div>
+  <div class="pb">Definitions of golden boy on the Web:<br><br>    a man who is unusually successful at an early age.<br><br>Dit had ik opgezocht nadat ik in een profiel had gelezen dat die persoon: "Goldenboys haat" en ik dat nogal onterecht vind; Ik vind de manser een heel amaible vent.<br><br> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

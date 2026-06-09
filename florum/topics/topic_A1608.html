@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eigen postbank pas – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Eigen postbank pas</h1>
+<p class="tm">9 posts · started 2005-11-05 10:58 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051105105800" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2005-11-05 10:58</span></div>
+  <div class="pb">Voor de mensen die een eigen tintje willen geven aan hun postbankpas heeft de Postbank een nieuwe website.<br><br><a href="http://paskamer.postbank.nl/">http://paskamer.postbank.nl/</a><br><br>Hier kun je nu tijdelijk gratis je eigen afbeelding kiezen voor op je giropas. Misschien dat er een leuke Florafoto is zodat we allemaal een Florapas kunnen maken?</div>
+</article>
+<article class="post" data-ts="20051105112100" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2005-11-05 11:21</span></div>
+  <div class="pb">in het kader "Pimp your Pin"?</div>
+</article>
+<article class="post" data-ts="20051106130600" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-11-06 13:06</span></div>
+  <div class="pb">Alvast wat suggesties:<br><br><img src="http://www.primeserver.nl/media-archive/uploads/40240479.jpg"><br><br><img src="http://members.home.nl/syperda/gotpics/pinpas2.JPG"><br><br><img src="http://members.home.nl/albinoraptor/GoT/pinpasjohn.jpg"><br><br><br><img src="http://www.few.vu.nl/~kkoning/cobra.jpg"><br><br><img src="http://home.wanadoo.nl/r.vannoort/GoT/Postbank_pasje.JPG"><br><br><img src="http://img304.imageshack.us/img304/6360/pasje3klein9jo.jpg"><br><br><img src="http://got.mdiender.nl/pas.jpg"><br><img src="http://67.15.145.34/~jonas/felix/giro4.jpg"><br><img src="http://www.mrit.nl/got/postbank.JPG"><br><img src="http://tweakers.net/ext/f/1ee10197a8e9bfb63078dc963ca83cf2/full.jpg"><br><br>Hmm....beetje veel voorbeelden...</div>
+</article>
+<article class="post" data-ts="20051106164500" id="p4">
+  <div class="ph"><span class="pa">J-Lau</span><span class="pm">#4 · 2005-11-06 16:45</span></div>
+  <div class="pb">Of deze:<br><img src="www.jm-p.nl/flora/biktie_pinpas.jpg"></div>
+</article>
+<article class="post" data-ts="20051106164500" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2005-11-06 16:45</span></div>
+  <div class="pb"><img src="http://www.jm-p.nl/flora/biktie_pinpas.jpg"> dus</div>
+</article>
+<article class="post" data-ts="20051113133800" id="p6">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#6 · 2005-11-13 13:38</span></div>
+  <div class="pb">heee!!!! Wil de nep-jlau even ophouden met posten onder mijn naam!!!!</div>
+</article>
+<article class="post" data-ts="20051114145400" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2005-11-14 14:54</span></div>
+  <div class="pb">het is duidelijk een nep J-Lau zonder apestaartje!</div>
+</article>
+<article class="post" data-ts="20051114171400" id="p8">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#8 · 2005-11-14 17:14</span></div>
+  <div class="pb">hmm, ik lees dat je geen kunstwerken erop mag zetten.<br><br>Ik zat te denken aan de Florabloem met Justified & Ancient, of The Bikkeling Continues.<br></div>
+</article>
+<article class="post" data-ts="20051114171500" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2005-11-14 17:15</span></div>
+  <div class="pb"> ^<br>^ ^<br> |<br> |<br>TN</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

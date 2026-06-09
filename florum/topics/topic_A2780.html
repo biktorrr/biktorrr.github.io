@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REBUS – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">REBUS</h1>
+<p class="tm">10 posts · started 2009-12-02 13:42 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091202134200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-12-02 13:42</span></div>
+  <div class="pb"><img src="http://staff.science.uva.nl/~vdeboer/floraboys/rebusdec09.bmp"><br><br>*snif*</div>
+</article>
+<article class="post" data-ts="20091202143400" id="p2">
+  <div class="ph"><span class="pa">Dt-nazi</span><span class="pm">#2 · 2009-12-02 14:34</span></div>
+  <div class="pb">Hoog Sammie kijk omoog Sammie, want dat wordt je lekker nat.<br><br>Hulde toch voor deze rebus, uit mijn kleine nazihartje.<br><br></div>
+</article>
+<article class="post" data-ts="20091202164600" id="p3">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#3 · 2009-12-02 16:46</span></div>
+  <div class="pb">Ah, je dacht zeker dat die punt van de staart van de worm een 't' was.<br><br>heheh.. <br><br>heheh<br><br><br><br><br>KAK</div>
+</article>
+<article class="post" data-ts="20091202171800" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-12-02 17:18</span></div>
+  <div class="pb">Ik vond de mie vrij briljant.</div>
+</article>
+<article class="post" data-ts="20091202174300" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2009-12-02 17:43</span></div>
+  <div class="pb">een lach en een traan. Hulde.<br></div>
+</article>
+<article class="post" data-ts="20091202193500" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2009-12-02 19:35</span></div>
+  <div class="pb">who the F is die vrouw? Jelekkin??</div>
+</article>
+<article class="post" data-ts="20091203103300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2009-12-03 10:33</span></div>
+  <div class="pb">Het is een terugverwijzing naar een discussie in een ander topiek. Boode, deze is voor jou?</div>
+</article>
+<article class="post" data-ts="20091203113600" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2009-12-03 11:36</span></div>
+  <div class="pb">Hier een quiz van de Volkskrant: <a href="http://extra.volkskrant.nl/qz/gen/vkbanen/index.php" target="_blank">Wat zou elke Nederlander van de b\ètawetenschappen moeten weten?</a>.<br><br>Vragen in deze quiz zijn gebaseerd op de B\ètacanon, een samenwerkingsproject tussen de Volkskrant (brrrrr) en een groep vooraanstaande (brrrr) wetenschappers.</div>
+</article>
+<article class="post" data-ts="20091203113900" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2009-12-03 11:39</span></div>
+  <div class="pb">Oh, je krijgt niet direct feedback. En je moet je email invullen. Da's mooi KAK.</div>
+</article>
+<article class="post" data-ts="20091203191900" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2009-12-03 19:19</span></div>
+  <div class="pb">Godschristus wat een nonses die quiz. Alsof het nuttig is om de leeftijd van de platen onder SF te weten. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

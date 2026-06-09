@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kamertje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kamertje</h1>
+<p class="tm">5 posts · started 2010-11-23 14:09 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101123140926" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-11-23 14:09</span></div>
+  <div class="pb">Stukje Social networking:<br><br>Weet iemand nog een kamer (spoed, tijdelijk) in Haarlem voor een < a href=http://www.linkedin.com/profile/view?id=26977590&snapshotID=27918233&authType=name&authToken=Rotv&goback=&trk=NUS_PROF-updtr_links">collega van mij</a>?<br></div>
+</article>
+<article class="post" data-ts="20101123141022" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2010-11-23 14:10</span></div>
+  <div class="pb"><a href="http://www.linkedin.com/profile/view?id=26977590&snapshotID=27918233&authType=name&authToken=Rotv&goback=&trk=NUS_PROF-updtr_links"> nu goed </a><br></div>
+</article>
+<article class="post" data-ts="20101123143550" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-11-23 14:35</span></div>
+  <div class="pb">Acces denied. Mijn broederlief gaat per 6 dec waarschijnlijk uit zijn huisje (3 andere young professionals blijven nog wel wonen). Is Haarlemmerdijk ofzo, dus wel in A'dam. Moet ik het vragen?</div>
+</article>
+<article class="post" data-ts="20101123153013" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2010-11-23 15:30</span></div>
+  <div class="pb">het gaat hier om een tamelijk appetijtelijke jonge dame, inclusief een goede katholieke opvoeding en een voorliefde voor de nr. 10 positie bij haar damesvoetbalteam. In mijn optiek the whole package.<br><br>Haast is geboden in zoverre dat ze met haar vriend overhoop ligt. Om haar dan in een testosteron hok te stoppen met een De Noodje....<br>Ik zal het haar morgen eens voorleggen :)<br></div>
+</article>
+<article class="post" data-ts="20101123153503" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-11-23 15:35</span></div>
+  <div class="pb">Ah, ik moet ook wel het <a href="http://nl.linkedin.com/pub/marlies-lentjes/9/50/46">publieke profiel</a> linken.<br>Gelukkig kijkt ze nooit op Floraboys, anders zou ze zomaar kunnen lezen dat ik onze gesprekken apropos de wereld in knal....<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

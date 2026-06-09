@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>uitbundig juichen kost finaleplaats – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">uitbundig juichen kost finaleplaats</h1>
+<p class="tm">2 posts · started 2004-03-05 10:32 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040305103200" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-03-05 10:32</span></div>
+  <div class="pb">In een krankzinnige wedstrijd tussen Grasshoppers en stadsrivaal FC Zürich plaatste Grasshoppers zich met een 6-5 overwinning in Zwitserland voor de bekerfinale van dat land.<br><br>De wijze waarop deze club dat deed was zowel bizar als indrukwekkend te noemen. De meervoudige Zwitserse kampioen kwam namelijk terug van een 2-5 achterstand. In de 63ste minuut vierde de Braziliaan Cesar van Zürich zo uitbundig zijn 2-5 score, dat deze door de scheidsrechter met een tweede gele kaart van 't veld werd gestuurd.<br><br>Vanaf dat moment wist Grasshoppers zich terug in de wedstrijd te knokken. In de 83ste minuut scoorde Eduardo de 3-5, waarna deze samen met collega Mladen Petric in de blessuretijd alsnog een 5-5 gelijkspel wisten binnen te slepen. In de verlenging besliste Grasshoppers' clubtopscoorder Ricardo Nuñez vervolgens de spectaculaire wedstrijd. <br><br>Grasshoppers zal nu de finale spelen tegen de winnaar van de andere halve finale, Sankt Gallen of FC Wil.</div>
+</article>
+<article class="post" data-ts="20040305104400" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-03-05 10:44</span></div>
+  <div class="pb">Jep, en dan zeggen ze nog meer op Vi.nl<br> Zürich verliest wedstrijd na uitgebreid juichen na de 5-1. Volendam, Vitesse en FC Zwolle halen opgelucht adem, dat komt daar nooit voor.<br>Peter Kelder<br><br> FC Zürich: Juichen om te janken<br>Jan-Willem van Weert<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

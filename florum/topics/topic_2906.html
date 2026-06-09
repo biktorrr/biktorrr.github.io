@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2906 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2906</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2011-06-07 22:02 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110607220222" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1&nbsp;·&nbsp;2011-06-07 22:02</span></div>
+  <div class="pb">Even iets heel anders: het meest geliefde creatuur onder die Boys, ThB, overweegt lid te worden van D66, zo schrijft hij op FB. BB, bij sommige boys denkelijk* beter bekend als de Benji, reageert daarop: "D66 heeft inderdaad mooiere meisjes dan de PvdA of VVD." <br><br>Twee vragen aan Zjoste dringen zich op: 1 hoe ga jij dit voorkomen? 2 klopt de stelling van BB? (en antwoord ajb niet dat je nog nooit op een PvdA/VVD-meeting bent geweest).<br>Verder interessant natuurlijk hoe de CDA-meisjes uit dit vergelijkende onderzoek komen. Het schijnt dat de PH recentelijk congresganger was.<br><br>* ikzelf heb nooit de eer gehad dit fenomeen te ontmoeten</div>
+</article>
+<article class="post" data-ts="20110607221550" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2&nbsp;·&nbsp;2011-06-07 22:15</span></div>
+  <div class="pb">Lastig om hierop te antwoorden zonder weer mijn grote vriendin Sharon erbij te halen. Ik zal er eens over nadenken. Ik denk sowieso dat D66 meer jongeren aantrekt. <br><br>Wat ThB betreft zie ik nu al op tegen het volgende congres :-(</div>
+</article>
+<article class="post" data-ts="20110607221615" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3&nbsp;·&nbsp;2011-06-07 22:16</span></div>
+  <div class="pb">Er zijn inderdaad weinig mooie meisjes op PvdA-bijeenkomsten, wellicht omdat het ledenbestand van de PvdA meer een dwarsdoorsnede van de samenleving is dan dat van D66. Sjiekere mensen zijn in veel gevallen ook mooier. Aangezien D66 feitelijk elitairder is dan de VVD zal het inderdaad zo zijn dat D66 de mooiste meisjes heeft.<br><br>Een veel belangrijker vraag - moet je wel op D66 stemmen, als dat kan betekenen dat je Th!erry B__det ermee aan een Kamerzetel of, God helpe ons allen, aan een ministerspost kan helpen.</div>
+</article>
+<article class="post" data-ts="20110607222008" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2011-06-07 22:20</span></div>
+  <div class="pb">Zelfs in dat geval Bernard, is het de enige juiste keus. Maar goed geprobeerd! </div>
+</article>
+<article class="post" data-ts="20110607222951" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5&nbsp;·&nbsp;2011-06-07 22:29</span></div>
+  <div class="pb">Het hilarische is natuurlijk dat Sharon Dijksma al meer dan een jaar het enige is wat de heer Jazzy P. tegen de PvdA heeft kunnen inbrengen. Ik bracht daar weer tegenin dat er bij D66 vast ook nare figuren zouden zitten, maar kon niet met al te veel voorbeelden komen omdat er toentertijd maar drie mensen voor D66 in de Kamer zaten. Dus wat een prachtige verrassing dat de Vleesgeworden Naarheid lid van D66 geworden is! En aangezien ThB niet alleen naar, maar ook eng rechts is, moeten we wel concluderen dat D66 er stiekem een enge rechtse agenda op nahoudt, en bv. best wel eens met Big Geert in een kabinet zou kunnen gaan zitten.</div>
+</article>
+<article class="post" data-ts="20110607224442" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6&nbsp;·&nbsp;2011-06-07 22:44</span></div>
+  <div class="pb">Dat laatste is natuurlijk de wereld op zijn kop, Pechtold had Wilders al uitgesloten toen Cohen nog kopjes thee dronk in de diamantbuurt. </div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

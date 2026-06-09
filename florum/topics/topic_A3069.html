@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amber gefeliciteerd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amber gefeliciteerd!</h1>
+<p class="tm">11 posts · started 2011-03-07 10:42 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110307104219" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2011-03-07 10:42</span></div>
+  <div class="pb">Een fijne verjaardag Amber!</div>
+</article>
+<article class="post" data-ts="20110307114228" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2011-03-07 11:42</span></div>
+  <div class="pb">Gefeliciteerd Amber! Ondanks de toenemende concurrentie, zelfs binnen je eigen gezin, blijf jij de leidende figuur van de tweede generatie van de Floraboys/Girls.</div>
+</article>
+<article class="post" data-ts="20110307130007" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-03-07 13:00</span></div>
+  <div class="pb">Van harte gefeliciteerd!<br><br>P.S. Niets persoonlijks hoor Amber maar ik moet ergens een grens trekken wat taarten betreft. Florakids moeten gewoon gezond eten en niet zo uitdijen als hun ouders.</div>
+</article>
+<article class="post" data-ts="20110307130437" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2011-03-07 13:04</span></div>
+  <div class="pb"><im src="http://www.theenglishappleman.com/misc/Birthday.apple.300.jpg"></div>
+</article>
+<article class="post" data-ts="20110307130521" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2011-03-07 13:05</span></div>
+  <div class="pb"><a href="http://www.theenglishappleman.com/misc/Birthday.apple.300.jpg">een link dan maar</a></div>
+</article>
+<article class="post" data-ts="20110307130827" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2011-03-07 13:08</span></div>
+  <div class="pb">Felicitaties voor Amber!<br><br>Een apart topic voert wellicht wat ver, maar laten we ook de jarige Truffel niet vergeten. </div>
+</article>
+<article class="post" data-ts="20110307132246" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2011-03-07 13:22</span></div>
+  <div class="pb">Hoogh</div>
+</article>
+<article class="post" data-ts="20110307143852" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2011-03-07 14:38</span></div>
+  <div class="pb">Goed gewerkt, Amber! Gefeliciteerd.<br><br>En een aai voor Truffle the Happy Sisters!</div>
+</article>
+<article class="post" data-ts="20110307201950" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2011-03-07 20:19</span></div>
+  <div class="pb">Tik em aan voor Ambeeeeeer!</div>
+</article>
+<article class="post" data-ts="20110307210739" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2011-03-07 21:07</span></div>
+  <div class="pb">Heej, gefeliciteerd! Wat gaat het toch allemaal snel!<br></div>
+</article>
+<article class="post" data-ts="20110308071421" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2011-03-08 07:14</span></div>
+  <div class="pb">Ai, beetje laat. Had je een mooie dag Amber? Gefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

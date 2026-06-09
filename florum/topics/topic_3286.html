@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 3286 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 3286</h1>
+<p class="tm">8 posts&nbsp;·&nbsp;started 2016-05-02 10:48 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160502104800" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1&nbsp;·&nbsp;2016-05-02 10:48</span></div>
+  <div class="pb">Felicitaties Mats, tante en Amiiiiiiiiiice!!</div>
+</article>
+<article class="post" data-ts="20160502105247" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2016-05-02 10:52</span></div>
+  <div class="pb">Tiiiik, jazzmastertjeeeeee</div>
+</article>
+<article class="post" data-ts="20160502110057" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3&nbsp;·&nbsp;2016-05-02 11:00</span></div>
+  <div class="pb">Van harte gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20160502111208" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4&nbsp;·&nbsp;2016-05-02 11:12</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20160502204411" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5&nbsp;·&nbsp;2016-05-02 20:44</span></div>
+  <div class="pb">Gefeliciteerd Zjoste !</div>
+</article>
+<article class="post" data-ts="20160502212638" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6&nbsp;·&nbsp;2016-05-02 21:26</span></div>
+  <div class="pb">Gefeliciteerd, Jazzy!</div>
+</article>
+<article class="post" data-ts="20160503131548" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7&nbsp;·&nbsp;2016-05-03 13:15</span></div>
+  <div class="pb">Dank boys, ik tik m graag aan voor dat cadeautje uit Mokum.</div>
+</article>
+<article class="post" data-ts="20160504123241" id="p8">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#8&nbsp;·&nbsp;2016-05-04 12:32</span></div>
+  <div class="pb">een dag te laat maar toch van harte Jazzy!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

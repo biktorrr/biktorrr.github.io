@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd</h1>
+<p class="tm">10 posts · started 2005-11-17 11:38 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051117113800" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2005-11-17 11:38</span></div>
+  <div class="pb">Laura Gefeliciteerd alweer een jaartje ouder!!Ik zal er een op je drinken <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20051117114300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-11-17 11:43</span></div>
+  <div class="pb">Gefeliciteerd, lieve JL@u!</div>
+</article>
+<article class="post" data-ts="20051117114800" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-11-17 11:48</span></div>
+  <div class="pb">een dikke verjaardagsknuffel van mij</div>
+</article>
+<article class="post" data-ts="20051117122700" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2005-11-17 12:27</span></div>
+  <div class="pb">Van Harte Gefeliciteerd JL@U!!!</div>
+</article>
+<article class="post" data-ts="20051117123300" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-11-17 12:33</span></div>
+  <div class="pb">Ja J-L@u, van harte.</div>
+</article>
+<article class="post" data-ts="20051117135200" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2005-11-17 13:52</span></div>
+  <div class="pb">Hee! Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20051117143000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-11-17 14:30</span></div>
+  <div class="pb">J-L@u, van harte gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20051118103300" id="p8">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#8 · 2005-11-18 10:33</span></div>
+  <div class="pb">heel erg dankjewel allemaal voor de felicitaties! :)<br><br>Zie ik jullie allemaal zaterdag?</div>
+</article>
+<article class="post" data-ts="20051118115100" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2005-11-18 11:51</span></div>
+  <div class="pb">JEYT!</div>
+</article>
+<article class="post" data-ts="20051118132000" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2005-11-18 13:20</span></div>
+  <div class="pb">Helaas niet, wel van harte gefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>woensdag eerste competitiepot – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">woensdag eerste competitiepot</h1>
+<p class="tm">10 posts · started 2003-01-20 12:48 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030120124800" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-01-20 12:48</span></div>
+  <div class="pb">zie ook zaalbapagina, maar goed de vraag is wie er bij zijn: <br>voorlopig heb ik alleen Sander (waarschijnlijk) niet. <br><br>Sicco en Tijmen, wat is jullie status?</div>
+</article>
+<article class="post" data-ts="20030120131300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-01-20 13:13</span></div>
+  <div class="pb">Ik geef 't 'n GO!</div>
+</article>
+<article class="post" data-ts="20030120142500" id="p3">
+  <div class="ph"><span class="pa">Soren Lerby</span><span class="pm">#3 · 2003-01-20 14:25</span></div>
+  <div class="ps">wedstrijd</div><div class="pb">Als Famous zijn doelpuntpremie heeft ontvangen van zijn drie goals in de beker zal hij present zijn.<br><br></div>
+</article>
+<article class="post" data-ts="20030120152300" id="p4">
+  <div class="ph"><span class="pa">Maurice Boskaljon</span><span class="pm">#4 · 2003-01-20 15:23</span></div>
+  <div class="pb">wij van het USC hebben hier staan dat je maar twee goals hebt gemaakt in de eerste bekerwedstrijd</div>
+</article>
+<article class="post" data-ts="20030120153200" id="p5">
+  <div class="ph"><span class="pa">T-NO</span><span class="pm">#5 · 2003-01-20 15:32</span></div>
+  <div class="pb">Ik zal er zijn, heb ook weer een langebroek geregeld, alleen wil ik timmy nog vragen om zijn handskoenen mee te nemen, bij deze.<br></div>
+</article>
+<article class="post" data-ts="20030120153500" id="p6">
+  <div class="ph"><span class="pa">Sportraad</span><span class="pm">#6 · 2003-01-20 15:35</span></div>
+  <div class="pb">Omwille van het spectaculair toegenomen aantal Florafans en de hiermee rechtevenredig gestegen bezoekersaantallen zullen alle wedstrijden van de Flora equipe worden gespeeld in zaal 4.<br><br>Met uw welnemen,<br>USC-sportraad</div>
+</article>
+<article class="post" data-ts="20030121130700" id="p7">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#7 · 2003-01-21 13:07</span></div>
+  <div class="pb">succes</div>
+</article>
+<article class="post" data-ts="20030122143800" id="p8">
+  <div class="ph"><span class="pa">Suk</span><span class="pm">#8 · 2003-01-22 14:38</span></div>
+  <div class="pb">Hey gasten, vanavond de eerste competitie wedstrijd, research wordt hier gedaan vanuit de 4KT1 hoek!</div>
+</article>
+<article class="post" data-ts="20030122152600" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2003-01-22 15:26</span></div>
+  <div class="pb">stukje counterintelligence: <br>1) http://www.4koffiethee1.20m.com./images/rick.jpg is hun topscorer (4 doelpunten in 3 wedstrijden)<br><br>2) Ze hebben gewonnen van een 1e klasseteam in de beker<br><br>3) ze hebben ook weer verloren in de beker</div>
+</article>
+<article class="post" data-ts="20030122160100" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2003-01-22 16:01</span></div>
+  <div class="pb">Ik heb de videobeelden scherp op het netvlies staan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

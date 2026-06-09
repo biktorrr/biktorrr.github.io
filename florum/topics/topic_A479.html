@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SandOr:gefeliciteerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SandOr:gefeliciteerd</h1>
+<p class="tm">7 posts · started 2002-05-08 13:49 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020508134900" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-05-08 13:49</span></div>
+  <div class="pb">alsnog gefeliciteerd met je verjaardag, dude,<br>officieel zou je geen 'klein mannetje' meer moeten zijn<br>maar ach, het klinkt wel lekker.<br></div>
+</article>
+<article class="post" data-ts="20020508140300" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-05-08 14:03</span></div>
+  <div class="pb">CASPER is ds degene die 18 is geworden. Sander is dat al 2 jaar en 3 maanden</div>
+</article>
+<article class="post" data-ts="20020508183100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-05-08 18:31</span></div>
+  <div class="pb">CASPER gefeliciteerd!!!!! Nog een leuk feessie met hockeymeisjes????</div>
+</article>
+<article class="post" data-ts="20020508205700" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2002-05-08 20:57</span></div>
+  <div class="pb">Wanneer komt kleine casper dan ballen, hebben we weer tenminste een beetje meer echte kleine mannetjes</div>
+</article>
+<article class="post" data-ts="20020509023200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2002-05-09 02:32</span></div>
+  <div class="pb">Ja..het wordt tijd voor een nieuwe voorraad kleine mannetjes.....de oude mannetjes zijn namelijk niet zo klein meer.</div>
+</article>
+<article class="post" data-ts="20020509204500" id="p6">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#6 · 2002-05-09 20:45</span></div>
+  <div class="ps">Dank je Victor</div><div class="pb">De felicitaties waren gewoon alvast voor Feyenoord, nietwaar?<br></div>
+</article>
+<article class="post" data-ts="20020513141200" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-05-13 14:12</span></div>
+  <div class="pb">ja, had ik dat er niet bijgezegd dan?<br><br>oja caspert, gefeliciteerd..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

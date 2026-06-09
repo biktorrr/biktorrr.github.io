@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merel wint vogelzangverkiezing – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Merel wint vogelzangverkiezing</h1>
+<p class="tm">7 posts · started 2010-01-03 14:19 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100103141900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2010-01-03 14:19</span></div>
+  <div class="pb">ML: Miss Vogelenzang 2009! Gefeliciteerd Oli4! <br><br>http://www.nu.nl/wetenschap/2154557/merel-wint-vogelzangverkiezing.html</div>
+</article>
+<article class="post" data-ts="20100103155200" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-01-03 15:52</span></div>
+  <div class="pb">Ben benieuwd welke Sijs 2010 zal winnen. Erg sterk gevonden Amice!</div>
+</article>
+<article class="post" data-ts="20100103160600" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-01-03 16:06</span></div>
+  <div class="pb">Tussen 'winnen' en 'erg' moet in de vorige posting een '<IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0>' zijn weggevallen. Anders komt het niet over zoals bedoeld...<br>Beffoindre!</div>
+</article>
+<article class="post" data-ts="20100103171600" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2010-01-03 17:16</span></div>
+  <div class="pb">;-)</div>
+</article>
+<article class="post" data-ts="20111218193520" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2011-12-18 19:35</span></div>
+  <div class="pb">Inmiddels is de teijdingh laagh in <a href="http://www.volkskrant.nl/vk/nl/2720/Nieuws/photoalbum/detail/3048620/318135/1/Streep-door-straatnaam-voor-de-natuur.dhtml">Vogelenzang</a></div>
+</article>
+<article class="post" data-ts="20151221103009" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2015-12-21 10:30</span></div>
+  <div class="pb">Vannacht Miss Universe zitten kijken en wat een sof: de presentator wees de verkeerde dame aan als winnares! Laegh, want na een paar minuten moest het kroontje dus naar het hoofd van iemand anders.<br><br>Hoogh natuurlijk de teydingh dat de uitgeschakelde Nederlandse Miss 'Jessie Jazz' heet. Hoogher nog, dat het hoofd van de Nederlandse Miss organisatie de welluidende naam 'Kim Kötter' mee heeft gekregen van haar ouders. <br><br>Het lijkt soms wel of  bepaalde ouders er alles voor doen om hun kind  van een posting op het Florum te verzekeren. Nou, bij dezen.</div>
+</article>
+<article class="post" data-ts="20151222013023" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2015-12-22 01:30</span></div>
+  <div class="pb">Goed werk, hitsige! Blijf er bovenop zitten!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

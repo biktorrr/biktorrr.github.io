@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrijdag = comazuipen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrijdag = comazuipen</h1>
+<p class="tm">10 posts · started 2009-10-23 11:24 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091023112400" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-10-23 11:24</span></div>
+  <div class="pb">Boys, girls,<br><br>Wie doet er mee? Zorg dat je je verzekeringspasje bij je hebt.</div>
+</article>
+<article class="post" data-ts="20091023113500" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-10-23 11:35</span></div>
+  <div class="pb">Eerst wat KungFu, dan wat comazuipen. Ben rond 22u in town...</div>
+</article>
+<article class="post" data-ts="20091023115700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2009-10-23 11:57</span></div>
+  <div class="pb">check.</div>
+</article>
+<article class="post" data-ts="20091023130700" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2009-10-23 13:07</span></div>
+  <div class="pb">Ik niet, omdat Alexa vanavond gaat comazuipen in Naarden/Bussum.</div>
+</article>
+<article class="post" data-ts="20091023145600" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2009-10-23 14:56</span></div>
+  <div class="pb">Ben wel in voor een biertje, maar eet eerst thuis wat. Hoe laat en waar is het handig om af te spreken? Kan denk wil ergens om 20uur zijn</div>
+</article>
+<article class="post" data-ts="20091023174000" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2009-10-23 17:40</span></div>
+  <div class="pb">wildeman?</div>
+</article>
+<article class="post" data-ts="20091023174800" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2009-10-23 17:48</span></div>
+  <div class="pb">klinkt niet slecht. Ik ben trouwens niet te bellen op mn mobiel, werknummer=020525 seyszeuven seyszeuven</div>
+</article>
+<article class="post" data-ts="20091023175500" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2009-10-23 17:55</span></div>
+  <div class="pb">heb met merlijn afgesproken in de Bekeerde Suster om te eten (19.30-20u)</div>
+</article>
+<article class="post" data-ts="20091024014800" id="p9">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#9 · 2009-10-24 01:48</span></div>
+  <div class="pb">Shiiiiiiiiiiiiiaht...</div>
+</article>
+<article class="post" data-ts="20091024105700" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2009-10-24 10:57</span></div>
+  <div class="pb">verklaar je nader</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

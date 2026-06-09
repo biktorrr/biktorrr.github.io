@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stukje zelfreflectie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stukje zelfreflectie</h1>
+<p class="tm">2 posts&nbsp;·&nbsp;started 2002-08-14 10:47 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020814104700" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1&nbsp;·&nbsp;2002-08-14 10:47</span></div>
+  <div class="pb">de Volkskrant van 13-08-2002 Pagina 6 Forum Brief <br><br>Zuipen <br>PURMEREND Ruben (16) en Jannes (18) van de Ven <br><br>De laatste tijd horen en lezen wij steeds vaker over jongeren op vakantie. Dat maakt ons een beetje droevig. Je durft haast niet meer te vertellen dat je op vakantie gaat, je wordt namelijk onmiddellijk bestookt met vragen of je ook zoveel zuipt. En dat is absoluut niet zo. <br><br>Wij drinken heus wel wat, maar niet zoveel dat je niet meer kunt nadenken en dat doen bijna alle jongeren. Er is maar een kleine groep die zich dagelijks op vakantie lam zuipt. Terwijl in de media wordt gedaan alsof iedereen zo doet. Wij kennen eerlijk gezegd niemand die zijn vakantie op deze manier doorbrengt. <br><br>Wij vinden het erg jammer dat er zo negatief wordt gedaan over jongeren. Misschien moeten de journalisten eens een kijkje nemen in een andere plaats dan Renesse en Terschelling. <br><br></div>
+</article>
+<article class="post" data-ts="20020814120500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2&nbsp;·&nbsp;2002-08-14 12:05</span></div>
+  <div class="pb">bijvoorbeeld Sneek of Antwerpen</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

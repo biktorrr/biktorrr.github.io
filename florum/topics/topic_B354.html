@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ballen komende 3 weken. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ballen komende 3 weken.</h1>
+<p class="tm">2 posts · started 2003-10-20 15:39 by maurits</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031020153900" id="p1">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#1 · 2003-10-20 15:39</span></div>
+  <div class="pb">Aan: Alle floracieten.<br><br>Helaas moet ik de komende 3 weken alle floracieten teleurstellen, omdat ik in deze periode tijdens de weekenden niet aanwezig kan zijn op het florapark. Dit wegens werkzaamheden elders. want ja, als die voetbacariere niks wordt, moet ik toch nog altijd iets anders achter de hand hebben. Dit betekent ook, Victor, dat het geen zin heeft om mij te bellen. Het spijt me, jongens.<br><br>Maurits. </div>
+</article>
+<article class="post" data-ts="20031021085900" id="p2">
+  <div class="ph"><span class="pa">mk</span><span class="pm">#2 · 2003-10-21 08:59</span></div>
+  <div class="pb">Maurits, nu stel jij mij toch een beetje teleur. Wat een negatief zelfbeeld heb jij als je niet ten volle achter je eigen voetbalcarriere staat. Geloof je nog wel in jezelf?<br>Misschien dat een pittig gesprek a la het Nederlands elftal jou weer een nieuw vertrouwen in je eigen voetbalcapaciteiten kan geven?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

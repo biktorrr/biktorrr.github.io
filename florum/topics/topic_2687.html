@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>urgent hulp nodig! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">urgent hulp nodig!</h1>
+<p class="tm">8 posts&nbsp;·&nbsp;started 2009-07-07 15:49 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090707154900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1&nbsp;·&nbsp;2009-07-07 15:49</span></div>
+  <div class="pb">baquilles, ff snel, weet er iemand wat voor dag het vandaag is?</div>
+</article>
+<article class="post" data-ts="20090707155600" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2&nbsp;·&nbsp;2009-07-07 15:56</span></div>
+  <div class="pb">Ik weet het, ik weet het, ik weet het. Rustig blijven, Joost. Het is vandaag weer:<br><br>[h2]D\è\è\è\èihnsdag[/h2]</div>
+</article>
+<article class="post" data-ts="20090707155600" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3&nbsp;·&nbsp;2009-07-07 15:56</span></div>
+  <div class="pb">Kut, in alle opgewondenheid de verkeerde haakjes gebruikt.</div>
+</article>
+<article class="post" data-ts="20090707155700" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4&nbsp;·&nbsp;2009-07-07 15:57</span></div>
+  <div class="pb"><h2>D\è\è\è\èihnsdag</h2></div>
+</article>
+<article class="post" data-ts="20090707155700" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5&nbsp;·&nbsp;2009-07-07 15:57</span></div>
+  <div class="pb">fiew, dat scheelde weinig!</div>
+</article>
+<article class="post" data-ts="20090707160000" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6&nbsp;·&nbsp;2009-07-07 16:00</span></div>
+  <div class="pb"><a href="http://www.youtube.com/watch?v=vqmTU4_MLLs">At your service</a>, what you hear is what you get.</div>
+</article>
+<article class="post" data-ts="20090707160300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7&nbsp;·&nbsp;2009-07-07 16:03</span></div>
+  <div class="pb">Wat vliegt de tijd toch. En dan is het DEINSDAG en dan lijkt i wel stil te staan.</div>
+</article>
+<article class="post" data-ts="20090707162900" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8&nbsp;·&nbsp;2009-07-07 16:29</span></div>
+  <div class="pb">vandaag is <h1>DEEEEEHNSDAG</h1></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

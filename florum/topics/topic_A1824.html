@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5 x JEYT – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">5 x JEYT</h1>
+<p class="tm">11 posts · started 2006-07-31 20:55 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060731205500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-07-31 20:55</span></div>
+  <div class="pb">Boys en girls,<br><br>Heb zojuist vernomen dat de leescommissie mijn proefschrift unaniem heeft goedgekeurd: een vijfdubbele JEYT dus. Ik hoorde het van m'n begeleider bij de printer -- hoe prozaisch kan de wetenschap soms zijn...<br><br>De goedkeuring heeft als gevolg dat de ceremonie op <u>4 oktober om 12u</u> een op zekerheidje is. Jullie zijn allemaal uitgenodigd en ik zou het leuk vinden als jullie zouden komen.<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20060731214400" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-07-31 21:44</span></div>
+  <div class="pb">Nou bij deze dan...5x gefelicitaart!!!</div>
+</article>
+<article class="post" data-ts="20060731234600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-07-31 23:46</span></div>
+  <div class="pb">TEREEECHT!<br><br>Gefeliciteerd gamer, ben je toch nog eerder.. <br><br>Moet je nog veel veranderen?<br><br></div>
+</article>
+<article class="post" data-ts="20060801095700" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2006-08-01 09:57</span></div>
+  <div class="pb">JEYT!</div>
+</article>
+<article class="post" data-ts="20060801102300" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2006-08-01 10:23</span></div>
+  <div class="pb">jeyt<br>jeyt<br>jeyt<br>jeyt<br>jeyt<br><br>goed gedaan Merrel! Moge het je maar goed smaken, die doctorstitel. </div>
+</article>
+<article class="post" data-ts="20060801114700" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2006-08-01 11:47</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20060801120100" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2006-08-01 12:01</span></div>
+  <div class="pb">Proficiat.<br>Je bent altijd de eerste wat betreft wetenschappelijke stappen. <br>Ik zit alleen wel in Ghana ten tijde van de uitreiking. Ik zaldaar ook de blijde boodschap verkondigen.</div>
+</article>
+<article class="post" data-ts="20060801144900" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2006-08-01 14:49</span></div>
+  <div class="pb">Goed zeg!<br><br>F\élicitations!<br><br>Ik probeer erbij te zijn.</div>
+</article>
+<article class="post" data-ts="20060802131100" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2006-08-02 13:11</span></div>
+  <div class="pb">Dat is PH nieuws chief, gefeliciteerd, ik vind het wel een beetje jammer dat je jezelf nu blijkbaar te belangrijk vind om de telefoon te beantwoorden. </div>
+</article>
+<article class="post" data-ts="20060803195000" id="p10">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#10 · 2006-08-03 19:50</span></div>
+  <div class="ps">super prestatie!!</div><div class="pb">super goed zeg! Gefeliciteerd!!!!!</div>
+</article>
+<article class="post" data-ts="20060810111400" id="p11">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#11 · 2006-08-10 11:14</span></div>
+  <div class="pb">hey lieve Merrel,<br><br>Gefeliciteerd! Helaas zijn wij er niet bij... :(<br><br>Maar geniet van dit fantastische moment!<br><br>liefs,<br>J</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

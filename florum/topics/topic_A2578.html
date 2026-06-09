@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verzoekje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verzoekje</h1>
+<p class="tm">7 posts · started 2009-01-14 20:05 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090114200500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-01-14 20:05</span></div>
+  <div class="pb">Hee webmastertje<br><br>Ik zie dat je weer eens weinig om handen hebt, vandaar de vraag of je dat fraaie Feyenoord-topic op het V-florum weer even terug zou kunnen toveren. Volgens mij verdienen ze wel weer een felicitatie daar in Rotterdam.</div>
+</article>
+<article class="post" data-ts="20090114205100" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2009-01-14 20:51</span></div>
+  <div class="pb">tik</div>
+</article>
+<article class="post" data-ts="20090115024100" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2009-01-15 02:41</span></div>
+  <div class="pb">Goed werk, reken morgen op een mooie bijdrage.</div>
+</article>
+<article class="post" data-ts="20090115114300" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2009-01-15 11:43</span></div>
+  <div class="pb">De eerste felicitatie van 2009 is weer binnen. Na hoeveel tijd verdwijnt een post, lieve webmastert?</div>
+</article>
+<article class="post" data-ts="20090115122500" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-01-15 12:25</span></div>
+  <div class="pb">Ik geloof na 2 of drie weken. Ruim voldoende tijd voor een volgende felicitatie wegens een welverdiende 0 punter dus.</div>
+</article>
+<article class="post" data-ts="20090115132300" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2009-01-15 13:23</span></div>
+  <div class="pb">Binnenkort heb ik een maandje eredivisie-live, daarnaast zit er op het Beatrixplein een zonnestudio (de kampers moeten toch een back-up hebben als de thuisbruiner faalt). <br>Wedstrijdje bij mij kijken? (assonantie=hoogh)</div>
+</article>
+<article class="post" data-ts="20090116182400" id="p7">
+  <div class="ph"><span class="pa">Voetbalfans</span><span class="pm">#7 · 2009-01-16 18:24</span></div>
+  <div class="pb">Wij verblijven grijg bij jij!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

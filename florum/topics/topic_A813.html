@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bierpassie weekend – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bierpassie weekend</h1>
+<p class="tm">4 posts · started 2003-06-15 12:40 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030615124000" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-06-15 12:40</span></div>
+  <div class="pb">Lara was afgelopen zaterdag in Antwerp en had daar een bierviltje meegenomen met een advertentie over het bierpassieweekend aldaar. is (helaas) al aankomend weekend 20,21,22 Juni. <br>Ik denk lijkt me leuk voor Jur en Michiel<br>www.beerpassion.com</div>
+</article>
+<article class="post" data-ts="20030615234300" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-06-15 23:43</span></div>
+  <div class="pb">We moeten trouwens binnenkort nog eens een nachtje lekker veel lekker bier gaan drinken in Gent, precies tussen Haarlem en Parijs. Ik weet niet of jullie al vakantie hebben. Ik kan er meestal wel gemakkelijk een dagje tussenuit glippen.<br> </div>
+</article>
+<article class="post" data-ts="20030616091200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-06-16 09:12</span></div>
+  <div class="pb">Gewoon als een gladde onderzoeksjournalist er tussenuit glippen. Olivier, wanneer kom jij trouwens naar Haarlem? We hebben gister gefilosofeerd en 't leek ons 'n leuk idee om 's in het Florapark sangria te gaan drinken.</div>
+</article>
+<article class="post" data-ts="20030616130200" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-06-16 13:02</span></div>
+  <div class="pb">hey kool een sangria party in het florapark!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

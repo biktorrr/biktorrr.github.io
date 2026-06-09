@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Voetbalpool – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Voetbalpool</h1>
+<p class="tm">8 posts · started 2002-07-01 20:57 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020701205700" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2002-07-01 20:57</span></div>
+  <div class="pb">Tja het onvermijdelijke moment is aangebroken dat deze "W"oeker"J"ood geld wil zien.<br><br>Van alle deelnemers van de voetbalpool zie ik gaarne 5 euro tegemoet zien. Mensen die dit al betaald hebben mogen hiervan afzien.<br><br>De deal is als volgt, iedere 2 dagen dat je het uitsteld kost je 1 vinger.<br><br>Mijn bankrekening nummer is als volgt: 46 35 55 422<br><br>Vriendelijke groeten,<br><br>J.M. Puite<br><br>P.S. Vinden jullie het ook zo genant dat er 2 vrouwen meedoen die vervolgens 11 mannen achter zich laten?<br></div>
+</article>
+<article class="post" data-ts="20020702095600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-07-02 09:56</span></div>
+  <div class="pb">Ga je er nog een rondje van geven, W(oeker)J(ood)? Dat is namelijk al een jaren oude traditie bij de Floraboys. Zelfs Sicco heeft een rondje aan 14 man gegeven toen hij de voetbalpoule won! <br>krijgt Fleur als derde ook nog wat trouwens? Ik moet haar 5 euro nl. nog betalen. Zou handig zijn als ze die gewoon kon houden.</div>
+</article>
+<article class="post" data-ts="20020704100900" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-07-04 10:09</span></div>
+  <div class="pb">Nou?</div>
+</article>
+<article class="post" data-ts="20020704134900" id="p4">
+  <div class="ph"><span class="pa">de leiding</span><span class="pm">#4 · 2002-07-04 13:49</span></div>
+  <div class="pb">fleur krijgt nop</div>
+</article>
+<article class="post" data-ts="20020704140100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-07-04 14:01</span></div>
+  <div class="pb">Ja dat begreep ik al, dan krijgt Joost dus nog 5 euro.</div>
+</article>
+<article class="post" data-ts="20020704161800" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-07-04 16:18</span></div>
+  <div class="pb">en 3 vingers van Fleur (of jij wil ze afstaan)</div>
+</article>
+<article class="post" data-ts="20020704162700" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-07-04 16:27</span></div>
+  <div class="pb">he getsie</div>
+</article>
+<article class="post" data-ts="20020704165300" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-07-04 16:53</span></div>
+  <div class="pb">wil je mijn vingers verkopen ofzo? ouwe w.j.!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

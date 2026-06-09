@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cafe Peter Beense – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cafe Peter Beense</h1>
+<p class="tm">5 posts · started 2003-03-05 09:31 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030305093100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-03-05 09:31</span></div>
+  <div class="pb">Omdat we ons allemaal vrijdagavond in Amsterdam bevinden is het misschien een idee van de nood een deugd te maken: Wat zeggen jullie ervan na het ballen/toneelstuk ergens in Amsterdam af te spreken en na te genieten van Fleurs acteertalenten en de niet aflatende overwinningsdrang van Floraboys SC. <br><br>Ik suggereer in ieder geval een bedevaartstocht te houden langs Cafe Peter Beense. Al weet ik niet of ik op het moment supreme ook daadwerkelijk naar binnen durf. Misschien kan een van jullie een kiekapparaat meenemen om ons en group voor Peters cafe te kieken?<br></div>
+</article>
+<article class="post" data-ts="20030305115800" id="p2">
+  <div class="ph"><span class="pa">timmie</span><span class="pm">#2 · 2003-03-05 11:58</span></div>
+  <div class="pb">ben ik wel voor</div>
+</article>
+<article class="post" data-ts="20030305141000" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-03-05 14:10</span></div>
+  <div class="pb">Tijmen en Lara zijn op het fietsje en blijven in A'dam, dus waarom niet? Lijkt me zekerrrr knalle, misschien kunnen Jur en Michiel meedoen met de ballenpot en dan zien we ze ins Cafe<br><br>(op de melodie van Quantamarena)<br>"Es gibt nur ein bier im Keller...es gibt nur ein bier im Keeeeheeeller es gibt nur ein bier im keeeeeelleeer."</div>
+</article>
+<article class="post" data-ts="20030305165300" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2003-03-05 16:53</span></div>
+  <div class="pb">DJ Peter Beense!!!</div>
+</article>
+<article class="post" data-ts="20030307105400" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-03-07 10:54</span></div>
+  <div class="pb">we moeten maar even bellen na de pot/voorstelling</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

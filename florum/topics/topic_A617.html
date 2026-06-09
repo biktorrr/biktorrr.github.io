@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reisplan naar Jurriaan in Groningen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Reisplan naar Jurriaan in Groningen</h1>
+<p class="tm">5 posts · started 2002-11-04 22:26 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021104222600" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2002-11-04 22:26</span></div>
+  <div class="pb">Uit ze mail:<br>'s middags (Groningen): <br>13:50 Buluitreiking in het Academiegebouw <br>14:30-16:30 Borrel in Huis de Beurs (A-kerkhof zz4) <br><br>'s avonds (Haarlem): <br>21:30 Feest aan het Spaarne (74E) <br><br>Hoe zit dat precies met eten dan? In Groningen?<br>Want wil men nog een duur kaartje besparen dan moet men<br>uiterlijk om 16:18 weg uit groningen om op 18:52 in Haarlem aan te komen. 16:38 weg uit Groningen levert kaartje Haarlem Amsterdam op (1,70).<br><br>De trein van 17:18 uit groningen kost 15.- en bezorgt je om 19:52 in Haarlem. Dat laat nog ruimschoots de tijd over om te eten tot het feest om 21:30 losbarst. De hamvraag is dus waar het vlees wordt gegeten in Groningen (waar ik vanuit ga) of in Haarlem. Onderweg lijkt mij niet toepasselijk gezien alle feestelijkheden!<br></div>
+</article>
+<article class="post" data-ts="20021104222800" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-11-04 22:28</span></div>
+  <div class="pb">Oja..dat was dus alleen de terugweg...<br><br>De heenweg..om bij de Buluitreiking te zijn..om 13:50<br>denk ik aan..die van 10:40 uit Haarlem...overstappen<br>in Adam en dan om 13:15 in Groningen aan te komen...zonder<br>vertragingen......</div>
+</article>
+<article class="post" data-ts="20021105091500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-11-05 09:15</span></div>
+  <div class="pb">Mij maakt het allemaal niet uit, ik heb toch geen OV. Ik ben allang blij als ik geen bomen van het spoor tussen Assen en Bijlen hoef te trekken. Ik dacht ergens te hebben gelezen dat de Tube zich in gaat spannen voor eten voor ons. Misschien dat de Albron een mobiele frituur-eenheid in kan zetten en elk kwartier nieuwe bitterballen en kroketten komt aanbieden.</div>
+</article>
+<article class="post" data-ts="20021105163500" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2002-11-05 16:35</span></div>
+  <div class="pb">Even een stukje duidelijkheid:<br><br>ik was van plan wat eten te regelen in Haarlem. dit betekent dat als jullie de trein nemen van 17.18 uit Groningen jullie rond 20.00 uur aan het Spaarne kunnen zijn alwaar eten zal zijn. Indien eetstuipen opspelen onderweg biedt wellicht de mobiele albronfritkot uitkomst of wat liquid bread. </div>
+</article>
+<article class="post" data-ts="20021106003600" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-11-06 00:36</span></div>
+  <div class="pb">Mijn voorkeur heeft een goedkope weekOV-versie van de reis. Het is niet onoverkomenlijk voor mij om later terug te gaan. Ik ga toch wel.<br><br>Anders lijkt het me dat de borrel ook wel VOOR de buluitreiking kan plaatsvinden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

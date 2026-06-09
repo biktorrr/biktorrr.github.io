@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wie is de Bert? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wie is de Bert?</h1>
+<p class="tm">5 posts · started 2002-01-29 15:51 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020129155100" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-01-29 15:51</span></div>
+  <div class="pb"><src img="http://216.33.236.250/cgi-bin/getmsg/bert.JPG?curmbox=F000000001&a=1549c82205e659f9efef0f31dd533f29&msg=MSG1012314420.59&start=2574445&len=26412&mimepart=3&disk=216.33.236.65_d139&login=tijmenn&domain=hotmail.com&hm___sig=0ab8da5001c1a8d1fad39fcc6fdcad0ef3b57a8ff5695ba3"><br></div>
+</article>
+<article class="post" data-ts="20020129155100" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2002-01-29 15:51</span></div>
+  <div class="pb"><img src="http://216.33.236.250/cgi-bin/getmsg/bert.JPG?curmbox=F000000001&a=1549c82205e659f9efef0f31dd533f29&msg=MSG1012314420.59&start=2574445&len=26412&mimepart=3&disk=216.33.236.65_d139&login=tijmenn&domain=hotmail.com&hm___sig=0ab8da5001c1a8d1fad39fcc6fdcad0ef3b57a8ff5695ba3"></div>
+</article>
+<article class="post" data-ts="20020129232800" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2002-01-29 23:28</span></div>
+  <div class="pb">Ok..laat maar.<br><br><webmastert delete topic></div>
+</article>
+<article class="post" data-ts="20020130143200" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2002-01-30 14:32</span></div>
+  <div class="pb">Ik ben nooit bezopen en heb ook geen zin om te rijden....</div>
+</article>
+<article class="post" data-ts="20020130154100" id="p5">
+  <div class="ph"><span class="pa">famous</span><span class="pm">#5 · 2002-01-30 15:41</span></div>
+  <div class="ps">tja</div><div class="pb">mietjes blijven er toch<br><br><br><br>zegt wj</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

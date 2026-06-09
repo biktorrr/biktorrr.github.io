@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Extreme Pitstra Pimpover – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Extreme Pitstra Pimpover</h1>
+<p class="tm">6 posts · started 2005-10-01 00:30 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051001003000" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2005-10-01 00:30</span></div>
+  <div class="pb">Extreme Pitstra Pimpover<br><br>Chiefs ik neem de trein van 10:11 naar Bussum (via Amsterdam). Merlijn gaat al veel eerder. Zie jullie dan (of later).<br><br>J.<br></div>
+</article>
+<article class="post" data-ts="20051002203100" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2005-10-02 20:31</span></div>
+  <div class="ps">Pimp my house</div><div class="pb">Ongelovelijk wat er gebikkeld en gebikt is. <br>Met recht een ware pimp my house!<br><br>Super bedankt boys, de foto's komen binnekort.<br><br>Latersssssss</div>
+</article>
+<article class="post" data-ts="20051002225500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-10-02 22:55</span></div>
+  <div class="pb">Ik vond het persoonlijk tamelijk geweldig om te doen, zeker als de gastheer/vrouw zo goed voor de werklui zorgen. Als je nog een keer hulp nodig hebt dan moet je het maar laten weten.<br><br>FOto's lijken me top, ik heb er al een paar gezien op de camera van Rig, vik'benni benassi' en ikzelve staan er zeker puik op.</div>
+</article>
+<article class="post" data-ts="20051003092900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-10-03 09:29</span></div>
+  <div class="pb">Als we nog een keer kunnen helpen moeten jullie het inderdaad laten weten. </div>
+</article>
+<article class="post" data-ts="20051003103200" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-10-03 10:32</span></div>
+  <div class="pb">was wel even lekker fysiek werken inderdaad, daar knapt een Aio van op.</div>
+</article>
+<article class="post" data-ts="20051003142400" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-10-03 14:24</span></div>
+  <div class="pb">Keukenkastjes doormidden trappen zou dagelijkse kost moeten zien voor iedereen. Graag gedaan dus Frankie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

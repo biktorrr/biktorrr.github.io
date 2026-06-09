@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pokor! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Pokor!</h1>
+<p class="tm">3 posts · started 2017-08-27 01:33 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20170827013306" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2017-08-27 01:33</span></div>
+  <div class="pb">Boys,<br><br>Iemand die ik ken organiseert twee keer per jaar een pokertoernooi voor de recruitment business. Tientje inleg. Professionele dealers en tegenstanders die niet aan kansberekening doen. Easy money dus. Wie doet er mee?<br><br>https://www.eventbrite.com/e/recruitment-poker-tournament-sep-2017-tickets-36602537174</div>
+</article>
+<article class="post" data-ts="20170905172252" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2017-09-05 17:22</span></div>
+  <div class="pb">No interest, ik klop liever mijn vrienden het geld uit de zakken!</div>
+</article>
+<article class="post" data-ts="20170905221640" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2017-09-05 22:16</span></div>
+  <div class="pb">Ik krijg zo af en toe phishingswaarschuwingen als ik naar Floraboys.com ga: schaduwachtige sujetten die mij geld afhandig willen maken. Dit is is het dus bevroedelijk: een programma dat de steyl van de Jazz weet te imiteren om ons te ronselen voor een of ander maffiapokertoernooi, wat er dan waarschijnlijk in eindigt dat er Boys hun huis uit moeten om hun gokschuld af te kunnen betalen, omdat anders hun bloedjes van kinderen in het beton in het Spaarne gesodemieterd worden. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

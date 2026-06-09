@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mEr1Yn = m@$tErc001 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mEr1Yn = m@$tErc001</h1>
+<p class="tm">8 posts · started 2004-03-02 17:50 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040302175000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2004-03-02 17:50</span></div>
+  <div class="pb">OK, ik ben dus echt de master: ik heb vandaag 560 kopietjes gedraaid waarvan 280 dubbelzijdig. Me is kicking ass big time!</div>
+</article>
+<article class="post" data-ts="20040303093700" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-03-03 09:37</span></div>
+  <div class="pb">je haalt het nietje eruit, stopt ze in de kopieerbak en drukt op ghaaaaaaaaan. Das toch in +/-12 minuten gepiept? De truc is dus tijdmaxximazation, kopje koffie erbij halen en opdrinken en een koetje/kalfje uitgewisselen met je (vrouwelijke)college bij het kopieerapparaat, die daarna mightily impressed is door jou stevige kopieerwerk.<br></div>
+</article>
+<article class="post" data-ts="20040303094200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-03-03 09:42</span></div>
+  <div class="pb">Neit! Het kost je minimaal een uur. WOEHOEH!!! Daar komt nog bij dat je altijd paraat moet staan om dat apparaat weer aan de gang te krijgen als i om willekeurige redenen ermee ophoudt; dat je kopieerkaarten moet ingeven; dat je papier moet invoer; etc. Op de afdeling merk ik dat mensen me met veel meer respect tegemoet treden. </div>
+</article>
+<article class="post" data-ts="20040303101800" id="p4">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#4 · 2004-03-03 10:18</span></div>
+  <div class="pb">wow, respect vanuit het andere gebouw<br><br>Sw1 sezz: MeRRLA1N == M@zzT0rrr</div>
+</article>
+<article class="post" data-ts="20040303102300" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-03-03 10:23</span></div>
+  <div class="pb">Re$pect dan aan het overmeesteren van dit stuk masjien</div>
+</article>
+<article class="post" data-ts="20040303143400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-03-03 14:34</span></div>
+  <div class="pb">Ik dacht altijd dat de vrouwelijke college al het kopieerwerk deed. Die heb je zeker niet?</div>
+</article>
+<article class="post" data-ts="20040303152800" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2004-03-03 15:28</span></div>
+  <div class="pb">wow.. er wordt zelfs hier in Leiden gesproken over de <br>copymaster uit Amsterdam<br><br>Extra respect voor jou en voor mij hier nu ook, aangezien ik ook een Floraboy ben</div>
+</article>
+<article class="post" data-ts="20040304120300" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2004-03-04 12:03</span></div>
+  <div class="pb">Pfff, ik strike again: hoeveel vankantieuren heb ik nog? 341 om precies te zijn. Da's meer dan 8 uur aaneengesloten vakantie houden. BIKKELEN!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TIMMIE TIKT 12 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">TIMMIE TIKT 12</h1>
+<p class="tm">5 posts · started 2003-01-13 12:37 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030113123700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-01-13 12:37</span></div>
+  <div class="pb">ja hoor, hij staat er weer, een nieuwe column van timmie, dit keer al na vijf dagen...</div>
+</article>
+<article class="post" data-ts="20030113131300" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-01-13 13:13</span></div>
+  <div class="pb">Paar opmerkingen/vragen:<br>- Wat doet een stercolumnist als Timmie in Zoetermeer-Centrum?<br>- Is het goed dat een stercolumnist als Timmie oproept tot een boycot van de democratie?<br>- Was het allemaal wel zo goed onder Lubbers?<br><br>Persoonlijk zou ik eerder deze oproep doen die - het moet gezegd worden - gejat is van de dj: stem voor meer mooie vrouwen in de Tweede Kamer. Daarom stemt de dj al sinds 1998 Femke Halsema.</div>
+</article>
+<article class="post" data-ts="20030113134600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-01-13 13:46</span></div>
+  <div class="pb">Dat is inderdaad schokkend. Wat moet er nu gebeuren nu alle Florafans niet meer gaan stemmen? dat gaat zo'n drie miljoen stemmen kosten. Ik denk dat Timmies woord sterker is dan de Nederlandse democratie en dat zij deze klap niet kan opvangen. Misschien dat we Timmie dan kunnen porren voor MP.<br></div>
+</article>
+<article class="post" data-ts="20030113164300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-01-13 16:43</span></div>
+  <div class="pb">ik zeg nog altijd: <br>Alles Toppie, Stem op Joppie</div>
+</article>
+<article class="post" data-ts="20030120154000" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2003-01-20 15:40</span></div>
+  <div class="pb">is het nou wel systke of bedoel je haitske?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Het grote Flora DENKtopikielje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Het grote Flora DENKtopikielje</h1>
+<p class="tm">10 posts · started 2016-06-15 15:29 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160615152935" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2016-06-15 15:29</span></div>
+  <div class="pb"><p><br>	DENKwetelijk een lacune op ons kennisplatform.&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20160615154009" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2016-06-15 15:40</span></div>
+  <div class="pb">Met als doel onze olycke Anatolische vrienden te beschimpen? Gemene poortwachter van de elite die je d'r bent. Ik trap er in elk geval niet in.</div>
+</article>
+<article class="post" data-ts="20160615162435" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2016-06-15 16:24</span></div>
+  <div class="pb">Dit geeft het woord 'denkmongool' een hele nieuwe betekenis.<br><br>Ik ben alleen bang dat dit topic de duizend niet gaat halen. Waarom? Omdat de denkmongooltjes blijkelijk te politiek correct waren voor de PvdA, en dan sta ik dus hier (bien etonne de nous trouver ensemble) van de weeromstuit aan dezelfde kant als de PH en de Jazz. En topics waarin ik met name de Jazz niet kan bashen interesseren mij minder.</div>
+</article>
+<article class="post" data-ts="20160615181045" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2016-06-15 18:10</span></div>
+  <div class="pb">PH schijnt altijd wel een dingetje te hebben voor politieke partijen op religieuze lijst geschroeid. Misschien kan dat toch nog een aardige clash worden. Of doe je het daar niet voor, brave bode?</div>
+</article>
+<article class="post" data-ts="20160615181723" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2016-06-15 18:17</span></div>
+  <div class="pb">Daar staat tegenover dat ik in discussie met de PH altijd een zeker gebrek aan gedegenheid voel. Hij zegt iets provocerends; je weerlegt het; en je hoort verder niets meer. Het is alsof je in het luchtledige debatteert.</div>
+</article>
+<article class="post" data-ts="20160615232300" id="p6">
+  <div class="ph"><span class="pa">Natuurlijk de Ã©chte PH</span><span class="pm">#6 · 2016-06-15 23:23</span></div>
+  <div class="pb">Boys, girls,<br><br>Trap niet in alles wat die Bode jullie wil doen geloven. Hij graaft als rechercheur in het verleden, stelt als openbaar ministerie als het ware een strafeis op en velt als rechter het vonnis om iemand monddood te maken.<br><br>En dan die fapjournalist van een Onbetrouwbare Olivier: ghostpostings verzinnen over Anatolische vrienden. Alsof ik dat ooit zou zeggen. Hoeveel meer citaten zou hij gewoon bij elkaar gelogen hebben om maar 'nieuws te maken' en zijn dagelijkse sixpack Heineken te kunnen bekostigen?</div>
+</article>
+<article class="post" data-ts="20160617004514" id="p7">
+  <div class="ph"><span class="pa">De werkelijke PH</span><span class="pm">#7 · 2016-06-17 00:45</span></div>
+  <div class="pb">Een denktoPIKielje, hihi</div>
+</article>
+<article class="post" data-ts="20160617004815" id="p8">
+  <div class="ph"><span class="pa">De werkelijke PH</span><span class="pm">#8 · 2016-06-17 00:48</span></div>
+  <div class="pb">En nu kappen met dat ghostposten. Ik zou mijn vrienden de Bode en Oli4, beiden op hun eigen manier belangrijke motoren voor de BV Nederland, nooit zo beledigen.</div>
+</article>
+<article class="post" data-ts="20160617173653" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2016-06-17 17:36</span></div>
+  <div class="pb">Ita est.</div>
+</article>
+<article class="post" data-ts="20160617200331" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2016-06-17 20:03</span></div>
+  <div class="pb">Over er niet in trappen: onze ex koningin was denkelijk aan de crystal meth. Die zag ik ook niet direct aankomen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

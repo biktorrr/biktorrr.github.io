@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys 20 - ITS AIO 1 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys 20 - ITS AIO 1</h1>
+<p class="tm">8 posts · started 2001-09-25 23:28 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010925232800" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-09-25 23:28</span></div>
+  <div class="pb">20 - 1 !<br><br>20 - 1 !<br><br>20 - 1 !<br><br>20 - 1 !<br><br>20 - 1 !<br><br>20 - 1 !<br><br><br></div>
+</article>
+<article class="post" data-ts="20010926001000" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2001-09-26 00:10</span></div>
+  <div class="ps">terecht</div><div class="pb"><blockquote><body><font color="#9c34b7"><br><font face="Haettenschweiler,Tempus sans ict"><br><BG color="#9b99B7"><font size=+1><br>Je bedoelt zeker:<br><H2><marquee><br>20-1 !<br>     20-1 !     <br>          20-1 !<br>               20-1 !<br></><br>TN<br><br></div>
+</article>
+<article class="post" data-ts="20010926001700" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2001-09-26 00:17</span></div>
+  <div class="pb">Tijmen heeft ook een foefje ontdekt hoor.<br>Alleen jammer dat het niet in Netscape te zien is. <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20010926105000" id="p4">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#4 · 2001-09-26 10:50</span></div>
+  <div class="pb">deze was voor jou Maarten..<br><br>ik had trouwens effe gekeken op de eindstand van vorig jaar.. deze gasten zaten dus wel bij de penose in de pool.. en werden daar derde met over 10 wedstrijden 41 doelpunten tegen en nou kregen ze er 20 om hun oren.. (trouwens penose zelf werd zesde in dezelfde poul).<br>WEet iemand hoeveel het gisteren in de andere wedstrijd tussen ZvdB en Real Tampoloeritas is geworden? die speelde tegelijk anmelijk met ons..<br><br></div>
+</article>
+<article class="post" data-ts="20010926132400" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2001-09-26 13:24</span></div>
+  <div class="pb">hoi hoi hoi hoi hoi hoi<br>hiep<br></div>
+</article>
+<article class="post" data-ts="20010926141900" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2001-09-26 14:19</span></div>
+  <div class="pb">en Feyenoord presteerde het toch nog mijn avond volledig te verpesten! KUT! Schande!</div>
+</article>
+<article class="post" data-ts="20010926180000" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2001-09-26 18:00</span></div>
+  <div class="pb"><marquee><br><br><br>Test<br></div>
+</article>
+<article class="post" data-ts="20010926180000" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2001-09-26 18:00</span></div>
+  <div class="pb">Test geslaagd.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

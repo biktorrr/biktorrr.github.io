@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>honeymoon – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">honeymoon</h1>
+<p class="tm">6 posts · started 2006-08-20 17:57 by Famous + vrouw</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060820175700" id="p1">
+  <div class="ph"><span class="pa">Famous + vrouw</span><span class="pm">#1 · 2006-08-20 17:57</span></div>
+  <div class="pb">lieve boys en girls,<br><br>vanuit een broeiering jakarta zitten wij in een business centre de eerste fotoos van onze trouwdag te bekijken, we konden gek genoeg niet wachten tot over drie weken <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0>. iedereen echt super super bedankt voor jullie gezellige aanwezigheid, de prachtige F + R (er zit geen hartje op het keyboard) op de punt (wat moet dat een werk zijn geweest zeg, fantastisch!!!) en alle andere versieringen!<br><br>Wij gaan nagenieten en genieten van Indonesie.<br><br>Tot later,<br><br>liefs en groeten,<br>Frank en Rig</div>
+</article>
+<article class="post" data-ts="20060821123100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2006-08-21 12:31</span></div>
+  <div class="pb">Hey Frank en Rigtje,<br><br>Heel veel plezier in Indonesie. Ik vond het heel leuk om bij jullie huwelijk te zijn; het feest was super! <br><br>Tot snel in NL,<br></div>
+</article>
+<article class="post" data-ts="20060821124900" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2006-08-21 12:49</span></div>
+  <div class="pb">hey F+R<br><br>het was echt heel erg leuk en ik heb zeker genoten van de strand-bruiloft. Geniet lekker van de honeymoon!</div>
+</article>
+<article class="post" data-ts="20060821132700" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2006-08-21 13:27</span></div>
+  <div class="pb">Merlijn, kan jij het feest nog wel herinneren dan?<br></div>
+</article>
+<article class="post" data-ts="20060821140600" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2006-08-21 14:06</span></div>
+  <div class="pb">Ook ik en Wendy vonden het erg leuk. Superlocatie en gewoon lekker swingen met de boys en girls.<br><br>(Enige minpuntje was dat ik met merlijn en Olivier niet met de paardekar een ritje kon maken)</div>
+</article>
+<article class="post" data-ts="20060821145000" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2006-08-21 14:50</span></div>
+  <div class="pb">Absoluut topfeest!<br><br>Heel erg bedankt dat ik erbij mocht zijn en veel plezier in Indonesi\ë.  <br><br>En nogmaals merci aan de Penose voor het terugbrengen van mijn kekke jasje, wat mij toch al zeker een verkoudheid of drie bespaard zal hebben.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

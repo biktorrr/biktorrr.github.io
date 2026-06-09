@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Filmpje Pakken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Filmpje Pakken?</h1>
+<p class="tm">2 posts · started 2005-07-18 18:42 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050718184200" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2005-07-18 18:42</span></div>
+  <div class="pb">Transformers worden bioscoopfilm<br><br>IcoonZij die in de jaren tachtig een tiener waren zullen de de serie nog wel kennen: Transformers. Nu steeds meer animatieseries ook verfilmd worden, komen ook de robots die tot helden kunnen transformeren op het witte doek. Regisseur Michael Bay en uitvoerend producent Steven Spielberg willen de actiefilm in de zomer van 2007 in de bioscoop hebben.<br><br>''Onder leiding van Michael Bay en met Steven Spielberg als uitvoerend producent weten we dat 'Transformers' een geweldige actiefilm wordt, die perfect is voor het zomerseizoen'', zegt het enthousiaste hoofd distributie van Productiemaatschappij Dreamworks.<br><br>De Transformers verschenen in 1984 voor het eerst op de beeldbuis. Ze luisterden naar namen als Optimus Prime, Megatron en Override en konden in tanks, vrachtwagens, vliegtuigen en helikopters veranderen.<br><br>Goed, nog even geduld hebben dus.....</div>
+</article>
+<article class="post" data-ts="20050719114100" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2005-07-19 11:41</span></div>
+  <div class="pb">Ik ga mee, reserveer jij de kaartjes? <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

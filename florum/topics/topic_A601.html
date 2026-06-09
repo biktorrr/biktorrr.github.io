@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stervoetballers die penalty&#x27;s missen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stervoetballers die penalty&#x27;s missen</h1>
+<p class="tm">4 posts · started 2002-10-17 15:36 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021017153600" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-10-17 15:36</span></div>
+  <div class="pb">MH rulet niet alleen op het Florum, getuige deze passage uit de Volkskrant van vandaag:<br><br>Herben gaf tijdens het debat dat gistermiddag in de Kamer over het ontslag van de regering werd gevoerd, wel toe dat de LPF de laatste maanden 'de boel niet op orde had'. 'Er is een groot gevoel van deceptie en de schaamte is groot.' Hij vergeleek het optreden van de LPF-bewindslieden met stervoetballers die tijdens een WK de beslissende penalty's missen.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20021017172700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-10-17 17:27</span></div>
+  <div class="pb">Ja over die opmerking heb ik me ook verbaasd. Bedoelt i nou, dat ze er zo dicht bij zaten, maar net niet? Aan de andere kant  heeft Machtige Mat wel gewoon de Joint Strike Fighter er doorheen gekregen. Misschien wou i ook wel unilateraal de oorlog tegen Irak ontketenen, maar verhinderden de CDA en de VVD hem dat op slinkse wijze...</div>
+</article>
+<article class="post" data-ts="20021021120800" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-10-21 12:08</span></div>
+  <div class="pb">Ze hebben 'm erin geluisd, die arme Mat, zoveel is wel zeker. Misschien kan hij nu Floraboyscrisismanager worden, na 3 verliezen op rij mag je toch wel van een crisis spreken</div>
+</article>
+<article class="post" data-ts="20021021130800" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-10-21 13:08</span></div>
+  <div class="pb">het lijkt als of je nog gewoon in nederland bent oli4, net zo gezellig op het florum als vroeger</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4 maart Zaalballen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">4 maart Zaalballen</h1>
+<p class="tm">9 posts · started 2002-03-01 21:46 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020301214600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-03-01 21:46</span></div>
+  <div class="pb">Hallo, wie zijn er maandag bij voor onze <br>eerste winstpot in de 2e klasse?<br>22u USC<br><br>ik ben er...</div>
+</article>
+<article class="post" data-ts="20020302041500" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2002-03-02 04:15</span></div>
+  <div class="pb">tis  of het AMC of het USC wat mij betreft. In principe wel dus.</div>
+</article>
+<article class="post" data-ts="20020302215800" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-03-02 21:58</span></div>
+  <div class="pb">Ik ben er in ieder geval maar ik weet nog niet of ik mee kan doen aangezien adem halen pijn doet. Ik hoop dat het maandag beter gaat. Vanmidag was in ieder geval niet best.</div>
+</article>
+<article class="post" data-ts="20020303182500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-03-03 18:25</span></div>
+  <div class="pb">Ik ben d'r. Maarten en Holy: gaan jullie fluiten om 21.15 uur? </div>
+</article>
+<article class="post" data-ts="20020304001900" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2002-03-04 00:19</span></div>
+  <div class="ps">Roet in het eten</div><div class="pb">Ik behoor normaliter op Maandagavond op mijn werk aanwezig te zijn, dus ga mijn best doen om vrij te regelen, maar wordt denk latstig.<br>U hoort nog van mij.</div>
+</article>
+<article class="post" data-ts="20020304112700" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2002-03-04 11:27</span></div>
+  <div class="pb">Heb geen vrij kunnen krijgen..... :-( dus jullie zullen het helaas zonder mij moeten stellen. Kan iemand Oli verwittigen dat er gefloten moet worden voor de wedstrijd?</div>
+</article>
+<article class="post" data-ts="20020304133900" id="p7">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#7 · 2002-03-04 13:39</span></div>
+  <div class="pb">ben er gewoon </div>
+</article>
+<article class="post" data-ts="20020304134100" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-03-04 13:41</span></div>
+  <div class="pb">oli4 fluit<br>heb met FP en WJ gebeld, die komen ook...<br><br>7 man dus</div>
+</article>
+<article class="post" data-ts="20020304145600" id="p9">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#9 · 2002-03-04 14:56</span></div>
+  <div class="ps">gewone florum doet t</div><div class="pb">niet goed, als je op submit drukt krijg je het voetbal florum</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

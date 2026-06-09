@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stukje human interest – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stukje human interest</h1>
+<p class="tm">12 posts · started 2002-12-13 12:12 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021213121200" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-12-13 12:12</span></div>
+  <div class="pb">Eindelijk is mijn stuk nietszeggend genoeg bevonden om op internet te verschijnen:<br><br>http://www.parool.nl/1039759808869.html</div>
+</article>
+<article class="post" data-ts="20021216130100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-12-16 13:01</span></div>
+  <div class="pb">leuk ..<br></div>
+</article>
+<article class="post" data-ts="20021216182100" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-12-16 18:21</span></div>
+  <div class="pb">waar die fransen zich al niet druk over maken, als ze wijn en bier willen hebben richten ze toch zelf een supermarkt.. stelletje K+++ franzosen...</div>
+</article>
+<article class="post" data-ts="20021218100600" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-12-18 10:06</span></div>
+  <div class="pb">iedereen heeft evenveel recht op alcohol in zijn buurtsuper</div>
+</article>
+<article class="post" data-ts="20021218105500" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2002-12-18 10:55</span></div>
+  <div class="pb">wat een gezeik ..<br>het is toch gewoon uit de schappen gehaald om dat het geen rendabel product meer was? want dat doet iedere supermarkt. </div>
+</article>
+<article class="post" data-ts="20021218140300" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-12-18 14:03</span></div>
+  <div class="pb">vertel dat maar eens tegen de dekamarkt op de gedempte oude gracht, met hun cheap-shit halveliters (spreek uit: helvielaiders) voor de vrienden van de overkant.</div>
+</article>
+<article class="post" data-ts="20021218154600" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-12-18 15:46</span></div>
+  <div class="pb">daar neem jij er toch meer dan genoeg van af, Vic?<br>(ZO, dat ziet er lekker uit!)</div>
+</article>
+<article class="post" data-ts="20021218170800" id="p8">
+  <div class="ph"><span class="pa">PTc</span><span class="pm">#8 · 2002-12-18 17:08</span></div>
+  <div class="pb">eris een verschil tussen goedkoop bier, en dat spul dat die zwerverts drinken, dat ziet er namelijk niet zo lekker uit :)</div>
+</article>
+<article class="post" data-ts="20021218201800" id="p9">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#9 · 2002-12-18 20:18</span></div>
+  <div class="ps">zou er</div><div class="pb">zou er nu echt kwaliteitsverschil zitten tussen dat zwerversbier en dat yuppen-bier dat jij drinkt vic?? Lijkt mij niet, het enige verschil is de merchandising. Wat denk je dat al die reclame's wel niet kosten!! Volgens mij is dat goedkope bier, gewoon precies hetzelffde bier alleen in een ander blikje!</div>
+</article>
+<article class="post" data-ts="20021218201800" id="p10">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#10 · 2002-12-18 20:18</span></div>
+  <div class="ps">er is dus geen verschil</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20021219093200" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2002-12-19 09:32</span></div>
+  <div class="pb">Jawel, er is wel verschil: het ene bier wordt gedronken door zwervers, het andere door yuppen + Victor. Ik zou 't ook wel weten, hoor.</div>
+</article>
+<article class="post" data-ts="20021219131700" id="p12">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#12 · 2002-12-19 13:17</span></div>
+  <div class="pb">eeeeeh.... reclame voor het bier van de Dekamarkt? Bedoel je misschien bavaria-reclames wat al dat goedkope huismerk-bocht komt van bavaria. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

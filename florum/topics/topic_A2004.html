@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuws op voetbalflorum -&gt; – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuws op voetbalflorum -&gt;</h1>
+<p class="tm">3 posts · started 2007-03-28 16:34 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070328163400" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2007-03-28 16:34</span></div>
+  <div class="pb">zie aldaar</div>
+</article>
+<article class="post" data-ts="20070401114900" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-04-01 11:49</span></div>
+  <div class="pb">Om duistere redenen kan ik het voetbalflorum niet openen, maar gezien de aanwezigheidsfactor toen ik voor 't laatst checkte, 3 man, ga ik ervan uit dat de boel is afgeblazen. Bel me gaarne op Fransen mobiele als dat toch niet zo is. 00336 \é\én zes 493619.<br><br>volgende keer beter!</div>
+</article>
+<article class="post" data-ts="20070401140900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-04-01 14:09</span></div>
+  <div class="pb">ik denk dat het niet doorgaat...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4% – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">4%</h1>
+<p class="tm">6 posts · started 2006-03-24 20:56 by Grrrrrr</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060324205600" id="p1">
+  <div class="ph"><span class="pa">Grrrrrr</span><span class="pm">#1 · 2006-03-24 20:56</span></div>
+  <div class="pb">Nu tijdelijk 4% rente op de <a href="http://www.postbank.nl/ing/pp/container/search/q_go/answer/0,2766,1859_1093626,00.html?id=5977&handle=1.2143752E7&selected=true&clicktype=k&question=kwartaalextra"Postbank Kwartaalextra spaarrekening</a>.<br><br>Dat is de kracht van de Postbank.</div>
+</article>
+<article class="post" data-ts="20060324205700" id="p2">
+  <div class="ph"><span class="pa">Grrrrrr</span><span class="pm">#2 · 2006-03-24 20:57</span></div>
+  <div class="pb"><a href="http://www.postbank.nl/ing/pp/container/search/q_go/answer/0,2766,1859_1093626,00.html?id=5977&handle=1.2143791E7&selected=true&clicktype=k&question=kwartaalextra"><br>Postbank Kwartaalextra spaarrekening</a></div>
+</article>
+<article class="post" data-ts="20060324213500" id="p3">
+  <div class="ph"><span class="pa">Grrrrrr</span><span class="pm">#3 · 2006-03-24 21:35</span></div>
+  <div class="pb"><a href="http://home.casema.nl/toorn/">Rentepunten vergelijker</a></div>
+</article>
+<article class="post" data-ts="20060324231300" id="p4">
+  <div class="ph"><span class="pa">Leen</span><span class="pm">#4 · 2006-03-24 23:13</span></div>
+  <div class="pb">Dure bruiloft? kinderen? Leen! van Frisia Financieringen!</div>
+</article>
+<article class="post" data-ts="20060325095200" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2006-03-25 09:52</span></div>
+  <div class="pb">Sterfff!</div>
+</article>
+<article class="post" data-ts="20060327142100" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2006-03-27 14:21</span></div>
+  <div class="pb">Ik gebruik liever de site van de AFM voor mijn bankzaken:<br><br>http://www.geldwaardering.nl/</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

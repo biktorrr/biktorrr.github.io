@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Neusjes van de zalm – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Neusjes van de zalm</h1>
+<p class="tm">10 posts · started 2013-04-14 20:23 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130414202305" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2013-04-14 20:23</span></div>
+  <div class="pb">Gefeliciteerd ouwe jiddebakken, denkelijk kan het kampioenschap jullie nog maar moeilijk ontgaan. <br><br>Ik ga mijn tattoo even laten weglaseren.</div>
+</article>
+<article class="post" data-ts="20130414212314" id="p2">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#2 · 2013-04-14 21:23</span></div>
+  <div class="pb">ja, een PSV 100 jaar kampioenen is altijd genant..</div>
+</article>
+<article class="post" data-ts="20130414221634" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2013-04-14 22:16</span></div>
+  <div class="pb">Dank, dank. <br><br>Ik wilde m vanacht al claimen (na het gelijkspel van Vitesse) maar nu is het toch wel echt kat in het .</div>
+</article>
+<article class="post" data-ts="20130415005824" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2013-04-15 00:58</span></div>
+  <div class="pb">Gefeliciteerd hoor, lieve Jiddebakjes!<br><br>Overigens, een zekere M1ke van der H00rn, jongere broer van Jaap van der Hoorn van FC Knudde, was niet zo lang geleden nog in beeld voor het Nederlands elftal. Is het voorbarig om te zeggen dat zijn carriere nu voorbij is?</div>
+</article>
+<article class="post" data-ts="20130415103213" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2013-04-15 10:32</span></div>
+  <div class="pb">even relativeren Bode.. we zitten in een van Gaal tijdperk he. Dat betekend dat een bij RKC slecht spelende Rodney Sneijder nog in beeld is voor Oranje. </div>
+</article>
+<article class="post" data-ts="20130415184858" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2013-04-15 18:48</span></div>
+  <div class="pb">Dank, dank. De titel van dit belangrijke topiquille ontgaat me een beetje, maar als je bedoelt dat de Ajax-joden het meest sublieme genietvoetbal op de mat leggen, dan siert dat je!</div>
+</article>
+<article class="post" data-ts="20130416145323" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2013-04-16 14:53</span></div>
+  <div class="pb">Tja..het heeft even geduurd voordat ik het accepteerde maar het vertrek van Van Bommel heeft dit gelukkig een beetje goed kunnen maken. Joden van harte met de tripel! Dit begint zo langzamerhand wel een beetje genant te worden voor de boeren.</div>
+</article>
+<article class="post" data-ts="20130416190811" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2013-04-16 19:08</span></div>
+  <div class="pb">Uitstekend initiatief dit topic, ik geniet er dagelijks van. Ik hoop alleen maar dat het niet te snel gaat straks (hubris alert), zodat hat kampioenschap valt tegen Willem II thuis ipv NAC uit, en dan souverein met de A1 nog even Groningen wegtikken op de slotdag.</div>
+</article>
+<article class="post" data-ts="20130505184121" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2013-05-05 18:41</span></div>
+  <div class="pb">felicidados ouwe jiddebakken.</div>
+</article>
+<article class="post" data-ts="20130507011208" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2013-05-07 01:12</span></div>
+  <div class="pb">Je bent reporter of niet: ruim 30 uur na de feiten ben ik ook op hoogte! Kampioenen!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

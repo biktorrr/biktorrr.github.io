@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Madrid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Madrid</h1>
+<p class="tm">6 posts · started 2002-11-13 18:16 by FdG</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021113181600" id="p1">
+  <div class="ph"><span class="pa">FdG</span><span class="pm">#1 · 2002-11-13 18:16</span></div>
+  <div class="pb">He, ik ben nu met mijn dispuut in Madrid. Een uitstekende gelegenheid om Joost ook op te zoeken maar waar woont hij en wat is z´n telefoonnummer. <br>Joost, als je dit leest, ik ben in Madrid t/m vrijdag.<br>Je kan me smssen op 06-54681404 of mailen op bennebroek@hotmail.com als je zin hebt om wat af te spreken.<br>Adios<br></div>
+</article>
+<article class="post" data-ts="20021114003500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-11-14 00:35</span></div>
+  <div class="pb">Merlijn, heb jij anders z'n nr.?<br><br>PS:SHearer is gay, Shearer is gay ole ole!!!!<br></div>
+</article>
+<article class="post" data-ts="20021114092700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-11-14 09:27</span></div>
+  <div class="pb">Joosts nummer is (ook voor mensen die 'm willen SMS'en): +34600886483 .</div>
+</article>
+<article class="post" data-ts="20021114195900" id="p4">
+  <div class="ph"><span class="pa">FdG</span><span class="pm">#4 · 2002-11-14 19:59</span></div>
+  <div class="pb">Dank je, Merlijn<br>We hebben meteen afgesproken want Joost vertrekt morgen voor een paar daagjes naar Barcelona. ´t was erg gezellig!</div>
+</article>
+<article class="post" data-ts="20021118093600" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-11-18 09:36</span></div>
+  <div class="pb">hey josit heb je die schapen die door de stad heebgingen nog gezien?</div>
+</article>
+<article class="post" data-ts="20021122195900" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-11-22 19:59</span></div>
+  <div class="pb">Hellaas niet Tim, twas me een groot gemis.......</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

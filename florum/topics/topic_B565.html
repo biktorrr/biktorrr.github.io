@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>van de Sar vamos? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">van de Sar vamos?</h1>
+<p class="tm">7 posts · started 2002-08-28 14:03 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020828140300" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-08-28 14:03</span></div>
+  <div class="pb">oja Wj, ikheb je een zaalbal 2002/2003 pagina gestuurd, met info over het nieuwe seizoen, (check mail)<br><br>Tijmen, neem jij je camera mee naar de beginpot, zodat we een teamfoto kunnen maken, of anders iemand met een digicam of gewone+scannert</div>
+</article>
+<article class="post" data-ts="20020828161400" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-08-28 16:14</span></div>
+  <div class="pb">misschien bij berichten neerzetten wie als laatste gepost heeft, wie een discussie is gestart is niet heel relevant lijkt mij</div>
+</article>
+<article class="post" data-ts="20020904215800" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-09-04 21:58</span></div>
+  <div class="pb">mooi<br><br>vanuit dubrovnik in kroatie zeg ik zosls altijd wat ik denk<br><br><br>MOOI</div>
+</article>
+<article class="post" data-ts="20050128120300" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2005-01-28 12:03</span></div>
+  <div class="pb">Erg triviaal, maar het viel me toch op. De Mirror en The Sun zijn in de afgelopen twee weken alle keepers van de topclubs aan het affakkelen, zowel Howard, Lehman als Dudek krijgen de volle lag , dag na dag. dat lijkt me een mooi gat voor Edwin.<br></div>
+</article>
+<article class="post" data-ts="20050128132000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-01-28 13:20</span></div>
+  <div class="pb">wow, wat bizar dit topic</div>
+</article>
+<article class="post" data-ts="20050128165500" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2005-01-28 16:55</span></div>
+  <div class="pb">mooie topics uit 2002, flora-history</div>
+</article>
+<article class="post" data-ts="20050128224100" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2005-01-28 22:41</span></div>
+  <div class="pb">Een aantal bizarre posts uit het verleden zijn verwijderd. De bizarre opening van TN (volgens mij heeft van der Sar net tot 2008 getekend) uitgezonderd.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

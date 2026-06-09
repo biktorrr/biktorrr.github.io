@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2468 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2468</h1>
+<p class="tm">2 posts&nbsp;·&nbsp;started 2008-08-29 17:44 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080829174400" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2008-08-29 17:44</span></div>
+  <div class="pb">Mocht iemand nog een klokkie willen voor niet teur, ik heb de onderstaande aanbiedingen binnen.<br><br><i>"Merken Horloges en zeer kleine prijzen. Niet zeggen dat het niet waar is. Voor ons om het horloge zeer snel en veilig naar huis gestuurd. De kwaliteit zal u inspireren, neem een kijkje op onze kant."</i><br><br><i>"Die zegt dat de klok altijd dure merken. Bij ons krijgt u de teursten Horloges zeer goedkoop. De bestelling wordt direct verwerkt en wordt u veilig en zurfieden. Bij ons bespaart u goed, zelfs met dure Horloges."</i><br></div>
+</article>
+<article class="post" data-ts="20080829175700" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2008-08-29 17:57</span></div>
+  <div class="pb">ik bied dit:<br><br><i>Deze Horloges zullen hou van jou. <br><br>Zeer snel en veilig horloge merken. Alles is zeer snel en neutraal. Get dure Horloges zeer snel en zeer goedkoop hier en bestel zonder risico. U krijgt een garantie.</i></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

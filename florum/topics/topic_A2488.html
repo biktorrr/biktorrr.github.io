@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mooi lekkerst vrouwtjes leren versieren? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mooi lekkerst vrouwtjes leren versieren?</h1>
+<p class="tm">6 posts · started 2008-09-18 10:27 by Karim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080918102700" id="p1">
+  <div class="ph"><span class="pa">Karim</span><span class="pm">#1 · 2008-09-18 10:27</span></div>
+  <div class="pb">Vrijgezelle mannen opgelet! "Succes met vrouwen is te leren", aldus het motto van de internationale conferentie op het gebied van het versieren van vrouwen: de Real Man Conference. Tijdens deze conferentie, die plaatsvindt 20 & 21 september in het Auditorium van de RAI, zullen experts uit de hele wereld lezingen geven over het versieren van vrouwen. <br><br>Kijk voor meer informatie (en aanmelding?) op www.realmanconference.nl<br></div>
+</article>
+<article class="post" data-ts="20080918193400" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2008-09-18 19:34</span></div>
+  <div class="pb">Tante, schandalig je business zo openlijk op het Florum etaleren. Wie zou daar nou heenmoeten?!</div>
+</article>
+<article class="post" data-ts="20080919072500" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-09-19 07:25</span></div>
+  <div class="pb">Nou het is een conference voor real men, dus in principe zouden we er allemaal naar toe kunnen. </div>
+</article>
+<article class="post" data-ts="20080919073700" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-09-19 07:37</span></div>
+  <div class="pb">AAAAAAAAAAAAAAAAAAAAAAAIGHT!</div>
+</article>
+<article class="post" data-ts="20080919080500" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-09-19 08:05</span></div>
+  <div class="pb">skitterend</div>
+</article>
+<article class="post" data-ts="20080919094400" id="p6">
+  <div class="ph"><span class="pa">Mr Player</span><span class="pm">#6 · 2008-09-19 09:44</span></div>
+  <div class="pb">Geachte echte mannen, neem ook kennis van <a href="http://www.nl.bol.com/is-bin/INTERSHOP.enfinity/eCS/Store/nl/-/EUR/BOL_DisplayProductInformation-Start?Section=BOOK_EN&BOL_OWNER_ID=1001004004926149">dit boek</a> alvorens u in te schrijven.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

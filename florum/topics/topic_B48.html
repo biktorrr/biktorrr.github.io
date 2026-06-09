@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>check dit!!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">check dit!!!!</h1>
+<p class="tm">9 posts · started 2002-01-24 14:03 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020124140300" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-01-24 14:03</span></div>
+  <div class="pb">http://www.telegraaf.nl/sportlink/teksten/spl.voetbal.stichting.wereldkampioenschap.html</div>
+</article>
+<article class="post" data-ts="20020125120000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-01-25 12:00</span></div>
+  <div class="pb">floraboys in da hou-ouse?</div>
+</article>
+<article class="post" data-ts="20020125141500" id="p3">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#3 · 2002-01-25 14:15</span></div>
+  <div class="pb">lijkt me wel<br></div>
+</article>
+<article class="post" data-ts="20020126120500" id="p4">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#4 · 2002-01-26 12:05</span></div>
+  <div class="pb">relax.. inschrijven...<br>TuuT</div>
+</article>
+<article class="post" data-ts="20020127193900" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-01-27 19:39</span></div>
+  <div class="ps">kutte</div><div class="pb">van dit bericht is, je kan je nergens inschrijven.. mn waar zou dat zijn</div>
+</article>
+<article class="post" data-ts="20020128131600" id="p6">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#6 · 2002-01-28 13:16</span></div>
+  <div class="pb">eeehhhhhmmmmmmmm.<br><br>http://www.wkamsterdam.nl/  ??? <br><br>en vervolgens<br><br><br>http://www.wkamsterdam.nl/inschrijf_form.htm<br><br>knalluh<br><br>jongens als je meedoet kost het 30 piek de man<br>whos in?<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20020128132900" id="p7">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#7 · 2002-01-28 13:29</span></div>
+  <div class="pb">he. we gaan toch gewoon met het hele team inschrijven.. misschien wat erbij.. ik weet niet hoeveel mensen je nodig hebt voor 1 team?<br><br>Tim</div>
+</article>
+<article class="post" data-ts="20020128203500" id="p8">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#8 · 2002-01-28 20:35</span></div>
+  <div class="ps">i&#x27;&#x27;m in</div><div class="pb">misschien wel op vakantie, maar een invaller is snel gevonden natuurlijk.. het gaat om het WK</div>
+</article>
+<article class="post" data-ts="20020201185300" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2002-02-01 18:53</span></div>
+  <div class="pb">Les Fran\çais dans la maison</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

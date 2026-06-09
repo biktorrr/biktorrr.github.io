@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaalballen 20/3 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaalballen 20/3</h1>
+<p class="tm">12 posts · started 2007-03-15 09:53 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070315095300" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-03-15 09:53</span></div>
+  <div class="pb">21:00 niet fluiten<br><br>Probleem is dat ik niet kan omdat er niemand anders is die kan werken die avond. <br>Bovenop komend probleem is dat eergisteren mijn opa in Engeland is overleden en ik ook daarheen ga. Nu is het zo dat ze in engeland geen 5 dagen regeling hebben, maar mocht het zo zijn dat de dienst die dinsdag of woensdag of donderdag plaatsvindt dan kan ik dubbel niet.<br><br>Sorry boys, ik zal Adri helpen herinneren dat ie moet ballen.</div>
+</article>
+<article class="post" data-ts="20070315100100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-03-15 10:01</span></div>
+  <div class="pb">mijn moeder is nu met mijn auto in engeland, maar ik ga ervanuit dat ze tussendoor nog terug komt. Mocht een van jullie de auto willen lenen om het erheen rijden makkelijker te maken kan dat misschien worden geregeld.<br></div>
+</article>
+<article class="post" data-ts="20070315102200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-03-15 10:22</span></div>
+  <div class="pb">Gecondoleerd in ieder geval.</div>
+</article>
+<article class="post" data-ts="20070315105300" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2007-03-15 10:53</span></div>
+  <div class="pb"> gecondoleerd met je opa.</div>
+</article>
+<article class="post" data-ts="20070315112900" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2007-03-15 11:29</span></div>
+  <div class="pb">Present(mais sans une voiture).</div>
+</article>
+<article class="post" data-ts="20070315121400" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-03-15 12:14</span></div>
+  <div class="pb">Dude, gecondoleerd, het is dan toch wel erg snel gegaan nog. <br><br>Anyway, het lijkt me dat we er zonder auto ook wel komen, de bussen gaan gewoon dus dat zou geen probleem moeten zijn. <br><br>Condoleer je ouders en zusje ook van me, sterkte.</div>
+</article>
+<article class="post" data-ts="20070316173700" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2007-03-16 17:37</span></div>
+  <div class="pb">ik ben er dinsdag</div>
+</article>
+<article class="post" data-ts="20070319102000" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2007-03-19 10:20</span></div>
+  <div class="pb">ik ook</div>
+</article>
+<article class="post" data-ts="20070319123700" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2007-03-19 12:37</span></div>
+  <div class="pb">ik heb adri het nummer van vic en joost gegeven. Hij zou een van jullie bellen om te overleggen.</div>
+</article>
+<article class="post" data-ts="20070320103300" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2007-03-20 10:33</span></div>
+  <div class="pb">Kenzo is er ook bij liet hij mij gisteren weten. <br>Joost zou ook komen. <br>Van Adri heb ik nog niks gehoord, maar die komt dus ook wel.<br><br>Dan zijn we dus met zn 7en, moet te doen zijn.</div>
+</article>
+<article class="post" data-ts="20070320141000" id="p11">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#11 · 2007-03-20 14:10</span></div>
+  <div class="pb">ik heb net bevestiging gehad van adri en kenzo</div>
+</article>
+<article class="post" data-ts="20070320232900" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2007-03-20 23:29</span></div>
+  <div class="pb">Boyz... die 2-0 was maar moeilijk te verteren.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

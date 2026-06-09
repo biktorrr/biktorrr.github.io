@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>even... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">even...</h1>
+<p class="tm">10 posts · started 2005-09-10 15:37 by vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050910153700" id="p1">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#1 · 2005-09-10 15:37</span></div>
+  <div class="pb"><center><h2>!!!GEFELICITEERD MERREL!!!</h2></center><br><br>Nog vele jaren, Florabikkel.</div>
+</article>
+<article class="post" data-ts="20050910160500" id="p2">
+  <div class="ph"><span class="pa">Ca &amp; Tube</span><span class="pm">#2 · 2005-09-10 16:05</span></div>
+  <div class="pb">gefeliciteerd!<br><br>geef je nog een feestje?</div>
+</article>
+<article class="post" data-ts="20050910161400" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2005-09-10 16:14</span></div>
+  <div class="pb">GEFELICIFLAPSTEARD!!!!<br></div>
+</article>
+<article class="post" data-ts="20050910163600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2005-09-10 16:36</span></div>
+  <div class="pb">het heeft er alle schijn van een veelbelovend jaar te worden; ik hoop blessurevrij voor je. Gratuliere<br></div>
+</article>
+<article class="post" data-ts="20050910170000" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2005-09-10 17:00</span></div>
+  <div class="pb">gefeliciteerd! Drink er een goede georgische wodka op zou ik zeggen!!</div>
+</article>
+<article class="post" data-ts="20050910191500" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2005-09-10 19:15</span></div>
+  <div class="pb">van harte, ouwe bikkel</div>
+</article>
+<article class="post" data-ts="20050910201600" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2005-09-10 20:16</span></div>
+  <div class="pb">lang zal die leven....<br>...<br>in de gloria<br>in de gloria<br>..<br>hieperdepiep hoera<br>hieperdepiep hoera<br>.</div>
+</article>
+<article class="post" data-ts="20050910212700" id="p8">
+  <div class="ph"><span class="pa">Een best jaloerse Oli4</span><span class="pm">#8 · 2005-09-10 21:27</span></div>
+  <div class="pb">Gefeliciteerd, Merlijn, en veel plezier in Georgi\ë. </div>
+</article>
+<article class="post" data-ts="20050912093800" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2005-09-12 09:38</span></div>
+  <div class="pb">mer liet mij via de seysemseys weten dat hij het, nog een slobberwijntje nemend, 'primaatjes' naar z'n zin heeft.</div>
+</article>
+<article class="post" data-ts="20050912101500" id="p10">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#10 · 2005-09-12 10:15</span></div>
+  <div class="pb">Nog gefeliciteerd Mer.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

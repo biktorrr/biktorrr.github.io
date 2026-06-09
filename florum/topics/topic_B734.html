@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WK Gokken – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WK Gokken</h1>
+<p class="tm">4 posts · started 2006-05-25 12:32 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060525123200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-05-25 12:32</span></div>
+  <div class="pb">Was rap langs de online bookies gegaan om te kijken wat de kansverhoudingen volgens hen zijn. Vaak is Nederland 5 a 6 na de gebruikelijke winnaars van grote toernooien en grote voetballanden.<br>Opvallend, bet365 geeft je 65x je inzet terug als de Hunter topscoorder wordt van het WK. Best money you'll ever spent zou ik zo zeggen...</div>
+</article>
+<article class="post" data-ts="20060525124800" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-05-25 12:48</span></div>
+  <div class="pb">KJH stond trouwens maar net iets hoger dan Kenzo K en Jazzmeister.<br><br>nog iets dat me zo snel opviel, bijna alle chiefs keren hetzelfde uit als we we 'runner-up' zijn of 'winner'. Feitelijk betekend dat volgens de bookies dat als we in die finale komen we em ook meteen pakken.mooi.<br></div>
+</article>
+<article class="post" data-ts="20060529155000" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2006-05-29 15:50</span></div>
+  <div class="pb">lijkt me een goed plan voor bet 365 ofzo.. Hunt gaat niet eens mee..</div>
+</article>
+<article class="post" data-ts="20060529185200" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-05-29 18:52</span></div>
+  <div class="pb">ow, dan moet ik snel mijn inzet terugvragen...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

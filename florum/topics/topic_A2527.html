@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TUBE Gefeliciteerd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">TUBE Gefeliciteerd!</h1>
+<p class="tm">10 posts · started 2008-10-30 15:49 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081030154900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-10-30 15:49</span></div>
+  <div class="pb">Lekker laat op de middag, maar niet toch nooit t\é laat:<br><br><h2>GEFELICITEERD TUBE</h2></div>
+</article>
+<article class="post" data-ts="20081030162600" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2008-10-30 16:26</span></div>
+  <div class="pb">Ah, de Benjamin. 29 worden tussen alle dertigers. <br><br>Gefeliciteerd Tube!</div>
+</article>
+<article class="post" data-ts="20081030173200" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2008-10-30 17:32</span></div>
+  <div class="pb">Ik dacht dat er alleen voor ronde getallen een topic op het Florum werd geopend? Desondanks: gratulaties Tube.</div>
+</article>
+<article class="post" data-ts="20081030191700" id="p4">
+  <div class="ph"><span class="pa">LH`</span><span class="pm">#4 · 2008-10-30 19:17</span></div>
+  <div class="pb">Natuurlijk gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20081030202000" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2008-10-30 20:20</span></div>
+  <div class="pb">felicititaties jur!</div>
+</article>
+<article class="post" data-ts="20081030203000" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2008-10-30 20:30</span></div>
+  <div class="pb">Van harte! Proost!!</div>
+</article>
+<article class="post" data-ts="20081030222800" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2008-10-30 22:28</span></div>
+  <div class="ps">op de valreep</div><div class="pb">GEFELICITEERD!</div>
+</article>
+<article class="post" data-ts="20081030232500" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2008-10-30 23:25</span></div>
+  <div class="ps">beffoindre!</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20081031141200" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-10-31 14:12</span></div>
+  <div class="pb">Gefeliciteerd!!!</div>
+</article>
+<article class="post" data-ts="20081101125900" id="p10">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#10 · 2008-11-01 12:59</span></div>
+  <div class="pb">Bedankt voor de felicitaties! Ik heb vandaag wel het gevoel dat ik weer een stap op de weg van de aftakeling heb gezet, maar dat kan ook door de biertjes van gisteravond komen.....</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

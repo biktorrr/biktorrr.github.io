@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hoop der  Floraboys keert terug – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hoop der  Floraboys keert terug</h1>
+<p class="tm">7 posts · started 2003-02-10 12:23 by Sportweek</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030210122300" id="p1">
+  <div class="ph"><span class="pa">Sportweek</span><span class="pm">#1 · 2003-02-10 12:23</span></div>
+  <div class="pb">Vermoeid doch voldaan keerde zaterdagavond de spil van het Flora-1 team van de FC Floraboys, Victor "0" de Boer, terug van een hoogtestage in Oostenrijk. In de thuisstad van zijn club wachtte een horde journalisten hem op. Gevraagd naar de meerwaarde van dit reisje antwoorde de sterspeler: <br>"Ach ja, beetje dope trucen uithalen en de hardcore tiefschnee scenes roeleren hebben nog nooit een topsporter kwaad gedaan" Naar de vraag of het weer goed was antwoorde de nummer 0: " Ja hoor toppie, vooral veel mooie sneeuw. Beetje mist op de tweede en derde dag maar dat was allemaal te besnowboarden". Daarna verschoof het onderwerp van de vragen van de journalisten naar de  uitgaansgelegenheden: "Veel goede apres-ski momenten beleefd en fijn meegezongen met klassiekers als 'toeter op mijn waterscooter' en 'das sind kein 20 centimeter, nie im leben kleine Peter'. Goed voor de longen en uithoudingsvermogen"</div>
+</article>
+<article class="post" data-ts="20030210125400" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2003-02-10 12:54</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030210185300" id="p3">
+  <div class="ph"><span class="pa">Florafan met heel laag Floraclubcardnummer</span><span class="pm">#3 · 2003-02-10 18:53</span></div>
+  <div class="pb">Ik als Florafan van het eerste uur zou wel graag het een en 't ander te weten komen.<br><br>- Wat is er waar van de geruchten rond Victor en Timmie onder de douche?<br>- Probeert Victor de eindelijk teruggekeerde rust in de selectie te verstoren door een roddel te cre\ëren over een billenmaatschap tussen Man van de Bühne en Eeuwig Talent?<br>- Hoe reageert Victor op zijn laatste cijfer? </div>
+</article>
+<article class="post" data-ts="20030211093300" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-02-11 09:33</span></div>
+  <div class="ps">Stervedette beantwoord sympathiek fanvragen</div><div class="pb">De eerste vraag verbaast me eigenlijk een beetje. In de Sportweek van afgelopen week stond nog een uithaalposter van Victor en Tim in Tims bubbelbad. Gebroederlijk in elkaars armen, grote glimlach, J L@u die een grote magnum champagne uit de voorraadkast haalt. Nou ja, als ze dat al in hun vrije tijd doen, moet je 's nagaan wat ze doen als ze met ons onder douche staan. Al moet ik zeggen dat iedereen vanonder de douche vlucht als Het Koppel binnenkomt. Je ziet dan al die blik in hun ogen, potten met van alles en nog wat mee, en hoppetee. Maar dat zijn kleedkamergeheimen en we vinden allemaal dat we daar niets mee te maken hebben.<br><br>Zoals jullie weten, geef ik altijd alles tijdens een wedstrijd. Ik ben een 200% full-prof. Voor en na een wedstrijd zonder ik me altijd af in mijn eigen zuurstofdouche, met loudspeakers die You'll never walk alone (in J L@u's versie) spelen. Ik heb dan echt wel andere dingen om over na te denken dan Tijmens billen.<br><br>Hoe Victor zijn cijfer vind weet ik niet, maar ik denk dat het hem vies tegenvalt dat hij niet weer 's het hoogste heeft gehaald.</div>
+</article>
+<article class="post" data-ts="20030211111500" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-02-11 11:15</span></div>
+  <div class="pb">laat ik het zo zeggen: ik denk niet dat mensen die DJ "filosoof op het veld" Erick "Ik ren niet, daar wordt ik zo moe van" Z een 7,5 geven niet al te serieus genomen hoeven worden. </div>
+</article>
+<article class="post" data-ts="20030211115700" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2003-02-11 11:57</span></div>
+  <div class="pb">"What happens in the kleedkamer, stays in the kleedkamer."</div>
+</article>
+<article class="post" data-ts="20030211121400" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-02-11 12:14</span></div>
+  <div class="pb">ja altijd jammer dat mensen met lekken naar de pers hun eigen falen op het veld moeten verbergen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

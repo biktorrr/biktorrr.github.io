@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scheidsrechter – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Scheidsrechter</h1>
+<p class="tm">3 posts · started 2002-10-25 11:18 by Rene Werpsma</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021025111800" id="p1">
+  <div class="ph"><span class="pa">Rene Werpsma</span><span class="pm">#1 · 2002-10-25 11:18</span></div>
+  <div class="pb">Beste Floraboys, <br><br>bij deze wil ik jullie nogmaals bedanken voor de goede arbitrage bij onze wedstrijd. De hoofdscheidsrechter ''famous'' was streng maar rechtvaardig.<br><br>RESPECTAAAAAAA!!!<br></div>
+</article>
+<article class="post" data-ts="20021025114500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-10-25 11:45</span></div>
+  <div class="pb">Een scheidsrechter met een fanclub, wow! Zometeen gaan nog fans je achterna reizen, Frank, om te zien hoe fantastisch je nu weer fluit. Ik moet ook zeggen, dat ik genoten heb. Alleen wel jammer dat je die blauwe gast anderhalve minuut te vroeg het veld in liet komen...</div>
+</article>
+<article class="post" data-ts="20021028114900" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-10-28 11:49</span></div>
+  <div class="pb">mooi mooi...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

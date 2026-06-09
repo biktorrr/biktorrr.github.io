@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De Partij – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De Partij</h1>
+<p class="tm">7 posts · started 2016-12-01 05:39 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20161201053959" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2016-12-01 05:39</span></div>
+  <div class="pb">Ik heb trouwens gestemd. Diederik Samsom. Here, bespaar ons Asscher!</div>
+</article>
+<article class="post" data-ts="20161201170338" id="p2">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#2 · 2016-12-01 17:03</span></div>
+  <div class="pb">wow.. een nieuw topic op het florum! En dat door de PVDA.<br><br>Kan ik ook nog ergens stemmen? Ah nee, dan moet je lid zijn. Goed gestemd Bode!</div>
+</article>
+<article class="post" data-ts="20161203154247" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2016-12-03 15:42</span></div>
+  <div class="pb">Een opmerkelijke keus Bernard. Bij Asscher heb je nog een kans dat de pvda meer dan 25 zetels haalt. Met Samsom eindigen jullie denkelijk nog onder Henk Krol (nu al in het geval in de peilingen). <br><br>In het verleden heb je wel eens gemeld dat je stemt voor de progressive partij met de meeste kans op een portie macht(geparafraseerd). Is dat nog steeds de bedoeling? <br><br></div>
+</article>
+<article class="post" data-ts="20161204000137" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2016-12-04 00:01</span></div>
+  <div class="pb">Je hebt een punt, Jazz. Maar die Asscher is me toch echt iets te glijerig.</div>
+</article>
+<article class="post" data-ts="20161204042534" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2016-12-04 04:25</span></div>
+  <div class="pb">Het standpunt van mij waar je naar verwijst dateert van de verkiezingscampagne van 2010, toen de PvdA in de peilingen de grootste linkse partij was, en met enige zetels meer groter dan de VVD had kunnen zijn. Nu is D66 de grootste progressieve partij, dus ik zie waar je naar toe gaat. Mijn bezwaren tegen D66 blijven socia-economisch:<br><br>1) Hun geloof in het in de hand houden van het begrotingstekort. Het is bij gelegenheid bij D66 enigszins fetisch-achtig. <br>2) Traditioneel gezien, een te groot geloof in zelfverwezenlijking door onderwijs en werk, waarbij ze mijns insziens de moeilijkheden en beperkingen van een groot deel van de bevolking onderschatten. <br><br>Als je mij zou kunnen overtuigen dat D66 op deze punten minder ver van mij afstaat dan ik denk, zou ik kunnen overwegen op die partij te stemmen.<br><br>(Even voor de duidelijkheid: het gaat er niet om mij ervan te overtuigen dat ik op de bovengenoemde punten fout zit en D66 goed. Dat gaat nl. niet lukken, denkelijk.)</div>
+</article>
+<article class="post" data-ts="20161209194451" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2016-12-09 19:44</span></div>
+  <div class="pb">Toch gefeliciteerd met het Lood als vervanger van de Dief, lieve Bernie.</div>
+</article>
+<article class="post" data-ts="20161210131926" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2016-12-10 13:19</span></div>
+  <div class="pb">DieD welteverstaan. Stomme Freudiaanse autocorrect</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

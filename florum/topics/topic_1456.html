@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 1456 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 1456</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2005-04-20 08:33 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050420083300" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1&nbsp;·&nbsp;2005-04-20 08:33</span></div>
+  <div class="pb">The Sun kop vandaag met:<br><a href="http://www.thesun.co.uk/article/0,,2-2005180984,00.html">"FROM HITLER YOUTH TO... PAPA RATZI" </a><br></div>
+</article>
+<article class="post" data-ts="20050420083800" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2&nbsp;·&nbsp;2005-04-20 08:38</span></div>
+  <div class="pb">deze vind ik ook mooi:<br><br><i>The hard-liner has earned the nicknames Gods Rottweiler and Panzercardinal due to his forthright, strictly orthodox views.</i><br><br><br></div>
+</article>
+<article class="post" data-ts="20050420113500" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3&nbsp;·&nbsp;2005-04-20 11:35</span></div>
+  <div class="pb">terechte koppen heeft de sun toch altijd, wel een goed teken datie in de hitler jugend heeft gezeten, voor een wereldleider kan dat vast geen kwaad.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

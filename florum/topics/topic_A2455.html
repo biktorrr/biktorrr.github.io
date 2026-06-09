@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vraagje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vraagje</h1>
+<p class="tm">10 posts · started 2008-08-24 11:20 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080824112000" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2008-08-24 11:20</span></div>
+  <div class="pb">Carola, mijn vriendinnetje, heeft een nieuwbouwhuis gekocht, haar eigen huis al verkocht (beetje te vroeg) waardoor ze nu een jaar moet overbruggen in een huur woning. Nu is de vraag wie heeft er nog een koelkast(je) en/of een gas kook plaat te leen, te weggeef etc?<br><br></div>
+</article>
+<article class="post" data-ts="20080825092600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-08-25 09:26</span></div>
+  <div class="pb">nee, wel een hele grote monitor</div>
+</article>
+<article class="post" data-ts="20080825094800" id="p3">
+  <div class="ph"><span class="pa">Shenkie</span><span class="pm">#3 · 2008-08-25 09:48</span></div>
+  <div class="pb"><a href="http://www.kaboem.nl/boys/shenkie_in_de_koelkast_de_jeugd_van_tegenwoordig_djvt">Ik zit erin</a></div>
+</article>
+<article class="post" data-ts="20080825124100" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-08-25 12:41</span></div>
+  <div class="pb">helaas</div>
+</article>
+<article class="post" data-ts="20080825124400" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2008-08-25 12:44</span></div>
+  <div class="pb">Ook helaasjes...</div>
+</article>
+<article class="post" data-ts="20080825125000" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2008-08-25 12:50</span></div>
+  <div class="pb">wij hebben wel dingen te koop als we weggaan. <br>Weet alleen niet of de koelkast/gasfornuis nou al vergeven zijn of niet.</div>
+</article>
+<article class="post" data-ts="20080825134700" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2008-08-25 13:47</span></div>
+  <div class="pb">Dat is lekker duidelijk in ieder geval!<br><br>Wanneer gaan jullie eigenlijk? En wanneer mogen we dan die befaamde Bostoniaanse rivierkreeft bij jullie komen eten?</div>
+</article>
+<article class="post" data-ts="20080826091400" id="p8">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#8 · 2008-08-26 09:14</span></div>
+  <div class="pb">de koelkast en het gasfornuis zijn nog niet verkocht! Die kan ze dan wel overkopen.<br><br>We vertrekken 13 oktober uit Nederland en komen uiteindelijk op 27 november in Boston aan. Dus mocht je langs willen komen, kan dat na 27 november...<br><br>Laura</div>
+</article>
+<article class="post" data-ts="20080826103800" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2008-08-26 10:38</span></div>
+  <div class="pb">Nemen jullie de boot <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0>?</div>
+</article>
+<article class="post" data-ts="20080826140600" id="p10">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#10 · 2008-08-26 14:06</span></div>
+  <div class="pb">nope, geen boot, wel een tussenstop van 6 1/2 week in Nieuw Zeeland</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

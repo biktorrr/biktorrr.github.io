@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mk&#x27;s site – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mk&#x27;s site</h1>
+<p class="tm">4 posts · started 2003-03-17 11:29 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030317112900" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-03-17 11:29</span></div>
+  <div class="pb">he commander, leuke foto's hoor, ziet er allemaal erg knus uit. Ik zag dat ze daar ook een mooi bal-veldje hebben?<br><br>iedereen die het nog niet weet de foto's zijn te vinden op: www.kuys.net<br><br>ik post hieronder de tweede column van de commander voor de Studentenraad van FNWI<br></div>
+</article>
+<article class="post" data-ts="20030317113000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-03-17 11:30</span></div>
+  <div class="ps">Mk&#x27;s Column dl 2</div><div class="pb">Misha's Column: O-Week <br>M.J.A. Kuijs <br> <br>  O-Week<br>De aankomst op een onbekende plek is raar, zeker na meer dan een etmaal in een vliegtuig te zitten. Na eerst je bed en je kamer verkent te hebben volgt al snel de rest van de omgeving. Het probleem is alleen dat Melbourne zo ontzettend groot is dat je te voet eigenlijk nergens komt. Gelukkig is de universiteit wel goed te bereiken. De University of Melbourne start het jaar voor internationale studenten met een week vol van activiteiten de O-Week. <br><br>O-week is zoiets als de Entree-week op de UvA maar dan zowel voor de stad als voor de universiteit. Alles is er vele male intensiever. Als internationale student wordt je begraven onder de informatie, overrompeld door de schoonheid van de campus en bezwelmd door de alchohol. Daar kom ik straks op terug. Melbourne is een universiteit die zeer internationaal georienteerd is. Dit geeft je studie een heel ander allure, in ieder geval voor mij. Het besef dat al deze studenten hun land verlaten - je kan niet zomaar even terug naar je ouders alles is minstens 6 uur vliegen - om in Melbourne te kunnen studeren, toont voor mij aan wat een studie eigenlijk is. Niet het gevoel wat vaak in Nederland heerst: ik studeer, want dat is normaal, maar dat je een unieke kans hebt gekregen om jezelf te ontwikkelen. Te vaak beschouwen Nederlandse studenten dit als vanzelfsprekend.<br><br>Terug naar het onderwerp wat alle studenten over de hele wereld aanspreekt, het bier.<br>Tijdens O-Week probeert elke vereniging jouw aandacht te trekken. Australiers doen dat door middel van een barbie, in het kort worst met bier. Deze barbecues zijn tijdens O-Week op elk moment alom aanwezig. Menig student geniet hier van een gratis ontbijt, uiteraad weggespoeld met bier. Bier wordt hier voornamelijk gedronken uit blikken van 375 ml. Er is ook een  More Beer Club, waar ik nu een trots lid van ben, deze houdt de spirit van O-Week levendig door elke twee weken een barbie met bier te organiseren, op kosten van de universiteit. Een idee voor de UvA?<br><br>Tenslotte wil ik nog een opmerking maken over de Science studies hier. In tegenstelling tot Nederland zitten de beta-opleidingen hier in de lift, dit jaar studeren er maar liefst 6.212 studenten aan de Science faculty. Een natte droom van onze Decaan. <br> <br>  Melbourne Faculty Profiles<br>Misha in Melbourne<br>Column 1: Afscheid<br> <br> <br> <br>  Geef uw reactie op deze stelling<br> U kunt via dit formulier uw reactie geven op de stelling.<br>Naam<br> <br><br>Email (optioneel)<br> <br><br>Functie (optioneel)<br> <br><br>Uw reactie<br><br><br> <br><br>Mijn reactie mag op het web gepubliceerd worden<br><br><br><br>De redactie behoudt zich het recht voor reacties in te korten of niet te plaatsen. Anonieme reacties worden nooit geplaatst.<br> <br> <br>  14 maart 2003<br>Bron Studentenraad FNWI<br> <br>      <br></div>
+</article>
+<article class="post" data-ts="20030317113000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-03-17 11:30</span></div>
+  <div class="pb">oeps iets te veel meegekopieerd.</div>
+</article>
+<article class="post" data-ts="20030317121100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-03-17 12:11</span></div>
+  <div class="pb">Ik ben tegen de stelling, maar ik heb daar geen onderbouwing voor.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

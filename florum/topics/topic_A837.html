@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 26 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 26</h1>
+<p class="tm">5 posts · started 2003-07-08 10:55 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030708105500" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-07-08 10:55</span></div>
+  <div class="pb">Timmie tikt de Tour<br><br>Afgelopen zaterdag is weer het grootste jaarlijkse sportevenement van de wereld begonnen. Wat de superBowl ook claimt, de Tour is jaarlijks een groter phenomeen en wordt door meer mensen gevolgd. De Tour de FRance, dit jaar 100 jaar oud, is van het begin tot einde een commercieel monster, maar bij de Tour kan mij dat niest uitmaken. Sterker nog, zonder commercie geen Tour de France! In 1903, het jaar van de eerste Tour de France, was de commercie al een integraal deel van de grootste ronde. Bedacht door een journalist/fietsenmaker om fietsen te promoten is de Tour zelfs het gevolg van een uit de hand gelopen reclame campagne. <br>Bij andere evenementen kan de commercie binnen enkele seconden het goeie ouwe gevoel verpesten dat ooit bij het evenement heerste, denk bijvoorbeeld maar eens aan de Championes League, waar de club die het op een na hoogste winst had, niet eens de 2e ronde haalde. <br>Bij de Tour de France werkt het juist andersom. Daar is elke winst, elke sprint en elke kleine pukkel die men onderweg tegenkomt aan geldprijzen verbonden. En dat maakt het leuker aangezien renners dus ook altijd sprinten. Eeuwige roem en glorie is leuk, maar een goed zakcentje werkt altijd beter. Daarom reed gisteren in de 2e etappe ene Fino keihard om te zorgen dat hij de etappe won. Was hem dat gelukt, dan was een prachtig contract voor volgend jaar zijn hoge beloning. Want hij zou dan de gele trui hebben gedragen. (Tip voor de poultjes  volgend jaar: Fino zou wel eens volgend jaar de franse verassing worden. Hij schijnt ook redelijk te kunnen klimmen ).<br>Elke zomer weer kan ik me verbazen wat een geweldig circus de Tour de France weer is. Ik ben er zelf 3 maal bij geweest en elke keer weer een happening waar ik van heb genoten. De eerste maal was in 1990, toen ik , negen jaar oud, op de flanken van Luz Ardiden stond waar we op vakantie waren. Een toen onbekende spanjaard kwam als 2e langs aan kop van een groepje. Zijn naam: Miguel Indurain. Het jaar daarna zou pas zijn eerste tourzege komen, maar dat jaar zag ik hem al rijden. In 1995 startte de tour in nederland en ook daar was ik bij. In Den Bosch was de start en bij de proloog zag ik weinig van de renners aangezien ze met 50 per uur voorbij zoeften. ]<br>De laatste keer dat ik het in het echt zag was 1997, ik was in vakatie in Zwitserland en op de flanken van een berg in het begin was het die rit al een veldslag. De tourwinnaar van het jaar daarvoor werd op 9 minuten gezet waar ik stond. Ulrich zou dat jaar de Tour winnen, maar ik was dat jaar voor een klein Italiaans mannetje in het roze. Marco Pantani, pure tragedie materiaal en ook aan de comemrcie onderworpen. <br>Wanneer de volgende keer zal zijn? ik weet het niet. Maar wel weet ik dat ik zeker nog een keer zal gaan kijken. </div>
+</article>
+<article class="post" data-ts="20030708130700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-07-08 13:07</span></div>
+  <div class="pb">Ik vind 'm goed! Hoewel de Tour me niet bijster veel uitmaakt las ik deze TT toch weer makkelijk weg. Terecht ook dat die domme wielrenners de winnaar van de tour '96 op negen minuten zetten, toen ze voorbij de Big T. -- onze mid mid -- fietsten.<br></div>
+</article>
+<article class="post" data-ts="20030708152600" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2003-07-08 15:26</span></div>
+  <div class="pb">"Bij andere evenementen kan de commercie binnen enkele seconden het goeie ouwe gevoel verpesten dat ooit bij het evenement heerste, denk bijvoorbeeld maar eens aan de Championes League, waar de club die het op een na hoogste winst had, niet eens de 2e ronde haalde."<br><br>Tim, kun je deze zin toelichten? <br>ik heb hem nu 4 keer gelezen en ik begrijp hem nog niet helemaal.  <br></div>
+</article>
+<article class="post" data-ts="20030708171200" id="p4">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#4 · 2003-07-08 17:12</span></div>
+  <div class="pb">de komma na heerste is een punt.. dat maakt het denk ik duidelijker</div>
+</article>
+<article class="post" data-ts="20030709142800" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-07-09 14:28</span></div>
+  <div class="pb">hij is errug mooi, zeker een top-vijfje timmie!<br><br>Daarom heb ik de TT page maar weer eens geupdate.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

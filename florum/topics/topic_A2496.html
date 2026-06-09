@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boys bedankt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Boys bedankt!</h1>
+<p class="tm">6 posts · started 2008-09-22 09:04 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080922090400" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2008-09-22 09:04</span></div>
+  <div class="pb">voor het feit dat jullie maanden tegen me hebben gelogen. Ik hoop dat de kater op zondag niet te harden was.<br><br>Nee hoor, ik vond het erg leuk dat jullie er bij waren om me op gepaste wijze naar de dertiger jaren te begeleiden.</div>
+</article>
+<article class="post" data-ts="20080922092800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2008-09-22 09:28</span></div>
+  <div class="pb">En Co, stel nou dat de vriendin van Niels over een tijdje vraagt of..., dan vraag ik jou hoor.</div>
+</article>
+<article class="post" data-ts="20080922123500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-09-22 12:35</span></div>
+  <div class="pb">proest, en ik HOU helemaal niet eens van balletjes :)</div>
+</article>
+<article class="post" data-ts="20080922143600" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2008-09-22 14:36</span></div>
+  <div class="pb">Co, de kater was inderdaad ouderwets moeilijk te harden. Subtiel actueel trouwens, die vergelijking met de dertiger jaren.</div>
+</article>
+<article class="post" data-ts="20080922145100" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2008-09-22 14:51</span></div>
+  <div class="pb">Ja, mijn aandeeltjes begeleiden me inderdaad ook al prima naar de jaren dertig.</div>
+</article>
+<article class="post" data-ts="20080922151600" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-09-22 15:16</span></div>
+  <div class="pb">Mooi appeltje voor de dorst voor onze jaren negentig!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

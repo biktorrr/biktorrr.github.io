@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>21 MAART ZAALBALLEN VERZETTEN ???? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">21 MAART ZAALBALLEN VERZETTEN ????</h1>
+<p class="tm">5 posts · started 2005-03-21 16:36 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050321163600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-03-21 16:36</span></div>
+  <div class="pb">ik werd net gebeld door een gast die met ons wil ruilen wat vanavond betreft. <br>We zouden dan al om 22u kunnen spelen.<br><br>Ik kan<br>MD kan<br>TN kan<br>SK voicemail<br>VP voicemail<br>SK nog niet gebeld<br>MK idem<br><br>Post hier of je om 22u wilt!!!<br><br>DE SITUATIE NU IS DAT ER NOG NIET GERUILD WORDT!!<br>MAAR HOU DIT TOPIC IN DE GATEN AUB</div>
+</article>
+<article class="post" data-ts="20050321170200" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-03-21 17:02</span></div>
+  <div class="pb">Nieuwe Situatie:<br>Ik kan<br>MD kan<br>TN kan<br>VP kan<br>Kenzo kan<br>MK kan, maar liever niet<br>SK voicemail = ??<br><br>GA NOG STEEDS UIT VAN DE OUDE SITUATIE!!! HOU DIT TOPIC IN DE GATEN</div>
+</article>
+<article class="post" data-ts="20050321172000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-03-21 17:20</span></div>
+  <div class="ps">nog even groter font:</div><div class="pb"><H2><br>VERPLAATSING GAAT NIET DOOR!<br><br>SPELEN OP OUDE TIJD!!!<br><br>=> 22.45u AANWEZIG ZIJN!!!<br></h2><br><br>(het team dat wou wisselen kon de tegenstander niet bereiken)</div>
+</article>
+<article class="post" data-ts="20050321181900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-03-21 18:19</span></div>
+  <div class="pb">*heeft hiervan kennis genomen*</div>
+</article>
+<article class="post" data-ts="20050321190700" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2005-03-21 19:07</span></div>
+  <div class="pb">idem.ben om 2145 bij vik</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

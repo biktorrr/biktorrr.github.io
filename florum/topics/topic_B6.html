@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10/11 nov. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">10/11 nov.</h1>
+<p class="tm">5 posts · started 2001-11-06 13:05 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011106130500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-11-06 13:05</span></div>
+  <div class="pb">even voor de duidelijkheid/volledigheid dan maar,<br>wij zijn naar spa komend weekend, ik denk niet <br>dat er gebald gaat worden :)</div>
+</article>
+<article class="post" data-ts="20011106141600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2001-11-06 14:16</span></div>
+  <div class="pb">Als wel, de goals liggen in Aerdenhout. Come 'n' get them.</div>
+</article>
+<article class="post" data-ts="20011107005000" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-11-07 00:50</span></div>
+  <div class="ps">Gezellig:</div><div class="pb">Tube pispotten tegen Arjen. Sander bij de Tube(Tube wint het pispotten), Frank bij Arjen. Ik zet me geld alvast in op de Tube en Sander.</div>
+</article>
+<article class="post" data-ts="20011107012500" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-11-07 01:25</span></div>
+  <div class="pb">Je vergeet Sonny&Tony..onze gouwe baldribbelaaaarrs.<br>tube kiest dus Tony..dan is het helemaal over en sluiten</div>
+</article>
+<article class="post" data-ts="20011107153100" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2001-11-07 15:31</span></div>
+  <div class="pb">Ze (of we: nog niet helemaal zeker) kunnen uiteraard altijd nog de erecodedudes uitdagen</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

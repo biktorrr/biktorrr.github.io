@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>het bandje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">het bandje</h1>
+<p class="tm">2 posts · started 2007-08-20 14:28 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070820142800" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2007-08-20 14:28</span></div>
+  <div class="pb">Ja hoor, ik ben weer een befaamd lowlands-polsbandje rijker! Ik denk alleen niet dat ik deze weer als vroeger meer dan een jaar om ga houden (waarschijnlijk eerder tot dan wanneer ik m'n schaar weer gevonden heb). Mochten jullie er in geinteresseerd zijn: Ik heb geen regenbui meegemaakt op lowlands drie dagen lang (wel overigens op weg naar de ingang van het terrein). En daarnaast blijken er toch nog goede nieuwe bands te zijn (Editors par example). En ook enkele steengoede bekende (floraboys) acts, zoals Nine inch nails, alpha blondy en Tool. <br>Ik ben er blijkbaar nog niet te oud voor (alhoewel ik wel behoorlijk last van m'n rug kreeg van al dat staan in het publiek). </div>
+</article>
+<article class="post" data-ts="20070820152700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-08-20 15:27</span></div>
+  <div class="pb">Hoe was het kopje koffie met appelgebak? Was het vers?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

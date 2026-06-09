@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blije Rije in de Meerse – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Blije Rije in de Meerse</h1>
+<p class="tm">4 posts · started 2003-05-09 15:14 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030509151400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-05-09 15:14</span></div>
+  <div class="pb">Hallo, <br>de Blije Rije treedt de 15e juni op in theater de Meerse in Hoofddorp. Ze vraagt of jullie ook willen komen.<br>Er zijn twee voorstellingen, eentje om 15.30u en eentje om 20.00u. Ik ben er bij beide, maar ik ben wel aan het filmen.<br>Ik weet nog niet hoe duur de kaartjes zijn, maar als jullie interesse hebben, post het dan even hier. Of beter nog, bel mij: 0647418031 of Rije zelfve: 0642093520. Doe dit een beetje van te voren, dan heb je (goeie) plaatsen.</div>
+</article>
+<article class="post" data-ts="20030510144100" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2003-05-10 14:41</span></div>
+  <div class="ps">wat kosten de kaarten?</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030510190400" id="p3">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#3 · 2003-05-10 19:04</span></div>
+  <div class="pb">Lijkt me leuk</div>
+</article>
+<article class="post" data-ts="20030512104800" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-05-12 10:48</span></div>
+  <div class="pb">ik heb de prijs van de kaarten even nagevraagd, het was niet goedkoop: iets van 12 euri.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

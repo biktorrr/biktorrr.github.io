@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen 9/10 september – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen 9/10 september</h1>
+<p class="tm">8 posts · started 2006-09-05 10:48 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060905104800" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-09-05 10:48</span></div>
+  <div class="pb">Za:ja<br>Zo:ja<br><br>Ik heb wel weer zin in een potje knallen, wel of geen erecode.<br></div>
+</article>
+<article class="post" data-ts="20060905141100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-09-05 14:11</span></div>
+  <div class="pb">ZaJa/ZoNee<br><br>Balde merrel nou alleen in de zaal niet??</div>
+</article>
+<article class="post" data-ts="20060906101100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-09-06 10:11</span></div>
+  <div class="pb">Ik heb ook het veldballen eraan gegeven.<br><br>Maar ik kom natuurlijk kijken als er gebald wordt.</div>
+</article>
+<article class="post" data-ts="20060906102600" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-06 10:26</span></div>
+  <div class="pb">zaja zoja</div>
+</article>
+<article class="post" data-ts="20060906153700" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2006-09-06 15:37</span></div>
+  <div class="pb">zanee (keuken van m'n ouders slopen).<br>zoja</div>
+</article>
+<article class="post" data-ts="20060908131000" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2006-09-08 13:10</span></div>
+  <div class="pb">come on boys, wie biedt?<br></div>
+</article>
+<article class="post" data-ts="20060908192900" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2006-09-08 19:29</span></div>
+  <div class="pb">sicco? mitsj? bik? anders wordt het weer de erecode vernederen, want het schijnt aardig weer te blijven.</div>
+</article>
+<article class="post" data-ts="20060910143900" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2006-09-10 14:39</span></div>
+  <div class="pb">dan maar niet ballen....<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

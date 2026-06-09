@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuw Panini-album in de maak – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuw Panini-album in de maak</h1>
+<p class="tm">5 posts · started 2003-06-18 09:40 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030618094000" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-06-18 09:40</span></div>
+  <div class="pb"><I><br>Na vier jaar van afwezigheid komt Panini volgend seizoen weer met een Nederlands voetbalplaatjesalbum op de markt. De afgelopen jaren slaagde de Italiaanse uitgever er niet in om met alle afzonderlijke clubs - en vaak ook nog individuele spelers - een contract af te sluiten.<br><br>Maar in de nieuwe CAO hebben de VVCS, Proprof en de FBO ingestemd met een stichting die de collectieve commerci\ële rechten van de spelers en clubs beheert. De deal die nu met Panini is gemaakt bewijst reeds de waarde van zon stichting. Niet alleen krijgen de spelers weer hun aandeel in het album vergoed, bovendien is het Panini-album van oudsher een product dat onder de jeugd het enthousiasme voor het Nederlands voetbal aanwakkert.</I><br><br>Het lijkt me duidelijk dat we die dus gaan sparen. </div>
+</article>
+<article class="post" data-ts="20030618104200" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-06-18 10:42</span></div>
+  <div class="pb">is er eigenlijk ook een panin--flora boek? Of hebben Tim en Mer het weer voor de jeugd verpest met hun hoge eisen?<br></div>
+</article>
+<article class="post" data-ts="20030618111900" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-06-18 11:19</span></div>
+  <div class="pb">kan natuurlijk altijd gemaakt worden<br></div>
+</article>
+<article class="post" data-ts="20030618133200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-06-18 13:32</span></div>
+  <div class="pb">Tot op heden ben ik nog niet benaderd door de club, maar i.i.g. zijn de portretrechten van de verdediger van wereldfaam in mijn bezit. <br><br>Zou natuurlijk wel ultra-vet zijn om een Floraboys-rage in Nederland/Europa/de wereld/het universum te ontketenen. </div>
+</article>
+<article class="post" data-ts="20030618134300" id="p5">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#5 · 2003-06-18 13:43</span></div>
+  <div class="pb">ik geloof dat er voor mij en Merlijn een speciale ultra rare uitgave komt, alleen af te halen bij inlevering van 15 singles van Jim</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speciaal voor Mer. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Speciaal voor Mer.</h1>
+<p class="tm">4 posts · started 2003-11-19 13:51 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031119135100" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-11-19 13:51</span></div>
+  <div class="pb">Om je punt(en) nog maar weer eens kracht bij te zetten.<br>Hier een antwoord op een meeltje wat ik naar Bol.com had gestuurd.<br><br>-------<br>Hartelijk dank voor uw e-mail van 18-11-2003.<br><br>Momenteel kan de bestelling nog niet verder worden verwerkt. Wijzigingen die u via uw account doorvoert, worden pas van kracht bij nieuwe bestellingen en kunnen helaas niet op lopende bestellingen worden<br>toegepast.<br><br>Zou u zo vreindelijk willen zijn uw creditcardgegevens aan ons door te geven middels een 'reply' op deze e-mail? Wij kunnen deze dan aanpassen, zodat de lopende besetlling verder kan worden verwerkt.<br><br>Bij voorbaat dank voor uw reactie.<br><br>Met vriendelijke groet,<br><br>Jolande Colijn<br>bol.com Klantenservice<br></div>
+</article>
+<article class="post" data-ts="20031119144900" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-11-19 14:49</span></div>
+  <div class="pb">Hee Tijmen, anders zet je ook even je creditcardnummer op het Florum. Met verloopdatum svp...</div>
+</article>
+<article class="post" data-ts="20031119150000" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-11-19 15:00</span></div>
+  <div class="pb">het is mij volstrekt niet duidelijk waar dit over gaat. </div>
+</article>
+<article class="post" data-ts="20031120171400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-11-20 17:14</span></div>
+  <div class="pb">Ik snap dat dit als taalchaoot lang je heen gaat,ondanks dat ik me meestal qua d's en t's etc. in jou hoek schaar, vond ik deze (formele)email wel tamelijk belabberd.<br><br>En idd oli4, in mijn reply heb ik ook op een enigzins patroniserende wijze gesproken over het versturen van creditcard gegevens en hun verval datum.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

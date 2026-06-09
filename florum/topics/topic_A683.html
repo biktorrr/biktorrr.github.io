@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Themakoning – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Themakoning</h1>
+<p class="tm">5 posts · started 2003-01-21 23:38 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030121233800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2003-01-21 23:38</span></div>
+  <div class="pb">Mijn welingelichte broertje (tenminste, als het gaat over Cafe de Koning) heeft afgelopen zondag, tijdens het betalen van zijn rekening even met Kees Koning afgesproken dat ze daar zogenaamde thema-avonden gaan organiseren. Casper zou dan chef-verkoop worden.</div>
+</article>
+<article class="post" data-ts="20030122091100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-01-22 09:11</span></div>
+  <div class="pb">Chef-verkoop?</div>
+</article>
+<article class="post" data-ts="20030122100000" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2003-01-22 10:00</span></div>
+  <div class="pb">Klanten leveren en 30% van de winst incasseren.</div>
+</article>
+<article class="post" data-ts="20030122105100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-01-22 10:51</span></div>
+  <div class="pb">Oh ok. Nou mij niet gezien hoor, op 'n thema-avond. Maarja, hoe vaak heb ik nou al gezegd niet naar de Koning te willen om er dan toch elke keer weer de avond van m'n leven te hebben... *zucht*</div>
+</article>
+<article class="post" data-ts="20030122114200" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-01-22 11:42</span></div>
+  <div class="pb">dat wordt ook een beetje mijn verhaal geloof ik :(<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

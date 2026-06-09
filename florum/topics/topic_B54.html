@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajaxproblemen opgelost – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ajaxproblemen opgelost</h1>
+<p class="tm">7 posts · started 2002-02-07 12:58 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020207125800" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-02-07 12:58</span></div>
+  <div class="pb">Met de RKC-clubkaart van mijn baas heb ik in een Rotterdamse sigarenboer twee kaarten voor Ajax-Stormvogels/Groningen gekocht. (James is samen met Liverpool-Mike (niet te verwarren met Newcastle-Mike), een nieuwe Engelsman gekomen). Ze zitten wel in een ander vak, 403. Mijn baas is bang voor een stadionverbod als ze ruzie gaan trappen, maar da's van later zorg. Zelf had hij zijn golfballen ook best op een andere manier mogen gebruiken. Mijn trein komt om 17h39 aan in Bijlmer.  </div>
+</article>
+<article class="post" data-ts="20020207133900" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2002-02-07 13:39</span></div>
+  <div class="pb">hardstikke tof, alleen een kritiekpuntje.<br><br>Hoe kun jij in godsnaam werken voor een RKC fan? ik dacht dat jij de man van de principes was Oli??</div>
+</article>
+<article class="post" data-ts="20020207144900" id="p3">
+  <div class="ph"><span class="pa">Andy</span><span class="pm">#3 · 2002-02-07 14:49</span></div>
+  <div class="pb">Zolang ze winnen van PSV vind ik ze best sympa.</div>
+</article>
+<article class="post" data-ts="20020207152600" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-02-07 15:26</span></div>
+  <div class="pb">en zolang ze zich vier dagen later laten inmaken door Ajax evenmin</div>
+</article>
+<article class="post" data-ts="20020208145200" id="p5">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#5 · 2002-02-08 14:52</span></div>
+  <div class="pb">ja das duidelijk, alleen denk ik dat koeman het tweede gaat opstellen. STukje roulatie systeem. om Nikos wat rust te gunnen.</div>
+</article>
+<article class="post" data-ts="20020208152500" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2002-02-08 15:25</span></div>
+  <div class="pb">en het feit dat ze ongeveer net zo goed kunnen ballen als het eerste, behalve andy en Rafael dan natuurlijk, die zijn toch wel een stukkie beter<br><br>TuuT</div>
+</article>
+<article class="post" data-ts="20020208164700" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2002-02-08 16:47</span></div>
+  <div class="pb">Wij waren om 0:50 op A'dam CS en om 3:50 op de Kortekade 99b. Respect naar de NS toe!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

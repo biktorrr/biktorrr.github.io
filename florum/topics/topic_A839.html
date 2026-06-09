@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>onderzoeksjournalistiek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">onderzoeksjournalistiek</h1>
+<p class="tm">5 posts · started 2003-07-08 15:55 by wj</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030708155500" id="p1">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#1 · 2003-07-08 15:55</span></div>
+  <div class="pb">Aan Oli4 en eventuele onderzoeksjournalisten.<br><br>Wat is er waar over transfers van Chivu, Kezman en van Hooydonk? <br><br>Wat heeft Mido opgeleverd?<br><br></div>
+</article>
+<article class="post" data-ts="20030708163400" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-07-08 16:34</span></div>
+  <div class="pb">voor de geintereseerden: hierbij het hoerenbericht zelf.<br><br><a href="http://teletekst.nos.nl/gif/645-01.html">Ciao Christian</a></div>
+</article>
+<article class="post" data-ts="20030708164600" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-07-08 16:46</span></div>
+  <div class="ps">dat is minder goed nieuws</div><div class="pb">chivu opeens weg, dat had ik niet gedacht.<br><br>Wel top dat Frenkie de Boer nog even een paar bekers komt pakken met Ajax</div>
+</article>
+<article class="post" data-ts="20030709101900" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-07-09 10:19</span></div>
+  <div class="pb">Hoppa, De Boer en Escude naar Ajax.<br><br><a href="http://www.telegraaf.nl/sportlink/teksten/spl.ajax.chivu.roma.escude.html">Linkie</a></div>
+</article>
+<article class="post" data-ts="20030710150500" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-07-10 15:05</span></div>
+  <div class="pb">Chivu toch bij Ajax?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

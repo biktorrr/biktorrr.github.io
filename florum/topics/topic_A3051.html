@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mmmmaior – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mmmmaior</h1>
+<p class="tm">9 posts · started 2011-01-09 18:21 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110109182144" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2011-01-09 18:21</span></div>
+  <div class="pb">Bij deze is er een lekkere digitale spekkoek voor jou gebakken. Waar je ook uithangt ik weet dat je diep van binnen altijd bij ons zult zijn.<br><img src="http://www.tomrunia.nl/imgscript/img/thumb/bbe7a411.png"></div>
+</article>
+<article class="post" data-ts="20110109182320" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2011-01-09 18:23</span></div>
+  <div class="pb">Mooie taart en mooie woorden. <br><br>Maior: gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20110109191502" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2011-01-09 19:15</span></div>
+  <div class="pb">Maior, waar op de wereld je ook bent, als je luistert - je zult altijd een Floraboy blijven.</div>
+</article>
+<article class="post" data-ts="20110109193039" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2011-01-09 19:30</span></div>
+  <div class="pb">Mooiste taart so far drouille!</div>
+</article>
+<article class="post" data-ts="20110109214815" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2011-01-09 21:48</span></div>
+  <div class="pb">Gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20110109215820" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2011-01-09 21:58</span></div>
+  <div class="pb">*Tik*!</div>
+</article>
+<article class="post" data-ts="20110109215919" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2011-01-09 21:59</span></div>
+  <div class="pb">H\é! Gefeliciteerd! Je had deze taart natuurlijk al in de toekomst gezien, jammer dat dan de verrassing eraf is.<br></div>
+</article>
+<article class="post" data-ts="20110110091824" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2011-01-10 09:18</span></div>
+  <div class="pb">Gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20110110100626" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2011-01-10 10:06</span></div>
+  <div class="pb">Kak, toch vergeten. Te laat maar beter dan niets: Gefeliciteerd MMMMaior!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

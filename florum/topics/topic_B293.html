@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys in cijfers: bikkelen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys in cijfers: bikkelen</h1>
+<p class="tm">2 posts · started 2003-05-13 14:39 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030513143900" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2003-05-13 14:39</span></div>
+  <div class="pb">De Floraboys zullen vrijdag 16 mei strijden voor het hoogste op het toernooi der toernooien: het Roeterseilandtoernooi. Naast onmetelijke roem en lucratieve transfers voor de spelers staat dit REVT toch voornamelijk in het teken van eerherstel van de club Floraboys SC, die in de competitie haar draai maar niet weet te vinden. Algemeen wordt aangenomen dat hierin de reden ligt, waarom de coach der Floracieden de selectie drastisch gewijzigd heeft: naast ouwe rotten als Maarten en Michiel is ook het grote talent Jurriaan aan de selectie toegevoegd. In aanloop van het toernooi dagelijks een cijfermatige kennismaking met de Floraboys die op het Roeterseiland zullen schitteren.<br><br><br><FONT SIZE=6> Bikkelen	</FONT><br>Het voetbalspelletje is sneller en harder geworden. Hoe hard kunnen de Floraboys bikkelen?<br><br><HR SIZE=4 NOSHADE><br><br><TABLE><br>	<TR><br>		<TD>*</TD>	<br>		<TD>Slappe zak stront; liever lui dan moe</TD><br>	</TR><br><br>	<TR><br>		<TD>**</TD>	<br>		<TD>Zak stront; "wie goed overzicht heeft, hoeft niet hard te lopen." </TD><br>	</TR><br><br>	<TR><br>		<TD>***</TD>	<br>		<TD>Mooi weer bikkelaar; mag graag anderhalf uur bikkelen.</TD><br>	</TR><br><br>	<TR><br>		<TD>****</TD>	<br>		<TD>Bikkel; 'gaan' staat niet in woordenboek, wel 'GAAN, GAAN, GAAN'.</TD><br>	</TR><br><br>	<TR><br>		<TD>*****</TD>	<br>		<TD>Aartsbikkel; kopt ballen op kniehoogte, bestrijkt liefst twee flanken.</TD><br>	</TR><br></TABLE><br><br><HR SIZE=4 NOSHADE><br><br><TABLE><br>	<TR><br>		<TD></TD><br>		<TD> <B>Bikkelen</B> </TD><br>	</TR><br><br>	<TR><br>		<TD>Frank</TD>	<br>		<TD>***</TD><br>	</TR><br><br>	<TR><br>		<TD>Jurriaan</TD>	<br>		<TD>***</TD><br>	</TR><br><br>	<TR><br>		<TD>Maarten</TD>	<br>		<TD>***</TD><br>	</TR><br><br>	<TR><br>		<TD>Merlijn</TD>	<br>		<TD>**</TD><br>	</TR><br><br>	<TR><br>		<TD>Michiel</TD>	<br>		<TD>***</TD><br>	</TR><br><br>	<TR><br>		<TD>Sander</TD>	<br>		<TD>***</TD><br>	</TR><br><br>	<TR><br>		<TD>Sicco</TD>	<br>		<TD>****</TD><br>	</TR><br><br>	<TR><br>		<TD>Tijmen</TD>	<br>		<TD>****</TD><br>	</TR><br><br>	<TR><br>		<TD>Tim</TD>	<br>		<TD>*****</TD><br>	</TR><br><br>	<TR><br>		<TD>Victor</TD>	<br>		<TD>****</TD><br>	</TR><br></TABLE></div>
+</article>
+<article class="post" data-ts="20030513165500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-05-13 16:55</span></div>
+  <div class="pb">kan er hier niet van een zes-punts beoordeling sprake zijn, voor bepaalde speciale gevallen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

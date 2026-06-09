@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REVT: de winnaar – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">REVT: de winnaar</h1>
+<p class="tm">3 posts · started 2006-04-20 08:22 by VI.nl</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060420082200" id="p1">
+  <div class="ph"><span class="pa">VI.nl</span><span class="pm">#1 · 2006-04-20 08:22</span></div>
+  <div class="pb">In afwachting van het REVT 2006 informeert VI.nl bij opiniemakers over de stand van zaken van een team dat van oudsher zijn stempel drukt op het toernooi: de Floraboys.<br><br>Vandaag: Welk team wordt winnaar?<br><br><i>T**sje M.:</i> Dat de beste maar moge winnen! Haha. Hahaha. En eerlijk spelen is natuurlijk ook belangrijk. Haha. Dan hoef ik minder te fluiten en te lopen. Hahahaha. Haha.<br><br><i>DJ Erik Z.:</i> Winnen is niet belangrijk weet je. Het gaat erom dat je voetbalt, met het doel te winnen maar uiteindelijk niet te winnen en dan toch het gevoel te hebben gewonnen te hebben. Het gaat om gevoel weet je. Als je het gevoel hebt dat je een winnaar bent, dan ben je dat ook. Simpel zat. Als ik een lekker hertje in een caf\é zie en ik denk "DJ, je bent een winner" dan komt ze gewoon op me af. Nou dan rol je een sjonkel en je maakt een praatje over dit en dat. En dan is ze ge\ïnteresseerd in minimalistische techno [etc. etc. etc.]<br><br><i>Sjekkie van de bus:</i> Floraboys!!!, echt wel!!! Biggy T champion for life, soo man! Hij plakt heel dat Moeni Moeni achter het behang hoor. Let maar op. Die gast is een topper en dan is het van gaan-met-die-banaan. FLO-RA-BOYS!!!<br><br><i>Paris Hilton:</i> I JUST LOVE THE PENOSE. Dat is zo'n schatje, en hij heeft ook zo'n lekker kontje. Ik hoop dat de boys kampioen worden, dan kan ik heerlijk genieten van alle foto's die dan gemaakt worden van de Penose als i naakt met de beker onder de douche staat.<br><br><i>Martin Luther King:</i> Let pannas flow down like water, and victory like a mighty stream. Let the Floraboys prevail!<br><br><i>VVWF:</i> Ik geloof in jullie boys!<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20060420092800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-04-20 09:28</span></div>
+  <div class="pb">terecht, steun van sjekkie en de vvwf. Die cup is aan ons.</div>
+</article>
+<article class="post" data-ts="20060422174300" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2006-04-22 17:43</span></div>
+  <div class="pb">toch wel een topjournalist, die met deze interessante combi van commentatoren komt. Nominatie waard voor het gouden pennetje (of toetsenbordje).</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>aankoop verijdeld – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">aankoop verijdeld</h1>
+<p class="tm">2 posts · started 2003-10-16 16:12 by Technisch Directeur</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031016161200" id="p1">
+  <div class="ph"><span class="pa">Technisch Directeur</span><span class="pm">#1 · 2003-10-16 16:12</span></div>
+  <div class="pb">Helaas moeten wij onze pogingen staken om een topspits naar de FC Floraboys te halen. Voor meer info, lees dit artikel:<br><br>Ontvoering PSV-spits Kezman verijdeld<br>Bron: Nu.nl<br><br>De politie heeft een ontvoering van de PSV-spits Mateja Kezman weten te verijdelen. Vanaf zaterdag beschikte de politie over informatie dat de voetballer ontvoerd zou worden, zodat losgeld gevraagd kon worden. In verband daarmee werd zondagavond een 59-jarige man uit Arnhem aangehouden.<br><br>De verdachte, die banden zou hebben met de Servische maffia, is echter donderdag in vrijheid gesteld omdat er niet voldoende bewijs was om hem langer vast te houden.</div>
+</article>
+<article class="post" data-ts="20031016185800" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-16 18:58</span></div>
+  <div class="pb">godverdomme met ik nu uit de pers vernemen dat de TD opzoek is naar een vervanger voor mij. Is 10 doelpunten were niet genoeg. Heb er schoon genoeg van. Ik ga naar Dynamo VIAG.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

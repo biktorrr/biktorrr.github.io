@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heb het niet meer – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heb het niet meer</h1>
+<p class="tm">11 posts · started 2010-07-09 16:55 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100709165500" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2010-07-09 16:55</span></div>
+  <div class="pb">Ik heb het nu al niet meer van de spanning.. <br>vanavond eet ik gegrilde octopus als tapas. Ik leg mijn hele vertrouwen in Aziatische parkieten. <br><br>Ik kan trouwens hier de Lebronitis niet meer uitstaan. Ik wil programma's over van Persie, Robben en 'magic dome' Sneijder!<br>Hebben jullie trouwens ook het gevoel dat als je naar Sneijder luistert het is alsof je naar Cruyff luistert?<br><br><br>Ik vergelijk ze met Barcelona. Dat zijn in principe dezelfde mensen ofschoon ze natuurlijk wat aanvullingen hebben.<br>Kijk, als we zoveel angst voor die ploeg hebben als Duitsland dan verlies je. Zij gingen veel te ver terug. Natuurlijk moet je tegen die ploeg een beetje terugzakken, das logisch. Als een achterlijke druk zetten heeft geen zin. Ik denk dat als we compact spelen, de linies kort op elkaar, dan kan je ze dus heel goed verdedigen."<br><br></div>
+</article>
+<article class="post" data-ts="20100710103900" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-07-10 10:39</span></div>
+  <div class="pb">Ik ook niet b@kkie, ik wordt tegenwoordig om 7 uur wakker en denk vervolgens direct aan die akelige Spanjolen. Hardkloppingen 24/7. </div>
+</article>
+<article class="post" data-ts="20100710115400" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2010-07-10 11:54</span></div>
+  <div class="pb"><A href="http://www.hetadres.nl/index.html">Misschien niet zo gezond dat voetbal?</A>"></div>
+</article>
+<article class="post" data-ts="20100710115400" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2010-07-10 11:54</span></div>
+  <div class="pb">Shit link is mislukt oeps nog een keer wacht even....</div>
+</article>
+<article class="post" data-ts="20100710115800" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2010-07-10 11:58</span></div>
+  <div class="pb"><a href="http://www.nu.nl/algemeen/2289494/gevolgen-finale-wk-lichaam-onderzocht.html>Deze bedoel ik</A><br><br>Zal ie nu wel werken, zo moeilijk moet het niet zijn...</div>
+</article>
+<article class="post" data-ts="20100711123200" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2010-07-11 12:32</span></div>
+  <div class="pb">HOU DIE FOCUS BOYS!!</div>
+</article>
+<article class="post" data-ts="20100711140100" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2010-07-11 14:01</span></div>
+  <div class="pb">ijsberen, zweten, krampeneren<br>WK-finale zondag</div>
+</article>
+<article class="post" data-ts="20100711143800" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2010-07-11 14:38</span></div>
+  <div class="pb">Legend</div>
+</article>
+<article class="post" data-ts="20100711143800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2010-07-11 14:38</span></div>
+  <div class="pb">Godverdomme, ik trek t niet meer.</div>
+</article>
+<article class="post" data-ts="20100711144600" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2010-07-11 14:46</span></div>
+  <div class="pb">FINALE!</div>
+</article>
+<article class="post" data-ts="20100712135900" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2010-07-12 13:59</span></div>
+  <div class="pb">De finale is voorbij. Ik herhaal de finale is voorbij.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

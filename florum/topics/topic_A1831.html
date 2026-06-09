@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys assessmentboys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys assessmentboys</h1>
+<p class="tm">6 posts · started 2006-08-21 12:33 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060821123300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-08-21 12:33</span></div>
+  <div class="pb">Boys en girls,<br><br>Komende woensdag heb ik een assessment bij Berenschot. Uit een brief die ik van het assessmentburo kreeg concludeer ik dat ik de hele riedel over me uitgestort krijg: intelligentietest, persoonlijkheidsanalysie, rollenspelen, postbakoefening en wat dies meer zij.<br><br>Hebben jullie nog goeie tips om je hier op voor te bereiden? Websites met handige oefeningen ofzo?<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20060821125600" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-08-21 12:56</span></div>
+  <div class="pb">op intelligentie & persoonlijkheidstests kan je moelijk voorbereiden en vaak hoeft dat ook niet. Uit onderzoek blijkt dat het voorbereiden door oefening op een IQtest wel een iets hoger resultaat geeft, maar dat dat in het niets valt vergeleken met een goede nachtrust.Persoonlijkheids test is per definite niet competatief, dus die zou ik gewoon, onvoorbereid eerlijk invullen. Punt is wel dat als ze op zoek zijn naar een specifieke 'persoonlijheidstype' (uit een van de vele typologe tests) en je dit van tevoren weet, je de uitkomst vaak relatief eenvoudig naar je hand kan zetten. Of dit verstandig is, is een tweede.<br>Rollenspellen en postsoorteer oefeningen zijn oefeningen waar het inderdaad handig is om je voor te bereiden. Soms volstaat het bij een rollenspel al om van te voren diverse scenarios voor te stellen en die in je hoofd uit spelen. Soms ook is het, als je echt zeker wil zijn van een goede oeffening, goed om het een keer echt te oefenen (met wat collegas/vrienden). Niet zozeer om een goed resultaat neer te zetten maar meer om er al keer mee bezig geweest te zijn. Met jouw ruime D&D ervaring is dit natuurlijk overbodig :p<br>Bijna alle rollespellen bekijken je communicatiekwaliteiten, voornamelijk toegespits op je onderhandelings en overtuigingsvermogen. (kan ik iemand overtuigend ontslaan, kan ik overtuigend vragen om opslag van de grote baas, hoe goed kan ik een ander nadelig besluit uitleggen aan ondergeschikten etc.) Impliciet testen ze hierbij ook je creativiteit en 'on the ball/ out of the box'-thinking (wat doe je als iemand die je moet ontslaan gaat jammeren over z'n bloedjes van kinderen) allemaal functies van je intelligentie.<br>Websites hierover ken ik niet snel, een paar boekjes heb ik wel en ook een aantal digitalen van McGraw-Hill over solliciteren etc. (naargeestig amerikaans; ik zal ze mailen) <br><br></div>
+</article>
+<article class="post" data-ts="20060821132900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2006-08-21 13:29</span></div>
+  <div class="pb">Ook handig om in je achterhoofd te houden is dat het assessment begint als je het gebouw binnenkomt. De mensen die je ontvangen zullen ook een oordeel over je geven.  Als je case oefeningen krijgt kun je die <a href="http://www.mckinsey.com/aboutus/careers/applyingtomckinsey/interviewing/online_casestudy/burger.asp">oefenen</a>. </div>
+</article>
+<article class="post" data-ts="20060821135700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-08-21 13:57</span></div>
+  <div class="pb">Hey bedankt!<br><br>Die on-line cases heb ik al 's gedaan. Ik zal idd zo'n rollenspel voor de geest halen en daaraan werken.</div>
+</article>
+<article class="post" data-ts="20060821140300" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-08-21 14:03</span></div>
+  <div class="pb">mijn eksuses voor het aantal spelfouten in de eerste post.<br></div>
+</article>
+<article class="post" data-ts="20060821141000" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2006-08-21 14:10</span></div>
+  <div class="pb">Ik vind dat argument van 'een goede nachtrust' altijd wat flauw. Bijna alles kan je beter zonder een nacht te hebben doorgetrokken, ondanks dat je dan oefent. Ik ben van mening dat iq-tests wel degelijk te leren zijn, alleen zullen psychologen dat niet toegeven. Blijken ze namelijk niet zo objectief meer te zijn.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

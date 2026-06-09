@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Celebrity Spotting – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Celebrity Spotting</h1>
+<p class="tm">5 posts · started 2005-02-02 18:38 by Kirrie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050202183800" id="p1">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#1 · 2005-02-02 18:38</span></div>
+  <div class="pb"><br><br>Tijd: 14.30<br>Plaats: Den Haag Grote Marktstraat<br>Wie: Prinses Maxima ( en 4 bodyguards)<br>Waar: H&M Outlet ( waar de kleding gemiddeld 3 euro kost!)<br>Graaiend in het -50% korting rek...</div>
+</article>
+<article class="post" data-ts="20050202183900" id="p2">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#2 · 2005-02-02 18:39</span></div>
+  <div class="pb"><br>En dan te bedenken dat het haar trouwdag is vandaag..hihi</div>
+</article>
+<article class="post" data-ts="20050203100900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-02-03 10:09</span></div>
+  <div class="pb">terecht!<br>Wie: Elsemarije Lot<br>Waar: in de boemel <br>Wanneer: 1-2-2005<br>Wat: Alle Floraboys en -girls die haar kenden moest ik de groeten doen, bij deze. Ze woont trouwens in Hoofddorp oid. met haar vriend, die overigens twee kinderen heeft</div>
+</article>
+<article class="post" data-ts="20050203114600" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2005-02-03 11:46</span></div>
+  <div class="pb">wat een arme sloeber, die maxima. Misschien koopt ze gewoon heel veel kleren en stuurt ze die naar atjeh...?</div>
+</article>
+<article class="post" data-ts="20050203171100" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-02-03 17:11</span></div>
+  <div class="pb">haha die Ca, een lid van de oranjes die doet aan het goede doel. Goeie gevonden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

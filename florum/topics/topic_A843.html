@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tour de France spel 2 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tour de France spel 2</h1>
+<p class="tm">3 posts · started 2003-07-14 09:36 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030714093600" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-07-14 09:36</span></div>
+  <div class="pb">even een nieuwe update. ER zijn veel punten weggeven op de alp d'huez waar Sicco 24 punten wegsleepte in de etappe en 35 in totaal, voor beide een record. Vooral de fenomenale demarrage van Mayo werd door een paar mensen verwacht.Alleen het door het ijs zakken van ulrich, simoni en botero (de laatste finishte in de bus op 3 kwartier!) deed veel mensen pijn. WJ's zegetocht van de dag ervoor werd al te niet gedaan, hij had de minste punten.<br><br>Tussenstand <br>1. Timmie 139<br>2 Tijmen/Pit 118<br>4. Sandor 109<br>5. Jose 102<br>6. Sicco 96<br>7. Victor 89<br>8. Merlijn 49<br><br>Vooral Tijmen doet goede zaken en zijn keuze voor mancebo kon wel eens een gouden greep worden.</div>
+</article>
+<article class="post" data-ts="20030714113000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-07-14 11:30</span></div>
+  <div class="pb">Simoni, Botero, Kirsipuu, wat een falers.. <br>McEwen en Zabel: FAAL FAAL FAAL<br>Ullrich: vooralsnog ook niet erg overtuigend<br><br>Mijn gehele team is een grote hoop met schijt</div>
+</article>
+<article class="post" data-ts="20030714114800" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2003-07-14 11:48</span></div>
+  <div class="pb">ach Victor, McEwen en Zabel komen nog wel, en Ullrich gaat je ook nog wel een paar punten bezorgen. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

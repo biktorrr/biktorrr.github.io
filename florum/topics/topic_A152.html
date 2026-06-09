@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barca – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Barca</h1>
+<p class="tm">1 post · started 2001-07-10 01:45 by sicco</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010710014500" id="p1">
+  <div class="ph"><span class="pa">sicco</span><span class="pm">#1 · 2001-07-10 01:45</span></div>
+  <div class="pb">Heee hooo,<br><br>Ik be weer terug. Live and kicking wel te verstaan. Als jullie mijn nieuwe column hebben gelezen (Ja hij is er weer) begrijpen jullie dat ik weer moet voetballen leifst nog voor het weekeinde. Zeg het de goegemeente als je eigenlijk (zoals wij allen) thuis uit je neus zit te vreten (en de koelkast van je ouders uiteraard) en eigenlijk moet ballen. Hopelijk tot gauw in de arena. waarmee ik bedoel die ene met gras. Merlijn maak je overigens geen zorgen, geef mij maar Amsterdam.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Picknick aan de GOG! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Picknick aan de GOG!</h1>
+<p class="tm">7 posts · started 2007-06-09 15:08 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070609150800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-06-09 15:08</span></div>
+  <div class="pb">Gamers, het risico is me te groot, het wordt een ouderwetsche IndoorPicknick aan de Gedempte Oude Grizzle.<br><br>Ik zie jullie vanaf 17u. De sangria en stixies staan koud.</div>
+</article>
+<article class="post" data-ts="20070609155900" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-06-09 15:59</span></div>
+  <div class="pb">top. Volgens de buienradar en de verwachtingen van het KNMIzzle gaat het in haarlem tussen 17:30 en 18:00 losbasten.<br><br>http://www.buienradar.nl/ia.aspx<br></div>
+</article>
+<article class="post" data-ts="20070609162900" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2007-06-09 16:29</span></div>
+  <div class="pb">Wij nemen wat prosecco, wijn, tapenade, brood en, uiteraard, bereide <br>octopus mee! Tot zo!</div>
+</article>
+<article class="post" data-ts="20070609164000" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-06-09 16:40</span></div>
+  <div class="pb">wij hebben wat sap, cheapyass sangria en gehaktgadgets in de tas.<br></div>
+</article>
+<article class="post" data-ts="20070609173700" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2007-06-09 17:37</span></div>
+  <div class="pb">Proost! Hier schijn trouwens de zon :)<br><br>Tube heeft wel vette vertraging volgens mij, ben benieuwd of dat allemaal goed gaat.<br><br>groetjes van Ca uit Ca in Ca</div>
+</article>
+<article class="post" data-ts="20070609174600" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2007-06-09 17:46</span></div>
+  <div class="pb">Wij gaan zo even inslaan en dan op weg.</div>
+</article>
+<article class="post" data-ts="20070609210300" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2007-06-09 21:03</span></div>
+  <div class="pb">Ik ben er hoor!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

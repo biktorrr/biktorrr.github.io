@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boys Bedankt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Boys Bedankt</h1>
+<p class="tm">4 posts · started 2009-04-05 19:06 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090405190600" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2009-04-05 19:06</span></div>
+  <div class="pb">Voor de verrassende en zeer geslaagde avond in Eindhovuh! Vooral de warme onthaal in het Philipsstadion en de fijngevoelige tenorenstemmen zullen mij eeuwig bijblijven!<br>Om de sfeer even te laten zien hierbij twee gekuysde foto's:<br><br><a href="http://img410.imageshack.us/my.php?image=img0258b.jpg" target="_blank"><img src="http://img410.imageshack.us/img410/5686/img0258b.th.jpg" border="0" alt="Free Image Hosting at www.ImageShack.us" /></a><br /><br /><a href="http://img604.imageshack.us/content.php?page=blogpost&files=img410/5686/img0258b.jpg" title="QuickPost"><img src="http://imageshack.us/img/butansn.png" alt="QuickPost" border="0"></a><a href="http://img410.imageshack.us/my.php?image=img0261s.jpg" target="_blank"><img src="http://img410.imageshack.us/img410/3102/img0261s.th.jpg" border="0" alt="Free Image Hosting at www.ImageShack.us" /></a><br /><br /><a href="http://img604.imageshack.us/content.php?page=blogpost&files=img410/3102/img0261s.jpg" title="QuickPost"><img src="http://imageshack.us/img/butansn.png" alt="QuickPost" border="0"></a></div>
+</article>
+<article class="post" data-ts="20090405211600" id="p2">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#2 · 2009-04-05 21:16</span></div>
+  <div class="pb">Afgelopen nacht heeft een SWAT team grote smurf bevrijd. Grote smurf werd sinds 11 maanden vastgehouden in een woning in Woensel Zuid. Grote smurf maakt het naar omstandigheden goed en laat weten blij te zijn dat er eindelijk een einde is gekomen aan een helse nachtmerrie onder smurfonterende omstandigheden. <br><br></div>
+</article>
+<article class="post" data-ts="20090405225900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2009-04-05 22:59</span></div>
+  <div class="pb">sjezus, dat was wel weer ouderwets stoempen zeg...</div>
+</article>
+<article class="post" data-ts="20090406094000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-04-06 09:40</span></div>
+  <div class="pb">NEYT! LAEGHE TEYDINGH. Grote smurf, You'll never walk alone.<br><br>Was weer knallen idd. Vrij hoge legendedichtheid.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

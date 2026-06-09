@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Monsterverkoop – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Monsterverkoop</h1>
+<p class="tm">4 posts · started 2003-10-27 11:11 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031027111100" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2003-10-27 11:11</span></div>
+  <div class="pb">Voor een ieder die geintresseerd(Denk vooral Tim) is er is weer monsterverkoop bij No Excess/Its Noize voor winterkleding!<br>Aankomende donderdag, vrijdag en zaterdag.Willen jullie meer weten laat het dan even horen<br>Groetjes Lara</div>
+</article>
+<article class="post" data-ts="20031028144400" id="p2">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#2 · 2003-10-28 14:44</span></div>
+  <div class="pb">Waar is die verkoop?<br>Gaan er mensen heen?<br>Ik kan nog wel wat gebruiken voor de winter.</div>
+</article>
+<article class="post" data-ts="20031028220700" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2003-10-28 22:07</span></div>
+  <div class="pb">De verkoop is in Lijnden langs de A9 waarschijnlijk zijn er dames jassen maar verder weinig voor dames het meeste heren.Ik zelf ga vrijdag ochtend even kijken of ze iets hebben.</div>
+</article>
+<article class="post" data-ts="20031029000000" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-10-29 00:00</span></div>
+  <div class="pb">ik vond het altijd wel gezellig.. iemand anders (met auto) nog voor?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amsterdam Tournament – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amsterdam Tournament</h1>
+<p class="tm">7 posts · started 2007-06-27 11:00 by Johan Cruyff</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070627110000" id="p1">
+  <div class="ph"><span class="pa">Johan Cruyff</span><span class="pm">#1 · 2007-06-27 11:00</span></div>
+  <div class="pb">Ajax maakt het zijn supporters gemakkelijk. Voor The LG Amsterdam Tournament 2007 kun je namelijk gewoon vanuit huis kaarten bestellen. Binnen een paar minuten is het online geregeld en zit ook jij binnenkort in de sfeervolle Amsterdam ArenA.<br><br>Op donderdag 2 en zaterdag 4 augustus zal The LG Amsterdam Tournament 2007 gespeeld worden. Het belooft een spannend toernooi te worden dat wederom veel spektakel zal opleveren in de Amsterdam ArenA. Deelnemende teams aan dit toernooi zijn; Ajax, Atletico Madrid, Arsenal en Lazio Roma. Het speelschema is als volgt:<br><br>Donderdag 2 augustus:<br>Lazio Roma  Arsenal, 19.00 uur<br>Ajax - Atletico Madrid, 21.15 uur<br><br>Zaterdag 4 augustus: <br>Lazio Roma  Atletico Madrid, 19.00 uur<br>Ajax  Arsenal, 21.15 uur</div>
+</article>
+<article class="post" data-ts="20070627165900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-06-27 16:59</span></div>
+  <div class="pb">hee JOhan, als je een mooi doelpunt wil zien, moet je maar eens in het andere florum kijken<br></div>
+</article>
+<article class="post" data-ts="20070627175000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-06-27 17:50</span></div>
+  <div class="pb">zondag zou leuk zijn.</div>
+</article>
+<article class="post" data-ts="20070627180400" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2007-06-27 18:04</span></div>
+  <div class="pb">Nou Johan, de teams die je naar Amsterdam weet te krijgen zijn wel ieder jaar minder. Laat Foppe dat anders regelen ofzo.</div>
+</article>
+<article class="post" data-ts="20070627183500" id="p5">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#5 · 2007-06-27 18:35</span></div>
+  <div class="ps">zondag TN ?</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20070627220200" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2007-06-27 22:02</span></div>
+  <div class="pb">Oke zaterdag, natuurlijk</div>
+</article>
+<article class="post" data-ts="20070629081800" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2007-06-29 08:18</span></div>
+  <div class="pb">Lijkt me ook leuk om zaterdag te gaan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

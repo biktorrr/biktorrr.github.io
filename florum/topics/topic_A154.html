@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>F-zaal – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">F-zaal</h1>
+<p class="tm">1 post · started 2001-07-10 18:47 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010710184700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-07-10 18:47</span></div>
+  <div class="pb">Het Floraboys-zaalvoetbalteam zoekt nog voor elke <br>positie extra voetballers. Enkele plekken zijn al<br>bezet, met niet de minste. Het goal wordt op dit<br>moment bemand door de rotsvaste keeper Timmetje!<br>Een keeper die niet alleen perfect staat opge-<br>steld en beschikt over een formidabele klemgreep,<br>maar ook kenmerkend is voor de Floraboys door zijn<br>vele subtiele lange ballen.<br><br>Daarnaast staan Victor en Michiel al reeds lange<br>tijd onder contract. Beide spelers beschikken over<br>een fenomenale traptechniek die vanuit de het <br>grootste non-talent tot scoren doet dwingen. Vooral<br>het inzicht van Victor is ongenaakbaar. De meer be-<br>scheiden Michiel slikt zijn woorden in en zet ze<br>om in daden, hetgeen zich uit in een onvermoei-<br>bare buffel langs alle lijnen die het voetbalveld<br>rij is.<br><br>Met de verzekering dat Joost volgend seizoen voor<br>de F-zaal zal uitkomen, zijn de Floraboys verzekerd<br>van een aanvallende middenvelder die zijn weerga <br>niet kent op de velden. Slechts zelden zagen toe-<br>schouwers een speler zo'n fluwelen balbehandeling<br>combineren met een ijzeren doorzettingsvermogen.<br>Voor een spoedige come-back wordt gebeden.<br><br>Na de aankoop van Maarten, heeft F-zaal de beschik-<br>king over een bikkelharde verdediger, die ook aan-<br>vallend uitstekend uit de voeten kan. Vooral het<br>uithoudingsvermogen en het uitstekende spelinzicht<br>moeten een basis vormen van F-zaal.<br><br>De rol van centrale verdediger wordt vervuld door<br>Merlijn. Maar da's slechts 'for the time being'.<br>Zodra een betere gevonden wordt, wordt verwacht <br>dat Merlijn zijn verdiende plek zal vinden op de<br>reservebank. De beperkte verdediger, die nog nooit<br>een man voorbij is gekomen, mag vanaf de kuipjes <br>de meest basale trukjes leren.<br><br>Verder gaat het gerucht dat F-zaal contact heeft<br>gezocht met verscheidene andere spelers. In de wan-<br>delgangen gaat al ruime tijd het gerucht dat Misha<br>zijn zijn gevraagd. De kans dat hij daadwerkelijk<br>voor een middenmotor als F-zaal kiest is klein, <br>gezien de aanbiedingen die deze balvaste vedette zijn<br>gedaan. Uiterst onzeker is tevens de beschikbaar-<br>heid van Frank die dit jaar de overstap zal maken<br>naar het 'grote jongens' werk. Zal hij F-zaal wil-<br>len verrijken met zijn virtuose inzicht en balvast-<br>heid?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

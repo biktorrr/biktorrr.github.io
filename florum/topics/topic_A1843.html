@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Keihard knalboek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Keihard knalboek</h1>
+<p class="tm">6 posts · started 2006-09-05 15:14 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060905151400" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-09-05 15:14</span></div>
+  <div class="pb">Lieve boys en girls,<br><br>Vandaag gelanceerd: mijn proefschrift! Meer dan 200 bladzijden over alles wat je altijd hebt willen weten. De UvA blijkt uit een stel gieren te bestaan die me niet toestaan het naar jullie op te sturen per universiteitspost. Daarom <a href="http://staff.science.uva.nl/~sevenstr/DISSERTATIONFINAL.pdf">hier</a> een electronische versie, waarmee jullie je kunnen vermaken totdat ik jullie een echt exemplaar als verjaardagskado geef.<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20060905153000" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2006-09-05 15:30</span></div>
+  <div class="pb">Van harte gamer!</div>
+</article>
+<article class="post" data-ts="20060905170900" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2006-09-05 17:09</span></div>
+  <div class="pb">Kun je het niet zelf in een UvA envelop doen en in de postzak smijten. Volgens mij doorbreek je zo alle postcontroles van de UvA.</div>
+</article>
+<article class="post" data-ts="20060905181200" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-09-05 18:12</span></div>
+  <div class="ps">ora est</div><div class="pb"><br><br>kan in Leiden ook, maar dat's beside the point.<br>Super goed iig. Ik vind het een prestatie van formaat, maar dat mag ook wel na die centjes die Jazzy voor je heeft moeten betalen. Kheb zin an de 4e<br></div>
+</article>
+<article class="post" data-ts="20060905182300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-09-05 18:23</span></div>
+  <div class="pb">Weer een mijlpaal!<br><br>TN: heeft "ora" niet meer iets met bidden te maken?</div>
+</article>
+<article class="post" data-ts="20060907094500" id="p6">
+  <div class="ph"><span class="pa">Carolijn</span><span class="pm">#6 · 2006-09-07 09:45</span></div>
+  <div class="pb">interne mail kan toch wel?<br><br>van der Waals Zeeman Instituut<br>valckeniersstraat 65<br>1018 XP A'dam</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

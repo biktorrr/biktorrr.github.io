@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do-Av-Spa: Gezelli Reli – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Do-Av-Spa: Gezelli Reli</h1>
+<p class="tm">3 posts · started 2008-10-02 18:52 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081002185200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2008-10-02 18:52</span></div>
+  <div class="pb">In mijn maandelijkse rondje langs de athe\ïstische velden kwam ik langs de FAQ van Pat Condell (een nogal pugilistische britse atheist, met een gezellige afkeer van alles Saoedisch). Deze faq wilde ik jullie niet onthouden. <a href="http://www.patcondell.net/page4/page4.html"> light reading </a><br><br><br></div>
+</article>
+<article class="post" data-ts="20081003083200" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2008-10-03 08:32</span></div>
+  <div class="pb">zozo, wc papier met moeilijke woorden erop gekocht? <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br></div>
+</article>
+<article class="post" data-ts="20081003085900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-10-03 08:59</span></div>
+  <div class="pb">Pat Condell moet je feitelijk niet lezen, maar zien. De beste man is naar mijn smaak wel erg boos op alles, maar zijn youtube filmpjes zijn het bekijken waard. Helaas werd zijn laatste filmpje van youtube verwijderd, omdat daar de arme saoedi's wel erg hard gebashd werden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

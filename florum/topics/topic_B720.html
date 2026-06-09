@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ballen morgen (9 apr) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ballen morgen (9 apr)</h1>
+<p class="tm">2 posts · started 2006-04-08 16:03 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060408160300" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-04-08 16:03</span></div>
+  <div class="pb">ach ja ik probeer het maar weer eens...<br><br>zoja?</div>
+</article>
+<article class="post" data-ts="20060409110100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-04-09 11:01</span></div>
+  <div class="pb">Zoals ik al tegen je gezegd had vrijdag moet ik werken dit weekend :-( <br>Mochten er mensen morgenmiddag een balletje willen trappen, ik ga met de Ma Browns-clan ballen bij geel-wit.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flora Film-roddels – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Flora Film-roddels</h1>
+<p class="tm">9 posts · started 2010-10-14 21:50 by Albert Verlinde</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101014215000" id="p1">
+  <div class="ph"><span class="pa">Albert Verlinde</span><span class="pm">#1 · 2010-10-14 21:50</span></div>
+  <div class="pb">Naar het schijnt heeft een Floraboy onlangs een rol gekregen in een Hollywood blockbuster. Hier zijn de eerste foto's van de set, heet van de pers!<br><br><img src="http://img.mobypicture.com/2bf2ab48b471dddefa0a71b08a618b86_full.jpg" alt="Roddel" /></div>
+</article>
+<article class="post" data-ts="20101015074000" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-10-15 07:40</span></div>
+  <div class="pb">Hoogh, ik zie de credits al voor me:<br><br>Astronomer in lab: Je m'appele<br><br></div>
+</article>
+<article class="post" data-ts="20101015081800" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-10-15 08:18</span></div>
+  <div class="pb">Zou biggy ooit die helm moeten opzetten die daar ligt? Dat zou hoogh zijn!<br>Zie je die wapperende manen al onder de rand uitkomen. Gelijke een Achilles .<br></div>
+</article>
+<article class="post" data-ts="20111003201508" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2011-10-03 20:15</span></div>
+  <div class="pb">O, ff een beetje film- en tv-roddelen: wist je dat Patty en Priscilla al bijna 2 jaar geen contact hebben?!<br><br>En dan on topic: wat is er van de beelden van onze ongehelmde wetenschapper geworden? </div>
+</article>
+<article class="post" data-ts="20111004032254" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2011-10-04 03:22</span></div>
+  <div class="pb">on topic:<br><br>Er zijn nog meer roddels<br><br><img src="http://a6.sphotos.ak.fbcdn.net/hphotos-ak-snc7/304282_10150341174642485_575932484_8198991_1628478783_n.jpg" alt="meer roddels"><br><br>Het schijnt dat er een doorbraak in de japanse filmwereld in zit. De BBC sloeg BigT over dit jaar (naar het schijnt)<br><br>Meer On topic: Samen met Andre Kuijpers lancering naar het schijnt.</div>
+</article>
+<article class="post" data-ts="20111004032333" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2011-10-04 03:23</span></div>
+  <div class="pb">en naar het schijnt is uitdrukking van de dag geworden</div>
+</article>
+<article class="post" data-ts="20111004105002" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2011-10-04 10:50</span></div>
+  <div class="pb">@ Bak: Goed aan het doorbuffelen ondanks al die filmcrews.<br><br>@ O: Vanavond om 20:30 een reportage over Priscilla in Je zult het maar zijn. Er zou een wet moeten komen die het verbiedt om zulke belangrijke TV tegenover Oh oh Cherso te programmeren. Schande!</div>
+</article>
+<article class="post" data-ts="20111005022811" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2011-10-05 02:28</span></div>
+  <div class="pb">Goed werk Bakkie!</div>
+</article>
+<article class="post" data-ts="20111005170018" id="p9">
+  <div class="ph"><span class="pa">Nazi-nazi</span><span class="pm">#9 · 2011-10-05 17:00</span></div>
+  <div class="pb">Voor alle dt-, d-, überhaupt-, onmiddellijk-, en andere nazi's: <br><br><iframe width="560" height="315" src="http://www.youtube.com/embed/DDk1zGnEwgE" frameborder="0" allowfullscreen></iframe><br><br>Eat your hart out.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

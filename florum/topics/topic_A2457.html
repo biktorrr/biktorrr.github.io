@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kamert? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kamert?</h1>
+<p class="tm">4 posts · started 2008-08-26 09:56 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080826095600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-08-26 09:56</span></div>
+  <div class="pb">Als iemand nog ergens een studentenkamer overheeft in Amsterdam, dan heb ik nog wel een neefje om die op te vullen.<br><br>Dus als iemand iets hoort...</div>
+</article>
+<article class="post" data-ts="20080826121900" id="p2">
+  <div class="ph"><span class="pa">NVM Verkoopmakelaar</span><span class="pm">#2 · 2008-08-26 12:19</span></div>
+  <div class="pb"><a href="http://aanbod.mijnnvm.nl/searcher/zoeker.html?huisid=1188729&makelaarsid=305431&code=1bf47c2696d1632a46a8e56ac21f4fb7" target="NVM">Koop je dit toch?!</a></div>
+</article>
+<article class="post" data-ts="20080826141600" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-08-26 14:16</span></div>
+  <div class="pb">Ph, is dit een link van jou ofzo? Mocht dit spam zijn dan is dat enigzins vervelend.</div>
+</article>
+<article class="post" data-ts="20080826143400" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-08-26 14:34</span></div>
+  <div class="pb">Yeyt, linkje van mij. Leek me een hoogh huys, ik kreeg hem vanochtend in mijn mail, hij is erg vers dus!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

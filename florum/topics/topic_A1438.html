@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aangeboden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Aangeboden</h1>
+<p class="tm">8 posts · started 2005-03-08 14:23 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050308142300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-03-08 14:23</span></div>
+  <div class="pb">De familie Sevenster biedt aan: een luxeuze driezitter met rood-lederen bekleding. De staat van de bank is zonder meer besoindre te noemen. Bank is voor een goede fles Martini af te halen; liefst zo vroeg mogelijk want anders staat i maar in de weg tijdens het schilderen.</div>
+</article>
+<article class="post" data-ts="20050308144100" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2005-03-08 14:41</span></div>
+  <div class="pb">zou ie het leuk staan op de Kleverparkweg, denk je? Lara wilde al graag een nieuwe besoindre bank.</div>
+</article>
+<article class="post" data-ts="20050308152600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-03-08 15:26</span></div>
+  <div class="pb">De Boer-Koning zit ook al tijden te azen op een bank<br></div>
+</article>
+<article class="post" data-ts="20050308155400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-03-08 15:54</span></div>
+  <div class="pb">Onderhand heeft Niels ook al interesse getoond.<br><br>Extra informatie: de bank is 1.90 meter breed en 83 cm diep.<br><br>Er schoot me te binnen dat m'n ouders het waarschijnlijk zeer op prijs zouden stellen als als tegenprestatie de <i>tweezitter</i> bij mijn zuster in Amsterdam afgeleverd zou kunnen worden. Die woont ter hoogte van Sloterdijk, dus het vergt weinig gruwelijke stuurmandskunsten.<br><br></div>
+</article>
+<article class="post" data-ts="20050308164800" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-03-08 16:48</span></div>
+  <div class="pb">Voor de grote Floraboystombola met als inzet de bank kom ik naar Nederland, zoveel is zeker. Zelf ben ik overigens minder ge\ïnteresseerd. Hoewel het voordeel zou zijn dat ik nooit meer zou hoeven stofzuigen, omdat er met die bank geen vloeroppervlak meer in mijn kamer zou zijn.</div>
+</article>
+<article class="post" data-ts="20050308184900" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2005-03-08 18:49</span></div>
+  <div class="pb">Heb besloten dat ie niet mooi zal staan bij ons..hihi</div>
+</article>
+<article class="post" data-ts="20050308235400" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2005-03-08 23:54</span></div>
+  <div class="pb">lara bedoelt hiermee te zeggen dat ons uiterst nederige stulpje de nodige cheiqueheid mist voor een bank van dat elan en histoire<br></div>
+</article>
+<article class="post" data-ts="20050309100800" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-03-09 10:08</span></div>
+  <div class="pb">eh de Blije Kingie zei ongeveer hetzelfde... Wij slaan het aanbod dus ook af...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

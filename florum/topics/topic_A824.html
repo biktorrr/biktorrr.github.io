@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RIP Boris 2002-2003 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">RIP Boris 2002-2003</h1>
+<p class="tm">8 posts · started 2003-06-27 11:56 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030627115600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-06-27 11:56</span></div>
+  <div class="pb">Boris, mijn zwaar rulende dwerghamster is dood. Ze is anderhalf jaar geworden. <br><br>Ik ga haar begraven op heilige grond, het Florapark.<br></div>
+</article>
+<article class="post" data-ts="20030627135200" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2003-06-27 13:52</span></div>
+  <div class="ps">maar anderhalf??</div><div class="pb">dat is niet oud..?? of wel voor een cavia??<br><br>Anyway gecondoleert!!!</div>
+</article>
+<article class="post" data-ts="20030627145300" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-06-27 14:53</span></div>
+  <div class="pb">Hij kon altijd zo leuk rondjes lopen in dat rad van hem. Sterkte Biektor. </div>
+</article>
+<article class="post" data-ts="20030627211700" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-06-27 21:17</span></div>
+  <div class="pb">awwwwwwwww....te hard rondjes gerend in Lara d'r hok.<br><br>Respect aan Boris en dat ze Hell moge raisen.<br></div>
+</article>
+<article class="post" data-ts="20030627213200" id="p5">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#5 · 2003-06-27 21:32</span></div>
+  <div class="pb">misschien een idee, om een virtuele middenstip te creeren, zodat borus daaronder z'n laatste rustplaats kan vinden.</div>
+</article>
+<article class="post" data-ts="20030630094500" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-06-30 09:45</span></div>
+  <div class="pb">Moge God haar hamsterziel rust gunnen, na een psychotisch leven dat voornamelijk bepaald werd door het renrad.</div>
+</article>
+<article class="post" data-ts="20030704201300" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2003-07-04 20:13</span></div>
+  <div class="pb">gelukkig, het is je hamster. Ik dacht even dat het over Boris Huisman ging toen ik de titel van dit topic zag. </div>
+</article>
+<article class="post" data-ts="20030704201500" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2003-07-04 20:15</span></div>
+  <div class="pb">al is Boris natuurlijk niet geboren in 2002. Maar toch schiet het dan door je hoofd he.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

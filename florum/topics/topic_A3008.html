@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Integriteitstrainingen leveren niets op – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Integriteitstrainingen leveren niets op</h1>
+<p class="tm">5 posts · started 2010-11-17 10:38 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101117103845" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-11-17 10:38</span></div>
+  <div class="pb">Bij deze namens mijn werkgever excuses voor <a href="http://www.vu.nl/nl/nieuws-agenda/nieuws/2010/okt-dec/integriteitstrainingen-leveren-weinig-op.asp">het bashen van Cootjes broodwinning</a>.</div>
+</article>
+<article class="post" data-ts="20101117125107" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-11-17 12:51</span></div>
+  <div class="pb">Ze leveren Co een BieEmDabbeljoe op?!</div>
+</article>
+<article class="post" data-ts="20101117130629" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2010-11-17 13:06</span></div>
+  <div class="pb">Ze hebben het wel over <i>gemeenteambtenaren</i>, dan pak je ook wel even een testpopulatie...pfff<br> </div>
+</article>
+<article class="post" data-ts="20101117131754" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-11-17 13:17</span></div>
+  <div class="pb">Gemeenteambtenaren zijn toch sowieso veranderingsproof?</div>
+</article>
+<article class="post" data-ts="20101121123334" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2010-11-21 12:33</span></div>
+  <div class="pb">Ik lees dit topic nu pas. <br>Ik ben wel geinteresseerd in deze studie. Waar kan ik die vinden?<br><br>Op een persbericht is het natuurlijk altijd lastig reageren. Hierop afgaand kan ik natuurlijk zeggen dat ik het helemaal met de onderzoekers eens ben: Ze moeten ons zeker niet eenmalig een workshopje laten verzorgen. Organisaties moeten ons minstens twee keer per jaar een training laten geven, en daarnaast een gedragscode laten ontwikkelen, de cultuur laten meten, de processen door laten nemen en integriteitsaudits uit laten voeren. D\án is het pas effectief (en nog bigger business)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

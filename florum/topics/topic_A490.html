@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Virus – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Virus</h1>
+<p class="tm">4 posts · started 2002-05-21 22:21 by Tymen</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020521222100" id="p1">
+  <div class="ph"><span class="pa">Tymen</span><span class="pm">#1 · 2002-05-21 22:21</span></div>
+  <div class="pb">Dit kreeg ik geforward,Ik weet niet of het een lolletje is of niet,maar ik had dat bestand dus wel op mijn computer staan.<br><br>Hallo allemaal, <br><br>Naar aanleiding van een virusmelding hebben wij onze computer gecheckt en het virus aangetroffen, vandaar deze waarschuwing.  <br>Op dit moment zorgt een virus voor veel problemen of kan daarvoor gaan zorgen. Het virus is genaamd jdbgmgr.exe en wordt niet herkend door Norton of McAfee antivirus scanners. Het virus slaapt ongeveer 14 dagen voordat het je computer gaat beschadigen. Het wordt automatisch doorgestuurd naar je contacten uit je adresboek, of je nu een e-mail stuurt of niet. Wij hebben onze computer gecontroleerd en het virus aangetroffen. Check s.v.p. je computer om problemen te voorkomen.<br>Wat te doen: <br>1. Ga naar 'Start' en kies 'zoeken' en vervolgens 'bestanden en mappen'. <br>2. In het naamvenster type je: jdbgmgr.exe <br>3. In het 'zoeken in' venster selecteer je 'drive c en d' of alleen 'drive c'. <br>4. Klik op 'nu zoeken'. <br>Het virus heeft een klein beertje als icoon voor de naam staan: NIET OPENEN. <br>5. Verwijderen door met de rechter muisknop erop te klikken en kiezen voor verwijderen. <br>6. Ga naar je prullenbak en maak deze leeg. <br><br>ALs je het virus vindt, waarschuw dan meteen alle adressen uit je adresboek. Ook als je ze de laatste tijd geen e-mails hebt gestuurd. Zo kan een ieder op zijn beurt alle contacten waarschuwen. <br></div>
+</article>
+<article class="post" data-ts="20020522102100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-05-22 10:21</span></div>
+  <div class="pb">Het is nogal logisch dat je dat bestand hebt want dat heeft volgens mij iedere windows pc. Het is namelijk een Java Debugger, geen virus. Net zoiets als...."als je iexplore.exe ziet staan op je pc delete het meteen dat is een virus".</div>
+</article>
+<article class="post" data-ts="20020522140100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-05-22 14:01</span></div>
+  <div class="pb">ik zou het deleten als ik jou was.. je weet maar nooit ...<br><br>of gewoon je console het raam uit mieteren, straks infecteerd ie je tv</div>
+</article>
+<article class="post" data-ts="20020524184700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-05-24 18:47</span></div>
+  <div class="pb">Aan alle mensen van m'n adresboek, helaas was het advies dat ik kreeg, hoe ik een virus moest verwijderen en dat ik aan jullie doorstuurde een nepper en een virus op zich. Het bestand is een HOAX en belangrijk voor het opstarten van JAVA-applets. Het spijt me, Agnes <br>VOOR HERSTEL VAN DEZE FOUT:<br>http://support.microsoft.com/default.aspx?scid=kb;en-us;Q322993<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

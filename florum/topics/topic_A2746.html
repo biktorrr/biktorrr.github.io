@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ode aan de bode – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ode aan de bode</h1>
+<p class="tm">10 posts · started 2009-09-18 13:12 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090918131200" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-09-18 13:12</span></div>
+  <div class="pb">Boys, <br><br>As we speak ben ik een ode aan de bode aan het maken. <br><br>Strict genomen is het meer een ode aan de moeder van de bode maar toch. <br><br>Tis maar dat je het weet.</div>
+</article>
+<article class="post" data-ts="20090918133100" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-09-18 13:31</span></div>
+  <div class="pb">www.odeaandeboode.nl ?</div>
+</article>
+<article class="post" data-ts="20090918133800" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2009-09-18 13:38</span></div>
+  <div class="pb">heb juh het nou over ze moeduhr?!<br><br>we wachten in spanning af. Tipje, verwerkt iets met (russische) samowaars in je ode.</div>
+</article>
+<article class="post" data-ts="20090918143700" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2009-09-18 14:37</span></div>
+  <div class="pb">Oh Jezus, ik heb Jazz tegen de haren ingestreken en nou zal ik het krijgen. Met angst en beven wacht ik af.</div>
+</article>
+<article class="post" data-ts="20090918144200" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-09-18 14:42</span></div>
+  <div class="pb">Niet iedereen durft Agnes Jongerius te bashen maar tegen je moeder lukt het vast wel, vandaar...<br><br>Nee hoor bode, het ging om een activiteit met een oven en een bepaald zuivel product.<br><br></div>
+</article>
+<article class="post" data-ts="20091004200600" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2009-10-04 20:06</span></div>
+  <div class="pb">Zonder mezelf nou in de spreekwoordelijke ´spotlights´ te willen plaatsen begin ik me wel sterk af te vragen waar die ´ode aan de bode´ nou blijft.</div>
+</article>
+<article class="post" data-ts="20091005102200" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2009-10-05 10:22</span></div>
+  <div class="pb">Weet niet waar dit verder over gaat. Wat ik wel weet is dat de Jazzmaster geen tijd meer heeft om Ajax-joden te kijken. En dan wordt het toch wel heel aanlokkelijk om een seizoenskaart van PSV te kopen.</div>
+</article>
+<article class="post" data-ts="20091005110900" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2009-10-05 11:09</span></div>
+  <div class="pb">Geen Ode aan de Bode, geen Ajax-Joden? Zou Jazz soms een nieuwe, veel gavere vriendenkring gevonden hebben? Worden wij als Floraboys hier zomaar aan de dijk gezet?</div>
+</article>
+<article class="post" data-ts="20091005133700" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2009-10-05 13:37</span></div>
+  <div class="pb">Floraboys inruilen voor schreeuwerige-pubers-in-collegebanken of naar-hun-politieke-navel-starende-D'66ers lijkt me onwaarschijnlijk. <br>Voor mij is verlatingsangst (nog) niet im frage.<br><br>Evenzogoed ben ik wel benieuwd naar de Ode aan de Onze Lieve Bode Moeder.<br></div>
+</article>
+<article class="post" data-ts="20091005182400" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2009-10-05 18:24</span></div>
+  <div class="pb">sorry, had in mijn glazen bol gezien dat ajax niet zou winnen, daar ga ik dan geen 6 euro voor betalen. Daarbij had ik inderdaad nog een inval op het programma. Probeer nu met m'n studie vrinden de PvdA gek te maken, lukt aardig.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

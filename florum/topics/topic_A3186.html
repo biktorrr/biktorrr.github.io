@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd</h1>
+<p class="tm">11 posts · started 2011-12-09 17:14 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111209171453" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2011-12-09 17:14</span></div>
+  <div class="pb"><p><br>	Lieve Bode,</p><br><p><br>	Na het sturen van een hele berg positiviteit richting het eurofront mag een stukje goed nieuws richting jouw persoon natuurlijk niet ontbreken. Bij deze wil ik je dus van harte feliciteren met je verjaardag! Uiteraard bevat deze posting meer dan felicitaties alleen maar ook de volgende speciaal voor jou gemaakte taart.</p><br><p><br>	<img alt="" src="http://www.tomrunia.nl/imgscript/img/thumb/94e9c2ff.png" style="width: 600px; height: 450px" /></p><br><p><br>	Hierbij moet ik helaas wel gelijk toevoegen dat jou de eer te beurt is gevallen om voorlopig de laatste door mij gemaakte gefelicitaart te ontvangen. Na meer dan twee jaar in de keuken gestaan te hebben is het nu&nbsp;voor mij&nbsp;het moment aangebroken&nbsp;om een creatief sabattical van onbepaalde tijd op te nemen. Ik wil hierbij alle boys en girls dan ook bedanken voor de leuke reacties op de taarten en in het bijzonder Jazzy en de Tante voor de aangename prijs bij het FDK van vorig jaar.</p><br></div>
+</article>
+<article class="post" data-ts="20111209180024" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2011-12-09 18:00</span></div>
+  <div class="pb">Namens alle taartontvangers, dankjewel voor je baksels van de afgelopen jaren brave drouille!</div>
+</article>
+<article class="post" data-ts="20111209180740" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2011-12-09 18:07</span></div>
+  <div class="pb">Gefeliciteerd Brave Booty Lee! Nog vele jaren!<br><br>@ Drouille: Respect voor je omvangrijke en originele oeuvre!</div>
+</article>
+<article class="post" data-ts="20111209181243" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2011-12-09 18:12</span></div>
+  <div class="pb">Goed gewerkt brave Bode & brave Droelje.</div>
+</article>
+<article class="post" data-ts="20111209191632" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2011-12-09 19:16</span></div>
+  <div class="pb">Bode! Gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20111209193800" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2011-12-09 19:38</span></div>
+  <div class="pb">Bo. De. Bo. De. Bo. De! Tik!</div>
+</article>
+<article class="post" data-ts="20111209193940" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2011-12-09 19:39</span></div>
+  <div class="pb">Overigens wil ik ook graag mezelf en mijn Tante feliciteren met de geboorte van treinstation Sassenheim. Tik. Em. Aan!</div>
+</article>
+<article class="post" data-ts="20111209200054" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2011-12-09 20:00</span></div>
+  <div class="pb">Van harte BoD\é. Bij deze stuur ik je vast positieve vibes op. Dat Grunning maar kampioen mag worden, van het noorden!</div>
+</article>
+<article class="post" data-ts="20111209215219" id="p9">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#9 · 2011-12-09 21:52</span></div>
+  <div class="pb">Gefeliciteerd ook namens de kleine Luc.</div>
+</article>
+<article class="post" data-ts="20111210012054" id="p10">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#10 · 2011-12-10 01:20</span></div>
+  <div class="pb">Dank dank Boys en Girls. Ik wacht eigenlijk alleen nog met smart op een felicitatie van mijn hartsvriend het Draaiertje.</div>
+</article>
+<article class="post" data-ts="20111210131411" id="p11">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#11 · 2011-12-10 13:14</span></div>
+  <div class="pb">Gelukkig wachtte je niet op mijn felicitaties. Je krijgt ze bij deze toch.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

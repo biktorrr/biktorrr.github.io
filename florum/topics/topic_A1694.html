@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>REVT 2006 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">REVT 2006</h1>
+<p class="tm">2 posts · started 2006-02-15 22:32 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060215223200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-02-15 22:32</span></div>
+  <div class="pb">The bikkeling continues: REVT 2006. Op <u>vrijdag 21 april</u> zal de Floraleeuw weer brullen op het sportpark van WVHEDW. Net als vorig jaar mogen we tien boys opgeven en wordt er zeven tegen zeven gespeeld. <br><br>Helaas helaas kan jullie onbetwiste leider, ranke spelmaker, en gedreven pinchhitter er dit jaar weer niet bijzijn. Ik zit dan -- Biggy-style -- in California, USA. Maar mijn inspirerende geest is natuurlijk altijd met jullie. De sympathieke stofzuiger Victor de Boer zal als contactpersoon optreden en er is geen reden waarom dat niet vlekkeloos zou verlopen. Victor is een vriend van Taasje en dan komen dingen vanzelf goed. <br><br>Vrijdag een werkdag, dus ik hoop dat jullie allemaal een vrije dag kunnen opnemen om de eer van het Florapark hoog te houden. Mocht de nood aan de man zijn, dan trek je maar aan de bel. Want volgens het AIO-wetje uit 1915 zijn vrije dagen van AIO's transfereerbaar naar elk individu werkachtig in Nederland, en toevallig heeft deze AIO nog een stuwmeer aan vrije dagen.<br><br><i>Make me proud boys!</i></div>
+</article>
+<article class="post" data-ts="20060216000400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-02-16 00:04</span></div>
+  <div class="pb">Reageren voor het gemak maar in het zelfde topic in het Voetbal Florum?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

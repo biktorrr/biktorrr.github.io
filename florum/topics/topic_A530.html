@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>la f?te du 26 juillet – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">la f?te du 26 juillet</h1>
+<p class="tm">9 posts · started 2002-07-10 14:49 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020710144900" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-07-10 14:49</span></div>
+  <div class="pb">Invitation \à toutes les filles et tous les gar\çons Flora. <br><br>26 juli ben ik jarig en dat vier ik. Komt allen vanaf een uur of halftien naar de Deurloostraat 126 huis. (tram 25, halte Churchilllaan).<br><br>Bis dann, Oli4  </div>
+</article>
+<article class="post" data-ts="20020710160900" id="p2">
+  <div class="ph"><span class="pa">Ptc</span><span class="pm">#2 · 2002-07-10 16:09</span></div>
+  <div class="pb">je kan pas, je suis au vakantie, pardonnement</div>
+</article>
+<article class="post" data-ts="20020710161400" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2002-07-10 16:14</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20020710161500" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-07-10 16:15</span></div>
+  <div class="pb">moi aussi, <br>kann leider nicht</div>
+</article>
+<article class="post" data-ts="20020712133700" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2002-07-12 13:37</span></div>
+  <div class="pb">En zoals gemeeld, Mer,DAvid en ik ook niet<br><br>Je croix, il est temps pour un autre temps.<br>Croissant & Zut alors<br><br></div>
+</article>
+<article class="post" data-ts="20020713213600" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2002-07-13 21:36</span></div>
+  <div class="pb">pauvre moi, tout seul sans amis...</div>
+</article>
+<article class="post" data-ts="20051112191200" id="p7">
+  <div class="ph"><span class="pa">angela</span><span class="pm">#7 · 2005-11-12 19:12</span></div>
+  <div class="pb">i lived at 126hs on deuloostraat for some months some years ago</div>
+</article>
+<article class="post" data-ts="20051113154800" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2005-11-13 15:48</span></div>
+  <div class="pb">Wow..een google-bezoeker.</div>
+</article>
+<article class="post" data-ts="20051114095900" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2005-11-14 09:59</span></div>
+  <div class="pb">google doet anders goed z'n best als topics van 3 jaar terug nog geindexeerd zijn...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2335 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2335</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2008-09-16 10:13 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080916101300" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1&nbsp;·&nbsp;2008-09-16 10:13</span></div>
+  <div class="pb">Even een puntje<br><br>Mochten jullie op 9 oktober de verdediging willen bijwonen (om 16:00 in het Academie-gebouw van Leiden), laat het me dan van te voren weten, dan kan ik er rekening mee houden. Dit met betrekking tot hoeveel mensen er komen en dus welke zaal (klein of groot auditorium) er zal worden gereserveerd.</div>
+</article>
+<article class="post" data-ts="20080916102100" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2&nbsp;·&nbsp;2008-09-16 10:21</span></div>
+  <div class="pb">misschien wil ik wel komen, maar ik kan niet zover vooruit kijken.</div>
+</article>
+<article class="post" data-ts="20080916150100" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3&nbsp;·&nbsp;2008-09-16 15:01</span></div>
+  <div class="pb">Ik zal op vakantie zijn. Maar ik zal op dat moment onder een palmboom naar de sterren turen en denken aan jouw wetenschappelijke hoogdag.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

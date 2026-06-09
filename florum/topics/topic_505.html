@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaalbal-trap/scoor techniek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaalbal-trap/scoor techniek</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2004-09-10 10:03 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040910100300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1&nbsp;·&nbsp;2004-09-10 10:03</span></div>
+  <div class="pb">Wrijvend over mijn pijnlijke buik, speelde ik de wedstrijd (ai) nog eens na in mijn hoofd. Ik merkte op dat twee van de gasten die garant stonden voor 80% van hun productie veel ballen op doel schoten door te punteren. Dit heeft (niet dat het nu veel uitmaakt) op zeker de eerste 2 tegengoals veroorzaakt, omdat je als kieper een bal die zo geschoten is altijd verkeerd beoordeeld. Door te punteren daalt de bal snel, twee meter nadat je em geschoten hebt. De eerste kwam nog tegen mijn pens, de latere (iig twee) gingen er wel aardig in zo.<br>Iets voor de boys?</div>
+</article>
+<article class="post" data-ts="20040910101600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2004-09-10 10:16</span></div>
+  <div class="pb">Voorlopig moet ik eerst maar eens gewoon zien te kunnen lopen. Mijn blaren of death zullen nog wel even van zich laten spreken.<br><br>verder goed plan, sommige boys zijn al van de punter (Sicco..). Misschien een masterclassje?</div>
+</article>
+<article class="post" data-ts="20040910104200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3&nbsp;·&nbsp;2004-09-10 10:42</span></div>
+  <div class="pb">Oli4 wil vast wel even overvliegen. </div>
+</article>
+<article class="post" data-ts="20040910163700" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4&nbsp;·&nbsp;2004-09-10 16:37</span></div>
+  <div class="pb">Is de Tube niet de meester van de puntertechniek?</div>
+</article>
+<article class="post" data-ts="20040910192500" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5&nbsp;·&nbsp;2004-09-10 19:25</span></div>
+  <div class="pb">Nee das het overschieten <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20040911095300" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6&nbsp;·&nbsp;2004-09-11 09:53</span></div>
+  <div class="pb">Kwoot<br>"Nee das het overschieten  :)"<br><br>Dat gebeurt meestal in combinatie met een punter.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys: SCHANDAAL!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys: SCHANDAAL!!!</h1>
+<p class="tm">3 posts · started 2002-02-15 21:54 by De schrijvende pers</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020215215400" id="p1">
+  <div class="ph"><span class="pa">De schrijvende pers</span><span class="pm">#1 · 2002-02-15 21:54</span></div>
+  <div class="pb"><B>Floraboys herdefinieren `slecht'</B><br><br>In de eerste wedstrijd van de tweede seizoenshelft zijn de Floraboys genadeloos weggespeeld. Hoewel de kritici na de eerste seizoenshelft nog dachten dat de Floraboys wel in de tweede klasse mee zouden kunnen draaien, werden de Floraboys het grootste deel van de tijd vernederd.<br><BR><br>De eerste helft verliep redelijk: Een 2-2 gelijkspel was voor niemand aanleiding een zo grote afslachting te vermoeden. De tweede helft kwamen de zwakke plekken wel heel duidelijk naar voren. Zelfs het eigen publiek kon zich niet meer inhouden, toen de aanhang van de tegenstander het hatelijk "ze krijgen voetballes" aanhief. <br><BR><br>Duidelijk was al wel dat de Floraboys het niet van individuele acties moeten hebben. De meeste punten zijn behaald met simpele <I>kick and rush</I>-tactieken. Tegen sterkere tegenstanders lijkt dit niet voldoende. Voetballers als "Holy" Misha en "Oli" 4 zijn niet in staat uitstekende (ere wie ere toekomt, "Tuut" Tim was het enige lichtpuntje -- hoe lang zouden de Floraboys hem nog aan z'n contract kunnen houden?) uitworpen behoorlijk te verwerken. "Holy" Misha kon zelfs niet in de schaduw staan die hij eerder voor zich heeft geworpen. "Famous" Frank, die eindelijk geen excuus meer heeft voor opzichtig falen, bewees z'n neus voor de goal nog niet te zijn verloren, wat niet gezegd kan worden over z'n vechtersmentaliteit en conditie.<br><BR><br>Over mentaliteit geen gebrek bij "23" Merlijn, die zich meerdere malen theatraal opwond over de arbitrage. Maar dan wordt toch duidelijk dat hij niet de geboren leider is binnen het veld. Na de wedstrijd werd in de wandelgangen vernomen dat het merendeel van de spelers met 't schaamrood op de kaken aan "23" Merlijns oprispingen terugdenkt.<br><BR><br>Door ziekte van "0" Victor is het niet redelijk hem op z'n daden te beoordelen, wat niet onverlet laat dat ook hij belabberd speelde. Dit leidt tot de laatste spelende Floraboy: "11" Maarten begint 'n steeds eigenaardiger fenomeen te worden binnen het oranje-quintet. Binnen de groep is wrevel ontstaan over zijn permanente wanprestaties en aanhoudende afwezigheid tijdens de trainingen.<br><BR><br>De afwezig spelers, "Witte" Joost en "4" MB, zouden het verschil moeten maken tussen 'n smadelijke degradatie en prolongatie. Het is echter de vraag of zij echt het verschil zullen kunnen maken. "4" MB is een degelijk mandekker, maar zijn charisma houdt niet over. "Witte" Joost is beter in staat zijn teamgenoten scherp te houden, maar de boomlange aanvaller heeft zijn belofte nog steeds niet kunnen inlossen. Met een dramatisch medisch logboek heeft hij een uitstekend excuus in handen, maar aan excuses zullen de tegenstanders in de tweede klasse een broertje dood hebben.</div>
+</article>
+<article class="post" data-ts="20020220150200" id="p2">
+  <div class="ph"><span class="pa">De schrijvende pers</span><span class="pm">#2 · 2002-02-20 15:02</span></div>
+  <div class="pb">Hee Holy, maak je fout nou goed zet 't op de cover van de <br>Floraboys-site. Gewoon even die source-code copy pasten en<br>iedereen kan lezen hoe slecht je was.</div>
+</article>
+<article class="post" data-ts="20020220182600" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-02-20 18:26</span></div>
+  <div class="pb">Dat ik niet altijd in mijn eigen schaduw kan staan moge al sedert mensenheugenis duidelijk zijn!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

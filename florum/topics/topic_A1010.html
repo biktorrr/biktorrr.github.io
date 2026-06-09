@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor de ECHTE gamers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor de ECHTE gamers</h1>
+<p class="tm">5 posts · started 2003-10-07 18:05 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031007180500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-10-07 18:05</span></div>
+  <div class="ps">Geachte Albert-bezorgservice,</div><div class="pb">Hoewel ik over het bezorgen en het gebruikersgemak van de door u aangeboden service erg te spreken ben, heb ik toch een klacht. Ik heb afgelopen week voor het eerst van jullie dienst gebruik gemaakt, toen ik een relatief grote hoeveelheid drank (kratten bier, flessen wijn) nodig had. Ik heb daartoe jullie voorwaarden doorgenomen en daarmee ingestemd. Echter, nergens is mij expliciet vermeld dat eenmaal aangekochte artikelen onmogelijk meer geretourneerd kunnen worden: noch bij een AH-vestiging bij mij in de buurt, noch bij jullie service zelf. Dit is mij pas duidelijk geworden nadat ik hier expliciet naar informeerde bij jullie helpdesk. Zelfs na het verwerven van deze kennis kon ik deze voorwaarde niet terugvinden op jullie website.<br><br>In het algemeen steekt het mij dat een dienst die zoveel service biedt en die ik reeds aan velen heb aanbevolen, op zo'n punt in mijn ogen tekort schiet. Ik ervaar het dan ook als erg onplezierig dat deze voor mij belangrijke voorwaarde voor mij verborgen is gebleven. Ik denk dat dergelijke voorwaarden, die op al dan niet juridische wijze afwijken van gangbare voorwaarden, zeker beter aangeduid zouden moeten worden.<br><br>Ik zou het zeer op prijs stellen als mij alsnog de mogelijkheid werd geboden om een paar volle kratten bier en enkele flessen wijn alsnog terug te kunnen geven met teruggave van het door mij aan deze goederen besteedde bedrag.<br><br>Met vriendelijke groet<br><br>-- M. Sevenster</div>
+</article>
+<article class="post" data-ts="20031007180500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-10-07 18:05</span></div>
+  <div class="ps">Geachte Albert-bezorgservice,</div><div class="pb"><br><br>Hoewel ik over het bezorgen en het gebruikersgemak van de door u aangeboden service erg te spreken ben, heb ik toch een klacht. Ik heb afgelopen week voor het eerst van jullie dienst gebruik gemaakt, toen ik een relatief grote hoeveelheid drank (kratten bier, flessen wijn) nodig had. Ik heb daartoe jullie voorwaarden doorgenomen en daarmee ingestemd. Echter, nergens is mij expliciet vermeld dat eenmaal aangekochte artikelen onmogelijk meer geretourneerd kunnen worden: noch bij een AH-vestiging bij mij in de buurt, noch bij jullie service zelf. Dit is mij pas duidelijk geworden nadat ik hier expliciet naar informeerde bij jullie helpdesk. Zelfs na het verwerven van deze kennis kon ik deze voorwaarde niet terugvinden op jullie website.<br><br>In het algemeen steekt het mij dat een dienst die zoveel service biedt en die ik reeds aan velen heb aanbevolen, op zo'n punt in mijn ogen tekort schiet. Ik ervaar het dan ook als erg onplezierig dat deze voor mij belangrijke voorwaarde voor mij verborgen is gebleven. Ik denk dat dergelijke voorwaarden, die op al dan niet juridische wijze afwijken van gangbare voorwaarden, zeker beter aangeduid zouden moeten worden.<br><br>Ik zou het zeer op prijs stellen als mij alsnog de mogelijkheid werd geboden om een paar volle kratten bier en enkele flessen wijn alsnog terug te kunnen geven met teruggave van het door mij aan deze goederen besteedde bedrag.<br><br>Met vriendelijke groet<br><br>-- M. Sevenster</div>
+</article>
+<article class="post" data-ts="20031009171200" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-10-09 17:12</span></div>
+  <div class="pb"><img src="http://www.80stees.com/images/products/nintendo_roots_t-shirt_link.jpg"></div>
+</article>
+<article class="post" data-ts="20031010115900" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-10-10 11:59</span></div>
+  <div class="pb">gamer!</div>
+</article>
+<article class="post" data-ts="20031010122500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-10-10 12:25</span></div>
+  <div class="pb">Ha ha, dat webmaster heeft toch steeds leuke verrassingen voor ons in petto. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

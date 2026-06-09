@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zwarte dag florazaal. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zwarte dag florazaal.</h1>
+<p class="tm">10 posts · started 2001-10-30 23:58 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011030235800" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-10-30 23:58</span></div>
+  <div class="pb">Na de teleurstellende 3-3 van vanavond is er nog meer slecht nieuws.<br><br>ITS AIO oftewel de randloosers die wij met 20-1 hebben opgerold, hebben zich terug getrokken uit de competitie.<br>Dit betekent dat wij kwijt zijn:<br><br>- 2 punten<br>- 20 doelpunten voor<br>- 1 doelpunt tegen (heeeeiieeee heeieiieee hoooo  heeeee hoooohoooo)<br><br>Oftwel Frank heeft er 7 minder gemaakt, ik 4 en de rest geloof ik ook allemaal 3 ofzo.<br><br>Positief punt is dat die loosers van een Tampeloerieten ,Swanzer en Zeker van de Beker ook al hun goals kwijt zijn. Jammer voor die dikke homos.<br><br>Na vanavond hebben we dus officieel.<br><br>5 gespeeld <br>3 gewonnen<br>2 gelijk<br><br>Wat allemaal een beetje jammer is.<br><br></div>
+</article>
+<article class="post" data-ts="20011031002300" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2001-10-31 00:23</span></div>
+  <div class="pb">Nog meer statistieken.<br><br>Stand na vanavond (incl -punten ITSAIO)<br><br>Floraboys 5 3 2 0 8<br>Real------5 2 1 2 5<br>Schenker--4 2 0 2 2<br>AEL b4----4 0 1 3 1<br><br>Real moet nog tegen:<br>Schenker, Zeker vd Beker, AEL B4- kunnen nog op 11 punten komen.  <br>Schenker kan nog op 10 punten komen<br>AEL nog op 9 <br><br>2 keer winnen is dus alsnog kampioen worden. <br><br></div>
+</article>
+<article class="post" data-ts="20011031141100" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-10-31 14:11</span></div>
+  <div class="pb">Dat gaat zeker lukken! FLORABOYS KAMPIOENEN!</div>
+</article>
+<article class="post" data-ts="20011031144000" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2001-10-31 14:40</span></div>
+  <div class="pb">Wat een nichten die itsers. Ik daarentegen stijg behoorlijk op de topscorerdslijst</div>
+</article>
+<article class="post" data-ts="20011031151500" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-10-31 15:15</span></div>
+  <div class="pb">ITS HOMO</div>
+</article>
+<article class="post" data-ts="20011101114600" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2001-11-01 11:46</span></div>
+  <div class="pb">Is het een ideetje om op de dag dat we tegen de homo's hadden gemoeten een oefenwedstrijdje tegen de Penose en zijn marxistische vrienden te spelen? Gebald moet er toch worden, ALTIJD. Kunnen we alsnog de netten testen!!</div>
+</article>
+<article class="post" data-ts="20011101125900" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2001-11-01 12:59</span></div>
+  <div class="pb">Top idee</div>
+</article>
+<article class="post" data-ts="20011101190200" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2001-11-01 19:02</span></div>
+  <div class="pb">ik heb Penose gemaild. Niet dat ik antwoord verwacht, hoor. Ik neem aan dat alle FB's beschikbaar zijn voetballes te geven.</div>
+</article>
+<article class="post" data-ts="20011101225400" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2001-11-01 22:54</span></div>
+  <div class="pb">Volgens mij kan dat wel met het USC geregeld worden toch??</div>
+</article>
+<article class="post" data-ts="20011102135900" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10 · 2001-11-02 13:59</span></div>
+  <div class="pb">Penose, met wie ik gister heerlijk in de ArenA van Ajax zat te genieten, is wel voor een balwedstrijdje. Hij weet nog niet waar hij aan begint! (gniffel, gniffel)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

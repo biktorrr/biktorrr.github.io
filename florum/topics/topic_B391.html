@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys uit de jaren 70 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys uit de jaren 70</h1>
+<p class="tm">3 posts · started 2003-12-18 19:22 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031218192200" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-12-18 19:22</span></div>
+  <div class="pb">Zat me even te vervelen en tikte de Floraboys eens in bij Google. Grappig is dat. Eerst krijg je een hele vage site van pitstra.nl, een paar itempjes later een off. zaalvoetbalsite waar we opstaan en nog verderop een site waaruit blijkt dat we al begin jaren 70 kampioenswedstrijden speelden: http://www.xs4all.nl/~rvu/zzsdcp98.htm.<br><br>Nu ik toch aan 't tikken ben: ik was gister in Disneyland Parijs voor een stuk voor Else4. Wat een shitehole zeg, verschrikkelijk, al die mensen met hun plastic smiles die alleen maar uit zijn op je zuurverdiende centen. En dat hele spacemountain stelt ook niets voor. (zat trouwens in de achtbaan in het donker naast een lief, dertienjarig schreeuwend meisje maar wil niets impliceren ofzo. Mijn naam is geen Jossit). En een woordvoerder had in al zijn goedheid precies tien minuten tijd vrij weten te maken voor me. <br><br>Als er trouwens nog mensen in zijn voor Tweedekerstdagballen: ik ben veur. </div>
+</article>
+<article class="post" data-ts="20031218201900" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-12-18 20:19</span></div>
+  <div class="pb">Kan me nog goed herinneren dat we ook die kampioenswedstrijd verloren (4-2). Gelukkig mochten we met 19-3 verliezen en werden we dus toch lekker kampioen. Net zoals maandag was iedereen erg blij met de verlies partij.<br><br>Verder vind ik het uiterst laf dat je niks geprobeerd hebt met dat meisje. Misschien komt dat omdat ze bij de term lolita in Frankrijk eerder denken aan Alizee dan aan Nabokov. Hoe dan ook een gemiste kans.<br></div>
+</article>
+<article class="post" data-ts="20031219000200" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-12-19 00:02</span></div>
+  <div class="pb">heej, das toevallig, <br>ik heb gister de versie van Nabokov uitgelezen. <br>Hoe mooi het ook is, Alizee blijft qua taalvirtuositeit number one.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

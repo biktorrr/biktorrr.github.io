@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nat in Praag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nat in Praag</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2002-08-13 14:21 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020813142100" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1&nbsp;·&nbsp;2002-08-13 14:21</span></div>
+  <div class="pb">OHHH, hoe zou het nu zijn met al die mooie kroegen in de Stare Mesto, de Mala Strana en in de andere lager gelegen delen van de stad? en met de barmannen die hun kroeg niet willen verlaten uit angst voor plunderingen? en met al die kelderrestaurants waar de knedlicky in grote hoeveelheden aanwezig is? en met de biervaten die nu waarschijnlijk met de Moldau mee richting Duitsland stromen!?</div>
+</article>
+<article class="post" data-ts="20020813160000" id="p2">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#2&nbsp;·&nbsp;2002-08-13 16:00</span></div>
+  <div class="pb">dan wordt het dus toch nog gezellig in Duitsland</div>
+</article>
+<article class="post" data-ts="20020814095700" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3&nbsp;·&nbsp;2002-08-14 09:57</span></div>
+  <div class="pb">Ik zag op TV al een biervat met de Moldau meegevoerd worden.<br><br>Uit de Volkskrant van vandaag:<br><br>"Achter een wal van zandzakken hangen in het duister de obers van de Music Bar. Bij gebrek aan gasten hebben ze het zelf maar op een zuipen gezet. 'Onder water zijn wij op ons best' lalt Honza."<br></div>
+</article>
+<article class="post" data-ts="20020814120600" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4&nbsp;·&nbsp;2002-08-14 12:06</span></div>
+  <div class="pb">Ik hoorde vandaag op de radio dat vakantiegangers worden ondergebracht in universiteitsgebouwen. ik voorspel gouden tijden voor de bistro.</div>
+</article>
+<article class="post" data-ts="20020814120900" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5&nbsp;·&nbsp;2002-08-14 12:09</span></div>
+  <div class="pb">daar is ruimte genoeg in die flats! gooi de biergarten maar open zou ik zeggen! <br>Ik las of hoorde ook ergens dat het druk was in de hogergelegen kroegen.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

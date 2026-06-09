@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social Pariah – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Social Pariah</h1>
+<p class="tm">10 posts · started 2010-07-01 12:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100701120200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-07-01 12:02</span></div>
+  <div class="pb">Boys, het begint grotesque vormen aan te nemen. Ik kan nu, mede dankzij het gebruik van bepaalde woorden en het naarstige knip&plak werk van y0utube filmpjes, bepaalde topiquilles niet meer openen tijdens werktijd.<br>Arghamemmnon.<br><br>=======<br>http://www.floraboys.com/expsel.php?id=1420<br>Access has been blocked because:<br>Page content filters applied - banned keyword<br><br>=====<br>Access Denied<br>You have attempted to access the following web page:<br>http://www.floraboys.com/expsel.php?id=2900<br><br>Access has been blocked because:<br>Tru-View has categorised this page as Streaming Media & Media Downloads<br><br>Management have deemed that access to this web page is inappropriate at this time. Please contact your supervisor if you feel that this is incorrect.<br></div>
+</article>
+<article class="post" data-ts="20100701120600" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2010-07-01 12:06</span></div>
+  <div class="pb">Heb je al contact opgenomen met de supervisor? Dit valt natuurlijk onder de categorie ongepaste restricties. Lijkt me toch verder geen issue.</div>
+</article>
+<article class="post" data-ts="20100701122400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2010-07-01 12:24</span></div>
+  <div class="pb">Niet zo integer inderdaad.</div>
+</article>
+<article class="post" data-ts="20100701122900" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2010-07-01 12:29</span></div>
+  <div class="pb">Ik ben wel benieuwd wat het management precies de "access" inappropriate vindt en waarom dat zo is "at this time"?</div>
+</article>
+<article class="post" data-ts="20100701124000" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2010-07-01 12:40</span></div>
+  <div class="pb">Da's behoorlijk kut voor je.</div>
+</article>
+<article class="post" data-ts="20100701124300" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2010-07-01 12:43</span></div>
+  <div class="pb">Misschien moet little t even een flink aantal topics langsgaan en dan kunnen wij een analyse maken waarom sommige geblokkeerd worden en anderen weer niet.</div>
+</article>
+<article class="post" data-ts="20100701132400" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2010-07-01 13:24</span></div>
+  <div class="pb">nou die redenen staan er opzich elke keer bij<br>zoals boven al aangegeven; wegens<br>"banned keyword" en "contains streaming/download media"<br><br>ik zal de lijst eens in zijn geheel opvragen :)</div>
+</article>
+<article class="post" data-ts="20100701133800" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2010-07-01 13:38</span></div>
+  <div class="pb">Ik vind dat niet profesj. Stel nou dat je het Anthonie van Leeuwenhoek ziekenhuis, dat gespecialiseerd is in de behandeling van kanker, moet verzekeren?!</div>
+</article>
+<article class="post" data-ts="20100701134000" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2010-07-01 13:40</span></div>
+  <div class="pb">Nou O, verwacht geen antwoord van TN meer in dit topic... <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20100701141400" id="p10">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#10 · 2010-07-01 14:14</span></div>
+  <div class="pb">laten wij een lijst van keywords opzetten waarmee TN gebanned wordt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

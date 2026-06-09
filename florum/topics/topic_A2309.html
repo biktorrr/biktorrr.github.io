@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bericht voor little/merlijn – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bericht voor little/merlijn</h1>
+<p class="tm">3 posts · started 2008-02-22 14:13 by jazz</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080222141300" id="p1">
+  <div class="ph"><span class="pa">jazz</span><span class="pm">#1 · 2008-02-22 14:13</span></div>
+  <div class="pb">Little, Volgens mijn bronnen draait Cloverfield niet meer in Haarlem. Misschien kunnen we een andere semi legal oplossing zoeken.<br><br>merrel, het ik maak er een sport van om tijdens werktijd geen offertes door te geven maar bij deze toch een inschatting voor je 140-280 e'tjes. Maar ik wil de enquete wel graag even bekijken en de specs lezen van te voren.</div>
+</article>
+<article class="post" data-ts="20080222142600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2008-02-22 14:26</span></div>
+  <div class="pb">De tweede keer had ik het door, ja.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080222164400" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2008-02-22 16:44</span></div>
+  <div class="pb">okee, ik kan em alleen op deze termijn niet meer semi-legal verkrijgen<!--193.173.46.126--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>geef betondorp een beurt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">geef betondorp een beurt!</h1>
+<p class="tm">9 posts · started 2008-08-19 09:00 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080819090000" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2008-08-19 09:00</span></div>
+  <div class="pb">Twee weken geleden bereikte ons het treurige nieuws dat de schilders in betondorp opgehouden zijn met verfen. De immense kosten konden niet meer door de gemeenschap worden opgebracht.<br><br>Resultaat daarvan is dat Wendy en ik met een (van binnen)ongeschilderd huis zitten. Zeker nadat deze week de stucadoortjes de muren hebben bestreken, zijn er een hoop m2 te schilderen. <br><br>Als je daar zin an hebt kun je ons zaterdag of zondag komen helpen met schilderen. We zijn je erkentelijk. Ik kan begrijpen dat verhuizers Mitch en Mish deze beker aan zich voorbij laten gaan.<br></div>
+</article>
+<article class="post" data-ts="20080819121500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-08-19 12:15</span></div>
+  <div class="pb">lijkt me weliswaar leuk, maar het gaat za/zo moeilijk worden. Misschien dat za-middag gaat lukken, ik laat het zsm weten.</div>
+</article>
+<article class="post" data-ts="20080819122400" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2008-08-19 12:24</span></div>
+  <div class="pb">Ik kan dit weekend helaas niet. </div>
+</article>
+<article class="post" data-ts="20080819122500" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-08-19 12:25</span></div>
+  <div class="pb">Oooooooooooooh Co, je zet me op het verkeerde been! Jullie huisje zou van binnen sowieso niet door de Betondorpschildertjes worden gedaan... Je wilt gewoon dat we komen schilderen! Heb je nog alternatieve data? De 30e zou ik bijvoorbeeld wel kunnen?</div>
+</article>
+<article class="post" data-ts="20080820090800" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2008-08-20 09:08</span></div>
+  <div class="pb">Het is maar goed dat geen van jullie mij heeft toegezegd dit weekeinde te helpen. De stucadoortjes gaan in 't weekend nog door namelijk.<br><br>Ik houd diegenen die voor 't weekend daarop hebben aangeboden te komen in 't achterhoofd. Laat dit weekend weten of ik dan nog hulp nodig heb.</div>
+</article>
+<article class="post" data-ts="20080902102500" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-09-02 10:25</span></div>
+  <div class="pb"><img src="http://www.epn.net/interrealiteit/betondorp1.jpg"><br><br/><br>Zaagmansje aan de slag met de gasleidingen<br><p><br><img src="http://www.epn.net/interrealiteit/betondorp.jpg"><br><br/><br>"Drilboor is my middle name"</div>
+</article>
+<article class="post" data-ts="20080902105000" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2008-09-02 10:50</span></div>
+  <div class="pb">Goed bezig, al zeg ik het zelf</div>
+</article>
+<article class="post" data-ts="20080902112300" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-09-02 11:23</span></div>
+  <div class="pb">Das geen drilboor maar een verfroller als je het mij vraagt.</div>
+</article>
+<article class="post" data-ts="20080902112700" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-09-02 11:27</span></div>
+  <div class="pb">Correct. Bij gebrek aan drilboor heb ik het hang- en sluitwerk met de verfroller bevestigd.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

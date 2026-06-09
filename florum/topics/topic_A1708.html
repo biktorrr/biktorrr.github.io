@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verjaardag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verjaardag</h1>
+<p class="tm">13 posts · started 2006-03-10 14:17 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060310141700" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2006-03-10 14:17</span></div>
+  <div class="pb">Zaterdag 25 maart wil ik mijn verjaardag vieren in de Cicero, omdat alleen je verjaardag vieren ook maar alleen is <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> Zijn jullie ook uitgenodigd!! Vanaf een uur of tien. Komt allen een borrel halen!<br></div>
+</article>
+<article class="post" data-ts="20060310165400" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2006-03-10 16:54</span></div>
+  <div class="pb">leukleukleuk <br><br>ik ben er</div>
+</article>
+<article class="post" data-ts="20060313121000" id="p3">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#3 · 2006-03-13 12:10</span></div>
+  <div class="pb">ik moet helaas werken :(<br>Maar ik zie je het weekend daarna bij de japanse trommelaars!<br><br>Veel plezier!</div>
+</article>
+<article class="post" data-ts="20060316124000" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2006-03-16 12:40</span></div>
+  <div class="pb">Komen er verder nog mensen?of gaan Vic en ik de kroeg in ons eentje leegzupen???<br>Hihi, als er weinig mensen kunnen dan moet ik namelijk even een andere datum prikken.<br>x</div>
+</article>
+<article class="post" data-ts="20060316125300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-03-16 12:53</span></div>
+  <div class="pb">Ik denk dat ik er ook wel ben!</div>
+</article>
+<article class="post" data-ts="20060316133500" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-03-16 13:35</span></div>
+  <div class="pb">Ik ben er hoor! Het stond al genoteerd.</div>
+</article>
+<article class="post" data-ts="20060316140900" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2006-03-16 14:09</span></div>
+  <div class="pb">Ik denk dat ik er ook wel kan zijn, Leuk.</div>
+</article>
+<article class="post" data-ts="20060316150000" id="p8">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#8 · 2006-03-16 15:00</span></div>
+  <div class="pb">ook ik zal zeker present zijn..</div>
+</article>
+<article class="post" data-ts="20060316150700" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2006-03-16 15:07</span></div>
+  <div class="pb">Ik ben er en waarschijnlijk Kirsten ook. </div>
+</article>
+<article class="post" data-ts="20060316154600" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2006-03-16 15:46</span></div>
+  <div class="pb">Zo, nu loopt het echt storm!</div>
+</article>
+<article class="post" data-ts="20060316194100" id="p11">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#11 · 2006-03-16 19:41</span></div>
+  <div class="pb">Oke nou dan houden we het op de 25e! Gezellie</div>
+</article>
+<article class="post" data-ts="20060327173900" id="p12">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#12 · 2006-03-27 17:39</span></div>
+  <div class="pb">Het was super jongens en meiden natuurlijk! Bedankt voor alle leuke cadeautjes<br><br>liefs Lara</div>
+</article>
+<article class="post" data-ts="20060328131800" id="p13">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#13 · 2006-03-28 13:18</span></div>
+  <div class="pb">Ik heb een aantal kiekjes op de <a href="http://flora-haarlem.hyves.nl/"> FloraHyve</a> gezet.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

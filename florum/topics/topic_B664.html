@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ballen 8/9 okt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ballen 8/9 okt</h1>
+<p class="tm">9 posts · started 2005-10-08 11:52 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051008115200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-10-08 11:52</span></div>
+  <div class="pb">zaja zoja</div>
+</article>
+<article class="post" data-ts="20051008115500" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-10-08 11:55</span></div>
+  <div class="pb">Neit.</div>
+</article>
+<article class="post" data-ts="20051008123700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-10-08 12:37</span></div>
+  <div class="pb">zaneitzojeyt</div>
+</article>
+<article class="post" data-ts="20051008132200" id="p4">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#4 · 2005-10-08 13:22</span></div>
+  <div class="pb">TN: zajeyt<br></div>
+</article>
+<article class="post" data-ts="20051008134200" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2005-10-08 13:42</span></div>
+  <div class="pb">internet doet et weer, hoera<br><br>za jeyt dus (maar het ziet er niet al te knallend uit)<br>zo neyt (met biggy en knuffel-j-lau naar de trouwbeurs, heb er zin in!!!!!!!!!)</div>
+</article>
+<article class="post" data-ts="20051008154100" id="p6">
+  <div class="ph"><span class="pa">FFF</span><span class="pm">#6 · 2005-10-08 15:41</span></div>
+  <div class="pb">Dat Biggie zich al sinds 1997 niet meer heeft laten zien op het Florapark is nog tot daar aan toe, maar datie nu zelfs andere Floraboys ervan weerhoudt om te komen ballen is daadwerkelijk een te grof schandaal.<br><br></div>
+</article>
+<article class="post" data-ts="20051009005600" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2005-10-09 00:56</span></div>
+  <div class="pb">Nog erger is dat t 'er zin an heeft' om naar een trouwbeurs te gaan.</div>
+</article>
+<article class="post" data-ts="20051011124900" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2005-10-11 12:49</span></div>
+  <div class="pb">@MK:<br>Het was in \é\én woord geweldig!! Ik heb zoveel mooie trouwjurken gezien!! vooral nummer 44 en 83!!! IK weet zeker dat BIggy en J-lau de rollsroyce van wimlex en maxima huren en dat het feest in de orangerie van Elswout is!!<br></div>
+</article>
+<article class="post" data-ts="20051011222600" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2005-10-11 22:26</span></div>
+  <div class="pb">Gast misschien bedoel je het als grapje, maar zelfs als grapje vind ik het niet grappig dat je dit soort dingen roept.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrijmispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrijmispam</h1>
+<p class="tm">2 posts · started 2006-04-07 15:47 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060407154700" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-04-07 15:47</span></div>
+  <div class="pb">Leuk, op wikipedia kan je opzoeken met wie je je verjaardag deelt, bijv: http://nl.wikipedia.org/wiki/26_juli<br><br>Ik doe dat met onder meer Mick Jagger, Salvador Allende, Bert (van Ernie), Aldous Huxley, Stanley Kubrick, Kees Jansma en niet te vergeten hockey-international Naomi van As. Zegt vast veel over mijn persoonlijkheid...</div>
+</article>
+<article class="post" data-ts="20060407184000" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2006-04-07 18:40</span></div>
+  <div class="pb">hehe<br>een paar van de heerschkoningen van de 16e van oktobert...<br>Ali B<br>Flea (van de RHCP)<br>Oscar Wilde<br>David Ben-Gurion<br>Een jidse misbegrepen homofiele bass-moccrorapper.stukje persoonlijkheidspsychologie van de bovenste plank<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

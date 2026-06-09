@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Op de valreep...... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Op de valreep......</h1>
+<p class="tm">7 posts · started 2008-03-10 21:51 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080310215100" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2008-03-10 21:51</span></div>
+  <div class="pb">..... Gefeliciteerd lieve Marie Jeanine!!! Nog net op tijd... Dat je nog maar vele jaren ouder mag worden<br>xxx</div>
+</article>
+<article class="post" data-ts="20080310220500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2008-03-10 22:05</span></div>
+  <div class="pb">ook van ons 3en gefeliciteerd!<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080311081100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-03-11 08:11</span></div>
+  <div class="pb">Gefeliciteerd lieve Tante, dat je de Jazzmaster nog maar vaak vrij mag geven op de zondagen!<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20080311090300" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2008-03-11 09:03</span></div>
+  <div class="pb">gefeliciteerd!<!--132.229.223.225--></div>
+</article>
+<article class="post" data-ts="20080311092100" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-03-11 09:21</span></div>
+  <div class="pb">nogmaals gefeliciteerd!<!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080311112100" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2008-03-11 11:21</span></div>
+  <div class="pb">Hooghe Teydinck, ik kom je morgenochtend persoonlijk feliciteren...<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20080311122900" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2008-03-11 12:29</span></div>
+  <div class="pb">Tja je had wel een heel erg vroege suggestie gedaan amice, een uurtje later zou ons ook uitkomen hoor.<!--80.127.126.150--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

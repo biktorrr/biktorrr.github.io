@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>verjaardagspicknick – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">verjaardagspicknick</h1>
+<p class="tm">12 posts · started 2008-08-29 07:11 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080829071100" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2008-08-29 07:11</span></div>
+  <div class="pb">Aangezien ik volgende week ook jarig ben, wilde ik jullie ook uitnodigen voor een mooie picknick<br><br>Wanneer: volgende week zondag (7 september) <br>Waar: Florapark (als het weer goed is) <br>Hoe Laat: Uur of zes.<br><br>Bijzonderheden: Neem ook vooral wat mee, Laura en ik zorgen wel voor brood en dranken. <br><br>Mocht het weer niet goed zijn, dan kijk ik of we kunnen uitwijken naar ergens anders.</div>
+</article>
+<article class="post" data-ts="20080829084400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2008-08-29 08:44</span></div>
+  <div class="pb">Ik ben dan in Rotterdam voor een verjaardag.</div>
+</article>
+<article class="post" data-ts="20080829085500" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2008-08-29 08:55</span></div>
+  <div class="pb">Helaas pindakaas, Kirsten en ik zitten dan in Malaga.</div>
+</article>
+<article class="post" data-ts="20080829142200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-08-29 14:22</span></div>
+  <div class="pb">Dan ben ik er bij, denkelijk</div>
+</article>
+<article class="post" data-ts="20080829151200" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2008-08-29 15:12</span></div>
+  <div class="pb">MMM Dan zijn Tijmen en ik snowboarden, maar waarschijnlijk redden we een picknick wel om 6 uur.<br></div>
+</article>
+<article class="post" data-ts="20080905141900" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2008-09-05 14:19</span></div>
+  <div class="pb">Door de regen en ook niet zo'n goede voorspelling, hebben we het verzet naar mijn ouders huis in Heemstede en niet het Florapark</div>
+</article>
+<article class="post" data-ts="20080905152300" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2008-09-05 15:23</span></div>
+  <div class="pb">hallootjes, ik ben er ook</div>
+</article>
+<article class="post" data-ts="20080905154300" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2008-09-05 15:43</span></div>
+  <div class="pb">Gefeliciteerd, Bakkie!</div>
+</article>
+<article class="post" data-ts="20080905163700" id="p9">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#9 · 2008-09-05 16:37</span></div>
+  <div class="pb">Moeten we dan nog steeds eten meenemen of doen jullie het helemaal anders?</div>
+</article>
+<article class="post" data-ts="20080905165400" id="p10">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#10 · 2008-09-05 16:54</span></div>
+  <div class="pb">nog steeds eten meenemen graag! Wij zorgen voor wijntjes en sapjes en wat lekker turks brood.<br><br>Tot zondag!</div>
+</article>
+<article class="post" data-ts="20080906082500" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2008-09-06 08:25</span></div>
+  <div class="pb">Goed dat je me helpt herinneren. Ik neem iets toetjesachtigs mee.</div>
+</article>
+<article class="post" data-ts="20080906093700" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2008-09-06 09:37</span></div>
+  <div class="pb">ik iets worstachtigs<br><br><br>en aardappelsalade natuurlijk, never leave home without it.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

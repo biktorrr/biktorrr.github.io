@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>oli4? afscheidsborrel? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">oli4? afscheidsborrel?</h1>
+<p class="tm">9 posts · started 2002-10-06 21:18 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021006211800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-10-06 21:18</span></div>
+  <div class="pb">Olivier, geef je maandagavond nou nog een afscheidborrel? wij willen namelijk een beetje bijtijds weten of we ergens en zo ja, wanneer we dan waar verwacht worden. </div>
+</article>
+<article class="post" data-ts="20021006212000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-10-06 21:20</span></div>
+  <div class="pb">Goed punt Michiel! Olivier aartsluie stervedette, waar is die vette party! Komen d'r nog spelershoeren?</div>
+</article>
+<article class="post" data-ts="20021007125000" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2002-10-07 12:50</span></div>
+  <div class="pb">aartsluie vedetten die jullie me d'r zelf wezen<br><br>op e-mail is alles te vinden<br>en voor hen die ik vergeten ben: <br>21h30 in de Zotte, Raamgracht 29, Amsterdam (achter Leidseplein)</div>
+</article>
+<article class="post" data-ts="20021007125100" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-10-07 12:51</span></div>
+  <div class="pb">he spreken we daarvoor nog ergens af?<br>bij Michiel of Merlijn oid?<br></div>
+</article>
+<article class="post" data-ts="20021007164000" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-10-07 16:40</span></div>
+  <div class="pb">ik als niet amsterdammer heb het even opgezocht en ik vind alleen een cafe de Zotte in de raamSTRAAT en niet de gracht. Ik neem aan dat het dus daar is. Ik ben er in ieder geval<br></div>
+</article>
+<article class="post" data-ts="20021007164300" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2002-10-07 16:43</span></div>
+  <div class="pb">ouwe onderzoeksjournalist<br><br>ik had het zelf kunnen uitvinden<br><br>helemaal gelijk timmie!!!<br><br>weet iemand toevallig of tijmen komt, iemand hem gesproken?<br><br>voor de rest komt iedereen geloof ik, dus dat belooft een knalfuif te worden<br><br>tot vanavond</div>
+</article>
+<article class="post" data-ts="20021007171200" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2002-10-07 17:12</span></div>
+  <div class="pb">Onder toeziend oog van de Timmenizer, moet dit wel een succes worden.<br></div>
+</article>
+<article class="post" data-ts="20021007174300" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-10-07 17:43</span></div>
+  <div class="pb">ik heb dus geen mail gekregen, zeker naar mijn oude e-mailadres gestuurd...<br>maar goed, ik zal er zijn om 21.30 uur.</div>
+</article>
+<article class="post" data-ts="20021007182400" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2002-10-07 18:24</span></div>
+  <div class="pb">student.uva.nl inderdaad<br><br>is nu veranderd<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

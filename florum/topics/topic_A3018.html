@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic voor internationale betrekkingen nerds – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic voor internationale betrekkingen nerds</h1>
+<p class="tm">5 posts · started 2010-11-25 11:31 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101125113112" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2010-11-25 11:31</span></div>
+  <div class="pb">Heeft Noord Korea eigenlijk een atoombom?</div>
+</article>
+<article class="post" data-ts="20101125113523" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-11-25 11:35</span></div>
+  <div class="pb">Ik zal het mijn IR nerd vanavond vragen. Wat ik je wel kan vertellen is dat de oude Kim minimaal 2500 porno dvd's schijnt te bezitten. Overigens heb ik dit van CNN dus dat kan gekleurde info zijn.<br><br>Misschien is het een idee om een durftevragen topic te openen want deze vraag is misschien net iets te specifiek anders.</div>
+</article>
+<article class="post" data-ts="20101125130758" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2010-11-25 13:07</span></div>
+  <div class="pb">Als nerd met een sideline in internationale betrekkingen kan ik stellen dat de Noord-Koreanen inderdaad een atoombom hebben. Bovendien heb ik samen met de Worstendraaier laatst een film gezien waaruit bleek dat het Zuid-Koreaanse leger niet al te veel voorstelt. Als je een Zuid-Koreaanse soldaat tegenkomt, dan kun je gewoon op hem aflopen, hem zijn geweer uit z´n handen rukken en hem daarmee doodschieten. Doet ´ie helemaal niks tegen.</div>
+</article>
+<article class="post" data-ts="20101125131829" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-11-25 13:18</span></div>
+  <div class="pb">Dat verklaart meteen waarom ze niet terugslaan. <br><br>Wordt er eigenlijk gevreesd voor een nucleaire aanval van Noord Korea op haar zuiderbuur?</div>
+</article>
+<article class="post" data-ts="20101125134408" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-11-25 13:44</span></div>
+  <div class="pb">Sarah Palin:"[]...But obviously, weve got to stand with our North Korean allies  were bound to by treaty....[]"<br><br><IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

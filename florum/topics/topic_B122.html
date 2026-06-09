@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>29 en 30 juni – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">29 en 30 juni</h1>
+<p class="tm">12 posts · started 2002-06-26 14:06 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020626140600" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-06-26 14:06</span></div>
+  <div class="pb">ga ik denk ik maar weer eens 1 of 2 keer ballen. Wie ook??<br></div>
+</article>
+<article class="post" data-ts="20020626145600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-06-26 14:56</span></div>
+  <div class="pb">hangt af van mijn enkel. Ben voor. zondag uiteraard wel eerst de finale kijken (begint om 13.00 uur, combineren met HoPpyjamaparty?) </div>
+</article>
+<article class="post" data-ts="20020626161300" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-06-26 16:13</span></div>
+  <div class="pb">ik ben er in prinkiep gewoon za+zo <br>en sluit me verder volmondig bij MB aan...</div>
+</article>
+<article class="post" data-ts="20020626162900" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-06-26 16:29</span></div>
+  <div class="pb">De evt. pyjamaparty gaat niet door dus iedereen kan gewoon met een croissant/roerei/flinke bak koffie of wat dies meer zij voor zijn eigen TV naar de finale kijken en direct daarna richting florapark gaan en de kater uit zijn lijf spelen.</div>
+</article>
+<article class="post" data-ts="20020626215200" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2002-06-26 21:52</span></div>
+  <div class="pb">Tijmen is op zaterdag bezig met binnenhalen van 4 punten, als het lukt.Zondag ,parkpop.<br><br>Misschien kunnen we een keer door de weeks spelen nu dat de meesten van ons min of meer vakantie hebben?</div>
+</article>
+<article class="post" data-ts="20020627162900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2002-06-27 16:29</span></div>
+  <div class="pb">Ja hoor, ben 'r.</div>
+</article>
+<article class="post" data-ts="20020627172400" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2002-06-27 17:24</span></div>
+  <div class="pb">zaterdag van de partij. Zondag misschien, misschien wel niet. </div>
+</article>
+<article class="post" data-ts="20020628113500" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-06-28 11:35</span></div>
+  <div class="pb">Mijn enkel is weer redelijk in orde. Ik moet alleen wel zaterdag even een kappersbezoekje regelen. Als dat ballen niet in de weg zit ben ik er. Zondag kom ik na de finale, ook al is dat BRA-GER (ik ben voor Collina en tegen zowel BRA als GER).</div>
+</article>
+<article class="post" data-ts="20020628131200" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2002-06-28 13:12</span></div>
+  <div class="pb">Vakantie? UvA tentamens zijn pas na omstreeks 13 juli afgelopen. Ik moet nog 2 weken vol aan de bak.</div>
+</article>
+<article class="post" data-ts="20020628131900" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2002-06-28 13:19</span></div>
+  <div class="pb">ik moet de komende 2 weken nog gewoon keihard 40 uur per week werken aan een nieuw parkeerbeleid voor Amsterdam EN nog extra centjes voor mijn vakantie verdienen bij het NIPO. Mij dus niet gezien bij doordeweekse voetbalpartijtjes. </div>
+</article>
+<article class="post" data-ts="20020628132900" id="p11">
+  <div class="ph"><span class="pa">PTc</span><span class="pm">#11 · 2002-06-28 13:29</span></div>
+  <div class="pb">idem, hoewel niet zooo hardcore als de twee vorige posterts<br>..</div>
+</article>
+<article class="post" data-ts="20020628181000" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2002-06-28 18:10</span></div>
+  <div class="pb">Ik lig maar wat te ruften op m'n kamer en af en toe wat wijsgerigs uit te kakken; heb wel tijd voor wat ballen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

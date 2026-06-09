@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florapark-BAD ??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florapark-BAD ???</h1>
+<p class="tm">4 posts · started 2002-08-20 13:21 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020820132100" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-08-20 13:21</span></div>
+  <div class="pb">Addie, is dat een pseudoniem van onze enige floraboy bij het parool?<br><br>Floraparkbad in Amsterdam dicht na rellen<br><br>Bron: Parool (Addie Schulte)<br><br><br>In Amsterdam-Noord is gistermiddag het Floraparkbad gesloten na een vechtpartij tussen jongeren en zwembadpersoneel. De ongeregeldheden begonnen toen personeel aan het eind van de middag een groepje Marokkaanse tieners aansprak op hun gedrag.<br><br>Er ontstond een vechtpartij waarbij met onder meer flesjes en stenen werd gegooid. Een medewerker van het zwembad werd in het water gegooid. <br><br>De politie stuurde meteen twee busjes met zo'n 20 ME'ers naar het zwembad. Die had men nog achter de hand in verband met de wedstrijd Ajax-FC Utrecht. <br><br>De politie arresteerde vier personen: drie vanwege openlijke geweldpleging, \é\én vanwege belediging. <br><br>Vorige maand sloten de Amsterdamse zwembaden nog een convenant met elkaar waardoor lastige jongeren moeten worden geweerd. Bezoekers die zich misdragen, komen op een zwarte lijst te staan en worden in het vervolg geweigerd. De politie houdt het zwartboek bij. Het toegangsverbod kan vari\ëren van een week tot vijf jaar.</div>
+</article>
+<article class="post" data-ts="20020820151100" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2002-08-20 15:11</span></div>
+  <div class="pb">het werd überhaupt tijd dat het Floraparkbad exclusief van Floraboys zou worden</div>
+</article>
+<article class="post" data-ts="20020820151300" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-08-20 15:13</span></div>
+  <div class="pb">Het Floraparkbad is gelegen in het Florapark in Amsterdam -Noord.</div>
+</article>
+<article class="post" data-ts="20020820151700" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-08-20 15:17</span></div>
+  <div class="pb">er is maar een echt Florapark en ik weet wel waar dat ligt,<br>puh</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

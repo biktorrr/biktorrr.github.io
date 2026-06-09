@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor michiel en tube: bier – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor michiel en tube: bier</h1>
+<p class="tm">5 posts · started 2002-12-17 11:30 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021217113000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-12-17 11:30</span></div>
+  <div class="pb">http://www.potjebier.nl<br>info-site over verschillende bieren,met beoordelingen en stuff...</div>
+</article>
+<article class="post" data-ts="20021217233000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-12-17 23:30</span></div>
+  <div class="pb">over bier gesproken,<br>ben ik vrijdagavond met Fleur in Gent, willen we na het eten wat lekker bier gaan drinken in een authentiek Gents biercafe, wie zitten daar???<br>juist.. Oli4 en Cheska!!!!<br>Zeg nou zelf, hoe groot is nou de kans dat 2 floraboys elkaar toevallig tegenkomen in een biercafe in den vreemde?</div>
+</article>
+<article class="post" data-ts="20021218112400" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-12-18 11:24</span></div>
+  <div class="pb">Geweldig, HAHAHA!!!</div>
+</article>
+<article class="post" data-ts="20021218122700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2002-12-18 12:27</span></div>
+  <div class="pb">Machtig Mooi</div>
+</article>
+<article class="post" data-ts="20021218140100" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-12-18 14:01</span></div>
+  <div class="pb">eng hoor</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

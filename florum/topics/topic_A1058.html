@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto&#x27;s afgelopen zaterdag! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto&#x27;s afgelopen zaterdag!</h1>
+<p class="tm">12 posts · started 2003-11-29 23:55 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031129235500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-11-29 23:55</span></div>
+  <div class="pb"><a href="http://members.chello.nl/j.smitskamp1/vic/Fl_nov03/fotos.html">TJEK HIER DE 8 FOTO's EN LEER EEN LESJE WEBDESIGN</a></div>
+</article>
+<article class="post" data-ts="20031129235600" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-11-29 23:56</span></div>
+  <div class="pb">oja als je het niet met floraboys.com-balkjes wil zien en dat ie dan dus automatisch resized dan moet je even <br><br>rechtermuisknop-> open link in new window doen</div>
+</article>
+<article class="post" data-ts="20031129235800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-11-29 23:58</span></div>
+  <div class="pb">nog even reclame maken voor de foto's: De Supporter staat erop (hoewel met zijn rug)<br><br>ik zal overigens dat fototoestelletje vaker meenemen. is wel leuk</div>
+</article>
+<article class="post" data-ts="20031130102500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-11-30 10:25</span></div>
+  <div class="pb">Nou..jij kan anders ook nog wat leren....ten eerste een normale fotopagina maken en ten tweede zou ik adviseren toch nog maar wat cursussen in het nemen van foto's te doen....ze kunnen best wat scherper.</div>
+</article>
+<article class="post" data-ts="20031130185000" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2003-11-30 18:50</span></div>
+  <div class="pb">Zo Vic, dat zal je maar gezegd worden...</div>
+</article>
+<article class="post" data-ts="20031130234400" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-11-30 23:44</span></div>
+  <div class="pb">ik weet wanneer ik terecht gewezen ben en zal deze ongetwijfeld correcte kritiek ter harte nemen. <br><br>U kunt mij in mijn kamer kunnen vinden, opgehangen aan het veiligheidskoord van mijn digi-cammetje</div>
+</article>
+<article class="post" data-ts="20031201031900" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-12-01 03:19</span></div>
+  <div class="pb">Dat zal ongetwijfeld gaan stinken ... hopelijk is het opgeruimd voordat ik terug kom. </div>
+</article>
+<article class="post" data-ts="20031202165300" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2003-12-02 16:53</span></div>
+  <div class="pb">Speciaal voor de Holy Commander: een heuse officiele foto-pagina: (ik heb victordeboer.tk maar weer eens mooi gemaakt)<br><br>tjek dus: <a href="http://www.victordeboer.tk">mijn zite</a> en via foto's moet je er komen.</div>
+</article>
+<article class="post" data-ts="20031202165600" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2003-12-02 16:56</span></div>
+  <div class="pb">huuuu? ik merk dat dottk mijn url gecancelled heeft. dan moet het via:<br>victordeboer.freezope.org</div>
+</article>
+<article class="post" data-ts="20031202194900" id="p10">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#10 · 2003-12-02 19:49</span></div>
+  <div class="pb">zeker gratis?</div>
+</article>
+<article class="post" data-ts="20031204025800" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2003-12-04 02:58</span></div>
+  <div class="pb">Ja gratiz en het wordt gecancelled als hij niet minimaal iets van 30 keer bekeken wordt in een week ofzo.</div>
+</article>
+<article class="post" data-ts="20031204104400" id="p12">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#12 · 2003-12-04 10:44</span></div>
+  <div class="pb">jah, het bizarre was dat hij afgesloten werd terwijl ik m aan het configureren was.<br><br>naja: <a href="www.vdeboer.tk">www.vdeboer.tk</a> dan maar...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

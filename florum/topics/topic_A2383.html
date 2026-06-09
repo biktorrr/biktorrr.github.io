@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wordt er nog ergens gebierd vanavond? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wordt er nog ergens gebierd vanavond?</h1>
+<p class="tm">12 posts · started 2008-05-16 13:01 by JK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080516130100" id="p1">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#1 · 2008-05-16 13:01</span></div>
+  <div class="pb">Ik ben voor bier</div>
+</article>
+<article class="post" data-ts="20080516135400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-05-16 13:54</span></div>
+  <div class="pb">Merl en ik zijn in EINDHOVUH aan het ricken (met picken)</div>
+</article>
+<article class="post" data-ts="20080517145100" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2008-05-17 14:51</span></div>
+  <div class="pb">en zaterdag?</div>
+</article>
+<article class="post" data-ts="20080517192200" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-05-17 19:22</span></div>
+  <div class="pb">bweuh, ik ga denk ik thuis een beetje uitkateren...</div>
+</article>
+<article class="post" data-ts="20080519100700" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2008-05-19 10:07</span></div>
+  <div class="pb">Er wordt binnenkort ergens gebierd als ik mijn bul krijg uitgereikt! Ik heb vanochtend mijn referaat succesvol verdedigd. In plaats van opsturen leek een excuus voor een drankje mij aangenamer.</div>
+</article>
+<article class="post" data-ts="20080519115600" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-05-19 11:56</span></div>
+  <div class="pb">ah gefeliciteerd heilige drouille<br></div>
+</article>
+<article class="post" data-ts="20080519120600" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2008-05-19 12:06</span></div>
+  <div class="pb">hoge tijding holy! Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20080519125700" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2008-05-19 12:57</span></div>
+  <div class="pb">goed werk! verandert het iets aan je titel? Chief COmander of Auditing?</div>
+</article>
+<article class="post" data-ts="20080519134200" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2008-05-19 13:42</span></div>
+  <div class="pb">Nou...je mag me een 'Executive Master of IT auditing (EMITA)' noemen... ik heb nog geluld als Brugman voor 'Ruling Commander'. Maar dat kwam er niet door.</div>
+</article>
+<article class="post" data-ts="20080519135700" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2008-05-19 13:57</span></div>
+  <div class="pb">Ik noem je gewoon Ruling Commander in Chief, ok? Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20080519154600" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2008-05-19 15:46</span></div>
+  <div class="pb">Gefeliciteerd, brave drouille!</div>
+</article>
+<article class="post" data-ts="20080519200100" id="p12">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#12 · 2008-05-19 20:01</span></div>
+  <div class="pb">terecht MK! </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

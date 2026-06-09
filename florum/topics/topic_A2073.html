@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ys tip – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ys tip</h1>
+<p class="tm">8 posts · started 2007-06-20 12:10 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070620121000" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-06-20 12:10</span></div>
+  <div class="pb">Boys/girls, mochten jullie door de grote houtstraat lopen en besluiten en ijsco te gaan halen, moet je zeker een keer de ciocco-pepporino bij Garrone proberen. Choco-ijs met (rode)peper smaak, ala Chocolat. Voor 'Il mio sognio' en hun gewone choco ijs met stip op 1.<br></div>
+</article>
+<article class="post" data-ts="20070620122000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-06-20 12:20</span></div>
+  <div class="pb">check</div>
+</article>
+<article class="post" data-ts="20070620215500" id="p3">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#3 · 2007-06-20 21:55</span></div>
+  <div class="pb">Ok, ik zit t nu ook te eten. Een korte recensie:<br><br>Wat: Chiocolata-Pepperoncino<br>En: Het is zeker terecht. Het is meer een experience dan een smaak alleen... <br>Voor het hele gezin: Niet echt, er zitten stukjes peper in, dus voor kleine kinderen kan het misschien wat heftig zijn<br><br>Eindoordeel:<br>**** uit 5</div>
+</article>
+<article class="post" data-ts="20070621140500" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2007-06-21 14:05</span></div>
+  <div class="pb">Wat: Chiocolata-Pepperoncino<br><br>Bijzonder lage tijding, 20 minuten naar garonne gelopen, is het op. Kom ik langs de cliteur en blijkt hij de laatste portie net naar binnen gewerkt te hebben.<br><br>Samenvatting: slechte tip little trainee, hopelijk heb je meer verstand van verzekeren. <br><br><br></div>
+</article>
+<article class="post" data-ts="20070621141400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-06-21 14:14</span></div>
+  <div class="pb">Spotting<br><br>Wie: Jazzmaster J. en zijn Tante<br>Waar: Voor mijn huis<br>Hoe: Hij was er slecht aan toe, keek hongerig naar boven.<br>Wat: Mooi moment in Flora-Ijsco-history</div>
+</article>
+<article class="post" data-ts="20070621165000" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2007-06-21 16:50</span></div>
+  <div class="pb">Ik eet al jaren alleen maar een bakje ijs met een bolletje aardbei- en een bolletje chocoladeijs. Ik zie niet waarom ik nu opeens peperijs moet eten. </div>
+</article>
+<article class="post" data-ts="20070622102900" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2007-06-22 10:29</span></div>
+  <div class="pb">ach, je bent na 10 jaar onthouding ook opeens een bierhooligan geworden, dus over een paar jaar zit jij ook gewoon aan de chiocollattia-Pepperoncinoli. Je moet het tijd geven...</div>
+</article>
+<article class="post" data-ts="20070622113400" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-06-22 11:34</span></div>
+  <div class="pb">Zo had ik het nog niet bekeken. Wie weet.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

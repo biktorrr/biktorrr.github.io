@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stukkie informatie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Stukkie informatie</h1>
+<p class="tm">2 posts · started 2003-03-11 13:02 by Peter Beense</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030311130200" id="p1">
+  <div class="ph"><span class="pa">Peter Beense</span><span class="pm">#1 · 2003-03-11 13:02</span></div>
+  <div class="pb">PETER BEENSE<br><br>De combinatie zanger / kastelein komt niet vaak voor en dan zeker niet een, die nog eens zo populair is als Peter Beense. Al jaren is Peter uitbater van het gelijknamige caf\é aan de Korte Regulierswarsstraat te Amsterdam (tegenover caf\é Bolle Jan). Zoals het een goed ondernemer betaamt, staat Peter ook in de weekends regelmatig achter de bar en van daaruit grijpt hij diverse malen naar de microfoon.<br>De activiteiten leidden tot een gestaag groeiende populariteit  in het land  van Peter als zanger en zo was hij de afgelopen jaren regelmatig te gast in de Amsterdam Arena, de RAI en de Jaap Eden Hal. Zo stond Peter in het voorprogramma van gevestigde namen als Andr\é Hazes en was hij te gast bij diverse voetbalfeesten, o.a. van AJAX, Fc Twente, etc.<br><br>Nu wordt in samenwerking met TLF records een serieuze poging ondernomen om Peter onder de aandacht te brengen van het grote publiek. De single Party Time is een regelrechte Partyknaller en inmiddels sterk stijgende in de Mega Top 100 en andere hitlijsten.<br>De single wordt ondersteund door De Tros (Radio 2) en Radio Nationaal, waar Party Time onlangs een week lanag het predikaat  Nationaalschijf mocht voeren en gemiddeld 1 x per uur werd gedraaid.<br><br>Peter brengt live een gevarieerd repertoire, en t is van het begin tot het eind natuurlijk FEEST in de tent!<br><br></div>
+</article>
+<article class="post" data-ts="20030312152000" id="p2">
+  <div class="ph"><span class="pa">de floraboys.com webcomissie</span><span class="pm">#2 · 2003-03-12 15:20</span></div>
+  <div class="pb">stukjes schaamteloze zelfpromotie-Spam van gevierde artiesten worden zeer gewaardeerd op de floraboys site.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>verjaardagsfeestje 7 juni – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">verjaardagsfeestje 7 juni</h1>
+<p class="tm">2 posts · started 2014-05-26 18:42 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140526184226" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2014-05-26 18:42</span></div>
+  <div class="pb"><p><br>	<font color="#444444" face="Calibri, sans-serif"><span style="font-size: 15px; line-height: 21.299999237060547px;">booys/girls</span></font></p><br><div style="line-height: 21.299999237060547px; color: rgb(68, 68, 68); font-family: Calibri, sans-serif; font-size: 15px;"><br>	Vandaag is dan wel mijn verjaardag, maar nu regent het. Ik vier mijn 35e daarom graag met jullie op 7 juni met een thee/borrel in het frederikspark te Haarlem. Wij zullen er zijn vanaf 15u met drankjes. Mocht het slecht weer zijn dan wijken we uit naar ons huis (Rustenburgerlaan 38). Ik hoop dat je/jullie erbij zijn. Zo ja of nee, laat het ons even weten a.u.b. dan houden we daar rekening mee.</div><br><div style="line-height: 21.299999237060547px; color: rgb(68, 68, 68); font-family: Calibri, sans-serif; font-size: 15px;"><br>	&nbsp;</div><br><div style="line-height: 21.299999237060547px; color: rgb(68, 68, 68); font-family: Calibri, sans-serif; font-size: 15px;"><br>	Frederikspark is bij ons om de hoek:</div><br><div style="line-height: 21.299999237060547px; color: rgb(68, 68, 68); font-family: Calibri, sans-serif; font-size: 15px;"><br>	<a href="https://www.google.nl/maps/place/Frederikspark+14/%4052.3734243%2c4.6322966%2c17z/data=%213m1%214b1%214m2%213m1%211s0x47c5ef40952abf0f:0xbf9ecfb853dfffd5" style="font-weight: inherit; color: rgb(0, 104, 207); cursor: pointer;" target="_blank">https://www.google.nl/maps/place/Frederikspark+14/@52.3734243,4.6322966,17z/data=!3m1!4b1!4m2!3m1!1s0x47c5ef40952abf0f:0xbf9ecfb853dfffd5</a></div><br></div>
+</article>
+<article class="post" data-ts="20140527145148" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2014-05-27 14:51</span></div>
+  <div class="pb">Klinkt goed, \à bientôt !</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

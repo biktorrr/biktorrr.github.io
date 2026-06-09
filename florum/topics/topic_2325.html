@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2325 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2325</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2008-08-29 15:02 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080829150200" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1&nbsp;·&nbsp;2008-08-29 15:02</span></div>
+  <div class="pb">Voor de liefhebbers: ik heb weer een zooitje foto's op mijn hyvespagina toegevoegd.</div>
+</article>
+<article class="post" data-ts="20080829151100" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2&nbsp;·&nbsp;2008-08-29 15:11</span></div>
+  <div class="pb">Zo ze heeft al meer haar dan haar Pappa! Ze word al echt een meisje zo leuk om te zien!</div>
+</article>
+<article class="post" data-ts="20080829152100" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3&nbsp;·&nbsp;2008-08-29 15:21</span></div>
+  <div class="pb">oe, die is onder de gordel Lara :)<br><br><a href="http://mbassant.hyves.nl/album/24159384/Amber/Ke-o/fotos/341309079/0/Sadh/?&pageid=8BQX1361PTOG8O084#media=93.341344999.8oqY&searchhyver=&__state__=2">Vette emo</a>, die amber trouwens...</div>
+</article>
+<article class="post" data-ts="20080916201900" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4&nbsp;·&nbsp;2008-09-16 20:19</span></div>
+  <div class="pb">Voor alle fans: ik heb weer een paar topfoto's toegevoegd.</div>
+</article>
+<article class="post" data-ts="20080916214000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5&nbsp;·&nbsp;2008-09-16 21:40</span></div>
+  <div class="pb">dude, echt, ze wordt met de dag nog droppiger. </div>
+</article>
+<article class="post" data-ts="20080918073900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6&nbsp;·&nbsp;2008-09-18 07:39</span></div>
+  <div class="pb">Je zult het wel verwerpelijk vinden, maar waarom laat je d'r geen modellenwerk doen? Kan ze een spaarpotje opbouwen om in Harvard te gaan studeren bij ome Bakkie.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

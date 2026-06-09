@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd Majyjjj! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd Majyjjj!</h1>
+<p class="tm">13 posts · started 2010-01-09 13:17 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100109131700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2010-01-09 13:17</span></div>
+  <div class="pb">Gefeliciteerd Majyjjj, ouwe jiddebak!</div>
+</article>
+<article class="post" data-ts="20100109131800" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2010-01-09 13:18</span></div>
+  <div class="pb">Moge je een fijne verjaardag hebben!</div>
+</article>
+<article class="post" data-ts="20100109135100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2010-01-09 13:51</span></div>
+  <div class="pb">Maior...voor jou een speciale! Gefeliciteerd met je vette verjaardag!!!<br><img src="http://data.boomerang.nl/r/rutger-van-der-tas/image/gefeliciteerd-met-je-vette-verjaardag/s600/gefelicitaart.jpg"></div>
+</article>
+<article class="post" data-ts="20100109153000" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2010-01-09 15:30</span></div>
+  <div class="pb">Gefeliciteerd Major, je zonden zijn je vergeven</div>
+</article>
+<article class="post" data-ts="20100109161700" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2010-01-09 16:17</span></div>
+  <div class="pb">Felicitaties!</div>
+</article>
+<article class="post" data-ts="20100109173800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2010-01-09 17:38</span></div>
+  <div class="pb">Ja gefeliciteeerd!</div>
+</article>
+<article class="post" data-ts="20100110011500" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2010-01-10 01:15</span></div>
+  <div class="pb">gefeliciflapperd, ook al ben je daar niet meer jarig,</div>
+</article>
+<article class="post" data-ts="20100110105800" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2010-01-10 10:58</span></div>
+  <div class="pb">Gefeliciteerd Wybs!</div>
+</article>
+<article class="post" data-ts="20100110142800" id="p9">
+  <div class="ph"><span class="pa">Wbm</span><span class="pm">#9 · 2010-01-10 14:28</span></div>
+  <div class="ps">Dank</div><div class="pb">Lieve poepescheetjes (zie ook illustratie mk) dank voor alle gelukwensen, ook via alle fijne sms'en. Hoewel ik tijdens mijn verjaardag besloot anne frankje te spelen op Texel, zal ik een mogelijk borreltje tijdig aankondigen op deze weblog. Caf\é de Tube lijkt mij een mooie locatie :) xw</div>
+</article>
+<article class="post" data-ts="20100110170400" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2010-01-10 17:04</span></div>
+  <div class="pb">Wyb, je deelt je verjaardag met Bas "vriend van de Boys" Heine, die gister 50 is geworden. Twee wijze mannen, \é\én verjaardag: mooi!</div>
+</article>
+<article class="post" data-ts="20140109214632" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2014-01-09 21:46</span></div>
+  <div class="pb">Wybje... We tikken hem aan voor jou!</div>
+</article>
+<article class="post" data-ts="20140110105258" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2014-01-10 10:52</span></div>
+  <div class="pb">Goed aangetikt ook hier </div>
+</article>
+<article class="post" data-ts="20140110160321" id="p13">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#13 · 2014-01-10 16:03</span></div>
+  <div class="pb">Tik voor jou Maior, waar op de wereld je ook bent!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

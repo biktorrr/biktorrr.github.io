@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Muziek tips voor de REVT-DVD – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Muziek tips voor de REVT-DVD</h1>
+<p class="tm">11 posts · started 2003-06-01 15:33 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030601153300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-06-01 15:33</span></div>
+  <div class="pb">Overal:<br>Football coming home (weet ff niet hoe die heet)<br>Studiosport intro<br>JXL- Little less conversation<br>Rocky IV - Hearts on Fire<br><br>Bij gave moves: <br>Ricky MArtin - Shake your bon-bon<br>Shalamar - Make that move<br><br>Die gave dikke dude: Pretty fly for a white guy<br><br>Timmie: Pretty fly for a Timmie (Southpark spoof on Offspring)<br><br>Taasje: Queen - Princes of the Universe "Here we are born to be kings"<br><br>Gekke Harald: Cypress Hill -Insane in the brain<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20030601153400" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-06-01 15:34</span></div>
+  <div class="pb">Pretty fly for a timmY, excus<br></div>
+</article>
+<article class="post" data-ts="20030603145500" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-06-03 14:55</span></div>
+  <div class="pb">lukt 't een beetje met de slowmo's Tube?</div>
+</article>
+<article class="post" data-ts="20030603145900" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-06-03 14:59</span></div>
+  <div class="ps">tip van de meester</div><div class="pb">voor de video om afspeelbaar te zijn op de meeste DVD-spelerts moet je hem converteren van mpeg/avi/divx naar <em>supervideo</em> (is denk ik een optie bij je brandsoftware of van je video-edit software ofzo). Dan zou ie het moeten doen. Als je een video-out hebt kan je hem ook met een bijbehorend kabeltje op VHS zetten. Tenslotte kunnen we hem ook vast wel hier op de servert zetten, maar das niet echt optimaal ivm de vrij lage uploadsnelheid van de server aan de Prinshendrikkade.</div>
+</article>
+<article class="post" data-ts="20030603223200" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2003-06-03 22:32</span></div>
+  <div class="pb">graag eerst een programma dat het goed doet, want de meeste hebben allemaal iets vreemds waardoor ze maar voor 70% nuttig zijn. Suggesties voor muziek natuurlijk altijd welkom.</div>
+</article>
+<article class="post" data-ts="20030603230000" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2003-06-03 23:00</span></div>
+  <div class="ps">tip</div><div class="pb">als je muziek op de dvd brand dit niet in een extreem hoge kwaliteit doen a la dolby sorround +++  dit omdat de meeste dvd speler van 100-250 euro dit niet lezen.. Esp heet dat volgens mij..<br><br></div>
+</article>
+<article class="post" data-ts="20030604111100" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-06-04 11:11</span></div>
+  <div class="pb">ik kan die programma's hier op de uni niet testen, ik kan ze alleen maar aanreiken. Verder zou je zelf even moeten kijken of ze al dan niet goed werken.</div>
+</article>
+<article class="post" data-ts="20030610170400" id="p8">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#8 · 2003-06-10 17:04</span></div>
+  <div class="ps">wanneer is de release van de DVD</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030610194300" id="p9">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#9 · 2003-06-10 19:43</span></div>
+  <div class="pb">release dit weekend, in ieder geval op mijn pc, wellicht lukt het me om een dvd te maken.</div>
+</article>
+<article class="post" data-ts="20030611091800" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2003-06-11 09:18</span></div>
+  <div class="pb">Toppertje! Ik voel dat er goed werk geleverd wordt aan de het Spaarne. </div>
+</article>
+<article class="post" data-ts="20030611101600" id="p11">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#11 · 2003-06-11 10:16</span></div>
+  <div class="pb">woehoe!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

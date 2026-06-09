@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jammer de pammer – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">jammer de pammer</h1>
+<p class="tm">5 posts · started 2007-03-30 11:46 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070330114600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2007-03-30 11:46</span></div>
+  <div class="pb">Dit weekend loop ik denk ik weer alle sociale gatherings mis, dan maar even zo: Het ori\ënterende gesprek dat ik had bij Pruijs is op niets uitgelopen. Ik had meteen een afspraak met de big chief, die na een kleine drie kwartier vond dat ik met een te grote achterstand zou beginnen als hij me de baan zou aanbieden (te weinig ervaring, geen duidelijk sterk netwerk, etc.) Ook moet ik toegeven dat ik van mijn kant tijdens het gesprek steeds meer twijfels kreeg of recruitment en selectie wel iets voor me is. Hij lachte me bijna uit toen ik aangaf, schijnbaar in al mijn na\ïviteit, dat het me mooi leek om te kunnen bijdragen aan een extreem belangrijke stap in iemand carri\ère/leven. <br>Hij raadde me aan om als ik echt de R&S kant op wil ik dan maar eerst een jaar moet gaan 'buffelen in een uitzend toko' (sic). Het schijnt dat ze nog quizzen makers zoeken bij Murphy's, zou mooi een gaatje vullen tot de provinciale- en rijkstrainee programma's beginnen in september.<br></div>
+</article>
+<article class="post" data-ts="20070330130100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-03-30 13:01</span></div>
+  <div class="pb">Jammer inderdaad.<br><br>Ik weet niet of je nu het hele werving en selectie stukje moet afschrijven omdat 1 dude je niet aanneemt. Er zijn meer van werving- en selectieburo's. Omdat je die sollicitatiebrief al hebt geschreven, kun je 'm net zo goed naar die andere bedrijven sturen.<br><br>Bij de politie zoeken ze ook nog altijd sociale en slimme mensen.<br><br>Veel succes met zoeken!<br><br>P.S. Ik verbied je om tot september op je handen te gaan zitten in afwachting van provincie- en rijkstraineeprogramma's. Die optie kun je dus bij deze doorstrepen.</div>
+</article>
+<article class="post" data-ts="20070330135300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-03-30 13:53</span></div>
+  <div class="pb">sniesosmooi inderdaad. <br><br>is die suggestie van de big chief trouwens niet een idee, om bij een uitzendtoko te gaan buffelen? Of wil je dat niet?</div>
+</article>
+<article class="post" data-ts="20070330171900" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2007-03-30 17:19</span></div>
+  <div class="pb">klinkt mij een beetje als een *** (=minder vriendelijke meneer), gewoon verder proberen.</div>
+</article>
+<article class="post" data-ts="20070331113600" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-03-31 11:36</span></div>
+  <div class="pb">Dude het is heel normaal om eerst 5 keer een deksel op je neus te krijgen, dat sowoenso. Gewoon door blijven hengelen dus.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

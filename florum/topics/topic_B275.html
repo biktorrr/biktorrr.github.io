@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gestunt? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gestunt?</h1>
+<p class="tm">6 posts · started 2003-04-17 10:11 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030417101100" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-04-17 10:11</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030417104800" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-04-17 10:48</span></div>
+  <div class="pb">Ik bedoel: zijn er punten gepakt tegen die gasten? Zijn er anders in ieder geval ballen de bühne ingegaan?</div>
+</article>
+<article class="post" data-ts="20030417120300" id="p3">
+  <div class="ph"><span class="pa">De Fans wereldwijd</span><span class="pm">#3 · 2003-04-17 12:03</span></div>
+  <div class="pb">Wat denken jullie wel stelletje Floraboys. Dat wij zo rijk zijn dat we iedere keer op de bühne kunnen zitten, waar we dan bovendien het risico lopen in bal tegen de kanis te krijgen. Ik dacht het niet. Florafans zijn mensen van het volk, die hard werken om rond te komen en zich slechts af en toe iest extra's kunnen permitteren en de reis naar het stadion in Amsterdam kunnen maken. Dat neemt niet weg dat zij het recht hebben op de hoogte te worden van de prestaties van hun club. Zij eisen een simultaan verslag online, en anders toch wel binnen 15 uur na de wedstrijd een uitslag op internet. Maar niets van dit alles. Deze boze fan, toevallig ook hoge verantwoordelijke van "Les fans des Gar\çons Flora en France" zou wel eens fan kunnen worden van Onder voorbehoud en heeft al vergevorderde plannen voor "Les fans de Sous r\éserves en France."  </div>
+</article>
+<article class="post" data-ts="20030417121200" id="p4">
+  <div class="ph"><span class="pa">Merlijn-hooligan</span><span class="pm">#4 · 2003-04-17 12:12</span></div>
+  <div class="pb">egte floraboys fans kennuh geen Frans<br>Kijk ik heb die kanis van Merlijn op me rug getatoeerd.<br>Dat is pas hard-core <br></div>
+</article>
+<article class="post" data-ts="20030417123100" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-04-17 12:31</span></div>
+  <div class="pb">Mooi, fans onder elkaar. <br><br>Maar, ik begrijp echt niet waar deze florafan het over heeft. De Floraboys zijn zo voorkomend geweest om all over the world sattalliet-clubs te initialiseren. Zo kan de boze fan uit Frankrijk naar Flora-Parijs waar een ware puntervedette rondloopt, die we maar al te graag weer in ons midden zouden willen hebben. Wat niet te denken van DJ Erik Z, Witte Joost en Holy Commander?<br><br>Wat betreft de stand: 1 verdediger van wereldfaam is gewoon niet voldoende in een team met zoveel tactische onvolwassenheid.</div>
+</article>
+<article class="post" data-ts="20030417132300" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-04-17 13:23</span></div>
+  <div class="pb">ok ok ik zal even de zaalbalpagina updaten en cijfers geven. ik zat vanmorgen alleen zo lekker in het zonnetje dat ik niet direkt naar de Uva ben gesjeesd, vandaar iets later allemaal<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

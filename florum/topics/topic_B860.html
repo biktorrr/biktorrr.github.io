@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conservatisme – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Conservatisme</h1>
+<p class="tm">9 posts · started 2011-09-12 17:56 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110912175600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2011-09-12 17:56</span></div>
+  <div class="pb">Ha! het voetbal florum is nog zonder HTML user interface optie.<br></div>
+</article>
+<article class="post" data-ts="20110912235200" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2011-09-12 23:52</span></div>
+  <div class="pb">Yeyt! Weg met die nieuwlichterij! Dit wordt vanaf nu het nieuwe Florum!<br><br>Volgens mij worden hier ook geen management stats bijgehouden, dus kan ik hier ongestoord iedere dag twintig keer posten zonder dat dat tot moeilijke momenten op FDK leidt. Florum, adieu, we hebben samen mooie tijden gekend!</div>
+</article>
+<article class="post" data-ts="20110913103800" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2011-09-13 10:38</span></div>
+  <div class="pb">Het klinkt wel een beetje hol hier.</div>
+</article>
+<article class="post" data-ts="20110913120600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2011-09-13 12:06</span></div>
+  <div class="pb">Bode, wat is eht toch heeeerlijk je te kennen.<br>He is het btw in Charlotte's Dorpje? Kan je een beetje aarden?<br></div>
+</article>
+<article class="post" data-ts="20110913213100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2011-09-13 21:31</span></div>
+  <div class="pb">Ik verklaar mij tot winnaar van dit topic! Laat dat een feit zijn voor de statistieken.</div>
+</article>
+<article class="post" data-ts="20110914134700" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2011-09-14 13:47</span></div>
+  <div class="pb">Achteneyt! alweer verloren.<br><br>Neemt niet weg dat ik graag van de lieve Bode verneem.</div>
+</article>
+<article class="post" data-ts="20110915002100" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2011-09-15 00:21</span></div>
+  <div class="pb">Ik neem niet aan, lieve Terts, dat je in alle ernst verwacht dat ik je vertel hoe het met mij is. </div>
+</article>
+<article class="post" data-ts="20110915104100" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2011-09-15 10:41</span></div>
+  <div class="pb">dan vertel je niet in alle ernst hoe het is, maar maak je er een geromantiseerd verhaal van, doorspekt met waarheden.<br><br></div>
+</article>
+<article class="post" data-ts="20110916042500" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2011-09-16 04:25</span></div>
+  <div class="pb">Sorry, lieve Terts, maar dit gaat een 'nee' worden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

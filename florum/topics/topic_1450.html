@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 1450 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 1450</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2014-04-19 15:19 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140419151915" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1&nbsp;·&nbsp;2014-04-19 15:19</span></div>
+  <div class="pb">Een olijck Pasen, boys!<br><br><iframe width="420" height="315" src="//www.youtube.com/embed/a1wUp-Ieyes" frameborder="0" allowfullscreen></iframe></div>
+</article>
+<article class="post" data-ts="20140420112741" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2014-04-20 11:27</span></div>
+  <div class="pb">Hij is waarlijk opgestaan. Tik m aan voor Jezus.</div>
+</article>
+<article class="post" data-ts="20140420113647" id="p3">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#3&nbsp;·&nbsp;2014-04-20 11:36</span></div>
+  <div class="pb">Ja de kuikentjes! Een klassieker!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

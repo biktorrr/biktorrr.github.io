@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gelukkig Nieuwjaar! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gelukkig Nieuwjaar!</h1>
+<p class="tm">9 posts · started 2008-01-01 00:24 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080101002400" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2008-01-01 00:24</span></div>
+  <div class="pb">Allemaal de beste wensen vanaf het Java-eiland!</div>
+</article>
+<article class="post" data-ts="20080101022000" id="p2">
+  <div class="ph"><span class="pa">VB en zn vrinden aan her Azartplein</span><span class="pm">#2 · 2008-01-01 02:20</span></div>
+  <div class="pb">alle bakkies verzameleeeeee...<br><br>style<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080101022800" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2008-01-01 02:28</span></div>
+  <div class="pb">Java gangsters in da house!<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080101134100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-01-01 13:41</span></div>
+  <div class="pb">Een goed begin is het halve werk!<!--88.211.145.108--></div>
+</article>
+<article class="post" data-ts="20080101162600" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2008-01-01 16:26</span></div>
+  <div class="pb">Ik had het druk vannacht: 400 auto's in de fik gestoken. <br><br>Bonne ann\ée !<!--90.46.136.26--></div>
+</article>
+<article class="post" data-ts="20080102095200" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2008-01-02 09:52</span></div>
+  <div class="pb">Goed werk oli4, als er geen nieuws is, moet je het zelf maar maken! <br><br>gelukkig niewjaar alllemaal!<!--62.163.210.4--></div>
+</article>
+<article class="post" data-ts="20080102111800" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2008-01-02 11:18</span></div>
+  <div class="pb">Een Gelukkig Nieuwjaar allemaal! <br><br>Overigens had de Tube een beetje buikgriep, ik hoop dat ie niemand heeft aangestoken maandag! De taxi ging wel primaatjes, we zijn niet genaaid (gewoon op de meter 55 eurootjes) en we waren om 2345 thuis. Ik vond het wel erg gezellig, gelukkig waren we al vroeg begonnen :)<!--80.126.71.152--></div>
+</article>
+<article class="post" data-ts="20080102123200" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2008-01-02 12:32</span></div>
+  <div class="pb">buikgriep=nasty nasty.<br><br>Beterschap aan de Tube en ik vond het allemaal erg gezellig!<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20080102194300" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2008-01-02 19:43</span></div>
+  <div class="pb">nou het was niet zo ernstig hoor. Misschien moet ik het geem buikgriep noemen?<!--80.126.71.152--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

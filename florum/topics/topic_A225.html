@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topscorer – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topscorer</h1>
+<p class="tm">5 posts · started 2001-09-05 00:53 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010905005300" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-09-05 00:53</span></div>
+  <div class="pb">Zeg hier wie je verwacht topscorer te worden in de komende 10 wedstrijden van de zaalvoetbal-competitie, zeg ook met hoeveel goals.<br><br>Ik denk dat ikzelf ga heersen met 23 goals.</div>
+</article>
+<article class="post" data-ts="20010905094500" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2001-09-05 09:45</span></div>
+  <div class="ps">*duh*</div><div class="pb">Ik denk Tim...met zijn 'verre uitrappen' moet het vast ene paar keer goed gaan.</div>
+</article>
+<article class="post" data-ts="20010905115000" id="p3">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#3 · 2001-09-05 11:50</span></div>
+  <div class="ps">Topscoorder</div><div class="pb">Merlijn, Merlijn, Merlijn, Merlijn,, <br><br>hahahaaaaaa<br><br>met 23 doelpuntjes in 10 wedstrijden denk jij de topscoorders bokaal binnen te halen.... Nou laat ik zo zeggen als ik niet na 6 wedstrijden geblesseert raak,, dan haal je het misschien... maar dan zelfs is dit nog twijfelachtig... ik ga vlammen,,,, ik ga beesten,,, ik ga zwijnen,, ik ga oorlog maken,,, ik ga scoren,, ik ga juichen en ik ga overwinnen en ik ga DE TOPSCOORDERS BOKAAL BINNEN HALEN.... dit natuurlijk niet op een indivuduele wijze ik ben en blijf een teamplayer.....<br>het team staat voorop...!!!<br><br><br>oja ik meld me aan om penalty's te nemen,, mijn overgrootmoeder heeft wat buitenlandsbloed in zich,.. dus ik schiet ze waarschijnlijk gewoon keihard koelbloedig door het net heen.....<br></div>
+</article>
+<article class="post" data-ts="20010906121800" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2001-09-06 12:18</span></div>
+  <div class="pb">Ik zal me opstellen als de man van de assist. Die topscoorders bokaal mag wat mij betreft naar de echte spitsen.<br><br>Toch hoop ik per wedstrijd er 2 in te prikken, maar das logisch.<br><br></div>
+</article>
+<article class="post" data-ts="20010913105300" id="p5">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#5 · 2001-09-13 10:53</span></div>
+  <div class="ps">TOPSCHUTTERS...</div><div class="pb">doelsaldo +5<br>8 voor<br>3 tegen<br><br>1) Famous Frank   4<br>2) WJ             2<br>   Maarten        2<br><br>zo klopte het volgens mij toch???<br><br>er is een probleempje,, ik zie die opschepperige merlijn<br>nergens????????????????????????? hhahhahaaa</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

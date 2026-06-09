@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kindernaampjes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kindernaampjes</h1>
+<p class="tm">4 posts · started 2012-10-15 15:32 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20121015153248" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2012-10-15 15:32</span></div>
+  <div class="pb"><p><br>	Jazz, ik heb nog een mooie voor je shortlist.<br /><br>	Zojuist ontvangen op een polis van een random zorgverzekeraartje: &quot;Geachte heer, gefeliteerd met de geboorte van uw zoon JLay&quot;</p><br><p><br>	Het is dat het schijnbaar een jongensnaam is, anders was het de indeale titel voor Mara 2.0</p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20140206093046" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2014-02-06 09:30</span></div>
+  <div class="pb">Even een kleine kick gezien alle babydrukte... Inspiratie hoe het niet te doen:<br><br>Schaamnamen 2008<br><br>Stanley Messie<br>Coos Busters<br>Anna Nas<br>Wil Krikke<br>Izzy van Gisteren<br>Conny Plassen<br>Meneer K. Bouter<br>Mevrouw Potappel  Stroop<br>Beau ter Ham<br>Trui Halfmouw<br><br>Schaamnamen 2009<br><br>Fokje Modder<br>Constant Lam<br>Jos Tibant<br>Coos Busters<br>Conny Plassen<br>Chil Persoon<br>Izzy van Gisteren<br>Wil Krikke<br>Brad Wursten<br>Charrel Kip<br><br>Schaamnamen 2010<br><br>Con Domen<br>Piet Saman<br>Justin Case<br>Klaartje Komen<br>Metje Hol<br>Douwe Schat<br>Truusje Spetter-Kwak<br>Jos Thie<br>Dick Sack<br>Donald Duk<br><br>Schaamnamen 2011<br><br>Louwe Pruim<br>Bennie Dood<br>Annebelle Blaas<br>Robin Hoedjes<br>Mevrouw Plu- in t Hol<br>Sam Bal<br>Jo de Jong<br>Kin Ki Jim<br>Annewil Hokken<br>Bing Go<br><br>Schaamnamen 2012<br><br>Hendy Keppy<br>Ben en Wil Niks (familie!)<br>Gooi van de Berg<br>IC  Notting (oogarts)<br>Cock Ringeling<br>Ron de Knikker<br>Loekie de Leeuw<br>Josieke Borsten<br>Ko de Kraker<br>Wil de Gans<br><br>Schaamnamen 2013<br><br>Till Bal<br>Bennie Thuis<br>Wil de Pijper<br>Ab Louws<br>Dick Tevreden<br>Kerst Boomsma<br>Cock Blokker<br>Til en Johannes Burg (echtpaar)<br>Dies Groot<br>Joska Bouter<br></div>
+</article>
+<article class="post" data-ts="20140225142552" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2014-02-25 14:25</span></div>
+  <div class="pb">Burgemeester Bernt Schneiders voorziet een opmerkelijk filmsucces. Eentje die de naam Kenau voorgoed zal ontdoen van de associatie van manwijf. Hij belooft plechtig: ,,Ik kom op kraambezoek bij de eerste Haarlemse baby die de naam Kenau krijgt.''<br><br>Wie durft? Ik geloof alleen dat alle zwangere girls nou net niet in Haarlem wonen.</div>
+</article>
+<article class="post" data-ts="20140225170346" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2014-02-25 17:03</span></div>
+  <div class="pb">gewoon doorgaan Ca, gewoon doorgaan.<br><br>Trouwens: Til en Johannes Burg is redelijk subliem...had die even gemist.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Experiment is een go – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Experiment is een go</h1>
+<p class="tm">6 posts · started 2002-09-24 15:09 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020924150900" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-09-24 15:09</span></div>
+  <div class="pb">voor iedereen die zijn mail niet leest:<br>Beste toekomstige proefpersoon,<br><br>heel hartelijk bedankt dat je mee wil doen aan mijn experiment. Ik zal hieronder instrukties geven over hoe je mee kunt doen, maar eerst zal ik even kort uitleggen waar ik je voor nodig heb. <br><br>Zoals je misschien al weet, ben ik een student Kunstmatige Intelligentie aan de UvA. Ik ben al een tijdje aan het afstuderen aan de Psychologiefaculteit en een deel van mijn onderzoek (het OptiLearn project) bestaat uit een experiment met proefpersonen. Hier ben jij er een van. <br><br>Voor het eerste deel van mijn experiment moet je  naar een site op het internet gaan, daar zal de test afgenomen worden. Dit gebeurt in een keer en ik heb je volledige aandacht nodig, ga dus niet tegelijk je mail bekijken of een spelletje spelen of iets dergelijks, het is belangrijk dat je je alleen op de test concentreert. Verder is het belangrijk dat je de test alleen maakt en geen hulptroepen gebruikt. Uit eerdere proef-testen is gebleken dat het niet langer dan een halfuurtje zal duren, maar als je wat langzamer bent zou het ietsje langer kunnen duren.<br><br>Het is in het algemeen gewoon heel belangrijk dat je niet probeert mijn test te slim af te zijn. Als je dit zou proberen, lukt je dit altijd, maar dan heb ik niets meer aan je resultaten en dat zou zonde zijn. Ik ga er dus vanuit dat je niet valsspeelt.<br><br>De test zelf bestaat uit het leren van Nederlandse vertalingen bij Turkse woordjes. Verdere instrukties staan op de site, ik vraag je deze ZEER GOED door te lezen.<br><br>Om de test te doen: ga naar http://www.neuromod.org/mnemo/optilearn en schrijf je eerst als proefpersoon in. Vervolgens kun je inloggen en beginnen. <br><br>Doe de test maar EEN keer!!!<br><br>Als je nog vragen voor of opmerkingen na de test hebt kun je me altijd mailen op turksleren@hotmail.com,<br><br>Alvast heel hartelijk bedankt voor het meedoen, <br><br>Victor de Boer<br><br>PS. als er meerdere personen op dit emailadres mee willen doen kan dit.</div>
+</article>
+<article class="post" data-ts="20020924172300" id="p2">
+  <div class="ph"><span class="pa">Rachid</span><span class="pm">#2 · 2002-09-24 17:23</span></div>
+  <div class="pb">Ies toerkse woordjes, ies makkelaik.</div>
+</article>
+<article class="post" data-ts="20020925133300" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2002-09-25 13:33</span></div>
+  <div class="pb">test is niet zo goed te doen als je een kater hebt</div>
+</article>
+<article class="post" data-ts="20020925151300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-09-25 15:13</span></div>
+  <div class="pb">ik zag het tube: je hebt voornamelik 'kak' ingevuld<br><br>maar je wint wel de prijs voor het beste wachtwoord!<br><br>in ieder geval bedankt, nu kunnen we ook berekenen wat het effect van alcohol is op turkse woordjes leren, daar valt wel een papertje over te schrijven!!!</div>
+</article>
+<article class="post" data-ts="20021001202300" id="p5">
+  <div class="ph"><span class="pa">FdG</span><span class="pm">#5 · 2002-10-01 20:23</span></div>
+  <div class="pb">he Vic,<br><br>Ik wil best als ontspanning Turkse woordjes leren (dat is toch het idee?) Maar hoeveel tijd ben ik er mee kwijt?<br>Keppet namelijk nogal druk.</div>
+</article>
+<article class="post" data-ts="20021002113400" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-10-02 11:34</span></div>
+  <div class="pb">een halfuurtje dus </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

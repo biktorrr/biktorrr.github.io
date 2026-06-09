@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paris pour un jour, Amsterdam pour toujours – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Paris pour un jour, Amsterdam pour toujours</h1>
+<p class="tm">13 posts · started 2009-07-30 23:18 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090730231800" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2009-07-30 23:18</span></div>
+  <div class="pb">Monsieurs et mademoiselles,<br><br>Het lijkt me tijd voor een post-parijs diner aan het IJ morgenavond. Ik ben dit zomerseizoen zelf nog niet in de kompaszaal geweest, dus heb daarvoor een lichte voorkeur. Zijn daar ook voor in?</div>
+</article>
+<article class="post" data-ts="20090731003800" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-07-31 00:38</span></div>
+  <div class="pb">Beffoindre idee, echter zouden we daar de regels van eenheid van tijd, plaats en actie enigzins voor moeten oprekken. Olick en Moi resideren namelijk nu te Woensel Zuid, en stomen vrijdagmiddag door naar illuster Hellendoorn om daar onze doors of perception te openen. Ik zie wel een window of opportunity voor een week later...</div>
+</article>
+<article class="post" data-ts="20090731121900" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2009-07-31 12:19</span></div>
+  <div class="pb">Co, wij tikken hem ook maar af denk ik, want Mitch kan ook niet en ik denk dat het een wat lage opkomst wordt. Volgende week dan maar. Heb je de tour nog kunnen zien trouwens? </div>
+</article>
+<article class="post" data-ts="20090731122100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2009-07-31 12:21</span></div>
+  <div class="pb">Wij kunnen ook niet.</div>
+</article>
+<article class="post" data-ts="20090806114000" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2009-08-06 11:40</span></div>
+  <div class="pb">morgen dus kompaszaal? 5/6 uur?</div>
+</article>
+<article class="post" data-ts="20090806122600" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2009-08-06 12:26</span></div>
+  <div class="pb">Wij zijn morgen bij mijn ouders. <br>Volgende week Kompaszaal? Dan zijn de creaboys er ook weer.</div>
+</article>
+<article class="post" data-ts="20090806124000" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2009-08-06 12:40</span></div>
+  <div class="pb">ok, ik dacht dat ze al trug waren. Anders zijn wel ook wel in voor een haarlems biertje later op de avond.</div>
+</article>
+<article class="post" data-ts="20090806135600" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2009-08-06 13:56</span></div>
+  <div class="pb">een deel is terug(ik, lara,david en margriet).<br>Mer, De Blije en Vic zitten er t/m morgen.<br></div>
+</article>
+<article class="post" data-ts="20090806140500" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2009-08-06 14:05</span></div>
+  <div class="pb">Ca, als we morgenavond in haarlem nog de stad in gaan laat ik dat wel even weten. </div>
+</article>
+<article class="post" data-ts="20090807221500" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2009-08-07 22:15</span></div>
+  <div class="pb">Studio it is. Present: Mitch, Tube, Ca. You're all welcome.</div>
+</article>
+<article class="post" data-ts="20090810093800" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2009-08-10 09:38</span></div>
+  <div class="pb">Ben weer online, boys! Vrijdag Kompaszaaltje? Ok dan.</div>
+</article>
+<article class="post" data-ts="20090810095700" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2009-08-10 09:57</span></div>
+  <div class="pb">Welkom terug Olicke.</div>
+</article>
+<article class="post" data-ts="20090810152000" id="p13">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#13 · 2009-08-10 15:20</span></div>
+  <div class="pb">Ja, vrijdag Kompaszaaltje! Weer of geen weer. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

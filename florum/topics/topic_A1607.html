@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond 4 nov brux? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond 4 nov brux?</h1>
+<p class="tm">11 posts · started 2005-11-04 10:17 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051104101700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-11-04 10:17</span></div>
+  <div class="pb">vanavond 22u biertje drinken in Bruxelles? Ca en ik zijn er iig.</div>
+</article>
+<article class="post" data-ts="20051104110900" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2005-11-04 11:09</span></div>
+  <div class="pb">ik ben er misschien ook bij.. moet even kijken of ik niet weer in slaap val door de jetlag vanavond..</div>
+</article>
+<article class="post" data-ts="20051104131200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-11-04 13:12</span></div>
+  <div class="pb">de lil'T schijnt ook te komen</div>
+</article>
+<article class="post" data-ts="20051104133000" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-11-04 13:30</span></div>
+  <div class="pb">Ik ben lekker in de hofstad!</div>
+</article>
+<article class="post" data-ts="20051104133800" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2005-11-04 13:38</span></div>
+  <div class="pb">En ik ben een beetje zieko...</div>
+</article>
+<article class="post" data-ts="20051104142200" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-11-04 14:22</span></div>
+  <div class="pb">eventueel mooi alternatief:<br><br>21.30u 'Last Days' van Gus van Sant in de Filmskuur</div>
+</article>
+<article class="post" data-ts="20051104155000" id="p7">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#7 · 2005-11-04 15:50</span></div>
+  <div class="pb">ik ga liever wat lekker drinken met de boys en girls.. ik moet om 12:30 ongeveer weer de trein terug pakken..</div>
+</article>
+<article class="post" data-ts="20051104185200" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2005-11-04 18:52</span></div>
+  <div class="pb">Film is wat mijn aangaat ook prima, ga wel pas om 20:00 eten ofzo. Kan dat evt. lastminute? en dan daarna een klein biertje doen.<br><br></div>
+</article>
+<article class="post" data-ts="20051104185500" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2005-11-04 18:55</span></div>
+  <div class="pb">naja, als bikkie niet naar de film wil, laten we dan maar gewoon gaan drinken.<br></div>
+</article>
+<article class="post" data-ts="20051104190000" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2005-11-04 19:00</span></div>
+  <div class="pb">ok, biertje is knallen. Misschien ben ik ivm een klein hoofd-miet-pijntje meer voor een iets beter geluchte plek dan de bruxelles (zoals het glazen huis van de botermarkt), maar laten we dan maar in de bruxelles beginnen.<br><br></div>
+</article>
+<article class="post" data-ts="20051104193800" id="p11">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#11 · 2005-11-04 19:38</span></div>
+  <div class="pb">dus om 21:30/22:00 in Bruxelles? Neem ik de trein van 21:17 vanuit Leiden </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

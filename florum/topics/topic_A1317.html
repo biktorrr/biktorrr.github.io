@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>voor de mensen die zin hebben in een feestje: – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">voor de mensen die zin hebben in een feestje:</h1>
+<p class="tm">10 posts · started 2004-10-07 00:28 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041007002800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2004-10-07 00:28</span></div>
+  <div class="pb">Hou de eerste vrijdag van november voorlopig even vrij.</div>
+</article>
+<article class="post" data-ts="20041007100900" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2004-10-07 10:09</span></div>
+  <div class="pb">neem je zwembroek mee</div>
+</article>
+<article class="post" data-ts="20041007102300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-10-07 10:23</span></div>
+  <div class="pb">Check</div>
+</article>
+<article class="post" data-ts="20041007120400" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-10-07 12:04</span></div>
+  <div class="pb">genoteerd</div>
+</article>
+<article class="post" data-ts="20041012131200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-10-12 13:12</span></div>
+  <div class="pb">feestje wordt meer een housewarming en laat verjaardagsfeest dan een afstudeerfeest want door een "klein administratief probleempje" verschuift mijn buluitreiking naar 20 decembert....<br>zet dus ook die datum maar in je agenda.</div>
+</article>
+<article class="post" data-ts="20041012140700" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-10-12 14:07</span></div>
+  <div class="pb">wat een prutsers daar bij de planologen</div>
+</article>
+<article class="post" data-ts="20041012151200" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2004-10-12 15:12</span></div>
+  <div class="pb">Lekkere merdesitu, 25-10 was ik juist in NL.</div>
+</article>
+<article class="post" data-ts="20041012161300" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-10-12 16:13</span></div>
+  <div class="pb">20 december is er ook zaalballen om 22:00, moet die maar verzet worden? Vic?</div>
+</article>
+<article class="post" data-ts="20041012170800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-10-12 17:08</span></div>
+  <div class="pb">ik neem aan dat de buluitreiking smiddags is. We zien het tegen die tijd wel.</div>
+</article>
+<article class="post" data-ts="20041012191800" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-10-12 19:18</span></div>
+  <div class="pb">Even parafraseren...je hoopt dat we tegen 10u al weer nuchter zijn??</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

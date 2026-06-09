@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>doe mijn testje nou... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">doe mijn testje nou...</h1>
+<p class="tm">3 posts · started 2002-09-30 14:56 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020930145600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-09-30 14:56</span></div>
+  <div class="pb"><br><br><br>ah pliess??<br>timmie, tijmen, MD, JK en oli4 hebben mijn teste gedaan<br>de rest nog niet... willen jullie alsjeblieft meehelpen??<br><br>(Mark Vlaar, de Pit, Witte Joost, Frank Smitshuis?)???<br><br><br> <br></div>
+</article>
+<article class="post" data-ts="20020930150200" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-09-30 15:02</span></div>
+  <div class="ps">hoeveel</div><div class="pb">testen moet je hebben dan??? En voor wanneer???<br>Als het echt nodig is doe ik het wel, onder protest en met tegenzin!!!</div>
+</article>
+<article class="post" data-ts="20021002113500" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-10-02 11:35</span></div>
+  <div class="pb">fijn!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

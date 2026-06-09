@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vraag aan econoom – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vraag aan econoom</h1>
+<p class="tm">10 posts · started 2010-09-20 12:48 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100920124800" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2010-09-20 12:48</span></div>
+  <div class="pb">Feyenoord is zo slecht financieel dat ze niemand kunnen halen met hun begroting, maar:<br><br>http://www.nu.nl/binnenland/2337547/hoe-dan-nieuw-stadion-feyenoord.html<br><br>Hoe kan dit in vredesnaam haalbaar zijn, als Feyenoord-Ajax niet eens uitverkocht raakt?</div>
+</article>
+<article class="post" data-ts="20100920125200" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2010-09-20 12:52</span></div>
+  <div class="pb">Ik denk dat Feijenoord fans liever geld betalen voor spannende wedstrijden tegen directe concurrenten zoals Excelsiknor en Hoeracles.<br><br>Verder zal een rechts kabinet straks via de gemeente graag bijlappen voor mooie rechtse hobby's van Henk en Ingrid. </div>
+</article>
+<article class="post" data-ts="20100920132800" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2010-09-20 13:28</span></div>
+  <div class="pb">@ddendum @ -> Die kale Spanjool van Barca was natuurlijk Luis Enrique.</div>
+</article>
+<article class="post" data-ts="20100920143400" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2010-09-20 14:34</span></div>
+  <div class="pb">Hoe is het mogelijk dat Real Madrid een schuld heeft van 1 miljard euro? <br><br>Let wel dat Feijenoord Stadion B.V. niet 100% eigendom is van de voetbalclub Feijenoord. Er zitten dus andere investeerders in zoals de gemeente, horeca, parkeergelegenheid, evenementenbureaus, het Rijk, etc.</div>
+</article>
+<article class="post" data-ts="20100920152700" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2010-09-20 15:27</span></div>
+  <div class="pb">Hoe is het mogelijk? Nou ja, ze hebben de neiging om pak ´m beet 20 miljoen eurpo voor een Wesley Sneijder neer te tellen en ´m een jaar later voor twee dubbeltjes van de hand te doen. Als je deze manier van zaken doen een paar decennia volhoudt, dan zit je al gauw aan een miljard schuld.</div>
+</article>
+<article class="post" data-ts="20100922092700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2010-09-22 09:27</span></div>
+  <div class="pb">@ddendum, Madrid wil Sneijder weer terugkopen. </div>
+</article>
+<article class="post" data-ts="20100922103200" id="p7">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#7 · 2010-09-22 10:32</span></div>
+  <div class="pb">Dat zat ik ook al te denken: die Sneijder, is dat geen aardige speler voor Madrid? Ze zouden misschien een ruil kunnen voorstellen waarbij dan bv. Kaka en Ronaldo de andere kant op gaan. En dan misschien een seizoen later een nieuwe ruil: bv. Sneijder en Sergio Ramos naar Inter in ruil voor Kaka. Met gesloten beurzen is niet realistisch, dus misschien dat Real er een paar miljoen bij moet lappen. </div>
+</article>
+<article class="post" data-ts="20100922121700" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2010-09-22 12:17</span></div>
+  <div class="pb">Bernard, je verwart Real nu met  Barca denkelijk.</div>
+</article>
+<article class="post" data-ts="20100922123900" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2010-09-22 12:39</span></div>
+  <div class="pb">Denk het niet. Dat briljante Eto´o-Ibrahimovic-gebbetje was een Barcelonees experiment met bedrijfsvoering a la Real Madrid. De Madrilenen zijn voor zoiets heus stom genoeg.</div>
+</article>
+<article class="post" data-ts="20100922130200" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2010-09-22 13:02</span></div>
+  <div class="pb">Ach ja, is leuk als alle jeugdclubs van Sneijder weer een mooie bom duiten krijgen straks. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

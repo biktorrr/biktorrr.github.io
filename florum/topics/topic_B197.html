@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gerechtigheid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">gerechtigheid</h1>
+<p class="tm">6 posts · started 2002-10-28 14:17 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021028141700" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-10-28 14:17</span></div>
+  <div class="pb">TOPSCORERS LIJST<br>Frankie P 5  (+3) <br>SandOr 4  <br>Witte Joost 2  <br>Victor 2   <br>Timmie 2   <br>Merlijn 2  (+1) <br>Oli4 1  <br></div>
+</article>
+<article class="post" data-ts="20021028142300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-10-28 14:23</span></div>
+  <div class="pb">Ik heb de smaak te pakken en ga weer fabuleuze schoten op doel lossen.</div>
+</article>
+<article class="post" data-ts="20021029132400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-10-29 13:24</span></div>
+  <div class="ps">het is een schande</div><div class="pb">dat een zekere Witte Joost nog op een respectabele derde plaats staat. Dit zal niet, dit kan niet, dit moet niet en dit mag niet!!!!!!!!!</div>
+</article>
+<article class="post" data-ts="20021029152700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-10-29 15:27</span></div>
+  <div class="pb">Die situatie doet zich voor tot volgende week donderdag. Ik heb besloten er dan drie in te prikken. Ik bedoel te lanceren. Ik zal Maurice al waarschuwen, in het kader van 'het is niet de bedoeling een steunmuur van je gebouw te slopen'. Oh oh oh wat ben ik weer scherp deze week. Misschien moet ik wat vaker tegen Olivier ballen, is goed voor m'n zelfvertrouwen.</div>
+</article>
+<article class="post" data-ts="20021029155700" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-10-29 15:57</span></div>
+  <div class="ps">:)</div><div class="pb">maar dat is goed voor iedereens zelfvertrouwen</div>
+</article>
+<article class="post" data-ts="20021030140200" id="p6">
+  <div class="ph"><span class="pa">JB</span><span class="pm">#6 · 2002-10-30 14:02</span></div>
+  <div class="pb">Tis inderdaad tijd dat de doelpunten machine een beetje op gang komt jongens. Ik ben dan wel zeer vereerd door jullie grenzeloze respect maar ik zie de Floraboys liever gewoon bovenaan staan, zoals het hoord.<br><br>Mzzl,<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

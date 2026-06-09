@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HÃ¨ psst. Zorgverzekerinkje kopen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">HÃ¨ psst. Zorgverzekerinkje kopen?</h1>
+<p class="tm">2 posts · started 2013-12-16 18:10 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20131216181049" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2013-12-16 18:10</span></div>
+  <div class="pb"><p><br>	Vergelijker voor de diverse collectieven die wij kunnen bieden aan onze particuliere relaties.</p><br><p><br>	Vergelijk de aanbieding die je hebt gehad van je huidige verzekeraar met deze tool, misschien levert het nog wat op.</p><br><p><br>	Meijers zit er verder niet tussen. Polis en nota&#39;s lopen rechtstreeks tussen de verzekeringnemer en de maatschappij.</p><br><p><br>	Handig voor degene onder jullie die geen (goede) werkgeverscollectiviteit hebben en/of geen zin hebben in een intraweb labeltje of worstenpolis.</p><br><p><br>	<a href="http://zorgvergelijker.meijers.nl/overview?token=cVY5WHhTcEE3UXlud2FRNzB2Tmdjb2lZZklQWUIvcUJWbFhZSXBHU2QrekpJSkw4dmpFb3B1QmljRStlWXF3bHFYN1lheVdybXVJN25wMy9oTGhaZkE9PQ==">http://zorgvergelijker.meijers.nl/overview?token=cVY5WHhTcEE3UXlud2FRNzB2Tmdjb2lZZklQWUIvcUJWbFhZSXBHU2QrekpJSkw4dmpFb3B1QmljRStlWXF3bHFYN1lheVdybXVJN25wMy9oTGhaZkE9PQ==</a></p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20131216221124" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2013-12-16 22:11</span></div>
+  <div class="pb">Goed initiatief profesj, wellicht niet zo'n sexy onderwerp als bijvoorbeeld het werk van onze Berney, maar desalniettemin zeker de moeite waard.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

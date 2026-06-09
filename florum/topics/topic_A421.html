@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Holy Fuck!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Holy Fuck!!!</h1>
+<p class="tm">7 posts · started 2002-02-06 12:51 by Holy fuck!!!</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020206125100" id="p1">
+  <div class="ph"><span class="pa">Holy fuck!!!</span><span class="pm">#1 · 2002-02-06 12:51</span></div>
+  <div class="pb">Ok, als je enige interesse hebt in voetbal volg deze link.<br>Je weet echt niet wat je leest... brrr...<br><br>http://www.parool.nl/1012888235244.html</div>
+</article>
+<article class="post" data-ts="20020206130000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-02-06 13:00</span></div>
+  <div class="pb">Ok, dit moet je echt even lezen. Je weet niet wat je <br>leest... brrr...<br><br>http://www.parool.nl/1012888235244.html</div>
+</article>
+<article class="post" data-ts="20020206130600" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-02-06 13:06</span></div>
+  <div class="pb">Nou vrij terecht stukje..niets op aan te merken....</div>
+</article>
+<article class="post" data-ts="20020206130800" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-02-06 13:08</span></div>
+  <div class="pb">net iets minder kwaliteit dan AD, toch</div>
+</article>
+<article class="post" data-ts="20020206132600" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2002-02-06 13:26</span></div>
+  <div class="pb">ehm ik weet niet of dat familien van mij is.. in ieder geval zeker in zwart schaap waarvan ik het bestaan niet van kende.<br><br>TuuT</div>
+</article>
+<article class="post" data-ts="20020206155900" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-02-06 15:59</span></div>
+  <div class="pb">tja dit gaat mij eigenlijk allemaal net te ver. Wat voor films die Zlatan kijkt moetie zelf weten. En om nou suggestief te gaanm doen over kunst van iemand die gewoon lekker hoort te voetballlen dat vind ik nogal onzin.<br><br>Fuck het parool dus om Petrarca even te citeren.<br></div>
+</article>
+<article class="post" data-ts="20020206233000" id="p7">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#7 · 2002-02-06 23:30</span></div>
+  <div class="pb">Parool=Kwaliteit..en die van kempens doen nou eenmaal rare dingen..<br><br>Suggestief is het zeker...Zeker ook zoon Oliviertje maar dan bij het Parool en dan heeeeel slecht.Transfer regelen?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

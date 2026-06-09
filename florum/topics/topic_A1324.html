@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuwe VRIJMIPUUU!!! (15 oktober) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuwe VRIJMIPUUU!!! (15 oktober)</h1>
+<p class="tm">1 post · started 2004-10-15 12:39 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041015123900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-10-15 12:39</span></div>
+  <div class="pb">daar issie dan: een heuse kruiswoord. Veel plezier ermee. <br><br><img src="http://www.jm-p.nl/flora/onzin/kruiswoord.jpg"><br><br>Horizontaal (dat is dus van links naar rechts)<br>1. Een echte Floraboy<br>5. Doel van elk seizoen en tweemaal gelukt<br>7. Floraboys-ITS AIO: Zwanzig - ....<br>8. Favoriete uitroep van Biktie en Jossyt<br>10. Oldskool trainingsoord van de Floraboys, nu uit het oog verdwenen.<br>11. Favoriete techniek van Biktie, door sommige Floraboys ook wel "panne" genoemd.<br><br>Verticaal<br>1. Dit is wat de Floraboys zijn<br>2. Hip Hap Hop, Floraboys aan de ...<br>3. Favo prestatieverhoger van een der Floraboys<br>4. Favo traptechniek van Oli4<br>6. "Wie start er vandaag .. de basis?"<br>8. Een floragirl<br>9. Papegaai<br>11. Puike Wedstrijd (afk.)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

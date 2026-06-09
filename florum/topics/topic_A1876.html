@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NYC Fotos – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NYC Fotos</h1>
+<p class="tm">6 posts · started 2006-10-18 21:00 by Jazz</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061018210000" id="p1">
+  <div class="ph"><span class="pa">Jazz</span><span class="pm">#1 · 2006-10-18 21:00</span></div>
+  <div class="pb">Boys,<br>Hieronder mijn NY foto's gezipt.<br><br><a href="http://www.jm-p.nl/flora/NYC-Fotos-Jazz.zip">NYC Fotos Jazzy</a></div>
+</article>
+<article class="post" data-ts="20061019101300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-10-19 10:13</span></div>
+  <div class="pb">Goed werk Jazzmaster. Zodra ik een nieuw kabeltje heb verkregen knal ik mijnes er ook.</div>
+</article>
+<article class="post" data-ts="20061019104600" id="p3">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#3 · 2006-10-19 10:46</span></div>
+  <div class="pb">Voor degenen die Zippen ingewikkeld vinden: alle foto's staan hier:<br><a href="http://staff.science.uva.nl/~vdeboer/fotos/newyork">http://staff.science.uva.nl/~vdeboer/fotos/newyork</a></div>
+</article>
+<article class="post" data-ts="20061019110600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-10-19 11:06</span></div>
+  <div class="pb">Terechte kiekjes. Hoogtepunten: de sneaky museum pics. Minpunt: het ontbreken van de 'reisgenoot-op-de-wc-shot', een speciliteit van David.<br></div>
+</article>
+<article class="post" data-ts="20061019130600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-10-19 13:06</span></div>
+  <div class="pb">haha, daar zou ik me niet teveel zorgen over maken Lil' David's foto's moeten nog komen...</div>
+</article>
+<article class="post" data-ts="20061030114700" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2006-10-30 11:47</span></div>
+  <div class="pb">Terecht en grotendeels herkenbaar. Wat een topvakantie heb ik trouwens gehad. Beetje jammer dat ik gistermorgen, meteen na aankomst en zonder nachtrust, weer de wijken in moest. Maar ja, het nieuws gaat natuurlijk gewoon door. Bis bald!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

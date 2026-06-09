@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oli4 in Franse Metro – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Oli4 in Franse Metro</h1>
+<p class="tm">8 posts · started 2005-04-28 11:09 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050428110900" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-04-28 11:09</span></div>
+  <div class="pb">Voor een interessante mening over de nieuwe Airbus:<br><br>http://www.metrofrance.com/xpresstags/pdf/paris.pdf<br><br>pagina 9</div>
+</article>
+<article class="post" data-ts="20050428121400" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2005-04-28 12:14</span></div>
+  <div class="pb">quel opinion olivier de paris. Et quel photo! (of is het la photo)<br><br></div>
+</article>
+<article class="post" data-ts="20050428141700" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-04-28 14:17</span></div>
+  <div class="pb">ik denken dat jij een tweepagina spread artikel in de metro had geschreven..tegenvallertje. :)<br></div>
+</article>
+<article class="post" data-ts="20050428142600" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2005-04-28 14:26</span></div>
+  <div class="pb">Lekkere postmaterialist dat jer d'r bent!<br>(was ik trouwens ook volgens www.motivaction.nl)</div>
+</article>
+<article class="post" data-ts="20050428142800" id="p5">
+  <div class="ph"><span class="pa">bigt</span><span class="pm">#5 · 2005-04-28 14:28</span></div>
+  <div class="pb">maar je bent wel aan het zeiken een beetje.. 'ik neem liever de trein' als ik het vrij vertaal en goed lees?</div>
+</article>
+<article class="post" data-ts="20050428151900" id="p6">
+  <div class="ph"><span class="pa">Babelfisher</span><span class="pm">#6 · 2005-04-28 15:19</span></div>
+  <div class="pb">OLIVIER - 25 ANS<br>Journaliste<br><br>Je suis contre les avions, ils polluent trop. Je pr\éf\ère<br>prendre le train, cest plus agr\éable et on peut voir les paysages. Je reconnais que cest impressionnant, mais \ça ne<br>me donne pas sp\écialement envie de lessayer.<br><br>"Ik ben tegen de vliegtuigen, zij verontreinigen te veel. Ik verkies de trein te nemen, het is aangenamer en men kan de landschappen zien. Ik geef toe dat het indrukwekkend is, maar dat geeft me speciaal lust niet om het te proberen."</div>
+</article>
+<article class="post" data-ts="20050428161100" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-04-28 16:11</span></div>
+  <div class="pb">misschien moet je toch eens wat aan je woordvolgorde doen, olivier de paris. </div>
+</article>
+<article class="post" data-ts="20050511214900" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2005-05-11 21:49</span></div>
+  <div class="pb">hier ollie, omdat ze je maatjes zijn geworden.<br>http://www.esperanto-info.nl/bonvenon/infopak.php<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

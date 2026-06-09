@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stedelijk reunie feest – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stedelijk reunie feest</h1>
+<p class="tm">10 posts · started 2010-06-11 13:15 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100611131500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-06-11 13:15</span></div>
+  <div class="pb">Hm, is de reunie nou vanavond?<br><br>Wie willen nog naar het feest?</div>
+</article>
+<article class="post" data-ts="20100611133000" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2010-06-11 13:30</span></div>
+  <div class="pb">werd net gebeld door B3nJ4min B1LSK1 (!)<br>Hij kon alleen vanavond, ik heb gezegd misschien dat ik morgen kom. H\èh elkaar weer misgelopen...<br></div>
+</article>
+<article class="post" data-ts="20100611134300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2010-06-11 13:43</span></div>
+  <div class="pb">Morgen toch? Denkelijk tik ik 'm af.</div>
+</article>
+<article class="post" data-ts="20100611141400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-06-11 14:14</span></div>
+  <div class="pb">Vanavond ook Frankrijk Uruguay.</div>
+</article>
+<article class="post" data-ts="20100611142100" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2010-06-11 14:21</span></div>
+  <div class="pb">0-3 (3x Suarez)<br><br>Le Juif! Le Juif! Le Juif!<br><br></div>
+</article>
+<article class="post" data-ts="20100611145900" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2010-06-11 14:59</span></div>
+  <div class="pb">Denkelijk neyts...</div>
+</article>
+<article class="post" data-ts="20100611155700" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2010-06-11 15:57</span></div>
+  <div class="pb">ik ga morgenavond </div>
+</article>
+<article class="post" data-ts="20100611224500" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2010-06-11 22:45</span></div>
+  <div class="pb">Present, vanaf uurtje of 21 - 21:30, met Merel</div>
+</article>
+<article class="post" data-ts="20100612194500" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2010-06-12 19:45</span></div>
+  <div class="pb">Ik ga toch ook maar even kijken</div>
+</article>
+<article class="post" data-ts="20100613082500" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2010-06-13 08:25</span></div>
+  <div class="pb">en hoe was het? Ik zag Harold Brummelhuis en Boudewijn van de Veer nog voor La Plume staan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

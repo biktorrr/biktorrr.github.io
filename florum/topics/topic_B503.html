@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drie keer raden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Drie keer raden</h1>
+<p class="tm">5 posts · started 2004-09-03 16:00 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040903160000" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2004-09-03 16:00</span></div>
+  <div class="pb">Drie keer raden welke joods orthodoxe Floracieden er naar Ajax -Macabbi Tel Aviv gaan.<br><br></div>
+</article>
+<article class="post" data-ts="20040903183300" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-09-03 18:33</span></div>
+  <div class="pb">Tis een moeilijke inderdaad, ik zal een hint geven.<br><br>Er is een iemand bij die vorige week een BBQ gaf.</div>
+</article>
+<article class="post" data-ts="20040903210300" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2004-09-03 21:03</span></div>
+  <div class="pb">Alsof iemand dit ook maar enigszins interessant zou vinden..........................</div>
+</article>
+<article class="post" data-ts="20040904000700" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2004-09-04 00:07</span></div>
+  <div class="ps">ik weet het</div><div class="pb">is het misschien de lonely drinker?</div>
+</article>
+<article class="post" data-ts="20040904173600" id="p5">
+  <div class="ph"><span class="pa">Ajax</span><span class="pm">#5 · 2004-09-04 17:36</span></div>
+  <div class="pb">toppie...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DISCOBARRRR GALAXIE! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">DISCOBARRRR GALAXIE!</h1>
+<p class="tm">4 posts · started 2001-06-20 16:21 by TYMEN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010620162100" id="p1">
+  <div class="ph"><span class="pa">TYMEN</span><span class="pm">#1 · 2001-06-20 16:21</span></div>
+  <div class="pb">Amai,ge hebt togg wel weer naar Discobar Galaxie geluissterrtt.<br><br>ik ben ff een hollandse lobby aan het inzetten!<br>Discobar op LL!</div>
+</article>
+<article class="post" data-ts="20010620182300" id="p2">
+  <div class="ph"><span class="pa">TYMEN</span><span class="pm">#2 · 2001-06-20 18:23</span></div>
+  <div class="ps">oja</div><div class="pb">www.discobargalaxie.be/galaxie.swf<br><br>Doe maar..DOE DAN!</div>
+</article>
+<article class="post" data-ts="20010621004200" id="p3">
+  <div class="ph"><span class="pa">TYMEN</span><span class="pm">#3 · 2001-06-21 00:42</span></div>
+  <div class="ps">Lollig</div><div class="pb">http://books.dreambook.com/toinne/discobargalaxie.html<br><br>Leuk joh..die Diedjees<br>:)</div>
+</article>
+<article class="post" data-ts="20010621145800" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-06-21 14:58</span></div>
+  <div class="pb">Bij deze steun ik de Nederlandse lobby voor de DIscoBarrrr!<br>Ik heb helaas afgelopen woensdag niet kunnen luisteren, maar ik vernam van Dj Bobby Ewing dat ze vanaf volgende week 3x per week te beluisteren zijn! In Haarlem is Studio Brussel volgens mij trouwens plots van de kabel verdwenen! handtekeningenactie?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

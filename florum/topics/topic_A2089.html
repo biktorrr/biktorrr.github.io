@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>darwin award nominatie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">darwin award nominatie</h1>
+<p class="tm">1 post · started 2007-07-02 14:07 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070702140700" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-07-02 14:07</span></div>
+  <div class="pb">Man overlijdt na val van kratje <br>Uitgegeven: 1 juli 2007 17:08 <br><br>BREEZAND - Een 48-jarige man is in het Noord-Hollandse Breezand overleden nadat hij een salto wilde maken vanaf een kratje. De politie ging, nadat melding was gemaakt van iemand die onwel was geworden, naar een bollenschuur aan de Molenvaart. <br> <br>Op de plek van het ongeval bleek dat er in de schuur slaapruimtes waren gemaakt voor Poolse landarbeiders. In bed troffen zij een overleden man aan. Dat heeft de politie zondag bekendgemaakt. <br><br><br>Salto <br><br>Een 18-jarige Pool verklaarde dat hij samen met het slachtoffer had gedronken. Het slachtoffer wilde laten zien hoe hij een salto kon maken. De man klom op een kratje, maar viel hier vanaf op de betonvloer. De 18-jarige jongen bracht daarop het slachtoffer naar bed. Een uur later was de man overleden. <br><br>Uit sectie is gebleken dat de man inwendig letsel en inwendige bloedingen had opgelopen bij zijn val. Het incident speelde zich in de nacht van vrijdag op zaterdag af. <br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

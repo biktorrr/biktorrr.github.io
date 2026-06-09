@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Die knieen toch – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Die knieen toch</h1>
+<p class="tm">2 posts · started 2005-04-01 15:35 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050401153500" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2005-04-01 15:35</span></div>
+  <div class="pb">Uit een stukje op VI blijkt dat Joris Mathijssen last heeft van een <a href="http://www.sportsinjuryclinic.net/cybertherapist/front/knee/indexjumpersknee.html"> <i> jumpers knee</i> </a>, een aandoening waar veel (springende) zaalsporters ook last van hebben(gehad) waaronder yours truely toen ik nog heel fanatiek tegen shuttletjes ramde. Goed om te zien dat er nog veel meer en minder gruwelijke dingen met je knie mis kunnen gaan. Mocht men het na de blessure van VVWF en de Hero van Haarlem nog niet hebben begrepen, wees zuunig op je knietjes.<br></div>
+</article>
+<article class="post" data-ts="20050410125700" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2005-04-10 12:57</span></div>
+  <div class="pb">Martijn Meerdink is zaterdag succesvol geopereerd in het Medisch Centrum Alkmaar. De aanvaller van AZ raakte eind maart tijdens een training van het Nederlands elftal geblesseerd. Hij scheurde de kruisbanden in zijn rechterknie.<br><br>Tijdens de operatie werd de gescheurde kruisband vervangen door een pees uit de hamstring van zijn eigen rechterbovenbeen. Deze pees zal de functie van de kruisband moeten overnemen. Geluk bij een ongeluk voor Meerdink: behalve de kruisband raakte er verder niets beschadigd in zijn knie.<br><br>Meerdink zal naar verwachting nog zes tot negen maanden zijn uitgeschakeld. Hij zal revalideren in Alkmaar, onder begeleiding van de medische staf van AZ.<br><br>---<br>misschien moet ie ff bellen met een zekere VVWF.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

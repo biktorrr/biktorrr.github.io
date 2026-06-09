@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>I-Pod – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">I-Pod</h1>
+<p class="tm">4 posts · started 2006-01-26 08:25 by Lh</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060126082500" id="p1">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#1 · 2006-01-26 08:25</span></div>
+  <div class="pb">Ik weet niet wat ervan waar is, dat ga ik dus nu even testen, maar als 9 mensen zich aanmelden via mijn link:<br><br>http://www.doemaardieipod.nl/index.php?r=79460<br>(copy hem helemaal!)<br><br>dan krijg ik een I-pod. MOeite waard om te proberen toch!?<br>Dus meld je aan via mijn link! En ik zal je vertellen of het waar is of niet!<br></div>
+</article>
+<article class="post" data-ts="20060126224700" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2006-01-26 22:47</span></div>
+  <div class="pb">Ha, leuk weer een nieuwe variant van het pyramide spel, altijd prijs dit soort acties.</div>
+</article>
+<article class="post" data-ts="20060129213200" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2006-01-29 21:32</span></div>
+  <div class="ps">ik wil ook een ipod</div><div class="pb">ik ga direkt al mijn adresgegevens in deze spam-database invoeren</div>
+</article>
+<article class="post" data-ts="20060129230400" id="p4">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#4 · 2006-01-29 23:04</span></div>
+  <div class="pb">Misschien kan je die link even doorsturen naar het bestand van je werkgever, dan heeft Lh meteen 170 ipod's te pakken.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

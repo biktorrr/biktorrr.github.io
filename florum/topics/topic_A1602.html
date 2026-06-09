@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FloraBowling (za 22 okt) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FloraBowling (za 22 okt)</h1>
+<p class="tm">6 posts · started 2005-10-21 14:58 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051021145800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-10-21 14:58</span></div>
+  <div class="pb">Het is weer eens tijd voor een Florabowling. Wie gaan er mee (uurtje of 16u) en daarna even ergens eten ofzeau.<br><br>Merl en ik zijn in ieder geval van de party</div>
+</article>
+<article class="post" data-ts="20051021150200" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2005-10-21 15:02</span></div>
+  <div class="pb">Goed idee, maar ga wat andere dingen doen.</div>
+</article>
+<article class="post" data-ts="20051021150300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-10-21 15:03</span></div>
+  <div class="pb">Komt allen!<br><br></div>
+</article>
+<article class="post" data-ts="20051021150500" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2005-10-21 15:05</span></div>
+  <div class="pb">Naar 't schijnt heeft de Penose een lastminute vlucht+hotel Quartier Latin geboekt.</div>
+</article>
+<article class="post" data-ts="20051021182200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-10-21 18:22</span></div>
+  <div class="pb">Hulde voor het initiatief, helaas verblijf ik, zoals reeds vermeld, in onze hoofdstad. Ik moet wat meer aandacht schenken aan kalendertechnische zaken.</div>
+</article>
+<article class="post" data-ts="20051021200700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-10-21 20:07</span></div>
+  <div class="pb">Hmm, ik moet nog wat boeken zien te slijten.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

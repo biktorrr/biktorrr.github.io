@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd JL@u – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd JL@u</h1>
+<p class="tm">5 posts · started 2011-11-17 18:34 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111117183432" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2011-11-17 18:34</span></div>
+  <div class="pb"><p><br>	Lieve <a href="mailto:Jl@u">Jl@u</a>, <span style="color: #fff0f5">gefeliciteerd </span>met je <span style="background-color: #fff0f5">verjaardag</span>!</p><br></div>
+</article>
+<article class="post" data-ts="20111117185404" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2011-11-17 18:54</span></div>
+  <div class="pb">Tiiiiiiiiiiiiiiiiiiiiiiik!</div>
+</article>
+<article class="post" data-ts="20111117200524" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2011-11-17 20:05</span></div>
+  <div class="pb">Feliz Cumpleaños!</div>
+</article>
+<article class="post" data-ts="20111117234308" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2011-11-17 23:43</span></div>
+  <div class="pb">Gefeliciteerd, lieve JLau!</div>
+</article>
+<article class="post" data-ts="20111118012550" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2011-11-18 01:25</span></div>
+  <div class="pb"><img src="http://www.tomrunia.nl/imgscript/img/0837a803.png"></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

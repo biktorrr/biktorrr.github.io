@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mocht je een baantje tegenkomen.. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mocht je een baantje tegenkomen..</h1>
+<p class="tm">9 posts · started 2002-09-20 16:02 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020920160200" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-09-20 16:02</span></div>
+  <div class="pb">waarvan je denkt: "Dagtaimny!"...laat het me even weten.want met mijn aamstaande verhuizing naar Haarlem zal ik hier wat centjes moeten verdienen.<br><br>(ik moet er natuurlijk niet op achteruit gaan. Toppie sfeer, met redelijke druk, delegatie mogelijkheden en minimaal 8.66 p/u kaal.)</div>
+</article>
+<article class="post" data-ts="20020920171200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-09-20 17:12</span></div>
+  <div class="pb">Wat versta jij onder redelijke druk?</div>
+</article>
+<article class="post" data-ts="20020923113500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-23 11:35</span></div>
+  <div class="pb">Dus als je bij Randstad zit, eis je wel delegatie mogelijkheden. De Randstad-medewerker kijkt je vragend aan, waarop je 't voor d'r verduidelijkt met "ja dat ik kan delegeren." </div>
+</article>
+<article class="post" data-ts="20020923131800" id="p4">
+  <div class="ph"><span class="pa">Dj Erik Z</span><span class="pm">#4 · 2002-09-23 13:18</span></div>
+  <div class="pb">thuiszorg?</div>
+</article>
+<article class="post" data-ts="20020923171900" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2002-09-23 17:19</span></div>
+  <div class="ps">treinenmeten</div><div class="pb">bij het Nipo zoeken ze nog treinenmeters, zeker voor Amsterdam, misschien ook voor Haarlem<br><br>info bij Karla op 075 - 6159598 of 06 - 27042650<br><br>bijna niets doen voor iets minder dan 10 per uur</div>
+</article>
+<article class="post" data-ts="20120131112842" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2012-01-31 11:28</span></div>
+  <div class="pb">Kent iemand nog een fysicus?<br><br>http://vacature.monsterboard.nl/Ben-jij-de-Fysicus-die-wij-zoeken-Vacature-Delft-Zuid-Holland-Nederland-106262921.aspx</div>
+</article>
+<article class="post" data-ts="20120131122235" id="p7">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#7 · 2012-01-31 12:22</span></div>
+  <div class="pb">ik zal eens rondvragen op de VU<br><br>gniffel</div>
+</article>
+<article class="post" data-ts="20120131151540" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2012-01-31 15:15</span></div>
+  <div class="pb">Ken je ook R!k Vl3ug3l? Die is al voor me bezig :)</div>
+</article>
+<article class="post" data-ts="20120201110058" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2012-02-01 11:00</span></div>
+  <div class="pb">Thanx trouwens :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

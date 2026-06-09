@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rusty burger a.k.a. South Central – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rusty burger a.k.a. South Central</h1>
+<p class="tm">6 posts · started 2011-10-19 10:57 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111019105705" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2011-10-19 10:57</span></div>
+  <div class="pb"><p><br>	<a href="http://www.parool.nl/parool/nl/224/BINNENLAND/article/detail/2975341/2011/10/19/New-York-Pizza-in-Haarlem-overvallen.dhtml">http://www.parool.nl/parool/nl/224/BINNENLAND/article/detail/2975341/2011/10/19/New-York-Pizza-in-Haarlem-overvallen.dhtml</a></p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20111019122316" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2011-10-19 12:23</span></div>
+  <div class="pb">Ja lekker gek hoor. Wij merkten er niets van tot dat de politie met sirene aangereden kwam. Nasty nasty.<br><br>Volgens mijn timmerman waren het overigens ongetwijfeld M@rr0kanders in glimmende jasjes en bontkragen.</div>
+</article>
+<article class="post" data-ts="20111019122341" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2011-10-19 12:23</span></div>
+  <div class="pb">Neyt! Die hadden vast honger dan...</div>
+</article>
+<article class="post" data-ts="20111019123534" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2011-10-19 12:35</span></div>
+  <div class="pb">Of zin in een lekker kopje thee.</div>
+</article>
+<article class="post" data-ts="20111019125238" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2011-10-19 12:52</span></div>
+  <div class="pb">Het is dan ook lastig om tussen twee culturen op te groeien. En die bontkragen jeuken ook nog eens als de ziekte.</div>
+</article>
+<article class="post" data-ts="20111019125543" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2011-10-19 12:55</span></div>
+  <div class="pb">Is de burgemeester al naar de ouders van de jongelingen geweest om uiting te geven aan zijn medeleven? Het is toch niet niets als de politie je zonen opeens van een overval beschuldigt!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

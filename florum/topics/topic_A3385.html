@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Afbobo – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Afbobo</h1>
+<p class="tm">13 posts · started 2015-08-16 21:18 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20150816211831" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2015-08-16 21:18</span></div>
+  <div class="pb"><p><br>	Komende donderdagavond, zeer waarschijnlijk vanaf een uur of acht in Briljant, zal de jaarlijkse Afbobo plaatsvinden. Wellicht tref ik een aantal van jullie dan.&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20150816223954" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2015-08-16 22:39</span></div>
+  <div class="pb">Ga je er alweer vandoor berney? </div>
+</article>
+<article class="post" data-ts="20150816232707" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2015-08-16 23:27</span></div>
+  <div class="pb">Jeijt!</div>
+</article>
+<article class="post" data-ts="20150816233453" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2015-08-16 23:34</span></div>
+  <div class="pb">1x tik!</div>
+</article>
+<article class="post" data-ts="20150817094453" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2015-08-17 09:44</span></div>
+  <div class="pb">Laag... Ook omdat donderdag ajax jablonec is. Ik ga mn best doen. Neem je mn Peter Buwalda boek mee?</div>
+</article>
+<article class="post" data-ts="20150817120811" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2015-08-17 12:08</span></div>
+  <div class="pb">Ja, doe ik!</div>
+</article>
+<article class="post" data-ts="20150817123920" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2015-08-17 12:39</span></div>
+  <div class="pb">Dude, Ajax - Jablonec of de braafste aller bodes...</div>
+</article>
+<article class="post" data-ts="20150817144805" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2015-08-17 14:48</span></div>
+  <div class="pb">overigens: dabei</div>
+</article>
+<article class="post" data-ts="20150817175738" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2015-08-17 17:57</span></div>
+  <div class="pb">Oke oke oke, Ajax begint al om 7 uur dus, dat kan wel voor de bakker komen. </div>
+</article>
+<article class="post" data-ts="20150817231133" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2015-08-17 23:11</span></div>
+  <div class="pb">Tegen achten is die lullige 0-1 er wel in geprikt</div>
+</article>
+<article class="post" data-ts="20150820135003" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2015-08-20 13:50</span></div>
+  <div class="pb">dabei brave booty</div>
+</article>
+<article class="post" data-ts="20150820192440" id="p12">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#12 · 2015-08-20 19:24</span></div>
+  <div class="pb">Ik ga het helaas niet redden. Bode alvast tot ziens!</div>
+</article>
+<article class="post" data-ts="20150821114607" id="p13">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#13 · 2015-08-21 11:46</span></div>
+  <div class="pb">T was me weer wat. Goede reis, Braafste Bobo</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

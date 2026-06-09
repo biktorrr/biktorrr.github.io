@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bierfestivals – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bierfestivals</h1>
+<p class="tm">7 posts · started 2002-10-21 23:19 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021021231900" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-10-21 23:19</span></div>
+  <div class="pb">Alvast ter voorbereiding:<br>vrijdagavond 1 november en zaterdagmiddag 2 november gaan we naar het bokbierfestival in de Beurs van Berlage in Amsterdam. Ik zou zeggen: Komt allen! <br>informatie hierover is te vinden op:<br><br>http://www.pint.nl/pint/bbf.htm <br><br>zondag 3 november gaan we naar 'de 24 uur van het Belgische Bier' in Antwerpen. Ook hiervoor geldt: gaat allen mee!<br>voor informatie:<br><br>http://www.24-uur.be/<br><br> </div>
+</article>
+<article class="post" data-ts="20021022091500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-10-22 09:15</span></div>
+  <div class="pb">Christus, drie dagen achter elkaar, doe normaal!</div>
+</article>
+<article class="post" data-ts="20021022120300" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-10-22 12:03</span></div>
+  <div class="pb">he gezellig</div>
+</article>
+<article class="post" data-ts="20021025165200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-10-25 16:52</span></div>
+  <div class="pb">denken er verder nog mensen te komen, naar deze fantastische happenings?<br>Naast Holy 1, Tube&CA, Frank Bloem, Fleur, Sander en zijn vriendjes dan.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20021026134300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-10-26 13:43</span></div>
+  <div class="pb">Euhm even kijken:<br><br>vrijdag: nee;<br>zaterdag: nee; en<br>zondag: nee.<br><br></div>
+</article>
+<article class="post" data-ts="20021028114800" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-10-28 11:48</span></div>
+  <div class="pb">drie maal pas</div>
+</article>
+<article class="post" data-ts="20021029140200" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-10-29 14:02</span></div>
+  <div class="pb">ach, dat is nou jammerrrr...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

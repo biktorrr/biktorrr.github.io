@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys TV-topic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys TV-topic</h1>
+<p class="tm">8 posts · started 2010-05-16 14:21 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100516142100" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2010-05-16 14:21</span></div>
+  <div class="pb">Voor de liefhebbers van 'the Wire' (en daar zijn er terechtelijkerwijs nogal veel van hier): ik heb al eerder David Simon's miniseries Generation Kill en The Corner aangeprezen, maar nu heb ik ook de eerste drie afleveringen van <a href="http://www.hbo.com/treme/index.html">'Treme'</a> gezien. <br><br>De serie gaat over de muziekscene van New Orleans, drie maanden na Katrina. Meesterlijke personages, veel slang en dezelfde grote opzet als bij the Wire. Een absolute aanrader!<br><br>***** uit 5</div>
+</article>
+<article class="post" data-ts="20100516205600" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2010-05-16 20:56</span></div>
+  <div class="pb">Een tv-topic. Hmmm... Goed, de series van David Simon zijn meesterlijk, maar een dergelijk topic kan voor politieke doeleinden misbruikt worden. We begeven ons op een hellend vlak. Het begint met ´Treme´, het eindigt met discussies over ´Idol´. Ik heb me ervan weerhouden om een ´Floraboys Avantgardistisch Theater-topic´ en een ´Floraboys Modernistische Opera-topic´ te openen, ik hou me ook op het Floraboys Boeken-topic al een tijdje koest, maar dan moeten provocaties van de andere kant ook uitblijven. </div>
+</article>
+<article class="post" data-ts="20100516211100" id="p3">
+  <div class="ph"><span class="pa">Idols-nazi</span><span class="pm">#3 · 2010-05-16 21:11</span></div>
+  <div class="pb">Idols, lieve Bode.</div>
+</article>
+<article class="post" data-ts="20100517090600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2010-05-17 09:06</span></div>
+  <div class="pb">@nazi:<br>In Nederland ja, in de rest van de wereld heet het "Idol" of "[naam van inwoner van het betreffende land] Idol"<br><br>@Vic:<br>Goed topique, ik zal het eens begluren. Na de softporn met hakkebijlen van Spartacus: Blood & Sand is het weer eens tijd voor wat verhooghends.<br></div>
+</article>
+<article class="post" data-ts="20100517105300" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2010-05-17 10:53</span></div>
+  <div class="pb">Oh brave profesj wat laat je je weer uit de tent lokken met je gevoel voor waarheid en onrecht. Nu heb je dus impliciet weer met iedereen gedeeld dat je niet alleen de Nederlandse Idols kijkt maar ook nog allerlei internationale versies ervan. Lees liever een keer Ulysses op zaterdag avond.<br><br>Voor mensen die net als ik meestal niet zoveel nieuws meekrijgen buiten het florum om:<br><br><object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/58-9Ae9cvDI&hl=nl_NL&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/58-9Ae9cvDI&hl=nl_NL&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object><br></div>
+</article>
+<article class="post" data-ts="20100517152200" id="p6">
+  <div class="ph"><span class="pa">Copycat GN</span><span class="pm">#6 · 2010-05-17 15:22</span></div>
+  <div class="pb"><img>http://images.encyclopediadramatica.com/images/7/75/Grammar_Nazi_Logo.jpg </><br></div>
+</article>
+<article class="post" data-ts="20100526225900" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2010-05-26 22:59</span></div>
+  <div class="pb">http://www.at5.nl/artikelen/41753/azartplein-siddert-voor-killerkraaien<br><br>Tis vreselijk hier op het Azartplein!</div>
+</article>
+<article class="post" data-ts="20150814124833" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2015-08-14 12:48</span></div>
+  <div class="pb">Binnenkort op uw kijkbuis:<br><br><a href="http://www.avclub.com/review/david-simons-show-me-hero-turns-public-housing-ess-223821">David Simon's nieuwste project</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

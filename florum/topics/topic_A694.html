@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jip en Janneke -visie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Jip en Janneke -visie</h1>
+<p class="tm">5 posts · started 2003-01-28 14:23 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030128142300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-01-28 14:23</span></div>
+  <div class="pb"><blockquote><p><h3><br>De toekomst van Haarlem</h3> <br><h4>wat zijn de toekomstplannen van Haarlem, 'Schat aan het Spaarne'?<h4></p><br><p><br>De gemeente heeft in 1999 samen met veel Haarlemmers en niet-Haarlemmers de toekomstvisie van Haarlem tot en met het jaar 2010 geformuleerd. Dit gebeurde in het kader van het grotestedenbeleid. Alle plannen die uit deze visie voortkwamen, staan beschreven in het Ontwikkelingsprogramma Haarlem 2000-2004. De nieuwsbrieven over de toekomstvisie van Haarlem vindt u onder het kopje 'Schat aan het Spaarne'. Daarnaast vindt u enkele links naar relevante sites op het gebied van het grotestedenbeleid. Tenslotte vindt u een voorbeeld van het grotestedenbeleid in de vorm van de zogenaamde digitale trapvelden, die er voor moeten zorgen dat zo veel mogelijk mensen gebruik kunnen maken van de electronische snelweg. Er is ook een link met het digitale trapveld in Haarlem-Oost</p><br><br>Kan iemand mij uitleggen wat een digitaal trapveld is? =Floraboys online gaming?<br><br> <br></div>
+</article>
+<article class="post" data-ts="20030128143500" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2003-01-28 14:35</span></div>
+  <div class="ps">heb toch ff niets beters te doen</div><div class="pb">Nog een leuk weetje over het<small><a href="http://www.haarlem.nl/smartsite1642.dws">park en het beeld </a></small><br></div>
+</article>
+<article class="post" data-ts="20030128150700" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-01-28 15:07</span></div>
+  <div class="pb">terecht.</div>
+</article>
+<article class="post" data-ts="20030129121100" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2003-01-29 12:11</span></div>
+  <div class="pb">ik denk dat een digitaal trapveld een hangplek met internetverbinding is. </div>
+</article>
+<article class="post" data-ts="20030129123500" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-01-29 12:35</span></div>
+  <div class="pb">Digitale trapvelden zijn laagdrempelige gelegenheden in aandachtswijken van de grote steden waar bewoners op een toegankelijke wijze in contact kunnen komen met informatie- en communicatietechnologie (ICT). De digitale trapvelden waren een initiatief van Minister van Boxtel. <br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

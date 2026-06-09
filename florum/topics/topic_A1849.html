@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys balletboys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys balletboys</h1>
+<p class="tm">4 posts · started 2006-09-18 00:33 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060918003300" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-09-18 00:33</span></div>
+  <div class="pb">Uit welingelichte bron heb ik vernomen dat Victor de B. is gesignaleerd bij een prestigieuze balletvoorstelling in A. Conclusies mag eenieder zelf trekken...<br></div>
+</article>
+<article class="post" data-ts="20060918104800" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-09-18 10:48</span></div>
+  <div class="pb">dat hij z'n liefde graag een leuk verjaardagscadeau geeft....?</div>
+</article>
+<article class="post" data-ts="20060918112300" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-09-18 11:23</span></div>
+  <div class="pb">ik ga zo btw nog langs de ikea,zijn er boys die mee willen?<br></div>
+</article>
+<article class="post" data-ts="20060918134700" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-18 13:47</span></div>
+  <div class="pb">boys, jullie moeten nu toch echt eens ophouden met overal mannetjes en vrouwtjes te laten posten om mijn handel en wandel te controleren. Als ik naar de Ikea of naar ballet wil moet ik dat toch zelf weten :'(<br><br>Anders laat ik een algemeen straatverbod afkondigen rond mijn persoontje.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

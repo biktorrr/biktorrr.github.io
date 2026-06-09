@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nobelprijs voor de Vrede: place your bets – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nobelprijs voor de Vrede: place your bets</h1>
+<p class="tm">5 posts · started 2013-10-10 12:37 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20131010123709" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2013-10-10 12:37</span></div>
+  <div class="pb"><p><br>	Booys, morgen wordt de Nobelprijs voor de vrede uitgereikt. Dus: Faites vos jeux!</p><br><p><br>	Wordt het -saai- Malala, of pullen de Zweden een Obamaatje en gaat hij naar iemand die daadwerkelijk niets gepresteerd heeft? Of wordt het toch een veilige keuze voor een <a href="http://en.wikipedia.org/wiki/List_of_people_indicted_in_the_International_Criminal_Court">oorlogsmisdadiger</a>?&nbsp;Kies nu.</p><br><p><br>	Ik hoop Poetin</p><br></div>
+</article>
+<article class="post" data-ts="20131010135011" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2013-10-10 13:50</span></div>
+  <div class="pb">Ik zet mijn geld op Frenk en Rudi. <br><br>Ik snap de verontwaardiging over Putin maar deels, het is natuurlijk een eerstegraads asshole, maar mogelijk heeft hij wel een derde wereld oorlog voorkomen. </div>
+</article>
+<article class="post" data-ts="20131010135840" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2013-10-10 13:58</span></div>
+  <div class="pb">Herstel, Sharon Dijksma heeft net W03 voorkomen door een half miljoen bloembollen cadeau te doen aan Rusland. </div>
+</article>
+<article class="post" data-ts="20131010180415" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2013-10-10 18:04</span></div>
+  <div class="pb">Ik steun de keuze van de Jazz, en zet ook in op Sharon Dijksma. Vanwege haar ongekende verdiensten voor de gemoedsrust van (diezelfde) Jazz.</div>
+</article>
+<article class="post" data-ts="20131011134332" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2013-10-11 13:43</span></div>
+  <div class="pb">Helaas, het zijn de chemo-boys en girls van OPCW. Volgend jaar beter Vladi!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

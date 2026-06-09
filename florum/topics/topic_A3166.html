@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pak aan bitches – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Pak aan bitches</h1>
+<p class="tm">4 posts · started 2011-10-22 13:29 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111022132958" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2011-10-22 13:29</span></div>
+  <div class="pb"><p><br>	Bij deze verklaar ik mijzelf tot winnaar in alle topics waarin nog niet explicitiet een winnaar is aangewezen, zo&#39;n 3050 topics dus. Omdat er eigenlijk weinig nieuwe topics bijkomen lijkt me dit een mokerslag voor de heer Delicieux.</p><br><p><br>	Succes is een keuze, en geluk moet je durven pakken.</p><br></div>
+</article>
+<article class="post" data-ts="20111022170336" id="p2">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#2 · 2011-10-22 17:03</span></div>
+  <div class="pb">Die strijd om de trofeeen is wel erg heftig dit jaar. Ik hoop dat de kerstman dit jaar een paar mooie grote bokalen meeneemt zodat de respectievelijke winnaars deze op de schouw kunnen laten glimmen.<br>Lieve Winnaars van me, ik gun jullie deze prijzen van harte!</div>
+</article>
+<article class="post" data-ts="20111022195150" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2011-10-22 19:51</span></div>
+  <div class="pb">Respect Jazz. Met name je overwinning in het Celeb Spotting-topic. Zomaar in een keer een topic met meer dan 1200 postings winnen. Hoewel dat natuurlijk meer een mokerslag voor de heer de Paris is, die dacht 'm al zo'n beetje binnen te hebben.</div>
+</article>
+<article class="post" data-ts="20111024153307" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2011-10-24 15:33</span></div>
+  <div class="pb">Milou Francken = instant win.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

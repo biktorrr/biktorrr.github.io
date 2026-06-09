@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>28 sept.: Wir sind Helden in Paradiso – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">28 sept.: Wir sind Helden in Paradiso</h1>
+<p class="tm">9 posts · started 2007-07-06 13:52 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070706135200" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2007-07-06 13:52</span></div>
+  <div class="pb">ATTENTIE!! Nota bene op mijn verjaardag speelt Wir sind Helden in Paradiso! Wie willen er mee???<br><br>http://www.ticketmaster.nl/html/evinfo.htmI?CNTX=137363&l=NL&C=<br>http://www.wirsindhelden.de/tours/index/en</div>
+</article>
+<article class="post" data-ts="20070709122900" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-07-09 12:29</span></div>
+  <div class="pb">wie weet ik zal er nog even naar kijken.<br>Ander tipje, nieuwe album van de Pumpkins; Zeitgeist.<br></div>
+</article>
+<article class="post" data-ts="20070709154900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-07-09 15:49</span></div>
+  <div class="pb">Lijkt me leuk!<br><br>Omdat ik Wir sind Helden ontdekte *moet* ik ook eigenlijk wel gaan.</div>
+</article>
+<article class="post" data-ts="20070710195600" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2007-07-10 19:56</span></div>
+  <div class="pb">Ok leuk! Wie nog? Sic? Vic? </div>
+</article>
+<article class="post" data-ts="20070710214600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-07-10 21:46</span></div>
+  <div class="pb">ja klinkt eigenlijk wel leuk, ik ken ze natuurlijk nog van toen ze nog niet bekend waren, dus dat moet kunnen.</div>
+</article>
+<article class="post" data-ts="20070711171900" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2007-07-11 17:19</span></div>
+  <div class="pb">ja hoor, lijkt mij ook leuk</div>
+</article>
+<article class="post" data-ts="20070713092800" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2007-07-13 09:28</span></div>
+  <div class="pb">Toppie! Ik ga kaartjes bestellen. Ik doe ze allemaal inclusief 3 euro maandlidmaatschap Paradiso (anders moet je daar nog voor in de rij gaan staan). Dat wordt dan bij elkander 19.50 euro pepe. Gelieve over te maken naar girorekening 6977611. De kost gaat hier duidelijk voor de baat uit.<br><br>Ik moet nog wel het nieuwe album even kopen.<br><br> </div>
+</article>
+<article class="post" data-ts="20070901162400" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-09-01 16:24</span></div>
+  <div class="pb">Omdat Tijmen niet mee kan heb ik een kaartje over. Is er nog een boy of girl die mee wil? </div>
+</article>
+<article class="post" data-ts="20070902134600" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2007-09-02 13:46</span></div>
+  <div class="pb">lijkt mij wel leuk, ga even kijken of het die dag gaat lukken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

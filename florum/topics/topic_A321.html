@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schele ogen / Nieuwe FPP – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Schele ogen / Nieuwe FPP</h1>
+<p class="tm">7 posts · started 2001-10-26 01:58 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011026015800" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-10-26 01:58</span></div>
+  <div class="pb">Dudez...<br><br>Na uren zwoegen issie dan eindelijk klaar, de nieuwe opzet voor de Floraboys Personal Page. Reden hiervoor was dat het allemaal nogal duffe verhaaltjes waren. Dt gaat dus nu met een beetje geluk veranderen. Opzet is nogal veranderd. Kijk maar ff bij de FPP voor het verschil, je eigen profiel kan je veranderen door op het overzicht te klikken op profiel veranderen. Lijkt me simpel genoeg.<br><br></div>
+</article>
+<article class="post" data-ts="20011026015900" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2001-10-26 01:59</span></div>
+  <div class="pb">Oh ja het coole is dat je zelf een foto kan uploaden. Die mag alleen niet groter zijn dan 50K wat op zich fucking huge is. Lekker opslaan JPG dus dan isser niks aan de hand. Qua formaat kan ik ook aanraden om het allemaal redelijk klein te houden anders ziet het er allemaal een stuk minder relaxed uit.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20011026112400" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2001-10-26 11:24</span></div>
+  <div class="ps">Updated</div><div class="pb">Ok..done</div>
+</article>
+<article class="post" data-ts="20011026150900" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2001-10-26 15:09</span></div>
+  <div class="ps">leuk en aardig</div><div class="pb">ja allemaal leuk en aardig,, ik wil het best veranderen,, maar ehh ik weet geeneens mijn wachtwoord daarvan.. ik heb toen blijkbaar iets verzonnen en dat ben ik dus vergeten.. stom stom stom<br></div>
+</article>
+<article class="post" data-ts="20011026160700" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2001-10-26 16:07</span></div>
+  <div class="pb">Oh ja dat moet ik dus opgaan zoeken zeker.......<br><br>Nou oke dan maar.</div>
+</article>
+<article class="post" data-ts="20011026171400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-10-26 17:14</span></div>
+  <div class="pb">Alsof mijn verhaaltje suf was. Spreek voor je eigen<br>en zeg dat je zelf niet kunt schrijven. Pik omhoog,<br>paardenlul!</div>
+</article>
+<article class="post" data-ts="20011027171800" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2001-10-27 17:18</span></div>
+  <div class="pb">Merlijn het was 01:58 en ik had ongeveer 4 uur zitten programeren. Dat ik vervolgens per ongeluk allemaal schreef in plaats van de meesten is inderdaad een kapitale fout geweest. Zonder twijfel ben jij larger than life als het om amusante stukjes schrijven gaat. Mijn excuses.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

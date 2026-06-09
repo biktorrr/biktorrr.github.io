@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toch maar proberen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Toch maar proberen</h1>
+<p class="tm">1 post · started 2011-03-04 18:42 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110304184251" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2011-03-04 18:42</span></div>
+  <div class="pb">Beste Boys<br><br>Hoe is die ermee?<br>Zoals jullie weten, kom ik eind Maart naar NL voor drie weken, waarschijnlijk voor de laatste keer tot FDK 2011 (of zelfs nog langer). <br>Ik zou dolgraag zo veel mogelijk boys willen zien. <br>Ik denk dat in Haarlem dit het beste zou kunnen.<br><br>Dus: zijn er boys om op of 26 maart of op 1 april (nog even afwachten met andere afspraken) een drankje te gaan doen op de Grote Markt?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

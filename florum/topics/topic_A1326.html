@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>crea concert – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">crea concert</h1>
+<p class="tm">13 posts · started 2004-10-18 09:29 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041018092900" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2004-10-18 09:29</span></div>
+  <div class="pb">Ik speel weer in een orkest! Namelijk het crea orkest. En jullie komen natuurlijk in grote getale naar mij luisteren zaterdag 27 november in de beurs van berlage! Zie verder www.creaorkest.nl</div>
+</article>
+<article class="post" data-ts="20041018104400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-10-18 10:44</span></div>
+  <div class="pb">Leuk! Kun jij een kaartje voor me regelen? Aline heeft een kaartje over, maar als er andere mensen gaan is het wel zo gezellig me daar bij aan te sluiten.</div>
+</article>
+<article class="post" data-ts="20041018114000" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2004-10-18 11:40</span></div>
+  <div class="pb">lijkt me ook leuk. <br>Wordt wel een heel klassiek muzikaal weekendje dan voor mij, die zondag ga ik naar Rigoletto..</div>
+</article>
+<article class="post" data-ts="20041018115500" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-10-18 11:55</span></div>
+  <div class="pb">ahm wel oldskool zo'n CA-Concert! Het lijkt mij ook wel leuk.</div>
+</article>
+<article class="post" data-ts="20041020110300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-10-20 11:03</span></div>
+  <div class="pb">Stukje info-stop van de kant van de Ca?</div>
+</article>
+<article class="post" data-ts="20041020120800" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2004-10-20 12:08</span></div>
+  <div class="pb">Kaartjes zijn via mij verkrijgbaar voor 17 euro (13 euro voor studenten). Sorry tis een beetje duur..., je krijgt wel een pauzedrankje en een biertje/martini na afloop. Verdere info staat op de website! Hoeveel kaartjes moet ik bestellen?</div>
+</article>
+<article class="post" data-ts="20041020194600" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-10-20 19:46</span></div>
+  <div class="pb">Wooow das geen kattepies!</div>
+</article>
+<article class="post" data-ts="20041029101600" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2004-10-29 10:16</span></div>
+  <div class="pb">hoeveel kaartjes moet ik nou regelen? Michiel, Merlijn, Vic, Tube, 4 dus? Of Mer heb jij al een kaartje?<br>Of komen er nog meer? Het belooft een geweldige avond te worden!!</div>
+</article>
+<article class="post" data-ts="20041029105200" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2004-10-29 10:52</span></div>
+  <div class="pb">over duur gesproken... ik moet zelf 160 euro per jaar betalen, dus NIET ZEIKEN :)</div>
+</article>
+<article class="post" data-ts="20041029105700" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2004-10-29 10:57</span></div>
+  <div class="pb">ok, doe mij maar een kaartje dan, ik zeur niet meer<br></div>
+</article>
+<article class="post" data-ts="20041029112100" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2004-10-29 11:21</span></div>
+  <div class="pb">Ja, als het kan wil ik het liefst via jou een kaartje kopen</div>
+</article>
+<article class="post" data-ts="20041029113200" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2004-10-29 11:32</span></div>
+  <div class="pb">okeej...<br><br>doe mij ook maar zo'n kaartje <br><br>:P</div>
+</article>
+<article class="post" data-ts="20041029150300" id="p13">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#13 · 2004-10-29 15:03</span></div>
+  <div class="pb">oke dan! TERECHT!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eten 2 feb. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Eten 2 feb.</h1>
+<p class="tm">5 posts · started 2007-02-01 10:26 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070201102600" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-02-01 10:26</span></div>
+  <div class="pb">Wie gaat er mee eten, vrijdag 2 februari.<br><br><u>Plaats:</u><br>Rond de Nieuwmarkt<br><br><u>Tijd:</u><br>19u<br><br><u>Wie:</u><br>Iedereen is welkom. Mondelinge toezegging van Mitch en Vic zijn reeds binnen!<br><br><u>Motto:</u><br>Roddelen of geroddeld worden</div>
+</article>
+<article class="post" data-ts="20070201164800" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-02-01 16:48</span></div>
+  <div class="pb">ik denk dat het erg waarschijnlijk is dat ik me dan maar tot degenen moet voegen waarover geroddeld gaat worden. <br>Ik ga btw. 'smiddags so-en-so Jazzy helpen slopen.<br></div>
+</article>
+<article class="post" data-ts="20070201165100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-02-01 16:51</span></div>
+  <div class="pb">Helaas, ik ga al met een mooie dame (niet Kirsten overigens) eten. </div>
+</article>
+<article class="post" data-ts="20070201181400" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-02-01 18:14</span></div>
+  <div class="pb">ik ben in, maar bel even want ik kan niet bij het florum (dit is bij Coo thuis gepost)</div>
+</article>
+<article class="post" data-ts="20070201190000" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-02-01 19:00</span></div>
+  <div class="pb">Ik ben er ook!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spacht woordenboek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Spacht woordenboek</h1>
+<p class="tm">4 posts · started 2002-12-12 13:55 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021212135500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2002-12-12 13:55</span></div>
+  <div class="pb">Opdat wij niet vergeten. Poep hier alle termen uit die iets met Spacht te maken hebben. Dan kunnen Vic en moi het in een fijn alfabetische geordende file zetten en kunnen we altijd even onze gedachten opfrissen:<br><br>- Comitted: "Ben je comitted?"<br>- Face the facts<br>- Kamer 6: "Kamertje 6 prominent!", slaapplaats van Tijmen, Jitske, Victor en Merlijn<br>- Timmenizer: zie Tim<br>- J L@u: vriendin van de Timmenizer, zie Timmenizer<br>- K3 koek-biscuit<br>- Pia: "Tutto e sensuale"<br><br>En nu jullie...</div>
+</article>
+<article class="post" data-ts="20021212135800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-12-12 13:58</span></div>
+  <div class="ps">suggestionidas</div><div class="pb">plopperdeplop<br>Bob de bouwer<br>golden Mic<br>rattewiek<br>rat (de of het)<br>rad (de of het)<br>zenmeester (zie tube/ gouden muts)<br>eindhovuh! (zie Stepmaaior en rat/rad)<br>rolmops<br>battletops<br>the godfather (zie trein)<br><br></div>
+</article>
+<article class="post" data-ts="20021212151600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-12-12 15:16</span></div>
+  <div class="pb">Vergeet ook neit:<br><br>- neit: niet<br>- Dobbelkoning: "Dag lieve dobbelkoning"<br>- Frank Sinatra<br>- Internationale<br>- Ouwe schuinsmarcheerder met je paarse pik: zie ook Olivier<br>- Kamer 6b: slaapplaats van Tube, Ca en Holy<br>- Kamer 1: slaapplaats van Michiel, David, Tim, Maior<br>- Figo drinking shirt</div>
+</article>
+<article class="post" data-ts="20021212171400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-12-12 17:14</span></div>
+  <div class="pb">En wat te denken van:<br><br>- DJ Jumpstart<br>- DJ Repeat: Olivier na 1000x Live is Life<br>- Live is Life: <br>- Kips leverworst: "Liever Kips leverworst dan gewone leverworst"<br>- Waterscooter: draagt een toeter, kan door de geluidsbarriere</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

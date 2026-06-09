@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MEGA JACKPOT !! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">MEGA JACKPOT !!</h1>
+<p class="tm">6 posts · started 2008-09-19 15:05 by JOOST</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080919150500" id="p1">
+  <div class="ph"><span class="pa">JOOST</span><span class="pm">#1 · 2008-09-19 15:05</span></div>
+  <div class="pb">Beste boys,<br><br>Jullie hebben allemaal een gigantische MEGA JACKPOT SUPER KANJER gewonnen!<br><br>Zondag middag in de studio super Semitische sunday. <br><br>Tot dan!<br><br></div>
+</article>
+<article class="post" data-ts="20080919154900" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2008-09-19 15:49</span></div>
+  <div class="pb">*schop*</div>
+</article>
+<article class="post" data-ts="20080920065000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2008-09-20 06:50</span></div>
+  <div class="pb">ik ga proberen te komen, maar achter mijn rug om worden er toezeggingen gedaan voor mij om op feestjes aanwezig te zijn.<br>Snel meer.</div>
+</article>
+<article class="post" data-ts="20080920095100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2008-09-20 09:51</span></div>
+  <div class="pb">Ik mag sinds kort mijn eigen feestjes uitkiezen van de Blije. Daarom kom ik misschien wel even langs in de tweede helft <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20080920102000" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2008-09-20 10:20</span></div>
+  <div class="pb">ik ben er.</div>
+</article>
+<article class="post" data-ts="20080920124600" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2008-09-20 12:46</span></div>
+  <div class="pb">tik m aan voor de panda en voor lara.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

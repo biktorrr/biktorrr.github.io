@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Winterberg video Steeeyl – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Winterberg video Steeeyl</h1>
+<p class="tm">8 posts · started 2009-02-27 12:19 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090227121900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-02-27 12:19</span></div>
+  <div class="pb">Speakers op tien en checken die steyl:<br><br><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/yq0rLYGLEbQ&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/yq0rLYGLEbQ&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></div>
+</article>
+<article class="post" data-ts="20090227123100" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-02-27 12:31</span></div>
+  <div class="pb">Respect. Al zie ik een zekere discrepantie tussen jullie skills op de Wiiiiiiiiiiiiiii en op dit filmpje. Dat zal aan mij liggen.</div>
+</article>
+<article class="post" data-ts="20090227125200" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2009-02-27 12:52</span></div>
+  <div class="pb">Ja, mijn salto's staan er helaas niet op, ik moest de camera steeds vasthouden...</div>
+</article>
+<article class="post" data-ts="20090227125500" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2009-02-27 12:55</span></div>
+  <div class="ps">Echt slecht!</div><div class="pb">Dit echt slecht man!</div>
+</article>
+<article class="post" data-ts="20090227130700" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2009-02-27 13:07</span></div>
+  <div class="pb">Leuk de Pit weer eens op het Florum aan te treffen met wat fijne opbouwende kritiek.</div>
+</article>
+<article class="post" data-ts="20090227155300" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2009-02-27 15:53</span></div>
+  <div class="pb">topshit. Jammer inderdaad dat je die 180s niet op de kiek heb gekregen, maar bratwurst mit senf is ook belangrijk.<br></div>
+</article>
+<article class="post" data-ts="20090301223400" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2009-03-01 22:34</span></div>
+  <div class="ps">Raptaal</div><div class="pb">Echt slecht was vroeger nog gewoon tof. Met zo'n vette beat onder de film moet je toch ook de tegenwoordige taal van de straat bespreken. <br><br>Helemaal slecht dus die film!</div>
+</article>
+<article class="post" data-ts="20090302143700" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2009-03-02 14:37</span></div>
+  <div class="pb">slechte shit, ouwe</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

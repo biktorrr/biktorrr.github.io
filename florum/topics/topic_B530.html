@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jossyt: zaalbalpagina – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">jossyt: zaalbalpagina</h1>
+<p class="tm">3 posts · started 2004-10-29 16:42 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041029164200" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2004-10-29 16:42</span></div>
+  <div class="pb">kan jij die even updaten? <br>dat kan ik niet zo makkelijk meer en ik weet alle data van de vorige wedstijd niet.<br><br>toppertjeh</div>
+</article>
+<article class="post" data-ts="20041112130800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-11-12 13:08</span></div>
+  <div class="pb">hallo???<br><br>kan jij de vorige wedstrijd info even erbij kwakken...</div>
+</article>
+<article class="post" data-ts="20041113132400" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2004-11-13 13:24</span></div>
+  <div class="pb">gefixt volgens mijn telling vorige keer:<br><br>3 x maarten<br>1 x Misha<br>1 x Sicco<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

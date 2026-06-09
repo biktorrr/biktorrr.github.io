@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bijnamen-genealogie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bijnamen-genealogie</h1>
+<p class="tm">5 posts · started 2008-12-05 11:36 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081205113600" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2008-12-05 11:36</span></div>
+  <div class="pb">Iemand moet vroeger of later de evolutie van Flora-bijnamen bij gaan houden, voordat we die kennis vergeten zijn. Het zou toch jammer zijn als we bv. over tien jaar niet meer weten waarom Misha eigenlijk ´de Drouille´ genoemd wordt? Ikzelf vroeg me vandaag opeens het volgende af: is er een tijd geweest dat we Sicco ´de Console´ genoemd hebben? Of ben ik nu <br>in de war met ´de Pendule´, en met ´het Kanon´?</div>
+</article>
+<article class="post" data-ts="20081205141700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2008-12-05 14:17</span></div>
+  <div class="pb">Een aardig voorstel, echter het heeft ook wel wat als de bijnamen wat mystiek blijven. Overigens kan ik mij de associatie van de console met cootje niet voor de geest halen.</div>
+</article>
+<article class="post" data-ts="20081205164300" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2008-12-05 16:43</span></div>
+  <div class="pb">Ja, met die mystiek heb je een punt. Misschien kunnen we er dan een geheime codex van maken, een soort verboden, helig boek, evt. in het Latijn(s) gesteld, waar alleen Categorie 1-Floraboys toegang toe hebben. Hoewel ik mezelf daarmee natuurlijk uitsluit.</div>
+</article>
+<article class="post" data-ts="20081207151900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-12-07 15:19</span></div>
+  <div class="pb">Zolang ik leef is alle informatie aanwezig.</div>
+</article>
+<article class="post" data-ts="20081207152800" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2008-12-07 15:28</span></div>
+  <div class="pb">Dat is precies wat ik bedoel. God verhoedde dat er iets met je zou gebeuren. Misschien dat je het gewoon bij moet gaan houden. Zie het als een soort levensverzekering.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

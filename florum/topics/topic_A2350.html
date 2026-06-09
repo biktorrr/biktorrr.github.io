@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bierfestival oid – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bierfestival oid</h1>
+<p class="tm">8 posts · started 2008-04-09 11:44 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080409114400" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2008-04-09 11:44</span></div>
+  <div class="pb">Zag dat we <a href="http://www.zbf.be/nl/index.htm">deze</a> helemaal gemist hebben. Uw onderzoeksjournalist vermoedt dat dat met de voortplantingsdrang van MB te maken heeft. Nu dat is bewerkstelligd, wellicht tijd voor een leuke activiteit in Belgi\ë. Kenners, zijn er nog andere leuke festivallen bij de zuider- dan wel - vanuit mijn perspectief - noorderburen, wellicht iets kleinschaliger?</div>
+</article>
+<article class="post" data-ts="20080409125800" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2008-04-09 12:58</span></div>
+  <div class="pb">JEIT<br><br>http://www.prnh.pint.nl/</div>
+</article>
+<article class="post" data-ts="20080410084300" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2008-04-10 08:43</span></div>
+  <div class="pb">Dit lijkt me wel een aardige gelegenheid:<br>http://www.beerpassion.com/bierpassieweekend.html</div>
+</article>
+<article class="post" data-ts="20080410200900" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2008-04-10 20:09</span></div>
+  <div class="pb">Dat klinkt heel aardig. Alleen de locatie (Hilton) lijkt me niet bieregezellig. Maar zeker een optie.</div>
+</article>
+<article class="post" data-ts="20080411084100" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2008-04-11 08:41</span></div>
+  <div class="pb">geen meibockfestival?<br>18 Mei @ brouwerij de Prael </div>
+</article>
+<article class="post" data-ts="20080411091600" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2008-04-11 09:16</span></div>
+  <div class="pb">persoonlijk meer zin in een weekendje Belgi\ë</div>
+</article>
+<article class="post" data-ts="20080411114000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2008-04-11 11:40</span></div>
+  <div class="pb">18 mei zijn wij in de Provence</div>
+</article>
+<article class="post" data-ts="20080411120000" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2008-04-11 12:00</span></div>
+  <div class="pb">Volgens mij is het Hilton alleen de lokatie voor de VIP-night. Lokatie=Groenplaats. Dat is wel centraal. Maar de info is wat summier op die site.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

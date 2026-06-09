@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zaterdag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zaterdag</h1>
+<p class="tm">12 posts · started 2008-03-28 17:31 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080328173100" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2008-03-28 17:31</span></div>
+  <div class="pb">Hebben sommige mensen zin om a.s. zaterdag (beter bekend als morgen) nog zin om ergens wat te gaan drinken in de avond?</div>
+</article>
+<article class="post" data-ts="20080329015400" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2008-03-29 01:54</span></div>
+  <div class="pb">Zaterdag, beter bekend als Saetredach, inmiddels beter bekend als vandaag: moi is van het padje af. Erg hoogh, maar morgen, oftewel vandaag geen zuypfestijn voor ondergetekende... Wel plezier aan de andere cafe-gangers gewenst!<!--91.141.140.157--></div>
+</article>
+<article class="post" data-ts="20080329140500" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2008-03-29 14:05</span></div>
+  <div class="pb">misschien iets te voortvared geweest.<br><!--62.131.87.44--></div>
+</article>
+<article class="post" data-ts="20080329185000" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2008-03-29 18:50</span></div>
+  <div class="pb">Kirsten is nog steeds erg ziek, dus dokter Holy blijft nog even zijn ding doen.<!--87.212.29.181--></div>
+</article>
+<article class="post" data-ts="20080330010700" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2008-03-30 01:07</span></div>
+  <div class="pb">een handoplegging zou voldoende moeten zijn<!--83.202.123.97--></div>
+</article>
+<article class="post" data-ts="20080330172100" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2008-03-30 17:21</span></div>
+  <div class="pb">Normaal straal ik inderdaad even vanuit mijn werk, echter het is nu zo vreselijk dat een handoplegging geen soelaas biedt. Permanente mond-op-mond beademing is het laatste redmiddel.<!--87.212.29.181--></div>
+</article>
+<article class="post" data-ts="20080331210600" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2008-03-31 21:06</span></div>
+  <div class="pb">lage tijding, zaterdag ga ik niet meer redden helaas..</div>
+</article>
+<article class="post" data-ts="20080401091100" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-04-01 09:11</span></div>
+  <div class="pb">Maar is Kirsten nou serieus ziek of is dat gewoon een spelletje wat jullie spelen?</div>
+</article>
+<article class="post" data-ts="20080401100000" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-04-01 10:00</span></div>
+  <div class="pb">Doktertje aan het spelen zeker</div>
+</article>
+<article class="post" data-ts="20080401103300" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2008-04-01 10:33</span></div>
+  <div class="pb">Kirsten zit nog steeds thuis, het overgeven is gelukkig voorbij. De fase van meer dan beschuit en soep eten heeft ze nog niet afgerond.</div>
+</article>
+<article class="post" data-ts="20080401132500" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2008-04-01 13:25</span></div>
+  <div class="pb">Laag, beterschap!</div>
+</article>
+<article class="post" data-ts="20080401141800" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2008-04-01 14:18</span></div>
+  <div class="pb">beterschap Kirrie!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VOORAANKONDIGING – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VOORAANKONDIGING</h1>
+<p class="tm">3 posts · started 2004-04-15 17:32 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040415173200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-04-15 17:32</span></div>
+  <div class="pb"><center><H3> BINNENKORT IN DIT THEATER </h3></center><br><br>                      <center>het</center><br><center><H2>FLORABOYS EK-2004 VOETBALPOULE SPEL</H2></center><br><br>voorspel de toto van 24 wedstrijden!<br>voorspel de kwart- halve- en hele- finalisten!<br>voorspel de nieuwe Europeesch Kampioen!<br>voorspel de topscorer!<br>spanning! sensatie! <br>een nieuwe schitterend ontworpen website!<br>een nieuwe kans om je geld aan sicco te geven!<br><br>Meer info volgt.. <br><br>De redactie staat altijd open voor suggesties omtrend inzet, spelregels en gemierenneuk</div>
+</article>
+<article class="post" data-ts="20040415173300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-04-15 17:33</span></div>
+  <div class="ps">de lonely drinker zegt:</div><div class="pb"><img src="http://www.jm-p.nl/flora/onzin/ldmeedoen.jpg"><br></div>
+</article>
+<article class="post" data-ts="20040415175700" id="p3">
+  <div class="ph"><span class="pa">Mkl</span><span class="pm">#3 · 2004-04-15 17:57</span></div>
+  <div class="pb">Sorry Lonely Drinker, het EK spel is alleen voor echte Floraboys.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

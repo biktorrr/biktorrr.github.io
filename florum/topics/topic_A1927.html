@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hoe mijn nachtrust wreed verstoord werd door Rotterdamse pseudo-supporters – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hoe mijn nachtrust wreed verstoord werd door Rotterdamse pseudo-supporters</h1>
+<p class="tm">8 posts · started 2006-11-30 23:35 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061130233500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-11-30 23:35</span></div>
+  <div class="pb">Was vanavond eens een keertje lekker vroeg naar bed gegaan om wat bij te slapen, word ik uit bed gebeld door de redactie in Den Haag omdat dat tuig uit Rotterdam zich weer eens misdraagt. In Frankrijk nog wel, Nancy om precies te zijn. Gelukkig hoefde ik er niet stante pede heen, maar alleen even een eerste stukje schrijven over reacties in Franse pers. (over 'Nederlandse pseudo-supporters'). Uitsluiting van alle competities lijkt me een effici\ënte oplossing. Voetballend voegen ze toch allang niets meer toe (neem dan Ajax de laatste weken + vanavond...)</div>
+</article>
+<article class="post" data-ts="20061201110200" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-12-01 11:02</span></div>
+  <div class="pb">echt zo ongelofelijk stupide, blijkbaar hebben deze pseudosupporters het korte termijn geheugen van een goudvis. lekker als je nog een voorwaardelijke staf op een laag pitje heb staan. Zoveelste keer rellen zal wel uitsluiting tot gevolg hebben. Het nederlandse voetbal dankt je.<br></div>
+</article>
+<article class="post" data-ts="20061201112000" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2006-12-01 11:20</span></div>
+  <div class="pb">Wees blij dat je er niet heen hoefde. <br>Het zat er trouwens wel een beetje aan te komen: iedere gefrusteerde hooligan met een stadionverbod in Nederland kon gewoon een paar uurtjes rijden, een kaartje voor de wedstrijd kopen en de boel gaan slopen. </div>
+</article>
+<article class="post" data-ts="20061201114100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-12-01 11:41</span></div>
+  <div class="pb">prettig wel dat Feyenoord de ondergang in wordt geslingerd door zijn eigen aanhang en niet door een andere, dat geeft weer zoveel spanning. <br><a href="http://www.geencommentaar.nl/index.php/2006/12/01/domme_rukkers_op_ondergang_feyenoord_uit">Neanderthalers: bedankt!</a></div>
+</article>
+<article class="post" data-ts="20061201135100" id="p5">
+  <div class="ph"><span class="pa">Spuyt12</span><span class="pm">#5 · 2006-12-01 13:51</span></div>
+  <div class="ps">Ah!</div><div class="pb">Nu zie ik de link Parijsblog - Pokey <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20061201143700" id="p6">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#6 · 2006-12-01 14:37</span></div>
+  <div class="pb">damn, ze zijn erachter...</div>
+</article>
+<article class="post" data-ts="20061201144000" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2006-12-01 14:40</span></div>
+  <div class="pb">Daar gaat je bron voor creatieve uitspattingen!</div>
+</article>
+<article class="post" data-ts="20061201150600" id="p8">
+  <div class="ph"><span class="pa">Spuyt12</span><span class="pm">#8 · 2006-12-01 15:06</span></div>
+  <div class="ps">Ach</div><div class="pb">De link was een dead-giveaway <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br>(of hoe je dat ook spelt)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

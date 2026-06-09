@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>22/23 juni ballen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">22/23 juni ballen?</h1>
+<p class="tm">8 posts · started 2002-06-20 10:04 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020620100400" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-06-20 10:04</span></div>
+  <div class="pb">Wie komen er voetballen dit weekend? </div>
+</article>
+<article class="post" data-ts="20020620101400" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2002-06-20 10:14</span></div>
+  <div class="pb">me not</div>
+</article>
+<article class="post" data-ts="20020620122100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-06-20 12:21</span></div>
+  <div class="pb">ik ben er zaterdag niet (filmen bij de blije),<br>maar zondag gewoon weer wel</div>
+</article>
+<article class="post" data-ts="20020620140900" id="p4">
+  <div class="ph"><span class="pa">WBM</span><span class="pm">#4 · 2002-06-20 14:09</span></div>
+  <div class="ps">Knalle</div><div class="pb">Dag beesten,<br>Als het ff meezit ga ik minstens een x ballen, denk zaterdag al. Heb gisteren mijn voeten aan gort gebald op de zandvoortse schelpen maar dat smaakte juist naar meer ballen. Dus zaterdag waarschijnlijk.<br>Griotten, Wybren</div>
+</article>
+<article class="post" data-ts="20020620150200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-06-20 15:02</span></div>
+  <div class="pb">whoooh, Wybren op 't Florum, das een tijd geleden!<br><br>even een kanttekening: zaterdagmiddag is er wel een kwartfinale natuurlijk en wel Senegal-Turkije. Dan kunnen we daarna pas toeterend in onze bolides naar het Florapark.<br><br>zonder penalty's betekent dat 15.30 uur Florapark d.w.z. nog 2,5 uur tijd om te ballen.</div>
+</article>
+<article class="post" data-ts="20020621120700" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-06-21 12:07</span></div>
+  <div class="pb">nekblessure, hellaas.</div>
+</article>
+<article class="post" data-ts="20020621121400" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2002-06-21 12:14</span></div>
+  <div class="pb">Ja hoor, present. Ik heb m'n homeopathische huisarts gebeld en die vond het geen punt een aantal spuiten voor te schrijven voor m'n grote teen. Hij zei: "Je staat op het punt van doorbreken, je moet nu zo veel mogelijk spelen." Hij is tevens m'n manager. Josit Spuite: misschien ook goede huisarts voor jou?</div>
+</article>
+<article class="post" data-ts="20020621225800" id="p8">
+  <div class="ph"><span class="pa">tuuT</span><span class="pm">#8 · 2002-06-21 22:58</span></div>
+  <div class="pb">ik deel de mening van Merlijns arts die waarschijnlijk vroeger werkte voor een of andere wielrenploeg met lekekr veel wit spul.<br>Ik ben er ook morgen</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

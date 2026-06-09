@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen divers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen divers</h1>
+<p class="tm">3 posts · started 2016-05-18 17:20 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160518172039" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2016-05-18 17:20</span></div>
+  <div class="pb">1. Ik heb zaterdag weer meegebald met een aantal knaquilles op het veld tegenover de schaatsbaan. Zijn er boys die een keer aan willen haken? Zat ochtend 10 uur.<br><br>2. Ik heb bij het boeken van een vakantie niet gerealiseerd dat die vakantie overlapt met de traditie om samen met BD de CL finale te kijken. Waarvoor excuus.<br><br>3. Moeten we geen poule opstarten voor het ek? Zonder oranje is dat de enige manier om er nog iets van te maken toch?<br><br></div>
+</article>
+<article class="post" data-ts="20160520000901" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2016-05-20 00:09</span></div>
+  <div class="pb">Misschien met een variant waarin degenen die Nederland toch als kampioen hebben (de eerder besproken Tukrse burgeroorlog-variant) i.i.g. toch een paar punten krijgen. </div>
+</article>
+<article class="post" data-ts="20160520134553" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2016-05-20 13:45</span></div>
+  <div class="pb">Ik probeer het EK te ontkennen. Als het niet gebeurt dan is het ook niet erg dat wij er niet bij zijn.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

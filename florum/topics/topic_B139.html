@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>inschrijvin Floraboys 02/03 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">inschrijvin Floraboys 02/03</h1>
+<p class="tm">8 posts · started 2002-08-12 17:14 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020812171400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-08-12 17:14</span></div>
+  <div class="pb">dat ik daar dus nog geld van krijg, dat wil zeggen de teambijdrage. De individuele kosten moet iedereen zelf betalen op het moment dattie een USC-pas gaat aanskaffen<br><br>de betalers zijn: Merlijn, Tim, Tijmen, Frank P, Sander, Oli4/Holy/WJ, Mark, en Ik<br><br>Dat zijn acht mensen, kosten 75 eurootjes delen door 8 is<br>E 9.37 (naar beneden afgerond, ja das echt heel vriendelijk van moi). Geef dat maar eens snel aan Viktor.<br><br>Oli4/Holy/Wj wie betaald en hoeveel en hoe regelen jullie het? en Frank kan jij zorgen dat Mark Vla af en toe dit leest en dit bericht in ieder geval krijgt...<br><br></div>
+</article>
+<article class="post" data-ts="20020812171500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-08-12 17:15</span></div>
+  <div class="pb">inschrijvin met een G, betaald met een t en merlijn heeft al betaald en ik ook bij het weggetje</div>
+</article>
+<article class="post" data-ts="20020812181600" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-08-12 18:16</span></div>
+  <div class="pb">Wat is je bankrekeningnummer Victor dan zal ik die 9,37 euro die jij als barmhartige samaritaan naar beneden hebt afgerond (grote klasse!!) even overmaken. Ik zal ook mark even op dit slechte nieuws wijzen.</div>
+</article>
+<article class="post" data-ts="20020812182400" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-08-12 18:24</span></div>
+  <div class="ps">emailadres van</div><div class="pb">mark vlaar is mark_vlaar@hotmail.com<br>voor de echte diehards die het willen weten</div>
+</article>
+<article class="post" data-ts="20020812182400" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-08-12 18:24</span></div>
+  <div class="ps">wanneer eerste</div><div class="pb">pot?</div>
+</article>
+<article class="post" data-ts="20020814112400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2002-08-14 11:24</span></div>
+  <div class="pb">O ja, die E 9.37 is voor het hele jaar natuurlijk.<br>Ik stel voor dat WJ en ik die dan door 2 delen en allebei de helft betalen. Aangezien ik nog centjes aan WJ moet geven kan ik dat mooi ff doorrekenen. 9.37 / 2 = 4.685<br>dan krijgt WJ nog een beetje geld van mij een maak ik die 9.37 naar PTC over als hij zijn giro geeft. WJ OK?</div>
+</article>
+<article class="post" data-ts="20020815115500" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2002-08-15 11:55</span></div>
+  <div class="pb">prima laat de rest maar zitten hoor Misha</div>
+</article>
+<article class="post" data-ts="20020815125700" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-08-15 12:57</span></div>
+  <div class="pb">oja me gironummer is 6201215</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ongeneerd – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ongeneerd</h1>
+<p class="tm">5 posts · started 2003-12-17 10:04 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031217100400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-12-17 10:04</span></div>
+  <div class="pb">rock on, stukje 'help-je-vrienden-aan-bizznizz'. Ik ga meteen 100 energybars bestellen.</div>
+</article>
+<article class="post" data-ts="20031217101600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-12-17 10:16</span></div>
+  <div class="pb">Ik vind 'm mooi!</div>
+</article>
+<article class="post" data-ts="20031217102500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-12-17 10:25</span></div>
+  <div class="pb">Ziet er cheique uit. Chapot! Ik vind vooral de Leppin Energy Bar voor E 46,- erg aanlokkelijk. Daarmee kan ik op de golfcourse tenminste gezien worden! </div>
+</article>
+<article class="post" data-ts="20031217104900" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-12-17 10:49</span></div>
+  <div class="pb">ik zit erover te denken om drie paar 'tights' bestellen, daarmee kan je pas gezien worden.<br><br>Mooiste zin van de site:<br>"Wij hebben vele jaren ervaring op atletiekgebied en weten dus welke produkten goed zijn."<br><br>Ziet er allemaal strak uit Josit S.!</div>
+</article>
+<article class="post" data-ts="20031217112400" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2003-12-17 11:24</span></div>
+  <div class="pb">moet natuurlijk ongegeneerd zijn, maar dat hadden jullie al gezien</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

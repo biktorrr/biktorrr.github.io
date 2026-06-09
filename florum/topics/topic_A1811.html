@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Slaap zacht lieve vriend – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Slaap zacht lieve vriend</h1>
+<p class="tm">7 posts · started 2006-07-15 16:18 by Louis</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060715161800" id="p1">
+  <div class="ph"><span class="pa">Louis</span><span class="pm">#1 · 2006-07-15 16:18</span></div>
+  <div class="pb">Slaap zacht lieve vriend..<br>Dit einde had je niet verdiend..<br><br>Je bewoog je op de verkeerde weg..<br>Daarnaast had je simpele pech..<br><br>Het natrappen van BikT werd je fataal..<br>De ontreddering bij ons was totaal..<br><br>Dat je nu niet meer bij ons bent was nergens voor nodig..<br>Deze pijn dus overbodig..<br><br>Hulpeloos zagen we je drijven..<br>Nu kunnen we alleen nog maar over je schrijven..<br><br>Vol afschuw zagen wij het noodlot beslissen..<br>Als Seedorf een penalty, zullen wij je missen..<br><br>Slaap zacht lieve vriend<br><br>Floraboys cupfighters</div>
+</article>
+<article class="post" data-ts="20060715161900" id="p2">
+  <div class="ph"><span class="pa">Louis</span><span class="pm">#2 · 2006-07-15 16:19</span></div>
+  <div class="pb">	<img src="rip_big.jpg" border="0"></div>
+</article>
+<article class="post" data-ts="20060715161900" id="p3">
+  <div class="ph"><span class="pa">Louis</span><span class="pm">#3 · 2006-07-15 16:19</span></div>
+  <div class="pb">	<img src="http://www.jm-p.nl/flora/rip_big.jpg" border="0"><br></div>
+</article>
+<article class="post" data-ts="20060715204200" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-07-15 20:42</span></div>
+  <div class="pb">respect aan Louis, hij weet als geen ander de gevoelens van alle FLoraboys om te zetten in woorden.</div>
+</article>
+<article class="post" data-ts="20060716131000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-07-16 13:10</span></div>
+  <div class="pb">helaas. er was niets dat we voor 'm hadden kunnen doen.<br><br><br><br>toch?</div>
+</article>
+<article class="post" data-ts="20060717115500" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2006-07-17 11:55</span></div>
+  <div class="pb">vraag dat aan de BigT</div>
+</article>
+<article class="post" data-ts="20060717120900" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2006-07-17 12:09</span></div>
+  <div class="pb"><i>Een stukje psychologisch zelfhulp van het Internet geplukt:</i><br><br>De vier stadia van een rouwproces bestaan uit:<br><br>1. Een periode van verdoving en ontkenning. <br>2. Een periode van opstand en agressie. <br>3. Een periode van moedeloosheid, depressie en passief zijn.<br>4. Een zoeken en een bereidheid om nieuwe wegen in te slaan.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

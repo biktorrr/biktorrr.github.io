@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tijmen is – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tijmen is</h1>
+<p class="tm">3 posts · started 2002-04-16 15:32 by het fout meezingen zat</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020416153200" id="p1">
+  <div class="ph"><span class="pa">het fout meezingen zat</span><span class="pm">#1 · 2002-04-16 15:32</span></div>
+  <div class="pb">zo..of alles te vervangen door Commanderly-like gefluit of huhjehuhjehuje-hee<br><br><b>The Riddle</b><br><br>(orginele versie voor hen die dat niet weten, als het je boeit,is van Nik Kershaw)<br> <br><i>i got two strong arms<br>blessings of babylon<br>with time to carry on<br>and try<br>for sins and alarms<br>so to america the brave<br>wise men save<br><br>near a tree by a river<br>there's a hole in the ground<br>where an old man of aran<br>goes around and around<br>and his mind is a beacon <br>in the veil of the night<br>for a strange kind of fashion<br>there's a wrong and a right<br>but he'll never, never fight over you<br><br>i got plans for us<br>nights in the scullery<br>and days instead of me<br>i only know what to discuss<br>of for anything but light<br>wise men fighting over you<br><br>it's not me you see<br>pieces of valentine<br>with just a song of mine<br>to keep from burning history<br>seasons of gasoline and gold<br>wise men fold<br><br>near a tree by a river<br>there's a hole in the ground<br>where an old man of aran<br>goes around and around<br>and his mind is a beacon <br>in the veil of the night<br>for a strange kind of fashion<br>there's a wrong and a right<br>but he'll never, never fight over you<br><br>i got time to kill<br>sly looks in corridors<br>without a plan of yours<br>a blackbird sings on bluebird hill<br>thanks to the calling of the wild<br>wise mens child<br><br>near a tree by a river<br>there's a hole in the ground<br>where an old man of aran<br>goes around and around<br>and his mind is a beacon <br>in the veil of the night<br>for a strange kind of fashion<br>there's a wrong and a right<br>but he'll never, never fight over you</i><br><br><br></div>
+</article>
+<article class="post" data-ts="20020416153600" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-04-16 15:36</span></div>
+  <div class="pb">Lalalalalalalaala ???</div>
+</article>
+<article class="post" data-ts="20020416154900" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-04-16 15:49</span></div>
+  <div class="pb">ik dacht dat het meer iets was van LAA LAA LAALAAAAAAAH</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

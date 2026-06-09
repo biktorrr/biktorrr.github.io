@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UP UP DATE JOOST – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">UP UP DATE JOOST</h1>
+<p class="tm">1 post · started 2001-12-21 21:31 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011221213100" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2001-12-21 21:31</span></div>
+  <div class="pb">Ik ben vanmiddag bij joost in het amc langs geweest. Hij knapte al weer wat op, maar had toch nog wel last van zijn buik. Tja wat wil je met een litteken nog groter dan eric z zijn lid.. maar   ok, joost is dus nu wel weer fit genoeg, om gebeld en lastig gevallen te worden dus je kan hem even een belletje geven. Hij gaat waarschijnlijk morgen of overmorgen naar huis, nouja naar ouders voor de kerst om aan te sterken, en dan weer knallend het nieuwe jaar in.!!!<br><br>mzzl frank</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

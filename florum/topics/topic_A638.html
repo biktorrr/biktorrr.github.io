@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Van twee naar nul honden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Van twee naar nul honden</h1>
+<p class="tm">10 posts · started 2002-11-22 12:47 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021122124700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-11-22 12:47</span></div>
+  <div class="pb">Gister hebben we, twee maanden na Madoc, ook Nox moeten laten inslapen.<br><br>De laatste paar weken was hij al heel ziek (misschien hebben jullie dat nog gezien) en lusteloos. Na scans en testen bleek woensdag dat hij lymfeklier kanker had. <br><br>Sniemooi.</div>
+</article>
+<article class="post" data-ts="20021122155600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-11-22 15:56</span></div>
+  <div class="pb">gecondoleerd</div>
+</article>
+<article class="post" data-ts="20021122160400" id="p3">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#3 · 2002-11-22 16:04</span></div>
+  <div class="pb">ook mijn condoleances. Ik zal ze missen.<br></div>
+</article>
+<article class="post" data-ts="20021125114300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-11-25 11:43</span></div>
+  <div class="pb">fuck, <br>in loving memory, <br><br>Nox was ook een beetje mijn hond..<br><br></div>
+</article>
+<article class="post" data-ts="20021201144200" id="p5">
+  <div class="ph"><span class="pa">Anna</span><span class="pm">#5 · 2002-12-01 14:42</span></div>
+  <div class="ps">RIP NOX</div><div class="pb">:'(</div>
+</article>
+<article class="post" data-ts="20021204114300" id="p6">
+  <div class="ph"><span class="pa">L@u</span><span class="pm">#6 · 2002-12-04 11:43</span></div>
+  <div class="pb">condoleances van mij</div>
+</article>
+<article class="post" data-ts="20021212131200" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2002-12-12 13:12</span></div>
+  <div class="pb"><blockquote><br>Goed nieuws en slecht:<br><br>Het goeie nieuws:<br>..'we' krijgen twee nieuwe puppydoggies.<br>een mix van een bruine labrador met iets anders wat boven op haar is gesprongen vlak nadat ze een nestje had gehad..deze zijn dus bonus en zonder stamboom en stuff (alleen maar goed want al die labrodors en golden retreviers en herders in Nederland zijn zo doorgefokt dat alles wat je kruist al inteelt is). We krijgen een melk- en puurchocolade kleurige.<br><br>Het slechte nieuws:De namen<br>1) Duncan (ok, is nog te doen)<br>2) ..McDuff....<br><br>M.a.w. Vanaf de 29e kan men Dunkie en Duffie bewonderen aan de kleverparkweg.<br> </div>
+</article>
+<article class="post" data-ts="20021213121300" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2002-12-13 12:13</span></div>
+  <div class="pb">geloof het of niet maar ons ouders hond heet ook Dunkie en da's een prachtbeest...</div>
+</article>
+<article class="post" data-ts="20021213123300" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2002-12-13 12:33</span></div>
+  <div class="pb">Die namen zijn hemeltergend, maar wees blij dat je ouders jou niet zo genoemd hebben.</div>
+</article>
+<article class="post" data-ts="20021216125900" id="p10">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#10 · 2002-12-16 12:59</span></div>
+  <div class="pb">duf en dunk is wel ok qua naam...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>avondje(s) Miss Italia? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">avondje(s) Miss Italia?</h1>
+<p class="tm">11 posts · started 2004-09-06 21:39 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040906213900" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2004-09-06 21:39</span></div>
+  <div class="pb">eerste citaatje:<br><br>Zo maakt Discovery Channel nu deel uit van het pakket en keert per 15 september 2004 de eerder "afgevallen" zender RAI Uno weer terug. <br>De terugkeer van Rai Uno werd mogelijk doordat de eerder door de APR geadviseerde zenders ARTE en Animal Planet om verschillende redenen niet doorgegeven konden worden. <br><br>tweede citaatje:<br><br>Programma Miss Italia 2004<br>15/16/18/19 Settembre<br>Palazzetto dello Sport. Serate finali. Conduce Carlo Conti.<br><br>Lijkt me wel terecht om hier wat van met de Floraboys te kijken onder het genot van een glaasje Italiaanse wijn.  Merl, Sicco, Holy, wat jullie? (ik denk namelijk niet dat de inrichting van mijn nieuwe onderkomen dan al zover gevorderd zal zijn)<br></div>
+</article>
+<article class="post" data-ts="20040906214400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2004-09-06 21:44</span></div>
+  <div class="pb">oh ja, voor meer informazione:<br>http://www.missitalia.rai.it/</div>
+</article>
+<article class="post" data-ts="20040906221400" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2004-09-06 22:14</span></div>
+  <div class="pb">even inkoppen: meneer is zeker vrijgezel?</div>
+</article>
+<article class="post" data-ts="20040906221500" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2004-09-06 22:15</span></div>
+  <div class="pb">Vier dagen ook meteen weer. Dat soort evenementen weten ze daar wel te organiseren. </div>
+</article>
+<article class="post" data-ts="20040906233900" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-09-06 23:39</span></div>
+  <div class="pb">Oli4, dit is natuurlijk pure interesse in de Italiaanse cultuur... </div>
+</article>
+<article class="post" data-ts="20040907090800" id="p6">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#6 · 2004-09-07 09:08</span></div>
+  <div class="pb">de vrijdag is ook floraboysballen..</div>
+</article>
+<article class="post" data-ts="20040907102500" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-09-07 10:25</span></div>
+  <div class="pb">die avond heeft de organisatie van dit evenement dan dus ook vrij gehouden...die donderdag is trouwens wel Odd Grenland-Feyenoord</div>
+</article>
+<article class="post" data-ts="20040907104100" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2004-09-07 10:41</span></div>
+  <div class="pb">In mijn herinnering was eigenlijk alleen de finale echt geweldig, de 'voorrondes' zijn toch niet meer het kijken waard dan Feyenoord? (Dit zeggende met uiteraard alle respect voor MissItalia)</div>
+</article>
+<article class="post" data-ts="20040907120500" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2004-09-07 12:05</span></div>
+  <div class="pb">wat het dus is: dit zijn de finalerondes, de voorrondes zijn natuurlijk al eerder he. Maar de zaterdag en vooral de zondagavond hebben mijn voorkeur natuurlijk gezien het enorme belang dat er dan op het spel staat. </div>
+</article>
+<article class="post" data-ts="20040907120600" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2004-09-07 12:06</span></div>
+  <div class="pb">"serate finale"= finale avonden. Een finale van Miss Italia kan natuurlijk nooit op een avond plaatsvinden...</div>
+</article>
+<article class="post" data-ts="20040907122100" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2004-09-07 12:21</span></div>
+  <div class="pb">Ik denk dat ik wel wat avondjes hiervoor kan vrijhouden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

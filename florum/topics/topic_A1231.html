@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abwehr-Opa in Bild – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Abwehr-Opa in Bild</h1>
+<p class="tm">3 posts · started 2004-06-24 12:12 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040624121200" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-06-24 12:12</span></div>
+  <div class="pb">3:0 gegen Lettland<br>Holland lacht uns aus<br><br><br>So macht man das, Deutschland! Wir konnten die Letten nicht pl\ätten. Holland aber drehte den Au\ßenseiter durch die Mangel. 3:0 wurde Lettland weggebügelt.<br>Holland steht im Viertelfinale. Und lacht uns aus. Immer wieder sangen die Fans: Schade, Deutschland, alles ist vorbei! Holland jetzt gegen Schweden im Viertelfinale.Hohn und Spott. Dabei hatte unser Nachbar doch vor dem Anpfiff so viele Sorgen. Alle fragten sich: Was macht Dick Advocaat diesmal alles falsch?<br><br>Der Oranje-Trainer stand in der Kritik  weil er immer wieder wirr gewechselt hatte. Auch diesmal baute er um, brachte Abwehr-Opa De Boer (34) und Reiziger.<br><br>25 000 Zuschauer in der Fels-Arena in Braga. Die Letten gleich mit dem Rücken zur (Fels)- Wand. Nach 28 Sekunden jagt Seedorf einen Schuss übers Tor.<br><br>Der Druck w\ächst. Beim 1. Mal scheitert van Nistelrooy. noch (13.). Dann aber schl\ägt er doppelt zu. <br><br>Nach Attacke von Astafjevs an Davids gibt Schiri Nielsen (D\änemark) Strafsto\ß  klare Fehlentscheidung. van Nistelrooy trifft zum 1:0 (27.). Schönen Dank, Herr Nielsen!<br><br>Die Freude noch verhalten. Plötzlich aber bricht der Jubel aus und die Oranje-Welle schwappt los. 1:1 in Lissabon  jetzt steht Holland im Viertelfinale.<br><br>Dann wieder van Nistelrooy. Nach Cocu-Vorlage nickt der ManU-Star zum 2:0 ein (35.). Sein 4. EM-Treffer.<br><br>Und die Letten? Nicht mehr zu retten. Zu einfallslos, zu kraftlos. Lag wohl daran, dass sie erst nachmittags per Bus angereist waren.<br><br>Holland hat alles im Griff. Da darf auch Makaay mal. Der Bayern-Stürmer kommt in der 70. Minute zu seinem EM-Debüt, macht gleich sein 1. Tor (84.). <br><br>Und die Fans singen die ganze nacht: Schade, Deutschland, alles ist vorbei! Oh, wie ist das bitter...  <br><br><br></div>
+</article>
+<article class="post" data-ts="20040624131700" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2004-06-24 13:17</span></div>
+  <div class="pb">heerlijke laatste zin</div>
+</article>
+<article class="post" data-ts="20040624151900" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2004-06-24 15:19</span></div>
+  <div class="pb">oli4 ging je nu naar deze wedstrijd van het nederlands elftal of zit je bij die andere kwart finale???</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

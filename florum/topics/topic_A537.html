@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open dag Ajax – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Open dag Ajax</h1>
+<p class="tm">4 posts · started 2002-08-04 14:01 by Ronald</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020804140100" id="p1">
+  <div class="ph"><span class="pa">Ronald</span><span class="pm">#1 · 2002-08-04 14:01</span></div>
+  <div class="pb">Beste Floracieden,<br><br>woensdag houd ik een open dag en ik zou het leuk vinden als jullie ook zouden komen. Een kadootje hoeft niet maar mag wel. Mijn open dag begint om 9.30 uur en houdt op om 16.00 uur; hij zal plaatsvinden op de Toekomst nabij de ArenA. Nemen jullie je goede humeur mee? Nou doeiii.<br><br>(Ouders van Ronald: voor meer informatie kijk: http://teletekst.nos.nl/cgi-bin/tt/nos/page/660-2)</div>
+</article>
+<article class="post" data-ts="20020804140200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-08-04 14:02</span></div>
+  <div class="pb">Goh wat leuk, ik kom Ronald!</div>
+</article>
+<article class="post" data-ts="20020804164400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-08-04 16:44</span></div>
+  <div class="ps">O wat</div><div class="pb">leuk, ronald komt nu al voor de tweede keer naar de floraboys site. Helaas kom ik niet naar de open dag ronald, dit omdat je geen kaartje voor ons hebt overgehouden voor die mooie pot bij het amsterdam tournament. ;-)<br><br>Met de champions league kan ik eventueel wel komen juichen hoor!</div>
+</article>
+<article class="post" data-ts="20020805104300" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-08-05 10:43</span></div>
+  <div class="pb">ronald, ik zou maar wat graag willen, maar ik moet je al ophemelen in het parool. ander keertje weer, bijvoorbeeld uit bij paris saint germain, ook wel bekend als pee es zj\é\é\é\é\é\é </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

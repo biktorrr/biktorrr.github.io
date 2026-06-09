@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuwe Cursus – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuwe Cursus</h1>
+<p class="tm">2 posts · started 2007-10-26 13:49 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071026134900" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2007-10-26 13:49</span></div>
+  <div class="pb">Nou..ik kan mijn opleidingsbudget voor volgend jaar weer goed besteden:<br><br><b>Johan Cruyff Academy en ING Business School tekenen overeenkomst voor partnership</b><br>  <br>De Johan Cruyff Academy en de ING Business School hebben vandaag een overeenkomst getekend voor het aangaan van een exclusief partnership.<br><br>De overeenkomst voorziet in een uitgebreide samenwerking tussen beide organisaties, die loopt van de uitwisseling van docenten, spreker en coaches tot het samen ontwikkelen van leerprogrammas en seminars. Voor de persconferentie naar aanleiding van de ondertekening was veel belangstelling.<br><br>Binnen het Cruyff-netwerk leidt de organisatie wereldwijd topsporters op, zodat zij een vooraanstaande positie in de maatschappij bereiken, om de belangen van de sportwereld en de samenleving te dienen. De organisatie is opgericht door stervoetballer Johan Cruijff, die een indrukwekkende carri\ère beleefde als voetballer en coach van enkele van de beste voetbalteams ter wereld. Cruijff staat bekend om zijn sociale betrokkenheid en de vele activiteiten die in de loop der jaren vanuit zijn Johan Cruyff Foundation ten behoeve van de samenleving zijn ondernomen. Op internationaal niveau coördineert en regisseert Cruyff Academics International alle educatieve initiatieven.<br><br><br> <br>Michel Tilmant (rechts) en Johan Cruijff ondertekenen de partnershipovereenkomst, uit naam van respectievelijk ING Groep en de Johan Cruyff Academy.<br> <br><br>Bij de ondertekening was ING vertegenwoordigd door CEO Michel Tilmant, Rutger Koopmans (General Manager ING Bank Wholesale), Frank Koster (General Manager Corporate Communications & Affairs), Nick Jue (CEO ING Retail Netherlands) en Ruud Polet (Directeur ING Business School). Voor Cruyff Academics International waren Johan Cruijff en Todd Beane (Directeur) aanwezig.<br><br>Directeur Ruud Polet van de ING Business School is buitengewoon verheugd over de mogelijkheden van de samenwerking. Beide organisaties zijn professionele opleidingsinstituten, gericht op het investeren in het menselijk kapitaal, en die studenten en deelnemers willen helpen om op het hoogste niveau te werken. Polet ziet duidelijke overeenkomsten in het streven van beide organisaties, zoals het cre\ëren van een winning performance culture en het ontwikkelen van coachend leiderschap. Er kan uitwisseling gaan plaatsvinden van studenten, docenten en lesinhoud, zoals kennis over managementconcepten en performance culture.<br><br>Vanuit onze eigen achtergrond, zegt Polet, kunnen we financi\ële kennis en advies leveren voor het lesprogramma van de Cruyff Academy, of aan individuele studenten. Vergeet niet dat de sportwereld zich heeft ontwikkeld tot een bedrijfsmatige omgeving, waarin sportclubs beursnoteringen hebben en een balans die een middelgroot bedrijf niet zou misstaan. Zulke hoeveelheden geld moeten goed worden gemanaged.<br>De Johan Cruyff Academy heeft een masters-opleiding waarin onderwerpen aan de orde komen als verandermanagement, bedrijfscultuur, diversiteit en financi\ën. Professor Abdul Rahman van de ING Business School zal binnenkort een speciale financi\ële module gaan ontwikkelen voor de Johan Cruyff Academy. In onze lesprogrammas behandelen we vaak gelijke onderwerpen en onze studenten hebben veelal dezelfde leeftijd. Terwijl we dit partnership voorbereidden, hebben we de mogelijkheden onderzocht, waarvan ik er net een aantal noemde. Ik weet zeker dat als we aan de slag gaan, zich nog veel meer waardevolle kansen voor samenwerking zullen voordoen, zo besluit Polet.<br> <br></div>
+</article>
+<article class="post" data-ts="20071026150900" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-10-26 15:09</span></div>
+  <div class="pb">klinkt goed, drouille.<br><br>als je die cursus nou doet kan je daarna de floraboys als voetbalteam weer nieuw leven inblazen/managen?<!--146.50.23.34--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys mascotte – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys mascotte</h1>
+<p class="tm">9 posts&nbsp;·&nbsp;started 2001-06-26 01:39 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010626013900" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1&nbsp;·&nbsp;2001-06-26 01:39</span></div>
+  <div class="pb">Voordat we naar de beurs gaan moeten we nog wel ff een mascotte regelen jongens, iemand suggesties? Mij lijkt een of ander alohol brouwende monnik wel een leuk idee. Maar gewoon een pinguin ofzo is natuurlijk ook altijd goed!<br><br>Ben benieuwd.<br><br>Mzzl</div>
+</article>
+<article class="post" data-ts="20010626095900" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2&nbsp;·&nbsp;2001-06-26 09:59</span></div>
+  <div class="pb">Geen bloemenmeisje? :-(</div>
+</article>
+<article class="post" data-ts="20010626135800" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3&nbsp;·&nbsp;2001-06-26 13:58</span></div>
+  <div class="pb">Hebben we niet al lang een mascotte?<br><br>DJ Erik ZZZZZZZZZZZZZZZZZZZZZZZZZZZ!</div>
+</article>
+<article class="post" data-ts="20010626145600" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4&nbsp;·&nbsp;2001-06-26 14:56</span></div>
+  <div class="ps">ja</div><div class="pb">of meer gewoon een bepaald DEEL van de DJ,<br><br>even denken, een deel, hmmmm....<br><br></div>
+</article>
+<article class="post" data-ts="20010626180700" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5&nbsp;·&nbsp;2001-06-26 18:07</span></div>
+  <div class="pb">Het meisje-met-de-hond is in ieder geval mascotte af.<br>Ze komt nauwelijks meer opdagen!!!!</div>
+</article>
+<article class="post" data-ts="20010627090600" id="p6">
+  <div class="ph"><span class="pa">Frenk</span><span class="pm">#6&nbsp;·&nbsp;2001-06-27 09:06</span></div>
+  <div class="pb">En mijn corona-fles dan? <br></div>
+</article>
+<article class="post" data-ts="20010627100400" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7&nbsp;·&nbsp;2001-06-27 10:04</span></div>
+  <div class="pb">of een orca?</div>
+</article>
+<article class="post" data-ts="20010627103200" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8&nbsp;·&nbsp;2001-06-27 10:32</span></div>
+  <div class="pb">Het Meisje met de fotocamera dan maar?<br>Merlijn heeft haar telefoonnummer toch?</div>
+</article>
+<article class="post" data-ts="20010627131100" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9&nbsp;·&nbsp;2001-06-27 13:11</span></div>
+  <div class="pb">Als dat 's zo was... 'k Heb wel m'n adres gegeven.<br>Als ze zo aardig is om haar naam te vermelden bij<br>die foto's kunnen we met de zoektocht beginnen.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

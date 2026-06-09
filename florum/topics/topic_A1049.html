@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hoe spiritueel zijn de Floraboys? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hoe spiritueel zijn de Floraboys?</h1>
+<p class="tm">11 posts · started 2003-11-21 15:17 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031121151700" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2003-11-21 15:17</span></div>
+  <div class="pb">Eigenlijk vond ik dit een hele vervelende quiz, maar het resultaat was zo cool dat ik 'm toch maar post.<br><br><a href="http://cgi.ncrv.nl/cgi/ncrv/spiritus/vragen0.php" target="_blank">Reli Wijzer</a><br><br><br><img src="http://cgi.ncrv.nl/cgi/ncrv/spiritus/images/ill_jodendom_middle.gif"></div>
+</article>
+<article class="post" data-ts="20031121161900" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-11-21 16:19</span></div>
+  <div class="pb">As if. Ik heb alleen maar hedonistische/athe\ïstische antwoorden gegeven en zou humanist zijn en raakvlakken vertonen met de protestanten en de jidden. Weer vijf minuten tijd weggegooid.</div>
+</article>
+<article class="post" data-ts="20031121165600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-11-21 16:56</span></div>
+  <div class="pb">Godverdomme wat een stupide test. Maar OK, mijn levensstijl is Socrates/HUMANISME, zoals de reli-wijzer zo wijs aangeeft. Ik heb ook raakvlakken met Boeddha/BOEDDHISME en Mohammed/ISLAM.</div>
+</article>
+<article class="post" data-ts="20031121195000" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-11-21 19:50</span></div>
+  <div class="pb">hetzelfde als Merlijn. En Joost, hoe ultra-orthodox ben je?</div>
+</article>
+<article class="post" data-ts="20031121213600" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-11-21 21:36</span></div>
+  <div class="pb">hoe orthodox? Er stond dat ik in vroomheid te vergelijken ben met Rabbi W. Sneijder uit Utrecht, plaatsvervanger van god op kicksen.</div>
+</article>
+<article class="post" data-ts="20031122201500" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-11-22 20:15</span></div>
+  <div class="pb">ik had deze al een keer gedaan en ik was ook humanist.</div>
+</article>
+<article class="post" data-ts="20031122203300" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2003-11-22 20:33</span></div>
+  <div class="pb">humanistie, met de protestantse en katholische raakvlakken..Dit waarschijnlijk omdat ik die gast never nooit niet laat voor-ritsen.<br></div>
+</article>
+<article class="post" data-ts="20031123125000" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2003-11-23 12:50</span></div>
+  <div class="pb">Mijn naam is vanaf nu Pietje Protestant.</div>
+</article>
+<article class="post" data-ts="20031124102100" id="p9">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#9 · 2003-11-24 10:21</span></div>
+  <div class="pb">boedhisme met raakvlakken met humanisme en jodendom...<br><br>niet helemaal wat ik verwachtte<br></div>
+</article>
+<article class="post" data-ts="20031124135600" id="p10">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#10 · 2003-11-24 13:56</span></div>
+  <div class="pb">humanisme met raakvlakken in het katholicisme en boeddhisme</div>
+</article>
+<article class="post" data-ts="20031126132500" id="p11">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#11 · 2003-11-26 13:25</span></div>
+  <div class="ps">(stukje provocatie II)</div><div class="pb">Timmie, je moet geen lullige testjes doen, maar tikken!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

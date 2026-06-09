@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zwartboek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zwartboek</h1>
+<p class="tm">7 posts · started 2006-11-29 10:20 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061129102000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-11-29 10:20</span></div>
+  <div class="pb">Ik vind Zwartboek het wel waard een topic aan te wijden. Onder de bijna miljoen bezoekers bevinden zich zeker en vast ook enkele Floraboys. Vinden jullie Zwartboek een actiefilm \à l'am\éricaine van Verhoeven die weinig toevoegt, zoals de recensies die ik gisterenavond las? Of is het gewoon een erg sterke film, zoals ikzelf en de drie cinefielen met wie ik er gister was, vonden? Zij komen overigens alledrie uit Nederland, maar waren niet bevooroordeeld met hoge verwachtingen of negatieve recensies. <br>Zijn de heilige huisjes die Verhoeven omschopt, al twintig jaar lang opgeschopt (Nederlanders zijn heus niet allemaal verzetshelden; bij Bevrijding zijn schandalige dingen gebeurd), of is het erg nuttig dat dat eens in een grote productie verteld wordt? Zelf vind ik dat laatste. Ben erg benieuwd.<br><br>Dit knalde ik gisteren in het filmtopic:<br>Film: Zwartboek<br>Wat en hoe: voorpremi\ère, met drie leuke mensen in UGC Les Halles, megabioscoop in Parijs<br>Commentaar: erg sterke film. Niemand is echt goed, niemand is echt fout, dat is de kern. Behalve SD-Kommandant Günther Franken, die is echt fout (maar die kan wel weer heel leuk fluiten en piano spelen). Bijzonder fraaie beelden, spannend, verrassend en historisch verantwoord. Daarmee bedoel ik dat het Nederlands verzet eindelijk eens niet geromantiseerd wordt.<br>Bonus: het blijft een Nederlandse film, dus over esthetisch verantwoord vrouwelijk naakt had den kijker niet te klagen.<br>Opmerkelijk: Frans publiek (altijd grote bewonderaars van Verhoeven, zelfs van films die wij als bagger beschouwen) applaudiseerden, terwijl Verhoeven er zelf niet bij was, hetgeen hoogst ongebruikelijk is.<br>Beoordeling: ****</div>
+</article>
+<article class="post" data-ts="20061129103300" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2006-11-29 10:33</span></div>
+  <div class="pb">Shame on me, ik ben nog niet geweest.<br><br>In de tussentijd kan ik je Casino Royale aanraden!</div>
+</article>
+<article class="post" data-ts="20061129103700" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2006-11-29 10:37</span></div>
+  <div class="pb">Anders kun je ook naar Dhoom 2 gaan...volgens mij bijna net zo spannend als DOOM the movie.<br><br><img src="http://www.pathe.nl/gfx_content/films/filmstill/28441.jpg"></div>
+</article>
+<article class="post" data-ts="20061129113100" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2006-11-29 11:31</span></div>
+  <div class="pb">Ik vond het wel eens goed om een genuanceerde film over WO2 te zien. <br>Twee minpuntjes: Johny de Mol die een uber christen speelt vond ik ongeloofwaardig en de overdaad aan overbodig bloot. Ik zag niet zo in wat het schaamhaar blonderen precies voor toevoegde waarde had binnen de film. Maar verder vond ik het de moeite wel waard.</div>
+</article>
+<article class="post" data-ts="20061129131800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-11-29 13:18</span></div>
+  <div class="pb">film heb ik nog niet gezien. <br>maar hier een interessant artikel in de knack waarin paul verhoeven een aantal oorlogsfilms bespreekt, daarbij vaak teruggrijpend naar zijn (overigens geweldige) Starship Trooperts<br><br>http://www.knack.be/cmp/29/1/2467/article.html</div>
+</article>
+<article class="post" data-ts="20061129134900" id="p6">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#6 · 2006-11-29 13:49</span></div>
+  <div class="pb">Vrienden van mijn opa zijn ernaar toe geweest, ze hebben zelf de oorlog meegemaakt, en vonden deze film heel erg aangrijpen. Ik heb hem zelf nog niet gezien, maar wil de film zeker nog wle zien.</div>
+</article>
+<article class="post" data-ts="20061130093400" id="p7">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#7 · 2006-11-30 09:34</span></div>
+  <div class="pb">Voor het eerst een bollywood-film op hte florum! Nou Misha, ik wacht met spanning op je recensie.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parijsblog – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Parijsblog</h1>
+<p class="tm">11 posts · started 2006-02-14 15:16 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060214151600" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-02-14 15:16</span></div>
+  <div class="pb">Aangezien Floraboys 'n Girls graag met meningen spuien over diverse onderwerpen hier een kapitale kwestie. <br><br>Ik ga mijn weblog een iets professionelere url geven en zit nog te overpeinzen welke. Iets als correspondentparijs.nl is wat lang lijkt me. Ik zat te denken aan parijsblog.nl, blogparijs.nl of frankrijkblog.nl. Welke vinden jullie beter? En hebben jullie betere idee\ën?</div>
+</article>
+<article class="post" data-ts="20060214171400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-02-14 17:14</span></div>
+  <div class="pb">www.olivierdeparis.nl  of<br>www.olivier-de-paris.nl ???</div>
+</article>
+<article class="post" data-ts="20060214171500" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2006-02-14 17:15</span></div>
+  <div class="pb">www.onzemaninparijs.nl of<br>www.onze-man-in-parijs.nl ??</div>
+</article>
+<article class="post" data-ts="20060214181100" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2006-02-14 18:11</span></div>
+  <div class="pb">Iets profi\ër en iets makkelijker te onthouden</div>
+</article>
+<article class="post" data-ts="20060214211800" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2006-02-14 21:18</span></div>
+  <div class="pb">www.parisian.nl of hoe je parijzenaar ook schrijft in het frans<br><br>of iets in die trant.. gebruik franse woorden met .nl er achter, en dan iets met journalist/nieuws of zoiets?</div>
+</article>
+<article class="post" data-ts="20060215092900" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-02-15 09:29</span></div>
+  <div class="pb">Je hebt waarschijnlijk www.parisian.nl al geboekt. Anders vond ik Michiels www.onzemaninparijs.nl helemaal niet slecht; of anders www.oliviersparijs.nl? Je weblogvarianten vond ik iets minder persoonlijk.</div>
+</article>
+<article class="post" data-ts="20060215093300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-02-15 09:33</span></div>
+  <div class="pb">www.vriendvantomp.nl</div>
+</article>
+<article class="post" data-ts="20060215093500" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2006-02-15 09:35</span></div>
+  <div class="pb">mij lijkt parijsblog.nl wel een goede.</div>
+</article>
+<article class="post" data-ts="20060215124100" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2006-02-15 12:41</span></div>
+  <div class="pb">Dank voor het meedenken. Tot mijn spijt bleek www.parisian.nl/nieuws/journalist al bezet. Ga inderdaad maar voor het parijsblog.nl. Daar kun je ook relatief weinig fouten in maken en het is vrij kort. oliviersparijs.nl is toch nog lastig denk ik. onzemaninparijs.nl leest ook niet echt lekker weg. </div>
+</article>
+<article class="post" data-ts="20060215125900" id="p10">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#10 · 2006-02-15 12:59</span></div>
+  <div class="ps">ga voor .com</div><div class="pb">en maak je blog ook engelstalig... een veel grote markt aan lezers..</div>
+</article>
+<article class="post" data-ts="20060215142100" id="p11">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#11 · 2006-02-15 14:21</span></div>
+  <div class="pb">Topidee! Vertaal jij de teksten voor 5 euro per maand, Frank?<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

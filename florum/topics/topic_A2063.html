@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>werk aan de winkel Oli4 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">werk aan de winkel Oli4</h1>
+<p class="tm">2 posts · started 2007-06-05 20:26 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070605202600" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-06-05 20:26</span></div>
+  <div class="pb">RC Lens zet Guy Roux weer aan het werk<br><br>RC Lens heeft Guy Roux nu ook officieel aangesteld. De 68-jarige coach volgt Francis Gillot op en tekende voor twee jaar bij Sang et Or.<br><br>Tijd voor een mooi diepte interviewtje?</div>
+</article>
+<article class="post" data-ts="20070606192000" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2007-06-06 19:20</span></div>
+  <div class="pb">Ik wil dit wel op me nemen, maar alleen op voorwaarde dat hij slechts gekleed gaat in een minuscuul handdoekje...<br><br>Ouwe Bourgondi\ër dat-ie ook is.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

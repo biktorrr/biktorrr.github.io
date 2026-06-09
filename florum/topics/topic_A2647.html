@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>eten+drinken in Adam? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">eten+drinken in Adam?</h1>
+<p class="tm">8 posts · started 2009-05-08 12:41 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090508124100" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-05-08 12:41</span></div>
+  <div class="pb">Iemand voor een drankje plus hapje in Amstelredaeme? bv. Kompaszaal offeh de Engelbewaarder?</div>
+</article>
+<article class="post" data-ts="20090508130900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-05-08 13:09</span></div>
+  <div class="pb">Tik. Engelenbewaarder is een goeie.<br></div>
+</article>
+<article class="post" data-ts="20090508131200" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2009-05-08 13:12</span></div>
+  <div class="pb">Ik schuif denk ik na het eten aan voor een borrel of wat.</div>
+</article>
+<article class="post" data-ts="20090508145500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2009-05-08 14:55</span></div>
+  <div class="pb">Van neytesteijn, ik tik hem aF.</div>
+</article>
+<article class="post" data-ts="20090508151900" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-05-08 15:19</span></div>
+  <div class="pb">Marije tikt m aan om 19.30</div>
+</article>
+<article class="post" data-ts="20090508170400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-05-08 17:04</span></div>
+  <div class="pb">Ben er rond 19u.</div>
+</article>
+<article class="post" data-ts="20090508171200" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2009-05-08 17:12</span></div>
+  <div class="pb">okido, ik ook</div>
+</article>
+<article class="post" data-ts="20090509180400" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2009-05-09 18:04</span></div>
+  <div class="pb">iemand in voor een pilske in haarlem?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

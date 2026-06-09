@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florum Statistiek deel II – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florum Statistiek deel II</h1>
+<p class="tm">4 posts · started 2008-12-02 10:24 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081202102400" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-12-02 10:24</span></div>
+  <div class="pb">We hebben met het Duitsland 2.0 topic zojuist nu het \é\én-na-langste topic gecreeerd. Er zijn nu 10 topics met meer dan 100 postjes. Hiervan zijn er nog zeker drie 'actief'. Ze volgen hier:<br><br>Celeb spotting	343<br>Duitsland	204<br>oosterburen	193<br>Floraboys WK Poule	172<br>Europese Grondwet	142<br>Floraboys, internationale boys?	135<br>FloraPoll	130<br>Het Grote Floraboys Snoepreisjes Topic	122<br>Flora Filmtopic	117<br>FloraPoule Tussenstand	103<br></div>
+</article>
+<article class="post" data-ts="20081202102500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-12-02 10:25</span></div>
+  <div class="pb">overigens zijn dit alle postjes met het woord 'de' erin. De totaal.php pagina werkt niet (meer) dus ik heb het even via de zoekfunctie opgelost.</div>
+</article>
+<article class="post" data-ts="20081202102900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2008-12-02 10:29</span></div>
+  <div class="pb">ho, ik was nog een klassiekertje in de top10 vergeten (nu dus top11): <br><br>Kirrie groet de floraboys en girls	109<br></div>
+</article>
+<article class="post" data-ts="20081202112600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-12-02 11:26</span></div>
+  <div class="pb">We zouden die database 's flink moeten analyseren.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

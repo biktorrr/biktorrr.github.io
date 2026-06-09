@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De vragen des levens – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De vragen des levens</h1>
+<p class="tm">1 post · started 2002-03-19 01:00 by Tn the Spammert</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020319010000" id="p1">
+  <div class="ph"><span class="pa">Tn the Spammert</span><span class="pm">#1 · 2002-03-19 01:00</span></div>
+  <div class="pb">1. Don't sweat the petty things and don't pet the sweaty things. <br>3. Atheism is a non-prophet organisation. <br>4. If man evolved from monkeys and apes, why do we still have monkeys and apes? <br>6. I went to a bookstore and asked the saleswoman, "Where's the self-help <br>section?" She said if she told me, it would defeat the purpose. <br>7. What if there were no hypothetical questions? <br>8. If a deaf person swears, does his mother wash his hands with soap? <br>10. If someone with multiple personalities threatens to kill himself, is it considered a hostage situation? <br>11. Is there another word for synonym? <br>12. Isn't it a bit unnerving that doctors call what they do "practice"? <br>13. Where do forest rangers go to "get away from it all?" <br>14. What do you do when you see an endangered animal eating an endangered plant? <br>16. Would a fly without wings be called a walk? <br>18. If a turtle doesn't have a shell, is he homeless or naked? <br>20. Can vegetarians eat animal crackers? <br>21. If the police arrest a mime, do they tell him he has the right to remain silent? <br>22. Why do they put Braille on the drive-through bank machines? <br>23. How do they get the deer to cross at that yellow road sign? <br>25. What was the best thing before sliced bread? <br>26. One nice thing about egotists: they don't talk about other people. <br>27. Does the Little Mermaid wear an algebra? <br>28. Do infants enjoy infancy as much as adults enjoy adultery? <br>29. How is it possible to have a civil war? <br>30. If one synchronised swimmer drowns, do the rest drown, too? <br>31. If you ate pasta and antipasto, would you still be hungry? <br>32. If you try to fail, and succeed, which have you done? <br>33. Whose cruel idea was it for the word "Lisp" to have a "S" in it? <br>34. Why are haemorrhoids called "haemorrhoids" instead of "assteroids"? <br>35. Why is it called tourist season if we can't shoot at them? <br>36. Why is the alphabet in that order? Is it because of that song? </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arduino – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Arduino</h1>
+<p class="tm">6 posts · started 2015-12-21 22:16 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20151221221610" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1 · 2015-12-21 22:16</span></div>
+  <div class="pb">Zijn er mensen ge\ïnteresseerd in AAAAAARDUINO? Heb zo'n starterkitje gekocht. Leek me leuk. Iemand goede idee\ën?</div>
+</article>
+<article class="post" data-ts="20151222013703" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2015-12-22 01:37</span></div>
+  <div class="pb">Sorry, maar ik laat de nieuwe spelshow van Caroline Tensen even aan me voorbijgaan.</div>
+</article>
+<article class="post" data-ts="20151222220944" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2015-12-22 22:09</span></div>
+  <div class="pb">Ja! Zet hem op marktplaats en koop een Raspberry Pi 2...</div>
+</article>
+<article class="post" data-ts="20151223000757" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2015-12-23 00:07</span></div>
+  <div class="pb">Ja, leuk iets nutteloos froebelen! Of wacht 4 jaar en ga met je kind iets knutselen.</div>
+</article>
+<article class="post" data-ts="20151224221122" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2015-12-24 22:11</span></div>
+  <div class="pb">Hm, nog niet echt de ondernemersgeest die ik zocht, maar eerst inderdaad maar eens beginnen met iets nutteloos. En dan iets nuttigs.</div>
+</article>
+<article class="post" data-ts="20151227013818" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2015-12-27 01:38</span></div>
+  <div class="pb">Interactief babykleed?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

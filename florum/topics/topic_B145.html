@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>indeling poule nieuwe seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">indeling poule nieuwe seizoen</h1>
+<p class="tm">9 posts · started 2002-08-23 11:37 by TuuT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020823113700" id="p1">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#1 · 2002-08-23 11:37</span></div>
+  <div class="pb">okay het nieuwe seizoen voor de floraboys komt eraan en het usc is inderdaad aan het organiseren. De indeling is bekend!<br><br>2e klasse A<br><br>FC uurtje Factuurtje<br>Los Emperadores<br>Psycho marine officers<br>Floraboys<br>Padrotes del Bario<br>De Agora's *<br><br>* = nieuw team<br><br>Met de stage van onze vedette in portugaal, moet deze zuidelijke aandoende poule toch veelbelovend in onze oren klinken.<br></div>
+</article>
+<article class="post" data-ts="20020823124400" id="p2">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#2 · 2002-08-23 12:44</span></div>
+  <div class="pb">mooi, is er al iets bekend over de eerste wedstrijd?</div>
+</article>
+<article class="post" data-ts="20020823125400" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-08-23 12:54</span></div>
+  <div class="pb">Ik heb even de spelerslijsten opgevraagd en er zit geen enkelen vedette bij. Moeten we op kunnen rollen. Weer kaal als we kampioen worden?</div>
+</article>
+<article class="post" data-ts="20020823154000" id="p4">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#4 · 2002-08-23 15:40</span></div>
+  <div class="pb">kampioen in de tweede klasse? Dat is niet echt een risico volle weddenschap Mer.<br><br>Misschien is handhaving spannender.</div>
+</article>
+<article class="post" data-ts="20020823161400" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-08-23 16:14</span></div>
+  <div class="pb">Ik heb even navraag gedaan, Joost: je bent voor 'n half jaar voor het International Vedette Program Floraboys naar Madrid gestuurd dus jouw defaitistisch gejammer hoeven we niet aan te horen. Geef mij maar echte winners zoals Holy Kenobi, maar daar heb je 'n hekel aan en die schop je 't ziekenhuis in. </div>
+</article>
+<article class="post" data-ts="20020823174800" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-08-23 17:48</span></div>
+  <div class="pb">precies. zo was het.</div>
+</article>
+<article class="post" data-ts="20020825112600" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2002-08-25 11:26</span></div>
+  <div class="ps">geen echte</div><div class="pb">bekende namen als tegenstander. Weet iemand iets van de nieuwe tegenstanders??? </div>
+</article>
+<article class="post" data-ts="20020826130700" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-08-26 13:07</span></div>
+  <div class="pb">een degradant, een promovant, twee nummers 3 en een nummer 2 geloof ik, ik geloof dat die gepormoveerden niet heel dik de beste waren in hun 3e klasse pool dus die moeten te doen zijn, voor de rest horen jullie het nog wel<br><br>EERSTE WEDSTRIjD 2 SEPTEMBERT!!!!!</div>
+</article>
+<article class="post" data-ts="20020826130900" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2002-08-26 13:09</span></div>
+  <div class="pb">onee 3 sept... zie andere topic</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NIEUWE ZAALBALPAGINA...NIEUWE ZAALBALPAGINA!!...NIEUWE ZAALBALPAGINA!!...NIEUWE ZAALBALPAGINA!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NIEUWE ZAALBALPAGINA...NIEUWE ZAALBALPAGINA!!...NIEUWE ZAALBALPAGINA!!...NIEUWE ZAALBALPAGINA!!</h1>
+<p class="tm">3 posts · started 2003-08-27 15:02 by PTWebmastert</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030827150200" id="p1">
+  <div class="ph"><span class="pa">PTWebmastert</span><span class="pm">#1 · 2003-08-27 15:02</span></div>
+  <div class="pb">jaja hij is onlijn <br>KIJKEN ALLEMAAL EN OPSCHRIJVEN IN DE AGENDI!!<br><br>Puntjes die opvallen:<br>- we zitten bij het tweede van Lokomotiv VIAE (die G moet een E zijn)<br>- We spelen 90% van de wedstrijden op dinsdag!<br>- we spelen op mijn afstudeerdatum (30 sept) Om 18u al... hmm...<br><br>Puntjes die nog openstaan: <br>- wat zijn ook al weer de basisspelers?<br>- wie gingen er ook al weer Scheidsrechteren? (in ieder geval penose, maar van de rest weet ik het niet meer)<br>- we spelen op mijn afstudeerdatum (30 sept) Om 18u al... hmm...<br></div>
+</article>
+<article class="post" data-ts="20030827150300" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-08-27 15:03</span></div>
+  <div class="pb">voortgang van dit topic in het voetbalflorum... ('zaalballen')</div>
+</article>
+<article class="post" data-ts="20030827161400" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-08-27 16:14</span></div>
+  <div class="ps">dinsdag vind</div><div class="pb">ik toch echt iets minder dit ivm atletiek.<br><br>Op afstudeer dagen spelen is ook iets minder (lees kut)<br><br>We zouden toch vaak op woensdag spelen???<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

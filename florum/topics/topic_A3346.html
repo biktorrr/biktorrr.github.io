@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Belangrijk Floraboys-headcounttopic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Belangrijk Floraboys-headcounttopic</h1>
+<p class="tm">10 posts · started 2014-07-16 05:53 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140716055351" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2014-07-16 05:53</span></div>
+  <div class="pb">Het is verdacht stil op ons geliefde interactie-/kennisinstrument. Even checken of we niet wat boys zijn kwijtgeraakt onderweg.<br><br>Floraboys headcount! #1</div>
+</article>
+<article class="post" data-ts="20140716094319" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2014-07-16 09:43</span></div>
+  <div class="pb">Kromhoutlaan!</div>
+</article>
+<article class="post" data-ts="20140716122719" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2014-07-16 12:27</span></div>
+  <div class="pb">Tik</div>
+</article>
+<article class="post" data-ts="20140716124115" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2014-07-16 12:41</span></div>
+  <div class="pb">Sieg heil!</div>
+</article>
+<article class="post" data-ts="20140716135116" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2014-07-16 13:51</span></div>
+  <div class="pb">#4</div>
+</article>
+<article class="post" data-ts="20140716145814" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2014-07-16 14:58</span></div>
+  <div class="pb">#6<br><br>Damsko represent</div>
+</article>
+<article class="post" data-ts="20140716171121" id="p7">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#7 · 2014-07-16 17:11</span></div>
+  <div class="pb">#6<br>Almere op z'n post</div>
+</article>
+<article class="post" data-ts="20140716230526" id="p8">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#8 · 2014-07-16 23:05</span></div>
+  <div class="pb">#4<br>Kromhoutlaan present</div>
+</article>
+<article class="post" data-ts="20140717112140" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2014-07-17 11:21</span></div>
+  <div class="pb">Rustybizzle check en check</div>
+</article>
+<article class="post" data-ts="20140717113850" id="p10">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#10 · 2014-07-17 11:38</span></div>
+  <div class="pb">Sweet Lake cittaaah</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

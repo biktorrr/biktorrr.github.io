@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>wildeman? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">wildeman?</h1>
+<p class="tm">7 posts · started 2007-05-25 10:31 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070525103100" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2007-05-25 10:31</span></div>
+  <div class="pb">Vanavond wildemannetje pakken? seis uur half zeuven ofzo? Ze hebben vanavond een vaatje real ale (dat is heel lekker bier) en je kan er ook lekker in de zon zitten.</div>
+</article>
+<article class="post" data-ts="20070525120500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-05-25 12:05</span></div>
+  <div class="pb">Dat is een goed idee. Ik bel/sms wel even wat later op de middag of ik er ook ben.</div>
+</article>
+<article class="post" data-ts="20070525120600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-05-25 12:06</span></div>
+  <div class="pb">goed plan</div>
+</article>
+<article class="post" data-ts="20070525133900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-05-25 13:39</span></div>
+  <div class="pb">Inderdaad een goed plan helaas schuif ik om zeven uur bij mijn ouders aan de dinertafel aan.</div>
+</article>
+<article class="post" data-ts="20070525145600" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-05-25 14:56</span></div>
+  <div class="pb">Ik zal er zijn!</div>
+</article>
+<article class="post" data-ts="20070525151700" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2007-05-25 15:17</span></div>
+  <div class="pb">Ik kom ook wel even langs. Maar ben wel wat later.</div>
+</article>
+<article class="post" data-ts="20070525175900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2007-05-25 17:59</span></div>
+  <div class="pb">Michiel, Ca en ik zijn er om 18.41u</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

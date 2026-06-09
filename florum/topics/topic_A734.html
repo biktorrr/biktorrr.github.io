@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ceca opgepakt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ceca opgepakt!</h1>
+<p class="tm">4 posts · started 2003-03-19 11:02 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030319110200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-03-19 11:02</span></div>
+  <div class="pb">ik las gister in de kwaliteitskrant 'metro' dat Ceca was opgepakt, op internet viel er weinig van terug te vinden, behalve het artikeltje zelf. Ik zoek nog een online petitie-lijst om Ceca vrij te krijgen want dit is natuurlijk beLACHelijk!<br><br><img src="http://www.ceca.de/ceca/newspress/348614.jpg"><br>Politie Servi\ë pakt popster op<br><br>SERVI\Ë De Servische politie heeft<br>gisteren de Servische popster<br>Ceca opgepakt.Ceca is de weduwe<br>van Arkan,de beruchtste krijgs-<br>heer uit de oorlog in Bosni\ë.Zij<br>wordt ervan verdacht onderdak te<br>hebben verleend aan de leiders<br>van de misdaadbende Zemun,die<br>premier Zoran Djindjic zou heb-<br>ben vermoord.(AP)<br>Svetlana Raznatovic-Ceca<br></div>
+</article>
+<article class="post" data-ts="20030319112200" id="p2">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#2 · 2003-03-19 11:22</span></div>
+  <div class="pb">wat een moordwijf toch weer <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20030319150200" id="p3">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#3 · 2003-03-19 15:02</span></div>
+  <div class="ps">aanrecht en onrecht</div><div class="pb">Nou ik vind dat ze opgepakt moet worden. Haar man is nog maar net op treurige wijze van haar verschijden en zij deelt al weer het bed met andere mannen. En blijkbaar niet een, maar meerdere. Voor zo weinig respect voor haar voormalige echtgenoot en held des vaderlands staat wat mij betreft een zeer zware straf. Ik denk aan deelname namens Servie aan het songfestival.</div>
+</article>
+<article class="post" data-ts="20030328224600" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-03-28 22:46</span></div>
+  <div class="pb">Waarom krijg ik die plaatsjes hier niet?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

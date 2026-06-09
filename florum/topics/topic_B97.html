@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen:Za 4 mei – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen:Za 4 mei</h1>
+<p class="tm">7 posts · started 2002-05-03 11:31 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020503113100" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-05-03 11:31</span></div>
+  <div class="pb">Ik ben er,maar misschien is het handig om in <b>de Hout</b> af te spreken daar de gemeente en haar exploitanten waarschijnlijk weer het Florapark hebben gebruikt voor het stallen van divers Bevrijdingspophekwerk.</div>
+</article>
+<article class="post" data-ts="20020503135000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-05-03 13:50</span></div>
+  <div class="pb">jep, dan spelen we wel op de ortskommandantur, <br>wat misschien symbolische betekenis krijgt <br>op zo'n 4e mei, maar ik ben er uiteraard bij</div>
+</article>
+<article class="post" data-ts="20020503175700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-05-03 17:57</span></div>
+  <div class="pb">Ja ja, present.</div>
+</article>
+<article class="post" data-ts="20020503182300" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-05-03 18:23</span></div>
+  <div class="pb">Ik kom zaterdag nog niet ballen daar ik nog te ziekelijk ben. Ik heb de afgelopen dagen heel weinig gegeten en voel me nog steeds niet toppieknalluh (moe, koppijn etc.). Voor mij wordt het zaterdag dus met een helend kruidentheetje naar de cup-final kijken.</div>
+</article>
+<article class="post" data-ts="20020503203700" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-05-03 20:37</span></div>
+  <div class="pb">ik ben er wel..<br></div>
+</article>
+<article class="post" data-ts="20020504020700" id="p6">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#6 · 2002-05-04 02:07</span></div>
+  <div class="pb">Ik ben er ook, of Sander komt weet ik niet</div>
+</article>
+<article class="post" data-ts="20020504181600" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2002-05-04 18:16</span></div>
+  <div class="pb">Volle bak...was leuk..Robin morgen horen wij het wel of ze het nog deden vannacht!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

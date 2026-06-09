@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ben weer thuis – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ben weer thuis</h1>
+<p class="tm">4 posts · started 2001-07-23 12:16 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010723121600" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-07-23 12:16</span></div>
+  <div class="pb">Beste floraboys, afgelopen zaterdag ben ik na een verblijf van een week ontslagen uit het ziekenhuis. Ik zit nu bij mijn ouders in Zaltbommel lekker te loungen en zal dat nog zeker een week blijven doen. Alles gaat verder prima al ben ik nog extreem snel moe en moet ik veel slapen. <br><br>Voor de rest is er uit de onderzoeken uiteindelijk niks bijzonders gekomen. Over 2 weken moet ik naar het AMC en daar zullen ze nog wel verder kijken.<br><br>Verder wil ik even alle floraboys bedanken voor de alle steun en attente bezoekjes. Dat heeft - zeker de eerste paar dagen - erg geholpen. <br><br>Mzzl<br><br></div>
+</article>
+<article class="post" data-ts="20010724094100" id="p2">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#2 · 2001-07-24 09:41</span></div>
+  <div class="pb">Joost <br><br>ik ben net terug..maar van harte beterschap en moge je kunsten later weer op de velden te zien zijn..<br><br>TuuT Tim</div>
+</article>
+<article class="post" data-ts="20010727094900" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2001-07-27 09:49</span></div>
+  <div class="pb">Joost,<br><br>Ik lees dit net terug van vakantie. Van harte beterschap en ik hoop dat je niet te lang van de balvelden zult worden gehouden.<br></div>
+</article>
+<article class="post" data-ts="20010801135200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-08-01 13:52</span></div>
+  <div class="pb">Ja hoor, ik ben er ook weer. Hoe is het Joost?<br>Binnenkort gewoon weer lekker ballen! Beterschap (ook van Fleur!) <br>PS: Heb je de e-card nog gekregen van ons?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

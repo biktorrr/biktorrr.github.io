@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>30 sept: zaalbalpagina geupdate – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">30 sept: zaalbalpagina geupdate</h1>
+<p class="tm">4 posts · started 2003-09-30 13:55 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030930135500" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-09-30 13:55</span></div>
+  <div class="pb">Hallo allen, ik ben weer helemaal terug als webmastert. En als binnenkomer zag ik dat Joost bijna alles al geupdate had, dat ongetwijfeld met het zicht op zijn eigen aanvoerdersschap in de topscorerslijst.<br><br> Een paar kleine dingetjes heb ik wel toegevoegd:<br><br>- Link naar de USC-stand<br>- Buhne-klassement is geupdate (eentje voor ondergetekende)<br>- Eigen doelpunten-klassement toegevoegd (dat schot was zo mooi, daar moeten er maar meer van komen)</div>
+</article>
+<article class="post" data-ts="20030930152200" id="p2">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#2 · 2003-09-30 15:22</span></div>
+  <div class="pb">Mooi dat linkje naar de USC-site, maar jullie eigen topscorerslijst klopt niet met die van het USC...</div>
+</article>
+<article class="post" data-ts="20031001115800" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-10-01 11:58</span></div>
+  <div class="pb"> als de assistent scheids aan ons vraagt 'Wie heeft er gescoord?!" en wij dan Puite roepen (of Joost/Josit Puite, maar dat dat niet verstaan wordt) dan kunnen ze dus kiezen uit Vincent of Joost. <br>Dat lijkt me een mogelijke verklaring<br></div>
+</article>
+<article class="post" data-ts="20031001132100" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-10-01 13:21</span></div>
+  <div class="pb">heb vandaag maar meteen een update gedraait. Als er nog iemand een buhne bal heeft gemaakt heb ik die gemist. Sorry daarvoor.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

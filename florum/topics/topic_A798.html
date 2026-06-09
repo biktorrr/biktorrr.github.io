@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOP SITE  check this – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">TOP SITE  check this</h1>
+<p class="tm">2 posts · started 2003-06-04 21:30 by Will Gates</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030604213000" id="p1">
+  <div class="ph"><span class="pa">Will Gates</span><span class="pm">#1 · 2003-06-04 21:30</span></div>
+  <div class="pb">Hello Cheeseheads,<br><br>omdat er zo weinig op de floraboyspuntcom gebeurt, moet er naar een andere .com gezocht worden waar alle groupies and fans hun hart kunnen luchten. Hits trekken om zo de spelersreis naaar het EK te kunnen bekostigen..<br><br>er is al een voorstel van een selectielid:<br><br>http://www.vriendvanvanzwieten.nl  : een heuse afzeik site, iedereen kan foto's toevoegen van mensen die een vriend van van zwieten is<br><br><br>http://www.takeashowerwith23.com : foto's van fans van mer met mer onder de douche.. als mer mee wilt werken een topsite.. geheid succes!!!<br><br>http://www.makemebillionaire.com : slogan: forget the millions give me billions... bedelsite dat iedereen een euro in de pot stopt.. er word dan een webcam op het florapark opgehangen<br><br>nog meer suggesties... kijk hier<br><br>Het is de bedoeling dat alle floracieten mee werken.<br><br></div>
+</article>
+<article class="post" data-ts="20030605100700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-06-05 10:07</span></div>
+  <div class="pb">He, goed iniatief. Misschien dat ik mag suggereren:<br><br><I>www.bijtimmiethuis.com</I> : De citadel volhangen met camera's op plaatsen die zelfs voor de bewoners niet bekend zijn. Zien hoe Timmie opstaat, rekoefeningen doet en zit te tikken. Luister hoe J. L@u haar stembanden opwarmt...<br><br><I>www.floragirls.com</I> : Dat die d'r nog steeds niet is is onbegrijpelijk. Bied wat introductie-cursussen aan over internet en tevreden zijn ze. Als ze na drie geslaagde muisklicks een breipatroon mogen uitprinten zijn ze al in de zevende hemel. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

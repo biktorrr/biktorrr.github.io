@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STEM OP JOP (van de Bus) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">STEM OP JOP (van de Bus)</h1>
+<p class="tm">9 posts · started 2003-01-09 12:40 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030109124000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-01-09 12:40</span></div>
+  <div class="pb">dit MOET  je even zien, we wisten al dat op 1 Johan Vlemmix en op 2 DJ MENTAL THEO stonden maar kijk even naar nummer 3 (erik dikeb van big diet) en nr 4 is JAJAJAJA JOP VAN DE BUS<br><br>even de link: http://www.ministervanfeest.nl/kandidaten/content_kandidaten.php</div>
+</article>
+<article class="post" data-ts="20030109124600" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2003-01-09 12:46</span></div>
+  <div class="pb">EINDHOVEN!</div>
+</article>
+<article class="post" data-ts="20030109131300" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-01-09 13:13</span></div>
+  <div class="pb">HOLY F*CK<br>Leuk plaatje bij de interuptie microfoon..na eerst personen die nogal gecharmeerd zijn van het woord Tjakka nu ook personen die al bossie-rooie-rozend de kamer rondgaan.</div>
+</article>
+<article class="post" data-ts="20030109131500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-01-09 13:15</span></div>
+  <div class="pb">Godsamme wat een goede lijst! Daar ga ik op stemmen! Maar op welke topper? </div>
+</article>
+<article class="post" data-ts="20030109142900" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2003-01-09 14:29</span></div>
+  <div class="pb">Niet te vergeten dat de volgende plaatsen op de lijst worden vervuld door de toppers "De Zware Jongens" Ons wel bekend als makers van de kraker WURST WURST WURST<br><br>ben nu ook meteen insider bij de HeideDoosjes.(tip voor de volgende krakendnatte cd)<br>jammer dat het geen tijd is voor proteststemmen ..anders wist ik het wel, of niet.</div>
+</article>
+<article class="post" data-ts="20030109191800" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2003-01-09 19:18</span></div>
+  <div class="pb">Ik ging voor Femke, maar om zo'n lijst kan je niet heen. Sylvia Hatgers uit Kaatsheuvel maakt een goede kans op mijn stem, als eerste vrouw op de lijst, maar ook de neger, Arnold Veeman op 29, kan veel voor ons betekenen in Den Haag. </div>
+</article>
+<article class="post" data-ts="20030110113100" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2003-01-10 11:31</span></div>
+  <div class="pb">Olivier: Kun je geen stuk schrijven over de inspiratie die de Franse politiek opdoet door toedoen van onze Partij van de Toekomst, met al zijn democratische toppers? Pagina-groot artikel, met mooie kieken erbij...</div>
+</article>
+<article class="post" data-ts="20030111180200" id="p8">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#8 · 2003-01-11 18:02</span></div>
+  <div class="pb">schaam me voor mijn eigen land.........<br><br>WJ</div>
+</article>
+<article class="post" data-ts="20030121092100" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2003-01-21 09:21</span></div>
+  <div class="pb">De Partij van de Toekomst heeft 5 zetels binnengehaald bij de scholierenverkiezing. Daarmee zit Jop mooi in de Tweede Kamer. De scholierenverkiezing wordt over het algemeen gezien als een goede graadmeter voor de algemene verkiezing.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

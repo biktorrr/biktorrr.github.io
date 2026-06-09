@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond in Haaruloheim – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond in Haaruloheim</h1>
+<p class="tm">6 posts · started 2009-11-06 15:46 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091106154600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-11-06 15:46</span></div>
+  <div class="pb">TN, MK en ik zijn vanavond naar het Patronaat, misschien daarna nog gegadigden voor een biertje in de stad?</div>
+</article>
+<article class="post" data-ts="20091106155900" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-11-06 15:59</span></div>
+  <div class="pb">Ga al in A'dam feesten met een B13sh3uv3ltj3...</div>
+</article>
+<article class="post" data-ts="20091106160000" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2009-11-06 16:00</span></div>
+  <div class="pb">ben wel in voor biertje, maar hoe laat rollen jullie het patronaat uit?</div>
+</article>
+<article class="post" data-ts="20091106170000" id="p4">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#4 · 2009-11-06 17:00</span></div>
+  <div class="pb">eigenlijk geen idee, zal wel ergens tussen elf en twaalf uur zijn denkelijk</div>
+</article>
+<article class="post" data-ts="20091106184700" id="p5">
+  <div class="ph"><span class="pa">Woordvoerder van de Belangenvereniging Flora-Expat</span><span class="pm">#5 · 2009-11-06 18:47</span></div>
+  <div class="pb">Het lijkt me voor de hand liggen dat de heftige discussies van de afgelopen week niet besproken zullen worden. Het is immers niet eerlijk om over mensen te praten die er niet bij zijn om zich te verdedigen.</div>
+</article>
+<article class="post" data-ts="20091107122200" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2009-11-07 12:22</span></div>
+  <div class="pb">er is hier duidelijk een groep die zichzelf zo belangrijk acht dat ze non-stop over de tongen van de boys gaat.<br><br>Florum posts zijn geneuzel in de marge, we hebben wel wat betere dingen om te bepraten. Don't worry.<br><br>Ow, en Therapy? is awesome.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

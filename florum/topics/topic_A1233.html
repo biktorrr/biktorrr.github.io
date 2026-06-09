@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NL - Zweden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NL - Zweden</h1>
+<p class="tm">9 posts · started 2004-06-26 12:45 by Jossyt S</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040626124500" id="p1">
+  <div class="ph"><span class="pa">Jossyt S</span><span class="pm">#1 · 2004-06-26 12:45</span></div>
+  <div class="pb">Voorspelling: een 4-1 zomaar uit het niets. <br><br>Feest bij de TUBE !</div>
+</article>
+<article class="post" data-ts="20040626130900" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-06-26 13:09</span></div>
+  <div class="pb">Er is een feest bij de Tube!</div>
+</article>
+<article class="post" data-ts="20040626135900" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-06-26 13:59</span></div>
+  <div class="pb">dit is wat de bookies zeggen:<br><br>Sweden and Holland are not shy in front of goal and their defences have held their own so far in the tournament. Paddy reckons extra-time beckons for this quarter-final.<br><br>He said: "I can see both teams cancelling each other out. They both have top strikers in Henrik Larsson and Ruud van Nistelrooy and the defences are pretty solid.<br><br>"The Dutch have a top team but can't seem to put it together when it matters, while the Swedes are notoriously underrated by everyone.<br><br>"I fancy this to go to extra-time, with a scoring draw in 90 minutes."<br><br>Match odds<br>2/1 Match to end in a draw in 90 minutes<br>5/1 Match to end 1-1 in 90 minutes<br>14/1 Match to end 2-2 in 90 minutes.<br><br>Check out these half-time/full-time prices:<br>14/1 Sweden/Draw<br>14/1 Holland/Draw</div>
+</article>
+<article class="post" data-ts="20040626140100" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-06-26 14:01</span></div>
+  <div class="pb">Jossyt de gast die ik bedoelde donderdag avond was Stig Tufting, het schiet me nou te binnen.<br></div>
+</article>
+<article class="post" data-ts="20040626165000" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2004-06-26 16:50</span></div>
+  <div class="pb">en ik ben der ook.. met Merlijn in de bolide..<br></div>
+</article>
+<article class="post" data-ts="20040626180400" id="p6">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#6 · 2004-06-26 18:04</span></div>
+  <div class="pb">Tja de bookies... Ze hadden Henry als topscorer, Frankrijk als Europees kampioen en nog honderd andere foute voorspellingen. Niks van aantrekken dus.<br><br><br></div>
+</article>
+<article class="post" data-ts="20040626185000" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2004-06-26 18:50</span></div>
+  <div class="pb">ik ben er niet, maar weet wel dat Nederland met 3-0 gaat winnen. 1-0 vlak voor rust en na de rust een snel doelpunt. <br><br>Dus maak je niet druk de eerste 35 minuten van de wedstrijd.</div>
+</article>
+<article class="post" data-ts="20040627131000" id="p8">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#8 · 2004-06-27 13:10</span></div>
+  <div class="pb"><img src="http://www.vi.nl/upload/168164_340_1088329897435-Oranjejuicht02_pro465-310.jpg"></div>
+</article>
+<article class="post" data-ts="20040628102800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-06-28 10:28</span></div>
+  <div class="pb">godverdomme wat terecht!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

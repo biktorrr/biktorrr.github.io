@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jahoor: 15 en 16 dec. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">jahoor: 15 en 16 dec.</h1>
+<p class="tm">6 posts · started 2001-12-13 12:47 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011213124700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-12-13 12:47</span></div>
+  <div class="pb">ik kan zaterdag WEL <br>en     zondag   NIET<br><br>jullie?<br></div>
+</article>
+<article class="post" data-ts="20011213133400" id="p2">
+  <div class="ph"><span class="pa">Frenk</span><span class="pm">#2 · 2001-12-13 13:34</span></div>
+  <div class="pb">Ik ben er helaas alweer het hele weekend niet. Of nou misschien toch nog even zondag, maar dan heb ik al een wedstrijd in de benen<br></div>
+</article>
+<article class="post" data-ts="20011213142400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-12-13 14:24</span></div>
+  <div class="pb">Weer zo iemand: ik had dit al gevraagd!!! ipv dat je nou daarop reageert ga je het nog een keer vragen!pff</div>
+</article>
+<article class="post" data-ts="20011213142400" id="p4">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#4 · 2001-12-13 14:24</span></div>
+  <div class="pb">sta waarschijnlijk stijf van de medicijnen maar wel op het florapark.</div>
+</article>
+<article class="post" data-ts="20011213164400" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2001-12-13 16:44</span></div>
+  <div class="ps">Ajax 2 is ok</div><div class="pb">Ik kom ook wel een of twee keer. Za. in ieder geval. Later</div>
+</article>
+<article class="post" data-ts="20011214144400" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2001-12-14 14:44</span></div>
+  <div class="pb">weird michiel ik zag die van jou dus niet.,....<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

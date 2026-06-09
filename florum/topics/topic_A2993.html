@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RIP Hyves – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">RIP Hyves</h1>
+<p class="tm">10 posts · started 2010-11-01 14:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101101140210" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-11-01 14:02</span></div>
+  <div class="pb"><a href="http://www.fd.nl/artikel/20620348/update-2-tmg-koopt-sociale-netwerksite-hyves">Gezien het nieuws van vandaag </a> is de hit van 2009 (delete je huves profiel) weer lekker aan het trenden op twittert. <br>Wie doet er mee...<br><br><a href="http://www.renegreve.nl/internet-marketing/hyves-account-verwijderen-doe-je-zo/"> kill</a><br><br></div>
+</article>
+<article class="post" data-ts="20101103125339" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2010-11-03 12:53</span></div>
+  <div class="pb">done.</div>
+</article>
+<article class="post" data-ts="20101103133424" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-11-03 13:34</span></div>
+  <div class="pb">Ja, zo houd ik geen vrienden meer over natuurlijk!<br><br>Oh nog zo'n mooie oproep (via concurrent facebook): er is een 'beweging' gaande die mensen ertoe wil aanzetten om op 7 december je geld allemaal tegelijk op te nemen en zo de banken te kraken (ik geloof dat hun reden is dat ze vinden dat banken regeren ipv onze regering)...</div>
+</article>
+<article class="post" data-ts="20101103142236" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-11-03 14:22</span></div>
+  <div class="pb">Beheerder Pieter Lakeman zeker Amice? Goed idee verder, van een omgevallen bank is nog nooit iemand slechter geworden. Jan Kees zal het wel onder controle hebben. <br><br>Ben trouwens erg geneigd hyves op te zeggen, maar vind het account nog wel handig indien ik nog eens aan app moet maken ervoor.</div>
+</article>
+<article class="post" data-ts="20101103143730" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2010-11-03 14:37</span></div>
+  <div class="pb">Goed idee! Ik ga m'n centjes vrijdag overmaken naar een obscure renteknaller!</div>
+</article>
+<article class="post" data-ts="20101103144937" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2010-11-03 14:49</span></div>
+  <div class="pb">ik wil mijn hyves wel opzeggen, maar ben mijn wachtwoord kwijt..</div>
+</article>
+<article class="post" data-ts="20101103152955" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2010-11-03 15:29</span></div>
+  <div class="pb">Dan kan je klikken op 'wachtwoord vergeten' denkelijk.</div>
+</article>
+<article class="post" data-ts="20101103165105" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2010-11-03 16:51</span></div>
+  <div class="pb">Mooi, dan ga ik dus 6 december mijn geld overmaken!</div>
+</article>
+<article class="post" data-ts="20101103172627" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2010-11-03 17:26</span></div>
+  <div class="pb">dan doe ik het de 5e, alles van ING naar de Triodos.<br><br>Mijn hyves is vanaf gisteren dood. <br><br></div>
+</article>
+<article class="post" data-ts="20101103172826" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2010-11-03 17:28</span></div>
+  <div class="pb"><a href="http://www.hyves.nl/index.php?l1=ut&l2=da"> dit is een snellere link om je profiel kalt te stellen</a><br>Zit bernard eigenlijk op facebook of twitter? Het zou echt een uitkomst voor hem zijn. En dan heb ik eindelijk een friend die zich kan meten qua eruditie met De Bilspier.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bweuh – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bweuh</h1>
+<p class="tm">5 posts · started 2009-02-04 17:40 by Dhr. Z.A.A. gmans</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090204174000" id="p1">
+  <div class="ph"><span class="pa">Dhr. Z.A.A. gmans</span><span class="pm">#1 · 2009-02-04 17:40</span></div>
+  <div class="pb">Zaaie boel hier op het Florum, en dat terwijl ik net zo hard liep te zagen vanmiddag</div>
+</article>
+<article class="post" data-ts="20090212192000" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-02-12 19:20</span></div>
+  <div class="pb">Je hebt mijn week meteen maar afgezaagd! Zaagmans, goed werk, ik ga van mijn weekend genieten..</div>
+</article>
+<article class="post" data-ts="20090217162500" id="p3">
+  <div class="ph"><span class="pa">Zaaaaaai</span><span class="pm">#3 · 2009-02-17 16:25</span></div>
+  <div class="pb">Zaai...</div>
+</article>
+<article class="post" data-ts="20090217183500" id="p4">
+  <div class="ph"><span class="pa">Zaag</span><span class="pm">#4 · 2009-02-17 18:35</span></div>
+  <div class="pb">Zaag zaag...</div>
+</article>
+<article class="post" data-ts="20090218113400" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2009-02-18 11:34</span></div>
+  <div class="pb">Olicke hoe staat de vlag erbij in Sevilla?<br><br>We missen je spitsvondigheid (uberhaupt enige spitsvondigheid) op het Florum.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

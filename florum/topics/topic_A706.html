@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 14 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 14</h1>
+<p class="tm">4 posts · started 2003-02-11 15:23 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030211152300" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-02-11 15:23</span></div>
+  <div class="pb">Het heeft weer even geduurd, maar de sponsor vroeg er weer om.<br>Een nieuwe timmie tikt. Ik ga het niet hebben over 23 narcistische douchescenes die op nummer 1 in de illegale internet downloads is terechtgkomen. zo dat is er uit. Ik ga ook geen cijfers geven.<br>Ik ga het hebben over paranoide gedrag. De amerikanen, redders van de wereld en de enige pure-blooded "democraten" in de wijde gevaarlijke wereld.<br>Het feit dat ze alle overzeese amerikaanse ambassades en instellingen zo willen beschermen dat het dagelijkse leven wordt ontwricht is een, kan ik nog inkomen.<br>Het feit dat je Duitsland vergelijkt met Cuba en Libie. Ach, foutje kan iedereen maken. Het feit dat je mensen in je eigen land laat denken dat Amerika ook echt zou worden aangevallen door irak op eigen grondgebied. Gaat wat ver, maar ook daar kan ik nog wel overheen stappen. Beweren dat Saddaaamn een ergere bedreiging is dan Stalin en Hitler gaat mij toch wel heel erg ver. Het verdoezelen van de ergste oorlog in de geschiedenis, ook voor de Amerikanen, en een tweede rangs dictator erger noemen. <br>Want ergens geloof ik niet dat Irak zoveel massvernietigingswapens heeft als het claimt.Wat hebben ze in vredesnaam aan vernietigingwapens.<br><br>Om even hier wat beter uitleg te geven, nodig ik jullie allen uit even te redeneren uit Saddamn's positie.<br>1. Alle arabische landen om je heen willen je niet aanvallen, misschien Israel, maar die hebben wel andere problemen, en Iran, maar die hebben ook geen zin om daar echt een oorlog te gaan voeren.<br>2. Alle Koerdische/Sjiitische/XXX etnishce minderheden heb je toch niet van dat soort wapens voor nodig. Een gewone AK-47 is al genoeg en als je daar niet aan kan komen weet ik het ook niet meer. <br>3. Economisch ben je toch een ramp.<br>4. (De einge reden om misschien er wel in te investeren) Amerika gebruikt je land als een proefballon waar Nawijn jaloers op is om hun nieuwe wapens uit te testen.<br>5. Zwitserland is toch te koud in de winter om behoorlijk in ballingschap te gaan (alhoewel skieen met de royalty wel geinig is.)<br><br>Een gave representatie van de toekomst is te vinden op www.idleworm.com voor de pessimisten onder ons. Zeer grappig en op sommige momenten zelfs een beetje eng gemakkelijk te bereiken. Ik zou zeggen check het uit en lach. <br>Een oorlog komt er hopelijk nog steeds niet, maar het wordt nu wel kiele-kiele. Na ach, hebben we de JSF toch niet voor niets gekocht als Al-Quada zo'n jsf in de martinitoren boort.<br><br> </div>
+</article>
+<article class="post" data-ts="20030211154400" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-02-11 15:44</span></div>
+  <div class="pb">1) de nieuwe tt staat nu ook in het rijtje bij de andere.<br>2) ik snap niet hoe timmie, nu de floraboys hun ergste crisis sinds hun totstandkoming doormaken over futiliteiten als oorlog met irak kan tikken, maar goed<br>3) mooi stuk timmie!</div>
+</article>
+<article class="post" data-ts="20030211195100" id="p3">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#3 · 2003-02-11 19:51</span></div>
+  <div class="pb">ik wilde expres de crisis binnen de floraboys achter me laten. Het enige dat telt zijn de prestaties. Daar kan ik lang of kort over zijn, als wij de bal hebben kan de tegenstander niet scoren.</div>
+</article>
+<article class="post" data-ts="20030213095700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2003-02-13 09:57</span></div>
+  <div class="pb">Stukje beperkte realiteitszin me dunkt. De slechte prestaties van de Floraboys worden in de doofpot gestopt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

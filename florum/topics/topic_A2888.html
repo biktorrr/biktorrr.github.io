@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merlijn – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Merlijn</h1>
+<p class="tm">10 posts · started 2010-05-11 20:28 by Vrijmibo</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100511202800" id="p1">
+  <div class="ph"><span class="pa">Vrijmibo</span><span class="pm">#1 · 2010-05-11 20:28</span></div>
+  <div class="pb">Terug van weggeweest: de vrijmibo. Uurtje of half vijf, brouwerij t ij. <br><br>Tik m aan of tik m nooit meer aan. </div>
+</article>
+<article class="post" data-ts="20100511202900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2010-05-11 20:29</span></div>
+  <div class="pb">Beetje verwarrende titel, maar de boodschap is duidelijk, denkelijk. </div>
+</article>
+<article class="post" data-ts="20100511212600" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2010-05-11 21:26</span></div>
+  <div class="pb">Later die avond ben ik zeker van de partij.</div>
+</article>
+<article class="post" data-ts="20100511215700" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2010-05-11 21:57</span></div>
+  <div class="pb">Er valt geen touw aan vast te knopen. Wie wil nou precies wat hier?</div>
+</article>
+<article class="post" data-ts="20100512090400" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2010-05-12 09:04</span></div>
+  <div class="pb">Ik ben er bij, Amber en Alexa waarschijnlijk ook. </div>
+</article>
+<article class="post" data-ts="20100512111000" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2010-05-12 11:10</span></div>
+  <div class="pb">ik ben ook van zins m aan te tikken.</div>
+</article>
+<article class="post" data-ts="20100512111800" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2010-05-12 11:18</span></div>
+  <div class="pb">Wat zegt de weersvoorspelling?</div>
+</article>
+<article class="post" data-ts="20100512125600" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2010-05-12 12:56</span></div>
+  <div class="pb">Ik heb ook een go van Frank Bloem en Marie. High tide.</div>
+</article>
+<article class="post" data-ts="20100513151100" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2010-05-13 15:11</span></div>
+  <div class="pb">Zoals het er nu uitziet: present!</div>
+</article>
+<article class="post" data-ts="20100514123300" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2010-05-14 12:33</span></div>
+  <div class="pb">ik heb mijn telefoonlader waarschijnlijk op mijn werk laten liggen en mijn batterij is nu leeg. Bel mij daarom niet! Dat heeft dus niet zo veel zin.<br>Wij zijn er tussen 16.30 en 17.00 uur.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

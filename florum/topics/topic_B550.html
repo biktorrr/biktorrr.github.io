@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nummer 24 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nummer 24</h1>
+<p class="tm">7 posts · started 2004-12-21 17:05 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041221170500" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2004-12-21 17:05</span></div>
+  <div class="pb">Hallo floraboys, ik ben sinds gisteren mijn rode floraboys voetbalshirt kwijt met rugnummer 24 (Winter). Aangezien hij nogal veel emotionele waarde voor me heeft hoor ik graag als iemand hem per ongeluk danwel opzettelijk mee naar huis heeft genomen.<br>Ik zou dit shirt graag weer terug ontvangen.<br><br>Post even hier als je hem tegengekomen bent, dan ontvang ik hem graag terug tijdens de volgende match of ik kom hem ophalen.</div>
+</article>
+<article class="post" data-ts="20041221204600" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2004-12-21 20:46</span></div>
+  <div class="pb">De ervaring leert dat een vermist shirt meestal in Tijmens wasmand ligt. Geef het anderhalve week voordat hij aan z'n halfuurtje wasvouwen toe is en je wordt vanzelf gebeld.<br><br></div>
+</article>
+<article class="post" data-ts="20041221220100" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-12-21 22:01</span></div>
+  <div class="pb">Ik gok dat Sicco hem heeft, aangezien ik mijn half uurtje wasvouwen al heb gehad en hem niet ben tegen gekomen</div>
+</article>
+<article class="post" data-ts="20041221224400" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2004-12-21 22:44</span></div>
+  <div class="pb">Hier kwam ook maar 1 shirt uit de tas. </div>
+</article>
+<article class="post" data-ts="20041223093200" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2004-12-23 09:32</span></div>
+  <div class="pb">Ook hier maar 1</div>
+</article>
+<article class="post" data-ts="20041223110300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-12-23 11:03</span></div>
+  <div class="pb">hier ook<br></div>
+</article>
+<article class="post" data-ts="20041228094900" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2004-12-28 09:49</span></div>
+  <div class="pb">Ik kreeg gisteren van Sicco te horen dat hij haar in z'n bezit had en reeds door de wasmachine gehaald had. Dus de volgende match als hij erbij is, dan zal hij er hopelijk aan denken om haar mee te nemen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

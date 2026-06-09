@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SvdM ??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SvdM ???</h1>
+<p class="tm">5 posts · started 2001-09-13 10:51 by Famous Frank</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010913105100" id="p1">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#1 · 2001-09-13 10:51</span></div>
+  <div class="pb">Hoe zit het met de SvdM??? gaat dit alleen over veldvoetbal... of ook over zaalvoetbal... wordt het zaalvoetbal niet ge-rated... omdat het teambelang voorop staat?? komt er een aparte svdm-zaal?? of laten we dit lekker hangen.... zo en zo heb ik daar nog geen wachtwoord voor... dat wil ik wel even hebben... zo kan ik tenminste ook af en toe een puntje weg geven.... mzzl</div>
+</article>
+<article class="post" data-ts="20010913114000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-09-13 11:40</span></div>
+  <div class="ps">restyle</div><div class="pb">ja er moet denk ik (WJ?) een aparte zaalbalpagina<br>komen. Ik zou niet een SvdM doen, maar goed. zo'n<br>pagina (de opzet is er nu al) is wel handig.<br>met ruimte voor bv:<br><br>- programma<br>- stand<br>- topscorerslijst<br>- filmpjens<br>- fotoos<br>- verslagen<br><br>dat soort shit..<br>WJ???<br><br><br></div>
+</article>
+<article class="post" data-ts="20010913134200" id="p3">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#3 · 2001-09-13 13:42</span></div>
+  <div class="ps">tja dat lijkt</div><div class="pb">me een goed plan,, alleen joost heeft het druk druk druk.. zoals altijd.. </div>
+</article>
+<article class="post" data-ts="20010913143400" id="p4">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#4 · 2001-09-13 14:34</span></div>
+  <div class="pb">misschien als ik s een keer tijd heb wil ik wel daar wat voor in elkaar proberen te knutselen met wat help..<br><br>Tuut</div>
+</article>
+<article class="post" data-ts="20010913183600" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2001-09-13 18:36</span></div>
+  <div class="pb">kzal er naar kijken dudez.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ca is jarig!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ca is jarig!!!</h1>
+<p class="tm">11 posts · started 2008-02-26 07:47 by Laura</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080226074700" id="p1">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#1 · 2008-02-26 07:47</span></div>
+  <div class="pb">Hey Ca,<br><br>gefeliciteerd! Je hebt er weer een jaartje bij :)<br><br>en nog bedankt voor het gezellige feestje afgelopen zaterdag met het schweinegebrat</div>
+</article>
+<article class="post" data-ts="20080226084400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-02-26 08:44</span></div>
+  <div class="pb">Gefeliciteeeeerd!<!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080226085900" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2008-02-26 08:59</span></div>
+  <div class="pb">gefeliciteerd Ca!<br><br>Ik hoop dat je vandaag lolsmurf krijgt bij de boodschappen!<!--132.229.223.225--></div>
+</article>
+<article class="post" data-ts="20080226094600" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-02-26 09:46</span></div>
+  <div class="pb">Gefeliciteerd Ca! <!--62.163.193.48--></div>
+</article>
+<article class="post" data-ts="20080226155800" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-02-26 15:58</span></div>
+  <div class="pb">Gefeliciteerd en nog vele jaren!<!--88.211.145.108--></div>
+</article>
+<article class="post" data-ts="20080226161300" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2008-02-26 16:13</span></div>
+  <div class="pb">Gefeliciteerd! We drinken binnenkort een biertje op je verjaring.<!--193.173.46.126--></div>
+</article>
+<article class="post" data-ts="20080226181400" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2008-02-26 18:14</span></div>
+  <div class="pb">Van harte gefeliciteerd! Ook namens de rest van de familie <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080226185400" id="p8">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#8 · 2008-02-26 18:54</span></div>
+  <div class="pb">Gefeliciteerd CA!<br><!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20080227092200" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2008-02-27 09:22</span></div>
+  <div class="pb">dankdankdank!<!--146.50.20.43--></div>
+</article>
+<article class="post" data-ts="20080303174400" id="p10">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#10 · 2008-03-03 17:44</span></div>
+  <div class="pb">Misschien wat laat, maar gefeliciteerd Ca!<!--91.141.229.80--></div>
+</article>
+<article class="post" data-ts="20080309211500" id="p11">
+  <div class="ph"><span class="pa">Crit</span><span class="pm">#11 · 2008-03-09 21:15</span></div>
+  <div class="pb">Gefeliciteerd K!<!--82.217.128.22--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

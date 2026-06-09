@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aanslag op Bikki – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Aanslag op Bikki</h1>
+<p class="tm">1 post · started 2003-11-21 17:16 by ANP</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031121171600" id="p1">
+  <div class="ph"><span class="pa">ANP</span><span class="pm">#1 · 2003-11-21 17:16</span></div>
+  <div class="pb">LEIDEN -- Hedenmiddag is een inval gedaan in een woning te Amsterdam, alwaar grote hoeveelheden munitie en explosieven gevonden werden. Daarnaast werden ook meerdere uitgebreide plattegronden en ruimtelijke tekeningen van het Huygens Laboratorium en het J.H. Oort gebouw aan de Niels Bohrweg te Leiden aangetroffen. Aangenomen wordt dat er een sterk verband bestaat tussen de vrijetijdsbesteding van stervedette Bikki, die aldaar door de kijker naar de sterren koekeloert. Het is echter niet duidelijk of Bikki zelf doelwit was. Na bestudering van de paperassen is de plaatselijke politie gebleken dat er in het plan ruimte was gelaten voor een evacuatie van Biggy via het riool. Het plan zou er ook in voorzien dat na de evacuatie beide gebouwen en al haar inzittenden zouden worden opgeblazen.<br><br>Personen die hedenmiddag aanwezig waren in het pand waar de inval plaatvond, verklaarden het zat te zijn dat Bikki geen Timmie Tikts meer produceert en wijtten dit aan de activiteiten die Tuut buiten zijn voetballeven ontplooit. Eveneens communiceerden de aanwezigen dat er aan de eventueel verloren levens niets verloren zou zijn gaan.<br><br>Er zijn geen aanhoudingen verricht, noch zijn er waren in beslag genomen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

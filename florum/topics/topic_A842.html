@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tube? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tube?</h1>
+<p class="tm">2 posts · started 2003-07-11 18:41 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030711184100" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-07-11 18:41</span></div>
+  <div class="pb">Vandaag ook maar eens een halfuurtje gekeken. Ik woon er toch zullen we maar zeggen. Saai hoor, en lekker voorspelbaar. Ik had de pot zo opgestreken...</div>
+</article>
+<article class="post" data-ts="20030711215500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2003-07-11 21:55</span></div>
+  <div class="pb">Tube, ben jij niet rond middernacht thuisgekomen?<br><br><br>Horecagangers hinderen uit Spaarne takelen auto <br>HAARLEM - Opdringerig publiek heeft het de politie en de brandweer vannacht knap lastig gemaakt. De hulpdiensten waren uitgerukt om een witte Peugeot 205, die niet goed op de handrem was gezet, uit het Spaarne in het centrum van Haarlem te takelen. Omstanders stonden zo dicht op de hulpverleners, dat het werk ernstig werd gehinderd. Enkele caf\ébezoekers probeerden zelfs de aanhangwagen van de brandweer los te koppelen.<br><br> <br>Pas toen de diensthond erbij werd gehaald, besloot het publiek de situatie vanaf de andere kant van het Spaarne te gaan bekijken. Twee 21-jarige Haarlemmers die het nodig vonden de dienstdoende agenten te beledigen, zijn ingesloten.<br><br>De Peugeot rolde na middernacht de rivier in. Een getuige die het incident zag gebeuren, sloeg direct alarm. Aangezien de politie niet wist of er personen in de auto zaten, dook een duikteam van de brandweer het water in. <br><br>Nadat de Peugeot op de kant was getakeld, bleek dat de koppeling in de vrijstand stond en dat de handrem nauwelijks was aangetrokken. De politie vermoedt dat de auto het water is ingeduwd. <br> <br>Kees van der Linden <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

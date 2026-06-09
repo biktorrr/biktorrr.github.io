@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>haha, die Jobbert toch – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">haha, die Jobbert toch</h1>
+<p class="tm">3 posts · started 2006-06-06 10:49 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060606104900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-06-06 10:49</span></div>
+  <div class="pb"><a href="http://www.hazazah.com/bramschouw/showreel/burgemeestercohen/">Job houdt even een balletje hoog</a></div>
+</article>
+<article class="post" data-ts="20060606133600" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-06-06 13:36</span></div>
+  <div class="pb">haha, terecht.<br>Step aside, Wouter.</div>
+</article>
+<article class="post" data-ts="20060606163600" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-06-06 16:36</span></div>
+  <div class="pb">nog even een spammetje: <br><br>Kennen jullie een DJ die <a href="http://www.nu.nl/news/747523/12/Nachtwacht_onthoofd_op_Rembrandtplein_%28video%29.html">hier</a> meer van weet?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>co&#x27;tje bedankt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">co&#x27;tje bedankt</h1>
+<p class="tm">5 posts · started 2001-11-29 12:48 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011129124800" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2001-11-29 12:48</span></div>
+  <div class="pb">co'tje bedankt! co'tje co'tje cooo'tje bedankt!!!</div>
+</article>
+<article class="post" data-ts="20011129135300" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-11-29 13:53</span></div>
+  <div class="pb">dag kootje dag hoor<br></div>
+</article>
+<article class="post" data-ts="20011129183700" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-11-29 18:37</span></div>
+  <div class="pb">Tja mooie vacature voor Louis.<br><br>Wie denken jullie?<br><br>Van Basten heeft ook wel goede papieren denk ik (behalve diplomas dan)<br><br>Jansen<br><br></div>
+</article>
+<article class="post" data-ts="20011130185200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-11-30 18:52</span></div>
+  <div class="pb">Respect voor de man die 1-2 afdwong in de Kuip. Ook<br>respect voor de doelpuntenmakers van die oogverblin-<br>dende pot: Zlatan en Rafael!</div>
+</article>
+<article class="post" data-ts="20011130221200" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2001-11-30 22:12</span></div>
+  <div class="pb">respect voor Rafael spreekt voor zich. Zonder Rafael was CO al 3 maanden geleden weg geweest.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

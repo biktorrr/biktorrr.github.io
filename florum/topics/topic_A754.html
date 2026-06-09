@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>kenobi COLUMN dl3 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">kenobi COLUMN dl3</h1>
+<p class="tm">3 posts · started 2003-04-11 13:37 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030411133700" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-04-11 13:37</span></div>
+  <div class="pb">voor de luie mensen: hier istie<br><br><br>Misha's Column: Voetbal <br>M.J.A. Kuijs <br> <br>  Voetbal<br>Er is maar een wereldsport en dat is voetbal. Deze sport heeft de wereldburger in mij wakker gemaakt, overal waar je komt zijn de mensen ge\ëmotioneerd van voetbal. Geen andere sport reflecteert het leven zoals voetbal. Mensen reageren intiem op de negentig minuten drama van het voetbal, vaak omdat het een metafoor van hun bestaan is. Van de helft van de wedstrijden die wij zien wint het beste team niet - zie PSV afgelopen week - net zoals de beste persoon niet altijd de beste baan krijgt, of de persoon die het verdient wordt niet beloond. Voetbal weerspiegelt al deze onterechtheden en op hun beurt zorgen deze onterechtheden voor de belevenis van emotie bij de toeschouwers. Maar waarom heb ik het in deze column over voetbal terwijl ik in Australi\ë zit? In tegenstelling tot Nederland is voetbal hier niet de grootste sport, dat is namelijk Aussie Rules Football, en dat terwijl het wel een van de oudste sporten is die op dit continent gespeeld werden*. Ook hebben ze redelijke voetballers zoals Viduka, Kewell en de in Nederland spelende Emerton, die momenteel de beste voetballer van Australasia is. Maar dit alles is niet genoeg om het vuur van het voetbal in Australi\ë te doen verspreiden. Iets wat over meer voormalig Engelse koloni\ën gezegd kan worden.<br><br>De mensen en de media zijn hier gericht op hun eigen kleine spelletjes zoals het genoemde Footy maar ook Cricket en Rugby. Al deze sporten zijn relatief klein, maar de Australi\ërs houden er van omdat ze winnaars zijn in deze sporten. Australi\ë is sinds kort wereldkampioen Cricket, waarin ze Nederland vernedert hebben. Ongetwijfeld werd hier in Nederland nauwelijks over gesproken terwijl het hier in alle kranten stond. In het van een sport houden omdat je vaak wint ligt een grote parallel met Nederland. Net zoals Australi\ë heeft Nederland niet zoveel inwoners (16 miljoen tegen 20 miljoen) en staan de kranten vol met sporten waarin Nederland goed is en de rest van de wereld niet ge\ïnteresseerd is. Ik noem hier schaatsen, hockey en korfbal. Het is makkelijk om van deze sporten te houden omdat de tegenstand hier niet zo sterk is als in het voetbal. Om wereldkampioen korfbal te worden moet je zon vier goede tegenstanders verslaan, terwijl dit voor voetbal zon honderd landen zijn. De overwinning op Moldavi\ë was zelfs zeer moeizaam. <br><br>Gelukkig houden wij in Nederland naast de kleinere sporten, in tegenstelling tot Australi\ë, wel van voetbal. Helaas is de FIFA van mening dat voetbal populairder moet worden in plaatsen waar dat nu nog niet het geval is. De consequentie hiervan is dat landen zoals de Verenigde Staten en Australi\ë hun kwalificatie voor de wereldkampioenschappen op een gouden schaaltje krijgen aangeboden, terwijl er steeds minder plaatsen zijn voor de  veelal betere  Europese landen. Zo zul je zien dat Australi\ë, met de magere liefde voor het spel, zich wel plaatst voor het komende WK in Duitsland en Nederland niet. <br><br><br>* In 1880 behoorde Australi\ë tot een van de zes landen die het voetbal over de wereld bepaalden nog voor de FIFA was opgericht. <br></div>
+</article>
+<article class="post" data-ts="20030411133900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-04-11 13:39</span></div>
+  <div class="pb">inderdaad: minder korfbal in de kranten!</div>
+</article>
+<article class="post" data-ts="20030414141200" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2003-04-14 14:12</span></div>
+  <div class="ps">daar kan TUUT</div><div class="pb">nog een puntje aan zuigen. Ik kijk alweer uit naar de nieuwe timmie tikt! TIM gaat toch niet met zomerreces????</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

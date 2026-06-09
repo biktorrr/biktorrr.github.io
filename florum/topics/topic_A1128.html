@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gaat dit te ver? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gaat dit te ver?</h1>
+<p class="tm">6 posts · started 2004-03-03 23:33 by Lh</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040303233300" id="p1">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#1 · 2004-03-03 23:33</span></div>
+  <div class="pb">Via Ebay....<br> <br>http://cgi.ebay.nl/ws/eBayISAPI.dll?ViewItem&item=2383126049&category=14565<br><br>O u wilt hem liever in het oranje?Dat kan maar dan moet u het nog wel even drie dagen volhouden want dan pas is de veiling afgelopen.....<br></div>
+</article>
+<article class="post" data-ts="20040304101800" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-03-04 10:18</span></div>
+  <div class="pb">Hangt er vanaf zit het lijk er nog in?</div>
+</article>
+<article class="post" data-ts="20040304101800" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-03-04 10:18</span></div>
+  <div class="pb">vet! <br><br>en dan zo'n mooie Feyenoord-vlag eroverheen gedrapeerd...</div>
+</article>
+<article class="post" data-ts="20040304115700" id="p4">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#4 · 2004-03-04 11:57</span></div>
+  <div class="pb">Deze kist is natuurlijk ook voor hele andere doeleinden te gebruiken.......maak er een audiomeubel van.....of misschien een salontafel?!<br><br></div>
+</article>
+<article class="post" data-ts="20040304120200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-03-04 12:02</span></div>
+  <div class="pb">We zouden er natuurlijk altijd een spoiler op kunnen bevestigen en een groot zoeklicht d'r op monteren. Staat toch een stukje netter. Ook god in de verwerking van de rouwe.</div>
+</article>
+<article class="post" data-ts="20040304130300" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-03-04 13:03</span></div>
+  <div class="pb">Iets voor de Red Bull zeepkistenrace dunkt mij.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

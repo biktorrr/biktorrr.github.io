@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florum – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florum</h1>
+<p class="tm">8 posts · started 2007-06-04 14:20 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070604142000" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2007-06-04 14:20</span></div>
+  <div class="pb">Jazzy, ben je aan het werk aan het Florum?<br><br>Ik kan met IE niet meer posten (ik kom niet verder na de bigt-verificatie). In Firefox lukt het wel, getuige dit bericht.</div>
+</article>
+<article class="post" data-ts="20070604152800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2007-06-04 15:28</span></div>
+  <div class="pb">Ik heb wel wat aanpassingen gedaan, met diverse merkwaardige resultaten. Als je de reply link in een nieuwe venster/tabblad opent werkt alles prima. Dezelfde link binnen de site werkt ineens weer niet. Erg raar allemaal.</div>
+</article>
+<article class="post" data-ts="20070604160700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-06-04 16:07</span></div>
+  <div class="pb">ja ik krijg dit als html in de 'tussenpagina'<br><br>Goed geantwoord, je mag <a href='repmes.php?id=2060'>verder</a>Array<br>(<br>)<br>test2:<br><br>dat lijkt me niet helemaal goed. Volgens mij genereert de php incorrecte html.</div>
+</article>
+<article class="post" data-ts="20070604163400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2007-06-04 16:34</span></div>
+  <div class="pb">Ja, das gewoon slordig, maar replyen in een nieuw venster werkt wel goed. Volgens mij werkt het alleen niet in IE7. Maar zal er nog eens naar kijken vanavond.</div>
+</article>
+<article class="post" data-ts="20070604165800" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-06-04 16:58</span></div>
+  <div class="pb">oke, het is een probleem met privacy settings in Internet Explorer 7. Er wordt een cookie bewaard op het florum (sv-hbc.nl) . Maar aangezien het florum normaal binnen floraboys.com getoond wordt, wordt deze niet geaccepteerd. Ik heb net mijn privacy instelling verlaagd en plots werkt het weer. Erg raar verder, het is namelijk exact dezelfde pagina alleen binnen een frame vanaf een andere site. </div>
+</article>
+<article class="post" data-ts="20070604172300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-06-04 17:23</span></div>
+  <div class="pb">oja inderdaad, met lagere privacy werkt t wel. <br>Wel raar<br><br>Wat was er eigenlijk niet goed aan de autom. redirect dat je nu moet klikken?<br></div>
+</article>
+<article class="post" data-ts="20070604173400" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2007-06-04 17:34</span></div>
+  <div class="pb">Nou, er ging iets niet goed, en ik heb even wat verschillende dingen geprobeerd om te kijken waar het aan lag. Voordeel is nu wel, dat je niet meer iedere keer het wachtwoord hoeft in te vullen. De automatische redirect zal ik er vanavond weer in knallen.</div>
+</article>
+<article class="post" data-ts="20070605081200" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-06-05 08:12</span></div>
+  <div class="pb">Schandelijk!!! Dat zoiets kan in Nederland. Ik heb er cheen woorden voor.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

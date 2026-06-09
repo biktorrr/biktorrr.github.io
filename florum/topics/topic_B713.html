@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ruud weg bij Man Utd.? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ruud weg bij Man Utd.?</h1>
+<p class="tm">6 posts · started 2006-03-16 12:24 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060316122400" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-03-16 12:24</span></div>
+  <div class="pb"><a href="http://www.thesun.co.uk/article/0,,2002390000-2006120217,00.html">lees hier</a></div>
+</article>
+<article class="post" data-ts="20060316122900" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-03-16 12:29</span></div>
+  <div class="pb">Wel terecht dat "Van The Brother" geruchten verspreidt in de pub.</div>
+</article>
+<article class="post" data-ts="20060316160600" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-03-16 16:06</span></div>
+  <div class="pb">gerucht gaat al een tijdje via The Sun, maar dat doen ze altijd als er een topspeler drie wedstrijden niet in de basis staat. Ik denk: loos alarm</div>
+</article>
+<article class="post" data-ts="20060316161500" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2006-03-16 16:15</span></div>
+  <div class="pb">Ik denk: REVT troef?</div>
+</article>
+<article class="post" data-ts="20060316170100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-03-16 17:01</span></div>
+  <div class="pb">@TN: maar nu heeft Ruud's bloedeigen broer het ook staan verkondigen in de kroeg. Als het dan niet waar is weet ik het ook niet meer <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20060316192300" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2006-03-16 19:23</span></div>
+  <div class="pb">Was het niet gewoon "MB the man" die in een Belgische kroeg stond te ouwehoeren?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

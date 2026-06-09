@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>volgend seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">volgend seizoen</h1>
+<p class="tm">6 posts · started 2006-07-21 11:39 by penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060721113900" id="p1">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#1 · 2006-07-21 11:39</span></div>
+  <div class="pb">Even inventarisatie voor volgend seizoen:<br>(Ga ht formulier opstellen)<br>bikkels:<br>Mer<br>Kenzo<br>Joost<br>Vic<br>LilT<br>Misha<br>BIK<br>IK<br><br>Dagen:<br>liever wel: Ma<br>Liever niet: woe<br>Nooit niet: vrij<br><br>Okidoki zo?<br></div>
+</article>
+<article class="post" data-ts="20060721115300" id="p2">
+  <div class="ph"><span class="pa">BikT</span><span class="pm">#2 · 2006-07-21 11:53</span></div>
+  <div class="pb">liever niet maandag..juist liever woensdag </div>
+</article>
+<article class="post" data-ts="20060721130500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-07-21 13:05</span></div>
+  <div class="pb">ik vind de draft van Cootje top.<br>Bik, woensdag is vaak CL, maandag niet. Is maandag Veronica's SF dag?<br><br></div>
+</article>
+<article class="post" data-ts="20060728135100" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2006-07-28 13:51</span></div>
+  <div class="pb">ok dan,<br><br>de formulieren zijn ingeleverd. We doen weer mee! (Ik weet alleen nog niet in welke klasse)<br><br>Voor deze service mijnerzijds reken ik het uurtarief van 92 euri.<br>Dat betekent voor eenieder 11,50 op mijn rekening: 4030192</div>
+</article>
+<article class="post" data-ts="20060731100800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-07-31 10:08</span></div>
+  <div class="pb">Goed werk Coo, komt eraan<br></div>
+</article>
+<article class="post" data-ts="20060808133900" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-08-08 13:39</span></div>
+  <div class="pb">overgemaakt</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

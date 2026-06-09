@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuw spel? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuw spel?</h1>
+<p class="tm">5 posts · started 2001-09-21 13:53 by Frank</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010921135300" id="p1">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#1 · 2001-09-21 13:53</span></div>
+  <div class="pb">Ja er wordt dus zaterdag in het Florapark gevoetbald. SandOr is toch ook wel van de partij? En demente Poopie, ik had dus wel een voorkeur opgegeven. Ik wil potdorie in het Florapark!<br>En misschien kan ik nog wel een mascotte regelen voor zaterdag: de rokende man! Maar reken er maar niet op.</div>
+</article>
+<article class="post" data-ts="20010921142800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2001-09-21 14:28</span></div>
+  <div class="pb">Ik vind het natuurlijk heeel erg wat 'r gebeurd is in<br>Amerika. En ik wil nog even kwijt dat we hypocriet zijn<br>omdat we niet elke dag anderhalf uur stil zijn voor 't<br>leed in de wereld, maar ik heb 'n idee voor 'n lollig<br>spelletje. Komt i:<br><br>Is gebaseerd op voetbalgame, maar dan met onze spelers.<br>Als we nou alle spelers classificeren naar aanvaller,<br>middenvelder en verdediger en na elke wedstrijd punten<br>toebedelen d.m.v. regels die parallel lopen aan die van<br>voetbalgame, dan kunnen onze fans fijn actief blijven.<br>Fleur die bijvoorbeeld mij snel in 'r team haalt en 'n<br>hopeloze Victor d'r uit mikt. Ik stel de volgende regels<br>voor:<br><br>1. In de basis: +1;<br>2. Verdediger: 10-x, x = aantal tegengoals;<br>3. Aanvaller: y, y = aantal goals van Floraboys;<br>4. Middenvelder: (10-x+y)/2;<br>5. Goal verdediger: +5;<br>6. Goal middenvelder: +3;<br>7. Goal aanvaller: +2.<br><br>Ik stel de volgende verdeling voor:<br><br>Aanvaller: Joost, Frank;<br>Middenvelder: Olivier, Michiel, Holy;<br>Verdediging: Maarten, Victor, Merlijn.<br><br>Ideetje?<br></div>
+</article>
+<article class="post" data-ts="20010921143800" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-09-21 14:38</span></div>
+  <div class="pb">Hoeveel punten krijg je voor in het ziekenhuis liggen?<br></div>
+</article>
+<article class="post" data-ts="20010921193700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2001-09-21 19:37</span></div>
+  <div class="pb">En bloed, en bloed?!!</div>
+</article>
+<article class="post" data-ts="20010924083200" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2001-09-24 08:32</span></div>
+  <div class="pb">En grote littekens?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Van verre – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Van verre</h1>
+<p class="tm">3 posts · started 2002-12-12 12:16 by Penose</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021212121600" id="p1">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#1 · 2002-12-12 12:16</span></div>
+  <div class="pb">Ik denk dat we ons allemaal wel een een beetje hetzelfde voelen. Jullie zijn aan het bijkomen van de dagenlange durende kater die onverhoopt optreed na een SPA, terwijl ik eenzelfde gevoel heb vanwege de cultuurschok weer terug in Nederland. Voorlopig ben ik nog even geparalyseerd door de stilte, de orde en de kou met daarbijhorende centrale verwarming. Maar om het herintegratieproces weer op gang te brengen, zal ik wel wat steun nodig hebben. Ik moet weer leren fietsen (aan de rechter kant), niet in de regen te dansen en met mes en vork eten. Ook het drinken ben ik bijna geheel verleerd. <br>Nog bijkomend, ik ben al mijn telefoonnummers kwijt en een deel van mijn e-mail adressen. Als iemand zich tekort voelt gedaan, komt dat door deze vorm van ongewilde excommunicatie. <br>Tot gauw op een geschikte locatie in ons kikkerlandje</div>
+</article>
+<article class="post" data-ts="20021212124900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-12-12 12:49</span></div>
+  <div class="pb">vrijdag ergens (bijvoorbeeld bij de Tube en CA) een Penose-Integratie-Party?</div>
+</article>
+<article class="post" data-ts="20021212125100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-12-12 12:51</span></div>
+  <div class="pb">alleen kan ik dan zelf pas heel laat zie ik nu</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

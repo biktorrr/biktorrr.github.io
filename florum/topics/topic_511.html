@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaalbalpagina geupdate – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaalbalpagina geupdate</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2004-09-21 11:26 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040921112600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1&nbsp;·&nbsp;2004-09-21 11:26</span></div>
+  <div class="pb">Die monsterscore van vorige keer kon natuurlijk niet lang genegeerd worden. <br><br>Jossyt staat bovenaan de topscorerslijst en is gelijk niet meer in te halen en Biktie staat bovenaan de eigen doelpuntenlijst!<br><br>Beide vedetten gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20040921113100" id="p2">
+  <div class="ph"><span class="pa">Jossyt</span><span class="pm">#2&nbsp;·&nbsp;2004-09-21 11:31</span></div>
+  <div class="pb">Dank, dank.</div>
+</article>
+<article class="post" data-ts="20040921113300" id="p3">
+  <div class="ph"><span class="pa">Jossyt</span><span class="pm">#3&nbsp;·&nbsp;2004-09-21 11:33</span></div>
+  <div class="pb">Die buhnebal van Holy tegen Pantofolo d'Oro wordt niet geteld?<br></div>
+</article>
+<article class="post" data-ts="20040921115700" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4&nbsp;·&nbsp;2004-09-21 11:57</span></div>
+  <div class="pb">mooie discussies over de definitie van een buhnebal.<br>Volgens VB moettie dus _eerst_ de buhne raken en daar blijven?</div>
+</article>
+<article class="post" data-ts="20040921121600" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5&nbsp;·&nbsp;2004-09-21 12:16</span></div>
+  <div class="pb">Koop anders even de videoreeks Greatest Moments of VVWF 1 tot en met 36</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

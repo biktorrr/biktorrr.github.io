@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>belangrijk voetbal nieuws – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">belangrijk voetbal nieuws</h1>
+<p class="tm">8 posts · started 2007-12-02 12:49 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071202124900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-12-02 12:49</span></div>
+  <div class="pb">A. Loting EK<br><br>NEDERLAND <br>Itali\ë <br>Roemeni\ë <br>Frankrijk<br><br>En onze lieve Oosterburen hebben weer de poule des goots <br><br>Oostenrijk <br>Kroati\ë <br>Duitsland <br>Polen <br><br>B. Za 8 december ballen. Zie <br><a href="http://www.floraboys.com/zaal/expsel.php?id=809">voetbal florum</a> komt allen<br><br><br></div>
+</article>
+<article class="post" data-ts="20071203083500" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2007-12-03 08:35</span></div>
+  <div class="pb">LEES OOK NIET OVER DE VOETBAL FLORUM LINK HEEN!<br><!--82.95.0.29--></div>
+</article>
+<article class="post" data-ts="20140213163019" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2014-02-13 16:30</span></div>
+  <div class="pb">okay kan enige normaal-denkend (of juist niet) persoon me dit uitleggen:<br>""<br>Het Nederlands elftal is op de nieuwe FIFA-ranking van de negende naar de tiende plaats gezakt. WK-organisator Brazili\ë passeert Oranje.<br><br>Nederland staat nog maar net in de top tien; de voorsprong op nummer elf Belgi\ë bedraagt vijf punten.<br>Spanje voert de ranglijst nog steeds aan, voor Duitsland, Argentini\ë, Portugal en Colombia. Zwitserland verruilt de achtste voor de zesde plaats, ten koste van Uruguay (nu zevende) en Itali\ë (nu achtste).<br><br>De mutaties zijn opmerkelijk omdat er afgelopen maand geen interlands werden gespeeld.<br>""<br><br>hoe kunnen we in godsnaam van plaats wisselen als niemand speelt??</div>
+</article>
+<article class="post" data-ts="20140213165250" id="p4">
+  <div class="ph"><span class="pa">W. E. L. Denkend-Mens</span><span class="pm">#4 · 2014-02-13 16:52</span></div>
+  <div class="pb">Van wikipedia:<br>" Under the existing system, rankings are based on a team's performance over the last four years, with more recent results and more significant matches being more heavily weighted to help reflect the current competitive state of a team."<br><br>De vier-jaars periode schuift door, ook als je niet speelt. Er zullen denkblijkelijk wat goede wedstrijden van vier jaar geleden uit ons window gevallen zijn.<br><br>QED</div>
+</article>
+<article class="post" data-ts="20140213172100" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2014-02-13 17:21</span></div>
+  <div class="pb">ehm nee:<br><br>in januari voor een winterspelen wordt nooit gebald (in Feb ook niet):<br><br>http://www.voetbalstats.nl/listjaarnedxi.php?jaar=2010<br><br>1e interland was pas op 3 maart.<br><br>Het zal wel aan de weging liggen. Als Blatter die heeft bedacht zullen de meeste formules in mijn wetenschappelijke papers makkelijker te begrijpen zijn voor jullie. <br></div>
+</article>
+<article class="post" data-ts="20140220150513" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2014-02-20 15:05</span></div>
+  <div class="pb">Ok, hier moest ik om lachen. En dat is gezond.<br><br><img src="http://cdn.speld.nl/wp-content/uploads/Staafdiagram-Ajax.jpg"></div>
+</article>
+<article class="post" data-ts="20140220150529" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2014-02-20 15:05</span></div>
+  <div class="pb">Bron: de Speld</div>
+</article>
+<article class="post" data-ts="20140224150206" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2014-02-24 15:02</span></div>
+  <div class="pb">Ha, same here. Ook de 2-2 van gisteren was overigens goed voor leedvermaak. Ajax-Salzburg was dan weer iets minder hilarisch.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

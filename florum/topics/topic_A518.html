@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Punten – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Punten</h1>
+<p class="tm">9 posts · started 2002-06-19 12:22 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020619122200" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-06-19 12:22</span></div>
+  <div class="pb">Wie kunnen er geen punten meer halen voor de poule?<br>Ik weet dat mer en ik al op onze max zitten....nog meer mensen?</div>
+</article>
+<article class="post" data-ts="20020619131800" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-06-19 13:18</span></div>
+  <div class="pb">Ik kan mijn hoop slechts nog vestigen op Engeland maar die heb ik alleen nog maar in de 1/2 finale dus echt veel zal het me niet opleveren.</div>
+</article>
+<article class="post" data-ts="20020619132800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-06-19 13:28</span></div>
+  <div class="ps">ik heb</div><div class="pb">engeland in de finale, tegen brazilie???<br><br>maarja 1 van de 2 vliegt eruit...</div>
+</article>
+<article class="post" data-ts="20020619133700" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-06-19 13:37</span></div>
+  <div class="pb">ik heb engeland als Wereldkampioen, maar ik weet niet of ik dan nog bovenaan kan komen, want voor de rest is het niet zo toppie bij mij want mijnandere drie halve finalisten zijn eruit.</div>
+</article>
+<article class="post" data-ts="20020619160300" id="p5">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#5 · 2002-06-19 16:03</span></div>
+  <div class="pb">alleen spanje nog in de halve finales.. kom ik dus 1 punt boven tijmen.. dat is mijn maximum</div>
+</article>
+<article class="post" data-ts="20020619164400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2002-06-19 16:44</span></div>
+  <div class="pb">Dat had de FIFA mij best even kunnen vertellen, dat ze er<br>alles aan zouden doen om Italie eruit te werken. Vijf ten<br>onrechte afgekeurde goals en een rode kaart loopt toch wat<br>al teveel in de gaten...</div>
+</article>
+<article class="post" data-ts="20020621120600" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2002-06-21 12:06</span></div>
+  <div class="pb">ik heb Spanje als halve finalist naast Fr - Arg en Italie (fifa bedankt)</div>
+</article>
+<article class="post" data-ts="20020621125000" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-06-21 12:50</span></div>
+  <div class="pb">nou daar ging mijn troef, dag engeland, dag poulewinst.. zucht, volgend jaar maar weer, of tour de france?</div>
+</article>
+<article class="post" data-ts="20020621141000" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2002-06-21 14:10</span></div>
+  <div class="pb">voor mij is het ook schluss. zuipen!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

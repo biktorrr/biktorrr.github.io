@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Persconferentie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Persconferentie</h1>
+<p class="tm">1 post · started 2003-03-21 12:46 by Groene Amsterdammer</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030321124600" id="p1">
+  <div class="ph"><span class="pa">Groene Amsterdammer</span><span class="pm">#1 · 2003-03-21 12:46</span></div>
+  <div class="pb">In tijden van wereldomspannende spanning, veroorzaakt door de tweede Golf-oorlog, geven allerhande hoogwaardigheidsbekleders commentaren. Deze woorden worden meestal geuit om kalmte uit te stralen en vandaar de rust onder de bevolking te bewaren. Om die reden is het niet opmerkelijk dat ook sportverenigingen zich uitlaten over de huidige ontwikkelingen. Niemand zal willen en kunnen ontkennen dat individuele sporters een groot gezag genieten binnen de maatschappij en vanuit die positie de fans en supporters tot bezinning kunnen aanzetten.<br><br>Vanochtend heeft Floraboys SC een persconferentie belegd, om bij monde van Merlijn de opinio communis te verkondigen. "Net als iedereen leven de Floraboys mee met de Flora-fans in Irak," aldus de sterverdediger. "In eerste plaats gaan daarom onze gedachten uit naar Udai en Qusay, zoons van de geplaagde Saddam. Zoals we allemaal weten hebben zij een skybox aan het Florapark, waar we ze helaas veel te weinig zien. Er worden veelal verschrikkelijke dingen geschreven over onze twee sportvrienden. Ik heb zelf de eer mogen genieten van hun gastvrijheid gebruik te maken en kan allen hier verzekeren dat van alle hatelijkheden die in de pers verschenen zijn over mijn donkerbruine broeders alles gelogen is. En stel dat er iets van waar is, dan vraag ik aan iedereen alhier: "Hij die zonder zonden is, werpe de eerste steen."" <br><br>Het verzamelde journaille verbijsterd door deze overtuigende wending van Merlijn, die een begenadigd redenaar blijkt te zijn, knikte instemmend op zijn retorische vraag.<br><br>"Heeft niet ieder huisje zijn kruisje? Juist, ja. Laten we eerst bedenken wat onze liefhebbers vrijheids ons geschonken hebben? Waren zij het niet die zonder mokken de portomonnee trokken toen Sicco gehaald moest worden, waren zij het niet die het Bestuur een gratis trainingskamp voor Joost aanboden. Gratis en voor niets! Nee, Udai en Qusay zijn ware Flora-fans, die we met respect moeten bejegenen. Ik kan me weinig meer trouwere fans voorstellen dan zijn. Zo kan ik gerust zeggen dat Udai alle basisopstelling van de afgelopen twee jaar Flora-historie weet op te dreunen en dat Quasy -- ik heb het zelf gezien -- een levensgrote tattoo heeft van de Tim met de tekst "Timmie Ahk-bar". En ach, als een van hen uit enthousiasme zijn schietgeweer leegschiet, dan kunnen we toch alleen maar van hem houden? Tegen Udai, Qusay en alle andere Flora-fans in Irak wil ik graag zeggen: houd je taai en tot ziens bij het Roeterseiland voetbaltoernooi, want daar kunnen jullie ons weer zien schitteren." Aldus een duidelijk geemotioneerde verdediger van wereldfaam. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

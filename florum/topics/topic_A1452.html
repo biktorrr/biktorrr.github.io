@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jossyt Salvador Puite – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Jossyt Salvador Puite</h1>
+<p class="tm">3 posts · started 2005-03-30 11:08 by Henk Spaan</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050330110800" id="p1">
+  <div class="ph"><span class="pa">Henk Spaan</span><span class="pm">#1 · 2005-03-30 11:08</span></div>
+  <div class="pb">De nood is aan de man bij de Floraboys. Met een schamel puntje uit drie wedstrijden en een doelsaldo om te huilen, staan de boys stijf onderaan. In de wandelgangen wordt onderhand drukker gekonkeld dan er op het veld wordt gebikkeld. Al deze onrust is overgeslagen op de fans, waarvan een smaldeel zich heeft verenigd in het paramilitaire FFF. Laatstgenoemde supportersvereniging uit haar onvrede door middel van onophoudelijke terreur richting haar eigen spelers. Zelfs in zulke mate dat bepaalde spelers er op het laatste moment van afzien naar de training te komen, omdat hun veiligheid niet meer gegarandeerd kan worden.<br><br>Slechts twee spelers lijken zich aan de woede van het FFF te onttrekken: VVWF en Jossyt S. Eerstgenoemde sleept de gezondheid van z'n knie al een jaar lang voor de poorten van de hel weg, maar wordt desondanks nog elke wedstrijd bezongen. De rentree van VVWF zal nog zeker een halfjaar op zich laten wachten. Ook Jossyt S. heeft zich mogen verheugen in permanente steunbetuigingen, niet alleen vanwege zijn unieke persoonlijkheid maar ook vanwege zijn prestaties als topscorer aller tijden. <br><br>Maar uit zeer betrouwbare bron heb ik vernomen dat Jossyt S. in het geheim reeds volledig hersteld is van z'n knieblessure. De feiten willen dat hij niet meer de zin kan opbrengen voor de Floraboys in deze samenstelling te knokken. Jossyt S. is teleurgesteld in de Floraboys, niet alleen op het persoonlijke vlak maar ook als voetballer zijnde. Het is een publiek geheim dat Jossyt S. zich vaak verlaten heeft gevoeld tijdens zijn revalidatieperiode. Slechts een enkeling waagde zich naar Haarlem-Noord, waar de deur altijd open staat en de oventapas gastvrij worden bereid. Dit besef is onderhand ook tot de boys zelf doorgedrongen, maar de excuses zijn te mager en de vleierijen komen te laat. Zou Jossyt S. zich nu nog wat aantrekken van Big T's "Hero van Haarlem"?<br><br>Officieel heet het dat Jossyt S. nog niet volledig fit is en niet op halve kracht mee zou willen draaien. Maar dat is natuurlijk nonsens, een half-fitte Jossyt S. is van waarde voor elk team, al helemaal voor dit losgeslagen samenraapsel Floraboys. Maar in feite heeft Jossyt geen zin om zich in het wespennest te begeven; hij heeft geen zin meer zich te laten bevelen door spelers die niet eens de pen mogen aanraken waarmee hij Flora-geschiedenis schreef. En wie diep in Jossyts hart kijkt zal leren dat hij zijn kwestuur wijt aan de laksheid van de Floraboys. De laksheid die door hem gecompenseerd moest worden, waardoor hij zich op die fatale avond gedwongen zag meer te presteren dan zijn lichaam kon geven.<br><br>Jossyt Salvador Puite, maar wanneer?</div>
+</article>
+<article class="post" data-ts="20050330131200" id="p2">
+  <div class="ph"><span class="pa">HugoBorstBiktie</span><span class="pm">#2 · 2005-03-30 13:12</span></div>
+  <div class="pb">volgens mij verwacht ie gewoon een aanbieding van een grote club. Maar, meneertje 'Salvador', dan moet je wel presteren als het erom gaat. <br><br>Toch maar weer een seizoenetje Floraboys lijkt me.</div>
+</article>
+<article class="post" data-ts="20050330133400" id="p3">
+  <div class="ph"><span class="pa">Jossyt S.</span><span class="pm">#3 · 2005-03-30 13:34</span></div>
+  <div class="pb">Geen commentaar. Op dit moment bereid ik mij in alle rust voor op het REVT. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

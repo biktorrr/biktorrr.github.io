@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Curieuze sollicitatie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Curieuze sollicitatie</h1>
+<p class="tm">6 posts · started 2002-10-06 21:21 by Bestuur FC Floraboys NV</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021006212100" id="p1">
+  <div class="ph"><span class="pa">Bestuur FC Floraboys NV</span><span class="pm">#1 · 2002-10-06 21:21</span></div>
+  <div class="pb">Deze open sollicitatie kregen we van ene Jaap Stam. Wat denken jullie d'r van?<br><br><I>Hooggeacht Bestuur FC Floraboys NV,<br><br>via deze weg wil ik op open wijze solliciteren naar een positie in uw spelersgroep. U is wellicht te ore gekomen dat ik mijn advocaat onderzoek heb laten verrichten naar mogelijkheden mijn contract bij Lazio Roma per direct te verbreken. Naar alle waarschijnlijkheid zijn de juridische mogelijkheden voorhanden om een breuk te forceren. Ik breng natuurlijk begrip op voor uw situatie: de spelersgroep is rijkelijk gevuld met stervedetten. Bij wijze van knieval van mijn kant bied ik aan op amateurbasis voor \é\én uwer teams uit te komen. Een kinderdroom zou uitkomen als ik uw tricot aan zou trekken (-- ik ben vast van mening dat spelen met "TuuT" Tim naast me en "DJ" Erik Z voor me, een grote leerschool voor me zal blijken te zijn). <br><br>In afwachting van uw genadige antwoord verblijf ik in grote hoogachting,<br><br>			Jaap Stam</I></div>
+</article>
+<article class="post" data-ts="20021006222600" id="p2">
+  <div class="ph"><span class="pa">De belastinginspecteur</span><span class="pm">#2 · 2002-10-06 22:26</span></div>
+  <div class="pb">FC Floraboys NV, volgens mij krijgt de belastingdienst nog een winst en verliesrekening van jullie. Kom maar op met de belastingen!</div>
+</article>
+<article class="post" data-ts="20021007125200" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-10-07 12:52</span></div>
+  <div class="pb">zeg maar tegen Jaap dat de begroting voor dit jaar alweer op is aan de schoenen van een zekere stervedette</div>
+</article>
+<article class="post" data-ts="20021007153800" id="p4">
+  <div class="ph"><span class="pa">Reporter</span><span class="pm">#4 · 2002-10-07 15:38</span></div>
+  <div class="pb">Er gaan geruchten dat de eerder genoemde voetbalschoenen van de stervedette imitatie-kicksen zijn. Waar is al het geld dan heen gegaan?</div>
+</article>
+<article class="post" data-ts="20021007171400" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-10-07 17:14</span></div>
+  <div class="pb">BULL-SHIT!!! De sponsor heeft me verteld dat dit op maat gemaakte kicksen zijn van walvissen-voorhuid om mijn perfecte passes aan te kunnen. Alleen ene Henk Vos uit Roosendaal heeft ze in het kader van de try-out mogen dragen, maar weigert ze nu uit te doen.<br><br>Overigens vind ik dat Jaap maar moet oprotten: een beetje mijn plaats innemen. Tsss... wat denkt zo'n modale clubvoetballer wel niet.</div>
+</article>
+<article class="post" data-ts="20021008135600" id="p6">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#6 · 2002-10-08 13:56</span></div>
+  <div class="pb">misschien als bankzitter , mocht jij door onze tegenstanders zo hard nagetrapt worden nadat je ze zo ontzettend hebt gekgemaakt, dat je van het veld moet worden gehaald om je te sparen voor de echte krakers.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

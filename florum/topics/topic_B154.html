@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dinsdag 21.15 verzamelen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dinsdag 21.15 verzamelen</h1>
+<p class="tm">4 posts · started 2002-09-02 14:51 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020902145100" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-09-02 14:51</span></div>
+  <div class="pb">op het USC met meedeneming van allerlei shit, kleren, schoenen, geld, collegekaart e.d. <br>KWARTOVER NEGEN DUS!</div>
+</article>
+<article class="post" data-ts="20020902155600" id="p2">
+  <div class="ph"><span class="pa">tuut</span><span class="pm">#2 · 2002-09-02 15:56</span></div>
+  <div class="pb">check</div>
+</article>
+<article class="post" data-ts="20020902171900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-02 17:19</span></div>
+  <div class="pb">Iemand nog een filmpje pakken daarvoor?	</div>
+</article>
+<article class="post" data-ts="20020903151300" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2002-09-03 15:13</span></div>
+  <div class="ps">mark vlaar</div><div class="pb">heeft college tot 21.30 op de VU. Hij zal zich daarna spoedig bij de selectie voegen. Hij heeft telefoonnummer van Joost, en Merlijn heeft ook nummer van Mark.<br><br>Ik reken op een klinkende (nee eigenlijk hoeft niet perse klinkend) OVERWINNING!!!<br><br>GO FLORABOYS GO!!!!!!!!!!!!!1</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

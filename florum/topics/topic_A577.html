@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Einstein – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Einstein</h1>
+<p class="tm">5 posts · started 2002-09-11 17:49 by Einstein</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020911174900" id="p1">
+  <div class="ph"><span class="pa">Einstein</span><span class="pm">#1 · 2002-09-11 17:49</span></div>
+  <div class="pb">Einstein staat op een feestje, komt er iemand naar hem toe. Einstein <br>vraagt: Wat is jouw IQ? 250, zegt de persoon <br><br>Dus begint Einstein te praten over kwantische natuurkunde, black <br>holes,singulariteiten ruimte-tijd... <br><br>Na een tijdje komt er een ander naar hem toe en Einstein vraagt hem <br>ook: Wat is jouw IQ? 150, zegt de persoon <br><br>Dus begint Einstein te praten over Internationaal recht, etische <br>conflicten met genetische manipulatie... <br><br>Iets later komt er weer iemand naar hem toe. <br>Einstein vraagt: Wat is jouw IQ? <br>100, antwoord de persoon <br><br>Dus begint Einstein te praten over de regering, de lonen, en <br>benzine-prijzen... <br><br>Nog iets later komt er weer iemand naar hem toe. <br>Einstein vraagt: Wat is jouw IQ? <br>50, antwoord de persoon <br><br>Dus begint Einstein te praten over Big-Brother, Starmaker, de bus... <br><br>Komt er daarna nog iemand naar hem toe. <br>Einstein vraagt: Wat is jouw IQ? <br>10, antwoord de persoon <br><br>Daarop zegt Einstein tegen hem:En? Een beetje blij met de UEFA Cup ?</div>
+</article>
+<article class="post" data-ts="20020912013300" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2002-09-12 01:33</span></div>
+  <div class="pb">Ik tel zeker 3 overbodige stappen in deze grap maar de essentie is natuurlijk gewoon hilarisch.</div>
+</article>
+<article class="post" data-ts="20020912014300" id="p3">
+  <div class="ph"><span class="pa">Moppentopper</span><span class="pm">#3 · 2002-09-12 01:43</span></div>
+  <div class="ps">oude koe</div><div class="pb">Om de tijdsgeest erin te houden zal ik de originele namen behouden. <br><br><br>1995 Ajax wint de Champions league <br>Willem van Hanegem gaat naar Louis van Gaal en vraagt?<br>Louis hoe doe jij dat nou?<br>L: kijk W het zit zo.Bergkamp kom eens hier.<br>L: Dennis het is de zoon van je vader maar het is niet je broer, wie is dat Dennis?<br>DB: Das makkelijk Louis dat ben ik antwoord Bergkamp.<br>Louis: Kijk Willem dat is nou het geheim van Ajax.<br><br>Dus WvH gaat terug naar Rotterdam en ziet op de training Ed de Goey.<br>Ed zegt hij, ik heb een vraag voor je, het is de zoon van je vader, maar het is niet je broer.<br>EdG denkt heel hard na en zegt vervolgens: Nou Willem volgens mij ben ik dat! <br><br>Willem van Hanegem schudt zijn hoofd en zucht tegen de Goey, "Nee man het is Dennis Bergkamp!"<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20020912124400" id="p4">
+  <div class="ph"><span class="pa">Ron Brandstedert</span><span class="pm">#4 · 2002-09-12 12:44</span></div>
+  <div class="ps">in het kader van goeie moppen toppen</div><div class="pb">vraag: waarom zetten ze in de ArenA tegenwoordig het dak open?<br>antwoord: dan kan het publiek toch nog sterren zien!!<br></div>
+</article>
+<article class="post" data-ts="20020912124700" id="p5">
+  <div class="ph"><span class="pa">Ron Boszhart</span><span class="pm">#5 · 2002-09-12 12:47</span></div>
+  <div class="ps">hoppetaaa</div><div class="pb">Ik heb goed nieuws en ik heb slecht nieuws. Ik zal met het slechtew beginnen: ik heb Amsterdams bloed, het goede nieuws is dat het op mijn moterkap zit!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ING Studie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ING Studie</h1>
+<p class="tm">4 posts · started 2008-05-19 14:47 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080519144700" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2008-05-19 14:47</span></div>
+  <div class="pb">Jaja..we doen hier nog meer dan alleen bankieren en verzekeren. Dat wordt dus brood en water voor ons of 96 euro betalen.<br><br><b>ING studies the value of the European football championship</b><br> <br>One in every five Dutch people would live on a diet of bread and water for a week if that would secure the European title for their national football team. This is just one of the findings of an ING study into the emotional and financial value of the European football championship in six European countries. The study shows that the European title is worth most to Germans when expressed in euros, while Italians would be prepared to sacrifice the most days off.<br> <br>Europeans differ a great deal in the amount of money they say the European title is worth to them. On average, Germans would pay 80 euros, while the French would only pay 13 euros. To find out if inhabitants from countries that are not competing in the upcoming championship place a different value on the title, respondents from England and Belgium were also included in the study. The amount of money that the Dutch and Belgians would be willing to pay turned out to be the same: 30 euros. Real 'Orange Army' fans say they would be willing to dig deeper into their pockets and would pay 96 euros. What sticks out in the study is that English and German women would be willing to pay more for the title than their male compatriots. <br> <br>Italians would sacrifice most days off<br>If winning the cup were to be expressed not in euros but in sacrificing days off, Italians would be the most generous: they would be willing to give up more than three days off to secure the title for their national team. The Germans, French, English and Belgians would sacrifice two days, while the Dutch would sacrifice only one. Holidays may be sacred to the Dutch, but they would be willing to sacrifice something entirely different: one in every five inhabitants of the Netherlands would live on nothing but bread and water for an entire week if it would secure the European title for their country.<br> <br>French would pay 24 euros for World Cup<br>Winning the World Cup is worth a lot more to most than the European championship. Frontrunners are the Italians, who would pay 137 euros for the prestigious World Cup, while the French come in last with 24 euros. The English would be willing to pay on average 100 euros, while Belgians would pay 79 euros for the title.<br></div>
+</article>
+<article class="post" data-ts="20080519152400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-05-19 15:24</span></div>
+  <div class="pb">haha, vrij meestelijk stukje. Ik zou ook wel een weekje op water en brood willen hoor, maar van mijn geld blijven die volgevreten profs mooi af :)</div>
+</article>
+<article class="post" data-ts="20080519195500" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2008-05-19 19:55</span></div>
+  <div class="pb">Haha, zelfs als het om voetbal gaat kunnen vrouwen heel goed geld uitgeven!<br><br>What sticks out in the study is that English and German women would be willing to pay more for the title than their male compatriots.</div>
+</article>
+<article class="post" data-ts="20080520082600" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-05-20 08:26</span></div>
+  <div class="pb">Dit is nou interessante wetenschap. Persoonlijk zou ik er met liefde een maandsalaris tegenaangooien. Jammer dat het niet zo makkelijk gaat.<br><br>Volgens VI gelooft 1 op de 5 Nederlanders sowieso dat Nederland Europees kampioen wordt, dus misschien hebben die er daarom niet zoveel voor over.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

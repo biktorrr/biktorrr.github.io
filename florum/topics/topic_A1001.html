@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>privacy banner?? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">privacy banner??</h1>
+<p class="tm">13 posts · started 2003-09-23 17:59 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030923175900" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-09-23 17:59</span></div>
+  <div class="pb">Hoewel geld krijgt de floraboys webmaster voor deze geweldige banner?</div>
+</article>
+<article class="post" data-ts="20030923184500" id="p2">
+  <div class="ph"><span class="pa">floraboys banner</span><span class="pm">#2 · 2003-09-23 18:45</span></div>
+  <div class="pb">Met deze schitterende banner verdient ik (van Hanegem 1986) 2 miljoen per hit, helaas wordt dit meteen weer doorgestort naar Victor de Boer die 'm bedach (van Hanegem 1992) heb.</div>
+</article>
+<article class="post" data-ts="20030924194800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-09-24 19:48</span></div>
+  <div class="pb">ik weet bij deze officieel niks van de bannert...</div>
+</article>
+<article class="post" data-ts="20030925145900" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-09-25 14:59</span></div>
+  <div class="pb">je weet van niks PTC? Dat krijg je dus van 4 glazen roz\é een krat bier en een gesprek met een vrouwelijke sterrenkundige.<br><br><br></div>
+</article>
+<article class="post" data-ts="20030925152900" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-09-25 15:29</span></div>
+  <div class="pb">huh?<br></div>
+</article>
+<article class="post" data-ts="20030925180100" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-09-25 18:01</span></div>
+  <div class="pb">haha je weet het echt niet meer he?<br><br>Timmies verjaardag?</div>
+</article>
+<article class="post" data-ts="20030926104700" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-09-26 10:47</span></div>
+  <div class="pb">help me nog even verder... Timmie's verjaardag is vanaf dat ik in het startrek cookbook keek tot het joyride incident een beetje een zwart gat</div>
+</article>
+<article class="post" data-ts="20030926130400" id="p8">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#8 · 2003-09-26 13:04</span></div>
+  <div class="pb">het zat zo:<br><br><b>De verjaardag</b>een klucht in een scene<br><br>spelers<br>- Victor (de toeterlamme boy next door)<br>- Joost (ultravedette en kleffe sms-koning)<br><br>Victor: Heeee wat ben jij aant doen lul.<br>Joost: even aant sms'en vic<br>Victor - kijkt over de schouder mee.<br>Joost: he uhm Victor, een beetje privacy mag best hoor.<br>Victor: privacy??? FLORABOYS !!!<br><br>Zo was het. En daarna inderdaad nog het benzine incident en het joyriden.</div>
+</article>
+<article class="post" data-ts="20030926141100" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2003-09-26 14:11</span></div>
+  <div class="pb">haha, wat een grapjurk ben ik ook,<br>jammer dat ik soms mijn eigen hilariteiten vergeet...</div>
+</article>
+<article class="post" data-ts="20110824154816" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2011-08-24 15:48</span></div>
+  <div class="pb">He, wat ontspannen</div>
+</article>
+<article class="post" data-ts="20110824155202" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2011-08-24 15:52</span></div>
+  <div class="pb">Mooi.</div>
+</article>
+<article class="post" data-ts="20110824175232" id="p12">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#12 · 2011-08-24 17:52</span></div>
+  <div class="pb">Beff.</div>
+</article>
+<article class="post" data-ts="20110824183508" id="p13">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#13 · 2011-08-24 18:35</span></div>
+  <div class="pb">De Kinderlozen hebben de halve wereld zeg ik altijd maar.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

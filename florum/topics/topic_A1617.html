@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>lekker rellen hier! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">lekker rellen hier!</h1>
+<p class="tm">4 posts · started 2005-11-15 13:26 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051115132600" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2005-11-15 13:26</span></div>
+  <div class="pb">Terecht! Er wordt hier een paar kamers naast mij een oorlog gevoerd tegen Maurice de Hond:<br><br>bron: Volkskrant <br>Gepubliceerd  |  dinsdag 15 november 2005.   <br>TNS NIPO valt peilingen van De Hond aan<br>Van onze verslaggever Raoul du Pr\é<br><br>DEN HAAG - De opiniepeilingen van Maurice de Hond deugen niet. Hij voert zijn respondenten eerst met eenzijdige informatie en vindt zo zelf verstopte paaseieren. Met die beschuldiging lanceren twee onderzoekers van TNS NIPO vandaag in de Volkskrant een aanval op De Hond. Die doet de verwijten af als onzin.<br> <br>Het onderzoek van De Hond geeft een vertekend beeld. Het is niet representatief voor de Nederlanders, maar alleen voor zijn respondenten, aldus TNS NIPO-onderzoeker Peter Kanne in een mondelinge toelichting. TNS NIPO is een concurrent van De Hond. De directe aanleiding voor de beschuldigingen van het onderzoeksbureau is De Honds peiling van vorige week naar de kansen van de Rotterdamse wethouder Marco Pastors in politiek Den Haag. Volgens De Hond vindt 30 procent van de Nederlanders Pastors een aanwinst voor de landelijke politiek.<br><br>Dit is het antwoord op een vraag die uitvoerig wordt ingeleid met Pastors uitlatingen over criminaliteit onder moslims, schrijven Kanne en zijn collega Remco Frerichs. Er wordt niet verteld dat Pastors het college had moeten beloven geen uitspraken te doen over moslims, omdat zijn collega-wethouder van integratie, Leonard Geluk, zijn werk anders niet kon doen. <br><br><br>Die vraagstelling van De Hond is volgens de onderzoekers niet valide en zegt daarom niets over de landelijke potentie van Pastors. Volgens Kanne is dit ook de reden dat De Hond steevast een veel hogere populariteit van Peter R. de Vries meet dan TNS NIPO. De Hond laat de mensen eerst de hoofdpunten van De Vries programma lezen en dan poneert hij zijn vraag. Dat is verwarrend en slecht onderzoek. De peilingen van TNS NIPO zijn voor De Vries van groot belang, omdat hij volgende maand op grond van die peilingen beslist of hij zijn politieke avontuur voortzet.<br><br>De Hond is niet onder de indruk van de verwijten. Het is stemmingmakerij van een concurrent. Als ze vinden dat mijn onderzoek naar Pastors niet klopt, moeten ze dat onderbouwen met een ander onderzoek. Nu kan ik er niks mee. Het klopt feitelijk ook niet: in mijn inleiding over Pastors stond wel degelijk dat hij afspraken met het college heeft geschonden.<br><br>Dat De Hond meer aanhang (35 procent) voor De Vries peilt, komt volgens hem omdat hij een andere vraag stelt. Ik vraag niet of de mensen hem een aanwinst vinden. Dat doet TNS NIPO wel. Ik vraag alleen: vindt u dat hij naar Den Haag moet gaan?<br> <br> <br> </div>
+</article>
+<article class="post" data-ts="20051115134500" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2005-11-15 13:45</span></div>
+  <div class="pb">terecht! altijd leuk als statistici met elkaar op de vuist gaan. Vroeger werkte de Hond samen met SBS aan een programma dat werd gepresenteerd door Ton (Whatshisname). Daarvoor hadden ze dan ook altijd een aantal internet respondenten die ze dan die dag voor de uitzending hadden gepeild over diverse onderwerpen, die -net zoals hierboven wordt beschreven- werden ingeleid door tamelijk eenzijdige informatie in de trend van " In de laaste jaren neemt de veiligheid in scholen en op straat af. Twee dagen geleden is leraar X doodgestoken door (insert noordafrikaanse naam)". Hoe staat u tegenover marokkanen?<br>Logisch dat dan 99% van de respondenten 'tamelijk negatief' antwoord. Goed om te lezen dat hij er nog niet mee is opgehouden.<br>btw. voor mensen die daarin geinteresseerd zijn, ALs ik het goed heb is het (pschylogische) proces dat daarvoor verantwoordelijk is het de 'anchoring-bias', dat weer een verdieping van 'priming' is. Het ontwijken hiervan is les1 in vragenlijst constructie.<br></div>
+</article>
+<article class="post" data-ts="20051115134700" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2005-11-15 13:47</span></div>
+  <div class="pb">Tijmen, geen Hond begrijpt waar je het over hebt de laatste alinea ;-) (slechte woordgrap intended)</div>
+</article>
+<article class="post" data-ts="20051115225800" id="p4">
+  <div class="ph"><span class="pa">Maurice</span><span class="pm">#4 · 2005-11-15 22:58</span></div>
+  <div class="ps">Hondsberoerd</div><div class="pb">Hondsberoerd word ik van al dit gedoe!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

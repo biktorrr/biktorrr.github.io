@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verborgen Camera-Actie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verborgen Camera-Actie</h1>
+<p class="tm">6 posts · started 2011-10-22 22:12 by Peter R. de Vries</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20111022221217" id="p1">
+  <div class="ph"><span class="pa">Peter R. de Vries</span><span class="pm">#1 · 2011-10-22 22:12</span></div>
+  <div class="pb">Lieve boys en girls, met inzet, gedrevenheid en vasthoudendheid heb ik de volgende beelden opgenomen. Ik wil deze jullie niet onthouden.<br><iframe width="420" height="315" src="http://www.youtube.com/embed/5o0PDo3vTrw" frameborder="0" allowfullscreen></iframe></div>
+</article>
+<article class="post" data-ts="20111023011131" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2011-10-23 01:11</span></div>
+  <div class="pb">Ha, het eenmanskamp probeert het met de Godwin. Als alles verloren is, kun je je tegenstander natuurlijk altijd proberen met nazi's te vergelijken.</div>
+</article>
+<article class="post" data-ts="20111023123254" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-10-23 12:32</span></div>
+  <div class="pb">Ha! Briljant. Hier had ik niet over durven dromen. De verraders van het FDK zijn ontmaskerd. Aan de logica van  Peter R. de Vries valt niet te tornen. Dit is de genadeslag voor het FDK 2012 in 2011 kamp! Ik ben benieuwd hoe hun laatste stuiptrekkingen er uit zullen zien. Alleen ken ik die ThB niet..wie is dat? <br><br>Nu kan de historische en lange traditie van de FDK jaartelling weer in ere hersteld worden. Dit jaar vieren wij het FDK 2011 op 27-12-11. Mooi. <br><br>Tenslotte de vraag wie van de laffe verraders zich nog zal durven te vertonen op het komende FDK? Ik vermoed dat ze van schaamte zullen uitblinken in afwezigheid.</div>
+</article>
+<article class="post" data-ts="20111023192834" id="p4">
+  <div class="ph"><span class="pa">Carla  del Ponte</span><span class="pm">#4 · 2011-10-23 19:28</span></div>
+  <div class="pb">Internationaal aanhoudingsbevel<br><br>Bij deze geeft het Internationaal Strafhof opdracht tot de aanhouding van ex-dictator de H. Straler. Hij wordt beschuldigd van misdaden tegen de menselijkheid en verraad aan het FDK. Hij houdt zich wellicht op in een rioolbuis in zijn geboortestad Haarlem, en kan plastische chirurgie hebben ondergaan, danwel een rare snor of baard hebben opgeplakt. Deze tiran en demagoog mag zijn gerechte straf niet ontgaan! Nog voor FDK 2012, ergo 27-12-2011, dient hij in een cel in Scheveningen te zitten.</div>
+</article>
+<article class="post" data-ts="20111023195035" id="p5">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#5 · 2011-10-23 19:50</span></div>
+  <div class="pb">De Straler zit hier gewoon op de bank PSV te kijken. De enige misdaad die hij heeft begaan is dat hij vandaag nog niet heeft gestofzuigd.. Wat mij betreft mogen alleen de boys en girls die naar het FDK komen beslissen over het FDK of FDK gerelateerde zaken. Misschien moeten de girls zich erin mengen?</div>
+</article>
+<article class="post" data-ts="20111023195206" id="p6">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#6 · 2011-10-23 19:52</span></div>
+  <div class="pb">Trouwens een hilarisch filmpje..</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

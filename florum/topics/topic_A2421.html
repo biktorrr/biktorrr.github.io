@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>biertje? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">biertje?</h1>
+<p class="tm">13 posts · started 2008-07-04 11:02 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080704110200" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2008-07-04 11:02</span></div>
+  <div class="pb">Nog iemand bier ergens vnavnd?</div>
+</article>
+<article class="post" data-ts="20080704111300" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2008-07-04 11:13</span></div>
+  <div class="pb">Rond middernacht met Wybren Maaaaaaajor op het grote plein van de Marais</div>
+</article>
+<article class="post" data-ts="20080704114400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2008-07-04 11:44</span></div>
+  <div class="pb">Ca, als je wil, kun je met Merlijn en mij babysitten vanavond. Anderen overigens ook. </div>
+</article>
+<article class="post" data-ts="20080704114900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2008-07-04 11:49</span></div>
+  <div class="pb">Ik was eerst, dus ik mag het meest met Amber spelen.</div>
+</article>
+<article class="post" data-ts="20080704123300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2008-07-04 12:33</span></div>
+  <div class="pb">Amber gaat trouwens wel op tijd naar bed, Merlijn.</div>
+</article>
+<article class="post" data-ts="20080704141700" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2008-07-04 14:17</span></div>
+  <div class="pb">of kunnen we bij het IJ babysitten?</div>
+</article>
+<article class="post" data-ts="20080704150500" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2008-07-04 15:05</span></div>
+  <div class="pb">Of op het gras aan het water voor ons huis, met wat biertjes en lekkere hapjes..</div>
+</article>
+<article class="post" data-ts="20080704153600" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2008-07-04 15:36</span></div>
+  <div class="pb">hmm.. ik geloof toch dat Tube en ik in Haarlem willen bieren</div>
+</article>
+<article class="post" data-ts="20080704154100" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-07-04 15:41</span></div>
+  <div class="pb">ik schaar me -althans aanvankelijk- in het oppas-kamp</div>
+</article>
+<article class="post" data-ts="20080704155800" id="p10">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#10 · 2008-07-04 15:58</span></div>
+  <div class="pb">herstel, we komen toch</div>
+</article>
+<article class="post" data-ts="20080704163800" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2008-07-04 16:38</span></div>
+  <div class="pb">kei-gek</div>
+</article>
+<article class="post" data-ts="20080705005700" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2008-07-05 00:57</span></div>
+  <div class="pb">Ben erbaai.</div>
+</article>
+<article class="post" data-ts="20080814101500" id="p13">
+  <div class="ph"><span class="pa">YlGPPxejuc</span><span class="pm">#13 · 2008-08-14 10:15</span></div>
+  <div class="ps">jTxUkfCgEQAIESw</div><div class="pb">yg8KV8  <a href="http://uqxjriyddcvv.com/">uqxjriyddcvv</a>, [url=http://vufkoqnrvafc.com/]vufkoqnrvafc[/url], [link=http://gwvydhueqnga.com/]gwvydhueqnga[/link], http://niyadrwhqxlw.com/</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

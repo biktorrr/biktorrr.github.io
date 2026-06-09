@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stadstrandje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stadstrandje</h1>
+<p class="tm">6 posts · started 2012-07-24 14:39 by vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120724143925" id="p1">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#1 · 2012-07-24 14:39</span></div>
+  <div class="pb">baqjes,<br>pvtje en ik zitten vanavond op het stadstrandje (hapje en drankje). Merw (en Marw?) komen wellicht ook. Hullie ook? Ik zit er vanaf een uur of 18.30. pvtje al vanaf een uur of vier. denkelijk.</div>
+</article>
+<article class="post" data-ts="20120724153855" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2012-07-24 15:38</span></div>
+  <div class="pb">Ik, LN en LH wellicht ook. LN dan wellicht even kort, als het allemaal kan.<br><br></div>
+</article>
+<article class="post" data-ts="20120724154756" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2012-07-24 15:47</span></div>
+  <div class="pb">Jeyt! Tik. Marw moet 'm waarschijnlijk aftikken.</div>
+</article>
+<article class="post" data-ts="20120724155728" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2012-07-24 15:57</span></div>
+  <div class="pb">Aftiks</div>
+</article>
+<article class="post" data-ts="20120724175808" id="p5">
+  <div class="ph"><span class="pa">PVtje</span><span class="pm">#5 · 2012-07-24 17:58</span></div>
+  <div class="pb">Oke, ik kom eraan you guys!</div>
+</article>
+<article class="post" data-ts="20120724195206" id="p6">
+  <div class="ph"><span class="pa">tn</span><span class="pm">#6 · 2012-07-24 19:52</span></div>
+  <div class="pb">Lh heeft nog geen reactie gegeven, ze moet werken tot 18:15<br> Ik denk dat lastig wordt...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys spreukspel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys spreukspel</h1>
+<p class="tm">10 posts · started 2004-02-05 09:26 by Spelleiding</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040205092600" id="p1">
+  <div class="ph"><span class="pa">Spelleiding</span><span class="pm">#1 · 2004-02-05 09:26</span></div>
+  <div class="pb">Voor degenen die een ansicht gekregen hebben uit Briancon: combineer jullie kennis en kom tot een wijze spreuk. Over de uitslag wordt natuurlijk gecorrespondeerd.</div>
+</article>
+<article class="post" data-ts="20040205101700" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2004-02-05 10:17</span></div>
+  <div class="pb">ik weet er twee van de drie uit mijn hoofd, de rest kan vanavond pas volgen:<br><br>1e: f<br>3e: a<br><br>dus F.A...... . . .. . .</div>
+</article>
+<article class="post" data-ts="20040205110700" id="p3">
+  <div class="ph"><span class="pa">LH&amp;TN</span><span class="pm">#3 · 2004-02-05 11:07</span></div>
+  <div class="pb">Wij hebben het volgende mogen ontvangen:)<br><br>6e letter: L<br>10e letter:I<br>16e Letter:L<br><br>F.A..L...I.....L</div>
+</article>
+<article class="post" data-ts="20040205160500" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2004-02-05 16:05</span></div>
+  <div class="pb">al heb ik dan geen kaart ontvangen gniffel ik al stilletjes achter mijn pc'tje. <br><br>Merleyn kennende is  t vast een oley cheique spreuck.</div>
+</article>
+<article class="post" data-ts="20040206110800" id="p5">
+  <div class="ph"><span class="pa">J-L@u &amp; Tim</span><span class="pm">#5 · 2004-02-06 11:08</span></div>
+  <div class="pb">2e letter L<br>8e letter N<br>18e letetr T<br><br>FLA..L.N.I.....L.T<br><br>Ja wij hadden ook een kaartje gekregen..</div>
+</article>
+<article class="post" data-ts="20040206124200" id="p6">
+  <div class="ph"><span class="pa">KeesKolenschepper</span><span class="pm">#6 · 2004-02-06 12:42</span></div>
+  <div class="pb">15e letter O<br>17e letter E<br>spatie tussen 11 en 12<br><br>FLA..L.N.I._...OLET<br><br><br>Gokje: flatulinnit nonolet?<br>oftewel "hij die flatuleert stinkt niet".</div>
+</article>
+<article class="post" data-ts="20040206131500" id="p7">
+  <div class="ph"><span class="pa">Spelleiding</span><span class="pm">#7 · 2004-02-06 13:15</span></div>
+  <div class="pb">Geachte Kees Kolenschepper,<br><br>Dank voor uw inzending. Helaas is de door uw ingezonden oplossing fout. Het staat u natuurlijk vrij om nogmaals een poging te wagen.<br><br>Met vriendelijke groet,<br><br></div>
+</article>
+<article class="post" data-ts="20040208010200" id="p8">
+  <div class="ph"><span class="pa">GerardGraaineger</span><span class="pm">#8 · 2004-02-08 01:02</span></div>
+  <div class="pb">11e letter A<br>13e letter O<br>Spreuk telt 18 letters<br><br>FLA..L.N.IA_.O.OLET<br><br></div>
+</article>
+<article class="post" data-ts="20040208010400" id="p9">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#9 · 2004-02-08 01:04</span></div>
+  <div class="pb">'Flatulentia non olet?<br><br></div>
+</article>
+<article class="post" data-ts="20040209095400" id="p10">
+  <div class="ph"><span class="pa">Spelleiding</span><span class="pm">#10 · 2004-02-09 09:54</span></div>
+  <div class="pb">Geachte PTC,<br><br>Gefeliciteerd! u heeft als eerste de Floraboys spreuk gevonden. We hopen dat u de opgedane wijsheid veelvuldig in praktijk zult brengen. <br><br>Met vriendelijke groet,</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

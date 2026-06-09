@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vrijdag 31-aug – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vrijdag 31-aug</h1>
+<p class="tm">12 posts · started 2001-08-29 15:51 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010829155100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-08-29 15:51</span></div>
+  <div class="pb">Ok vrijdag 31-aug. om 19.30 uur ballen op 't Florapark.</div>
+</article>
+<article class="post" data-ts="20010829155100" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2001-08-29 15:51</span></div>
+  <div class="pb">I'll be there</div>
+</article>
+<article class="post" data-ts="20010829190100" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2001-08-29 19:01</span></div>
+  <div class="pb">ben d'r<br></div>
+</article>
+<article class="post" data-ts="20010829232900" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-08-29 23:29</span></div>
+  <div class="ps">Ookleuk</div><div class="pb">90% I'm in..kan ietsie later worden<br><br>En ballen na IRL-NED eerst nassen en dan ballen?<br>Misschien ook een idee...In een/het Sportcafe kijken en dan in Bruxelles/thuis/patatje eten en daarna doorballen op het Florapark?</div>
+</article>
+<article class="post" data-ts="20010830121700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-08-30 12:17</span></div>
+  <div class="pb">in de Tapuit misschien?</div>
+</article>
+<article class="post" data-ts="20010830163500" id="p6">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#6 · 2001-08-30 16:35</span></div>
+  <div class="pb">50% kans dat ik kom, mits ik niet vrijdagavond ook moet werken.<br></div>
+</article>
+<article class="post" data-ts="20010830211500" id="p7">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#7 · 2001-08-30 21:15</span></div>
+  <div class="pb">Ik zal er zijn<br></div>
+</article>
+<article class="post" data-ts="20010831122000" id="p8">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#8 · 2001-08-31 12:20</span></div>
+  <div class="pb">Ben nog steeds van plan te komen maar ik kan ook iets later zijn.</div>
+</article>
+<article class="post" data-ts="20010831154500" id="p9">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#9 · 2001-08-31 15:45</span></div>
+  <div class="pb">Kunne we rond 18:00 uur een ruling krijgen of het aldanniet doorgaat?<br></div>
+</article>
+<article class="post" data-ts="20010831170800" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10 · 2001-08-31 17:08</span></div>
+  <div class="pb">ik werk</div>
+</article>
+<article class="post" data-ts="20010831182200" id="p11">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#11 · 2001-08-31 18:22</span></div>
+  <div class="pb">De kans dat Maurits komt is gereduceerd tot 0,001%, want ik kan hem niet bereiken. Meestal betekent dat dat hij aan het werk is.<br></div>
+</article>
+<article class="post" data-ts="20010831183600" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2001-08-31 18:36</span></div>
+  <div class="pb">Merlijn, Jurriaan, Maarten, Sander, Victor, Tijmen.<br><br>Dat maakt zes. Wee degene die niet komt opdagen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

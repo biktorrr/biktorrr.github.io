@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gewoon lekker Balluh!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gewoon lekker Balluh!!!</h1>
+<p class="tm">8 posts · started 2001-08-26 18:32 by JK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010826183200" id="p1">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#1 · 2001-08-26 18:32</span></div>
+  <div class="pb">Kan iedereen weer gewoon proberen te komen in het weekend? Het is echt tragisch als we op zaterdag en op zondag met veel moeite zes man aan het balluh weten te krijgen. Voor de vakantie was het nooit een groot probleem. Tijdens de vakantie had het geen probleem moeten zijn en na de vakantie  moeten we gewoon weer lekker balluh.<br><br>Tevens presenteer ik graag in het kader van 'geen woorden maar daden' en 'niet lullen maar poetsen':<br>balluh zeggen is ballug doen<br><br></div>
+</article>
+<article class="post" data-ts="20010826194800" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2001-08-26 19:48</span></div>
+  <div class="ps">Helemaal mee eens</div><div class="pb">Go Tube</div>
+</article>
+<article class="post" data-ts="20010827125100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2001-08-27 12:51</span></div>
+  <div class="pb">mee eens, mijn blessure is denk ik nu wel <br>weer acceptabel gedegradeert zodat ik weer een <br>beetje frequent kan komen.<br><br>Maar dan wel gewoon altijd op dezelfde tijd <br>en niet dan weer savonds, dan weer smiddags..<br><br>BALLE HALfDRIE FLORAPARK...<br></div>
+</article>
+<article class="post" data-ts="20010827193700" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2001-08-27 19:37</span></div>
+  <div class="pb">ik benner</div>
+</article>
+<article class="post" data-ts="20010828200700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-08-28 20:07</span></div>
+  <div class="pb">helemaal mee eens, alleen weet ik niet of ik na die verstandskiesoperaties van de komende weken kan balle ivm risico's van ellebogen in je kaak enzo.</div>
+</article>
+<article class="post" data-ts="20010829103600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-08-29 10:36</span></div>
+  <div class="pb">Godsallemachtig! Wanneer heb je voor 't laatst <br>'n kaakstoot gekregen op 't Florapark? Sicco<br>speelt zaterdag niet mee, dus dan ben je i.i.g.<br>veilig.</div>
+</article>
+<article class="post" data-ts="20010902130100" id="p7">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#7 · 2001-09-02 13:01</span></div>
+  <div class="pb">2-09-01 BALLE! half 3 Florapark. Frank en ik zijn er ook<br></div>
+</article>
+<article class="post" data-ts="20010902130200" id="p8">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#8 · 2001-09-02 13:02</span></div>
+  <div class="pb">NIETTAN?!<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

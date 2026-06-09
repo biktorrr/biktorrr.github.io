@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>spamspamspam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">spamspamspam</h1>
+<p class="tm">1 post · started 2004-04-05 10:19 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040405101900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-04-05 10:19</span></div>
+  <div class="pb">omdat het wegens ziekten afgelopen week allemaal even niet lukte met domispa's en vrijmipuu's krijgen jullie bij deze een mooi stukje spam aangeboden:<br><br><br>Chiel Montagne wil over vijf jaar alsnog het publieke bestel in met de 'Montagne Omroep Nederland' (MON). De MON richt zich op het Nederlandse levenslied. In december 2003 werd de omroep MON opgericht, maar het behaalde voor 1 maart 2004 niet de benodigde 50.000 leden.<br><br>Volgens de besnorde zanger en presentator is de ledenwervingscampagne "gewoon veel te laat" begonnen. Montage startte op 27 december 2003 met het landelijk werven van leden. MON vroeg nog uitstel aan bij het Commissariaat van de Media, maar die organisatie stond dat niet toe.<br><br>Volgens Montagne heeft de omroep "absoluut binnen een jaar" al voldoende leden. In afwachting daarvan overweegt de MON via internet te gaan uitzenden, waar men zich ook kan aanmelden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

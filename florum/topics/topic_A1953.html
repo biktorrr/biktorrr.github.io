@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wat doen Floraboys met Joosts belastinggeld? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wat doen Floraboys met Joosts belastinggeld?</h1>
+<p class="tm">5 posts · started 2007-01-10 15:04 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070110150400" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2007-01-10 15:04</span></div>
+  <div class="pb">Om periodiek verantwoording af te leggen aan Joost over de uitgaven van zijn belastinggeld, heb ik hier een link met het persbericht over een onderzoekje wat ik heb gerapporteerd (let vooral ook op de auteur van de rapportage die je op deze site kunt downloaden):<br><br>http://www.fiets.amsterdam.nl/live/main.asp?name=nieuws&item_id=NL_AMS_IVV_100000000384<br><br>leidt ook tot leuke verhaaltjes in de lokale en regionale media, hier bijvoorbeeld Het Parool:<br>Amsterdam scoort voldoende als fietsstad <br><br>AMSTERDAM - Ondanks het drukke verkeer, de vele wegopbrekingen en de roekeloos op fietspaden wandelende toeristen scoort Amsterdam als fietsstad een voldoende. <br><br>Uit onderzoek onder 1200 inwoners blijkt dat de hoofdstad een zeven verdient als het gaat om bijvoorbeeld de kwaliteit van fietspaden en de verkeersveiligheid. <br><br>Dat maakte de gemeente woensdag bekend. Overigens blijkt uit het onderzoek dat Amsterdammers zich vaak ergeren aan het rijgedrag van andere weggebruikers, veelal automobilisten. Ook zien de ondervraagden graag dat het aantal fietsparkeerplaatsen wordt uitgebreid. <br><br>Daarentegen scoort de stad een 8,5 als het gaat om de wachttijdmelders bij de stoplichten. Fietsers zien hier precies hoe lang ze moeten wachten voordat het stoplicht op groen springt. De gemeente hoopt dat hierdoor het aantal mensen dat door rood rijdt, afneemt.<br><br>Politie, justitie en gemeente scoren een krappe voldoende (5,6) voor hun strijd tegen fietsendiefstal. Volgens de gemeente is het aantal gestolen fietsen door deze aanpak de afgelopen jaren gedaald.<br><br>De gemeente gebruikt de resultaten van het onderzoek voor het fietsbeleid in de stad. Momenteel worden de fietsvoorzieningen al onder handen genomen. Zo komen er onder meer veilige fietspaden, meer buurtstallingen, meer wachttijdmelders en een fietsparkeersteiger bij het Centraal Station bij. (ANP)<br><br>© Het Parool, 10-01-2007, 10:44 uur<br></div>
+</article>
+<article class="post" data-ts="20070110153400" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2007-01-10 15:34</span></div>
+  <div class="pb">Puik stukje onderzoek, hier heb je natuurlijk al die jaren bij het NIPO voor geofend. Lijkt mij elke eurocent dubbel en dwars waard.<br><br>P.S. Zulk mooi werk mogen doen en dan toch < ahref="http://www.nu.nl/news_pda.jsp?n=840933&c=30">zeuren</a> over te weinig geld.</div>
+</article>
+<article class="post" data-ts="20070110153400" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-01-10 15:34</span></div>
+  <div class="pb">P.S. Zulk mooi werk mogen doen en dan toch <a href="http://www.nu.nl/news_pda.jsp?n=840933&c=30">zeuren</a> over te weinig geld.<br></div>
+</article>
+<article class="post" data-ts="20070110154300" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2007-01-10 15:43</span></div>
+  <div class="pb">Grappig, bij de minor journalistiek moesten we altijd stukjes maken op basis van dit soort persberichten, wat ik nooit erg leuk vond...</div>
+</article>
+<article class="post" data-ts="20070110162100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-01-10 16:21</span></div>
+  <div class="pb">Het gaat om de rijksambtenaren he, die actie gaan voeren (Cootje ook?). Ze willen bijvoorbeeld net zoveel eindejaarsbonus als de gemeenteambtenaren...:)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

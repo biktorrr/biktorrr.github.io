@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SpaBetalen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SpaBetalen</h1>
+<p class="tm">7 posts · started 2001-11-13 16:11 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011113161100" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-11-13 16:11</span></div>
+  <div class="pb">hier de nuttige info uit <br>merlijns mail <br><br><br>Misha  krijgt  f100  van Frank Bloem<br>       krijgt  f110 van Tijmen<br>Jitske  krijgt  f70 van Sicco<br>Merlijn krijgt  f20  van Maarten<br>        krijgt  f70 van Joost<br>Wybren krijgt  f140 van Victor<br>       krijgt  f50 van Joost<br>FrankP. krijgt  f10 van Joost<br><br>Michiel en Tim zijn niemand wat verschuldigd.<br><br>Wybren  38.94.43.549<br>Frank Pitstra 30.77.08.411<br>Frank Bloem 64.24.552<br>Victor  62.01.215<br>Tijmen  67.98.526<br>Michiel  69.77.611<br>Misha  66.50.938<br>Jitske  64.15.684<br>Joost  46.35.55.422<br>Merlijn  32.63.13.869 <br></div>
+</article>
+<article class="post" data-ts="20011113193500" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-11-13 19:35</span></div>
+  <div class="pb">Ik ben inderdaad niemand wat verschuldigd.<br>Ik stel voor dat we de overgebleven bibi's ook gebruiken voor die party!<br>Verder heb ik een Hour-of-power-broek van Witte Joost voor hem meegenomen uit SPA.</div>
+</article>
+<article class="post" data-ts="20011113203200" id="p3">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#3 · 2001-11-13 20:32</span></div>
+  <div class="ps">Michiel bedankt</div><div class="pb">Thanx Michiel ik zat al enorm in over die broek, maareh dat was niet de laatste hour of power broek (voorzover er sowieso nog iemand een broek aanhad toen <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> )<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20011114124700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-11-14 12:47</span></div>
+  <div class="pb">Alsof 't idee om 'n Wodka-Red Bull party te houden<br>niet relevant is. Alleen a.j.b. niet dit weekend<br>al, want ik kan geen Martini meer zien.<br><br>P.S. Joost: ik heb ook nog 'n Hour-of-Power boek<br>voor je. Hebben? of zal ik 't weggooien?</div>
+</article>
+<article class="post" data-ts="20011114143300" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2001-11-14 14:33</span></div>
+  <div class="ps">huh?</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20011114143400" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2001-11-14 14:34</span></div>
+  <div class="ps">vervolg van huh?</div><div class="pb">waarom zou je als je geen martini <br>meer kan zien geen <br>wodka-redbull party kunnen houden?<br>wmeb</div>
+</article>
+<article class="post" data-ts="20011115140700" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2001-11-15 14:07</span></div>
+  <div class="pb">Ik drink nooit teveel Wodka-Red Bull te drinken. Ik<br>ben bang dat ik 'n fobie voor de Dahlialaan heb. Of<br>dat ik ga klapppertanden als 'n bezetene. Dus na 'n <br>tijdje moet ik dus wel overstappen op Martini. Maar<br>dat kan ik niet meer zien, dusss...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

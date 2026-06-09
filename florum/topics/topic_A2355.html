@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Succes! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Succes!</h1>
+<p class="tm">10 posts · started 2008-04-12 09:01 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080412090100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2008-04-12 09:01</span></div>
+  <div class="pb">Team Henny Dompeling,<br><br>Veel succes met het WK pubquiz. Voor mij zijn jullie echte sporthelden!</div>
+</article>
+<article class="post" data-ts="20080412095100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-04-12 09:51</span></div>
+  <div class="pb">here we go boys</div>
+</article>
+<article class="post" data-ts="20080412101200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2008-04-12 10:12</span></div>
+  <div class="pb">Inderdaad een nieuw soort sport, ze zullen wel boven zichzelf moeten uitstijgen (zie onderstaand schema van O'Brians)! Dus Knallen!<br><br>Team	Points	Ranking points	Bar	City<br>Space Cadets	3717	236	Haarlem - W.S. O'Brien	Haarlem<br>Briljant	3326	146	Haarlem - W.S. O'Brien	Haarlem<br>The fab 5	2481	140	Haarlem - W.S. O'Brien	Haarlem<br>Racing	2863	125	Haarlem - W.S. O'Brien	Haarlem<br>The Snelliest	3584	121	Haarlem - W.S. O'Brien	Haarlem<br>Miscellaneous	3583	113	Haarlem - W.S. O'Brien	Haarlem<br>The New Warriors	2843	106	Haarlem - W.S. O'Brien	Haarlem<br>Henny Dumpling	2022	101	Haarlem - W.S. O'Brien	Haarlem</div>
+</article>
+<article class="post" data-ts="20080412105400" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2008-04-12 10:54</span></div>
+  <div class="pb">dat schema is ongeveer een jaar out of date :)<br>wij staan, over een geheel jaar genomen, 1e of 2e. Punt is wel dat we gemiddeld zo'n punt of 58 scoren (van de 80), waar topteams verspreid over den lande over een heel jaar gemiddeld zo'n 66 halen...<br>ik ga voor het linkerrijtje. of anders 51e,101e,151e,201e etc. Die krijgen ook iets lolligs.<br></div>
+</article>
+<article class="post" data-ts="20080413092100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2008-04-13 09:21</span></div>
+  <div class="pb">en? *tromgeroffel*</div>
+</article>
+<article class="post" data-ts="20080413140200" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2008-04-13 14:02</span></div>
+  <div class="pb">Ik vond het geslaagd. De vragen waren een stukje pittiger dan gebruikelijk. Uiteindelijk zijn met 63 van de mogelijk 130 punten 25e geworden. Dat is dus zowel linkerrijtje als in de top 10% van het deelnemersveld.<br></div>
+</article>
+<article class="post" data-ts="20080413140300" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2008-04-13 14:03</span></div>
+  <div class="pb">mooi gedaan!</div>
+</article>
+<article class="post" data-ts="20080413212700" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-04-13 21:27</span></div>
+  <div class="pb">tik m aan boys</div>
+</article>
+<article class="post" data-ts="20080413224800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2008-04-13 22:48</span></div>
+  <div class="pb">*tik*<br><br>ook ik ben zeker niet ontevreden!<br>Het was trouwens bijzonder leuk..</div>
+</article>
+<article class="post" data-ts="20080422165100" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2008-04-22 16:51</span></div>
+  <div class="pb">The next step???<br><br><a href="http://www.quizcasting.nl/">http://www.quizcasting.nl/</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

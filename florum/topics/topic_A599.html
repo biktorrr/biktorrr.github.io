@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Respect – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Respect</h1>
+<p class="tm">3 posts · started 2002-10-17 11:53 by SH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021017115300" id="p1">
+  <div class="ph"><span class="pa">SH</span><span class="pm">#1 · 2002-10-17 11:53</span></div>
+  <div class="pb">President Hussein receives congratulatory telegrams <br><br>Baghdad, Oct. 17, INA <br><br>President Saddam Hussein has received a congratulatory telegram from Vice-Chairman of Revolution Command Council Mr. Izzat Ibrahim. <br><br>Mr. Ibrahim congratulated President Hussein on winning 100% of votes for the Presidency post, which represents a big hit to the U.S and British governments.<br><br>In this occasion, Iraqis have showed their absolute love to President Hussein. In this referendum, Iraqis unmasked the false claims uttered by the US evil administration against the relationship between the President and the Iraqi people, Mr. Ibrahim said. <br><br>President Hussein also received a congratulatory telegram from the gathering parties in the National, Patriotic and Progressive Front on this occasion. <br><br>Secretary-General of the Front Mr. Abdul-Baki Abdul-Khreem Al-Sadoun said that this occasion represents a serious letter to Bush and Blair that People in Iraq are with their President and they love him.<br><br>Mr. Al-Sadoun expressed pledge to remain loyal to the President and defend Iraqs sovereignty and security. <br><br>The President also received a telegram from Jordanian parties and popular forces, which are currently visiting Baghdad.<br><br>The telegram confirmed that the referendum showed the world the real relation and love between Iraqi people and their leadership.<br><br>This democratic process is a clear answer to US-Zionists threats against Iraq, Arab nation and the Islamic states, the telegram said. <br><br>http://www.uruklink.net/iraqnews/enews19.htm</div>
+</article>
+<article class="post" data-ts="20021017115400" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2002-10-17 11:54</span></div>
+  <div class="pb">Are you watching Echelon?</div>
+</article>
+<article class="post" data-ts="20021017134600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-10-17 13:46</span></div>
+  <div class="pb">Fuck Echelon: Alle Floraboys betuigen hun grootst mogelijke respect aan Saddam Hussein en feliciteren hem met de glorieuze overwinning, die hij in zijn nederigheid op heeft gedragen aan de Democratie. De Floraboys zullen een eventuele overwinning vanavond opdragen aan De Lachende Leider.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Huwelijksreis – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Huwelijksreis</h1>
+<p class="tm">4 posts · started 2006-10-18 11:22 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061018112200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-10-18 11:22</span></div>
+  <div class="pb">Hey Biggy en J.L@u,<br><br>Hoe was jullie huwelijksreis? En zijn er al foto's? Misschien dat jullie het allemaal al verteld hebben aan Floraboys toen wij in NY zaten... <br><br>Groetjes,</div>
+</article>
+<article class="post" data-ts="20061018142100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-10-18 14:21</span></div>
+  <div class="pb">Idd..ik vroeg het mij ook al af, volgens mij zijn ze bezig een boek over hun ervaringen te publiceren. </div>
+</article>
+<article class="post" data-ts="20061024144800" id="p3">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#3 · 2006-10-24 14:48</span></div>
+  <div class="pb">hey.. helemaal over het hoofd gezien<br><br>de huwelijksreis was geweldig.. heerlijk 3 weken op Tobago en Barbados<br>Foto's hebben we daarvan al wel, zullen even kijken of ik die ergens kan laten zien. <br><br>Ook foto's van de trouwerij hebben we al, voornamelijk van Laura haar vader en van Lara. De officiele reportage komt ook snel, net als de kleine cameraatjes die verspreid lagen in de feestzaal.</div>
+</article>
+<article class="post" data-ts="20061024163600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-10-24 16:36</span></div>
+  <div class="pb">Leuk! Wil graag alles zien.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

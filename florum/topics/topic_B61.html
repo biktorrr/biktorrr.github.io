@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bijwerken doelpunten – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bijwerken doelpunten</h1>
+<p class="tm">5 posts · started 2002-02-22 15:08 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020222150800" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2002-02-22 15:08</span></div>
+  <div class="pb">in zaalvoetbal, staat nog steeds dat ik nog maar 20 doelpunten heb gemaakt, dat lijkt mij iets te weinig, UPDATEN DUS DUDES</div>
+</article>
+<article class="post" data-ts="20020222152700" id="p2">
+  <div class="ph"><span class="pa">Andy</span><span class="pm">#2 · 2002-02-22 15:27</span></div>
+  <div class="pb">Je bent 'n prutser, Famous, met 'n veel te grote bek, <br>die eindelijk 's aan 't team moet denken. <br><br>Zo dat is d'r uit.</div>
+</article>
+<article class="post" data-ts="20020222161900" id="p3">
+  <div class="ph"><span class="pa">mk</span><span class="pm">#3 · 2002-02-22 16:19</span></div>
+  <div class="pb">Doe het dan lekker zelf geharkte appebeffert!<br>Zeker omdat je club naar een schoonmaakmiddel is<br>genoemd noem je jezelf er ook maar naar een.</div>
+</article>
+<article class="post" data-ts="20020223173100" id="p4">
+  <div class="ph"><span class="pa">Andy</span><span class="pm">#4 · 2002-02-23 17:31</span></div>
+  <div class="pb">Huh? Ik neem 't voor je op, en dan krijg ik 'n trap in <br>m'n rug...</div>
+</article>
+<article class="post" data-ts="20020224203200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2002-02-24 20:32</span></div>
+  <div class="pb">Het is allemaal de schuld van die domme ajacieden!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

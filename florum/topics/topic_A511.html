@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ok ok – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ok ok</h1>
+<p class="tm">10 posts · started 2002-06-10 15:48 by PTwedstrijdleiderC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020610154800" id="p1">
+  <div class="ph"><span class="pa">PTwedstrijdleiderC</span><span class="pm">#1 · 2002-06-10 15:48</span></div>
+  <div class="pb">ok nieuwe ruling, de nummers 1,2en3 krijgen een prijs en de nummer laatst niet meer</div>
+</article>
+<article class="post" data-ts="20020610162100" id="p2">
+  <div class="ph"><span class="pa">Tymen</span><span class="pm">#2 · 2002-06-10 16:21</span></div>
+  <div class="pb">argg..disrespect</div>
+</article>
+<article class="post" data-ts="20020610170600" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-06-10 17:06</span></div>
+  <div class="ps">wat een verander</div><div class="pb">allemaal, ben je toevallig weer een paar plaatsen gestegen????</div>
+</article>
+<article class="post" data-ts="20020611160400" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-06-11 16:04</span></div>
+  <div class="pb">ok gezien de opmars die ik aan het maken ben, toch maar weer nummer 1 alleen de pot en de laatste geld terug<br></div>
+</article>
+<article class="post" data-ts="20020612130300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-06-12 13:03</span></div>
+  <div class="pb">Anders gooien we het hele bedrag bij elkaar en kopen daar drank voor! voor een soort Hour-of-Power ofzo. Wel alleen voor de mensen die geld hebben ingelegd natuurlijk!</div>
+</article>
+<article class="post" data-ts="20020612132900" id="p6">
+  <div class="ph"><span class="pa">PTc</span><span class="pm">#6 · 2002-06-12 13:29</span></div>
+  <div class="pb">ok even alle kekheid op een stokje, wie heeft er allemaal al betaald en wie NOG NIET, en willen diegenen dat ook even doen!!! (WJ, kan jij de namen even posten)</div>
+</article>
+<article class="post" data-ts="20020612140000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-06-12 14:00</span></div>
+  <div class="pb">Sander en ik hebben betaald,<br>voor Fleur moet ik nog even 5 euro voorschieten</div>
+</article>
+<article class="post" data-ts="20020612145500" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2002-06-12 14:55</span></div>
+  <div class="pb">das dan al 10 euro voor mij</div>
+</article>
+<article class="post" data-ts="20020612152900" id="p9">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#9 · 2002-06-12 15:29</span></div>
+  <div class="pb">ik zie Argentinie echt nog wel wereldkampioen worden.</div>
+</article>
+<article class="post" data-ts="20020612153900" id="p10">
+  <div class="ph"><span class="pa">tuuT</span><span class="pm">#10 · 2002-06-12 15:39</span></div>
+  <div class="pb">misschien in die ene gevangeniscompetetie in Thailand. <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

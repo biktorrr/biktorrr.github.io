@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morgen patronaat? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Morgen patronaat?</h1>
+<p class="tm">12 posts · started 2007-08-29 13:05 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070829130500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-08-29 13:05</span></div>
+  <div class="pb">In het kader 'je weet maar nooit': <br><br>Wil er iemand mee naar Trail of Dead morgen (donderdag) in het Patronaat?</div>
+</article>
+<article class="post" data-ts="20070829154400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-08-29 15:44</span></div>
+  <div class="pb">het is een beetje een kruising tussen Wir Sind Helden, Oasis, Alpha Blondy, Smashing Pumpkins en Jazz, misschien dat jullie het wel leuk vinden</div>
+</article>
+<article class="post" data-ts="20070829162000" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-08-29 16:20</span></div>
+  <div class="pb">Ik mis nog jumpstyle. Zit dat er ook in? Ik ben er overigens niet bij.</div>
+</article>
+<article class="post" data-ts="20070829164600" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-08-29 16:46</span></div>
+  <div class="pb">morgen ga ik shuttles meppen, helaas.<br></div>
+</article>
+<article class="post" data-ts="20070829165200" id="p5">
+  <div class="ph"><span class="pa">Timn</span><span class="pm">#5 · 2007-08-29 16:52</span></div>
+  <div class="pb">stukje sportief jumpstylen voor TN dus</div>
+</article>
+<article class="post" data-ts="20070830152500" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-08-30 15:25</span></div>
+  <div class="pb">iemand nog?</div>
+</article>
+<article class="post" data-ts="20070830174800" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2007-08-30 17:48</span></div>
+  <div class="pb">misschien wel leuk (als er nog meet boys en girls komen)</div>
+</article>
+<article class="post" data-ts="20070830182300" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2007-08-30 18:23</span></div>
+  <div class="pb">That's the spirit, maar ik denk dat er niet veel meer mensen gaan komen.<br><br>Als je toch nog zin hebt kan je me het beste bellen, ik ben eerst even hardlopen e.d.<br></div>
+</article>
+<article class="post" data-ts="20070830194200" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2007-08-30 19:42</span></div>
+  <div class="pb">thanx voor de uitnodiging dude, maar ik ga vanavond een poging doen om te ontspannen.</div>
+</article>
+<article class="post" data-ts="20070831105200" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2007-08-31 10:52</span></div>
+  <div class="pb">ik dacht dat het over vrijdag ging.</div>
+</article>
+<article class="post" data-ts="20070831151600" id="p11">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#11 · 2007-08-31 15:16</span></div>
+  <div class="pb">Ja die spit gaat je niet in de koude kleren zitten natuurlijk oude man... Veel rijst eten, dan loop je er over 100 jaar nog zo <img src="http://stimpy.rtij.nl/lonelycyclist/Hima73ruw.jpg">bij!</div>
+</article>
+<article class="post" data-ts="20070831151700" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2007-08-31 15:17</span></div>
+  <div class="pb">Of Paella, maar dan zie je er over 100 jaar zo uit: <img src="http://www.sportfotoside.nl/afs/sintsva05/IMG_0682.jpg"></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

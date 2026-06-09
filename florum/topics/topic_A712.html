@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Misha in Melbourne – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Misha in Melbourne</h1>
+<p class="tm">5 posts · started 2003-02-18 15:48 by - MK</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030218154800" id="p1">
+  <div class="ph"><span class="pa">- MK</span><span class="pm">#1 · 2003-02-18 15:48</span></div>
+  <div class="pb"><I>Holy One blijkt een column te schrijven voor de FSR! Hij is te vinden via www.kuys.net, maar voor het gemak heb ik 'm hieronder gepost.</I><br><br><br><B>Afscheid</B><br><br>Voor een studie in het buitenland moet je veel voorbereiden. Zo moet je je natuurlijk inschrijven bij een universiteit, een vliegticket kopen en een visum aanvragen. Al deze zaken zijn goed te plannen. Wat echter niet te plannen is, is het afscheid. Het afscheid van je familie, je vrienden, de laatste zaterdagavond, de fiets die jou trouw door Amsterdam heeft gereden, je kamer, de laatste keer dat je door een bepaalde deur loopt. Dit overvalt je allemaal.<br><br>Het overvalt je niet alleen, ook beleef je dit afscheid intensief omdat je zintuigen scherper functioneren. Je ziet meer details, je hoort geluiden die normaal in het stadsgeruis verdwijnen, de aanraking als je iemand omhelst vloeit door je hele lijf. Je lichaam registreert alles beter omdat het zich ervan bewust is dat het een lange tijd kan duren voordat je terug keert. Deze vertrekreactie van het lichaam maakt dat het afscheid nemen je nog zwaarder valt en dat je dit het liefst zou willen uitstellen.<br><br>Het moment van afscheid is echter onvermijdelijk en elk afscheid is uniek. Of je nou voor het laatst uit de kroeg naar huis loopt of je vriendin een laatste zoen geeft, beide belevenissen hebben een eigen betekenis. Een van die betekenissen is dat de routine zoals jij die had is afgelopen. Niet meer vrijdag bij je ouders eten, niet meer donderdag naar Paradiso, niet meer zondag Studio Sport kijken. Je sociale circuit is er niet meer. Bij een afscheid verlaat je al wat jou bekend is voor het onbekende. Een nieuw land, een nieuwe stad, andere mensen. Je geeft veel op zonder dat je weet wat je er voor terug krijgt. Je kan je hoogstens proberen een voorstelling te maken maar de werkelijkheid zal altijd anders uitpakken.<br><br>Morgen vertrek ik.<br><br></div>
+</article>
+<article class="post" data-ts="20030218154900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-02-18 15:49</span></div>
+  <div class="pb">Dit stukje onderzoeksjournalistiek was van mijn hand.</div>
+</article>
+<article class="post" data-ts="20030218161600" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-02-18 16:16</span></div>
+  <div class="pb">ik kan wel even kijken of ik een linkje naar Holy's columns kan maken, dan hoeven we niet elke keer naar die site te surven. Stukje tweede columnistengebeuren</div>
+</article>
+<article class="post" data-ts="20030218231900" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2003-02-18 23:19</span></div>
+  <div class="ps">Er is maar 1 stercolumnist</div><div class="pb">Hoeveel clich\és kan je bij elkaar opschrijven? En heeft Holy 1 tegenwoordig een vriendin? Geef mij maar Timmie</div>
+</article>
+<article class="post" data-ts="20030219100200" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-02-19 10:02</span></div>
+  <div class="pb">Wel heb ik natuurlijk respect voor Misha en wens ik hem een mooi jaar toe downunder. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

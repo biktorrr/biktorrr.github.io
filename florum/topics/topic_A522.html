@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FIFA dreamteam allertijden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FIFA dreamteam allertijden</h1>
+<p class="tm">4 posts · started 2002-06-20 12:35 by PTspammingC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020620123500" id="p1">
+  <div class="ph"><span class="pa">PTspammingC</span><span class="pm">#1 · 2002-06-20 12:35</span></div>
+  <div class="pb">leuk voor de flobo's dacht ik zo:<br><br>De FIFA heeft haar all-time dreamteam gepresenteerd. De laatste vijf weken konden fans van over de hele wereld online stemmen. Meer dan 1,5 miljoen mensen, uit 31 landen, deden dit. De stemmers konden uit een lijst van 150 legendes hun 11 favoriete spelers kiezen. Het uiteindelijke dreamteam ziet er als volgt uit:<br><br>Spits: Pele (107.539 stemmen)<br>Spits: Johan Cruijff (53.645 stemmen)<br>Spits: Romario (29.480 stemmen)<br>Middenvelder: Diego Maradona (111.035 stemmen)<br>Middenvelder: Zinedine Zidane (80.527 stemmen)<br>Middenvelder: Roberto Baggio (55.625 stemmen)<br>Middenvelder: Michel Platini (53.783 stemmen)<br>Verdediger: Franz Beckenbauer (81.442 stemmen)<br>Verdediger: Paolo Maldini (58.523 stemmen)<br>Verdediger: Roberto Carlos (58.200 stemmen)<br>Keeper: Lev Yashin (24.587 stemmen)</div>
+</article>
+<article class="post" data-ts="20020620125000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-06-20 12:50</span></div>
+  <div class="pb">Paolo Maldini (ook wel "Mooie Paolo" genoemd)is dus na zijn beslissende blunder in de verlenging van de wedstrijd tegen Zuid-Korea beloond met een plaats in het dreamteam!!</div>
+</article>
+<article class="post" data-ts="20020620133800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-06-20 13:38</span></div>
+  <div class="ps">al hadden</div><div class="pb">we dit eerder geweten hadden we even een mail rond gestuurd om WITTE JOSTE ipv van ROMARIO in de spits te krijgen, 35.000 stemmen moeten toch te regelen zijn....</div>
+</article>
+<article class="post" data-ts="20020620170000" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2002-06-20 17:00</span></div>
+  <div class="pb">en Timmie voor de kooi!..Lev Yashin..pfff...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

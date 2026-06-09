@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florapoll 4! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florapoll 4!</h1>
+<p class="tm">3 posts · started 2003-04-29 13:29 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030429132900" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-04-29 13:29</span></div>
+  <div class="pb">Ok het is bijna koninginnedag. Als de Floraboys een revolutie ontketenen tegen Bea en daarna de staatsvorm zouden bepalen, wat zou er dan in plaats van de Monarchie herrijzen?<br><br><!-- v- PollGEAR Code by http://htmlgear.com -v --><br><br><br><br><noscript><br><font face='arial' size='1'> take my poll at:<br><A HREF="http://htmlgear.tripod.com/poll/control.poll?u=mrwanky&i=5&a=render">Florapoll 4:</A>   <img src='http://htmlgear.lycos.com/img/log/po_i_getgear.GIF' border='0'><br>htmlGEAR.com</a></font><br></noscript><br><!-- ^- End PollGEAR Code -^ --><br></div>
+</article>
+<article class="post" data-ts="20030429133100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-04-29 13:31</span></div>
+  <div class="pb">Het zijn wel allemaal open deuren die polls. Eerst de vraag wie het beste zijn ding doet, nadat Timmie er twee intikt en nu wat voor staatsvorm Nederland moet krijgen: een Timmenizercratie natuurlijk! *duh*</div>
+</article>
+<article class="post" data-ts="20030429143800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-04-29 14:38</span></div>
+  <div class="pb">tja de timmenizer heeft nu al in twee polls de voorkeur gekregen, ik wou m de kans geven een hattrick te scoren</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

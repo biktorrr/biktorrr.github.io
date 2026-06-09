@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FDK 2017 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FDK 2017</h1>
+<p class="tm">12 posts · started 2016-12-07 15:59 by Cie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20161207155925" id="p1">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#1 · 2016-12-07 15:59</span></div>
+  <div class="pb">RUM </div>
+</article>
+<article class="post" data-ts="20161207160131" id="p2">
+  <div class="ph"><span class="pa">Cie</span><span class="pm">#2 · 2016-12-07 16:01</span></div>
+  <div class="pb">Voor de boys die niet zo heel veel ophebben met sociale media: roept u maar!<br><br>BigT heeft zich dit jaar als vrijwilliger gemeld voor de organisatie. Hulde!</div>
+</article>
+<article class="post" data-ts="20161208100538" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2016-12-08 10:05</span></div>
+  <div class="pb">Tiiik x2</div>
+</article>
+<article class="post" data-ts="20161208225006" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2016-12-08 22:50</span></div>
+  <div class="pb">Aftiks x infinity</div>
+</article>
+<article class="post" data-ts="20161209001612" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2016-12-09 00:16</span></div>
+  <div class="pb">Bedoel je nou dat je nooit meer komt brave berney?<br><br>Ik ben er graag bij.</div>
+</article>
+<article class="post" data-ts="20161211231509" id="p6">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#6 · 2016-12-11 23:15</span></div>
+  <div class="pb">Aantiks x 2<br>Is er al een locatie in de smiezen van de \é\én of ander? We denken erover een hotelletje te boeken nabij.</div>
+</article>
+<article class="post" data-ts="20161212122824" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2016-12-12 12:28</span></div>
+  <div class="pb">ah, <br><br>2x aftiks. Het gaat ons dit jaar niet lukken.<br><br>Ik heb Ca wel gevolgd en een budget-optie voor jullie geregeld. <br><br>'Direct-to-plate, wall-to-wall' service met 'outdoor ambiance'  Paul Krugerstraat 11. </div>
+</article>
+<article class="post" data-ts="20161219173539" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2016-12-19 17:35</span></div>
+  <div class="pb">Even kijken. Ik tel nu<br><br>VB x2<br>TN x2<br>Ovb x1<br>Ca x2<br>PH x2<br>MK x2<br>MB x1<br>JP x1<br>Co x2<br><br>= 15<br><br>aftiks<br>Bigt <br>Mer <br>Bode <br></div>
+</article>
+<article class="post" data-ts="20161219174014" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2016-12-19 17:40</span></div>
+  <div class="pb">Ik heb een optie openstaan bij Fortuyn. Check anders even dit: http://www.achtertuyn.nl/menu.html <br><br></div>
+</article>
+<article class="post" data-ts="20161219192358" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2016-12-19 19:23</span></div>
+  <div class="pb">OK Boys. <br><br>FDK2017 27 DEC 19u Fortuyn. Deluxe menu letsgo!</div>
+</article>
+<article class="post" data-ts="20161227141742" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2016-12-27 14:17</span></div>
+  <div class="pb">de mooiste dag van t jaar is aangebroken boyyos</div>
+</article>
+<article class="post" data-ts="20161227191420" id="p12">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#12 · 2016-12-27 19:14</span></div>
+  <div class="pb">Beffoindre!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

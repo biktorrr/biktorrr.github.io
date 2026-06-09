@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto op Florum uploaden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto op Florum uploaden</h1>
+<p class="tm">11 posts · started 2005-07-22 20:50 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050722205000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-07-22 20:50</span></div>
+  <div class="pb">Dag lieve Floraboys<br><br>Ik heb een paar leuke foto's gemaakt in Noorwegen die ik graag met jullie wil delen. Hoe zet ik die in dit bericht? Ze staan niet op internet, dus ik kan geen link maken. </div>
+</article>
+<article class="post" data-ts="20050722222300" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2005-07-22 22:23</span></div>
+  <div class="pb">flora-haarlem.hyves.nl</div>
+</article>
+<article class="post" data-ts="20050722223800" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2005-07-22 22:38</span></div>
+  <div class="pb">Precies, CA! daar is het nou net voor bedoeld!</div>
+</article>
+<article class="post" data-ts="20050722225800" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2005-07-22 22:58</span></div>
+  <div class="pb">o, nou ik vond het ook wel leuk om mijn favoriete slager aan te bevelen <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20050723012700" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2005-07-23 01:27</span></div>
+  <div class="pb">Ik geloof dat ze er staan. Heb me ook als oli8 aangemeld (dat suggereerden ze toen oli4 al bezet was), maar zag toen dat ik al uitgenodigd was als olivier. Gecompliceerd allemaal. Maar ik hoef dus geen 'toestemming' voor oli8 van de beheerder.<br><br>Dacht trouwens eerst dat het überhaupt spam met dodelijke virussen was toen Michiel me uitnodigde, maar dat terzijde.</div>
+</article>
+<article class="post" data-ts="20050727135900" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2005-07-27 13:59</span></div>
+  <div class="pb">goeie foto's trouwens, Oli4 <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><br><br>en een goeie vakantie gewenst!</div>
+</article>
+<article class="post" data-ts="20050727225400" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2005-07-27 22:54</span></div>
+  <div class="pb">Het was dus _geen_ spammailtje? Hmm.... kan ik opnieuw uitgenodigd worden? </div>
+</article>
+<article class="post" data-ts="20050728094700" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2005-07-28 09:47</span></div>
+  <div class="pb">@Maarten: bij deze! Je kunt trouwens ook gewoon zelf een account aanmaken en jezelf aanmelden voor onze Flora Haarlem Hyve...</div>
+</article>
+<article class="post" data-ts="20050728144200" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2005-07-28 14:42</span></div>
+  <div class="pb">als je het gewoon ergens wilt uploaden en dan op het florum wil laten zien kan je bv gebruik maken van een uploadservice als <a href="http://www.putfile.com/">putfile</a> (foto's tot 2Mb. videos tot 10) of <a href="http://imageshack.us/">ImageShack</a>.<br><br>Als je dan de foto's wil laten zien moet je een stukje html in je text kwakken, dat ziet er dan zo uit: <br>img src="http://urlvanjeplaatje" <br>en dat tussen kleiner-dan/groter-dan tekens.</div>
+</article>
+<article class="post" data-ts="20050728163000" id="p10">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#10 · 2005-07-28 16:30</span></div>
+  <div class="pb"><img src="http://www.jm-p.nl/flora/onzin/bikT_FDK_cup.jpg"><br><br>Even een voorbeeldje om het allemaal wat levendiger te maken. Bovenstaand plaatje kun je maken door het onderstaande in te tikken zonder de procentsymbolen:<br><br>%<%img src="http://www.jm-p.nl/flora/onzin/bikT_FDK_cup.jpg"%>%<br><br></div>
+</article>
+<article class="post" data-ts="20050728163100" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2005-07-28 16:31</span></div>
+  <div class="pb">Nou ja, er blijft weinig van over, maar dat is natuurlijk van ondergeschikt belang.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

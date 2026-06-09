@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wordfeud – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wordfeud</h1>
+<p class="tm">6 posts · started 2012-05-09 23:29 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120509232942" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2012-05-09 23:29</span></div>
+  <div class="pb"><p><br>	Knaqqen,</p><br><p><br>	Denkelijk is Wordfeud een van de belangrijkste sociale media. Wie&nbsp;wil er nog meer tegen mij spelen? Kirrie? Drouille? Mijn id is: Merw.&nbsp;</p><br><p><br>	Beff.</p><br></div>
+</article>
+<article class="post" data-ts="20120509235704" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2012-05-09 23:57</span></div>
+  <div class="pb">ik vind het maar kak. Wil je niet met me tekenen?<br></div>
+</article>
+<article class="post" data-ts="20120510001549" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2012-05-10 00:15</span></div>
+  <div class="pb">Rumble is my game... Holyone</div>
+</article>
+<article class="post" data-ts="20120510154422" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2012-05-10 15:44</span></div>
+  <div class="pb">zal het even downloaden op de iPad...<br><br>username: tim_vkemp</div>
+</article>
+<article class="post" data-ts="20120512035014" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2012-05-12 03:50</span></div>
+  <div class="pb">En Wendy is terug online. Hoogh.</div>
+</article>
+<article class="post" data-ts="20120512165808" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2012-05-12 16:58</span></div>
+  <div class="pb">kon net het woord cheerio maken in ons potje ;-)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

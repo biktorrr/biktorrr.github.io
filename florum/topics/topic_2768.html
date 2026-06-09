@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2768 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2768</h1>
+<p class="tm">3 posts&nbsp;·&nbsp;started 2012-12-05 11:40 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20121205114050" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1&nbsp;·&nbsp;2012-12-05 11:40</span></div>
+  <div class="pb"><a href='http://www.buzzfeed.com/whitneyjefferson/52-characters-from-the-wire-illustrated'><img src='http://s3-ec.buzzfed.com/static/enhanced/webdr01/2012/11/29/11/enhanced-buzz-wide-27542-1354205385-10.jpg' width=400></a></div>
+</article>
+<article class="post" data-ts="20121205121000" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2&nbsp;·&nbsp;2012-12-05 12:10</span></div>
+  <div class="pb">SHEEEEEEEIIIIIT!</div>
+</article>
+<article class="post" data-ts="20121205160927" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3&nbsp;·&nbsp;2012-12-05 16:09</span></div>
+  <div class="pb">Brr, Snoop is ook getekend superfreaky<br></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

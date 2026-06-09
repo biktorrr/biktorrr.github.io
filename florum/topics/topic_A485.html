@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cl finale/Verkiezingsuitslag kijken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cl finale/Verkiezingsuitslag kijken?</h1>
+<p class="tm">7 posts · started 2002-05-15 11:37 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020515113700" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-05-15 11:37</span></div>
+  <div class="pb">Wordt er nog centraal ergens gekeken?</div>
+</article>
+<article class="post" data-ts="20020515140200" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-05-15 14:02</span></div>
+  <div class="ps">cl finale</div><div class="pb">lekker boeieend.. nee dat gaan we niet kijen</div>
+</article>
+<article class="post" data-ts="20020515141400" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-05-15 14:14</span></div>
+  <div class="pb">bij moikey, met verkiezingen...<br>maar het is al druk dus bel m even...<br></div>
+</article>
+<article class="post" data-ts="20020515141500" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-05-15 14:15</span></div>
+  <div class="pb">er wordt inderdaad 'centraal' gekeken, bij mij om precies te zijn. Merlijn, Victor, Berend, Sicco en Wybren komen dacht ik al. Op zich kan daar nog wel iemand bij, ik heb immers een gigantische kamert. Wat eten en drinken betreft is ieder daar zelf voor verantwoordelijk: de AH is tot 20.00 uur open en daarna zal het afhalen of de gloednieuwe "Chicken Cottage" moeten worden. <br><br>PS:Iedereen zijn Claus Topmüller-pruik meenemen.</div>
+</article>
+<article class="post" data-ts="20020515142300" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2002-05-15 14:23</span></div>
+  <div class="pb">In wat voor land worden we morgen wakker? </div>
+</article>
+<article class="post" data-ts="20020515153800" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2002-05-15 15:38</span></div>
+  <div class="pb">En wie mag er in het najaar in Monaco aantreden tegen Feyenoord in de wedstrijd om de Europses Supercup? </div>
+</article>
+<article class="post" data-ts="20020515171000" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-05-15 17:10</span></div>
+  <div class="pb">oja berend komt niet<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

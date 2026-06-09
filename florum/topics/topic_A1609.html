@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Domeinregistratie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Domeinregistratie</h1>
+<p class="tm">7 posts · started 2005-11-06 12:16 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051106121600" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2005-11-06 12:16</span></div>
+  <div class="pb">Beste Floraboys & Girls,<br><br>Aangezien ik momenteel niet meer bij Demon werkzaam ben en  dus niet meer voor een vriendenprijsje de jaarlijkse domeinregistratiekosten voor floraboys.com heb, vroeg ik me af of er iemand is die hetzij het domein van mij over neemt, hetzij een goedkoop alternatief heeft om dit te regelen. Het kostte mij bij Demon ongeveer 7  per jaar.<br>Ik ben 'er' zelf al langere tijd uit en heb ook geen zin om iets uit te gaan zoeken wat een van mijn cybercontacten al gedaan heeft. Dus vandaar deze publieke oproep.<br><br>Ik hoor het wel per e-mail op ik$wintervorst,nl of op dit florum.</div>
+</article>
+<article class="post" data-ts="20051106193000" id="p2">
+  <div class="ph"><span class="pa">Bill Gates</span><span class="pm">#2 · 2005-11-06 19:30</span></div>
+  <div class="ps">Voordelige domeinen</div><div class="pb">Via JM-P kan je domeinen voordelig laten registreren</div>
+</article>
+<article class="post" data-ts="20051107095800" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-11-07 09:58</span></div>
+  <div class="pb">ik stel voor dat we die 7 euro bij elkaar zouden moeten kunnen sprokkelen.</div>
+</article>
+<article class="post" data-ts="20051107184400" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-11-07 18:44</span></div>
+  <div class="pb">Het gaat er naast het bedrag ook nog om om de DNS te veranderen, het domein moet dus van eigenaar verwisselen als ik het wel heb.</div>
+</article>
+<article class="post" data-ts="20051107195300" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2005-11-07 19:53</span></div>
+  <div class="pb">Het zou wel handig zijn als er inderdaad iets bij zit waarmee de DNS geregeld kan worden.<br>Die 7 euro is wat ik er voorheen voor betaalde, maar dat zal nu ik geen werknemer meer ben een stuk hoger liggen.</div>
+</article>
+<article class="post" data-ts="20051107215500" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-11-07 21:55</span></div>
+  <div class="pb">Het bedrijf waarmee ik altijd werk zou 20 e per jaar kosten voor alleen de dns, dat zou toereikend zijn. De prijs zit m vooral in de .com extensie, anders is het een stuk goedkoper.<br><br></div>
+</article>
+<article class="post" data-ts="20051108093200" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2005-11-08 09:32</span></div>
+  <div class="pb">Ik heb een pakket in de aanbieding voor $8.50 zo'n 8 euro.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

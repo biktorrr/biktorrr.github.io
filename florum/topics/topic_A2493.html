@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pubquizzers  / denkmongolen gezocht – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Pubquizzers  / denkmongolen gezocht</h1>
+<p class="tm">1 post · started 2008-09-19 15:33 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080919153300" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2008-09-19 15:33</span></div>
+  <div class="pb">Het is tijd om de Florakennis buiten de provinciegrenzen te verspreiden. Donderdag 16 oktober gaan Wybren en ik meedoen met een Haagsche pubquiz in de O'Caseys Pub (Noordeinde 140). Ik ben op zoek naar drie echte pubquizzers, denkmongolen en hoogvliegers (allen m/v)om gezamenlijk de punten en de overwinning binnen te halen.<br><br>Omdat deze dag ook de verjaardag van de Little T is krijgt hij een voorkeursplaats! Het quizzen begint om 20:30 maar er zal een passende ontvangst zijn in mijn casa voor wie een hapje mee wil eten. Nog drie plaatsen maak me los!<br><br>1. MK<br>2. WM<br>3. ?<br>4. ?<br>5. ?<br><br>P.S. Het kost iets van 2,50 inschrijfgeld geloof ik.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

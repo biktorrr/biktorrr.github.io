@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2948 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2948</h1>
+<p class="tm">2 posts&nbsp;·&nbsp;started 2010-10-27 10:24 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101027102400" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1&nbsp;·&nbsp;2010-10-27 10:24</span></div>
+  <div class="pb">Bernard, waar ben je?</div>
+</article>
+<article class="post" data-ts="20101027133300" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2&nbsp;·&nbsp;2010-10-27 13:33</span></div>
+  <div class="pb">Graag verwijs ik naar de tweede posting in dit topic.<br><br> Overigens wel ontroerend dat er na twee dagen niet posten al alarmbellen gaan rinkelen. Ik word op deze manier i.i.g. nooit zo´n oud mannetje dat in staat van vergaande ontbinding op zijn toilet gevonden wordt, vijf maanden na de laatste adem te hebben uitgeblazen.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tour de France-Spel!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tour de France-Spel!!!</h1>
+<p class="tm">7 posts · started 2001-07-03 20:40 by PoopieTheAuw</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010703204000" id="p1">
+  <div class="ph"><span class="pa">PoopieTheAuw</span><span class="pm">#1 · 2001-07-03 20:40</span></div>
+  <div class="pb">hallo dudesters, <br>ik ga meedoen aan het Haarlems Dagblad Tour de France<br>pel en ik wou jullie dit ook even melden. Als jullie <br>willen en er meer dan twee anderen zijn wil ik ook <br>wel een onderling pooltje doen: dwz: wie de meeste <br>punten van ons onderling haalt. En daar dan een tientje<br>op zetten oid...<br><br>wie doen er mee??? (beslissen voor de 7e aub)<br><br>www.haarlemsdagblad.nl<br>Poopie Out!</div>
+</article>
+<article class="post" data-ts="20010704010800" id="p2">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#2 · 2001-07-04 01:08</span></div>
+  <div class="pb">welke zevende ? </div>
+</article>
+<article class="post" data-ts="20010704113700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-07-04 11:37</span></div>
+  <div class="pb">Ik niet. Tour de France kan me aan m'n reet roesten.</div>
+</article>
+<article class="post" data-ts="20010704115700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2001-07-04 11:57</span></div>
+  <div class="pb">Merlijn, kan je de tour de frans nog wel hebben zo aan je reet als hij al zo pijnlijk is...of een dubbele dosis nerofin?</div>
+</article>
+<article class="post" data-ts="20010704120400" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2001-07-04 12:04</span></div>
+  <div class="pb">Ik ben wel in voor een pooltje met poopie, das altijd geld winnen. By the way ga je je renners ook op coole namen selecteren? Zullen we dan de inzet dan verhogen naar 100 gulden? Alhoewel Cippolini is ook best een coole naam.<br><br><br></div>
+</article>
+<article class="post" data-ts="20010704165000" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2001-07-04 16:50</span></div>
+  <div class="pb">Die Tour de France doet me niets. Vergeleken met die<br>krampen ('k heb 'r nu weeer last van (om 16.40 uur!)<br>zal dat wel meevallen.</div>
+</article>
+<article class="post" data-ts="20010704233400" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2001-07-04 23:34</span></div>
+  <div class="pb">Al dat vermoeiende gefiets, tis niks dat ik uit Hillegom moet komen fietsen om een potje te ballen. Maar om voor de lol een rondje Frankrijk te doen......<br>Tevens het idee om een aantal weken naar fietsende mannen met geschoren benen te kijken spreekt mij ook niet echt aan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

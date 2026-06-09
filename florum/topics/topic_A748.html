@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lara&#x27;s Verjaardag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lara&#x27;s Verjaardag</h1>
+<p class="tm">4 posts · started 2003-04-04 10:36 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030404103600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-04-04 10:36</span></div>
+  <div class="pb">Ik kan iig een auto lenen.<br>Ik stel voor om zo rond 12:30 a 13:00 te gaan ballen om vervolgens rond 16:00 naar Velsen-Noord te gaan. <br>Ik geloof dat Mer ook een auto kon regelen, maar wel op tijd terug moet zijn. Eventueel zou Tim ook een auto kunnen regelen, maar dit lijkt me alleen nodig als er mensen met Mer meerijden die niet niet om 17:30 a 18:00 (meen ik) weer terug willen en dan dus met tim mee terug kunnen (er vanuit gaande dat Tim niet ook rond 6en weer terug moet zijn).<br>Mijn idee was om daar te blijven totdat het men het leuk vind, dan rij ik daarna terug naar haarlem. Lara zou nog wel wat posten over wat ze wilde hebben geloof ik en over het eten ofzo.</div>
+</article>
+<article class="post" data-ts="20030404115100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-04-04 11:51</span></div>
+  <div class="pb">Toppie! Ik kan dan tot ongeveer 19:00 uur blijven. <br></div>
+</article>
+<article class="post" data-ts="20030404120100" id="p3">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#3 · 2003-04-04 12:01</span></div>
+  <div class="ps">Morgen...</div><div class="pb">Ik vind het echt leuk dat jullie kunnen komen aangezien een aantal van mijn vrienden niet komen (ziekte werken e.d).Vind het het wel super dat jullie wel komen. Tijmen zei dat ik wat moest verzinnen om te vragen. Tja ik weet niet echt iets leuks misschien iets nuttigs voor de vakantie ofzo tja verzin iets leuks (gebruik maar wat fantasie ofzo).Over het eten euhh we hebben taart en euhh taart nee hoor we eten waarschijnlijk wel soepie en brood en salade.Nou tot morgen dan groetjes </div>
+</article>
+<article class="post" data-ts="20030404122500" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-04-04 12:25</span></div>
+  <div class="pb">heyy toppie, marije en ik rijden dan om 16u met Merlijn mee, want ik moet s'avonds nog naar mijn vader's verjaardag en Rije moest 'savonds ook nog iets sjeffen. Dus wij blijven dan tot ongeveer 18.30u ofzo.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

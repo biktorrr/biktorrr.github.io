@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AGENDA&#x27;S KLAAR??? BALDATA!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">AGENDA&#x27;S KLAAR??? BALDATA!!!</h1>
+<p class="tm">8 posts · started 2001-08-25 15:16 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010825151600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-08-25 15:16</span></div>
+  <div class="pb">ok FloBo's hier het schema voor Us ZaalFloBo's<br><br>ik heb alleen de eerste tijd opgetypt (wat die tweede <br>tijd is weet ik nog steeds niet)<br><br><br>11/09 18:00  1 04A01 Real Tampeloeritas  - Flora Boys              <br>17/09 22:30  1 04A04 Flora Boys   - Zeker van de Beker<br><br>25/09 18:00  4 04A08 ITS-AIO     - Flora Boys<br><br>04/10 20:15  4 04A11 Flora Boys   - Schenker<br><br>18/10 18:45  4 04A14 A.E.L. b4     - Flora Boys<br><br>30/10 18:00  4 04A16 Flora Boys     - Real Tampeloeritas<br><br>12/11 21:00  1 04A20 Zeker van de Beker- Flora Boys<br><br>28/11 22:00  1 04A24 Flora Boys    - ITS-AIO<br><br>06/12 21:00  1 04A26 Schenker      - Flora Boys<br><br>20/12 18:00  4 04A28 Flora Boys       - A.E.L. b4<br><br><br>SCHRIJFT HET OP!!!<br><br>Eerste wedstrijd dus de 11e september: Real Tampeloeritas<br>uit, altijd lastig! (ijzeren voetbalwet)<br><br>PTC</div>
+</article>
+<article class="post" data-ts="20010825152300" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-08-25 15:23</span></div>
+  <div class="ps">oja</div><div class="pb">oja die waren al gepost...<br></div>
+</article>
+<article class="post" data-ts="20010825185800" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2001-08-25 18:58</span></div>
+  <div class="pb">PTC ik verwacht spoedig een grondige analyse van de tegenstanders. Scouts?</div>
+</article>
+<article class="post" data-ts="20010826140900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2001-08-26 14:09</span></div>
+  <div class="pb">En wanneer waren ook alweer de scheidsrechtersmeetings?<br></div>
+</article>
+<article class="post" data-ts="20010826170000" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2001-08-26 17:00</span></div>
+  <div class="pb">Tweede tijd is wanneer er door ons team gefloten moet worden.</div>
+</article>
+<article class="post" data-ts="20010828202200" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2001-08-28 20:22</span></div>
+  <div class="ps">RAMP:</div><div class="pb">DE EERSTE WEDSTRIJD VAN DE FLORABOYS-IN-DE-ZAAL KAN IK AL NIET MEEMAKEN!!!!!!!!!!!!!!!!!!!!!!!<br><br>dan heb ik die middag net bij de tandarts de tweede sessie tanden-uit-mijn-bek-rossen gehad en loop ik nog te trippen van de verdoving. Dat zal wel niet toegestaan zijn volgens de doping-reglementen.</div>
+</article>
+<article class="post" data-ts="20010828212800" id="p7">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#7 · 2001-08-28 21:28</span></div>
+  <div class="pb">en het feit dat je geen bal goed raakt waarschijnlijk als je net zulke verdovingen hebt gehad als ik toen mijn verstandskiezen eruit gingen<br><br>TuuT</div>
+</article>
+<article class="post" data-ts="20010829144200" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2001-08-29 14:42</span></div>
+  <div class="ps">HOERA!</div><div class="pb">ik kan er wel bij zijn! De tandarts was zo lekker bezig dat hij er maar een extra uit haalde dus in september hoef ik niet meer. Ik kan dus gewoon onze debuutwedstrijd ballen!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

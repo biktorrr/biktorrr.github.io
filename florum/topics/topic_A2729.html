@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>floraboys, culturele boys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">floraboys, culturele boys</h1>
+<p class="tm">9 posts · started 2009-09-02 15:23 by mijnt</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090902152300" id="p1">
+  <div class="ph"><span class="pa">mijnt</span><span class="pm">#1 · 2009-09-02 15:23</span></div>
+  <div class="pb">Voor alle floraboys die weer zin hebben in een cultureel uitje: op woensdag 9 en donderdag 10 september wagen mijn dansvrienden en ik weer eens een dansje, dit maal in de Engelenbak in Amsterdam. De voorstelling heet 'Vrijheid' en bestaat uit vier choreografie\ën die tot stand zijn gekomen in samenwerking met kunstenaars met een vluchtelingenachtergrond (goed voor de subsidie). Voor meer informatie: http://www.engelenbak.nl/t2.asp?path=vpq581w4&v=208&p=76&start=0<br><br>Tot latertjes!</div>
+</article>
+<article class="post" data-ts="20090902200300" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2009-09-02 20:03</span></div>
+  <div class="pb">Zou je het leuk vinden als we zouden komen kijken?</div>
+</article>
+<article class="post" data-ts="20090902212500" id="p3">
+  <div class="ph"><span class="pa">mijnt</span><span class="pm">#3 · 2009-09-02 21:25</span></div>
+  <div class="pb">Oja, dat wilde ik ook nog zeggen: het zou heeel leuk zijn als jullie komen kijken!</div>
+</article>
+<article class="post" data-ts="20090903094800" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-09-03 09:48</span></div>
+  <div class="pb">Moet 'm helaas aftikken, maar zit wel in het comitee van aanbeveling.</div>
+</article>
+<article class="post" data-ts="20090903143700" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2009-09-03 14:37</span></div>
+  <div class="pb">h\è naar, meteen elke poging om je een surprise birthdayparty te geven de kop indrukken.<br></div>
+</article>
+<article class="post" data-ts="20090903153800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-09-03 15:38</span></div>
+  <div class="pb">Deze poging was wel heel doorzichtig.</div>
+</article>
+<article class="post" data-ts="20090903161000" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2009-09-03 16:10</span></div>
+  <div class="pb">Als het net zo spannend is als vorige keer kom ik wel kijken denk ik. Gaan er meer luitjes? Ga namelijk niet in mijn eentje, ik ben een gezelschapsdier :)</div>
+</article>
+<article class="post" data-ts="20090904151800" id="p8">
+  <div class="ph"><span class="pa">Blije</span><span class="pm">#8 · 2009-09-04 15:18</span></div>
+  <div class="pb">Ik ben d'r woensdag bij, met de rest van de kingies!</div>
+</article>
+<article class="post" data-ts="20090904181100" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2009-09-04 18:11</span></div>
+  <div class="pb">Ben er niet bij, Mijnt, maar wens je wel veel succes!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

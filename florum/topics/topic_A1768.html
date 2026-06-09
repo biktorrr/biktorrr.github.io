@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>breaking news – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">breaking news</h1>
+<p class="tm">1 post · started 2006-05-23 23:10 by Joop van T.</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060523231000" id="p1">
+  <div class="ph"><span class="pa">Joop van T.</span><span class="pm">#1 · 2006-05-23 23:10</span></div>
+  <div class="pb">Jazzpolitie back online zegt:<br>je bent trouwens net op tijd ontsnapt uit Europa<br>Merlijn zegt:<br>hoezo?<br>Jazzpolitie back online zegt:<br>de larpers hebben het continent overgenomen<br>Merlijn zegt:<br>slecht nieuws indeed<br>Merlijn zegt:<br>hoe dat zo<br>Merlijn zegt:<br>hebben de eu bestormd met hun plastic zwaardjes?<br>Jazzpolitie back online zegt:<br>deze dude heeft zelfs het songfestival gewonnen:<br>Jazzpolitie back online zegt:<br><img src='http://www.theadvertiser.news.com.au/common/imagedata/0,1658,5157114,00.jpg'><br>Merlijn zegt:<br>dat is een grap neem ik aan<br>Jazzpolitie back online zegt:<br>nope<br>Merlijn zegt:<br>tering<br>Jazzpolitie back online zegt:<br>ten koste van Treble (de beste band ooit na Kriss Kross en Captain Jack)<br>Merlijn zegt:<br>haha<br>Jazzpolitie back online zegt:<br>en het erge is<br>Jazzpolitie back online zegt:<br>iedereen vind het maar normaal<br>Merlijn zegt:<br>ik schaam me europeaan te zijn<br>Jazzpolitie back online zegt:<br>in mijn tijd werden dit soort pipos in het schavot gegooit zonder eerlijke rechtzaak<br>Merlijn zegt:<br>zo is het<br>Merlijn zegt:<br>of ze werden op het florapark vernederd<br>Jazzpolitie back online zegt:<br>nu krijgen ze van Rabobank Hillegom gewoon een hypotheek<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

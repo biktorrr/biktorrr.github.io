@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Antistalkingactie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Antistalkingactie</h1>
+<p class="tm">1 post · started 2006-01-26 10:33 by ANP lil-persmuskiet</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060126103300" id="p1">
+  <div class="ph"><span class="pa">ANP lil-persmuskiet</span><span class="pm">#1 · 2006-01-26 10:33</span></div>
+  <div class="pb">Naar het schijnt heeft Floravedette BIK voor de 10e keer dit seizoen zijn mobiele nummer laten veranderen, dit om weer eens in lange tijd een nacht rustig te kunnen slapen zonder dat hordes trouwe fans hem lastigvallen. Naar eigen zeggen vindt BIK het uitermate chezellich als fans bij hem en J-lau op de koffie komen, maar met Het Huwelijk in het vooruitzicht moet BIk zich 100% kunnen concentreren. Geruchten over verbeterde contracten met de telecom-sponsors wijst hij van de hand.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

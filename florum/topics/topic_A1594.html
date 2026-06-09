@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hulp gevraagd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hulp gevraagd!</h1>
+<p class="tm">7 posts · started 2005-10-11 12:24 by Lara</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051011122400" id="p1">
+  <div class="ph"><span class="pa">Lara</span><span class="pm">#1 · 2005-10-11 12:24</span></div>
+  <div class="pb">Beste Floraboys, ik moet voor het vak kunstzinnige begeleiding een groepsoefening doen, nu vroeg ik me af of jullie als "voetbalteam" mee zouden willen werken aan deze oefening. Samen met twee klasgenoten moeten we aan een groep van minimaal 8 en maximaal 15 mensen een kunstzinnige oefening geven die gezamelijk uitgevoerd moet worden. <br>Dus wie zou er mee willen werken?Jullie zullen ons er een groot plezier mee doen!<br>Wanneer het plaats zal vinden laten we dan nog weten ik wil eerst even kijken of er mensen zijn die mee willen werken.Wel weten we dat het ongeveer 2 1/2 tot drie uurtjes gaat duren.<br>Dus:<br>Wat: een kunstzinnige groepsopdracht<br>Hoelang: ongeveer 2 1/2 tot drie uur<br>Beloning: Kopje thee of koffie met koek <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> en natuurlijk heel veel credits bij mij!! <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br>Waar: Waarschijnlijk aan de Kleverparkweg </div>
+</article>
+<article class="post" data-ts="20051011130500" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2005-10-11 13:05</span></div>
+  <div class="pb">ik wil wel meedoen.. hangt ervanaf wanneer natuurlijk</div>
+</article>
+<article class="post" data-ts="20051011131400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-10-11 13:14</span></div>
+  <div class="pb">ik ben erbij</div>
+</article>
+<article class="post" data-ts="20051011131400" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2005-10-11 13:14</span></div>
+  <div class="pb">ik wil ook mee doen. Misschien een keer een zaterdag voor het ballen, als niet iedereen in parijs zit of ergens anders?<br></div>
+</article>
+<article class="post" data-ts="20051011132100" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2005-10-11 13:21</span></div>
+  <div class="pb">Wil ook wel meedoen, maar ben weekends van week 43, 44 en 45 afwezig.</div>
+</article>
+<article class="post" data-ts="20051016194200" id="p6">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#6 · 2005-10-16 19:42</span></div>
+  <div class="pb">Mogen er ook girls mee doen? <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20051017101400" id="p7">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#7 · 2005-10-17 10:14</span></div>
+  <div class="pb">Alvast bedankt voor en ieder aanbod, we zijn nog in drukke discussie met een docent of er ook een sport team gedaan mag worden zo ja dan zijn er minimaal 8 mensen nodig, en laat ik meer weten. Waarschijnlijk mag het wel maar het is altijd zo vaag bij ons <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> dus nader info volgt!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

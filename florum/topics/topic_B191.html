@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>januari: GOUDEN WOLF TOERNOOI – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">januari: GOUDEN WOLF TOERNOOI</h1>
+<p class="tm">8 posts · started 2002-10-21 13:42 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021021134200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-10-21 13:42</span></div>
+  <div class="pb">in januari doen we mee met het toernooi, lees het op de zaalvoetbalsite en meld je hier aan.</div>
+</article>
+<article class="post" data-ts="20021021134800" id="p2">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#2 · 2002-10-21 13:48</span></div>
+  <div class="pb">ja toppie, zet me der maar op</div>
+</article>
+<article class="post" data-ts="20021021141900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-10-21 14:19</span></div>
+  <div class="pb">Check!</div>
+</article>
+<article class="post" data-ts="20021021151300" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-10-21 15:13</span></div>
+  <div class="pb">lijkt me een goed excuus om mijn punter weer eens in de Nederlandse zalen zijn ding te laten doen. Onder voorbehoud weliswaar, je weet nooit hoe de dingen lopen. Chirac kan wel net vermoord zijn.</div>
+</article>
+<article class="post" data-ts="20021021171600" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-10-21 17:16</span></div>
+  <div class="pb">ik vind trouwens dat we hier best met een brede selectie naartoe kunnen gaan, dan kan iedereen lekker een keertje meedoen. Dus er is geen inschrijflimiet oid, zolang we maar minimaal 7/8 man oid hebben.,,</div>
+</article>
+<article class="post" data-ts="20021022111900" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2002-10-22 11:19</span></div>
+  <div class="ps">lijkt me lache</div><div class="pb">weet alleen niet of die zaterdag 100% gaat lukken. Tja die volle agenda he..........</div>
+</article>
+<article class="post" data-ts="20021022120500" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-10-22 12:05</span></div>
+  <div class="pb">niet lullen doch ballen</div>
+</article>
+<article class="post" data-ts="20021022125900" id="p8">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#8 · 2002-10-22 12:59</span></div>
+  <div class="pb">Kan niet zo ver vooruit kijken, maar zet me maar op die lijst.knalle</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

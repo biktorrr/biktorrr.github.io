@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd!</h1>
+<p class="tm">12 posts · started 2011-08-22 19:20 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110822192051" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2011-08-22 19:20</span></div>
+  <div class="pb">Aan Kirrie<br><br>die waarschijnlijk een gefelicitaart in het echt krijgt..</div>
+</article>
+<article class="post" data-ts="20110822193322" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2011-08-22 19:33</span></div>
+  <div class="pb">Gefeliciteerd Kirrie!</div>
+</article>
+<article class="post" data-ts="20110822195917" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2011-08-22 19:59</span></div>
+  <div class="pb">Gefeliciteerd! Het kan niet op aan de Pars!f@lstraat. Beff.</div>
+</article>
+<article class="post" data-ts="20110822200515" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2011-08-22 20:05</span></div>
+  <div class="pb">*tik*</div>
+</article>
+<article class="post" data-ts="20110822202337" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2011-08-22 20:23</span></div>
+  <div class="pb">Gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20110822215254" id="p6">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#6 · 2011-08-22 21:52</span></div>
+  <div class="pb">Gefeliciflorateerd!</div>
+</article>
+<article class="post" data-ts="20110822221442" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2011-08-22 22:14</span></div>
+  <div class="pb">Gefeliciteerd!!</div>
+</article>
+<article class="post" data-ts="20110823132409" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2011-08-23 13:24</span></div>
+  <div class="pb">Neit, te laat... Alsnog van harte gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20110823155533" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2011-08-23 15:55</span></div>
+  <div class="pb">Toch wel merkwaardig dat de moeder van zn kind de enige is die geen Taart van de brave Drouille krijgt</div>
+</article>
+<article class="post" data-ts="20110823161209" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2011-08-23 16:12</span></div>
+  <div class="pb">Om de verdere geruchtenstroom in te dammen. De taart voor Kirrie hoeft de privesfeer niet te overstijgen.</div>
+</article>
+<article class="post" data-ts="20110823171210" id="p11">
+  <div class="ph"><span class="pa">Zeef</span><span class="pm">#11 · 2011-08-23 17:12</span></div>
+  <div class="pb">hoe die zin er staat zou dat wel eens een stroom aan geruchten kunnen laten ontstaan</div>
+</article>
+<article class="post" data-ts="20110823173519" id="p12">
+  <div class="ph"><span class="pa">Zeef</span><span class="pm">#12 · 2011-08-23 17:35</span></div>
+  <div class="pb">Zo gaf mijn vader de moeders van zijn zonen elk jaar een parelmoeren halsketting kado. Ook niet iets waarmee hij op het florum te koop liep.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jazzy J, felicitÃ©! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Jazzy J, felicitÃ©!</h1>
+<p class="tm">14 posts · started 2015-05-02 10:14 by PH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20150502101417" id="p1">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#1 · 2015-05-02 10:14</span></div>
+  <div class="pb">Hij is hoogh, hij is beffoindre! </div>
+</article>
+<article class="post" data-ts="20150502175902" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2015-05-02 17:59</span></div>
+  <div class="pb">Dat 't weer een goed jaar vol bekostigde snoepreisjes moge worden !!</div>
+</article>
+<article class="post" data-ts="20150502223143" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2015-05-02 22:31</span></div>
+  <div class="pb">Gefeliciteerd, Jazz!</div>
+</article>
+<article class="post" data-ts="20150502233858" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2015-05-02 23:38</span></div>
+  <div class="pb">Als het niet op het florum staat is het niet gebeurd! Van harte.</div>
+</article>
+<article class="post" data-ts="20150503093856" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2015-05-03 09:38</span></div>
+  <div class="pb">Dank baqqies!</div>
+</article>
+<article class="post" data-ts="20150503144024" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2015-05-03 14:40</span></div>
+  <div class="pb">Gefeliciteerd, triple J-jay!!!<br><br>Als verjaardagsgeste: een stip uit Kyoto, die niet bekostigd is door jou de belastingbetaler. </div>
+</article>
+<article class="post" data-ts="20150503214321" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2015-05-03 21:43</span></div>
+  <div class="pb">Kijk, dat zijn de betere stippen!</div>
+</article>
+<article class="post" data-ts="20150504123056" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2015-05-04 12:30</span></div>
+  <div class="pb">En van harte ook hier natuurlijk nog lieve Jazz</div>
+</article>
+<article class="post" data-ts="20150510011127" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2015-05-10 01:11</span></div>
+  <div class="pb">@Tokio<br><br>En de pensioensvoorziening van mevr Svenst® dan? Linksom of rechtsom moet 't toch weer bij de brave Jazzzzz vandaan komen.</div>
+</article>
+<article class="post" data-ts="20150512064143" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2015-05-12 06:41</span></div>
+  <div class="pb">De pensioensvoorziening, inderdaad, en de buitensporige bijdrage aan de hypotheeklasten natuurlijk, waardoor er niet op een sushietje meer of minder gekeken werd.</div>
+</article>
+<article class="post" data-ts="20150909190323" id="p11">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#11 · 2015-09-09 19:03</span></div>
+  <div class="pb">Jazzy Jazz, ook al ben je nog lang niet jarig, je naamgenoot heeft wel een <a href="http://www.nu.nl/cultuur-overig/4121276/jessie-jazz-vuijk-wint-miss-nederland-verkiezing.html" target="Jessie">aardig prijsje gewonnen</a>!</div>
+</article>
+<article class="post" data-ts="20150909194102" id="p12">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#12 · 2015-09-09 19:41</span></div>
+  <div class="pb">Beetje een raar smoeltje, die Jessy-Jazz.</div>
+</article>
+<article class="post" data-ts="20150910004954" id="p13">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#13 · 2015-09-10 00:49</span></div>
+  <div class="pb">Uberhaubt een dozijn inteeltkoppen op een rij. Ik possyt dat er op mijn werk zeker 12 knappere vrouwen rondlopen.</div>
+</article>
+<article class="post" data-ts="20150910074323" id="p14">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#14 · 2015-09-10 07:43</span></div>
+  <div class="pb">Ja, ik vond het idd ook geen Nederlandse klasse. Hoewel bij mij op werk ni\ét tien knappere vrouwen rondlopen...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

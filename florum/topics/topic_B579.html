@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bigT in nood – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bigT in nood</h1>
+<p class="tm">8 posts · started 2005-03-09 14:20 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050309142000" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2005-03-09 14:20</span></div>
+  <div class="pb">Hey floraboys<br><br>ik heb morgenavond een voetbalwedstrijd, in Leiden, en nou hebben we maar 5 man. Als iemand zin heeft om te ballen op donderavond om 21:20 in Leiden. Bel me zo snel mogelijk!</div>
+</article>
+<article class="post" data-ts="20050309145500" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-03-09 14:55</span></div>
+  <div class="pb">Zonder meer een memorabele posting.</div>
+</article>
+<article class="post" data-ts="20050309160900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-03-09 16:09</span></div>
+  <div class="pb">ik kan helaas niet, succes Bikkie!</div>
+</article>
+<article class="post" data-ts="20050309175100" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-03-09 17:51</span></div>
+  <div class="pb">Waar ik normaliter wel te porren ben voor een goede partij, rest mij nu slechts te melden dat ik helaas nog niet de gewenste flexibiliteit heb bereikt om een cheique prestatie te leveren.</div>
+</article>
+<article class="post" data-ts="20050309184600" id="p5">
+  <div class="ph"><span class="pa">T|N</span><span class="pm">#5 · 2005-03-09 18:46</span></div>
+  <div class="pb">ik moet werken, sorry.<br></div>
+</article>
+<article class="post" data-ts="20050309203700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-03-09 20:37</span></div>
+  <div class="pb">Normaal gesproken zou het een grote eer zijn maar mijn fysio geeft het een NEIT.</div>
+</article>
+<article class="post" data-ts="20050310114000" id="p7">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#7 · 2005-03-10 11:40</span></div>
+  <div class="pb">het probleem heeft zich opgelost.. maar bedankt voor de steun boys!</div>
+</article>
+<article class="post" data-ts="20050310133900" id="p8">
+  <div class="ph"><span class="pa">VB`</span><span class="pm">#8 · 2005-03-10 13:39</span></div>
+  <div class="pb">*klap klap klap* Go Biktie<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brand in mokum – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Brand in mokum</h1>
+<p class="tm">5 posts · started 2007-06-24 12:28 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070624122800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2007-06-24 12:28</span></div>
+  <div class="pb">De chinees onder in ons gebouw is gespecialiseerd in hete gerechten, maar dat het zou heet kon worden had ik niet gedacht.<br><br>http://tip.at5.nl/2007/06/22/brand-op-het-java-eiland/</div>
+</article>
+<article class="post" data-ts="20070624130500" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-06-24 13:05</span></div>
+  <div class="pb">na je badkamer dan nu genoeg smartengeld om je hele huis te verbouwen?<br></div>
+</article>
+<article class="post" data-ts="20070624142700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-06-24 14:27</span></div>
+  <div class="pb">Het Azartplein is idd een van de spannendste plekjes in Amsterdam.<br><br>De reacties op het bericht zijn ook erg verheffend.</div>
+</article>
+<article class="post" data-ts="20070625092400" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-06-25 09:24</span></div>
+  <div class="pb">jemig, inderdaad mooie figuren daar. <br><br>Maar heb je nog water/rookschade Mitch??</div>
+</article>
+<article class="post" data-ts="20070625181400" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-06-25 18:14</span></div>
+  <div class="pb">Helemaal niks van gemerkt. Zag toevallig zondag pas op de AT5-site dat er een filmpje en foto's waren van een brand hier. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

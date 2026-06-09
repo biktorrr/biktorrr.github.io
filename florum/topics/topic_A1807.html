@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brouwerij &#x27;t IJ op 14 julei – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Brouwerij &#x27;t IJ op 14 julei</h1>
+<p class="tm">5 posts · started 2006-07-13 09:45 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060713094500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2006-07-13 09:45</span></div>
+  <div class="pb">Komt allen. Vanaf 17:16u zit ik er met Mitsj en de Hooghe. Laatstgenoemde stelt voor om daarna naar restaurant Ingang-B te gaan aan het Wilhaelminae Gafthuyschpleyn. Kan het olicker?</div>
+</article>
+<article class="post" data-ts="20060713095000" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2006-07-13 09:50</span></div>
+  <div class="pb">present. Weet nog niet of ik ook mee ga eten.</div>
+</article>
+<article class="post" data-ts="20060713203200" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-07-13 20:32</span></div>
+  <div class="pb">Dudez... daar werk ik. Kunnen we niet eerst naar ingang b? (heeft een aardig terras)</div>
+</article>
+<article class="post" data-ts="20060714095300" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-07-14 09:53</span></div>
+  <div class="pb">Brouwerij 't IJ gaat rond 19:30u dicht, dus dat lijkt me geen goed idee. Ik zie twee opties:<br><br>1) We zoeken een restaurant tussen Brouwerij 't IJ en CS.<br><br>2) Grandmaster Jazz koopt een fiets.</div>
+</article>
+<article class="post" data-ts="20060714163800" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2006-07-14 16:38</span></div>
+  <div class="pb">Ik zin over 3 kwartier op het terras bij brouwerij 't IJ.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Urgent – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Urgent</h1>
+<p class="tm">11 posts · started 2009-07-17 14:46 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090717144600" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-07-17 14:46</span></div>
+  <div class="pb">BetaBoys, ik ben zonder jullie weer eens reddeloos verloren. Mijn benedenbuurvrouw heeft zich op dit moment buitengesloten terwijl er water staat te koken op gas. Iemand met sleutel is nog niet in zicht en een of andere dude krijgt de deur niet open, wat hij ook probeert. Blijf ik lekker doortikken (water kookt droog, pan zal nooit vlam vatten) of duik ik onder totdat die deur weer open is?</div>
+</article>
+<article class="post" data-ts="20090717150100" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2009-07-17 15:01</span></div>
+  <div class="pb">Boys, ik zit hier op een tijdbom. Ik weet dat de gemiddelde checktijd van het Florum van een eersterangs F-boy iedere 2,5 min is, dus jullie hebben dit al lang gezien.</div>
+</article>
+<article class="post" data-ts="20090717150500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2009-07-17 15:05</span></div>
+  <div class="pb">Euhhh.<br><br>Mijn kamergenoot (niet de Chinees) zegt dat het van de kwaliteit van de pan afhangt. Maar goed is het niet, en hij zou het "heel eng" vinden. Wegwezen dus!</div>
+</article>
+<article class="post" data-ts="20090717151600" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2009-07-17 15:16</span></div>
+  <div class="pb">Volgens mij kan er in principe niets mis gaan zolang er geen eten in de pan zit. Als al het water verdampt is, zal de pan heel heet worden, maar die moet tegen die temperatuur bestand zijn. <br><br>Ik zou er niet gaan slapen, maar ik vermoed toch dat er geen acuut gevaar is. Aan de andere kant, als je toch even een kopje koffie buiten de deur wilde gaan drinken is dit je moment...</div>
+</article>
+<article class="post" data-ts="20090717153500" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2009-07-17 15:35</span></div>
+  <div class="pb">Oef, probleem opgelost. Bijna-doodervaring voor mijn memoires, zullen we maar zeggen. Merci BetaBoys.</div>
+</article>
+<article class="post" data-ts="20090717153900" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2009-07-17 15:39</span></div>
+  <div class="pb">Ik wil natuurlijk graag heel empathisch reageren maar ik moet even te hard lachen over de kwaliteit van de pan opmerking van merlijns collega. <br><br>Mocht je echt zekerheid willen dan ken ik nog wel een gepensioneerd brandweermannetje die wellicht een zinnig antwoord kan geven.</div>
+</article>
+<article class="post" data-ts="20090717154000" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2009-07-17 15:40</span></div>
+  <div class="pb">jemig, ik zie dat ik vier minuten heb zitten typen en dat de brand dreiging inmiddels meester is, heel jammer, ik had net allemaal put opties op franse bedrijven genomen, nou ja je kan niet alles hebben.<br><br></div>
+</article>
+<article class="post" data-ts="20090717170300" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2009-07-17 17:03</span></div>
+  <div class="pb">ik was onderweg, maar ben toch maar rechtsomkeert gegaan.<br></div>
+</article>
+<article class="post" data-ts="20090717174900" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2009-07-17 17:49</span></div>
+  <div class="pb">niet zoveel aan de hand hoor. Hangt idd. van pan af, maar als je een goeie pan hebt vliegt die niet makkelijk in de fik. </div>
+</article>
+<article class="post" data-ts="20090717175100" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2009-07-17 17:51</span></div>
+  <div class="pb">Dankje Wiggy, ik voelde ook al aan dat mijn onderbuurvrouw een goede pan op het gas had staan.</div>
+</article>
+<article class="post" data-ts="20090719113400" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2009-07-19 11:34</span></div>
+  <div class="pb">Sinds wanneer hebben al die boys ineens verstand van pannen? Heb ik een productdemonstratie in Ehv gemist ofzo?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Florum weirdheden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Florum weirdheden</h1>
+<p class="tm">12 posts · started 2008-12-22 14:22 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20081222142200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2008-12-22 14:22</span></div>
+  <div class="pb">Er verschijnen allemaal berichten dubbel...<br><br>errortje in de database? virusje? vage forumspammert?<br><br></div>
+</article>
+<article class="post" data-ts="20081222144300" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2008-12-22 14:43</span></div>
+  <div class="pb">het zal wel weer eens een van Merlijns vreemde acties zijn</div>
+</article>
+<article class="post" data-ts="20081222145300" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2008-12-22 14:53</span></div>
+  <div class="pb">(be)Denkelijk. Het Florum is geen speeltuin...</div>
+</article>
+<article class="post" data-ts="20081222145400" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-12-22 14:54</span></div>
+  <div class="pb">Ik wordt hier niet ontspannen van, wil degene die loopt te kloten dat even laten weten, anders is er wel iets raars aan de hand, wellicht ook op andere sites.<br><br></div>
+</article>
+<article class="post" data-ts="20081222150500" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2008-12-22 15:05</span></div>
+  <div class="pb">Ik was m'n handen in onschuld.<br><br>Onterecht dat het topiquille nu helemaal leeg is.</div>
+</article>
+<article class="post" data-ts="20081222152400" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2008-12-22 15:24</span></div>
+  <div class="pb">NEYT!!!<br><br>Het dinsdag kaasfonduetopic is weg. Het Florum is onder vuur! God sta ons bij in deze moeilijke tijden!</div>
+</article>
+<article class="post" data-ts="20081222153000" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2008-12-22 15:30</span></div>
+  <div class="pb">De kaasfondue en het Desideriustopique staan ergens onder aan de lijst. Zarbi, zeggen ze bij ons in de banlieue.</div>
+</article>
+<article class="post" data-ts="20081222154100" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2008-12-22 15:41</span></div>
+  <div class="pb">Hmmm, lage tijding, 25.000 hits op een ip adres uit Dubai vanmiddag, weird.</div>
+</article>
+<article class="post" data-ts="20081222174000" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2008-12-22 17:40</span></div>
+  <div class="pb">Een stukje moslimterrorisme dus. Ongelooflijk.</div>
+</article>
+<article class="post" data-ts="20081222223400" id="p10">
+  <div class="ph"><span class="pa">Dt-Nazi</span><span class="pm">#10 · 2008-12-22 22:34</span></div>
+  <div class="pb">Spotting in posting twee, ik word(t) <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0> ook wat ouder...</div>
+</article>
+<article class="post" data-ts="20081223084700" id="p11">
+  <div class="ph"><span class="pa">Dt-Nazi</span><span class="pm">#11 · 2008-12-23 08:47</span></div>
+  <div class="pb">Posting vier bedoel ik. Over ouder worden gesproken...</div>
+</article>
+<article class="post" data-ts="20081223092000" id="p12">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#12 · 2008-12-23 09:20</span></div>
+  <div class="pb">Pas maar op lieve nazi. Voor je het weet bungel je in Neurenberg.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

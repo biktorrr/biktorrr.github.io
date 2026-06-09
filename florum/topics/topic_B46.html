@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wedstrijdverslag beker – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wedstrijdverslag beker</h1>
+<p class="tm">1 post · started 2002-01-17 17:42 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020117174200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2002-01-17 17:42</span></div>
+  <div class="pb"><B>Floraboys verraden!</B><br><br>De wedstrijd tussen de Floraboys en Lang over nagedacht werd niet zozeer op het canvas, als wel in de kleedkamer gespeeld. De volledige top-drie van het kersverse tweede klasse-team was afwezig. Joost "Puite" had vantevoren al aangegeven niet te kunnen spelen, voor hem kwam de bekerwedstrijd nog te vroeg. "Holy" Misha en "Famous" Frank blonken uit door afwezigheid. Toen in de pauze navraag werd gedaan, door ziedende medespelers, bleek dat "Holy" Misha en "Famous" Frank gepland hadden niet op tijd terug te zijn van hun snoepreisje. <BR><br><br>Dit bleek de druppel; waar de Floraboys de eerste helft dapper op de 0 speelden om hun topscorers in de tweede helft te laten pronken alsvanouds, daar was de moraal in de tweede helft volledig zoek. Wat wil je ook als je in de pauze hoort dat de twee vedetten niet de moeite hebben genomen de eer te verdedigen in de beker? Het is de vraag hoe de twee vedetten nog in toom gehouden kunnen worden. Hoewel ze lang niet altijd sterk spelen, eisen ze altijd een basisplek op. Het moment is aanstaande dat er een reactie komt uit de hondstrouwe spelersgroep. <BR><br><br>Het moet gezegd worden, dat, voor het spelersmateriaal aanwezig, de Floraboys helemaal niet slecht begonnen. Verdedigen met drie en aanvallen met twee man achter de bal, bleek een succesformule tegen het zwak startende Lang over nagedacht. Het iniatief was dan ook de gehele eerste helft bij de Floraboys die door goed en fel druk te zetten aangaven zich niet zonder slag of stoot over te geven. Hierin mag de rol van nieuweling Sander niet onvermeld blijven. Voor de wedstrijd waren alle ogen op hem gericht. Zou hij de de rol van de afwezige vedetten kunnen vervullen, zou hij onmiddellijk mee kunnen draaien in Floraboys' eerste? Helaas, hoewel Sander over potentie bezit een dragende kracht te worden van de Floraboys, moet zijn eerste wedstrijd gezien worden als een opwarmertje: de precisie en routine ontbraken om een jongensdroom in vervulling te doen gaan. <BR><br><br>Al zag het er de eerste helft wel naar uit dat deze jongensdroom vervuld zou gaan worden. De Floraboys kregen veel kansjes en enkele kansen. Het is niet onwaarschijnlijk dat "MB" Bassant en Sander in bed nog even gedacht hebben aan de ballen die er wel gezeten mochten hebben. Op zeker dat "4" Oli badend in het zweet wakker is geworden van de bal die rakelings het goal passeerde.<BR><br><br>Al na vijf minuten in de tweede helft was de ban gebroken met een schier onmogelijke bal werd een puik keepende "Tuut" Tim verschalkt. Uit een onterechte corner scoorden de tegenstrevers niet lang daarna 2-0. Vanaf toen hinkten de Floraboys op twee gedachten: aanvallen of verdedigen. Zoals zo vaak in het voetbal is een dergelijk geestestoestand niet bevorderlijk voor de prestaties. De Floraboys speelde ongecoordineerd met teveel man voor de bal. De tegenstander hoefde niet eens meer moeite te doen om te verdedigen of aan te vallen. De Floraboys liepen achter de feiten aan. Hoewel de 4-0 uitslag lichtelijk overtrokken was, mogen de <I>aanwezige</I> Floraboys niet ontevreden zijn met <I>hun</I> prestatie.<BR><br><br>Daarmee eindigt de bekerdroom van de Floraboys. Al zullen de consequenties, voor sommige spelers, nog lang nagalmen...<br><br><BR> <BR> <BR><br>Omdat Holy er niet is zet ik 't voor zolang hier...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

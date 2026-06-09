@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Parijs – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Parijs</h1>
+<p class="tm">1 post · started 2004-01-26 13:01 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040126130100" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-01-26 13:01</span></div>
+  <div class="pb">Op verzoek een aantal gegevens over Parijs:<br><br>- Ook in Parijs geldt het aloude ijzeren Floraboyswet 'mi casa su casa'. Floraboys zijn welkom.<br><br>- Per keer passen er ongeveer drie in mijn appartement. Er is een matrasje en een slaapzak beschikbaar, de rest moet worden meegenomen.<br><br>- Weekends zijn voor jullie en voor mij waarschijnlijk het handigst. Die van 30/31 jan is vrij, net als die daarna (7,8/2). De twee daarna niet. D\á\árna sta ik overal voor open, maar wees snel, want er zijn kapers op de kust.<br><br>- Mijn leven is uiteraard afhankelijk van de nimmer voorspelbare actualiteit: ik moet misschien af en toe nog wat werken en kan jullie geen persoonlijke rondleiding geven langs de slaapvertrekken van Louis XIV in Versailles.<br><br>- Met de auto is het goedkoopst, mede door de gratis parkeerplaatsen bij mij in de buurt. De Thalys heeft goedkope aanbiedingen, maar ruim van tevoren reserveren. Met je OV, en de Belgische Go-Pass kun je goedkoop met normale treinen (ruim uur langer dan Thalys). Dit is nogal complex, dus dat leg ik uit als er belangstelling voor is. De Eurolines-bus is bijna gratis, zeker als je vroeg boekt, maar wel oncomfortabel. Een vliegtuig gebruik je niet voor dergelijke afstanden.<br><br>A bientôt</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

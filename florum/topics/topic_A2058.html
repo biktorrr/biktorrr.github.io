@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terug van weggeweest: de Vrij-Mi-Pu! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Terug van weggeweest: de Vrij-Mi-Pu!</h1>
+<p class="tm">8 posts · started 2007-06-01 15:18 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070601151800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-06-01 15:18</span></div>
+  <div class="pb">Welke twee floraboys en een oude flora-vedette gaan er schuil in deze <a href="http://www.pictogame.com/getcodes.php?game=wvxGEyRzXnO8&type=6">Schuifpuzzel</a>?</div>
+</article>
+<article class="post" data-ts="20070601152400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-06-01 15:24</span></div>
+  <div class="pb">en een tweede: Noem de twee Floracieten in <a href="http://www.pictogame.com/getcodes.php?game=J1wuYOJS1cFN&type=6">deze puzzel</a></div>
+</article>
+<article class="post" data-ts="20070601152900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-06-01 15:29</span></div>
+  <div class="pb">Ik heb lekker gepuzzlet, maar wil het spelplezier van andere boys niet vergallen door de oplossing te verklappen.<br><br>Tipje van de sluier: DJ Fucking G**k.</div>
+</article>
+<article class="post" data-ts="20070601155500" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-06-01 15:55</span></div>
+  <div class="pb">Haha..grappig..ik weet wel wie de maker is van de eerste foto.</div>
+</article>
+<article class="post" data-ts="20070601163800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-06-01 16:38</span></div>
+  <div class="pb">oe, dat weet ik dan weer niet.<br><br>Overigens is puzzel 2 nog helemaal open. De prijzen zijn weer fantastisch deze week dus ga maar lekker breakouten allemaal!</div>
+</article>
+<article class="post" data-ts="20070601165000" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2007-06-01 16:50</span></div>
+  <div class="pb">Twee lamzakken in Sint-Niklaas, goed werk!</div>
+</article>
+<article class="post" data-ts="20070601170800" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2007-06-01 17:08</span></div>
+  <div class="pb">Gefeliciteerd, dat was precies het wantwoord dat ik zocht.<br><br>Je wint een bezoek van een floragirl, inclusief zusje en vriendin. Je krijgt ze juli thuisbezorgd.</div>
+</article>
+<article class="post" data-ts="20070604120100" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2007-06-04 12:01</span></div>
+  <div class="pb">Mooi werk Vict.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

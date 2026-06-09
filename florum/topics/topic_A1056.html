@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto&#x27;s zaalvoetbal – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto&#x27;s zaalvoetbal</h1>
+<p class="tm">10 posts · started 2003-11-27 13:12 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031127131200" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2003-11-27 13:12</span></div>
+  <div class="pb">De groepsfoto van het Floraboys zaalvoetbalteam zijn binnen!<br>Ze zijn wel leuk geworden ik heb er voor iedereen een binnen gekregen(of euh tijmen had het binnengekregen had hem maar voor het gemak als teamleider ingevult!)He formaat is 13X18 en ze kosten 1,25 euro per foto.Mocht er intresse zijn dan hoor ik dat graag en dan houd ik de foto hier.<br><br>Groetjes Lara</div>
+</article>
+<article class="post" data-ts="20031127131400" id="p2">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#2 · 2003-11-27 13:14</span></div>
+  <div class="pb">O ja ik kan binnenkort wel een hele wedstrijd fotograferen misschien leuk voor in het grote floraboys overwinningsboek? Met actie foto's e.d?<br><br>Ben weg bij het sportingfoto bedrijf en kan nu naar hartelust doen en laten wat ik wil met mijn toestel namelijk!!</div>
+</article>
+<article class="post" data-ts="20031127134400" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-11-27 13:44</span></div>
+  <div class="pb">ik ben zeker in voor 3 fotos waar en wanneer is de premiere en komt er ook een soort FloraExpress publiciteits stunt?<br><br></div>
+</article>
+<article class="post" data-ts="20031127182300" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-11-27 18:23</span></div>
+  <div class="pb">volgende wedstrijd wil ik mijn camera medenemen.<br><br>als iedereen me er nou vaak genoeg aan herinnert, ...<br><br>Tube, kon jij filme?<br></div>
+</article>
+<article class="post" data-ts="20031127210100" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2003-11-27 21:01</span></div>
+  <div class="pb">Is volgende week de overwinningswedstrijd?welke datum?</div>
+</article>
+<article class="post" data-ts="20031128114600" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-11-28 11:46</span></div>
+  <div class="pb">2 december LH maar dat is nog niet DE kampioenswedstrijd.<br><br></div>
+</article>
+<article class="post" data-ts="20031129223200" id="p7">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#7 · 2003-11-29 22:32</span></div>
+  <div class="pb">Nog meer mensen interesse in een foto anders stuur ik ze binnenkort terug!</div>
+</article>
+<article class="post" data-ts="20031130183200" id="p8">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#8 · 2003-11-30 18:32</span></div>
+  <div class="pb">lijkt mij wel geinig om er een te hebben</div>
+</article>
+<article class="post" data-ts="20031201090900" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2003-12-01 09:09</span></div>
+  <div class="pb">Ja leuk! </div>
+</article>
+<article class="post" data-ts="20031201214600" id="p10">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#10 · 2003-12-01 21:46</span></div>
+  <div class="pb">o, ik ook, ik ook!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

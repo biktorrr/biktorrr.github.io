@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wk-spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Wk-spam</h1>
+<p class="tm">2 posts · started 2006-06-18 12:02 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060618120200" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-06-18 12:02</span></div>
+  <div class="pb">Best of the best<br><br>Plenty to argue about down the pub - but here's the official Observer Sport(TM) team of the tournament to date<br><br>Hislop (Trinidad)<br>Grygera (Czech Republic)<br>Terry (England)<br>Ayala (Argentina)<br>Lahm (Germany)<br>Senna (Spain)<br>Rosicky (Czech Republic)<br>Robben (Holland)<br>Riquelme(Argentina)<br>Crespo (Argentina)<br>Villa (Spain)<br><br>Good losers<br><br>They might have been on the losing side, but it was their team-mates's fault, not theirs<br><br>Bobadilla (Paraguay)<br>Bak (Poland)<br>Toure (Ivory Coast)<br>Miyamoto(Japan)<br>Babic (Croatia)<br>Ze Kalanga (Angola)<br>Essien (Ghana)<br>Paredes (Paraguay)<br>Teymourian (Iran)<br>B Kone (Ivory Coast)<br>Drogba (Ivory Coast)<br><br>Worst of the worst<br><br>The Flops XI - they won't be happy with that, as Trevor Brooking might say<br><br>Shovkovskiy (Ukraine)<br>Friedrich (Germany)<br>Vaschuk (Ukraine)<br>Kuffour (Ghana)<br>Cherundolo (US)<br>Wiltord (France)<br>Vieira (France)<br>Stankovic (Serbia)<br>Ronaldo (Brazil)<br>Shevchenko (Ukraine)<br>Owen (England)</div>
+</article>
+<article class="post" data-ts="20060620150200" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-06-20 15:02</span></div>
+  <div class="ps">Humor? :)</div><div class="pb"><br>nog een lollige. van de oosterburen, voor Xbox, tegen ons. wel je geluid aanzetten en een keertje op de stoppen-knop drukken.<br>www.hollandstoppen.de</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

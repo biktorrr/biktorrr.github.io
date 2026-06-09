@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>di-avondspam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">di-avondspam</h1>
+<p class="tm">2 posts · started 2006-04-11 23:11 by Jazzmaster</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060411231100" id="p1">
+  <div class="ph"><span class="pa">Jazzmaster</span><span class="pm">#1 · 2006-04-11 23:11</span></div>
+  <div class="pb">Soms zijn er kleine dingen in het leven die je graag wilt delen. Bij deze twee krenten in de pap uit het leven van een nietsnut. Het thema is: inloggen.<br><br>Feit 1. Op mijn werk verkopen we intranetten. Als je je wachtwoord hiervoor kwijtraakt, kan je je email adres invoeren en ontvang je per email je wachtwoord. Klant X ontdekt dit en schrijft in een email "maar dat is gevaarlijk, want als ik iemand z'n email adres weet, kan ik dus zomaar z'n wachtwoord achterhalen"..<br><br>Feit 2. Van de NS kreeg ik vandaag een brief met de vraag of ik m'n voordeeluren abonnement wil verlengen. Ik kan dit online aangeven. Volgens de brief kan ik inloggen met m'n klantnummer als login <i>en m'n achternaam als wachtwoord</i>. Vervolgens presteren ze het om er tussen haakjes nog even mijn achternaam achter te zetten, voor het geval ik die inmiddels ben vergeten..<br><br>Bronvermelding<br>1. Dubbele punten geciteerd uit diverse publicaties van Drs BikTie Sesetoko 2005<br><br></div>
+</article>
+<article class="post" data-ts="20060412093400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-04-12 09:34</span></div>
+  <div class="pb">heh, security first</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

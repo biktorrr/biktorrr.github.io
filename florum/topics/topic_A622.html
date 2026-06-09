@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>When you walk... (4-1) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">When you walk... (4-1)</h1>
+<p class="tm">7 posts · started 2002-11-06 14:21 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021106142100" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2002-11-06 14:21</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20021106142100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-11-06 14:21</span></div>
+  <div class="pb">Kan niet meer bij links dan maar zo..<br><br>http://www.brianmung.pwp.blueyonder.co.uk/evilsheep.htm </div>
+</article>
+<article class="post" data-ts="20021108100500" id="p3">
+  <div class="ph"><span class="pa">Merlijn Boukhari</span><span class="pm">#3 · 2002-11-08 10:05</span></div>
+  <div class="pb">When you walk through a storm hold your head up high and don't be afraid (*achtergrondkoortje* be afraid) of the dark (of the dark), 'cause at the end of the storm, there's gol(*galm*)holholholholhohlholden sky and a sweet silver song of (*heel laag*) the lark.<br><br>Floraboys flikken 't 'm weer: Psycho Marine Officers oprollen met 1-4. Wie heeft gezien dat ik de stevige staartmans twee keer poortte? </div>
+</article>
+<article class="post" data-ts="20021108141900" id="p4">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#4 · 2002-11-08 14:19</span></div>
+  <div class="pb">ja heerlijk, lekker vlammen. Ook het WE ar the Championes schalde alweer door de eervolle zalen van het USC.<br>Het schijnt ook dat Kleedkamer A in de wandelgangen de Florakleedkamer wordt genoemd. De geruchten dat de wanden na de volgende winstparty oranje worden geverfd wordt nog geverifieerd.</div>
+</article>
+<article class="post" data-ts="20021111091900" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2002-11-11 09:19</span></div>
+  <div class="pb">Naast de Floraboys-overwinning waardeer ik de liefde voor de waarheid van sterreportert en dito columnist Timmie ('t schijnt dat hij tegenwoordig ook actief is onder de naam Timmenizer). Niet over \é\én nacht ijs gaan, maar gewoon VERIFI\ËREN die geruchten. Zou ik misschien ook eens moeten...</div>
+</article>
+<article class="post" data-ts="20021111092300" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2002-11-11 09:23</span></div>
+  <div class="pb">komt het linkerrijtje trouwens weer in zicht?, vragen de jongens van de dependance hier in het Stade de France</div>
+</article>
+<article class="post" data-ts="20021111093800" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2002-11-11 09:38</span></div>
+  <div class="pb">Dat zijn goede vragen! Hoe staat het daar met die gouden punt van je? Heb je al die fransen al 's dolgedraaid op het plein van het Louvre, of waar ze dan ook mogen voetballen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

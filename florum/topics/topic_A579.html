@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Even zeuren... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Even zeuren...</h1>
+<p class="tm">5 posts · started 2002-09-13 10:28 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020913102800" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2002-09-13 10:28</span></div>
+  <div class="pb">Ik vind -- en nu zeg ik wat ik denk -- de nieuwe fora vrij klote. Bij de een zie je alleen maar de 'Nieuw'-knop, bij de andere zijn de namen van de topics wit. Tegen een witte achtergrond is dat wel lekker nihilistisch, maar niet zo goed leesbaar. Ben ik de enige die d'r last van heeft, of ben ik de enige die wit niet vanwit kan onderscheiden?<br><br>Verder: vermijd de film Windtalkers. Gaat over stelletje indianen dat meehelpt Jappen omver te schieten in WO II, en tegelijkertijd een code kennen die gebaseerd is op hun Navajotaal. Het is echter niet duidelijk waarom ze hun berichten gecodeerd zouden moeten doorgeven. Alsof die poepjappeners er in anderhalve minuut met hun Houwitzers vandoor zouden gaan!!! Verder slaagt deze film erin geen moment spannend te zijn, ondanks de overdadige actiescenes.</div>
+</article>
+<article class="post" data-ts="20020913104400" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2002-09-13 10:44</span></div>
+  <div class="ps">ach</div><div class="pb"><br><h5>Op het gewone forum is het idd jammer dat je alleen nieuw kan lezen.Ik kan me niet storen aan het feit dat de topics op het andere forum wit zijn ipv grijs zoals op deze.Ze staan toch gewoon in/op een rood of zwart balkje?<br><br>Bedankt,ik zal em proberen te vermeiden.<br>Nog ff over die code.Ik weet wel dat de Amerikaantjes menen (terecht) dat ze hun gedeelte van de oorlog,met name dat tegen de Japanse marine, hebben gewonnen omdat ze een expert-codekrakerteam hadden en een vernuftig apparaat.Op deze wijze wisten ze de code van de jappen te breken en  wisten ze van te voren dat de bulk van de japanse vloot naar een zeker eiland zou varen (Midway).We weten allen wat er toen is gebeurd.<br>Ik denk dat de Amerikanen nogal prat gaan op geile codes."We can crack your's but we have supercool native americans who are super encoders"..maarja..daarvoor zou ik dan dus weer die film gaan moeten zien......</></div>
+</article>
+<article class="post" data-ts="20020913111700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-13 11:17</span></div>
+  <div class="pb">NEE! Ga niet naar die film. Tuurlijk is het handig om codes te kraken. Maar het is volslagen nutteloos om gecodeerde brichten door te geven als je je in een situatie bevindt die in Windtalkers getoond word.</div>
+</article>
+<article class="post" data-ts="20020916133700" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-09-16 13:37</span></div>
+  <div class="ps">toppie</div><div class="pb">k heb de film gemeden..</div>
+</article>
+<article class="post" data-ts="20020917161500" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2002-09-17 16:15</span></div>
+  <div class="pb">weet ik ook weer wat ik vanavond ga doen. even lekker niet naar de film</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

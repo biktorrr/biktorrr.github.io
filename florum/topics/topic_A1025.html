@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie</h1>
+<p class="tm">7 posts · started 2003-10-28 16:42 by Timmie Tikt  29</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031028164200" id="p1">
+  <div class="ph"><span class="pa">Timmie Tikt  29</span><span class="pm">#1 · 2003-10-28 16:42</span></div>
+  <div class="pb">Timmie tikt<br><br>De floraboys zijn nu halverwege het seizoen in hun USC-competitie.<br>Wat hebben de Floraboys zoal gepresteerd tot hun herfstkampioen status.<br>Even een kleine terugblik en een greep uit de vele incidenten van dit team.<br>- Al voor het seizoen is er een rel. Merlijn , verdediger van wereldformaat<br>vertrekt naar Austria Wien, maar kan op het laatste moment worden gehuurd van de<br>Oostenrijkse club<br>- Glorieuze rentree van Josit S. Zijn killer instinct is gelukkig teruggekomen<br>uit Spanje<br>- De broer van Josit S. Vincent, maakt zijn entree. Deze mega-aankoop zorgt al<br>in de 1e wedstrijd voor een beter organisatie en wordt gebombardeerd tot<br>superaankoop door de fans<br>- Famous Frank wikt en weegt tussen twee carrieres. Zijn hardloopprestaties en<br>zijn internetwinkel lijken projecten die samen kunnen gaan met zijn superspits<br>status.<br>- Een moeilijke wedstrijd tegen Utrecht United wordt met 5-4 gewonnen waarbij<br>een gevoelige slag word tegengebracht aan de directe concurenten<br>- Dynamo Viag word in een testimonial voor Sicco met 12-1 vernedert. <br>- Little T doet zijn naam als Gekke Harald eer aan. Hij veroorzaakt een penalty,<br>raakt zwaar geblesseerd en keept als de witte panter de sterren van de hemel.<br>- de geboorte van een flora-kid, Noah Puite, valt zwaar bij Vincent. Fans doen<br>alles om het ziekenhuis binnen te dringen en zich te vergapen aan de toekomstige<br>held van oranje en Oranje. Hij valt een wedstrijd buiten de selectie door het<br>hectische leven rond de bevalling.<br><br>De Floraboys zijn altijd een team geweest dat de spotlights niet schuwde. Alle<br>bladen stonden vol over de levens van deze 8 godenzonen. Zelfs de nieuwe sokkensponsor<br>(Ajax. red. (de club, niet het wasmiddel, alhoewel de onderhandelingen in eenver<br>gevorderd stadium zijn red.)) gaan als warme borrdjes over de toonbank. <br>Fashionsetter Merlindinho, verdediger van wereldformaat, zegt zelfs de sokken<br>niet meer aan te durven. " Een fan zou zo maar mijn voeten eraf kunnen halen<br>voor deze sokken " <br>De floraboys, Herfstkampioen en bezig aan een sterke reeks van 5 gewonnen<br>wedstrijden, een record ! </div>
+</article>
+<article class="post" data-ts="20031028165700" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-10-28 16:57</span></div>
+  <div class="pb">ah! een sterke!<br><br>Ik zet m erbij Biggy!</div>
+</article>
+<article class="post" data-ts="20031028170200" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-10-28 17:02</span></div>
+  <div class="pb">met je foto weer in ere hersteld!<br></div>
+</article>
+<article class="post" data-ts="20031028170900" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-10-28 17:09</span></div>
+  <div class="pb">wat mij betreft is dit zonder twijfel de diepste, humoristische, terechtste, geilste en meest eloquente Timmie Tikt ooit. Driewerf hoera !</div>
+</article>
+<article class="post" data-ts="20031028171900" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2003-10-28 17:19</span></div>
+  <div class="pb">Een mooie Timmie Tikt, fraai op tijd: hulde!</div>
+</article>
+<article class="post" data-ts="20031029130500" id="p6">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#6 · 2003-10-29 13:05</span></div>
+  <div class="pb">Ik moet zeggen: ik was verbaasd dat er nu al weer een nieuwe "Timmie" is. Vanwege de onregelmatige verschijningsdatum is het altijd weer spannend wanneer er een fabeltastische "Timmie" te lezen valt. Maar het moet gezegd worden...\é\én van de toppers!</div>
+</article>
+<article class="post" data-ts="20031029141500" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2003-10-29 14:15</span></div>
+  <div class="pb">goed gezegd JL@u!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

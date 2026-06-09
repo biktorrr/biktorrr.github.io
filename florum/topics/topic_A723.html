@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De stekker – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De stekker</h1>
+<p class="tm">2 posts · started 2003-03-05 12:11 by F-Fanclub</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030305121100" id="p1">
+  <div class="ph"><span class="pa">F-Fanclub</span><span class="pm">#1 · 2003-03-05 12:11</span></div>
+  <div class="pb">Van ons hoeft het zo niet meer. Iedere wedstrijd zitten we op de bühne met z'n zestigduizenden, iedere keer zien wij ons cluppie verliezen. Min acht is het doelsaldo na drie wedstrijden. Minachting hebben wij voor 'onze boys'. <br>En tot overmaat van ramp verdommen de meeste spelers de enige kans te grijpen om het seizoen te redden, via de beker (nog altijd de snelste weg naar Europa). Toen wij zelf nog voetbalden - onze cluppies luisterden naar namen als Door Wilskracht Sterk - stonden wij er altijd, regen, wind, zondagochtend, vrijdagavond. Nu vertikken sommige vedetten het nota bene in een verwarmde zaal te spelen.<br>En krijgen we ooit ballen in de bühne, zodat we op z'n minst nog een souvenir konden meenemen? Twee welgemikte ballen ontvingen wij tot nu toe, van die lange slungel die zegt dat 'bekerwedstrijden niet mogen van zijn sponsor.' Dat is zelfs van hem nog niet \é\én gemiddeld per wedstrijd.<br>Daarom hebben wij, als fans zijnde, besloten de stekker eruit te trekken. Zie het maar eens te redden zonder onze steun en bovendien, zonder de recettes volgend jaar van zestigduizend seizoenskaarten \à 1379. Het spreekt voor zich dat we er, als voorproefje, vrijdag ook niet bij zullen zijn, omdat, aldus jullie penningmeester, 'deze exceptionele wedstrijd niet binnen het seizoenskaartarrangement valt'. Het zal stil in de zalen...   </div>
+</article>
+<article class="post" data-ts="20030305155500" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2003-03-05 15:55</span></div>
+  <div class="pb">Maar ik zal er staan, met mijn kin omhoog en mijn borst fier vooruit!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dimispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dimispam</h1>
+<p class="tm">9 posts · started 2007-10-30 11:16 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071030111600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-10-30 11:16</span></div>
+  <div class="pb">bwahaha<br><img src="http://img.waffleimages.com/483b896727d2214d7976a084ec1c862de3af3660/79_3.JPG.jpg"></div>
+</article>
+<article class="post" data-ts="20071030111600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-10-30 11:16</span></div>
+  <div class="pb">ok linkje dan<br>http://img.waffleimages.com/483b896727d2214d7976a084ec1c862de3af3660/79_3.JPG.jpg<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071030111700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-10-30 11:17</span></div>
+  <div class="pb">HAHA *snif*<br><br>meer hier:<br>http://forums.somethingawful.com/showthread.php?threadid=2665056<!--146.50.23.34--></div>
+</article>
+<article class="post" data-ts="20071030214700" id="p4">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#4 · 2007-10-30 21:47</span></div>
+  <div class="pb">laaaaagggg<!--80.56.116.144--></div>
+</article>
+<article class="post" data-ts="20071031001800" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2007-10-31 00:18</span></div>
+  <div class="pb"><!--90.46.47.80--></div>
+</article>
+<article class="post" data-ts="20071031001800" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2007-10-31 00:18</span></div>
+  <div class="pb">Blasphemy...<!--90.46.47.80--></div>
+</article>
+<article class="post" data-ts="20071031063600" id="p7">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#7 · 2007-10-31 06:36</span></div>
+  <div class="pb">haha, erg terecht allemaal<br><a href="http://www.tshirthell.com/store/product.php?productid=768"> meer meer </a><br><br><!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20071031115000" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2007-10-31 11:50</span></div>
+  <div class="pb">Blasfemie!<!--213.84.4.9--></div>
+</article>
+<article class="post" data-ts="20071031124800" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2007-10-31 12:48</span></div>
+  <div class="pb">Misschien moet de Charlie Hebdo of de Jyllands-Posten ook hier eens aandacht aan besteden.<br>Stukje equilibrium-gebeuren<br><!--193.173.46.126--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

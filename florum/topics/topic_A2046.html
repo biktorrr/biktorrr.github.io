@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CL finale kijken? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">CL finale kijken?</h1>
+<p class="tm">9 posts · started 2007-05-22 15:56 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070522155600" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-05-22 15:56</span></div>
+  <div class="pb">Morgen is de CL finale. Gaat die nog ergens gezamelijk gekeken worden? </div>
+</article>
+<article class="post" data-ts="20070522164000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-05-22 16:40</span></div>
+  <div class="pb">goed idee</div>
+</article>
+<article class="post" data-ts="20070523101500" id="p3">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#3 · 2007-05-23 10:15</span></div>
+  <div class="ps">CL in Hilversum</div><div class="pb">Bier staat al koud!<br>Hoe laat zijn jullie er?</div>
+</article>
+<article class="post" data-ts="20070523161900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2007-05-23 16:19</span></div>
+  <div class="pb">bedankt voor het aanbod frankie, maar 2 uur in de trein zitten voor 90 minuten voetbal is me wat te veel. <br>Mocht je een verlenging kunnen garanderen dan wil ik er nog over nadenken...</div>
+</article>
+<article class="post" data-ts="20070523175700" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2007-05-23 17:57</span></div>
+  <div class="pb">Azartplein 169 staat ook nog open voor de CL-finale. Merlijn en ik gaan wel eerst even een rondje over het eiland hollen.</div>
+</article>
+<article class="post" data-ts="20070523183300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2007-05-23 18:33</span></div>
+  <div class="pb">Ook aan de GOG wordt er gekeken. Jazz komt hierheen.<br><br>Floraboys, verspreidballenkijkenboys!</div>
+</article>
+<article class="post" data-ts="20070524123200" id="p7">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#7 · 2007-05-24 12:32</span></div>
+  <div class="ps">lekker is dat</div><div class="pb">twee uur met de trein? ik woon niet in Eindhoven hoor.</div>
+</article>
+<article class="post" data-ts="20070524131700" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-05-24 13:17</span></div>
+  <div class="pb">En dat is zelfs maar 1.20u vanuit Amsterdam...</div>
+</article>
+<article class="post" data-ts="20070524165900" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2007-05-24 16:59</span></div>
+  <div class="pb">En dan huur je daar een pied-a-terre voor? Een collega van mij die elke dag Amsterdam-Groningen met de NS doet heeft dat zelfs niet!!!<br><br>*P.S. Hier hoort ie wel thuis.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

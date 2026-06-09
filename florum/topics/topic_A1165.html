@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ragnar Klavan – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ragnar Klavan</h1>
+<p class="tm">5 posts · started 2004-04-07 11:17 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040407111700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2004-04-07 11:17</span></div>
+  <div class="pb">Kijk eens wat ik nu zie: een Ests-orthodoxe jood op bezoek in Mokum. Omdat jullie allemaal liefhebber zijn ook een mooie kiek in dat mooie groene shirt, waar ik al vijf opeenvolgende nachten de nacht in doorbreng...<br><br><I>De 18-jarige Ragnar Klavan komt deze week op stage bij Ajax. Dat meldt zijn club FC Flora Tallinn op haar officiele website. De 18-jarige speler maakte inmiddels zijn debuut voor het nationale elftal van Estland dat getraind wordt door de Nederlander Arno Pijpers. De verdediger werd al eerder met diverse Europese clubs in verband gebracht, waaronder eind vorig jaar Feyenoord voor welke club Pijpers eerder werkzaam was. De 18-jarige verdediger kwam vier keer uit voor het nationale elftal.</I><br><br><br><IMG SRC="http://www.epl.ee/g/pics/picE8r2rt.jpg"></div>
+</article>
+<article class="post" data-ts="20040407111900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-04-07 11:19</span></div>
+  <div class="pb">Ik bied trouwens de gelegenheid om dit heilige tricot, tegen betaling, aan de raken.</div>
+</article>
+<article class="post" data-ts="20040408133400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2004-04-08 13:34</span></div>
+  <div class="pb">Lekker Raggen met Ragnar.</div>
+</article>
+<article class="post" data-ts="20040408133900" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-04-08 13:39</span></div>
+  <div class="pb">en knallen met Klavan</div>
+</article>
+<article class="post" data-ts="20040408134400" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2004-04-08 13:44</span></div>
+  <div class="pb">We kunnen hem dus gewoon Raggen Knallen noemen. Topnaam!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

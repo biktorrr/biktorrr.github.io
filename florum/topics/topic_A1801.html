@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Geencommentaar.nl – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Geencommentaar.nl</h1>
+<p class="tm">11 posts · started 2006-07-06 11:28 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060706112800" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-07-06 11:28</span></div>
+  <div class="pb">L.S.<br><br>Sinds kort ben ik toegevoegd aan het rijtje bloggers dat meewerkt aan de groepsblog <a href="http://www.geencommentaar.nl">geencommentaar.nl</a>. Voor degenen die het wat zegt: 'we' hebben onlangs een KwaliteitsKeurmerk van weblog Sargasso.nl ontvangen. Ik post onder mijn ouwe flobo.com naam:pokeythecat</div>
+</article>
+<article class="post" data-ts="20060706143100" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-07-06 14:31</span></div>
+  <div class="pb">Excusez dat mijn reactie weinig inhoudelijk is, maar om de Flora-eer op het wereldwijde web hoog te houden, lijkt het me belangrijk de je 'herinnert' verandert in 'herinnerd'.<br><br><br></div>
+</article>
+<article class="post" data-ts="20060706152800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-07-06 15:28</span></div>
+  <div class="pb">De kleine Goebbels heeft z'n podium gevonden.</div>
+</article>
+<article class="post" data-ts="20060706161200" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-07-06 16:12</span></div>
+  <div class="pb">goed punt oli4 de Paris...</div>
+</article>
+<article class="post" data-ts="20060706220100" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-07-06 22:01</span></div>
+  <div class="pb">ik heb nog een paar typos ontdekt, maar geen die je zou kunnen betitelen als bewust. (zie daarover bv. <a href="http://www.prinshendrikkade.com/index.php?name=PNphpBB2&file=viewtopic&t=2260">dit</a>  topic) Klein voorbeeld, "nogla" in je 'Lost'-item.<br><br>Leuk om even te lezen.<br>Ben ook wel ginteresseerd in je ideeen over dit medium. Ga je het alleen gebruiken om mensen te vertellen wat ze wel of niet moeten doen in jouw bescheiden mening, of is deze teneur slechts een tijdelijke en heb ik last van een misrepresentation bias?<br><br></div>
+</article>
+<article class="post" data-ts="20060707095800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-07-07 09:58</span></div>
+  <div class="pb">nee ik was inderdaad gewoon van plan om mensen te vertellen wat ze  wel of niet moeten doen.</div>
+</article>
+<article class="post" data-ts="20060707100900" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2006-07-07 10:09</span></div>
+  <div class="pb">Terecht. Wat moet ik doen? </div>
+</article>
+<article class="post" data-ts="20060707103500" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2006-07-07 10:35</span></div>
+  <div class="pb">Lost kijken en een stripboek kopen.<br><br></div>
+</article>
+<article class="post" data-ts="20060707110600" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2006-07-07 11:06</span></div>
+  <div class="pb">alle gekheid op een stokje. Ik kijk oprecht uit naar het artikel waarin je gaat vertellen hoe erg we ons moeten gaan storen aan je soapy naamgenote uit Rusland.<br><br>Misschien kan je ook een item wijden aan semantic rhyming?<br></div>
+</article>
+<article class="post" data-ts="20060707111600" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2006-07-07 11:16</span></div>
+  <div class="pb">sja, dat stukje dat ik wou schrijven over mevrouwtje Koblenko is misschien wat scherper als het op dezelfde dag als haar column was gebeurd. Maar volgende week beter...</div>
+</article>
+<article class="post" data-ts="20060707114300" id="p11">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#11 · 2006-07-07 11:43</span></div>
+  <div class="pb">Mekkermekker: Victoria Koblenko komt uit Oekra\ïne. Waar kan ik beide stukjes lezen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

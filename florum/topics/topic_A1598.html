@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Holy Fuck: Painten levert iets op! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Holy Fuck: Painten levert iets op!</h1>
+<p class="tm">9 posts · started 2005-10-14 10:44 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051014104400" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-10-14 10:44</span></div>
+  <div class="pb">Het is ongelofelijk, maar ik heb dus meegedaan aan een fotofuck-wedstrijd van een van Neerlands bekendste Weblogs <a href="http://www.Retecool.com">Retecool.com</a>. En Potjandosie, ik heb m gewonnen! <br><br>De opgave was dit keer: 'Foto Fuck hoe Christelijk Nederland zich op de barricade gooit tegen Toveren en Magie. <br><br>Mijn inzending:<br>http://www.retecool.com/ffvimg/img/c6ec48bb/84_7c14a62c3e65aae5.jpg<br><br><br>Ik mag nu vette prijzen gaan uitzoeken!<br><br>Bedankt FLoraboys.com dat jullie een platform wilden zijn voor mijn eerste baksels!<br></div>
+</article>
+<article class="post" data-ts="20051014111000" id="p2">
+  <div class="ph"><span class="pa">BikT</span><span class="pm">#2 · 2005-10-14 11:10</span></div>
+  <div class="pb">terecht!</div>
+</article>
+<article class="post" data-ts="20051014111500" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-10-14 11:15</span></div>
+  <div class="pb">Dapper dat je toegeeft je tijd te besteden aan het bekijken van sites als retecool, dubbel dapper dat je moedoet, gerechtigheid dat je wint.<br>ik zou voor de nieuwe vaatwasser gaan.</div>
+</article>
+<article class="post" data-ts="20051014112100" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2005-10-14 11:21</span></div>
+  <div class="pb">Lara moet het boek nog lezen</div>
+</article>
+<article class="post" data-ts="20051014114400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-10-14 11:44</span></div>
+  <div class="pb">oeps.</div>
+</article>
+<article class="post" data-ts="20051014133300" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-10-14 13:33</span></div>
+  <div class="pb">M.I. een gevaarlijke proletenwebsite. Wel cool dat de Floraboys weer eens een cup winnen.</div>
+</article>
+<article class="post" data-ts="20051015131400" id="p7">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#7 · 2005-10-15 13:14</span></div>
+  <div class="pb">heb je al een shirt uitgekozen? -><br> if jeyt then welke?<br> </div>
+</article>
+<article class="post" data-ts="20051015131400" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2005-10-15 13:14</span></div>
+  <div class="pb">dat was ik</div>
+</article>
+<article class="post" data-ts="20051015142500" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2005-10-15 14:25</span></div>
+  <div class="pb">Die Fresh Cotton site is trouwens van dezelfde gasten als van de Revert.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

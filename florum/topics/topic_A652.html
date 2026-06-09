@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spa CD&#x27;s – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Spa CD&#x27;s</h1>
+<p class="tm">5 posts · started 2002-12-11 13:48 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021211134800" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2002-12-11 13:48</span></div>
+  <div class="pb">hallo iedereen die in Spa was. Ik ben mijn CD-mapje in SPa vergeten en ik hoop toch wel dat iemand die heeft meegenomen. Ze lagen bij de stereo als ik het me goed herinner.</div>
+</article>
+<article class="post" data-ts="20021211164400" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-12-11 16:44</span></div>
+  <div class="pb">We hebben inderdaad een mapje CD's meegenomen. We dachten dat die van Tijmen was, maar dat zal dan de jouwe wel zijn geweest. Dat verklaart ook waarom ik Hans Teeuwen niet kon vinden om voor de tweede keer te draaien.</div>
+</article>
+<article class="post" data-ts="20021212121200" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2002-12-12 12:12</span></div>
+  <div class="ps">ik ga naar spa en laat liggen..</div><div class="pb"><bq><br>moet je em nog een keer lenen? Kan ik wel regelen met anna.<br><br>Je had ook kunnen verzinnen dat mijn muziek mijn leven is en da'k dus nooit mijn ceedees zou laten liggen, daarbij is de kans dat ik een cd van de counting crows bezit heel klein. :p<br><br>anyways: wat ik wel vergeten ben is<br>1)mijn zonnebril (niet echt vergeten maar als wybren de hut op slot doet als ie aan het slapen is dan kan ik em niet afpakken <br>2) het regel boekje van KvK 2spelers.Gister al weer een fijne discussie met lara hier over.<br></div>
+</article>
+<article class="post" data-ts="20021212125100" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-12-12 12:51</span></div>
+  <div class="pb">ik heb alle shit van iedereen (golden mic, KvKboekie, CD's, CDmapje en dergelijke) Men kan het ophalen bij mij of ik neem het mee op een geschikt tijdstip<br></div>
+</article>
+<article class="post" data-ts="20021212133100" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2002-12-12 13:31</span></div>
+  <div class="pb">Nou geen echte discussie over het boekje. Maar een meningsverschil over of je nu wel of niet een ridderpunt krijgt als je nog geen stad hebt??? Als iemand dat weet weet ik genoeg en hoeft er niet druk gezocht te worden naar het boekje???</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

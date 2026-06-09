@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alizee fans: niet op deze link klikken! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Alizee fans: niet op deze link klikken!</h1>
+<p class="tm">10 posts · started 2005-04-26 13:56 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050426135600" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-04-26 13:56</span></div>
+  <div class="pb">speciaal voor olivier de paris:<br><br><img src="http://www.jaggle.nl/images/20050425_alizee2.jpg"><br><br>sorry man</div>
+</article>
+<article class="post" data-ts="20050426140400" id="p2">
+  <div class="ph"><span class="pa">bigT</span><span class="pm">#2 · 2005-04-26 14:04</span></div>
+  <div class="pb">die laadt dus niet niet bij mij</div>
+</article>
+<article class="post" data-ts="20050426141300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-04-26 14:13</span></div>
+  <div class="pb">wat raar, hier laadt ie de ene keer wel en de andere keer niet. <br><br>http://www.jaggle.nl/images/20050425_alizee2.jpg <br><br>is de link iig.</div>
+</article>
+<article class="post" data-ts="20050426143300" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2005-04-26 14:33</span></div>
+  <div class="pb">Had ik jullie niet allang verteld over mijn snoepreisje acht maanden geleden naar Corsica?</div>
+</article>
+<article class="post" data-ts="20050426153000" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-04-26 15:30</span></div>
+  <div class="pb">Ben trots op je Oli. Goed werk man,<br><br>P.S. Deze foto op je cv plakken doet vast wonderen.</div>
+</article>
+<article class="post" data-ts="20050427113600" id="p6">
+  <div class="ph"><span class="pa">Meer plaatjes</span><span class="pm">#6 · 2005-04-27 11:36</span></div>
+  <div class="pb"><img src="http://www.tweakers.net/ext/f/57495/full.jpg"><br><br><img src="http://www.tweakers.net/ext/f/57507/full.gif"><br><br>En de mogelijke vader:<br><img src="http://www.theplace.ru/forum/pics/woc_Gamma_713184_11_3.jpg"></div>
+</article>
+<article class="post" data-ts="20050427144100" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2005-04-27 14:41</span></div>
+  <div class="pb">ist niet besoindre?<br></div>
+</article>
+<article class="post" data-ts="20050427172900" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2005-04-27 17:29</span></div>
+  <div class="pb">respect voor die kale knakker !</div>
+</article>
+<article class="post" data-ts="20050427182700" id="p9">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#9 · 2005-04-27 18:27</span></div>
+  <div class="pb">goh ... die lijkt op Leo Visser, die oudschaatser</div>
+</article>
+<article class="post" data-ts="20050428070600" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2005-04-28 07:06</span></div>
+  <div class="pb">Dat zal Leo Visser leuk vinden, dattie lijkt op het Hoofd van de oudste regerende familie van Europa.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

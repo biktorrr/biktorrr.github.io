@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>levensupdate – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">levensupdate</h1>
+<p class="tm">5 posts · started 2003-05-21 15:52 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030521155200" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-05-21 15:52</span></div>
+  <div class="pb">Voor al die miljoenen ge\ïnteresseerden op het world wide web die zich afvragen wat de punter van wereldfaam dezer dagen/weken bezighoudt:<br><br>Per 1 augustus stuurt Het Parool alle correspondenten de laan uit en na lang beraad is zelfs besloten geen uitzondering te maken voor (het zijn niet mijn woorden:) het talent in Parijs. Ondanks deze tegenslag hoop ik in Parijs te kunnen blijven, dankzij werkzaamheden voor de onvolprezen linkse topbladen Else4, En France, Maison en France en Historisch Nieuwsblad en ik ga er binnenkort nog een aantal bij zoeken.<br>Daarnaast ga ik van mijn laatste centen morgen naar het aanstormend voetbaltalent James die op stage is in Straatsburg. Na een nacht op zijn onvolprezen vloer te hebben doorgebracht, neem ik de volgende morgen de trein naar Hamburg, Kopenhagen, Stockholm, boot naar Turku, trein naar Helsinki om zondagmiddag in Sint Petersburg aan te komen, om mijn lekkere dingetje (na 2 maanden) uit de handen van de lamme Russen te redden. Na een weekje de 300ste verjaardag van Piter (zo noem je Sint Petersburg als je extreem cool bent) te hebben gevierd, gaan we een ruime week rondhoppen in Finland en Zweden (extreem relaxed als je net 2 maanden in Rusland gewoond hebt, zoals Cheska bijvoorbeeld). Rond 10 juni ben ik weer in Parijs en eind juni hoop ik weer eens over te komen naar het moederland, ook om af te studeren. <br>Ik wens jullie veel plezier met Balkenende II, ballen in de zaal, ballen in de Hout, ballen kijken en het onverwachte kampioenschap van Ajax vieren.</div>
+</article>
+<article class="post" data-ts="20030522145400" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2003-05-22 14:54</span></div>
+  <div class="pb">have fun!</div>
+</article>
+<article class="post" data-ts="20030522171100" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-05-22 17:11</span></div>
+  <div class="pb">kutje nougat dat je nou correspondent-af bent. <br>veel plezier in Piter (ja ik ben ook cool)</div>
+</article>
+<article class="post" data-ts="20030523140800" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2003-05-23 14:08</span></div>
+  <div class="ps">heb je nog</div><div class="pb">geen web-log eigenlijk, dat de echte fans jou elke dag in de gaten kunnen houden??!?</div>
+</article>
+<article class="post" data-ts="20030523231300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2003-05-23 23:13</span></div>
+  <div class="pb">Waarom ga je niet via Letland? dan had je het Songfestival ook nog mee kunnen pikken.<br>Veel plezier verder en doe Poetin de groeten van me.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

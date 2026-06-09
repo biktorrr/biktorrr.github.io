@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie tikt 8 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie tikt 8</h1>
+<p class="tm">5 posts · started 2002-12-03 11:41 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021203114100" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2002-12-03 11:41</span></div>
+  <div class="pb">Door alle site problemen zet ik hem maar even hier. Victor had je hem nog ontvangen?<br><br><br><br>Sinterklaas en Kerst<br><br>  Het is weer zover. Het zijn de donkere dagen van december en de rood-meiterige<br>  en witbebaarde mannen sieren ons straatbeeld weer. NOu heb ik op zich niets<br>  tegen Sinterklaas of Kerst, maar als je de TV aanzet en Hans Klok laat Pieten<br>  verdwijnen, er in Berlijn een kerstmannen conferentie wordt gehouden, je<br>  ongeveer nu een kerstboom moet reserveren wil je nog een beetje kerstboom in je<br>  casa hebben staan en als V&D non-stop Sinterklaas liedjes uit haar speakers laat<br>  gallen ( je zal der maar werken), gaat het bij mij een beetje ver. <br><br>  Ik was afgelopen weekend ook Sinterklaas inkopen doen en ik heb daar altijd wat<br>  gemengde gevoelens bij. Enerzijds is het wel leuk, aangezien je wat leuke<br>  cadeau's gaat kopen voor andere mensen ( en niet te vergeten een hele zooi SPA<br>  voorpret, 1 dag, 13 uur op moment van schrijven , ja en 22 uur de laatste dag<br>  doorbrengen, maar die reken ik niet mee.), maar anderzijds heb ik het gevoel<br>  alsof ik op een prehistorisch slagveld ben beland in sommige winkels. GRaaien<br>  naar de aanbiedingen en chocolade letters om maar op tijd iets goed te pakken te<br>  krijgen. <br><br>  Het materialisme overheerst soms in verscheidende winkels zoveel dat ik me er<br>  eigenlijk een beetje voor begin te schamen. Het beste voorbeeld waar ik dit<br>  weekend was is de Free Record Shop. Ze hebben bij ons in Leiden een paar bakken<br>  met een zooi waardeloze DVD's liggen (zoals Dungeons en Dragons de DVD etc, etc)<br>  met daarin een paar aardige DVD's. Ik ben niet eens naar binnen gegaan omdat ik<br>  gewoon bang was om te verplettert worden door de mensenmassa van normale<br>  Leidenaars. ( Die, Tijmen kan het bevestigen, over het algemeen niet tot de<br>  creme de la creme van het Nederlandse Volk behoren). <br><br>  Sinterklaas en eigenlijk vooral Kerstmis hebben de laatste jaren bij de meeste<br>  winkels en bedrijven een status gekregen van een Survival of the Fittest. Een<br>  winkel die zijn winst niet meer dan verdubbelt telt al niet meer mee en kan de <br>  gang naar het faillisement al bijna gaan maken. De etalages bij de wat mindere<br>  goden in 'shopland' puilen uit van de abominabel ingerichte Sint en Piet<br>  uitstallingen waarin enkele zeer slecht geimiteerde chocolade letters liggen te<br>  verotten. <br><br>  Toch is het niet alleen slecht wat er gaande is. Sinterklaas avond is voor moij<br>  altijd een leuke happening en ook Kerst zelf heb ik het altijd wel naar mijn<br>  zin. Hetgene waar ik altijd eenbeetje doorheen moet in december is de hele heisa<br>  eromheen. En dat is iets waar ik denk ik vooral economisch en maatschappelijk<br>  zeer alleen sta in deze wereld. Na, je kan ook niet alles hebben. TOT<br>  SPAAAAAAAAAAAAA</div>
+</article>
+<article class="post" data-ts="20021203115100" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-12-03 11:51</span></div>
+  <div class="ps">timmie tikt groot succes</div><div class="pb">alleen helaas niet op rijm</div>
+</article>
+<article class="post" data-ts="20021204110200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-12-04 11:02</span></div>
+  <div class="pb">Wel een wat depressieve Timmie. Ik hoop dat Spa 'm wat op kan fleuren.</div>
+</article>
+<article class="post" data-ts="20021204111600" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-12-04 11:16</span></div>
+  <div class="pb">Zolang de tikmachine er staat, denk ik dat Timmie het wel redt. Welk een natuurtalent! Hoe die in zo weinig woorden een hele sfeer weet op te roepen. Chapeau!</div>
+</article>
+<article class="post" data-ts="20021204114300" id="p5">
+  <div class="ph"><span class="pa">L@u</span><span class="pm">#5 · 2002-12-04 11:43</span></div>
+  <div class="pb">ik kan maar 1 ding zeggen:<br>BRILJANT</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

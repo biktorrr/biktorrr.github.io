@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bruno – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bruno</h1>
+<p class="tm">10 posts&nbsp;·&nbsp;started 2009-07-11 14:07 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090711140700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1&nbsp;·&nbsp;2009-07-11 14:07</span></div>
+  <div class="pb">Sletten, slettinnen,<br><br>Vanavond Bruno in Haarlem. Denkelijk is voor:<br>- Cliteur<br>- Pandavrouwtje<br>- Trainee<br>- Olick<br>- Hoogh<br>- Ollie<br>- Amanda<br><br>Cootje? Jazza? <br><br>Welk tijdstip heeft onze voorkeur? 19:15u of 21:45u?</div>
+</article>
+<article class="post" data-ts="20090711162300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2009-07-11 16:23</span></div>
+  <div class="pb">Op bevel zojuist 9 kaartjes voor 21.45u gekocht. </div>
+</article>
+<article class="post" data-ts="20090711220200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3&nbsp;·&nbsp;2009-07-11 22:02</span></div>
+  <div class="pb">Wij genieten van een ijsje bij Garonne...</div>
+</article>
+<article class="post" data-ts="20090712125000" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2009-07-12 12:50</span></div>
+  <div class="pb">Hoog. Ik geef 'm 4 sterretjes <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20090712134100" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5&nbsp;·&nbsp;2009-07-12 13:41</span></div>
+  <div class="pb">Ik geef 'm 1 gebleachte ster</div>
+</article>
+<article class="post" data-ts="20090712152600" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6&nbsp;·&nbsp;2009-07-12 15:26</span></div>
+  <div class="pb">3 arshwitzen</div>
+</article>
+<article class="post" data-ts="20090712153000" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7&nbsp;·&nbsp;2009-07-12 15:30</span></div>
+  <div class="pb">Ik zie dat de mensen gemengde gevoelens over hebben gehouden aan de voorstelling. Wellicht lag dit aan andere verwachtingen?</div>
+</article>
+<article class="post" data-ts="20090713110200" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8&nbsp;·&nbsp;2009-07-13 11:02</span></div>
+  <div class="pb">Ik denk dat dat wel meevalt Mk, het is een kwestie van een andere schaal gebruiken. 4 sterretjes is in principe even goed als 1 gebleachte ster bijvoorbeeld. Ieder weldenkend mens zal inzien dat bruno een klassieker in de dop is die je gewoon niet mag missen.</div>
+</article>
+<article class="post" data-ts="20090713112400" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9&nbsp;·&nbsp;2009-07-13 11:24</span></div>
+  <div class="pb">Kan iemand dan de conversietabel voor normale sterren, arshwitzen en gebleachte sterren in het filmtopic neerzetten? Dat maakt het wel zo makkelijk vergelijken voor mijn volgende bioscoopbezoekje.<br></div>
+</article>
+<article class="post" data-ts="20090713112800" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10&nbsp;·&nbsp;2009-07-13 11:28</span></div>
+  <div class="pb">Van mij krijgt-ie 1 bruine ster en twee Riesenschw\änze. Plus een bonus van een halve BikT voor Straight Dave. </div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

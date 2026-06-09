@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WoMiSpam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">WoMiSpam</h1>
+<p class="tm">6 posts · started 2006-03-29 15:02 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060329150200" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-03-29 15:02</span></div>
+  <div class="pb">Zo de week is weer doormidden (zag nl. net zaagmans door de gang lopen), tijd voor de spam!<br><br>Een schitterende pagina met niet uitgekomen voorspellingen, waaronder:<br><br>«It will be gone by June.» <br>Variety, passing judgement on rock 'n roll in 1955. <br><br>«It will be years - not in my time - before a woman will become Prime Minister.» <br>Margaret Thatcher, future Prime Minister, October 26th, 1969. <br><br>«Where a calculator on the ENIAC is equipped with 18,000 vacuum tubes and weighs 30 tons, computers in the future may have only 1,000 vacuum tubes and weigh only 1.5 tons.» <br>Popular Mechanics, March 1949. <br><br><br>en nog veel, veel meer: zie <a href="http://www.2spare.com/item_50221.aspx">hiero</a></div>
+</article>
+<article class="post" data-ts="20060331175500" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2006-03-31 17:55</span></div>
+  <div class="pb">terecht</div>
+</article>
+<article class="post" data-ts="20100310103400" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2010-03-10 10:34</span></div>
+  <div class="pb">"The Large Hadron Collider will <a href="http://tinyurl.com/yld3xl8">replicate the big bang</a> that started the universe"...<br><br>Is dat eigenlijk niet een BEETJE gevaarlijk?<br>Ca?</div>
+</article>
+<article class="post" data-ts="20100310104800" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2010-03-10 10:48</span></div>
+  <div class="pb">Nou, die laatste voorspelling is vast wel uitgekomen. Tussen de ENIAC en de iPad zijn er denkelijk een groot aantal tussenstadia geweest.</div>
+</article>
+<article class="post" data-ts="20100310105100" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2010-03-10 10:51</span></div>
+  <div class="pb">En wat betreft de LHC - het is natuurlijk mooi dat, als het universum ten onder gaat, we de middelen in huis hebben om zelf een nieuw universum te maken.  </div>
+</article>
+<article class="post" data-ts="20100310151300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2010-03-10 15:13</span></div>
+  <div class="pb">Ach, we zullen er weinig van merken</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kirsten gefeliciteerd!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kirsten gefeliciteerd!!</h1>
+<p class="tm">4 posts · started 2005-08-22 20:39 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050822203900" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2005-08-22 20:39</span></div>
+  <div class="pb">Hoi Kisrsten gefeliciflapsteard dat je nog maar vele jaren oud mag worden, en een heel mooi cadeau mag krijgen van je vriendje....</div>
+</article>
+<article class="post" data-ts="20050822215600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-08-22 21:56</span></div>
+  <div class="pb">Gefeliciteerd! Hopelijk zie ik je snel, zodat ik je in levende lijve nog vele jaren mag wensen.</div>
+</article>
+<article class="post" data-ts="20050823074900" id="p3">
+  <div class="ph"><span class="pa">BigT &amp; JLau</span><span class="pm">#3 · 2005-08-23 07:49</span></div>
+  <div class="pb">Nou Kirsten  van harte, dat je nog vele jaren oud mag worden..<br><br>(Vanuit LA op dit moment)</div>
+</article>
+<article class="post" data-ts="20050823162900" id="p4">
+  <div class="ph"><span class="pa">kirrie</span><span class="pm">#4 · 2005-08-23 16:29</span></div>
+  <div class="pb">Hihi..bedankt voor de felicitatie's!  Ik ben nu nog veel te druk bezig met de laatste loodjes (nog 1 week) van m'n scriptie...:-( dus mijn verjaardagsfeestje ga ik combineren met mijn afstudeerfeestje! <br><br>-x-Kirrie<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

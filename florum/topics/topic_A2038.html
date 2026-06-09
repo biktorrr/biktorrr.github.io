@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>11 mei: brouwerij &#x27;t ij – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">11 mei: brouwerij &#x27;t ij</h1>
+<p class="tm">9 posts · started 2007-05-09 12:52 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070509125200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-05-09 12:52</span></div>
+  <div class="pb">Boys, girls,<br><br>Komende vrijdag ben ik wat eerder in A'dam dan normaal. Dat moet gevierd worden! Komt allen.<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20070509133000" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2007-05-09 13:30</span></div>
+  <div class="ps">even lekker offtopic</div><div class="pb">Mijn contacten met Kim en Mickey (de meisjes die een niet nader te noemen Floraboy op zijn laatste avondje als vrijgezel nog even flink hebben verwend), leveren af en toe nog wat moois op:<br><br>Als je een Ipod wilt hebben moet je vooral mailen (NOT)!<br><br>From: kimberley pellegrom <b>(kimberley_pellegrom@hotmail.com)</b> <br>Sent: Tue 5/08/07 7:54 PM <br>To: kleinood@hotmail.com; bregjevanden@hotmail.com; emanuelledrissen86@hotmail.com; gooss7@hotmail.com; i.deturck@student.fontys.nl; whateva_you_say@hotmail.com; <b>micky_loves_you@hotmail.com</b>; nickjan_147@hotmail.com; rutten_reneetje@hotmail.com; sona_jan_18@hotmail.com; sportvrouw88@hotmail.com <br><br><br>Dag allemaal, Music Top 50, een nieuw tv-programma dat binnenkort opSBS6komt.Deelt gratis I-pods uit!Wanneer je dit mailtje doorstuurt naar tenminste 15 vrienden (ofkennissen)krijg je een gratis I-pod thuisgestuurd.Jemoet het mailtje ter controle ook naar bart@musictop50.comsturen,Administratief medewerker Bart van Domburg die registreert wie erallemaaleen gratis I-podsmoeten krijgen.Music Top 50 doet dit om aan meernaambekendheid te komen.Stuur je dit mailtje door naar 15 vrienden maak jedus reclame voor MusicTop 50 en krijg je een gratis I-pod.Als je het zelfsdoorstuurt naar 50 vrienden, dan krijg je alle singles uitde Top 50bijgeleverd met I-pod! Stuur het door!<br><br>En remember: mickey_loves_you! </div>
+</article>
+<article class="post" data-ts="20070509134000" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2007-05-09 13:40</span></div>
+  <div class="pb">vrijdag top, ipod nop</div>
+</article>
+<article class="post" data-ts="20070509165600" id="p4">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#4 · 2007-05-09 16:56</span></div>
+  <div class="pb">@merrel als die super sudoku machine van jou misschien een andere willekeurige kroeg in A'dam uit kan spugen wil ik het nog wel overwegen. <br><br>@amice spullen krijgen in ruil voor 15 email adressen is zó 1997 !</div>
+</article>
+<article class="post" data-ts="20070509165600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2007-05-09 16:56</span></div>
+  <div class="pb">PH gefeliciteerd met alle toekomstige spam!</div>
+</article>
+<article class="post" data-ts="20070510160800" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2007-05-10 16:08</span></div>
+  <div class="pb">To be spammed or not to be spammed...</div>
+</article>
+<article class="post" data-ts="20070510163100" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2007-05-10 16:31</span></div>
+  <div class="pb">ik vindt een andere kroeg trouwens ook geen slecht idee. Ergens bij de nieuwmarkt?</div>
+</article>
+<article class="post" data-ts="20070511080400" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2007-05-11 08:04</span></div>
+  <div class="pb">Ik heb er met Frank Bloem en Mitchel afgesproken. En Wybren zou misschien ook langskomen...</div>
+</article>
+<article class="post" data-ts="20070511131600" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2007-05-11 13:16</span></div>
+  <div class="pb">hoe laat gaat het los?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2470 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2470</h1>
+<p class="tm">12 posts&nbsp;·&nbsp;started 2008-08-28 14:35 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080828143500" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1&nbsp;·&nbsp;2008-08-28 14:35</span></div>
+  <div class="pb">10 oktober is er ook een klein borreltje nav mijn post-doctorale afstuderen!</div>
+</article>
+<article class="post" data-ts="20080828143900" id="p2">
+  <div class="ph"><span class="pa">Karim</span><span class="pm">#2&nbsp;·&nbsp;2008-08-28 14:39</span></div>
+  <div class="pb">Joepie! Ik neem BaKlawa mee!</div>
+</article>
+<article class="post" data-ts="20080828144200" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3&nbsp;·&nbsp;2008-08-28 14:42</span></div>
+  <div class="pb">Wist je dat ik tot nu toe dacht dat je voor een postdoc eerst doc moest zijn?!</div>
+</article>
+<article class="post" data-ts="20080828144200" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4&nbsp;·&nbsp;2008-08-28 14:42</span></div>
+  <div class="pb">Maar ik meld me dus bij dezen (blijkbaar als tweede) aan!</div>
+</article>
+<article class="post" data-ts="20080829082600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5&nbsp;·&nbsp;2008-08-29 08:26</span></div>
+  <div class="pb">Er is een kansje dat ik in Haarlem blijf vandaag. Ik weet niet of ik dan veel zin heb om naar de uitmarkit te komen.<br><br>Later meer</div>
+</article>
+<article class="post" data-ts="20080829121500" id="p6">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#6&nbsp;·&nbsp;2008-08-29 12:15</span></div>
+  <div class="pb">Ca en ik hebben vanavond een huwelijksfeest (Ca-roeiploeg). Wellicht 's avonds nog in Haarlem biertje drinken?</div>
+</article>
+<article class="post" data-ts="20080829133700" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7&nbsp;·&nbsp;2008-08-29 13:37</span></div>
+  <div class="pb">Ha weer terug! Hoe was het in Maleisie??</div>
+</article>
+<article class="post" data-ts="20080829142700" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8&nbsp;·&nbsp;2008-08-29 14:27</span></div>
+  <div class="pb">Hoe laat en waarrr?</div>
+</article>
+<article class="post" data-ts="20080829143400" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9&nbsp;·&nbsp;2008-08-29 14:34</span></div>
+  <div class="pb">Misschien bij de chinees bij Mitch en daarna Uitmarkt verkennen? Ik kan er rond 19u zijn.</div>
+</article>
+<article class="post" data-ts="20080829144100" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10&nbsp;·&nbsp;2008-08-29 14:41</span></div>
+  <div class="pb">Dat idee had ik ook al. Ik eet thuis, al dan niet chinees. Bel maar als je komt. Daarna richting de Jeugd van Tegenwoordig</div>
+</article>
+<article class="post" data-ts="20080829152800" id="p11">
+  <div class="ph"><span class="pa">bigt</span><span class="pm">#11&nbsp;·&nbsp;2008-08-29 15:28</span></div>
+  <div class="pb">okay ik ben er ook rond een uur of 7<br><br>bus 42 toch?</div>
+</article>
+<article class="post" data-ts="20080829160800" id="p12">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#12&nbsp;·&nbsp;2008-08-29 16:08</span></div>
+  <div class="pb">ik ben in Haarlem, later op de avond bier drinken met Tube en CA (en MK?/Lil?/Jazzzzzzzzzzz?)</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

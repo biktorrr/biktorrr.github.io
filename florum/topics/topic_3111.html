@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Over naar belangrijker nieuws – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Over naar belangrijker nieuws</h1>
+<p class="tm">7 posts&nbsp;·&nbsp;started 2011-06-07 23:17 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110607231707" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1&nbsp;·&nbsp;2011-06-07 23:17</span></div>
+  <div class="pb">Boeken schmoeken, ThB als minister van Conservatieve Vooruitgang lekker boeie.<br><a href="http://webwereld.nl/nieuws/106905/machtsstrijd-om-netneutraliteit-nadert-kookpunt.html">De toekomst van m.floraboys.com staat op het spel! </a><br>Waarom is het malieveld nog niet gevuld?<br></div>
+</article>
+<article class="post" data-ts="20110607232128" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2&nbsp;·&nbsp;2011-06-07 23:21</span></div>
+  <div class="pb">Goed punt profesj, ik zou Ph maar eens snel bellen!</div>
+</article>
+<article class="post" data-ts="20110608014652" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3&nbsp;·&nbsp;2011-06-08 01:46</span></div>
+  <div class="pb">Over naar wat er \ÉCHT toe doet: waarom zou die goeie Baquille zo veel behoefte hebben aan een borrel dat hij het twee (2) maal post op FB? </div>
+</article>
+<article class="post" data-ts="20110608052726" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4&nbsp;·&nbsp;2011-06-08 05:27</span></div>
+  <div class="pb">omdat <br><br>1) de data waarmee ik aan het worstelen was niet goed was genomen en/of software buggy was. 3/4 dag weggegooid. <br><br>2) heb een superbaan (een permanente, die ik nog steeds niet heb in tegenstelling tot de meeste andere boys) NET niet gekregen. Het was een baan als tenure track staff astronomer in zuid-Zweden, wat had door kunnen groeien tot volle professor in 6-7 jaar. Ik zat bij de laatste 4 (van de 86 applicaties). Het instituut is een van de meest prestigeuze sterrenkunde-instituten van Europa (samen met Leiden en Heidelberg) en ik had daar mijn eigen PhD studenten gekregen. Prof. Dr. Biktie klonk al aardig in mijn hoofd, dus ik ben wel teleurgesteld. <br><br>( <br>2a) Daardoor had ik via een goeie vriend, die net een vergelijkbare baan in Heidelberg gekregen heeft, in de comissie van Bernanke plaats kunnen nemen. <br>)<br><br>3) stress van de baan, aangezien de druk er stevig op wordt gelegd om alles in Oktober ver genoeg  af te hebben. <br><br></div>
+</article>
+<article class="post" data-ts="20110608111221" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5&nbsp;·&nbsp;2011-06-08 11:12</span></div>
+  <div class="pb">Holy F*ck, kijk je ook nog wel naar de sterren i.p.v. naar leuke baantjes?!</div>
+</article>
+<article class="post" data-ts="20110608111337" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6&nbsp;·&nbsp;2011-06-08 11:13</span></div>
+  <div class="pb">Overigens vind ik wel dat je altijd gave banen hebt in het buitenland enzo, daar doe ik niets aan af!</div>
+</article>
+<article class="post" data-ts="20110608185407" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7&nbsp;·&nbsp;2011-06-08 18:54</span></div>
+  <div class="pb">gaat hier hardstikke goed hoor eigenlijk. <br><br>Het nadeel van mijn gave baantjes en hoog gespecialiseerde carriere is dat permanente banen, met een combinatie van aspecten (in/in de buurt van NL, stevig wat wetenschapstijd) die ik ambieer, maar 1 keer per 2 jaar langskomen. <br><br>En degene in Leiden over 1-2 jaar wordt waarschijnlijk gegeven aan iemand die al een vaste baan heeft voor NWO (herstructurering heet dat in de politiek, geldgebrek in normale termen </div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

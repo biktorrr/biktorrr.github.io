@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ouderwets ballen komend weekend: 1/2 nov – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">ouderwets ballen komend weekend: 1/2 nov</h1>
+<p class="tm">8 posts · started 2003-10-30 11:36 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031030113600" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-10-30 11:36</span></div>
+  <div class="pb">Wie komen er weer eens ouderwets ballen zaterdag en zondag (zaterdag is ook het stammtischfest dus amsterdammerts opgelet!)<br><br>ik: zajazoja</div>
+</article>
+<article class="post" data-ts="20031030115000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-10-30 11:50</span></div>
+  <div class="pb">jaja</div>
+</article>
+<article class="post" data-ts="20031030115100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-10-30 11:51</span></div>
+  <div class="pb">Mijn AiO-collega had er ook wel oren naar om te komen. Als het zeker doorgaat (vijf man of meer), zal ik hem een belletje geven.</div>
+</article>
+<article class="post" data-ts="20031030124000" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-10-30 12:40</span></div>
+  <div class="pb">zaja<br>zo misschien</div>
+</article>
+<article class="post" data-ts="20031030195000" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-10-30 19:50</span></div>
+  <div class="pb">zo niet<br>za heel misschien<br></div>
+</article>
+<article class="post" data-ts="20031031182100" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2003-10-31 18:21</span></div>
+  <div class="pb">zajazowaarschijnlijkook</div>
+</article>
+<article class="post" data-ts="20031101122100" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2003-11-01 12:21</span></div>
+  <div class="pb">dus TN, Mer, Vic, Tijmen en Sander zijn er vanmiddag zeker. Tube zou misschien komen maar daar moesten we maar niet van uitgaan. Hij moest nl. nog worsten e.d. kopen voor het Novemberfest. <br>Nog \é\én Floraboy dus!<br>Joost, 6de man?  </div>
+</article>
+<article class="post" data-ts="20031102083000" id="p8">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#8 · 2003-11-02 08:30</span></div>
+  <div class="pb">Misschien vandaag (zondag), ik meld mij vanmiddag nog bij Victor.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

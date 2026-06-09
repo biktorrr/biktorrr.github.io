@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>gaap – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">gaap</h1>
+<p class="tm">7 posts · started 2011-02-16 20:45 by vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110216204530" id="p1">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#1 · 2011-02-16 20:45</span></div>
+  <div class="pb">Gaaap</div>
+</article>
+<article class="post" data-ts="20110216211748" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2011-02-16 21:17</span></div>
+  <div class="pb">Arsenal - Barcelona kijken dan niet meer gaap.</div>
+</article>
+<article class="post" data-ts="20110219121637" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-02-19 12:16</span></div>
+  <div class="pb">Za-mi-spam?<br><br><object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/A_fMN9kFm14?version=3"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/A_fMN9kFm14?version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="390"></object></div>
+</article>
+<article class="post" data-ts="20110219125358" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2011-02-19 12:53</span></div>
+  <div class="pb">En dat om half zeven 's ochtends...</div>
+</article>
+<article class="post" data-ts="20110219182552" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2011-02-19 18:25</span></div>
+  <div class="pb">test<br></div>
+</article>
+<article class="post" data-ts="20110219200607" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2011-02-19 20:06</span></div>
+  <div class="pb">test2<br><br><br></div>
+</article>
+<article class="post" data-ts="20110219200653" id="p7">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#7 · 2011-02-19 20:06</span></div>
+  <div class="pb">m.floraboys.com? high tide</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

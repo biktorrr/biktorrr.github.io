@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2477 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2477</h1>
+<p class="tm">4 posts&nbsp;·&nbsp;started 2008-09-10 14:19 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080910141900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1&nbsp;·&nbsp;2008-09-10 14:19</span></div>
+  <div class="pb">tot zover duidelijk, maar je hebt dus wel relatief snel toegang tot foto's van de beste jongen.</div>
+</article>
+<article class="post" data-ts="20080910143900" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2&nbsp;·&nbsp;2008-09-10 14:39</span></div>
+  <div class="pb">Relatief ja, moest eerst zijn foto uit het lijstje dat altijd op mijn bureau staat halen, lippenstift van mijn collega eraf vegen, scanner opwarmen, scannen, beetje photoshoppen, uploaden...<br><br>Je weet toch.</div>
+</article>
+<article class="post" data-ts="20080913173400" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3&nbsp;·&nbsp;2008-09-13 17:34</span></div>
+  <div class="pb">Leuk, we hebben <a href="http://www.rtvnh.nl/asxgen.asp?nmid=25587&item=cmsroot%2Fstream%2FNHNieuws2008%2FNHNieuws-13-september.wmv&start=193&tt=Kraken%20voor%20aandacht%20leegstand%20Haarlem">nieuwe buren</a>! <br><br><br></div>
+</article>
+<article class="post" data-ts="20080914121300" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4&nbsp;·&nbsp;2008-09-14 12:13</span></div>
+  <div class="pb">Schorrie morrie. Waarlijk.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

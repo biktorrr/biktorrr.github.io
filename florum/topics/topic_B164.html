@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verveling.... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verveling....</h1>
+<p class="tm">8 posts · started 2002-09-10 15:29 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020910152900" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-09-10 15:29</span></div>
+  <div class="pb">Toch ook dit jaar maar weer een voetbalteam gemaakt voor www.voetbalgame.nl<br><b><i>Scandinavische Scoorvedettes</><br><br><b>doel</b>:<br>Mikko Rahkamaa<br><b>verd</b>:<br>Ole Tobiassen<br>Sampo Koskinen<br>Magnus Johansson<br>Jan Frederiksen<br><b>Mid</b>:<br>Jari Litmanen<br>Jesper Hakansson<br>Johannes Hardasson<br>Daniel Jensen<br><b>attacque</b>:<br>Zlatan Imbrahimovic<br>Paulus Roiha<br><br>Die pot met centen is voor taimny.smooi.<br></div>
+</article>
+<article class="post" data-ts="20020910154700" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2002-09-10 15:47</span></div>
+  <div class="pb">vrijdag begint de eerste ronde</div>
+</article>
+<article class="post" data-ts="20020910190300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2002-09-10 19:03</span></div>
+  <div class="pb">Dude...hoe kan je met die centjes 18 spelers kopen??!</div>
+</article>
+<article class="post" data-ts="20020911123300" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-09-11 12:33</span></div>
+  <div class="pb">Dat is wel een gaaf team. In de VI stond een team met alleen maar Jan(s)sen(s). Ook vrij heersend. Veel succes d'r mee.</div>
+</article>
+<article class="post" data-ts="20020911130600" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2002-09-11 13:06</span></div>
+  <div class="pb">dank, <br>...je hebt dus ongeveer 750.000 per speler..beetje puzlen..en ze hebben een foutje gemaakt met John O'Brien,daar zijn ze een 0 vergeten. dies 250.000 ipv 2.5 miljoen.heerse.</div>
+</article>
+<article class="post" data-ts="20020911164700" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2002-09-11 16:47</span></div>
+  <div class="pb">Ja, die heb ik ook gekocht die O'brien..</div>
+</article>
+<article class="post" data-ts="20020911164800" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2002-09-11 16:48</span></div>
+  <div class="pb">VI games en FOK games(www.fokzine.net)qua voetbal heersen..</div>
+</article>
+<article class="post" data-ts="20020916084600" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2002-09-16 08:46</span></div>
+  <div class="pb">Jimmy van Fessem <br>John O´Brien<br>Jeroen Heubach<br>Said Bakkati <br>Rafael van der Vaart<br>Brian Pinas<br>Shinji Ono<br>Mark van Bommel<br>Leandro do Bomfim<br>Jason Oost <br>Kalle Sone <br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

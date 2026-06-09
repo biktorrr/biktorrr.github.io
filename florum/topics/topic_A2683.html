@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH gefeliciteeeeerd! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">PH gefeliciteeeeerd!</h1>
+<p class="tm">8 posts · started 2009-07-02 14:14 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090702141400" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-07-02 14:14</span></div>
+  <div class="pb">Nog vele jaren en dat je ze maar in gezondheid, hooghheid en olijkheid mag doorbrengen!</div>
+</article>
+<article class="post" data-ts="20090702141500" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2009-07-02 14:15</span></div>
+  <div class="pb">HOOOGH!! Gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20090702143700" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2009-07-02 14:37</span></div>
+  <div class="pb">mother of god is het alweer 2 juli?!<br><br>Hij leve hoogh! Hij leve olijck!<br><br></div>
+</article>
+<article class="post" data-ts="20090702144900" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2009-07-02 14:49</span></div>
+  <div class="pb">Hoe heb ik de Olijcke leren kennen? Doordat hij op het brugklaskamp vieze liedjes zong. 18 jaar geleden! Een traan van weemoed wegpinkende zeg ik: Gefeliciteerd Hooghe Sheik!</div>
+</article>
+<article class="post" data-ts="20090702152500" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2009-07-02 15:25</span></div>
+  <div class="pb">gefeliciteerd, hooghe</div>
+</article>
+<article class="post" data-ts="20090702160100" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2009-07-02 16:01</span></div>
+  <div class="pb">Op deze leeftijd zeg ik: David, gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20090702161600" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2009-07-02 16:16</span></div>
+  <div class="pb">Congraetulaetio extremis! Beffoindre</div>
+</article>
+<article class="post" data-ts="20090702213000" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2009-07-02 21:30</span></div>
+  <div class="pb">Van haerte en tot morgen!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

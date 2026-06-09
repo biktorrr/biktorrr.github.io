@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>...... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">......</h1>
+<p class="tm">10 posts · started 2004-09-14 19:34 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040914193400" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2004-09-14 19:34</span></div>
+  <div class="pb">Beste Meneer puite,<br><br>Ik kreeg van de week Uw aanvraag binnen met betrekking tot de keppels. Ik begrijp dat hier een jidische keppel betrefd? Als dat zo is moet ik u helaas teleurstellen. Onze core business is textiel en caps, maar de aanvraag is te specifiek in dit geval. mocht het zo zijn dat het hier een ander item betreft dan ik denk dan hoor ik het graag.<br><br></div>
+</article>
+<article class="post" data-ts="20040914200900" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-09-14 20:09</span></div>
+  <div class="pb">Familievoorraadje?</div>
+</article>
+<article class="post" data-ts="20040915094500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-09-15 09:45</span></div>
+  <div class="pb">Floragirls naaiatelier?</div>
+</article>
+<article class="post" data-ts="20040915101400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-09-15 10:14</span></div>
+  <div class="pb">Voor zo'n goed doel wil ik best de handen uit de mouwen steken.</div>
+</article>
+<article class="post" data-ts="20040915144900" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-09-15 14:49</span></div>
+  <div class="pb">lara had het al over een monstertje naar Bangladesh te sturen, de kindertjes daar maken er in no-time een paar ArenA's vol voor je. Wel met mooie texsten als: "AJAXS ULTA-JADEN" of "NO WASJ MORE HOT THAN 40oc" </div>
+</article>
+<article class="post" data-ts="20040915181300" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2004-09-15 18:13</span></div>
+  <div class="pb">Joost, anders maak je een toespeling op de "Hoeuh van Amsteuhdam": rooie lampjes ofzo...kun je het ajaxvak mee behangen, staat ook veel gezelliger dan die israelische vlaggen. <br>tis maar een idee en is misschien makkelijker dan die keppeltjes.</div>
+</article>
+<article class="post" data-ts="20040916122100" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2004-09-16 12:21</span></div>
+  <div class="ps">(spammetje)</div><div class="pb"><h3> heb je <a href="http://www.keppel.nl/">deze mensen </a> al aangeschreven?</h3><br></div>
+</article>
+<article class="post" data-ts="20040916133300" id="p8">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#8 · 2004-09-16 13:33</span></div>
+  <div class="pb">Een Ajax vlieringtrap!..dat ideetje heb ik nu even ingekopt.. stukje comissie aan tijmen en ik ben nog steeds binnen</div>
+</article>
+<article class="post" data-ts="20040916185100" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2004-09-16 18:51</span></div>
+  <div class="pb">TN die was natuurlijk te makkelijk.</div>
+</article>
+<article class="post" data-ts="20040920214400" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2004-09-20 21:44</span></div>
+  <div class="pb">Misschien kun haar ook nog wel een keppeltje slijten.<br><img src="http://img46.exs.cx/img46/7904/meis.jpg"></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Machtige telescoop – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Machtige telescoop</h1>
+<p class="tm">11 posts · started 2007-09-24 16:25 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070924162500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2007-09-24 16:25</span></div>
+  <div class="pb">Imposante sterrenkijker zijn ze daar aan in Chili aan 't bouwen, Timmie. Even de atmosferische straling (oid) bekijken 13 miljard lichtjaar verderop, mij lukt het niet met het blote oog. Las erover in de Volkskrant zaterdag. Maar hoe zit dat nou, waar ga jij nu dan steeds heen? </div>
+</article>
+<article class="post" data-ts="20070925073900" id="p2">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#2 · 2007-09-25 07:39</span></div>
+  <div class="pb">ik heb het artikel nog niet gelezen, maar ik ga dus juist daarheen.. ik ben zelfs al op die site geweest, waar ik ze druk bezig zie met bouwen..<br><br>Er staat namelijk al een kleinere telescoop (nog steeds een van de beste in de wereld voor wat ik doe) , en daar ga ik heen. Die staat zo'n 10 km verderop.</div>
+</article>
+<article class="post" data-ts="20070925133300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-09-25 13:33</span></div>
+  <div class="pb">En ik maar denken dat dit topique weer over de d*kke l*l van de BikT ging.</div>
+</article>
+<article class="post" data-ts="20070925140000" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-09-25 14:00</span></div>
+  <div class="pb">hehe</div>
+</article>
+<article class="post" data-ts="20070925170500" id="p5">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#5 · 2007-09-25 17:05</span></div>
+  <div class="pb">Nu ik er zo over nadenk heeft het zeker iets freudiaans. Zou sterren kijken een soort compensatiegedrag zijn? <br>'het heelal veroveren'<br>'sterren ontdekken'<br>'de sterrekijker in stelling brengen'<br>'sterren jouw achternaam geven'<br>'je kijker op een nieuwe ster richten'<br></div>
+</article>
+<article class="post" data-ts="20070925181700" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2007-09-25 18:17</span></div>
+  <div class="pb">het feit dat jij dit bedenkt zegt eigenlijk genoeg.<br></div>
+</article>
+<article class="post" data-ts="20070926094100" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2007-09-26 09:41</span></div>
+  <div class="pb">Penose heeft weer een productive dag gehad kennelijk.. Hele dag hier over nadenken en dan lekker om 5 over 5 posten om dan de trein op te stappen..</div>
+</article>
+<article class="post" data-ts="20070926104200" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2007-09-26 10:42</span></div>
+  <div class="pb"> o o, ik merk het al: don't mess with the mighty Telescope.</div>
+</article>
+<article class="post" data-ts="20070926110200" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2007-09-26 11:02</span></div>
+  <div class="pb">Als je aan zijn telescoop komt kom je aan de BikT (Bik Telescope?).</div>
+</article>
+<article class="post" data-ts="20070926121600" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2007-09-26 12:16</span></div>
+  <div class="pb">En die vijf minuten declareren als overwerk, reken maar!</div>
+</article>
+<article class="post" data-ts="20070926122600" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2007-09-26 12:26</span></div>
+  <div class="pb">heb je ook niet van die uitschuifbare telescopen? <br>redelijk fallisch...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toetsenbordparadijs – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Toetsenbordparadijs</h1>
+<p class="tm">9 posts · started 2006-09-26 12:20 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060926122000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-09-26 12:20</span></div>
+  <div class="pb">Ben op weg naar een top voor Francofonie in Boekarest (leg ik allemaal nog wel eens uit) en zit momenteel in het toetsenbordparadijs Boedapest. <br><br>Voor de liefhebber:<br>Grõeþ van Õ£³V³\ÊR unð iedereen viel spa\ß.</div>
+</article>
+<article class="post" data-ts="20060926122000" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-09-26 12:20</span></div>
+  <div class="pb">Dat zag er iets anders uiit toen ik het tikte, mais bon...</div>
+</article>
+<article class="post" data-ts="20060926215900" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2006-09-26 21:59</span></div>
+  <div class="pb">Feliciteer de Roemenen van mij met hun aanstaande lidmaatschap van de EU!<br>Ga je ook bij Olaf T. op bezoek?</div>
+</article>
+<article class="post" data-ts="20060927093300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-27 09:33</span></div>
+  <div class="pb">heette die drinkebroer op mijn schoot Olaf?</div>
+</article>
+<article class="post" data-ts="20060928085000" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2006-09-28 08:50</span></div>
+  <div class="pb">Live and direct uit het Paleis van het Volk, hier uw speciale verslaggever met goed en slecht nieuws. Eerst het slechte, zo hoort het: ze hebben hier Franse toetsenborden ingevoerd, waardoor mijn bijdrage aan Foratoetsenbordexotisme dit maal beperkt blijft tot een weinig opwindende '\ç'. Nog meer slecht nieuws: ik had een itv met de grote baas van de Organisatie van Franstalige landen, een oud-president van Senegal. Dat gaat niet door. Nog meer slecht nieuws: ik mag bijna nergens bij aanwezig zijn, omdat ze me een tweederangs badge hebben gegeven. <br>Nu het goede nieuws: die tweederangs badge gaat veranderd worden in een eersterangs (maar om maar een mooie Franse uitdrukking te gebruiken: seeing is believing ). En nog meer goed nieuws: ik ga de Roemeense staatssecretaris van BuZa interviewen (I rule) en het beste nieuws: gister inderdaad iets gedronken met olaf T., bijzonder sympathieke man. Ons wederzijds respect groeide sterk, toen bleek dat we allebei (in zijn geval meestal) per trein naar Roemeni\ë reizen.</div>
+</article>
+<article class="post" data-ts="20060928094800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-09-28 09:48</span></div>
+  <div class="pb">Wie is Olaf T.?</div>
+</article>
+<article class="post" data-ts="20060928100900" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-09-28 10:09</span></div>
+  <div class="pb">sja, ik ben nu ook wel benieuwd. </div>
+</article>
+<article class="post" data-ts="20060928115500" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2006-09-28 11:55</span></div>
+  <div class="pb">Tempelman, Volkskrant-correspondent in Boekarest, van wie Michiel (toch?) en ik groot fan zijn. </div>
+</article>
+<article class="post" data-ts="20060928135600" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2006-09-28 13:56</span></div>
+  <div class="pb">ja, ja. Zeg maar tegen hem dat ik een groot fan van hem ben!<br><br>Klinkt goed allemaal trouwens! Ben je toevallig, in het kader van de Frans-Roemeense betrekkingen, ook nog naar Steaua Boekarest-Olympique Lyon geweest?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

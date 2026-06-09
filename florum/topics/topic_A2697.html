@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reisbureau Danger Rouge – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Reisbureau Danger Rouge</h1>
+<p class="tm">2 posts · started 2009-07-19 18:17 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090719181700" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2009-07-19 18:17</span></div>
+  <div class="pb">Mooi bericht weer in mijn e-mail. Deze vrouw die ik volstrekt niet ken, heeft me eerder gevraagd of ik niemand kende in Parijs bij wie ze kon logeren, waarbij ik haar Le Central heb aangeraden. Ik vermoed dat het bericht misschien aan de heilige straler is gericht.<br><br><br>Lange tijd heb je niets van mij vernomen (ik ben je niet vergeten) om de eenvoudige reden dat ik, na bezoek Parijs dat dankzij jou geweldig was, ernstig ziek ben geworden. Ook ondervond ik problemen, door te grote dienstbaarheid, met mijn werk.<br> <br>Nu echter zou ik weer graag naar Parijs van 5 (zaterdag) tot en met 10 (donderdag) september a.s. (5 nachten) willen i.v.m. verrassing verjaardag zoon van mijn "little bird", doch reservering hotel is in mijn gebrekkige Frans niet gelukt.<br> <br>Mijn vraag aan je is of je bovenstaande dagen voor mij zou willen reserveren in het vijfde arrondissement hotel nr. 0033146335793, waar het mij zeer goed in kamer 15 is bevallen.<br> <br>Verder zou ik je tijdens die dagen graag eens willen ontmoeten i.v.m. straling dat ook een hot onderwerp in Frankrijk is.<br> <br>In afwachting van je reactie, teken ik</div>
+</article>
+<article class="post" data-ts="20090719205400" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2009-07-19 20:54</span></div>
+  <div class="pb">Zo te zien wordt er wat afgestraald in het altijd zonnige Parijs. Ik ontken alles. Het enige wat ik hierover kan zeggen is dat er met zeer aanzienlijke waarschijnlijkheid as weekend redelijk hard gestraald gaat worden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

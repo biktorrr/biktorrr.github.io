@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NIEUWJAARSBORREL – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NIEUWJAARSBORREL</h1>
+<p class="tm">7 posts · started 2001-12-25 12:54 by FAMOUS</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011225125400" id="p1">
+  <div class="ph"><span class="pa">FAMOUS</span><span class="pm">#1 · 2001-12-25 12:54</span></div>
+  <div class="pb">DE BESTE WENSEN, <br>KIJKEN OF IEDEREEN NOG EEN KALE NAZI IS...<br>EN GEWOON ONGELOFELIJK HARD ZUIPEN...<br>DRINK TILL WE DROP!!!<br><br>EHH TJA LIJKT ME DUIDELIJK EERSTE DONDERDAG, <br><br>ATRIUM.. 20.00<br>ZIEKENHUIS 02.00 ZO IETS... LIJKT MIJ</div>
+</article>
+<article class="post" data-ts="20011225172100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-12-25 17:21</span></div>
+  <div class="pb">zie andere florum frank??</div>
+</article>
+<article class="post" data-ts="20011226184300" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2001-12-26 18:43</span></div>
+  <div class="ps">hmnn</div><div class="pb">AL DIE FORUMS..</div>
+</article>
+<article class="post" data-ts="20011228163300" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-12-28 16:33</span></div>
+  <div class="ps">hmm</div><div class="pb">Het wordt zeker 1 euro ipv 2 gulden per bier in de Atrium op de donderdagen...</div>
+</article>
+<article class="post" data-ts="20011228172900" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2001-12-28 17:29</span></div>
+  <div class="ps">dat gaat veel</div><div class="pb">guldens ehh euro''s extra kosten op jaarbasis... sjezus de stufi moet omhoog!!!</div>
+</article>
+<article class="post" data-ts="20011228220800" id="p6">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#6 · 2001-12-28 22:08</span></div>
+  <div class="pb">ja gewoon 435 Euro per maand, die borrel is trouwens op zich wel een goed idee.</div>
+</article>
+<article class="post" data-ts="20011231142500" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2001-12-31 14:25</span></div>
+  <div class="ps">Borrrelll tijd ehh datum</div><div class="pb">lijkt mij natuurlijk, 10 januari, keihard het nieuwe jaar in luiden in atrium.. euro''s mee, dus eigenlijk de hele avond happy hour???????!!!!!!!!!!11</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

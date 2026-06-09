@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OORLOG ! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">OORLOG !</h1>
+<p class="tm">6 posts · started 2003-03-20 10:14 by De FANS</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030320101400" id="p1">
+  <div class="ph"><span class="pa">De FANS</span><span class="pm">#1 · 2003-03-20 10:14</span></div>
+  <div class="pb">Beste mensen,<br><br>ze zijn los! helemaal los! 1000 bommen en granaten allemaal op Sadam. <br><br>We zijn radeloos! Alle grote leiders Bush, Blair, Balkenende en noem ze maar op hebben hun aanhangers toegesproken.<br><br>Wij wachten met smart, op een teken van TIMMIE. Ons orakel, die ons altijd gerust weet te stellen, ZWIJGT!!<br><br>Vreselijk.<br><br>HOE ZIT HET NU MET DE TOEKOMST VAN DE FLORABOYS?????</div>
+</article>
+<article class="post" data-ts="20030320101800" id="p2">
+  <div class="ph"><span class="pa">Redactie</span><span class="pm">#2 · 2003-03-20 10:18</span></div>
+  <div class="pb">Timmie beraadt zich op een weloverwogen oordeel en wacht daarom nog even met het indienen van de nieuwe column.<br><br>De radactie begrijpt de paniek en het gevoel van onmacht dat leeft bij de fans maar roept op NIET te hamsteren en NIET een schuilkelder onder het florapark aan te leggen.</div>
+</article>
+<article class="post" data-ts="20030321014500" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2003-03-21 01:45</span></div>
+  <div class="pb">Ik kan tenminste zeggen dat er geen soldaatjes van Oranje meevechten. Hier in Australie zijn ze echt helemaal gek geworden over het feit dat ze het enige land op het zuidelijk halfrond zijn wat troepen heeft gestuurd naar de golf. Dit terwijl 71% van de bevolking tegen is maar Johnny Howard, de prime minitiature, heeft het doorgedrukt.</div>
+</article>
+<article class="post" data-ts="20030321104800" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2003-03-21 10:48</span></div>
+  <div class="pb">Vive la d\émocratie!<br>Vive le prime minitiature de l'Australie!</div>
+</article>
+<article class="post" data-ts="20030321155200" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2003-03-21 15:52</span></div>
+  <div class="pb">Over gek geworden gesproken, hier in Madrid is er iedere dag een demonstratie contra la guerra. Gisteren kwam ik er midden in terecht, op zoek naar vrijkaartjes voor de plaatselijk Dansen bij Jansen echt vreselijk fanatiek.<br><br>Adios,<br><br>J</div>
+</article>
+<article class="post" data-ts="20030324023500" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2003-03-24 02:35</span></div>
+  <div class="pb">Hopelijk zat je niet in de rellen van gisteren, want zo te zien waren die niet echt al te vredelievend.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

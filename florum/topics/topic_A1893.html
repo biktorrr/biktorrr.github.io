@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys steunen Tsjechen en Duitsers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys steunen Tsjechen en Duitsers</h1>
+<p class="tm">1 post · started 2006-11-03 12:14 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061103121400" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-11-03 12:14</span></div>
+  <div class="pb">Germans, Czechs unite to combat EU beer tax rise<br><br>By Louis Charbonneau<br>   <br>BERLIN, Nov 3 (Reuters) - The finance ministers of the<br>beer-drinking nations of Germany and the Czech Republic<br>announced on Friday they would join forces to block the European Commission\'s plans to raise minimum duties on beer.<br>                                <br>\"The position of the German government is that we will not<br>approve it. We don\'t want any increase in beer duties. We don\'t want beer to become more expensive,\" German Finance Minister Peer Steinbrueck told reporters after a meeting with his Czech counterpart.<br>                                <br>\"Given that they have such excellent pilsner beer it is<br>perhaps understandable that the Czechs have the same position as Germany,\" he added.<br>                                <br>Last month the European Union\'s executive arm proposed a 31<br>percent increase in the minimum EU duty on beer and spirits to reflect inflation since the tax was last set 14 years ago.<br>                           <br>The rise, which needs the unanimous approval of the EU\'s 25<br>member states, would add a euro cent (about 1.3 U.S. cents) to the price of a half litre of beer. <br>                                <br>Czech Finance Minister Vlastimil Tlusty said Prague was<br>prepared to veto the alcohol duty rise. He also rejected the<br>argument that the Commission\'s move was necessary to combat<br>alcoholism across the EU.<br>                                <br>\"This argument would be true if the proposal had been to<br>raise consumption tax on all alcoholic beverages. But since it doesn\'t cover wine, this argument doesn\'t hold up,\" Tlusty said.<br>                                <br>\"In fact, I would go so far as to say that the point of this<br>proposal is to give wine a favourable market position and that is precisely what we don\'t support,\" he said.<br>                                <br>Tlusty said he and Steinbrueck would express their views at<br>next week\'s regular meeting of EU finance ministers in Brussels.<br>                                <br>Czechs are the world\'s top consumers of beer, drinking<br>nearly 160 litres per person per year. The countries with next highest beer consumption are Ireland and Germany.<br>                                <br>Germany, a country of 82.4 million, is also the world\'s<br>third largest beer producer after the United States and China.<br>                                <br>Europe\'s brewing industry employs 2.6 million people<br>directly or indirectly in 3,000 breweries. Over a third of the breweries are in Germany, where they already face a 3 percentage point rise in value-added sales tax (VAT) from next year.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>lekker bezig zijn – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">lekker bezig zijn</h1>
+<p class="tm">3 posts · started 2005-06-02 11:26 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050602112600" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2005-06-02 11:26</span></div>
+  <div class="pb">Vloeken verboden in Staphorst<br><br>Uitgegeven: 2 juni 2005 11:21<br><br>STAPHORST - In het openbaar vloeken is voortaan verboden in Staphorst. De gemeenteraad heeft met ruime meerderheid ingestemd het verbod per direct op te nemen in de Algemeen Plaatselijke Verordening, meldde de gemeente Staphorst donderdag. <br>De gemeenteraadsleden stemden woensdagavond met dertien tegen vier stemmen in met een voorstel van ChristenUnie en SGP. De christelijke partijen geven hiermee een signaal af tegen taalverruwing. Meer dan een signaal is het niet, omdat het opleggen van sancties op het vloeken verboden is.  <br><br><br>Van de partijen in de Staphorster raad stemden alleen PvdA en de combinatie VVD/Gemeentebelangen tegen.</div>
+</article>
+<article class="post" data-ts="20050602153300" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2005-06-02 15:33</span></div>
+  <div class="pb">Als je vanaf morgen 'godverdomme', 'klootzak' of andere vloekwoorden roept op straat in Staphorst, handel je dus in strijd met de APV. Bestraft kun je overigens niet worden, want juridisch heeft de APV-regel geen waarde daar een vloekverbod in strijd is met de vrijheid van meningsuiting. Het heeft dus alleen een symbolische waarde.<br><br>De SGP wist eerder al met succes een vloekverbod in te voeren in de Zeeuwse gemeente Reimerswaal.</div>
+</article>
+<article class="post" data-ts="20050602160500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-06-02 16:05</span></div>
+  <div class="pb">allemaal gemeenten met 80+ prozent tegenstemmen </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

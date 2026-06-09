@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FF kijken??? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">FF kijken???</h1>
+<p class="tm">6 posts · started 2002-01-21 22:20 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020121222000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2002-01-21 22:20</span></div>
+  <div class="pb">Van de website van SSRA (www.ssra.nl)...........<br><br>Persoonlijk tintje....ik zit er over na te denken<br>om een keertje ergens lid van te worden...ben gewoon<br>benieuwd......meningen graag welkom......<br><br><br>AEQUO CUP<br>Woensdag 23 januari wordt op Soci\ëteit Pylades in de grote zaal een voetbal toernooi gehouden. Verschillende dispuutteams zullen strijden om de eer: beste voetbalteam der SSRA. De aanvang is om 20:00. Er is hier mogelijkheid tot voorinschrijving.<br><br> <br> <br>BACK TO THE NINETIES<br>Donderdag 24 januari zullen DJ's Paullus & Rex voetjes van de dansvloer doen laten door de beste hits uit de beginjaren '90 te draaien. Even weer terug naar de geweldige tijd van Ace of Base en Dr. Alban de Zweedse tandarts. De aanvang is om 22:00 op Soci\ëteit Pylades. <br> <br></div>
+</article>
+<article class="post" data-ts="20020122122700" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-01-22 12:27</span></div>
+  <div class="ps">lid lid</div><div class="pb">lid tja lid is lid he, ach je vergaart natuurlijk wel een zekere intellectuele verdieping van al die andere koters die daar al lid zijn, dus wat dat betreft gewoon doen, ondanks het feit dat je al zoveelste jaars bent en die kinderen hun vader zowat kan zijn... </div>
+</article>
+<article class="post" data-ts="20020122133800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-01-22 13:38</span></div>
+  <div class="pb">merlijn en ik zijn er een keertje wezen kijken:<br>bleek niks te zijn, veel geblaat weinig wol en <br>dergelijke, je kent t wel...<br></div>
+</article>
+<article class="post" data-ts="20020122172700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-01-22 17:27</span></div>
+  <div class="pb">Je zou je af kunnen vragen waarom je bij een vereniging<br>zou gaan. Ik denk dat daar voldoende legitieme redenen<br>voor zijn (denk aan: mensen leren kennen; meer drinken;<br>makkelijker omgang met vrouwen; netwerk opbouwen; er-<br>varing opdoen met besturen; etc.).<br><br>Er zijn ook drogredenen om bij een vereniging te gaan.<br>Een daarvan is dat je daar betere manieren zou leren.<br>Mensen die hun afspraken niet nakomen zijn -- zo is mijn<br>ervaring -- net zo vaak lid als niet.<br><br>Daar komt voor jou nog bij dat je nu natuurlijk al derde<br>jaars bent. De meeste feuten zijn eerstejaars. Ik sprak<br>Joost Gorter laatst, die al reunist was. Hij zei geen zin<br>te hebben in contact met mensen die zoveel jonger waren en <br>die hem weinig te vertellen hadden. Aan de andere kant<br>stort Wybren zich nog weer op bestuurlijke activiteiten.<br><br>Het is geen makkelijke keuze, die je grotendeels zelf<br>zult moeten maken. Laat je alleen niet teveel beinvloeden<br>door figuren als Michiel, Tube en Victor. </div>
+</article>
+<article class="post" data-ts="20020125184800" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2002-01-25 18:48</span></div>
+  <div class="pb">Goh, welke negatieve invloed zou er van contact met mij uit kunnen gaan?</div>
+</article>
+<article class="post" data-ts="20020125195100" id="p6">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#6 · 2002-01-25 19:51</span></div>
+  <div class="pb">Botbreuken mocht het fysiek contact betreffen.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

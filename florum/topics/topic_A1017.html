@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swasiland heerscht – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Swasiland heerscht</h1>
+<p class="tm">2 posts · started 2003-10-14 11:50 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031014115000" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-10-14 11:50</span></div>
+  <div class="pb">Nu eens niet iets over ons aller Koning Mswati II maar iets leuks over het nationale elftal:<br><br><h3>Spelers Swaziland vallen supporters aan</h3><br><br>Enkele voetbalinternationals van het nationaal team van Swaziland hebben de eigen supporters belaagd. Spottende opmerkingen van de fans na het 1-1 gelijke spel in het WK-kwalificatieduel met Kaapverdi\ë waren voor de spelers de spreekwoordelijke druppel. <br><br>De spelers dwongen bij het stadion hun buschauffeur tot stoppen, waarna ze buiten de confrontatie aangingen. Enkele supporters moesten daarbij sprinten voor hun leven. Een van de voetballers zwaaide met een stok. Gelukkig kon de politie snel erger voorkomen, waardoor het bij de schrik bleef. <br><br>Er was al langer spanning tussen het team en de supporters. Vorige maand vertrok bondscoach Mandla Dlamini, nadat hij hardhandig was aangepakt door de supporters. Na de nederlaag in een vriendschappelijke wedstrijd tegen Botswana (3-0) werd Dlamini vanaf de tribune met een regen van allerlei objecten bekogeld.</div>
+</article>
+<article class="post" data-ts="20031014193800" id="p2">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#2 · 2003-10-14 19:38</span></div>
+  <div class="pb">hmmm ik vind dit toch bedenkelijk hoor. STel je voor dat Sonck en Soetaars binnenkort  combikaart treinstellen in de hens gaan steken. Wel kicken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

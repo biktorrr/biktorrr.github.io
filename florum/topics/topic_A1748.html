@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys reistopic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys reistopic</h1>
+<p class="tm">5 posts · started 2006-04-12 15:08 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060412150800" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2006-04-12 15:08</span></div>
+  <div class="pb">kan het eigenlijk niet vinden, doordat we topics niet kunnen sticky-en, dus maar een nieuw topic<br><br>Hij is nog neyt 100 % zeker<br><br>Wie: BigT<br>Waar: San Francisco<br>Waarom: VVWF over de grenzen bezoeken<br>Hoe: multi-city tour via conferentie-tje<br>Wie betaald: Niemand, return ticket Phoenix normaal is net zo duur als return ticket met 1,5 dag stop in San Francisco. Jossyt mag natuurlijk altijd geld overmaken zodat AOG(AIO's over de grens) dit over de balk kan smijten.</div>
+</article>
+<article class="post" data-ts="20060412152700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2006-04-12 15:27</span></div>
+  <div class="pb">WIKT he must use OBi-One sayz...</div>
+</article>
+<article class="post" data-ts="20060412153700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-04-12 15:37</span></div>
+  <div class="pb">misschien is het een idee om onderdaad de florumpagina's een piepklein linkje te zetten naar "alle topics"? <br><br>Webmastert?</div>
+</article>
+<article class="post" data-ts="20060413094900" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2006-04-13 09:49</span></div>
+  <div class="pb">maar goed<br><br>Het gaat helemaal JEYT gebeuren.<br><br>Biggy gaat Merrel opzoeken!</div>
+</article>
+<article class="post" data-ts="20060413121100" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2006-04-13 12:11</span></div>
+  <div class="pb">Biggy, ik ken je onweerlegbare theorie achter 'wie betaald', maar zet dat 'heeft' er dan ajb gewoon tussen. <br><br>Veel plezier bij Merlijn in de US!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

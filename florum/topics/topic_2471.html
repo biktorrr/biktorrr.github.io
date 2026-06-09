@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>promotie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">promotie</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2008-08-29 07:06 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080829070600" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1&nbsp;·&nbsp;2008-08-29 07:06</span></div>
+  <div class="pb">Beste Boys<br><br>Nu mijn afscheid uit Nederland naderende is (13 Oktober vliegen we weg), wilde ik alvast even een paar dagen aankondigen<br><br>Wanneer: 10 Oktober<br>Waar : Leiden<br>Wat: Promotiefeest Tim en afscheidsfeest Tim en Laura. <br><br>Jullie zijn natuurlijk van harte uitgenodigd om hier bij aanwezig te zijn.<br><br>De promotie zelf is op 9 oktober om 16:15 in het Academiegebouw van Leiden. Mocht je hier bij willen zijn, laat het me weten, dan hou ik kaarten achter (misschien nodig, misschien niet, maar je weet het nooit met die Leidenaren.) <br></div>
+</article>
+<article class="post" data-ts="20080829082500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2&nbsp;·&nbsp;2008-08-29 08:25</span></div>
+  <div class="pb">terecht, Bakkie. Ik ben er iig de 10e bij.</div>
+</article>
+<article class="post" data-ts="20080829085300" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3&nbsp;·&nbsp;2008-08-29 08:53</span></div>
+  <div class="pb">Hmmm..tegen zo een dubbelklapper kan mijn afstudeerborreltje natuurlijk niet tegenop. Daarnaast neem ik graag een optie op een kaartje voor je promotie (nog niet zeker ivm eventuele arbeidsverplichtingen).</div>
+</article>
+<article class="post" data-ts="20080829142600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4&nbsp;·&nbsp;2008-08-29 14:26</span></div>
+  <div class="pb">Ben iig bij het feestje. Moet kijken of ik ook bij de promotie-sesetoko kan zijn.</div>
+</article>
+<article class="post" data-ts="20080829151300" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5&nbsp;·&nbsp;2008-08-29 15:13</span></div>
+  <div class="pb">Stond al in mijn agenda!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

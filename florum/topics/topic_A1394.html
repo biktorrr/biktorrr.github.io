@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sportieve wraak – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Sportieve wraak</h1>
+<p class="tm">11 posts · started 2005-01-14 17:40 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050114174000" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-01-14 17:40</span></div>
+  <div class="pb">Op de grappenmakers die mij een maandelijks stukje over het Bon Aventure van Kalou wilden laten schrijven: ik heb zondag een interview met hem nav de aanstaande wedstrijden tussen Ajax en Auxerre.</div>
+</article>
+<article class="post" data-ts="20050114174600" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2 · 2005-01-14 17:46</span></div>
+  <div class="pb">hahahahha! Geweldig!</div>
+</article>
+<article class="post" data-ts="20050114175400" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2005-01-14 17:54</span></div>
+  <div class="pb">heheh wat terecht, succes!</div>
+</article>
+<article class="post" data-ts="20050115022800" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2005-01-15 02:28</span></div>
+  <div class="pb">respect!</div>
+</article>
+<article class="post" data-ts="20050115132600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-01-15 13:26</span></div>
+  <div class="pb">mooi!<br></div>
+</article>
+<article class="post" data-ts="20050115144200" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-01-15 14:42</span></div>
+  <div class="pb">Bona Kalou vieze kakkerlak <br>vieze kakkerlak (2x)<br><br>Maak er een verwoestend artikel van Oli, en probeer het algemene belang boven je carriere te zien. Dat is belangrijk in dit geval. <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20050116163400" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2005-01-16 16:34</span></div>
+  <div class="pb">Ben net terug uit Auxerre waar ik gister de immer spannende derby van het oosten Auxerre - Sochaux (2-0) heb mogen aanschouwen en waar ik vanmorgen dus een interview had met Kalou. <br>Zit ik daar in een kamer vragen te stellen aan Bonaventure, komt de legendarische trainer Guy Roux ineens binnenlopen. En niet gewoon binnenlopen: naakt binnenlopen, met een handdoekje dat nauwelijks iets bedekte. 'Doe een beetje voorzichtig met je antwoorden,' zei hij tegen Kalou en hij ging er weer vandoor. Rare club dat Auxerre. <br>Het interview is verder wel redelijk geslaagd, ook al was hij niet zeer spraakzaam. Enkele hoogtepunten: 'ik wil zo snel mogelijk weg bij Auxerre' en (over de saaiheid van het veredelde dorp Auxerre 'ik wist toen ik tekende ook wel dat het geen New York was.'</div>
+</article>
+<article class="post" data-ts="20050116212800" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2005-01-16 21:28</span></div>
+  <div class="pb">erg erg mooi allemaal...<br></div>
+</article>
+<article class="post" data-ts="20050116223100" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2005-01-16 22:31</span></div>
+  <div class="pb">Misschien kun je het nog verkopen aan de Feyenoordkrant...</div>
+</article>
+<article class="post" data-ts="20050117095400" id="p10">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#10 · 2005-01-17 09:54</span></div>
+  <div class="pb">Hahahaha een naakte Guy Roux !! Smakeloos doch kostelijk!<br>Dat ga je er toch wel in verwerken hoop ik?<br><br></div>
+</article>
+<article class="post" data-ts="20050117113400" id="p11">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#11 · 2005-01-17 11:34</span></div>
+  <div class="pb">Reken maar</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

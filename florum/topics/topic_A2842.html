@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Digipanel Haarlem – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Digipanel Haarlem</h1>
+<p class="tm">2 posts · started 2010-03-04 18:54 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100304185400" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-03-04 18:54</span></div>
+  <div class="pb">2010-03-04 18:52:00<br><br>Digipanel Haarlem<br><br>Boys, girls,<br><br>Gemeente haarlem heeft een aardige manier om haar inwoners digitaal te raadplegen over diverse zaken. Om het zwaartepunt van de uitkomsten iets meer te verleggen naar gelijkgestemden lijkt het mij dan weer lollig als de haarlemmers onder jullie je ervoor opgeven.<br>klikt allen <a href="http://www.haarlem.nl/haarlem-a-z/feiten-en-cijfers/digipanel/"> hierrrr </a><br><br>Groot pluspunt i.v.m. andere online vraagbankjes, is dat je hier wel degelijk feedback en resultaten te zien krijgt.<br><br><br>TN</div>
+</article>
+<article class="post" data-ts="20100313132900" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-03-13 13:29</span></div>
+  <div class="pb">Moet je daar Haarlemmer voor zijn? :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

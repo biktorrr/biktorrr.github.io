@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>timmie tikt? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">timmie tikt?</h1>
+<p class="tm">8 posts · started 2003-03-07 12:50 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030307125000" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-03-07 12:50</span></div>
+  <div class="pb">waar blijft de nieuwe timmie tikt??????????????</div>
+</article>
+<article class="post" data-ts="20030317112500" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-03-17 11:25</span></div>
+  <div class="pb">Ik begin bijna terug te verlangen naar de Prognose van de Penose. Tikken nou Timmie!</div>
+</article>
+<article class="post" data-ts="20030318093100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-03-18 09:31</span></div>
+  <div class="pb">Dit duurt gewoon te lang.</div>
+</article>
+<article class="post" data-ts="20030318094100" id="p4">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#4 · 2003-03-18 09:41</span></div>
+  <div class="pb">ik tik niet op commando, aangezien ik niet een machine ben , maar mezelf meer als inspirator zie. Voor mensen die in Parijs zitten zeiken en zelf nauwlijks iets over hun bestaan doorrapporteren tik ik zeker niet op commando. Maar goed, ik ben er wel met eentje bezig.</div>
+</article>
+<article class="post" data-ts="20030318103300" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2003-03-18 10:33</span></div>
+  <div class="pb">terecht gepareerd tikkende timmie, wat een polemiek. Vol spanning wacht de web-redactie uw kopij af.</div>
+</article>
+<article class="post" data-ts="20030318103600" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2003-03-18 10:36</span></div>
+  <div class="pb">Als men de topkrant Het Parool zou lezen, dan wel het nog steeds onterecht licht onderschatte vakblad voor francofielen, En France, zou men perfect op de hoogte zijn de ce qui se passe ici, terwijl ik, voor nieuws omtrent Timmie, toch echt afhankelijk ben van de columns.</div>
+</article>
+<article class="post" data-ts="20030318103700" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2003-03-18 10:37</span></div>
+  <div class="pb">Timmie is geen tikmachine, dat het even duidelijk doorkomt in Parijs. Maar er komt er toch weer eentje aan... </div>
+</article>
+<article class="post" data-ts="20030318133600" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2003-03-18 13:36</span></div>
+  <div class="pb">Timmie is nu al drie (!) uur aan het tikken, dit wordt een gigalomane Timmie Tikt. Ik neem alvast morgen vrij.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

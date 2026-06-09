@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BilbyLeague - Spel opvatting – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">BilbyLeague - Spel opvatting</h1>
+<p class="tm">4 posts · started 2004-02-17 15:48 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040217154800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-02-17 15:48</span></div>
+  <div class="pb">Het kan zijn dat ik door mijn afwezighied de laatste tijd aangaande het ballen veel heb gemist over de invulling van het spelen in de BilbyLeague(BL). Ik heb daarom nog wat dingetjes waarmee ik zit die ik graag in langer dan een halfuurtje voor de wedstrijd doorgesproken zou willen hebben, en daar is dit florum ook min of meer voor bedoeld.<br>Ondanks dat ik keepen voor de Floraboys beschouw als een groot privilege zou ik toch ook graag in het veld staan. Ik hoop graag te horen wat jullie idee was over het invullen van de (keepers)positie(s).<br>Verder ben ik voor, afgaande op de voortreffelijke wedstrijd bij het zaalballen jongstleden, 1-op-1 te verdedigen en niet 'in de zone'. Het overnemen ging ook uitstekend dus ik hoop dat we dat zo vast kunnen houden.<br>Scheenbeschermers zijn verplicht in de BL. Ik hoop dat iedereen hieraan denkt. Als we op kunstgras spelen zijn Mateja-sokken ook geen overbodige luxe als je je knieen heel wilt houden (oh me dramaqueen)<br>Nog een laatste vraag (aan Josseyt): weten de aspirant-floraboys hun weg te vinden naar de floraboys-site? Het lijkt me voor de onderlinge communicatie handig als dit zo is.<br><br></div>
+</article>
+<article class="post" data-ts="20040217154900" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-02-17 15:49</span></div>
+  <div class="pb">ik geloof dat merlijn ook nog wat questies heeft. :)</div>
+</article>
+<article class="post" data-ts="20040217160100" id="p3">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#3 · 2004-02-17 16:01</span></div>
+  <div class="pb">scheenbeschermers schmeenbeschermers<br><br>even een duit in het zakske:<br><br>kan joost een lijst met alle teamgenoten posten, eventueel met keeper-suggesties</div>
+</article>
+<article class="post" data-ts="20040223142800" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2004-02-23 14:28</span></div>
+  <div class="pb">ik zal vanavond wel een wedstrijd keepen, als iemand anders dan gaarne de tweede wil keepen dan kan ik bij die tweede mijn assist en goal meepikken.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

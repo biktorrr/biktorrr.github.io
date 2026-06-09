@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hoge hoge tijding – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hoge hoge tijding</h1>
+<p class="tm">8 posts · started 2007-07-05 10:07 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070705100700" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-07-05 10:07</span></div>
+  <div class="pb">gisteravond kwam vanuit zeeland het nieuws dat Frankie "never loses a case" Pitstra z'n laatste tentamen heeft gehaald. Hoge tijding dus!<br><br></div>
+</article>
+<article class="post" data-ts="20070705101100" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-07-05 10:11</span></div>
+  <div class="pb">Klinkt inderdaad als hooghe teydhing! Chapeau!</div>
+</article>
+<article class="post" data-ts="20070705110000" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2007-07-05 11:00</span></div>
+  <div class="pb">hebben we een winnaar?</div>
+</article>
+<article class="post" data-ts="20070705123100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2007-07-05 12:31</span></div>
+  <div class="pb">GefeliciPitstra!!</div>
+</article>
+<article class="post" data-ts="20070705172100" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2007-07-05 17:21</span></div>
+  <div class="ps">Afstudeeridols!</div><div class="pb">Bedankt voor de felicitaties, hopelijk gaat de winst in afstudeeridols mij veel goeds brengen!</div>
+</article>
+<article class="post" data-ts="20070705201500" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2007-07-05 20:15</span></div>
+  <div class="pb">dat is een zekere hooghe tijding.<br><br>gefeliciteerd Frankie!</div>
+</article>
+<article class="post" data-ts="20070705210200" id="p7">
+  <div class="ph"><span class="pa">GayMaster</span><span class="pm">#7 · 2007-07-05 21:02</span></div>
+  <div class="pb">Ik stel voor om hem het volgende hoooghe kado te presenteren!<br><img src="http://www.zeroteez.nl/uploads/products/150__orig.jpg"></div>
+</article>
+<article class="post" data-ts="20070706095500" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-07-06 09:55</span></div>
+  <div class="pb">Gefeliciteerd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

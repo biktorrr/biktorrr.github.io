@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Interview Kalou – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Interview Kalou</h1>
+<p class="tm">8 posts · started 2005-02-15 14:55 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050215145500" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-02-15 14:55</span></div>
+  <div class="pb">Ze hebben het zowaar op de site gezet:<br><br>http://www.parool.nl/sport/2005/FEB/021505-2.html</div>
+</article>
+<article class="post" data-ts="20050215154500" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2005-02-15 15:45</span></div>
+  <div class="pb">terecht interview. Fijne korte zinnetjes ook.</div>
+</article>
+<article class="post" data-ts="20050216123300" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2005-02-16 12:33</span></div>
+  <div class="pb">Mooi dat roux dit stuk laat doorgaan nadat je het hem heb voorgelegd <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0> Zitten er nou dingen in die jij niet hebt getikt? Ik vind het wel frappant dat ze de prestaties van de afgelopen week in een stuk van drie weken oud verwerken.</div>
+</article>
+<article class="post" data-ts="20050216145200" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2005-02-16 14:52</span></div>
+  <div class="pb">leuk.. leuk.. nou moet ik wel zeggen dat die laatste quote toch wel een beetje feyenoord propaganda is.. ga je ons verraden Oli4?</div>
+</article>
+<article class="post" data-ts="20050216150500" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-02-16 15:05</span></div>
+  <div class="pb">Het is toch een quote Biktie?<br><br>Als er iets had gestaan als "en met bovenstaande constatering is uw verslaggever het zeker eens" dan was Oli's laptop allang geblokkeerd op het Florum.<br><br></div>
+</article>
+<article class="post" data-ts="20050216153800" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2005-02-16 15:38</span></div>
+  <div class="pb">Dat ene zinnetje over de actuele stand hadden ze er inderdaad tussen gezet (klopt trouwens niet, want ze staan vierde, een paar punten achter nummer twee, maar goed).<br><br>Het slotcitaat is bedoeld om Raffel en z'n mannen (trouwe Parool-lezers) lekker op scherp te zetten.</div>
+</article>
+<article class="post" data-ts="20050217160600" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2005-02-17 16:06</span></div>
+  <div class="pb">Komt er nu een vervolg interview? Misschien dat je Kalou dan kunt vragen hoe het voelt om meer dan negentig minuten lang vernederd te worden door Johnny Heitinga. Ben erg benieuwd naar z'n antwoord.</div>
+</article>
+<article class="post" data-ts="20050224234500" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2005-02-24 23:45</span></div>
+  <div class="pb">tja, waar blijft dat vervolg?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

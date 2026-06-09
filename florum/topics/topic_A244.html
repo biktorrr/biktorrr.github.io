@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KUT – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">KUT</h1>
+<p class="tm">11 posts · started 2001-09-18 10:50 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010918105000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2001-09-18 10:50</span></div>
+  <div class="pb">KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT KUT, KUT!</div>
+</article>
+<article class="post" data-ts="20010918134200" id="p2">
+  <div class="ph"><span class="pa">PTK</span><span class="pm">#2 · 2001-09-18 13:42</span></div>
+  <div class="ps">kut</div><div class="pb">KUTKUTKUTKUTKUTKUTKUTKUTKUT</div>
+</article>
+<article class="post" data-ts="20010918135900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-09-18 13:59</span></div>
+  <div class="pb">Maar wel topscorer.</div>
+</article>
+<article class="post" data-ts="20010918163200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-09-18 16:32</span></div>
+  <div class="pb">en een punt!<br><br>maar het mag natuurlijk nooit gebeuren (vrij naar Hans Kraaij sr.): de winst nog uit handen geven in de slotfase. En dat is inderdaad gewoon ronduit KUT! <br>Volgende week beter.</div>
+</article>
+<article class="post" data-ts="20010918172900" id="p5">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#5 · 2001-09-18 17:29</span></div>
+  <div class="pb">Sluit me aan bij alle KUT uitingen MAAR zie ZvdB wel als sterke tegenstander en daar kunnen we wel een paar positieve gedachtes uithalen.<br><br>Wel kut verder.</div>
+</article>
+<article class="post" data-ts="20010918225100" id="p6">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#6 · 2001-09-18 22:51</span></div>
+  <div class="ps">De vergelijking is evident</div><div class="pb">Ik zie nu al dat Ajax het grote voorbeeld is...zeker en fier uit ..en thuis een beetje rammel spelen.<br>VOlgende keer alle punten mee naar Haarlem.Komt goed.<br><br>AI BIELIEF IN JOE!</div>
+</article>
+<article class="post" data-ts="20010919104200" id="p7">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#7 · 2001-09-19 10:42</span></div>
+  <div class="ps">ik wil hier nog aan</div><div class="pb">toevoegen.... : het was ronduit...<br>kutkutkutkutkutkutkutkutterdekutttteeekutkkuututtt</div>
+</article>
+<article class="post" data-ts="20010919144600" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2001-09-19 14:46</span></div>
+  <div class="ps">dudes</div><div class="pb">het is wel fijn om te weten wie wat zegt,<br>er zijn af en toe berichtjes zonder<br>Naam afzender.<br>sux<br></div>
+</article>
+<article class="post" data-ts="20010919153700" id="p9">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#9 · 2001-09-19 15:37</span></div>
+  <div class="pb">Sluit me aan bij alle KUT uitingen MAAR zie ZvdB wel als sterke tegenstander en daar kunnen we wel een paar positieve gedachtes uithalen.<br><br>Wel kut verder.<br><br>Sorry VIC</div>
+</article>
+<article class="post" data-ts="20010919192900" id="p10">
+  <div class="ph"><span class="pa">Lort Gob</span><span class="pm">#10 · 2001-09-19 19:29</span></div>
+  <div class="ps">Kut</div><div class="pb">Al die vleeswaren zomaar op het Florum....Ik hou het liever op:<br><br>BLEH</div>
+</article>
+<article class="post" data-ts="20010920121100" id="p11">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#11 · 2001-09-20 12:11</span></div>
+  <div class="pb">Dan moet je die vleeswaren die +- 1 keer per halve minuut naast je florum, onder de svdm langskomen eens bekijken. Da's pas ranzig</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

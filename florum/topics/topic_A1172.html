@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Taasje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Taasje</h1>
+<p class="tm">9 posts · started 2004-04-14 15:58 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040414155800" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2004-04-14 15:58</span></div>
+  <div class="pb">Victor, geef me eens je adres: ik heb nog een mooie foto voor je in de aanbieding die het zeker goed zal doen op de voorpagina van de site. Scannen kan ik hiet helaas niet.</div>
+</article>
+<article class="post" data-ts="20040414161000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-04-14 16:10</span></div>
+  <div class="pb">NEIT!</div>
+</article>
+<article class="post" data-ts="20040414162400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-04-14 16:24</span></div>
+  <div class="ps">heeeeeeejjj!</div><div class="pb">Victor de Boer<br>Kenaustraat 9 <br>2011 MV <br>Haarloheim<br></div>
+</article>
+<article class="post" data-ts="20040414162900" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2004-04-14 16:29</span></div>
+  <div class="pb">Hij zit in een envelop opweg naar de Pays Bas. Zonder stakingen van de Franse post zal hij nog voor het weekend NL bereiken. De Franse post staakt echter vaker wel dan niet, maar daar schrijf ik nog wel eens een degelijk opiniestuk over.</div>
+</article>
+<article class="post" data-ts="20040414163700" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-04-14 16:37</span></div>
+  <div class="pb">Pfff, dat zoiets dan ook opduikt --wat het ook moge zijn-- precies voor het REVT. Ongelovelijk!</div>
+</article>
+<article class="post" data-ts="20040415105800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2004-04-15 10:58</span></div>
+  <div class="pb">Hm, jammer dat ik morgen voor de post de deur uitga, maar het is natuurlijk ook mooi om te voetballen terwijl je weet dat er thuis een prachtkiek op je te wachten ligt.<br></div>
+</article>
+<article class="post" data-ts="20040415111300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2004-04-15 11:13</span></div>
+  <div class="pb">Misschien is het mogelijk de kiek per koerier te laten opsturen naar het REVT. Zou wel een gigantische boost geven...</div>
+</article>
+<article class="post" data-ts="20040426154500" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2004-04-26 15:45</span></div>
+  <div class="pb">Is-ie eigenlijk nog aangekomen? Ik had toch zeker wel een plekje in de federt verwacht...</div>
+</article>
+<article class="post" data-ts="20040426154600" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-04-26 15:46</span></div>
+  <div class="pb">sorry, ik heb nog helemaal niet gereageerd. HIj is inderdaad aangekomen, ik vond 'm op het moment dat ik terugkwam van het REVT. Hij is skitterend. <br><br>Ik moet de foto even laten scannen, ik zal dit zsm laten gebeuren en dan gooi ik 'm de fader in.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

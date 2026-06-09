@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maandag zaalvoetbal – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Maandag zaalvoetbal</h1>
+<p class="tm">10 posts · started 2001-09-16 22:35 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010916223500" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2001-09-16 22:35</span></div>
+  <div class="pb">Jongens wie is er maandagavond van de partij. Als iedereen over wie ik geruchten hoor namelijk niet komt staan we met +- 5 man en dat betekent dat er reserves moeten worden opgetrommeld. <br><br>Laat dus allemaal ff weten of je komt of niet.<br><br>Frank en ik zijn er in ieder geval. Scherp en bloeddorstig.<br><br></div>
+</article>
+<article class="post" data-ts="20010917105800" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2001-09-17 10:58</span></div>
+  <div class="pb">ik ben er ook.. alles geregeld met werk...<br><br>TuuT Tim</div>
+</article>
+<article class="post" data-ts="20010917133100" id="p3">
+  <div class="ph"><span class="pa">Famous Frank</span><span class="pm">#3 · 2001-09-17 13:31</span></div>
+  <div class="ps">en dat is driieee</div><div class="pb">Tuut, WJ en mijn persoontje... dat is niet veel....<br>ik reken ook op merlijn natuurlijk... maar dat is vier.. en <br>dat is dus te kort.... we moeten zeker 2 wissels hebben hoor</div>
+</article>
+<article class="post" data-ts="20010917153800" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2001-09-17 15:38</span></div>
+  <div class="ps">watnouweer?</div><div class="pb">wat is dit nou? iedereen komt vanavond toch?<br><br>ik en merre wel iig.<br>en michiel ook en kenobi en oli4 ook en <br>Wj en Frank dus. Timme ook hoor ik hier..<br><br>Alleen Maarten D dus niet, ik geloof dat we <br>weten waarom<br><br>dat zijn dus 8 mannentjes<br><br><br>Robert zou komen kijken (9?)<br><br></div>
+</article>
+<article class="post" data-ts="20010917154200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-09-17 15:42</span></div>
+  <div class="pb">Ik zal er zijn. Is er nog ergens afgesproken van tevoren? (intanken?)</div>
+</article>
+<article class="post" data-ts="20010917162000" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2001-09-17 16:20</span></div>
+  <div class="pb">intanken is ok ole ole</div>
+</article>
+<article class="post" data-ts="20010917162700" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2001-09-17 16:27</span></div>
+  <div class="pb">Na borrelen misschien maar intanken doen we pas als we al kampioen <br>zijn. Maareh 21:15 USC? Begint volgens mij om 21:45.<br><br></div>
+</article>
+<article class="post" data-ts="20010917163000" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2001-09-17 16:30</span></div>
+  <div class="pb">Ik moet fluiten om 21.45 uur. Ik probeer er om 21.00 te zijn om pas te halen en kastje te begrijpen, waarmee je de stand kuhnt bedienen.</div>
+</article>
+<article class="post" data-ts="20010917164100" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2001-09-17 16:41</span></div>
+  <div class="pb">uiteraard ben ik er ook. Dan ook maar om 21h voor reeds door merlijn genoemde rompslomp</div>
+</article>
+<article class="post" data-ts="20010917182800" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2001-09-17 18:28</span></div>
+  <div class="pb">Ik zal er proberen om er om 21:30 te zijn, zodat men mij kan uitleggen hoe het kastje werkt (als merlijn en oli4 dat hebben uitgezocht :)). Ik ga wel met de wagen dus ik moet ff uitzoeken hoe ik moet rijden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

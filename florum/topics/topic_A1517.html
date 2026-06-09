@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond parteej! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond parteej!</h1>
+<p class="tm">10 posts · started 2005-06-10 13:09 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050610130900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-06-10 13:09</span></div>
+  <div class="pb">Merl en ik gaan waarschijnlijk vanavond ergens in Amsterdam naar de bios-biktie. Dear Wendy of Zin Zity. Daarna hard drinken in de stad. Wie doen er mee?</div>
+</article>
+<article class="post" data-ts="20050610161400" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2005-06-10 16:14</span></div>
+  <div class="pb">Ik stuur wel een sms als ik in A'dam ben..weet nog niet hoe laat precies.</div>
+</article>
+<article class="post" data-ts="20050610173900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-06-10 17:39</span></div>
+  <div class="pb">Tube en Ca hebben zich gecommit. <br><br>date: 18.25 voor pathe de munt.<br></div>
+</article>
+<article class="post" data-ts="20050611094700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-06-11 09:47</span></div>
+  <div class="pb">Ik had die laatste Guinness echt niet meer moeten nemen <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0> Heb nog nooit zo'n kater gehad...</div>
+</article>
+<article class="post" data-ts="20050611192200" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-06-11 19:22</span></div>
+  <div class="pb">Spoel hem anders ff weg vanavond in de Bruxelles. Ik zal je iig gezelschap houden...</div>
+</article>
+<article class="post" data-ts="20050611193500" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2005-06-11 19:35</span></div>
+  <div class="pb">wij benne in bruxelles<br>vanaf 2200</div>
+</article>
+<article class="post" data-ts="20050612135400" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2005-06-12 13:54</span></div>
+  <div class="pb">Ik heb ook nog nooit iemand zo snel een glas guinness weg zien tanken. Tegen het gevaarlijke aan.</div>
+</article>
+<article class="post" data-ts="20050618130600" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2005-06-18 13:06</span></div>
+  <div class="pb">vanavond terrasje pakken in Haarlem?</div>
+</article>
+<article class="post" data-ts="20050618140700" id="p9">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#9 · 2005-06-18 14:07</span></div>
+  <div class="pb">prima idee, je bent ook hartelijk welkom om voor het terrasje bij mij ballen te komen kijken als het floraballen niet doorgaat.<br>Botermarkt?<br></div>
+</article>
+<article class="post" data-ts="20050618150100" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2005-06-18 15:01</span></div>
+  <div class="pb">Ben rond 21 a 22 uur in Haarlem denk ik, ik bel wel dan</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

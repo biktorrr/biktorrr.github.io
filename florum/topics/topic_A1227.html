@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Koning Mswati blijft lekker bezig – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Koning Mswati blijft lekker bezig</h1>
+<p class="tm">2 posts · started 2004-06-22 15:17 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040622151700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-06-22 15:17</span></div>
+  <div class="pb">(voor de koning mswati-volgers onder de Floraboys)<br><br>Swazi king, Africa's last absolute monarch, takes 11th wife<br><br><br>LUDZIDZINI, Swaziland (AFP) - Swazi King Mswati III, Africa's last absolute monarch, has taken a new wife, bringing the number of official spouses to 11, a royal source said. <br><br><br>AFP/File Photo <br> <br>   <br><br>King Mswati III and 20-year-old Zena Mahlangu tied the knot last week at the traditional headquarters of the monarchy just outside the capital city of Mbabane. <br><br><br>"The occasion started in the wee hours of the morning on Wednesday and it dragged on until afternoon," the royal source told AFP. <br><br><br>Zena Mahlangu's mother, Lindiwe Dlamini, had tried in vain to prevent the king from marrying her daughter after claiming that she had been abducted by two royal emissaries on October 18, 2002. <br><br><br>Royalists managed to overrule the high court of Swaziland ruling that Zena should appear before it to say whether she was happy living in the royal household as one of the king's two fiancees. <br><br><br>Media reports later quoted Zena as saying she was happy living in the royal household but her mother dimissed them as false. <br><br><br>Born on April 6, 1968, only four months before Swaziland attained independence from Britain, the British-educated King Mswati is, like the country he rules, a mix of traditional African and modern Western influences. <br><br><br>While he has embraced Western-style market-driven economic policies, the king has adhered to traditional political culture, which allows him full control of the executive, judiciary and executive arms of government. <br><br><br>Like all the Swazi kings before him, he is a polygamist. <br><br><br>The monarch is increasingly being criticised for his lavish lifestyle while most of his subjects live in poverty and have to grapple with AIDS (news - web sites), food shortages and severe drought. <br><br><br>The king recently attracted sweeping criticism for ordering new palaces worth 14 million dollars for his then 10 wives and two fiancees at a time when the country faces a deficit of around 145 million dollars. <br><br><br>His kingdom has suffered its fourth successive year of drought, combined with a serious problem of AIDS, which affects about 38 percent of the adult population, according to the latest government figures. <br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20040622163000" id="p2">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#2 · 2004-06-22 16:30</span></div>
+  <div class="pb">Nou lijkt me juist normaal om zoveel vrouwen te nemen als er zoveel AIDS is. Als het niet je vrouw is weet je niet of het wel veilig is. Je kan toch niet van een man verwachten dat hij het bij 1 vrouw houdt? Dat meisje ahd overigens in vrijheid 38% kans op AIDS gehad. <br> </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

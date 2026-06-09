@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dreigende schorsing Puite broers – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dreigende schorsing Puite broers</h1>
+<p class="tm">1 post · started 2003-11-03 20:53 by woordvoerder floraboys bestuur</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031103205300" id="p1">
+  <div class="ph"><span class="pa">woordvoerder floraboys bestuur</span><span class="pm">#1 · 2003-11-03 20:53</span></div>
+  <div class="pb">Ondanks vele waarschuwingen gaat het er waarschijnlijk toch van komen. Ere (bestuurs)lid Arie van Bergen gaat het herhaaldelijk muurtje trappen van de Puite broers op zaterdag avond bestraffen met een langdurige schorsing van de heren. Ook het publieke drankmisbruik van de vvwf heeft de irritatiedrempel gepasseerd en zal consequenties hebben. Alle drie zijn in ieder geval tot 17 november geschorst. Op die dag zal het bestuur beslissen of de drie de transfer lijst op gaan of een nieuwe kans krijgen<br><br>Het is niet de eerste keer dat de Floraboys bestraft worden wegens wangedrag. Eerder deze maand bleek de vvwf een affaire te hebben met de partner van een andere floracied en wie herinnert zich de orgie niet na afloop van het enige kampioenschap van de boys tot nu toe.<br><br>het bestuur beraadt zich op actie</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

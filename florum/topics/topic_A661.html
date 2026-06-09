@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Einde Feest in de Koning – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Einde Feest in de Koning</h1>
+<p class="tm">8 posts · started 2002-12-19 14:34 by Lh</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021219143400" id="p1">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#1 · 2002-12-19 14:34</span></div>
+  <div class="pb">Top Idee om het begin van de vakantie te vieren!!!</div>
+</article>
+<article class="post" data-ts="20030101065900" id="p2">
+  <div class="ph"><span class="pa">Verslaggevert</span><span class="pm">#2 · 2003-01-01 06:59</span></div>
+  <div class="pb">Het nieuwjaarsfeest in cafe de Koning is om 6:10 in een anti-climax geindigd. Een massale vechtpartij die was begonnen op de dansvloer, zette zich buiten voort. De leiding van de Koning had wijselijk besloten de tent <br>linea recta te sluiten. Buiten zorgde een achttal <br>politiebolides en twee dozijn agenten voor de broodnodige rust. De verslaggevert heeft zich wijselijk op een afstand gehouden en heeft zich na het concluderen dat de verwanten niet langer in de gevarenzone zaten huiswaarts gekeerd.<br>Het is echter niet bekend of Casper B. het voorval heeft overleeft. De betrokkene was laatst aangetroffen bekkende met een voor de verslaggervert anoniem persoon onder de zestien.</div>
+</article>
+<article class="post" data-ts="20030102092700" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-01-02 09:27</span></div>
+  <div class="pb">HUH!? Wie waren daar nog allemaal, dan? De eerste twee a drie uur van het nieuwe jaar zijn een beetje langs me heengegaan. Jammer.</div>
+</article>
+<article class="post" data-ts="20030102120900" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-01-02 12:09</span></div>
+  <div class="pb">zijn de ruiten van de tube nog heel?</div>
+</article>
+<article class="post" data-ts="20030102172300" id="p5">
+  <div class="ph"><span class="pa">Casper B.</span><span class="pm">#5 · 2003-01-02 17:23</span></div>
+  <div class="ps">Einde feest van de koning</div><div class="pb">Casper wil hierbij alles ontkennen wat hij met minderjarige zou hebben gedaan en als er al iets gebeurt zou zijn dat op volledige vrijwillige basis was.<br><br>Met vriendelijk groet,<br><br>Casper b.</div>
+</article>
+<article class="post" data-ts="20131109115547" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2013-11-09 11:55</span></div>
+  <div class="pb"><a href="http://www.nrc.nl/nieuws/2013/11/09/cafes-straks-alleen-nog-open-voor-achttienplussers/">Einde Feest in de Koning</a></div>
+</article>
+<article class="post" data-ts="20131109123354" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2013-11-09 12:33</span></div>
+  <div class="pb">Tja, ik vind het best lullig eigenlijk. We hebben toch een hoop lol gehad op ons 16e in de kroeg.</div>
+</article>
+<article class="post" data-ts="20131111154914" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2013-11-11 15:49</span></div>
+  <div class="pb">En daarna, veel lol in de brievenbus en het portiekje <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0>.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

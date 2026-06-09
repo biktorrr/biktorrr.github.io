@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VrIJdag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VrIJdag</h1>
+<p class="tm">8 posts · started 2011-03-08 19:14 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110308191455" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2011-03-08 19:14</span></div>
+  <div class="pb">Boys, ik heb vandaag mijn visum voor de VS toegestuurd gekregen, dus iet giet oan vanaf eind deze maand. Aangezien ik de komende weken grotendeels heb vol gepland met nog een aantal verhalen uit Fra, verhuizen en shizzle regelen, lijkt het me gezel jullie in elk geval vrijdag nog even te zien. Hoe denken jullie over een pilzenbiertje na het werk bij 't IJ?</div>
+</article>
+<article class="post" data-ts="20110309095345" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2011-03-09 09:53</span></div>
+  <div class="pb">Dat wordt denk ik een neit.</div>
+</article>
+<article class="post" data-ts="20110309140919" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2011-03-09 14:09</span></div>
+  <div class="pb">Succes met je reis en verblijf, wij hebben vrijdag al een andere afspraak.</div>
+</article>
+<article class="post" data-ts="20110309140919" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2011-03-09 14:09</span></div>
+  <div class="pb">Succes met je reis en verblijf, wij hebben vrijdag al een andere afspraak.</div>
+</article>
+<article class="post" data-ts="20110309142655" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2011-03-09 14:26</span></div>
+  <div class="pb">Drouille zet de koninklijke multiplier in, fraai werk <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br>Vrijdag klinkt redelijk primaatjes!</div>
+</article>
+<article class="post" data-ts="20110309151612" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2011-03-09 15:16</span></div>
+  <div class="pb">Het lIJkt nu Haarlem te worden trouwens. </div>
+</article>
+<article class="post" data-ts="20110309184045" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2011-03-09 18:40</span></div>
+  <div class="pb">BruXelles om precies te zijn. Daghap voor de liefhebbert!</div>
+</article>
+<article class="post" data-ts="20110309205106" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2011-03-09 20:51</span></div>
+  <div class="pb">Had me gezellig geleken, ik heb alleen de papa avond aankomende vrijdag.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

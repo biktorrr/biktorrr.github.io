@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website Veranderingen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Website Veranderingen</h1>
+<p class="tm">4 posts · started 2002-01-28 14:33 by Mc</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020128143300" id="p1">
+  <div class="ph"><span class="pa">Mc</span><span class="pm">#1 · 2002-01-28 14:33</span></div>
+  <div class="pb">Aangezien onze 'host' zichzelf eens onder handen gaat nemen. Zal de website een tijdje offline zijn, de florums blijven wel bewaard aangezien die op een andere server staan. De email adressen zullen niet beschikbaar zijn.<br>Of het adres www.floraboys.com zal blijven werken is nog de vraag.<br><br>Voor meer informatie markdeheld@clausing.nu</div>
+</article>
+<article class="post" data-ts="20020129130700" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-01-29 13:07</span></div>
+  <div class="pb">kan je dan de url van het florum <br>even mailen of hier posten? is het gewoon<br><br>http://www.sv-hbc.nl/test/seloverzicht3.php3<br><br></div>
+</article>
+<article class="post" data-ts="20020129134300" id="p3">
+  <div class="ph"><span class="pa">MK</span><span class="pm">#3 · 2002-01-29 13:43</span></div>
+  <div class="pb">http://www.sv-hbc.nl/test/seloverzicht3.php3</div>
+</article>
+<article class="post" data-ts="20020129134400" id="p4">
+  <div class="ph"><span class="pa">MK</span><span class="pm">#4 · 2002-01-29 13:44</span></div>
+  <div class="pb">en http://www.sv-hbc.nl/php/zaal/zaal_florum.php3</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

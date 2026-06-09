@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merlijn topdemocraat – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Merlijn topdemocraat</h1>
+<p class="tm">1 post · started 2003-03-11 15:58 by Zandvoorter Courant</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030311155800" id="p1">
+  <div class="ph"><span class="pa">Zandvoorter Courant</span><span class="pm">#1 · 2003-03-11 15:58</span></div>
+  <div class="pb">ZANDVOORT -- Voor een van onze inwoners is dit een dag om nooit meer te vergeten. Zoals we allemaal weten is het vandaag Statenverkiezing en kan er door de kiezer op een bonte stoet partijen gestemd worden. Onder die kiezers bevindt zich een Flora-vedette van internationale wereldfaam: Merlijn. Lovenswaardig dat een druk bezet man als hij tijd heeft kunnen vrijmaken om zijn burgerplicht te vervullen: een voorbeeld voor ons allen. En Merlijn was ook niet te flauw om na het stemmen te vertellen op wie hij had gestemd: dhr. Stiel (Hans) nummer 12 van de lijst Groen Links, afkomstig uit onze eigen gemeente, Zandvoort. Merlijn lichtte zijn stem toe: "Hans is een topper die zegt wat i doet. Daarbij is hij ervoor om op het Florapark een giga-stadion te bouwen met enkel skyboxes, en Noord-Holland tot belasting-luwe zone te maken voor profvoetballers. Gewoon een man van het volk, net als mij."<br><br>Toen we Hans Stiel hiermee confronteerden barstte de man in tranen uit: "Dat ik dit nog mag meemaken. In m'n partij wordt ik niet altijd even serieus genomen, en hebben ze me op nummer 12 gezet, maar voor m'n gevoel heb ik de verkiezingen gewonnen." Mevrouw Stiel, al even verrukt als haar echtgenoot valt hem bij: "Ja Hans, je hebt het verdiend, al die jaren knokken voor profvoetbal in Noord-Holland; het is niet voor niets geweest!" Toen de goede brave borst weer enigszins tot bedaren was gekomen haalde hij zijn plakboek te voorschijn op zoek naar een foto van een klein ventje. "De Floraboys hebben een speciale band met Zandvoort, zo komen ze vaak hier wat lol beleven en gokken na een wedstrijd in ons casino. Ook heeft de Timmenizer nog in de straten van Zandvoort rondgelopen. Iedereen zag het, die gast kon alles met een bal. Ik weet niet eens meer of i bij de Zilvermeeuwen heeft gevoetbald of dat i meteen bij de Floraboys intern is genomen. Maar gelukkig heb ik 'm nog op de kiek genomen!"<br><br>Namens Hans Stiel en geheel Zandvoort wensen wij de Floraboys veel succes in de hun volgende wedstrijd!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

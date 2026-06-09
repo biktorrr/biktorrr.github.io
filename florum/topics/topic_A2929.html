@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nieuwe ronde, nieuwe kansen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nieuwe ronde, nieuwe kansen</h1>
+<p class="tm">10 posts · started 2010-07-26 10:28 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100726102800" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-07-26 10:28</span></div>
+  <div class="pb">Mido en Mounir <br>vs<br>Ruben en Adil<br><br>De islamitische ultrajoden gaan het leven van wat kakkerlakken zuur maken.</div>
+</article>
+<article class="post" data-ts="20100726114900" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2010-07-26 11:49</span></div>
+  <div class="pb"><a href="http://www.geenstijl.nl/mt/archieven/2010/07/big_brother_in_woensel_het_ech.html" target="_blank">WEEEEUNSEL op G##nsteyl...</a></div>
+</article>
+<article class="post" data-ts="20141110084223" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2014-11-10 08:42</span></div>
+  <div class="pb">Good morning Floraboys! Een nieuwe week, nieuwe kansen. Felicitaties, po\ëtische gedachten, nieuwe baantjes, zwangerschappen, trailerhellingen of misschien zelfs annonces over het FDK 2015... Tik hem aan voor die nieuwe opportunity's!</div>
+</article>
+<article class="post" data-ts="20141110100048" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2014-11-10 10:00</span></div>
+  <div class="pb">De daad bij het woord, hierbij een stukje FYI: in huize S'heim zitten de bollen alweer in de grond, tikken we de 27 weken aan, krijgt onze kleine drie kiezen, eet ze als een bootwerker, duurt het nog zes weken tot het Kerstreces, ben ik zelf alvast alle boeken van De Grijze Jager aan het voor-lezen op geschiktheid voor later. Dat is het wel voor nu. Punt. :)</div>
+</article>
+<article class="post" data-ts="20141110100705" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2014-11-10 10:07</span></div>
+  <div class="pb">Hmz. Bij nadere lezing niet bijzonder annoncerend of po\ëtisch. Maar ach wat wil je, dit is het burgermansbestaan...</div>
+</article>
+<article class="post" data-ts="20141110124921" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2014-11-10 12:49</span></div>
+  <div class="pb">Hoe is het met je baantje dan? Met al jouw Florum-honger lijkt het er wel op dat je een relaxed baantje hebt, of wat?</div>
+</article>
+<article class="post" data-ts="20141110193659" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2014-11-10 19:36</span></div>
+  <div class="pb">Nou, niet zozeer relaxed, als wel intellectueel uitdagend. En omdat je dan wat vaker ook in avond of weekend werkt, moet je via het Florum bijblijven. <br><br>Die app, daar heb ik trouwens maar niets mee. Belangrijke personen als die Boode bereik je er niet mee, en het is vluchtig. Bovendien: als het niet op het Florum staat, is het niet gebeurd.<br><br>Aldus roep ik op: als je kinderen hun zwemdiploma halen, je lekker een stuk in Groenendaal hebt gewandeld, je een helling hebt gespot, je een presentatie hebt gehouden of een ander minder of meer lifechanging event hebt meegemaakt, deel het op ons Florum!</div>
+</article>
+<article class="post" data-ts="20141110225237" id="p8">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#8 · 2014-11-10 22:52</span></div>
+  <div class="pb">Gister met Mrl+m1£1@ door de polder en langs de dijken van landelijk Noord naar Monnickendam gewandeld. Stop de tijd.</div>
+</article>
+<article class="post" data-ts="20141111111505" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2014-11-11 11:15</span></div>
+  <div class="pb">kan wel een nieuwe ronde gebruiken. Helaasjes worden mijn sollicitaties de laatste tijd niet echt positief ontvangen. </div>
+</article>
+<article class="post" data-ts="20141115001753" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2014-11-15 00:17</span></div>
+  <div class="pb">Misschien nieuwe kansen bij WFIRST-AFTA??</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

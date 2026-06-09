@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>avontuur in San Francisco – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">avontuur in San Francisco</h1>
+<p class="tm">8 posts · started 2009-06-09 08:03 by Tim</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090609080300" id="p1">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#1 · 2009-06-09 08:03</span></div>
+  <div class="pb">nou boys , ik heb een aardig avontuur beleefd in San Francisco op weg naar Taiwan (facebookers hebben al een preview gehad.)<br><br>ik zal als ik weer thuis ben er meer over vertellen, maar het was redelijk legendarisch. <br><br>Er komt meer....</div>
+</article>
+<article class="post" data-ts="20090609091300" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2009-06-09 09:13</span></div>
+  <div class="pb">Lage tijding, respect voor de facebook promotie overigens!</div>
+</article>
+<article class="post" data-ts="20090609104400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2009-06-09 10:44</span></div>
+  <div class="pb">facebook ftw. Overigens goed te horen dat het uiteindelijk allemaal op den pootjens terecht is gekomen.</div>
+</article>
+<article class="post" data-ts="20090610200000" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2009-06-10 20:00</span></div>
+  <div class="pb">nou goed hier komt die.<br><br><br>Afgelopen zaterdag nacht, onderweg van Boston naar Taiwan is op San Francisco mijn paspoort kwijtgeraakt, vermoedelijk gestolen.  Ik kon niet meer naar Taiwan, maar doordat ik ook geen paspoort had, kon ik ook niet ergens anders heen. Het was inmiddels half vier 's nachts, maar ben toen in een hotel vlakbij <br><br>Na twee dagen moeizaam bellen en een trip door de bay area die meer aanvoelde als een real life GTA:San Andreas, heb ik van het nederlandse consulaat een laissez-passer gekregen om in ieder geval terug naar Boston te komen.<br><br>Ik heb nog steeds geen paspoort en een ander probleem, ook geen visum voor de VS meer. <br><br>Wel heb ik nog in Frisco bij Chinatown kunnen eten, waar ik bijna van over  mijn nek ging trouwens, en de beroemde chocolaatjes van Ghirardelli <br>gekocht. Voor de rest ging mijn beroemde snoepreis naar Taiwan, waar ik voor 200+ man mijn werk mocht presenteren, in grote mist op. Ook mijn mini-bezoek naar Tokyo zit er niet meer in.</div>
+</article>
+<article class="post" data-ts="20090610205900" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2009-06-10 20:59</span></div>
+  <div class="pb">jezus kut zeg. </div>
+</article>
+<article class="post" data-ts="20090611092200" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-06-11 09:22</span></div>
+  <div class="pb">Neyt! Dit is laeghe teydingh.<br><br>Heb je nog een Anchor steam potser gepakt op ons terrasje?</div>
+</article>
+<article class="post" data-ts="20090611151500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2009-06-11 15:15</span></div>
+  <div class="pb">Wat een domper zeg, kun je wel in US je NL paspoort krijgen of moet je daarvoor terug naar NL? Zo zie je maar dat je op je paspoort moet letten (sorry Maior voor Praag!).</div>
+</article>
+<article class="post" data-ts="20090611203100" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2009-06-11 20:31</span></div>
+  <div class="pb">Catastrofaal! Ik hoop dat het snel in orde komt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

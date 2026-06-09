@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zaterdag: Roemenie - Nederland – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zaterdag: Roemenie - Nederland</h1>
+<p class="tm">10 posts · started 2005-03-21 15:20 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050321152000" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2005-03-21 15:20</span></div>
+  <div class="pb">Is het niet een aardig idee om zaterdag ergens in Haarlem na het ballen om 18.00 uur Roemenie - Nederland te kijken? <br><br>Ik hoop alvast op een middenveld met Van Bommel en Van der Vaart....</div>
+</article>
+<article class="post" data-ts="20050321152500" id="p2">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#2 · 2005-03-21 15:25</span></div>
+  <div class="pb">Goed idee! <br>wat mij betreft kan het wel aan de Gedempte Oude Gracht met pizza's en bier en dergelijke.<br><br></div>
+</article>
+<article class="post" data-ts="20050321152700" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2005-03-21 15:27</span></div>
+  <div class="pb">terechte zaterdag wordt dat dan: kater-koffie-balle-zwete-douche-ballekijken-pizza's-bier........ </div>
+</article>
+<article class="post" data-ts="20050321170900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-03-21 17:09</span></div>
+  <div class="pb">klinkt als een topidee. Ik ben erbij.</div>
+</article>
+<article class="post" data-ts="20050321203100" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2005-03-21 20:31</span></div>
+  <div class="pb">kom ik uit m'n werk meteen door. graag zou ik dan ook nog een slice of wat willen eten.</div>
+</article>
+<article class="post" data-ts="20050322173800" id="p6">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#6 · 2005-03-22 17:38</span></div>
+  <div class="pb">klinkt ook gezellig! Ik skip het balle, iemand in voor hardlope?</div>
+</article>
+<article class="post" data-ts="20050322192200" id="p7">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#7 · 2005-03-22 19:22</span></div>
+  <div class="pb">Nou, ik zou anders best mee willen ballen..haha...voor hardlopen, shoppen of een leuk museum ben ik trouwens ook wel in..<IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20050322192500" id="p8">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#8 · 2005-03-22 19:25</span></div>
+  <div class="pb">Of een bezoekje aan Merrel...</div>
+</article>
+<article class="post" data-ts="20050323085400" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2005-03-23 08:54</span></div>
+  <div class="pb">Goede kans dat ik er ook bij ben. Actief ballen red ik helaas waarschijnlijk niet, passief wel.</div>
+</article>
+<article class="post" data-ts="20050323091000" id="p10">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#10 · 2005-03-23 09:10</span></div>
+  <div class="pb">ik kan er helaas niet bij zijn.. ook al lijkt het me geweldig gezellig.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

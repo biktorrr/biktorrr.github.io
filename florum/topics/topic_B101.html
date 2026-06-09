@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>stukje service voor de talrijke afwezigen... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">stukje service voor de talrijke afwezigen...</h1>
+<p class="tm">5 posts · started 2002-05-15 02:19 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020515021900" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2002-05-15 02:19</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20020515022300" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2002-05-15 02:23</span></div>
+  <div class="pb">... sommigen met goede reden, sommigen met meer dubieuze redenen.<br><br>Uitslag van de altijd lastige uitwedstrijd tussen de Boys:<br><br>Blauwbalse Boys - Floraboys 4 - 4<br><br>Scoreverloop: 0 - 2, 4 - 2, 4 - 4. <br><br>Na de gelijkmaker en eigenlijk daarvoor ook al: talloze kansen op meer voor de Floraboys. Daarom moet de conclusie zijn dat de voorlaatste, uit bij de nummer 2, geen punt heeft gepakt, maar een punt heeft laten liggen </div>
+</article>
+<article class="post" data-ts="20020515103800" id="p3">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#3 · 2002-05-15 10:38</span></div>
+  <div class="ps">pluim</div><div class="pb">voor de werklust van iedereen, daar kunnen de afwezigen nog een puntje aanzuigen!! !</div>
+</article>
+<article class="post" data-ts="20020515141000" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-05-15 14:10</span></div>
+  <div class="pb">Enige wat we onszelf kunnen verwijten is dat we in de afwerking niet zorgvuldig genoeg waren: vooral in de 2de helft veel ballen op de paal en alleenvoor de keeper naast of over. Verder prima gespeeld. In de eerste helft stond het als een blok, nauwelijks kansen weggegeven. zelfde geldt voor de tweede helft, op een minuut of 5 a 10 na. Ook een sterk punt was het overspelen en de bal in de ploeg houden, en natuurlijk ons handelsmerk: jagen jagen jagen.</div>
+</article>
+<article class="post" data-ts="20020515141900" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-05-15 14:19</span></div>
+  <div class="pb">robin hield de verdediging met hard werken en inzicht goed solide, petje af hoor! Verder werkte iedereen hard en eigenliujk ook gewoon wel goed, bij de vier goals alleen niet zorgvuldig en fel genoeg maar dat was een relatief korte periode. <br>Puik gebald, soms zit het gewoon een beetje tegen. (Drie ballen op de paal, tien kansen om de overwinning te pakken in de laatste 3 minuten... tja)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

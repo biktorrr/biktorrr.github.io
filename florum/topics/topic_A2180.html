@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vrijmiflobo – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vrijmiflobo</h1>
+<p class="tm">13 posts · started 2007-10-04 10:34 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071004103400" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1 · 2007-10-04 10:34</span></div>
+  <div class="pb">wij willen bier!!<br><br>1800 uur IJ/Wildeman/?</div>
+</article>
+<article class="post" data-ts="20071004110700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-10-04 11:07</span></div>
+  <div class="pb">Ik heb al afgesproken met mijn collega's te gaan borrelen morgen.</div>
+</article>
+<article class="post" data-ts="20071004113900" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2007-10-04 11:39</span></div>
+  <div class="pb">ik ben er niet aan het eind van de middag. Mocht er iemand vrijdagavond in Haarlem iets willen drinken moet dat wel mogelijk zijn.<br></div>
+</article>
+<article class="post" data-ts="20071004161600" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2007-10-04 16:16</span></div>
+  <div class="pb">@TN je begint al als de BikT te klinken. Het is wat jij wil hoor!</div>
+</article>
+<article class="post" data-ts="20071004163900" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-10-04 16:39</span></div>
+  <div class="pb">Haarlem is oke ole ole<br></div>
+</article>
+<article class="post" data-ts="20071005090700" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2007-10-05 09:07</span></div>
+  <div class="pb">Ik zit vanaf vanavond het weekend in Mierlo. Dat ligt overigens niet al te ver verwijderd van Woensel-Zuid.</div>
+</article>
+<article class="post" data-ts="20071005150700" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2007-10-05 15:07</span></div>
+  <div class="pb">bier drinken na het eten in Haarlem dan maar?<br><br>We kunnen evt. afspreken aan de GOG.</div>
+</article>
+<article class="post" data-ts="20071005161300" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2007-10-05 16:13</span></div>
+  <div class="pb">Olicke en moi doen een Thai en een filmpje.<br>Ook hoogh. Join us @ A'dam...</div>
+</article>
+<article class="post" data-ts="20071006002600" id="p9">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#9 · 2007-10-06 00:26</span></div>
+  <div class="pb">stukje nuttige info: wildplassen is strafbaar, wildkotsen niet!</div>
+</article>
+<article class="post" data-ts="20071006100800" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2007-10-06 10:08</span></div>
+  <div class="pb">Wat heb je gedaan CA?</div>
+</article>
+<article class="post" data-ts="20071006125400" id="p11">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#11 · 2007-10-06 12:54</span></div>
+  <div class="pb">Ik heb een wijf uitgescholden die ons stoepje had ondergekotst. Vervolgens even 0900-8844 gebeld, wat dit nuttige stukje info opleverde. Overigens mag wildbloeden ook, wildschijten ben ik vergeten te vragen.</div>
+</article>
+<article class="post" data-ts="20071006143300" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2007-10-06 14:33</span></div>
+  <div class="pb">wildbloeden...geweldig! een maas in de wet!</div>
+</article>
+<article class="post" data-ts="20071006145400" id="p13">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#13 · 2007-10-06 14:54</span></div>
+  <div class="pb">"sorry agent, ben ff uit mijn tampeloeres aan het bloeden..."<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

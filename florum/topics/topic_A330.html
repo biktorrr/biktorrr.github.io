@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>geld verdienen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">geld verdienen</h1>
+<p class="tm">1 post · started 2001-11-02 13:26 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011102132600" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2001-11-02 13:26</span></div>
+  <div class="pb">met vertragingen die je helemaal niet hebt,, of wel natuurlijk.<br><br>WJ en ik zijn tot het zeer goede idee te komen, om met z'n allen alle vertragingen die wij wekelijks hebben met de trein in het florum te zetten (er moet eigenlijk een apart dingetje voor komen vind ik WJ).. en zodoende kan iedereen al die vertragingen even opschrijven en insturen.. als je we dan met zn allen 3 vertragingen hebben per week is dat toch<br>gratis 120 gulden per maand,, het grappige is dan wel dat jij dan net altijd met een groep van 15 precies alle vertragingen hebt,, maar dat boeit toch niet..<br><br>We hebben al een vertraging om mee te beginnen.. levert je 10 piek op,, meer dan een uur is 10 piek  meer dan half uur 5 gulden ofzoiets...<br><br>weet jij nog de datum en tijd.. en welke trein je had wj??<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

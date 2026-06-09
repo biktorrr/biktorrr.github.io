@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zat 2 mei - ballen + verjaardagsborrel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zat 2 mei - ballen + verjaardagsborrel</h1>
+<p class="tm">9 posts · started 2015-04-28 10:58 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20150428105828" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2015-04-28 10:58</span></div>
+  <div class="pb">Boys, omdat whatsapp toch vaak te druk is: as zaterdag is het partytime. Ik ben dan jarig en jullie zijn welkom voor een potje ballen op het cruijff court naast het dolhuys, met parallele(voor de girls)/aansluitende borrel bij het dolhuys. Inclusief speeltuin voor de kids.<br><br>14:30 ballen, 15:30 keihard aan de biologische ginger ale!<br><br>RSVP. </div>
+</article>
+<article class="post" data-ts="20150428180147" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2015-04-28 18:01</span></div>
+  <div class="pb">Mooi plan! Ik probeer 't in te passen maar weet nog niet zeker of dat lukt.</div>
+</article>
+<article class="post" data-ts="20150428215610" id="p3">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#3 · 2015-04-28 21:56</span></div>
+  <div class="pb">Van hetzelfde</div>
+</article>
+<article class="post" data-ts="20150430142749" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2015-04-30 14:27</span></div>
+  <div class="pb">Leuk idee maar ik vier dan al mijn eigen verjaardag met familie...</div>
+</article>
+<article class="post" data-ts="20150430144707" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2015-04-30 14:47</span></div>
+  <div class="pb">Gast, je bent dan niet eens jarig!</div>
+</article>
+<article class="post" data-ts="20150430152856" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2015-04-30 15:28</span></div>
+  <div class="pb">zaterdag gaat voor ons helaas moeilijk worden. Ik zal nog even kijken.</div>
+</article>
+<article class="post" data-ts="20150501121810" id="p7">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#7 · 2015-05-01 12:18</span></div>
+  <div class="pb">@Joost, heb je al voldoende aanmeldingen via diverse media? Ik moet namelijk nog even kijken wat ik met de kids doe (Wen werkt dit weekeinde)</div>
+</article>
+<article class="post" data-ts="20150501145250" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2015-05-01 14:52</span></div>
+  <div class="pb">Denkelijk gaat ballen sowieso niet lukken. Qua verjaardag heb ik nu 3 man confirmed, misschien goed om naar plan b te gaan.</div>
+</article>
+<article class="post" data-ts="20150501181004" id="p9">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#9 · 2015-05-01 18:10</span></div>
+  <div class="pb">hey Joost, <br><br>excuus, mij gaat het niet lukken op zaterdag om richting H'lem te komen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

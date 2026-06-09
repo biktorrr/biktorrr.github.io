@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ajax - Inter in het Chinees – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ajax - Inter in het Chinees</h1>
+<p class="tm">5 posts · started 2006-02-22 21:47 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060222214700" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2006-02-22 21:47</span></div>
+  <div class="pb">Ben even optimaal van de mondialisering aan 't profiteren door gratis op internet Ajax - Inter te kijken, met Chinees commentaar. <br>Best goede kwaliteit en fantastische commentatoren. De hoogtepunten vd eerste helft, de twee doelpunten en de dubbele kopbal op de lat, vonden ze aardig, maar echt genoten ze toen Boukhari keihard een bal in zijn zaakje kreeg en toen - ik denk - Rosenberg een bal liet lopen in de veronderstelling dat er een medespeler achter hem liep. "Woehaa, ze zijn bijna even slecht als Chineze voetballers," verstond ik met mijn talenknobbel. <br>Toen beide heren zich een beetje verveelden begonnen ze ieder een keer of vier achter elkaar 'Ajax' uit te spreken, alsof het om een oosterse vechtsportbeoefenaar ging. Uiteraard wordt dit festijn wel met anderhalve minuut vertraging uitgezonden: er zou zo maar een Tibetaanse vrijheidsstrijder het veld op kunnen springen.</div>
+</article>
+<article class="post" data-ts="20060222223600" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-02-22 22:36</span></div>
+  <div class="pb">Tweede helft was - zelfs in het Chinees - toch een lichte anticlimax.</div>
+</article>
+<article class="post" data-ts="20060223102900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-02-23 10:29</span></div>
+  <div class="pb">Werden ze net zo lyrisch als wij, elke keer als de Hunter in beeld kwam.</div>
+</article>
+<article class="post" data-ts="20060223110000" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2006-02-23 11:00</span></div>
+  <div class="pb">Je bedoelt 'Huntherhaaah'</div>
+</article>
+<article class="post" data-ts="20060223202700" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2006-02-23 20:27</span></div>
+  <div class="pb">Nee hij bedoelt "The Hunter"</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

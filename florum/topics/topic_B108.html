@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dinsdag 4-6 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">dinsdag 4-6</h1>
+<p class="tm">10 posts · started 2002-06-03 13:01 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020603130100" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2002-06-03 13:01</span></div>
+  <div class="pb">Hoe laat en waar moeten we spelen dinsdag? Kan zo gauw geen program vinden.....</div>
+</article>
+<article class="post" data-ts="20020603130100" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2002-06-03 13:01</span></div>
+  <div class="pb">Hoe laat en waar moeten we spelen dinsdag? Kan zo gauw geen program vinden.....</div>
+</article>
+<article class="post" data-ts="20020603130300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-06-03 13:03</span></div>
+  <div class="pb">Dinsdag 6-4 hoeven we niet te spelen. Volgende wedstrijd <br>maandag 10 juni om 21.45 uur. Kun je dan fluiten, Maarten?</div>
+</article>
+<article class="post" data-ts="20020603130400" id="p4">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#4 · 2002-06-03 13:04</span></div>
+  <div class="pb">Buhuh.. onderwerp vergeten... bah</div>
+</article>
+<article class="post" data-ts="20020603140400" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-06-03 14:04</span></div>
+  <div class="ps">damned</div><div class="pb">deze dag had je net geregeld met je werk... nou hopen dat je volgende week wel kan. Een keer compleet ballen lijkt me wel wat. Lekker ingraven!!</div>
+</article>
+<article class="post" data-ts="20020603145300" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-06-03 14:53</span></div>
+  <div class="pb">of the party</div>
+</article>
+<article class="post" data-ts="20020603171000" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2002-06-03 17:10</span></div>
+  <div class="pb">Ik ben er dan inderdaad niet bij. Kan niet breken met de gebruikelijke routine. We moeten maar weer degraderen zodat we lekker op de dins en woensdagen kunnen spelen. =)</div>
+</article>
+<article class="post" data-ts="20020603172100" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2002-06-03 17:21</span></div>
+  <div class="pb">Ik zal er zijn, maandag!</div>
+</article>
+<article class="post" data-ts="20020604114900" id="p9">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#9 · 2002-06-04 11:49</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20020604151900" id="p10">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#10 · 2002-06-04 15:19</span></div>
+  <div class="pb">Is Demon zo'n vastgeroeste internetprovider dat je geen flexibele werktijden hebt?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

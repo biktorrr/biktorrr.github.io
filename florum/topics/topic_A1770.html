@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goedkoop naar onze man in Parijs?? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Goedkoop naar onze man in Parijs??</h1>
+<p class="tm">5 posts · started 2006-05-24 16:52 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060524165200" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2006-05-24 16:52</span></div>
+  <div class="pb">Thalys viert verjaardag met goedkope tickets<br><br><br>De Nederlandse Spoorwegen verwachten volgende week grote drukte op de internetpagina`s waar internationale treintickets besteld kunnen worden. In de nacht van donderdag 1 op vrijdag 2 juni begint de voorverkoop van de speciale verjaardagstickets voor het Thalys-netwerk. De Thalys bestaat tien jaar en daarom kosten enkeltjes met de flitstrein in de maanden juli en augustus 10 euro. Kaartjes tegen het speciale tarief zijn alleen te boeken in de maand juni. In totaal gaan er 10.000 van deze goedkope enkeltjes in de verkoop. `We verwachten dat er een run ontstaat op deze tickets`, zegt Rose Teunissen van de NS. `Wie via internet boekt, heeft voor 20 euro een retourtje Parijs. Onze computersystemen worden aangepast, zodat ze niet bezwijken als mensen massaal gaan boeken`.<br><br>Bron<br>MD/ANP (24-05-06; p. 1; Full Text)<br></div>
+</article>
+<article class="post" data-ts="20060524170400" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-05-24 17:04</span></div>
+  <div class="pb">klinkt goed, ik ben voor</div>
+</article>
+<article class="post" data-ts="20060525164300" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2006-05-25 16:43</span></div>
+  <div class="pb">Ik ook zeker!</div>
+</article>
+<article class="post" data-ts="20060528174800" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2006-05-28 17:48</span></div>
+  <div class="pb">Kan je dit boeken via de site van de NS of hebben ze er een speciale site voor opgezet? Ik kon namelijk op de ns site niet echt nog iets vinden hierover. </div>
+</article>
+<article class="post" data-ts="20060529093400" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2006-05-29 09:34</span></div>
+  <div class="pb">Ben er al helemaal achter </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

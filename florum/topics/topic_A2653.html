@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>bachelor party part deux – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">bachelor party part deux</h1>
+<p class="tm">9 posts · started 2009-05-25 14:05 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090525140500" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-05-25 14:05</span></div>
+  <div class="pb">Boys,<br><br>Aangezien de avond activiteiten zaterdag niet helemaal volgens de planning liepen bij deze mijn idee voor de herkansing.<br><br>AS woensdag 18:30 eten bij Casa Jazzy.<br><br>19:30 geheime activiteit op het mini voetbalveld op 100 meter van Casa Jazzy. Voor deze activiteit hebben we minimaal zes boys nodig.<br><br>20:15 voorbeschouwing kijken tweede geheime activiteit.<br><br>20:45 Tweede geheime activiteit.<br><br>Voorwaarde is natuurlijk wel dat bepaalde professionals zelf ook aanwezig kunnen zijn.<br><br>Gr Joost<br><br>P.S. Bij deze nog complimenten voor Holy voor de organisatie van de eerste bachelor party, hulde!<br><br> </div>
+</article>
+<article class="post" data-ts="20090526074100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2009-05-26 07:41</span></div>
+  <div class="pb">deze bachelor heeft helaas geen gat meer in het program. Het zal een post-marriage bachelor party moeten worden. (my logic is flawed)</div>
+</article>
+<article class="post" data-ts="20090526092800" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2009-05-26 09:28</span></div>
+  <div class="pb">laag</div>
+</article>
+<article class="post" data-ts="20090526094100" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-05-26 09:41</span></div>
+  <div class="pb">Tik 'm ook af.</div>
+</article>
+<article class="post" data-ts="20090526122800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-05-26 12:28</span></div>
+  <div class="pb">ik zit in Amsterdam te koekeloeren bij een collegaatje</div>
+</article>
+<article class="post" data-ts="20090526133400" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2009-05-26 13:34</span></div>
+  <div class="pb">ik tik hem af, zit bij de broer</div>
+</article>
+<article class="post" data-ts="20090526134400" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2009-05-26 13:44</span></div>
+  <div class="pb">Arme Jazzy. Ik vond het wel als een mooi plan klinken eigenlijk. Begrijp ik nu goed dat de jarige Job van vandaag de bachelorparty van zaterdag enigszins heeft lopen versjteren door een maagzweer te krijgen? Nu ja, hij was er tenminste, dat geldt niet voor alle deelnemers aan dit topique.</div>
+</article>
+<article class="post" data-ts="20090527002800" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2009-05-27 00:28</span></div>
+  <div class="pb">Haha, je laat het woord voetbal vallen en weg zijn die boys <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0> Jammertjes.</div>
+</article>
+<article class="post" data-ts="20090527105000" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2009-05-27 10:50</span></div>
+  <div class="pb">Opvallend is idd dat de boys niet bang zijn om voetbal te kijken maar zelf voetballen schrikt blijkbaar af!<br><br>Desalniettemin moet ik zelf ook verzaken. Neemt niet weg dat het initiatief erg gewaardeerd wordt.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

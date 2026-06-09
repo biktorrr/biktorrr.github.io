@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dylan – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dylan</h1>
+<p class="tm">10 posts · started 2016-10-14 01:45 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20161014014544" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2016-10-14 01:45</span></div>
+  <div class="pb">Bernard. Gefeliciteerd met Ome Bob's prijs. Omdat ie zo goed kan rijmen en dergelijke.</div>
+</article>
+<article class="post" data-ts="20161014202220" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2016-10-14 20:22</span></div>
+  <div class="pb">Ja, met deze Nobelprijswinnaar is de comeback van het kreupelrijm in de wereldliteratuur een feit. Het is dat de Markies de Cantecleer (ik voel poezie in mij opkomen!) dood is, anders had die de prijs natuurlijk in de wacht gesleept.</div>
+</article>
+<article class="post" data-ts="20161014204225" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2016-10-14 20:42</span></div>
+  <div class="pb">En die arme Harry draait zich nog maar eens om..</div>
+</article>
+<article class="post" data-ts="20161015010730" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2016-10-15 01:07</span></div>
+  <div class="pb">Over mensen die zich in hun graf omdraaien gesproken, arme HAFMO:<br>https://youtu.be/4QqS40oPd3A</div>
+</article>
+<article class="post" data-ts="20161015044926" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2016-10-15 04:49</span></div>
+  <div class="pb">Bob (die andere BD) heeft zijn Nobelprijs waarschijnlijk in de eerste plaats te danken aan de onsterfelijke verzen uit 'Visions of Joanna':<br><br>"see the primitive wallflower freeze<br>and the jellyfaced women all sneeze<br>hear the one with the moustache say, "jeez,<br>I can't find my knees!"<br><br>Technisch meesterschap, emotionele diepgang. Echter, De Cantecleer weegt hier zeker wel tegenop:<br><br>"Het zwerk is zwart en duister,<br>De bliksemflits is geel.<br>Er klinkt een hol gefluister:<br>De Zwarte Zwadderneel!"<br><br></div>
+</article>
+<article class="post" data-ts="20161017113443" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2016-10-17 11:34</span></div>
+  <div class="pb">Is Dr\é toch te vroeg overleden, anders had ie een beste kans gemaakt.</div>
+</article>
+<article class="post" data-ts="20161018170206" id="p7">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#7 · 2016-10-18 17:02</span></div>
+  <div class="pb">Dre Jr leeft nog. </div>
+</article>
+<article class="post" data-ts="20161019085359" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2016-10-19 08:53</span></div>
+  <div class="pb">Misschien dat we een campagne kunnen beginnen om ervoor te zorgen dat schrijvers vanaf nu de Nobelprijs ook postuum kunnen ontvangen, zodat Dre 'm alsnog binnen kan slepen, uiteraard voor mindere grootheden als James Joyce, Shakespeare, Homerus, en Harry Mulisch.<br><br>Wat wil je namelijk liever:<br><br>"Zing mij, O Muze, van de wrok van Achilles"<br><br>of<br><br>"Come let us sit upon the ground, and tell sad stories of the death of kings"<br><br>of<br><br>"Er zijn veel goede mensen, maar slechte zijn er ook helaas 't is waar/ je moet maar denken dat jij straks gaat beseffen dat eerlijk 't langste duurt geloof me maar."<br><br>Kan niet al te moeilijk zijn.</div>
+</article>
+<article class="post" data-ts="20161020190556" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2016-10-20 19:05</span></div>
+  <div class="pb">En dan nomineren wij de Timmie Tikts</div>
+</article>
+<article class="post" data-ts="20161021003304" id="p10">
+  <div class="ph"><span class="pa">Kurt Vonnegut</span><span class="pm">#10 · 2016-10-21 00:33</span></div>
+  <div class="pb">Bob Dylan, however, is the worst poet alive. He can maybe get one good line in a song, and the rest is gibberish</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

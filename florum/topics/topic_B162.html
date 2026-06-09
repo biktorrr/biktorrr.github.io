@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>opslaan in archief – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">opslaan in archief</h1>
+<p class="tm">3 posts · started 2002-09-06 13:02 by Ar Chief</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020906130200" id="p1">
+  <div class="ph"><span class="pa">Ar Chief</span><span class="pm">#1 · 2002-09-06 13:02</span></div>
+  <div class="pb">kan iemand dit opslaan in het archief!? of is dit al gebeurt.<br><br>* 2e klasse B               gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br> 1 Zwart                      10    6   3   1   14    66 -  46    2/ 1   0/ 0 Kp1<br> 2 de Neefjes van Johnnie     10    7   0   3   14    73 -  46    2/ 0   0/ 0<br> 3 Blauw Balse Boys           10    5   2   3   12    56 -  57    0/ 0   0/ 0<br> 4 ASVS 1                     10    5   1   4   11    38 -  47    0/ 0   0/ 0<br> 5 Floraboys                  10    2   2   6    6    46 -  60    0/ 0   0/ 0<br> 6 Allstars X                 10    1   0   9    0    33 -  56    0/ 0   2/ 2 d3<br><br>Topscorers:  1 -  28  Eelco van Dronkensteyn (de Neefjes van Johnnie)<br>             2 -  22  Roel Boorsma (Zwart)<br>             3 -  19  Frank Pitstra (Floraboys)<br>             4 -  18  Brugt Bakker  (Blauw Balse Boys)<br>             5 -  16  Jeroen Lammers (de Neefjes van Johnnie)<br></div>
+</article>
+<article class="post" data-ts="20020906132300" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-09-06 13:23</span></div>
+  <div class="pb">FRANKIE PITRA! FRANKIE PITSTRA!<br>He's here, he's there, he's fucking everywhere!!!<br>FRANKIE PITRA! FRANKIE PITSTRA!<br>He's here, he's there, he's fucking everywhere!!!<br>FRANKIE PITRA! FRANKIE PITSTRA!</div>
+</article>
+<article class="post" data-ts="20020909133000" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-09-09 13:30</span></div>
+  <div class="pb">ok opgeslagen, zie Zaalvoetbal en dan 'vorig jaar'</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

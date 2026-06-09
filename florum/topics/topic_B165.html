@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tis me gelukt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tis me gelukt</h1>
+<p class="tm">4 posts · started 2002-09-12 01:34 by Papparazzi</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020912013400" id="p1">
+  <div class="ph"><span class="pa">Papparazzi</span><span class="pm">#1 · 2002-09-12 01:34</span></div>
+  <div class="pb">Ongeloofelijk, duizenden euros waren uitgeloofd voor de man die de floraboys op de kiek kon krijgen. Mij is het gelukt. (ik zat verstopt in een vuilinsbak op het usc)<br><br>Hier de resultaten:<br><br>http://www.floraboys.com/1109/<br><br></div>
+</article>
+<article class="post" data-ts="20020912091900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2002-09-12 09:19</span></div>
+  <div class="pb">WEL GODVERRRDOMME! ALS IK DIE GAST IN M'N HANDEN KRIJG IS I NOG NIET JARIG.</div>
+</article>
+<article class="post" data-ts="20020912124000" id="p3">
+  <div class="ph"><span class="pa">de zaakwaarnemer</span><span class="pm">#3 · 2002-09-12 12:40</span></div>
+  <div class="pb">voor de rechten van mijn client "nummer 0" kan op rekenig 6201215 de royalties voor de fotoos worden voldaan (a E 1500,- per publicatie)</div>
+</article>
+<article class="post" data-ts="20020912125800" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-09-12 12:58</span></div>
+  <div class="pb">goed werk, collega-riooljournalist</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

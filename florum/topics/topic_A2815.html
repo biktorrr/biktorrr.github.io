@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>De WK-hit voor 2010 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">De WK-hit voor 2010</h1>
+<p class="tm">5 posts · started 2010-01-20 09:24 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100120092400" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2010-01-20 09:24</span></div>
+  <div class="pb">Om even DE hit voor het komende WK te pluggen:<br><br>http://www.youtube.com/watch?v=DL7cY4xEHSU<br><br>Enkelen van jullie herkennen misschien de zanger van een nachtje in de 'Thomas' in Eindhoven. Er figureren ook wat andere collega's in de clip. Alleen een beetje jammer van het anti-Duitse sentiment maar verder natuurlijk een prachthit. Ik voel dat deze het gaat worden. </div>
+</article>
+<article class="post" data-ts="20100120110300" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2010-01-20 11:03</span></div>
+  <div class="pb">Ik heb ´m gezien, maar moet er nog even van bijkomen. Mijn weloverwogen mening houden jullie tegoed.</div>
+</article>
+<article class="post" data-ts="20100120120300" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2010-01-20 12:03</span></div>
+  <div class="pb">Is dat die honkballer uit Nuenen? Ik had 'm niet herkend geloof ik, maar evengoed een meesterwerk.</div>
+</article>
+<article class="post" data-ts="20100121185600" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2010-01-21 18:56</span></div>
+  <div class="pb">Gelukkig ben ik op tijd verhuisd! Ik moet er niet aan denken die gekken onder mijn raam te hebben.<br><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/DL7cY4xEHSU&hl=en_US&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/DL7cY4xEHSU&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></div>
+</article>
+<article class="post" data-ts="20100705194300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2010-07-05 19:43</span></div>
+  <div class="pb">Even deze weer in herinnering brengen...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie Tikt 17 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie Tikt 17</h1>
+<p class="tm">4 posts · started 2003-03-18 14:42 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030318144200" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2003-03-18 14:42</span></div>
+  <div class="pb">Dag van de dinsdag<br><br>De waarheid die zo verkondigt wordt door de heer bush en consorten is dan nu ook werkelijkheid aan het worden. Voordat we nu allemaal een kant kiezen en dan gelijk Bush, go fuck a cow, of Saddaaammnn aan het blaten zijn als de makke lammetjes die Nederlanders zijn, moet je je eerst gaan afvragen wat de antwoorden zijn op de top 3 vragen in het conflict.<br><br>1. Maakt Bush zijn eigen werkelijkheid en doordat Bush op een oorlog afstuurt Saddamn toch niet ontwapent, zodat Bush op een oorlog kan aansturen?<br>2. Waarom hebben ze in vredesnaam niet na GWO (Gulf War One) Saddamn niet weggekickt?<br>3. Wat hebben respectivelijk DJ Erik Z, De Lul en Stervedette 23 met het hele conflict te maken.<br><br>Het antwoord op de eerste 2 vragen worden al gegeven door Harry Balkenende Wouter Weasley en zijn consorten, die weer uiterst pietlullig zeggen , Politiek steunen we ze wel, maar militair niet." Vertaald in het Bush's " We are with you, but we are innocent wussies who do not dare fire a gun." Iets wat Amerika ook echt geen flikker meer uitmaakt, maar dat is geheel besides the point.  DE interessante vraag, die door alle wereldleiders over het hoofd wordt gezien is veel moeilijker te bantwoorden. De Lul heeft wereldwijd al zoveel stages gelopen dat hij al is gerecruteerd door de CIA om aan counterintelligence te gaan doen en Al Quada op te gaan rollen. Zijn verblijf in Nederland zal dus waarschijnlijk alweer van kortere duur zijn. DJ Erik Z, met zijn gloriedaden in het estse Talinn, is natuurlijk nauw betrokken bij de crisis. 'Nuff said.<br>23 Merlijn, een van de hedendaagse idolen van alle landen, ( Hij is al gevraagd voor de jury van Idols 2004, het SongFestival en als vaste commentator in Sunday United en op Canal+ ) speelt een veel complexere rol. Bush weet dat zonder zijn steun een oorlog in Irak gedoemd is te falen. Want zonder een bal in de buhne kan Bagdad niet worden ingenomen. Ook weet Bush dat met zijn steun hij de vredesactivisten in een keer de mond kan snoeren. Want als 23 zegt voor een oorlog te zijn, dan zijn die protesten natuurlijk snel over. <br>Het echte getouwtrek zal dus deze dagen niet gaan om de plaatsing van troepen in Turkije (die hun miljardensteun op zien gaan in Bush zijn campagne om 23 te overtuigen), maar of 23 zich schaart in het conflict. <br><br>Nieuwsflash<br><br>Parijs, een stad zonder enig elan de laatste dagen, blijkt nog nooit gehoord te hebben van danwel het Parool of de En France. De gescandeerde lofbetuigingen aan de Volkskrant werden door deze reporter niet gemist.</div>
+</article>
+<article class="post" data-ts="20030318150800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-03-18 15:08</span></div>
+  <div class="pb">goed getikt timmie (hij staat alweder bij de rest...)</div>
+</article>
+<article class="post" data-ts="20030318150800" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-03-18 15:08</span></div>
+  <div class="pb">al kom ik er - geloof ik - niet best vanaf in deze column is hij toch BRILJANT. Een beetje druk zetten op Timmie, laat hem een paar uurtjes lekker tikken, en dan heb je wat.</div>
+</article>
+<article class="post" data-ts="20030321142500" id="p4">
+  <div class="ph"><span class="pa">J-Lau</span><span class="pm">#4 · 2003-03-21 14:25</span></div>
+  <div class="pb">fabuleus...dat is het enige goede woord over deze woordenstroom!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

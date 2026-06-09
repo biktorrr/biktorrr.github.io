@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Correspondent – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Correspondent</h1>
+<p class="tm">9 posts · started 2005-06-10 10:19 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050610101900" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2005-06-10 10:19</span></div>
+  <div class="pb">ZE HEBBEN VOOR MIJ GEKOZEN<br><br>Fantastisch. Ik heb vanaf september een aanstelling die op een vaste baan lijkt. Nog steeds freelance (dus Sicco hoeft zich geen zorgen te maken), maar wel met meer zekerheid (vaste maandelijkse vergoeding). Voor de GPD, het persagentschap voor regionale dagbladen. Dat betekent dat jullie mijn probeerseltjes voortaan kunnen lezen in het Haarlems Dagblad, het Parool, de Limburger, het Dagblad van het Noorden, het Gazet van Antwerpen, de Gooi en Eemlander en nog een vijftiental andere kranten.<br><br>Vanavond ga ik het uitgebreid vieren met Beat en James (die overigens ok zijn).<br><br>PS Aan diegenen die ik na het sollicitatiegesprek vol verwondering de hoogte van de vergoeding meldde: svp geen opmerkingen met dat bedrag erin (het blijft internet en Google weet ons soms best aardig te vinden)<br><br>En ja, ik ben een raskapitalist...</div>
+</article>
+<article class="post" data-ts="20050610102100" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2005-06-10 10:21</span></div>
+  <div class="pb">PS 2<br><br>Iedereen dank voor tips mbt foto's op cv<br><br>Heeft geholpen!</div>
+</article>
+<article class="post" data-ts="20050610102800" id="p3">
+  <div class="ph"><span class="pa">FAMOUS</span><span class="pm">#3 · 2005-06-10 10:28</span></div>
+  <div class="ps">gefeliciteerd</div><div class="pb">3500 EURO NETTO is toch echt fantastisch!! </div>
+</article>
+<article class="post" data-ts="20050610103300" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2005-06-10 10:33</span></div>
+  <div class="pb">GEFELICITEERD!!!</div>
+</article>
+<article class="post" data-ts="20050610104600" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2005-06-10 10:46</span></div>
+  <div class="pb">Chapeau!</div>
+</article>
+<article class="post" data-ts="20050610120200" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-06-10 12:02</span></div>
+  <div class="pb">heej! gefeliciteerd olivier de paris! En met dat salaris van anderhalve balkenende kan je ons binnenkort weer eens trakteren!<br><br><br>(Beat en James zijn oke ole ole, Nacho is ook oke ole)</div>
+</article>
+<article class="post" data-ts="20050610135300" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2005-06-10 13:53</span></div>
+  <div class="pb">Oh lala!!<br><br>nogmaals gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20050610155200" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2005-06-10 15:52</span></div>
+  <div class="pb">Terecht...nu al binnen zijn....ben je al lid van een golfclub?</div>
+</article>
+<article class="post" data-ts="20050612183600" id="p9">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#9 · 2005-06-12 18:36</span></div>
+  <div class="pb">Stelletje lolbroeken. Ik zal nog eens iets vragen...<br><br>Maar bedankt voor de felicitaties</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

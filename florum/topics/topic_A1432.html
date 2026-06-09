@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zeeland 2.0 DVD – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zeeland 2.0 DVD</h1>
+<p class="tm">8 posts · started 2005-02-28 14:29 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050228142900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-02-28 14:29</span></div>
+  <div class="pb">Lieve Floracietjes.<br><br>Als jullie de DVD van Zeeland 2.0 nog willen nabestellen kan dat bij deze in dit topic. Dit voor het haast symbolische bedrag van 1 euro!!!<br></div>
+</article>
+<article class="post" data-ts="20050228143100" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2005-02-28 14:31</span></div>
+  <div class="pb">Doe mij er maar een!</div>
+</article>
+<article class="post" data-ts="20050228144400" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-02-28 14:44</span></div>
+  <div class="pb">Is er een combi mogelijk van de bekerwedstrijd en zeeland 2.0?</div>
+</article>
+<article class="post" data-ts="20050228145900" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2005-02-28 14:59</span></div>
+  <div class="pb">ja doe er voor mij ook maar 1.. en ook 1 bekerblamage als die er nog is..</div>
+</article>
+<article class="post" data-ts="20050228155500" id="p5">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#5 · 2005-02-28 15:55</span></div>
+  <div class="pb">ik kan ze idd wel allebei op een aparte dvd doen, met zn tweeen gaat niet meer</div>
+</article>
+<article class="post" data-ts="20050228164300" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2005-02-28 16:43</span></div>
+  <div class="pb">maak dat de kat wijs ouwe woekerjid, je probeert ons gewoon een poot uit het lijf te draaien.</div>
+</article>
+<article class="post" data-ts="20050228165000" id="p7">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#7 · 2005-02-28 16:50</span></div>
+  <div class="pb">pas op jossyt S anders gaat mijn uurloon zo de lucht in</div>
+</article>
+<article class="post" data-ts="20050228165000" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2005-02-28 16:50</span></div>
+  <div class="pb">Ik wil er ook 1!<br>De bekerblamage interesseert mij dan weer wat minder...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

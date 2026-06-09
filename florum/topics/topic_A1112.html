@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NED-USA – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NED-USA</h1>
+<p class="tm">12 posts · started 2004-02-16 00:30 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040216003000" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-02-16 00:30</span></div>
+  <div class="pb">Ik bied mijn casa aan om a.s. woensdag deze skitterende wedstrijd te komen bekijken, maar misschien is het als er veel animo voor is het handiger om in A'dam te gaan kijken.<br><br>In principe is jeder welkom vanaf iets voor 20:00.<br><br><br></div>
+</article>
+<article class="post" data-ts="20040216092100" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-02-16 09:21</span></div>
+  <div class="pb">ehh.. we hadden al min of meer afgesproken om het in het huis van de heilige commandroeille te gaan koekeloeren...</div>
+</article>
+<article class="post" data-ts="20040216115200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2004-02-16 11:52</span></div>
+  <div class="pb">18:30 was toch uiteindelijk de deal?</div>
+</article>
+<article class="post" data-ts="20040216123100" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2004-02-16 12:31</span></div>
+  <div class="pb">count me in, <br><br>Nigel de Jong en Sjohny Heitinga in de basis!</div>
+</article>
+<article class="post" data-ts="20040216131200" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-02-16 13:12</span></div>
+  <div class="pb">okay, wist ik niet, maar ik kom ook graag.</div>
+</article>
+<article class="post" data-ts="20040216132200" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-02-16 13:22</span></div>
+  <div class="pb">*kijkt even in de keuken of er nog genoeg stoelen staan*</div>
+</article>
+<article class="post" data-ts="20040216145300" id="p7">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#7 · 2004-02-16 14:53</span></div>
+  <div class="ps">lijkt me goed plan</div><div class="pb">op bij jou te kijken tymen, hoe laat begint het</div>
+</article>
+<article class="post" data-ts="20040216161100" id="p8">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#8 · 2004-02-16 16:11</span></div>
+  <div class="pb">vormt zich hier een schisma in de floraboys selectie?<br><br></div>
+</article>
+<article class="post" data-ts="20040217102600" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-02-17 10:26</span></div>
+  <div class="pb">ik geloof t ook, frank bij tijmen en tijmen en de rest bij MK</div>
+</article>
+<article class="post" data-ts="20040217140600" id="p10">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#10 · 2004-02-17 14:06</span></div>
+  <div class="ps">ik hoor net dat</div><div class="pb">er genoeg stoelen zijn op de gracht, Tymen ik moet dus helaas afzeggen!</div>
+</article>
+<article class="post" data-ts="20040217141800" id="p11">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#11 · 2004-02-17 14:18</span></div>
+  <div class="pb">no problem :)<br>Ik neem btw mijn eigen stoel wel mee.</div>
+</article>
+<article class="post" data-ts="20040217215700" id="p12">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#12 · 2004-02-17 21:57</span></div>
+  <div class="pb">ben er dus ook om 18.30 uur aan de gracht</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

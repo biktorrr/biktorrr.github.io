@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kim Jong Un vindt t prima – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kim Jong Un vindt t prima</h1>
+<p class="tm">12 posts · started 2014-08-06 11:48 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20140806114848" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2014-08-06 11:48</span></div>
+  <div class="pb"><p><br>	&lt;img src=&quot;http://i.telegraph.co.uk/multimedia/archive/02996/potd-jong-paint_2996741k.jpg&quot;&gt;</p><br></div>
+</article>
+<article class="post" data-ts="20140806114912" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2014-08-06 11:49</span></div>
+  <div class="ps">goddammit</div><div class="pb"><img src="http://i.telegraph.co.uk/multimedia/archive/02996/potd-jong-paint_2996741k.jpg"></div>
+</article>
+<article class="post" data-ts="20140806140904" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2014-08-06 14:09</span></div>
+  <div class="pb">'t Kan in de Volksrepubliek !!</div>
+</article>
+<article class="post" data-ts="20140806173852" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2014-08-06 17:38</span></div>
+  <div class="pb">Genieten van de grote drol! Maar bij nader inzien word ik een beetje naar van die twee mensen op de foto.</div>
+</article>
+<article class="post" data-ts="20140806190150" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2014-08-06 19:01</span></div>
+  <div class="pb">wat deze foto echt subliem maakt zijn de ogen van die andere man, die hongerig verlangt naar een stukje worst..</div>
+</article>
+<article class="post" data-ts="20140806190755" id="p6">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#6 · 2014-08-06 19:07</span></div>
+  <div class="pb">...maar wijselijk zijn mond houdt, omdat ie anders zelf in de volgende worst zit.</div>
+</article>
+<article class="post" data-ts="20140806213203" id="p7">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#7 · 2014-08-06 21:32</span></div>
+  <div class="pb">Dat oijkt me geen worst maar een caramel toppic op 's werelds grootste sundae.</div>
+</article>
+<article class="post" data-ts="20140807102527" id="p8">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#8 · 2014-08-07 10:25</span></div>
+  <div class="pb">De foto staat vandaag op de middenpagina van nrc.next. Met de toelichting dat het hier niet om Sundae of knaqworst gaat, maar om glijmiddel. Dat werpt wel opnieuw de vraag op wat schuilgaat achter de blik van de minor henchman op links...</div>
+</article>
+<article class="post" data-ts="20140807122643" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2014-08-07 12:26</span></div>
+  <div class="pb">Die weet al, in tegenstelling tot het publiek, dat dat glijmiddel in korte tijd via een menselijk transportmiddel ergens bij hem binnen zal komen.</div>
+</article>
+<article class="post" data-ts="20141002194902" id="p10">
+  <div class="ph"><span class="pa">Kim Yo-jong</span><span class="pm">#10 · 2014-10-02 19:49</span></div>
+  <div class="pb">Lekker Kim, lekker jong.</div>
+</article>
+<article class="post" data-ts="20141002220330" id="p11">
+  <div class="ph"><span class="pa">MCH</span><span class="pm">#11 · 2014-10-02 22:03</span></div>
+  <div class="pb">Sounds spurious but made me laugh:<br><br>"Kim Jong-un has become so fat while in office that his ankles have fractured under his own weight, it was reported on Tuesday."<br><br>http://www.telegraph.co.uk/news/worldnews/asia/northkorea/11131885/Kim-Jong-un-so-fat-he-has-fractured-his-ankles.html <br><br><br><br> </div>
+</article>
+<article class="post" data-ts="20141003113801" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2014-10-03 11:38</span></div>
+  <div class="pb">The poor man has tiny ankles.. How can one dictate with such tiny ankles?<br><br><img src = "http://cdn.cstatic.net/images/gridfs/542d6e9cf92ea10d0e010fb3/kim-jong-un-09_2014.jpg"/></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

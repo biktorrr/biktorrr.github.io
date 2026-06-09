@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Habemus Papam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Habemus Papam</h1>
+<p class="tm">6 posts · started 2013-03-13 21:30 by Salcicifex maximus</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130313213052" id="p1">
+  <div class="ph"><span class="pa">Salcicifex maximus</span><span class="pm">#1 · 2013-03-13 21:30</span></div>
+  <div class="pb">Och ik hoop toch zo dat hij Innocentius kiest. Go pope!</div>
+</article>
+<article class="post" data-ts="20130313221026" id="p2">
+  <div class="ph"><span class="pa">Popos</span><span class="pm">#2 · 2013-03-13 22:10</span></div>
+  <div class="pb">Franciscus I - YOLO!</div>
+</article>
+<article class="post" data-ts="20130314120721" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2013-03-14 12:07</span></div>
+  <div class="pb">Ha, ik zie dat het internet verbaasd reageert op het feit dat deze 76 jarige katholiek tegen homo's en anticonceptie is. </div>
+</article>
+<article class="post" data-ts="20130314122301" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2013-03-14 12:23</span></div>
+  <div class="pb">anticonceptie is niet 'minimize'.<br>Als ik the webs mag geloven dan is deze popester van keeping it real en back2basic. Ook iets met poor peeps.<br><br>Uitgaande van zijn aangenomen naam mag Marianne Thiemster in haar knuffelhandjes knijpen. Dierendag FTW<br></div>
+</article>
+<article class="post" data-ts="20130314123134" id="p5">
+  <div class="ph"><span class="pa">Salcicifex</span><span class="pm">#5 · 2013-03-14 12:31</span></div>
+  <div class="pb">Terug naar de good old Rapey Time! </div>
+</article>
+<article class="post" data-ts="20130314141241" id="p6">
+  <div class="ph"><span class="pa">Parvus Homo Negotii</span><span class="pm">#6 · 2013-03-14 14:12</span></div>
+  <div class="pb">Hulde @ salcicifex<br><br>Rapey rapey is gewoon BungaBunga voor Clerici; laat hem eerst maar belangrijkere misstanden tackelen met die olijcke grijns van em.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>zaalbalpagina update – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">zaalbalpagina update</h1>
+<p class="tm">6 posts · started 2002-10-17 15:22 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20021017152200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-10-17 15:22</span></div>
+  <div class="pb">de zaalbalpagina is geupdate, nu met TABEL (Mk ook weer blij) en nieuwe stand/topscorers (wie hadden er nou gescoord vorige pot?)</div>
+</article>
+<article class="post" data-ts="20021017153100" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2002-10-17 15:31</span></div>
+  <div class="pb">jajaja<br>in mijn voorlopige afscheid heb ik mijn doelpuntje meegepakt, niet met de punt, maar hij zat er toch lekker in</div>
+</article>
+<article class="post" data-ts="20021017190700" id="p3">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#3 · 2002-10-17 19:07</span></div>
+  <div class="pb">Ik ben nu eenmaal heel erg eerlijk, dus ik zeg gewoon even dat ik afgelopen wedstrijd helemaal niet gescoord heb en dus nog op drie sta, maar daar komt vanavond nog wel verandering in.<br></div>
+</article>
+<article class="post" data-ts="20021017190800" id="p4">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#4 · 2002-10-17 19:08</span></div>
+  <div class="pb">Het doelpunt is overigens gemaakt door Merlijn</div>
+</article>
+<article class="post" data-ts="20021021105300" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-10-21 10:53</span></div>
+  <div class="pb">Maar de assist was van Sandor. Het is een beetje een enge ontwikkeling dat we alleen nog maar spuuglelijke goals maken. Die van Sandor was mooi, maar die van Tim was weer op z'n Tims.</div>
+</article>
+<article class="post" data-ts="20021021131400" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2002-10-21 13:14</span></div>
+  <div class="pb">okee de scorelijst is bijgewerkt.. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

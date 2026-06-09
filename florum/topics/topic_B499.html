@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bilby nieuwe seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bilby nieuwe seizoen</h1>
+<p class="tm">5 posts · started 2004-08-20 15:47 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040820154700" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2004-08-20 15:47</span></div>
+  <div class="pb">Mannen,<br><br>Half september begint bilby weer. Wie zijn er allemaal van plan om eer bij te zijn? Topic is open op het bilby florum.<br><br>Laat het svp zsm weten.</div>
+</article>
+<article class="post" data-ts="20040821040500" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2004-08-21 04:05</span></div>
+  <div class="pb">Ik ga er niet meer bij zijn, buiten de tijd die het kost moet ik zeggen dat het niet het allerleuste spelletje is dat ik gespeeld heb (mede dankzij de puike organisatie).<br>Zaalballen lijkt me op dit moment voldoende.</div>
+</article>
+<article class="post" data-ts="20040825194800" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2004-08-25 19:48</span></div>
+  <div class="pb">Vic, Sic,Md, Mk er staat nog geen reactie van jullie op het bilby forum.<br><br>Anderen zijn overigens ook welkom.</div>
+</article>
+<article class="post" data-ts="20040826233000" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2004-08-26 23:30</span></div>
+  <div class="pb">Zucht........<br><br>Is het nou echt zo moeilijk om even te posten of eist iedereen een persoonlijk belletje?<br><br>En nou allemaal......</div>
+</article>
+<article class="post" data-ts="20040827121700" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2004-08-27 12:17</span></div>
+  <div class="pb">nou laat ik de eerste aanzet geven,<br><br>voor reserve mag je in noodgevallen mij een persoonlijk belletje geven. Maar niet te vaak want dat kunstgras en de organisatie is best kut. ;-)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>In Memoriam : Aleen voor echte D&amp;D nerds – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">In Memoriam : Aleen voor echte D&amp;D nerds</h1>
+<p class="tm">3 posts · started 2008-03-05 08:07 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080305080700" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2008-03-05 08:07</span></div>
+  <div class="pb"><a href="http://blog.wired.com/underwire/2008/03/report-gary-gyg.html">RIP GARY<br><br>hier een kleine tribute van brielen-zonder-vriendin-online-comic <a href="http://www.giantitp.com/comics/oots0536.html">Order of the Stick</a><br><br><h3> Life is a LARP</h3></div>
+</article>
+<article class="post" data-ts="20080305085800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-03-05 08:58</span></div>
+  <div class="pb">*inkopper-alert*:<br> <br>hij miste z'n laatste saving throw :'(<!--146.50.23.35--></div>
+</article>
+<article class="post" data-ts="20080305094200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-03-05 09:42</span></div>
+  <div class="pb">Hoogh!<!--194.171.252.100--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

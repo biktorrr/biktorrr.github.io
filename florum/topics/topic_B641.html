@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen: 6/7 aug – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen: 6/7 aug</h1>
+<p class="tm">9 posts · started 2005-08-05 09:11 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050805091100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-08-05 09:11</span></div>
+  <div class="pb">Za: erecode vernederen: ja<br>Zo: ja</div>
+</article>
+<article class="post" data-ts="20050805113000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-08-05 11:30</span></div>
+  <div class="pb">ZajaZonee</div>
+</article>
+<article class="post" data-ts="20050805135400" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2005-08-05 13:54</span></div>
+  <div class="pb">Zanee<br>Zonee</div>
+</article>
+<article class="post" data-ts="20050805152800" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-08-05 15:28</span></div>
+  <div class="pb">zajazoja(nietlaat)</div>
+</article>
+<article class="post" data-ts="20050806103200" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2005-08-06 10:32</span></div>
+  <div class="pb">zanee<br>zonee</div>
+</article>
+<article class="post" data-ts="20050806132200" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-08-06 13:22</span></div>
+  <div class="pb">floraboys: 3.30u op het park, erecode afwachten en vernederen.</div>
+</article>
+<article class="post" data-ts="20050806142500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2005-08-06 14:25</span></div>
+  <div class="pb">Hmm..ik was al in de veronderstelling dat de Erecode vandaag de dans zou ontsnappen. Ik ben nog even in het stadje hoop tijdig terug te zijn.</div>
+</article>
+<article class="post" data-ts="20050806184300" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2005-08-06 18:43</span></div>
+  <div class="pb">missie geslaagd.</div>
+</article>
+<article class="post" data-ts="20050808090900" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2005-08-08 09:09</span></div>
+  <div class="pb">De ultieme vernedering is een feit.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

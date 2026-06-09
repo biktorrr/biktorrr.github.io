@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Domispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Domispam</h1>
+<p class="tm">7 posts · started 2005-02-03 16:20 by JSP</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050203162000" id="p1">
+  <div class="ph"><span class="pa">JSP</span><span class="pm">#1 · 2005-02-03 16:20</span></div>
+  <div class="pb">Stel je werkt bij een automatiserings partij.<br>Stel die partij biedt de mogelijkheid om sms via een website te sturen.<br>Stel die sms'jes zijn gekoppeld aan persoons gegevens.<br><br>Nu wordt je op donderdag opgebeld door een zenuwachtig figuur die afvraagt of sms'jes eigenlijk gelogd worden. Natuurlijk antwoord je van niet. Hierna blijkt de man opgelucht te reageren. Hij gaat namelijk vreemd met de vrouw van de baas en sms'd natuurlijk niet via z'n eigen telefoon (dat kost namelijk geld)<br><br>Voor de zekerheid controleer je na dit enerverende gesprek nog even de interne database en jieeeee fucking haaaaaaa. Alle ranzige smerige foute cliche's die je maar kan bedenken staan keurig netjes per auteur sorteerbaar opgeslagen. De hele fucking afdeling leest mee en zelfs de Floraboys mogen meegenieten. Het is weer iets om dankbaar voor te zijn in het leven.<br><br></div>
+</article>
+<article class="post" data-ts="20050203164000" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2005-02-03 16:40</span></div>
+  <div class="pb">Waar kan ik die dan vinden :D</div>
+</article>
+<article class="post" data-ts="20050204102700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-02-04 10:27</span></div>
+  <div class="pb">ha! terecht!<br></div>
+</article>
+<article class="post" data-ts="20050204120800" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2005-02-04 12:08</span></div>
+  <div class="pb">Een link lijkt me wel op zijn plaats</div>
+</article>
+<article class="post" data-ts="20050204173000" id="p5">
+  <div class="ph"><span class="pa">Anonieme lek</span><span class="pm">#5 · 2005-02-04 17:30</span></div>
+  <div class="pb">He lekker ding, lig je al op bed te wachten op je volgende instructies. Sexxxxx', <br><br>Hai wij gaan er nu vanuit dat je geen probleem hebt met deze erotische sms service van circa 70 eurocent p.o.b. Sucsexxxxxxxxxxxxxxx', '107616', 'none'<br><br>Testsmsje vanuit (naam pakket) van (naam) en  volgens kenners is inhoud "helaas' nog niet opslaanbaar.<br>dus bijv. xxxxxxxxxxxxxxxxxxxxxxx',<br></div>
+</article>
+<article class="post" data-ts="20050204173300" id="p6">
+  <div class="ph"><span class="pa">anonieme stier</span><span class="pm">#6 · 2005-02-04 17:33</span></div>
+  <div class="pb">He knappe prinses, ook zin in sex?<br>hoi lieverd heb vanacht weer eens fantastische sex met je gehad. moeten we vaker doen, doet een mens goed. kus <br><br>He shit, weer per ongeluk die copy paste knop ingedrukt....<br></div>
+</article>
+<article class="post" data-ts="20050207103100" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-02-07 10:31</span></div>
+  <div class="pb">ah de sappige seis-em-seisjes! mooi hoor, wie weet kan je hier ook een weblog over opstarten.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amstel Sixes – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amstel Sixes</h1>
+<p class="tm">7 posts · started 2005-05-18 19:38 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050518193800" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2005-05-18 19:38</span></div>
+  <div class="pb">Inschrijving Amstel Soccer Sixes gestart !!<br><br>	Voetballiefhebbers opgelet.<br><br>	Zondag 24 juli is het weer zover, de Amstel Soccer Sixes.<br><br>	Het Amstel Soccer Sixes toernooi is een Heren Senioren toernooi dat<br>op een derde voetbalveld wordt gespeeld 6x6.<br><br>	Er kan ingeschreven worden in 2 categorie\ën: <br>	-	Recreatief<br>	-	Elite<br><br>	De dag wordt weer afgesloten met een buffetparty en live muziek.<br><br>	Let op de uiterste inschrijfdatum is 15 juni 2005.<br><br>	Op onze website kunt u bekijken wie zich allemaal ingeschreven heeft<br>voor de Amstel Soccer Sixes,<br>	www.expersport.com<br><br><br>Wie is erbij?<br><br><br></div>
+</article>
+<article class="post" data-ts="20050518230700" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2005-05-18 23:07</span></div>
+  <div class="pb">onder voorbehoud...  jeyt..</div>
+</article>
+<article class="post" data-ts="20050519102000" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-05-19 10:20</span></div>
+  <div class="pb">lijkt me leuk, als ik er ben, om mee te doen. Ik zou het wel leuk vinden om dan ook op het vled te spelen en niet (alleen) te kiepen.</div>
+</article>
+<article class="post" data-ts="20050519113700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-05-19 11:37</span></div>
+  <div class="pb">Dat ga ik nog niet redden.<br><br></div>
+</article>
+<article class="post" data-ts="20050519120600" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-05-19 12:06</span></div>
+  <div class="pb">veld spel is niet weggelegd voor kiepers die het woord niet eens goed kunnen spellen <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0><br></div>
+</article>
+<article class="post" data-ts="20050519133900" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2005-05-19 13:39</span></div>
+  <div class="pb">jeyt</div>
+</article>
+<article class="post" data-ts="20050522043800" id="p7">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#7 · 2005-05-22 04:38</span></div>
+  <div class="pb">Vind ik leuk, als ik dan in het land ben.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

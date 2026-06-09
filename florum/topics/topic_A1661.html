@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mamispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">mamispam</h1>
+<p class="tm">9 posts · started 2006-01-02 13:00 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060102130000" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2006-01-02 13:00</span></div>
+  <div class="pb">ARNHEM - Ruim de helft van de beginnende studenten aan een pedagogische academie, rekent slechter dan de beste kinderen van groep 8 van het basisonderwijs. Maar liefst 53 procent van de eerstejaars brengt het er beroerder af dan de beste 20 procent van groep 8.<br><br>Dat heeft de Cito-groep bevestigd op een bericht uit Trouw van maandag. Het was al bekend dat het met de rekenkunde van de pabo-studenten niet best gesteld was. Minister Van der Hoeven van Onderwijs kaartte dit in april nog aan. Volgens toetsdeskundige G. Straetmans van het Cito willen de pabo's dat de eerstejaars minstens net zo goed rekenen als het slimste groepje van de hoogste groep van de basisschool.<br><br>De onderzoekers lieten een kleine achthonderd leerlingen van groep 8 sommen maken en namen de resultaten van de beste 20 procent als uitgangspunt voor de vergelijking met de aankomende onderwijzers. Slechts 47 procent kan zich meten met de kinderen, zo bleek uit een onderzoek onder ruim duizend eerstejaars. <br><br>Gruwelijkjes...</div>
+</article>
+<article class="post" data-ts="20060102134900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2006-01-02 13:49</span></div>
+  <div class="pb">Op Radio 1 hoorde ik een van de moeilijke vragen waar 80% (!) van onze PABO-vrienden hun tanden op stuk bijten. Stel je hebt een auto die 20% wordt afgeprijsd en vervolgens nog een keer 10%. Hoeveel procent korting geldt er dan in totaal op de auto? (Goede antwoord: 28% en niet 30%.)</div>
+</article>
+<article class="post" data-ts="20060102192100" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2006-01-02 19:21</span></div>
+  <div class="pb">Bedankt Merrel voor het immense vertrouwen dat uit jouw toelichting spreekt.<br><br></div>
+</article>
+<article class="post" data-ts="20060103224000" id="p4">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#4 · 2006-01-03 22:40</span></div>
+  <div class="pb">Voor sommige mensen is rekenen moeilijk te leren. Maar het studiehuis lijkt mij ook een flinke achteruitgang wat betreft rekenen en andere basale kennis/kunde</div>
+</article>
+<article class="post" data-ts="20091123164400" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2009-11-23 16:44</span></div>
+  <div class="pb">Maandag. Dan is het morgen weer D********hnsd*g!</div>
+</article>
+<article class="post" data-ts="20091123170800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2009-11-23 17:08</span></div>
+  <div class="pb">Interessant om nog even op te halen idd. En niet minder relevant!</div>
+</article>
+<article class="post" data-ts="20091123172000" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2009-11-23 17:20</span></div>
+  <div class="pb">Dank O.</div>
+</article>
+<article class="post" data-ts="20091124105500" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2009-11-24 10:55</span></div>
+  <div class="pb">Stel: de teijdingh is 100 Neyt. Als de teijdignh eerst 20% en vervolgens nog eens 20% laagher wordt, hoe laagh is de teijdingh dan?</div>
+</article>
+<article class="post" data-ts="20091124122400" id="p9">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#9 · 2009-11-24 12:24</span></div>
+  <div class="pb">Interessanter nog als er dan aan het eind 2 teyding bij opgeteld wordt...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Opstekertje voor de verstokte werkman – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Opstekertje voor de verstokte werkman</h1>
+<p class="tm">2 posts · started 2008-08-14 09:48 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080814094800" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2008-08-14 09:48</span></div>
+  <div class="pb"><i>Risin\' up, back on the street<br>Did my time, took my chances<br>Went the distance, now I\'m back on my feet<br>Just a man and his will to survive<br><br>So many times, it happens too fast<br>You change your passion for glory<br>Don\'t lose your grip on the dreams of the past<br>You must fight just to keep them alive<br><br>Chorus:<br>It\'s the eye of the tiger, it\'s the cream of the fight<br>Risin\' up to the challenge of our rival<br>And the last known survivor stalks his prey in the night<br>And he\'s watchin\' us all in the eye of the tiger<br><br>Face to face, out in the heat<br>Hangin\' tough, stayin\' hungry<br>They stack the odds \'til we take to the street<br>For we kill with the skill to survive<br><br>chorus<br><br>Risin\' up, straight to the top<br>Have the guts, got the glory<br>Went the distance, now I\'m not gonna stop<br>Just a man and his will to survive<br><br>chorus<br><br>The eye of the tiger (repeats out)... </i></div>
+</article>
+<article class="post" data-ts="20080814120300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2008-08-14 12:03</span></div>
+  <div class="pb">mooi</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tour Poule (topic nmr 1) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tour Poule (topic nmr 1)</h1>
+<p class="tm">8 posts · started 2003-07-07 23:53 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030707235300" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-07-07 23:53</span></div>
+  <div class="pb">Hoe zit het met de uitslag, ik zie dat er nu twee uitslagen zijn verwerkt. De proloog en nog een etappe. Maar er zijn toch ook mensen (WJ) die pas na de proloog hun team hebben ingelevert?? Hoe kan het dat hij dan al punten voor de proloog heeft??? Is dit bij nog meer mensen het geval????</div>
+</article>
+<article class="post" data-ts="20030708085600" id="p2">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#2 · 2003-07-08 08:56</span></div>
+  <div class="pb">WJ heeft 's avonds tijdens de proloog zijn team ingeleverd, toen we bij tijmen zaten. Hij wist de uitslag toen nog niet dus dat zit wel okay..<br><br>ik update de stand zometeen weer.</div>
+</article>
+<article class="post" data-ts="20030708095400" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-07-08 09:54</span></div>
+  <div class="pb">Klopt het dat dat nog niet gebeurd is, of moet ik een nieuwe firewire door m'n c-prompt booten?<br><br>Niet zo cheique trouwens dat ik na twee dagen al stijf onderaan sta.</div>
+</article>
+<article class="post" data-ts="20030708100500" id="p4">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#4 · 2003-07-08 10:05</span></div>
+  <div class="pb">jouw tijd komt nog wel mer, jij hebt veel meer bergkoningen. Pit en ik hebben veel geluk met Bayden Cooke vandaag die bij zichzelf 13 punten oplevert. Maar zoals de kneet ooit een zei.. Parijs is nog ver. <br><br>tussenstand<br><br>Pit 44<br>Timmie 42<br>Fietsende wesleys 33<br><br>Mer 5</div>
+</article>
+<article class="post" data-ts="20030708105800" id="p5">
+  <div class="ph"><span class="pa">Famious</span><span class="pm">#5 · 2003-07-08 10:58</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20030708105900" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2003-07-08 10:59</span></div>
+  <div class="ps">nou ik vind het</div><div class="pb">maar dubieus de werkwijze van de ploegleider van de fietsende joden. Je zal zien dat die jit de prijs voor mijn neus wegkaapt op 4 punten na ofzo.. Nou dan word ik gek hoor..</div>
+</article>
+<article class="post" data-ts="20030708130400" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2003-07-08 13:04</span></div>
+  <div class="pb">Ik vind er nu al niets meer aan...</div>
+</article>
+<article class="post" data-ts="20030708130400" id="p8">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#8 · 2003-07-08 13:04</span></div>
+  <div class="pb">nou maak je geen zorgen Pitstra als ik niet minimaal 25 punten voor je sta in Parijs hoef ik dat geld niet eens.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

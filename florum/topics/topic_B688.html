@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>parkje doen, zat 7 jan? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">parkje doen, zat 7 jan?</h1>
+<p class="tm">12 posts · started 2006-01-04 12:30 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060104123000" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-01-04 12:30</span></div>
+  <div class="pb">Zijn er zaterdag boys die zin hebben om een balletje te trappen als ze toch komen om vrijdag te pokoren? Ik denk dat sneeuw dan wel is weggetrokken.<br></div>
+</article>
+<article class="post" data-ts="20060104130800" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2006-01-04 13:08</span></div>
+  <div class="pb">jeit</div>
+</article>
+<article class="post" data-ts="20060104132300" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-01-04 13:23</span></div>
+  <div class="pb">jeyt</div>
+</article>
+<article class="post" data-ts="20060104133200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-01-04 13:32</span></div>
+  <div class="pb">Ik denk ook dat de sneeuw dan is opgetrokken, desondanks kan ik zaterdag neyt.</div>
+</article>
+<article class="post" data-ts="20060104234500" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2006-01-04 23:45</span></div>
+  <div class="pb">Kunnen jullie na het schilderen meteen door <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+<article class="post" data-ts="20060106133400" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2006-01-06 13:34</span></div>
+  <div class="ps">kve</div><div class="pb">ik heb wel zin om te voetballen allen heb ik geen telelefoonnummers meer van jullie dus als iemand mij kan bellen 0621546482</div>
+</article>
+<article class="post" data-ts="20060106134800" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-01-06 13:48</span></div>
+  <div class="pb">ok Ik bel je als het WEL doorgaat Kenzo...</div>
+</article>
+<article class="post" data-ts="20060107195300" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2006-01-07 19:53</span></div>
+  <div class="pb">tereeeeeecht!<br><br>eerste doelpunt van het jaar: VB<br>eerste assist van het jaar: Jazzz<br>eerste eigen doelpunt van het jaar: Kenzo<br>eerste poging om een schoon shirt te houden van het jaar: MK<br>eerste fashion statement van het jaar: TN's groene broek<br>eerste man of the match van het jaar: Bik</div>
+</article>
+<article class="post" data-ts="20060107214100" id="p9">
+  <div class="ph"><span class="pa">FFF</span><span class="pm">#9 · 2006-01-07 21:41</span></div>
+  <div class="pb"><h1>Eerste nederlaag van het jaar tegen de Erecode. SHAME ON YOU!</h1></div>
+</article>
+<article class="post" data-ts="20060108190100" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2006-01-08 19:01</span></div>
+  <div class="pb">eerste commentaar van iemand die liever naar musicals gaat: FFF woordvoerder</div>
+</article>
+<article class="post" data-ts="20060109100800" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2006-01-09 10:08</span></div>
+  <div class="pb">De BIK-op-het-park-teller staat trouwens weer op nul...</div>
+</article>
+<article class="post" data-ts="20060109101000" id="p12">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#12 · 2006-01-09 10:10</span></div>
+  <div class="pb">de ( helaas nog steeds imaginaire )Merrel en Mitch teller schijnt nu hoger te zijn dan die van BIK</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

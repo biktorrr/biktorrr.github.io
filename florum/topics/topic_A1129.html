@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Drinking Buddies – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Drinking Buddies</h1>
+<p class="tm">2 posts · started 2004-03-04 13:31 by The Lonely Lonely Drinker</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040304133100" id="p1">
+  <div class="ph"><span class="pa">The Lonely Lonely Drinker</span><span class="pm">#1 · 2004-03-04 13:31</span></div>
+  <div class="pb">My Oath to My Drinking Buddies. <br><br>When you are sad, I will give you a beer, slap you, and say, "Cry me a  fucking river you fat fucking baby... Now drink up." <br><br>When you are scared, I will comfort you... and try to convince you that they will not search the trunk. <br><br>When you are worried, I will buy not one but two thirty packs. That ought to hold us until 8pm. <br><br>When you are lost, I will lead you back to your room... so that you can pass out with your boy/girlfriend and they can take care of you. <br><br>When you are hungry, I will be a true friend... and keep you from adding on to your fat ass and hide the post-drinking munchies. <br><br>When you are delirious with superhuman strength, I will sit your ass on the couch... and keep you from getting your drunk ass kicked.. <br><br>When you are confused, I will explain to you how sometimes ugly people look like supermodels when you are drunk. <br><br>This is my oath... I pledge until the end. Why you may ask? <br>Because you're my drinking friend! Send this to everyone you've ever slammed a few down with. It won't bring you good luck or lot's of lovin' or any of that sh#t that all the other letters promise, but it will let everyone know <br>that you are a true drinking friend! <br></div>
+</article>
+<article class="post" data-ts="20040304151800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-03-04 15:18</span></div>
+  <div class="pb">Ook veelsteveel tekst. Toch zeg ik <h1>DAGTAIMNY</h1></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

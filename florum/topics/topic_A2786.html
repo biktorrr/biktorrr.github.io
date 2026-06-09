@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tussenstand – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tussenstand</h1>
+<p class="tm">3 posts · started 2009-12-10 22:49 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091210224900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-12-10 22:49</span></div>
+  <div class="pb">Team Tube/kenniswerker vs. universum: 3 - 0.<br><br>We hebben zojuist onze 2de Rochefort besteld, op een bodem van chimay    Blauw. Dus jullie weten.<br></div>
+</article>
+<article class="post" data-ts="20091211000000" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-12-11 00:00</span></div>
+  <div class="pb">2-0 is ook de eindstand. Een glorieuze victorie voor team tube/kenniswerker, die gevoeld wordt in kamp bak/Bernard. De overwinning wordt opgedragen aan Ca! </div>
+</article>
+<article class="post" data-ts="20091211001200" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2009-12-11 00:12</span></div>
+  <div class="pb">Yeyt O, victory is yours (en voor Ca)!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alle ultra-orthodoxe joden op een stokje. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Alle ultra-orthodoxe joden op een stokje.</h1>
+<p class="tm">10 posts · started 2003-04-14 16:46 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030414164600" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2003-04-14 16:46</span></div>
+  <div class="pb">IN MIJN BEZIT PER HEDEN...........<br><br>VLIEGTICKET MADRID-MILAN GEDATEERD 23 APRIL <br>KAARTJE VOOR AC MILAN- AFC AJAX...........................<br><br>KIKKKKKKUUUUUUHHHHH<br>OF ZOALS MERLIJN ZOU ZEGGEN.<br>CHEIQUE.</div>
+</article>
+<article class="post" data-ts="20030414165800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-04-14 16:58</span></div>
+  <div class="pb">Dat heb je mooi voor elkaar! </div>
+</article>
+<article class="post" data-ts="20030414173600" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-04-14 17:36</span></div>
+  <div class="pb">Niet verkeerd Goseba blanco. Hoe heb je dat nu weer klaargespeeld?</div>
+</article>
+<article class="post" data-ts="20030414212400" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2003-04-14 21:24</span></div>
+  <div class="ps">topshit</div><div class="pb">als Ajax niet gaat knallen in Milaan dan is Jose het wel!! <br>TOppie knalluh!!</div>
+</article>
+<article class="post" data-ts="20030415002200" id="p5">
+  <div class="ph"><span class="pa">FAMOUS</span><span class="pm">#5 · 2003-04-15 00:22</span></div>
+  <div class="ps">JE GAAT</div><div class="pb">2 keer op en neer naar Milaan of hoe zit het nu precies</div>
+</article>
+<article class="post" data-ts="20030415002200" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2003-04-15 00:22</span></div>
+  <div class="ps">wat ik  nu</div><div class="pb">zeg slaat weer nergens op</div>
+</article>
+<article class="post" data-ts="20030416222600" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2003-04-16 22:26</span></div>
+  <div class="pb">Weet je zeker dat het geen kaartjes voor De Bekerfinale Feyenoord-Utrecht zijn?<br></div>
+</article>
+<article class="post" data-ts="20030417091500" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2003-04-17 09:15</span></div>
+  <div class="pb">Ja Joost, kijk nog 's goed: zijn het geen tickets voor de bekerfinale? Je zou ze makkelijk door elkaar halen, namelijk.</div>
+</article>
+<article class="post" data-ts="20030417132500" id="p9">
+  <div class="ph"><span class="pa">Jorien-tattoo-drager</span><span class="pm">#9 · 2003-04-17 13:25</span></div>
+  <div class="pb">NIETS IS STERKER DAN DAT ENE WOORD!</div>
+</article>
+<article class="post" data-ts="20030424175800" id="p10">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#10 · 2003-04-24 17:58</span></div>
+  <div class="pb">arme zjoste en zijn laatste spaarcentjes</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>8/9 juni – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">8/9 juni</h1>
+<p class="tm">6 posts · started 2002-06-03 17:23 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020603172300" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2002-06-03 17:23</span></div>
+  <div class="pb">Wie komen er komend weekend ballen? Ik wel!<br>Tschogo Tschogo!<br><br>PS: kan er iemand in de loop van de week even met de grasmaior over het Florapark gaan?</div>
+</article>
+<article class="post" data-ts="20020604114800" id="p2">
+  <div class="ph"><span class="pa">tymen</span><span class="pm">#2 · 2002-06-04 11:48</span></div>
+  <div class="pb">Ik moet verzaken,ik ben denk ik tot het zomer reces niet meer regelmatig of the party.Ik moet tot eind juni elk weekeinde werken (alleen maar werkdagen in het weekend,sax) en heb daarbij (ik gok net als menigeen) tentamens deze maand.sax allemaal bruut..</div>
+</article>
+<article class="post" data-ts="20020604152900" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2002-06-04 15:29</span></div>
+  <div class="pb">goh tijmen er niet bij? goh<br><br>maar goed ik dus wel zaterdag, <br>niet zondag (oma jarig)</div>
+</article>
+<article class="post" data-ts="20020604155000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-06-04 15:50</span></div>
+  <div class="pb">Vader jarig zaterdag, maar ik kijk wat ik kan doen. Zondag wel dan.	<br></div>
+</article>
+<article class="post" data-ts="20020604155300" id="p5">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#5 · 2002-06-04 15:53</span></div>
+  <div class="pb">hardcore van de partij.</div>
+</article>
+<article class="post" data-ts="20020604160900" id="p6">
+  <div class="ph"><span class="pa">Tymen Trillendlipje</span><span class="pm">#6 · 2002-06-04 16:09</span></div>
+  <div class="pb">wrijf het er maar in...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

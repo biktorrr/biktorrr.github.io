@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Max prijs shirts – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Max prijs shirts</h1>
+<p class="tm">9 posts · started 2001-08-27 11:55 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010827115500" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2001-08-27 11:55</span></div>
+  <div class="pb">Ik ga zometeen naar Pim Janssen. Hebben jullie 'n limiet in jullie hoofd omtrent de prijs? Ik stel voor f50,-. Dat is dan exclusief bedrukking. Het drukken van 'n letter kost f2,50 en 'n cijfer f12,50. Tel uit je winst. We krijgen i.i.g. nog wel groepskorting, maar daar horen jullie later nog over. Als kleur stel ik wit met 'n kleurtje voor. Groen lijkt me echt 'n slecht idee omdat groen echt lelijk is je dat nergens bij kunt dragen.</div>
+</article>
+<article class="post" data-ts="20010827124800" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-08-27 12:48</span></div>
+  <div class="pb">ik zeg groen...<br></div>
+</article>
+<article class="post" data-ts="20010827130500" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2001-08-27 13:05</span></div>
+  <div class="pb">Me EZEKIEL sweater is ook GROEN!!!!<br>Staat altijd!<br><br>Geel-Rood? Sikkel<br>Blauw-Rood? Haarlem<br>Wit-Blauw? Floraboys site-style<br>Wit-Groen? FC Flora<br>Geel-Groen? Gewoon Gaaf</div>
+</article>
+<article class="post" data-ts="20010827135100" id="p4">
+  <div class="ph"><span class="pa">Jk</span><span class="pm">#4 · 2001-08-27 13:51</span></div>
+  <div class="pb">Geel-groen?<br>Dan heeft in ieder geval de Pit een mooie complete uitrusting</div>
+</article>
+<article class="post" data-ts="20010827172100" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2001-08-27 17:21</span></div>
+  <div class="pb">www.tenue.nl</div>
+</article>
+<article class="post" data-ts="20010827172900" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2001-08-27 17:29</span></div>
+  <div class="ps">Voor de aanbieding gaan??</div><div class="pb">http://www.tenue.nl/html/offerte.html<br><br>Onderaan de pagina. Zal wel te duur zijn voor<br>de meesten.</div>
+</article>
+<article class="post" data-ts="20010827193600" id="p7">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#7 · 2001-08-27 19:36</span></div>
+  <div class="pb">is goed</div>
+</article>
+<article class="post" data-ts="20010828003000" id="p8">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#8 · 2001-08-28 00:30</span></div>
+  <div class="pb">groen past dan wel weer mooi bij mijn groene sokken, rood blijft toch de mooiste kleur</div>
+</article>
+<article class="post" data-ts="20010828153500" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2001-08-28 15:35</span></div>
+  <div class="pb">We kunnen daar een tenue samenstellen en dan bij Pim Jansen bestellen..met 8 krijgen we 15% korting...bijv.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

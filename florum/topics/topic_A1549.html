@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Schande in AIO land – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Schande in AIO land</h1>
+<p class="tm">7 posts · started 2005-08-17 17:21 by De belasting betaler</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050817172100" id="p1">
+  <div class="ph"><span class="pa">De belasting betaler</span><span class="pm">#1 · 2005-08-17 17:21</span></div>
+  <div class="pb">Beste lezer,<br><br>Een week geleden heb ik diverse AIO's twee verschillende mailtjes gestuurd. <br><br>1 uit naam van Venkat Ramachandran (een vooraanstaand neurowetenschapper), met de mededeling dat hun recente werk me aanspreekt en ik graag samen wil werken om de geldende wetenschappelijke paradigmas te herschrijven.<br><br>1 uit naam van Ron Jeremy, met het verzoek of ze mijn nieuwe site even gratis willen doorlopen op zoek naar schoonheidsfoutjes. Enige affiniteit met menselijk bloot in actie is gewenst.<br><br>Welnu beste lezer u raadt het al, Dhr Ramachandran zit nog steeds te wachten op een leesbevestiging en de heer Jeremy heeft inmiddels zijn duizend testers alweer bedankt voor de moeite. HET IS EEN SCHANDE !<br><br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20050818091800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-08-18 09:18</span></div>
+  <div class="pb">Beide mailtjes ontvangen en onmiddellijk verwijderd, want<br><br>1. neurowetenschap is een hoax<br><br>1. aio's zijn geen spellcheckers.</div>
+</article>
+<article class="post" data-ts="20050826131400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-08-26 13:14</span></div>
+  <div class="pb">ik was op vacance</div>
+</article>
+<article class="post" data-ts="20050827131100" id="p4">
+  <div class="ph"><span class="pa">Ron Jeremy</span><span class="pm">#4 · 2005-08-27 13:11</span></div>
+  <div class="pb">Victor don't be so modest, you're help was most valuable during the past few weeks. As promised your lifetime "ALL XS"  account has been activated. <br><br></div>
+</article>
+<article class="post" data-ts="20050827133900" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-08-27 13:39</span></div>
+  <div class="pb">Oh..that is where he gets his pr0n from. :)</div>
+</article>
+<article class="post" data-ts="20050829090000" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2005-08-29 09:00</span></div>
+  <div class="pb">:D<br>Goed om te zien dat je voor ultieme prono-koning je bezittelijke voornaamwoorden en je werkwoorden door elkaar kan halen, er is nog hoop voor mij.<br></div>
+</article>
+<article class="post" data-ts="20050829094500" id="p7">
+  <div class="ph"><span class="pa">Taalnazi</span><span class="pm">#7 · 2005-08-29 09:45</span></div>
+  <div class="pb">nu de spelling nog....</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys vakantietopic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys vakantietopic</h1>
+<p class="tm">4 posts · started 2006-07-17 11:05 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060717110500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-07-17 11:05</span></div>
+  <div class="pb">hoewel we daar natuurlijk ook een agenda voor hebben is een oldskool topic hierover ook wel weer terecht<br></div>
+</article>
+<article class="post" data-ts="20060717110600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-07-17 11:06</span></div>
+  <div class="pb">Victor en Marije:<br><br>20 aug - 4 september <br>Italie</div>
+</article>
+<article class="post" data-ts="20060717115400" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-07-17 11:54</span></div>
+  <div class="pb">Tijmen-Lara:<br><br>25 july - 17 aug <br>Wales<br><br>Eerst langs mijn opa, dan door naar Wales. Als het baggerweer is gaan we richting de zon, door de little T-mobiel zijn we flexibel. We mikken om in een keer door te rijden van calais naar Westerschouwen.<br></div>
+</article>
+<article class="post" data-ts="20060717121300" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2006-07-17 12:13</span></div>
+  <div class="pb">Van 19 t/m 27 augustus gaan Lex en ik naar Praag en Pusta Prozec (in Noord-Behemen).<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

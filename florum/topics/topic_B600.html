@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Waardig afscheid: Floraboys bedankt! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Waardig afscheid: Floraboys bedankt!</h1>
+<p class="tm">3 posts · started 2005-04-22 18:01 by Opa Gerrit</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050422180100" id="p1">
+  <div class="ph"><span class="pa">Opa Gerrit</span><span class="pm">#1 · 2005-04-22 18:01</span></div>
+  <div class="pb">Toen ik nog een knaap van 15 was floot ik mijn eerste wedstrijd, AFC tegen Purmersteijn. De wedstrijd was er een om nooit te vergeten. AFC kwam op stoom en scoorde voor en na rust 3 keer. 6-0. Nu 66 jaar later is het voor mij niet meer bij te houden, dat snelle voetbal. Daarom floot ik vandaag mijn laatste wedstrijd. Een prachtige pot, om nooit te vergeten. De Floraboys maakten er in de ruime 15 minuten, ik kon maar niet dat laatste fluitsignaal geven, een waar feest van. Enigszins emotioneel floot ik na 25 minuten toch echt af toen Taasje het veld in kwam rennen. Met pijn in mijn hart en ook met grote blijdschap wil ik de Floraboys bedanken voor dit mooie afscheid. Mijn wijlen vrouw zou zeggen: RESPECT voor FLORABOYS! Bedankt Floraboys, dat we elkaar volgende jaren nog eens mogen tegen komen in de kantine bij de REFT en dan samen terug zullen denken aan deze legendarische pot!! Een om nooit te vergeten!</div>
+</article>
+<article class="post" data-ts="20050423115900" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2005-04-23 11:59</span></div>
+  <div class="pb">Ik dacht dat Gerrit eigenlijk Jan heette en dat zijn vrouw er ook bij was...<br>Wel Hulde, Jan!<br>Jan heeft er voor gezorgd dat zelfs ik nog een doelpuntje mee mocht pikken.<br></div>
+</article>
+<article class="post" data-ts="20050423235100" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2005-04-23 23:51</span></div>
+  <div class="pb">Idem hier.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

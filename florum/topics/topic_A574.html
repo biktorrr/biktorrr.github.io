@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeli – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeli</h1>
+<p class="tm">8 posts · started 2002-09-10 11:46 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020910114600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-09-10 11:46</span></div>
+  <div class="pb"><b>citeerd Mer!</B>*chin chin*<br><img src="http://www.sunnycorner.com/kidscolor/bdaycake.gif"><br><br>Uitprinten en inkleuren.Smooi<br></div>
+</article>
+<article class="post" data-ts="20020910125800" id="p2">
+  <div class="ph"><span class="pa">Rije</span><span class="pm">#2 · 2002-09-10 12:58</span></div>
+  <div class="ps">Hoera</div><div class="pb">Ook de Hiep Hiep Hoeraatjes van mij!</div>
+</article>
+<article class="post" data-ts="20020910132200" id="p3">
+  <div class="ph"><span class="pa">TuuT</span><span class="pm">#3 · 2002-09-10 13:22</span></div>
+  <div class="pb">Supervedette verjaart.<br>de geruchten zijn dat hij zijn verjaring met drie fabelachtige doelpunten morgen gaat vieren.. samen met de zes van joost puite wordt dat dus een wereldwedstrijd.<br><br>Gefeliciteed Merre<br></div>
+</article>
+<article class="post" data-ts="20020910142200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2002-09-10 14:22</span></div>
+  <div class="pb">Hartelijk bedankt, hartelijk bedankt. Plaatje inkleuren smooi.</div>
+</article>
+<article class="post" data-ts="20020910144700" id="p5">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#5 · 2002-09-10 14:47</span></div>
+  <div class="ps">happy birthday</div><div class="pb"><br>to youuuuuuuuuuuuuuuuuuuuu,<br><br>happy birthday to uuuuuuuuuuuuuuuuuuuuuuuu<br><br>hiep hiep..... hoera (145 x )</div>
+</article>
+<article class="post" data-ts="20020910154400" id="p6">
+  <div class="ph"><span class="pa">MB&amp;Fleur</span><span class="pm">#6 · 2002-09-10 15:44</span></div>
+  <div class="pb">Merlijn, van harte gefeliciteerd! nog vele jaren!</div>
+</article>
+<article class="post" data-ts="20020910164600" id="p7">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#7 · 2002-09-10 16:46</span></div>
+  <div class="pb">dat je maar lang mag doorvedetteren</div>
+</article>
+<article class="post" data-ts="20020910170500" id="p8">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#8 · 2002-09-10 17:05</span></div>
+  <div class="pb">Verdediger van wereldfaam (je weet wie ik bedoel) van harte. <br><br>Ik hoop dat je nog lang mag meeballen en dat je daarna maar materiaalman mag worden bij de Floraboys.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

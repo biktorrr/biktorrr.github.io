@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 3181 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 3181</h1>
+<p class="tm">10 posts&nbsp;·&nbsp;started 2012-11-21 13:32 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20121121133247" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1&nbsp;·&nbsp;2012-11-21 13:32</span></div>
+  <div class="pb">Het mooie van de trailerhelling is juist dat deze culturen overbrugt. Iedereen moet zn bootje toch ergens te water laten. Why cant we all just get along weet je.<br><br>Mooie helling Baq.</div>
+</article>
+<article class="post" data-ts="20121121145423" id="p2">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#2&nbsp;·&nbsp;2012-11-21 14:54</span></div>
+  <div class="pb">ik vind zelf het mooie van een trailerhelling: "Wahaarheen leiheidt de w\è\è\èg?"</div>
+</article>
+<article class="post" data-ts="20121122160805" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3&nbsp;·&nbsp;2012-11-22 16:08</span></div>
+  <div class="pb">Top, en deze trailerhelling is geloof ik uit 1986, aangezien de hele wijk uit die tijd stamt. de Romeinen hadden er niets mee idd. Wel mooi dat de hele wijk hier ook van de bootjes is. Ik ben al verdwaalt op de Driemasterwerf en vooral de Gaffelaarkade vond ik ook mooi.</div>
+</article>
+<article class="post" data-ts="20121122164830" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2012-11-22 16:48</span></div>
+  <div class="pb">Dat is ons . Professioneel globetrotter. Draai m 7 keer geblinddoekt om z'n as en hij wijst je met twee vingers in zijn neus Alpha Centauri aan, maar zet m in vinex Zoetermeer neer en hij verdwaalt. That's how de bak rolls.</div>
+</article>
+<article class="post" data-ts="20121122170046" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5&nbsp;·&nbsp;2012-11-22 17:00</span></div>
+  <div class="pb">Wel jammer dat de layout van het topic nu voorgoed gebasht is. Webmaster?</div>
+</article>
+<article class="post" data-ts="20121206173459" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6&nbsp;·&nbsp;2012-12-06 17:34</span></div>
+  <div class="pb">Ik stuitte zojuist op dit Trailerhelling youtube videootje:<br><br><iframe width="560" height="315" src="http://www.youtube.com/embed/32kK7lQZSks" frameborder="0" allowfullscreen></iframe></div>
+</article>
+<article class="post" data-ts="20121210143605" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7&nbsp;·&nbsp;2012-12-10 14:36</span></div>
+  <div class="pb"><a href="http://s283.beta.photobucket.com/user/oli4vb/media/Trailerhelling/TrailerhellingBuja.jpg.html" target="_blank"><img src="http://i283.photobucket.com/albums/kk312/oli4vb/Trailerhelling/TrailerhellingBuja.jpg" border="0" alt="Photobucket"/></a><br><br>Let niet op die afleidende beestjes op de voorgrond of de gezellige mannekes op de pier, het gaat natuurlijk om de trailerhelling rechtsboven, waardoor bootjes het Tanganyikameer op kunnen. De trailer staat ook al gereed.</div>
+</article>
+<article class="post" data-ts="20121211120842" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8&nbsp;·&nbsp;2012-12-11 12:08</span></div>
+  <div class="pb">Een beffoindr' mooie</div>
+</article>
+<article class="post" data-ts="20121211194137" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9&nbsp;·&nbsp;2012-12-11 19:41</span></div>
+  <div class="pb">Die nijlpaarden zorgen voor een bijzonder interessante compositie. Ik zeg: Hulde!</div>
+</article>
+<article class="post" data-ts="20121212234945" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10&nbsp;·&nbsp;2012-12-12 23:49</span></div>
+  <div class="pb">Wel praktisch natuurlijk voor die nijlpaarden, zo'n trailerhelling. Wandel je gewoon even het dorp in.</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hollands Glorie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Hollands Glorie</h1>
+<p class="tm">8 posts · started 2002-09-24 23:54 by </p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020924235400" id="p1">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#1 · 2002-09-24 23:54</span></div>
+  <div class="pb">ven. Nistlerooy:+2<br>Davids:+1<br>Seedorf:+1<br>Kluivert:+1<br><br>Nou morgen...em...Andy (wie anders?) nog een paar en v Bommel ofzo..dan staan we qua goalies weer op de kaart.</div>
+</article>
+<article class="post" data-ts="20020925120100" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2002-09-25 12:01</span></div>
+  <div class="pb">je vergeet:<br>Feyenoord +3</div>
+</article>
+<article class="post" data-ts="20020925125600" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2002-09-25 12:56</span></div>
+  <div class="pb">met alle dank aan zoetebier, ook een hollander.</div>
+</article>
+<article class="post" data-ts="20020925132600" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2002-09-25 13:26</span></div>
+  <div class="pb">mooi</div>
+</article>
+<article class="post" data-ts="20020925232300" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2002-09-25 23:23</span></div>
+  <div class="pb">vandaag toch een iets minder productieve dag voor d'n hollander. <br>voor d'n vlaming trouwens ook.</div>
+</article>
+<article class="post" data-ts="20020926115500" id="p6">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#6 · 2002-09-26 11:55</span></div>
+  <div class="pb">dat met die Vlamingen was mooi.<br>10000 huilende belgen gezien in het Bernabeu.<br><br>Na tien minuten in de eerste helft zongen ze ´Tis stil aan de overkant´ wat die Madrilenen natuurlijk niet pikten.<br><br>Is wel mooi trouwens zon kaartje kopen voor Real en dan 6 doelpunten krijgen. Goeie deal.</div>
+</article>
+<article class="post" data-ts="20020927131600" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-09-27 13:16</span></div>
+  <div class="pb">10000 belgen? respect!<br>wel een goeie deal ja, welke wedstrijden staan er nog op 't programma voor je?</div>
+</article>
+<article class="post" data-ts="20020930143300" id="p8">
+  <div class="ph"><span class="pa">JB</span><span class="pm">#8 · 2002-09-30 14:33</span></div>
+  <div class="pb">alle wedstrijden.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

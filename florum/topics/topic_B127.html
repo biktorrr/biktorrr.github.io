@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MD en MB bedankt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">MD en MB bedankt</h1>
+<p class="tm">6 posts · started 2002-07-04 13:54 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020704135400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-07-04 13:54</span></div>
+  <div class="pb">voor jullie inbreng in de vorige twee seizoenen, <br>MB, helaas kunnen we je rugnummer niet, zoals bij romario voor eeuwig aan jou geven omdat oli4 er al mee speelt. maar jou get the pointe. </div>
+</article>
+<article class="post" data-ts="20020704150900" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2002-07-04 15:09</span></div>
+  <div class="ps">ja jongens</div><div class="pb">bedankt! en nu over tot de echt belangrijke zaken, er gaan geruchten rondom de ajax arena dat olivier weggaat bij de floraboys.... wat is hier van waar??</div>
+</article>
+<article class="post" data-ts="20020704153400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2002-07-04 15:34</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20020704153400" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-07-04 15:34</span></div>
+  <div class="pb">Het ga jullie goed! ik kom nog wel 's kijken.</div>
+</article>
+<article class="post" data-ts="20020704153900" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-07-04 15:39</span></div>
+  <div class="pb">Ik kan nog zeggen dat ik met Michiel heb gespeeld!</div>
+</article>
+<article class="post" data-ts="20020704170000" id="p6">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#6 · 2002-07-04 17:00</span></div>
+  <div class="ps">ik verwacht</div><div class="pb">dat dit is om zekerheid te krijgen omtrent een basisplaats... sterallures.. geloof mij : binnen 7 maanden staat deze jongen weer in de zaal... Hij kan niet zonder, het is een liefhebber...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>adressen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">adressen</h1>
+<p class="tm">10 posts · started 2004-06-17 13:02 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040617130200" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2004-06-17 13:02</span></div>
+  <div class="pb">Hey iedereen<br><br>kan iemand mij helpen met een paar adressen die ik zoek? Ik heb ze niet en er valt straks wat in de bus bij de floraboys.<br><br>De adressen die ik neyt heb zoek:<br><br>Kenobi<br>Victor<br>Wybren</div>
+</article>
+<article class="post" data-ts="20040617131900" id="p2">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#2 · 2004-06-17 13:19</span></div>
+  <div class="pb">ik neyt heb zoek?<br><br>ik neyt heb jeit adres voor je</div>
+</article>
+<article class="post" data-ts="20040617132100" id="p3">
+  <div class="ph"><span class="pa">bigT</span><span class="pm">#3 · 2004-06-17 13:21</span></div>
+  <div class="pb">die ik nyet heb EN zoek</div>
+</article>
+<article class="post" data-ts="20040617133200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-06-17 13:32</span></div>
+  <div class="pb">Je hebt heeel erg veel geluk, dat ik m'n adressenboekje bij me heb:<br><br>V. de Boer, Kenaustraat 9, 2011 MV, Haarlem<br><br>H. Kenobi, Prinsengracht 241 ?, 1015 DT, Amsterdam</div>
+</article>
+<article class="post" data-ts="20040617151400" id="p5">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#5 · 2004-06-17 15:14</span></div>
+  <div class="pb">Mer, bedankt. zij zijn op de post gedaan.</div>
+</article>
+<article class="post" data-ts="20040617151400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-06-17 15:14</span></div>
+  <div class="pb">Maak daar maar een E van.</div>
+</article>
+<article class="post" data-ts="20040617151500" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-06-17 15:15</span></div>
+  <div class="pb">Laat me raden..een afstudeergalauitnodiging.</div>
+</article>
+<article class="post" data-ts="20040622184700" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-06-22 18:47</span></div>
+  <div class="pb">Naar wie heb je dat nou gestuurd, want ik heb niets ontvangen. Belangrijk is dus wel dat de afdeling goed is anders ligt hij misschien heel ergens anders. </div>
+</article>
+<article class="post" data-ts="20040622192200" id="p9">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#9 · 2004-06-22 19:22</span></div>
+  <div class="pb">ik heb het wel naar je toegestuurd kenoobster..<br><br>maar goed hier kom voor iedereen die mijn uitnodiging per ongeluk niet heeft gekregen<br><br>afstuderen 29 juni:<br>16:00 Academiegebouw Leiden<br><br>Feest:<br>20:30 Cafe Einstein<br>Nieuwe Rijn 17<br></div>
+</article>
+<article class="post" data-ts="20040625225500" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2004-06-25 22:55</span></div>
+  <div class="pb">BigT, nou mis ik dinsdagavond wel de grote finale van Miss Italia Nel Mondo 2004 op raiuno.... Of heb je daarvoor misschien een groot scherm geregeld?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

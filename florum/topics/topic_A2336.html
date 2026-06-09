@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>paasLost? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">paasLost?</h1>
+<p class="tm">6 posts · started 2008-03-20 17:39 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080320173900" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2008-03-20 17:39</span></div>
+  <div class="pb">morgen of overmorgen Lost kijken?</div>
+</article>
+<article class="post" data-ts="20080320202300" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2008-03-20 20:23</span></div>
+  <div class="pb">Klinkt goed. Ik heb er wel oren naar.<!--62.163.201.79--></div>
+</article>
+<article class="post" data-ts="20080320203900" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2008-03-20 20:39</span></div>
+  <div class="pb">Ahhh ik ben er niet! Jammer, ga maar even downloaden en dan maandag kijken denk ik.... Have Fun<!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20080320221100" id="p4">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#4 · 2008-03-20 22:11</span></div>
+  <div class="pb">Lost, ging dat niet over die haas die zijn eitjes kwijt was?<!--91.141.226.154--></div>
+</article>
+<article class="post" data-ts="20080321090000" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2008-03-21 09:00</span></div>
+  <div class="pb">Het nare van lost is dat het over een miljoen dingen gaat. En dus ook over hazen, poepende. Ik zal je theorie eens op een van de tientallen lost-websites spuien, wie weet is dat de sleutel tot alles...<!--82.204.25.6--></div>
+</article>
+<article class="post" data-ts="20080321100100" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-03-21 10:01</span></div>
+  <div class="pb">jazzmastah: vanavond doen dan?<br><br>zeg 20.30/21u aan de GOG?<!--82.204.25.6--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

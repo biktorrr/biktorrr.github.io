@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Topic 2632 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Topic 2632</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2010-04-15 08:32 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100415083200" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1&nbsp;·&nbsp;2010-04-15 08:32</span></div>
+  <div class="pb">Newsflash. Mijn goede FB-vriendin H@ilay Br#gman is getrouwd. Het stond op FB.</div>
+</article>
+<article class="post" data-ts="20100415085700" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2&nbsp;·&nbsp;2010-04-15 08:57</span></div>
+  <div class="pb">Tja, als het op FB staat, dan moet het waar zijn.<br><br>Merl, hoe na\ïef kun je zijn: ze daagt je uit. Jij bent aan zet! Wijzig jouw statuut ook in 'getrouwd', dan zullen we zien hoe ze reageert.</div>
+</article>
+<article class="post" data-ts="20100415090800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3&nbsp;·&nbsp;2010-04-15 09:08</span></div>
+  <div class="pb">Dus jij denkt ook dat ik het persoonlijk moet nemen? <br><br>Of wat dacht je van FB-status: "weduwnaar"?</div>
+</article>
+<article class="post" data-ts="20100415103700" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4&nbsp;·&nbsp;2010-04-15 10:37</span></div>
+  <div class="pb">Ik zou gaan voor "Jonge weduwnaar met drie schreeuwende kinderen"<br><br>En vervolgens bij beroep: "Voltijd webmaster van de FB-groep Ehv de (aller)gh\âkste"<br><br>Moet jij opletten hoe snel H@ily haar status terugverandert naar "gewillige single"</div>
+</article>
+<article class="post" data-ts="20100429173400" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5&nbsp;·&nbsp;2010-04-29 17:34</span></div>
+  <div class="pb">Ok, social media wordt een beetje te intelligent. Suggesties van linked in.<br><br>Thys Kn03ster!<br><br>En J7sper Gr03n. Amice, heb jij enig idee hoe ze aan deze laatste zouden kunnen komen? (Hint J7sper Rood?)</div>
+</article>
+<article class="post" data-ts="20101104212001" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6&nbsp;·&nbsp;2010-11-04 21:20</span></div>
+  <div class="pb">JEIT! Volgens facebook zou ik vrienden moeten worden met de eigenares van de auto van de moeder van de biktie!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

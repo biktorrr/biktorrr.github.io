@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zwolle, iemand? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zwolle, iemand?</h1>
+<p class="tm">10 posts · started 2007-10-07 10:27 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071007102700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2007-10-07 10:27</span></div>
+  <div class="pb">Boys, girls,<br><br>Heb via Marktplaats een imposante collectie trofeeen op de kop getikt. Deze wil ik gebruiken voor een belangrijke ceremonie op derde kerstdag. Stukje is dat ze in Zwolle staan. Komt iemand van jullie komende tijd in Zwolle, toevallig?<br><br>Doeg,</div>
+</article>
+<article class="post" data-ts="20071007103500" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-10-07 10:35</span></div>
+  <div class="pb">kan altijd vragen of mijn zus ze oppikt onderweg van den bosch naar leeuwarden<br></div>
+</article>
+<article class="post" data-ts="20071007110700" id="p3">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#3 · 2007-10-07 11:07</span></div>
+  <div class="pb">helaasjes.<br>misschien kunnen die knotsgekke boys van de tnt ze naar Haarlem brengen?</div>
+</article>
+<article class="post" data-ts="20071008173900" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-10-08 17:39</span></div>
+  <div class="pb">Helaas, ik zou ze graag meenemen. MAar hierbij even de groetjes uit Roemenie waar ze geen rare tekens hebben omdat ik op de laptop van een NL collega in het hotel zit......</div>
+</article>
+<article class="post" data-ts="20071009084800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-10-09 08:48</span></div>
+  <div class="pb">Roemenie ligt wel dezelfde kant als Zwolle op toch?</div>
+</article>
+<article class="post" data-ts="20071009085800" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2007-10-09 08:58</span></div>
+  <div class="pb">Mk: je moet daar in Roemenie wel gek worden van de accordeonnetjes. Elke Roemeen die ik nochthans ben tegengekomen is vergroeid met zijn trekharmonica.</div>
+</article>
+<article class="post" data-ts="20071009094800" id="p7">
+  <div class="ph"><span class="pa">G. Eil!</span><span class="pm">#7 · 2007-10-09 09:48</span></div>
+  <div class="pb">Trekharmonica?</div>
+</article>
+<article class="post" data-ts="20071009102700" id="p8">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#8 · 2007-10-09 10:27</span></div>
+  <div class="pb">Ja, ik kan ze altijd maar moeilijk uit elkaar houden:<br><br>Een trekzak, (trek)harmonica of diatonische accordeon (in de Engels sprekende landen zijn de benamingen zoals melodeon of diatonic button-accordion gebruikelijk) is een muziekinstrument verwant aan de accordeon. Het is gebaseerd op het principe van de doorslaande tong (in plaats van een opslaand of dichtslaand riet, zoals bij de rietinstrumenten).</div>
+</article>
+<article class="post" data-ts="20071009103700" id="p9">
+  <div class="ph"><span class="pa">de minister</span><span class="pm">#9 · 2007-10-09 10:37</span></div>
+  <div class="pb">goed stukje research en nu weer aan het werk!</div>
+</article>
+<article class="post" data-ts="20071009164900" id="p10">
+  <div class="ph"><span class="pa">Jazzy</span><span class="pm">#10 · 2007-10-09 16:49</span></div>
+  <div class="pb">goed gespoten ministertje!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

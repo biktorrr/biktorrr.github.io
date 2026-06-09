@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rent is 2 damn high – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rent is 2 damn high</h1>
+<p class="tm">5 posts&nbsp;·&nbsp;started 2010-10-26 19:37 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20101026193700" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1&nbsp;·&nbsp;2010-10-26 19:37</span></div>
+  <div class="pb">In navolging van de post van VB in het quote van de dag topic, vind ik dat Jimmy McMillan zijn eigen topic verdient<br><br><a href="http://www.rentistoodamnhigh.org/">Hier</a> de offici\ële site. Wat een heerschkoning.<br></div>
+</article>
+<article class="post" data-ts="20101026215400" id="p2">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#2&nbsp;·&nbsp;2010-10-26 21:54</span></div>
+  <div class="pb">rents too damn high</div>
+</article>
+<article class="post" data-ts="20101027070800" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3&nbsp;·&nbsp;2010-10-27 07:08</span></div>
+  <div class="pb">daarom heb ik dus ook een huis gekocht.<br>Misschien moeten ze in de US ook gewoon lekker hypotheekrenteaftrek invoeren. Alhoewel...met zo'n lage belastingdruk als daar valt er weinig af te trekken.<br><br>Uiteraard komt Jimmy met een liedje (zie het cd-linkje op de website) Ik heb alleen nergen kunnen vinden wat hij nog meer kan naast zijn Black Belt Karate expertise. Die lijst moet immers immens zijn.<br></div>
+</article>
+<article class="post" data-ts="20101027072100" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2010-10-27 07:21</span></div>
+  <div class="pb">Er schijntook in de VS al een HRA te zijn profesj.</div>
+</article>
+<article class="post" data-ts="20101027075200" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5&nbsp;·&nbsp;2010-10-27 07:52</span></div>
+  <div class="pb">Ah ok, dat wissik niet.<br>Waarom zijn er dan nog arme mensen daar? Je mag al bijna je hele salaris houden en dan mag je ook nog eens gesubsidieerd wonen. Sounds like Walhalla, waarom is Biggy daar ooit weggegaan?<br><br></div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

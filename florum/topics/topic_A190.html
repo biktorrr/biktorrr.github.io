@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website-Suggestie – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Website-Suggestie</h1>
+<p class="tm">8 posts · started 2001-08-20 14:52 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20010820145200" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2001-08-20 14:52</span></div>
+  <div class="pb">WJ, is het niet een goed plan om TWEE flora<br>te hebben: eentje uitsluitend voor bal-afspraken<br>(ook gezien de komende zaal-bal-activiteiten)<br>en eentje voor al het andere Flora-gelul zoals <br>de floraleague en wodka-redbull en hooghoudt-records en<br>gelul over de 17 enzo).<br><br>Een aparte afdeling voor het zaalballen is denk ik<br>sowieso geen overbodige luxe dunkt mij...<br><br>Poopie Out!<br></div>
+</article>
+<article class="post" data-ts="20010820145500" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-08-20 14:55</span></div>
+  <div class="ps">tja...</div><div class="pb">als ik dan toch bezig ben met suggestiones:<br>- foto van de pit?<br>- van anderen?<br>- worden er nog vakantiefotoos gescand dudesters?<br><br>Poopie Out!<br></div>
+</article>
+<article class="post" data-ts="20010820174900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2001-08-20 17:49</span></div>
+  <div class="pb">Over 'n paar dagen heeft iedereen z'n foto's<br>die-d-i bij mij heeft nabesteld. Dan kan 't <br>grote scannen beginnen. Het lijkt mij handig<br>om per zaalvoetbalwedstrijd 'n tabel te heb-<br>ben waarop elke speler kan aangeven of i al<br>dan niet aanwezig zal zijn.</div>
+</article>
+<article class="post" data-ts="20010821075900" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2001-08-21 07:59</span></div>
+  <div class="ps">Plus encore</div><div class="pb">Lijst met mobiele nummers, als de verjaardagenlijst..snel en overzichtelijk ? (evt volledige adresgegevens,maar dat is op een website misschien iets te precair en met Ollie blijft je dan altijd een huis of meer achterlopen).<br><br></div>
+</article>
+<article class="post" data-ts="20010821115300" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2001-08-21 11:53</span></div>
+  <div class="pb">Dat laatste zou mogelijk moeten zijn in een Floraboys-Only zone oid....want ik ontvang niet graag nog meer fanmail.</div>
+</article>
+<article class="post" data-ts="20010821201200" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2001-08-21 20:12</span></div>
+  <div class="pb">Ja, Misha dan krijg je die Rotterdamse 'waaifuhh' uit de Hout van afgelopen zaterdag nog achter je aan.</div>
+</article>
+<article class="post" data-ts="20010821225400" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2001-08-21 22:54</span></div>
+  <div class="pb">Vreselijk...vast allemaal Feyenoord supporters!!!</div>
+</article>
+<article class="post" data-ts="20010821230600" id="p8">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#8 · 2001-08-21 23:06</span></div>
+  <div class="pb">Oke, ff voor de duidelijkheid. Op dit moment heb ik het even erg druk. Zodra ik wat meer tijd heb. Hopelijk dit weekend zal ik even aan aantal dingen gaan maken.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

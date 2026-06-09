@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gefeliciteerd Marije! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Gefeliciteerd Marije!</h1>
+<p class="tm">9 posts · started 2004-09-16 12:24 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040916122400" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2004-09-16 12:24</span></div>
+  <div class="pb">Hoi Marije GEfELICITEERD en dat je nog maar een grote meid mag worden!!</div>
+</article>
+<article class="post" data-ts="20040916123800" id="p2">
+  <div class="ph"><span class="pa">JL@u</span><span class="pm">#2 · 2004-09-16 12:38</span></div>
+  <div class="pb">Hoera, er is een floragirl jarig!<br>Gefeliciflapperd voor Marije!</div>
+</article>
+<article class="post" data-ts="20040916131800" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-09-16 13:18</span></div>
+  <div class="pb">o?<br><br>nou gefeliciteerd dan maar!</div>
+</article>
+<article class="post" data-ts="20040916133100" id="p4">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#4 · 2004-09-16 13:31</span></div>
+  <div class="pb">hey Marije van harte gefeliciteerd!</div>
+</article>
+<article class="post" data-ts="20040916162300" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2004-09-16 16:23</span></div>
+  <div class="pb">en dus ook van gefeliciteerd van Taimny</div>
+</article>
+<article class="post" data-ts="20040916175300" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-09-16 17:53</span></div>
+  <div class="pb">Doet er nog een felicitatieschepje bovenop.</div>
+</article>
+<article class="post" data-ts="20040916180100" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2004-09-16 18:01</span></div>
+  <div class="pb">Van harte en nog vele jaren</div>
+</article>
+<article class="post" data-ts="20040916181700" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2004-09-16 18:17</span></div>
+  <div class="pb">ook van mij de hartelijke felicitaties!!!</div>
+</article>
+<article class="post" data-ts="20040920122900" id="p9">
+  <div class="ph"><span class="pa">Marije</span><span class="pm">#9 · 2004-09-20 12:29</span></div>
+  <div class="pb">Ik ben oprecht ontroerd door al deze verjaardagswensen. Ik moet echt vaker op het florum komen, er staan toch af en toe best leuke dingen!!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

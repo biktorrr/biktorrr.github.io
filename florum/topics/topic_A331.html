@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puike prognose, Penose – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Puike prognose, Penose</h1>
+<p class="tm">12 posts · started 2001-11-02 14:11 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011102141100" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2001-11-02 14:11</span></div>
+  <div class="pb">Ik moet de Penose feliciteren met zijn puike prognosee. Staat als een huis!</div>
+</article>
+<article class="post" data-ts="20011102145700" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2001-11-02 14:57</span></div>
+  <div class="pb">dude..die staat er echt al 5 weken ofzo.</div>
+</article>
+<article class="post" data-ts="20160403134450" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2016-04-03 13:44</span></div>
+  <div class="pb">Laten we de duurzaamheidsconsulent (zie "webmaster van likmevestje") een handje helpen en hem vragen elk weekend een prognose te geven. Dat kan zijn: Ajax - PEC, het Oekra\ïne-referendum, de wielerkoers die ongetwijfeld ergens plaatsvindt, de verkiezing in een bananenrepubliek. De vloer is van jou, Penose.</div>
+</article>
+<article class="post" data-ts="20160404135845" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2016-04-04 13:58</span></div>
+  <div class="pb">Neenee, ik weet vrijwel zeker dat het de eerste was</div>
+</article>
+<article class="post" data-ts="20160404185013" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2016-04-04 18:50</span></div>
+  <div class="pb">Komt de brave Pendule ooit nog wel eens op het Florum. <br><br>Laten we bij wijze van experiment eens bijhouden hoe lang het duurt eer de Pendule dit topic aantikt.</div>
+</article>
+<article class="post" data-ts="20160404224618" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2016-04-04 22:46</span></div>
+  <div class="pb">tik</div>
+</article>
+<article class="post" data-ts="20160404232153" id="p7">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#7 · 2016-04-04 23:21</span></div>
+  <div class="pb">PENOSE, we willen een prognose !!</div>
+</article>
+<article class="post" data-ts="20160405200933" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2016-04-05 20:09</span></div>
+  <div class="pb">Timmie tikt en de Penose doet een prognose, hoe moeilijk kan t zijn..</div>
+</article>
+<article class="post" data-ts="20160406093439" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2016-04-06 09:34</span></div>
+  <div class="pb">Sterke witz vic. </div>
+</article>
+<article class="post" data-ts="20160406152931" id="p10">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#10 · 2016-04-06 15:29</span></div>
+  <div class="pb">ik wacht ook nog op<br><br>Het betoog van de Bode<br>De oratie van de Olijcke<br>De preek van de Profesj<br>Oli4 orakelt<br><br>en<br><br>het sermoen van de sjoste<br></div>
+</article>
+<article class="post" data-ts="20160407003121" id="p11">
+  <div class="ph"><span class="pa">Penose</span><span class="pm">#11 · 2016-04-07 00:31</span></div>
+  <div class="pb">Nou boys, ik durf er geen prognose tegenaan te gooien: halen we de grens? Ik durf er wel een prognose tegenaan te gooien wat betreft het aantal zetels voor de PvdA als ze een geldig 'nee'  toch naast zich neerleggen: 5 zetels</div>
+</article>
+<article class="post" data-ts="20160407205802" id="p12">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#12 · 2016-04-07 20:58</span></div>
+  <div class="pb">En dan durft hij zich opeens wel aan een prognose te wagen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

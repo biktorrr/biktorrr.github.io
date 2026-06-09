@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>... – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">...</h1>
+<p class="tm">13 posts · started 2003-08-28 11:49 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030828114900" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-08-28 11:49</span></div>
+  <div class="ps">Lucky Ajax</div><div class="pb">need i say more</div>
+</article>
+<article class="post" data-ts="20030828114900" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-08-28 11:49</span></div>
+  <div class="pb">nee denk ik<br><br></div>
+</article>
+<article class="post" data-ts="20030828121000" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-08-28 12:10</span></div>
+  <div class="pb">geluk dwing je af. <br>Ik moet wel zeggen dat ik peultjes zat te zweten zeg. Godschristus wat een pest wedstrijd. <br><br></div>
+</article>
+<article class="post" data-ts="20030829114400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-08-29 11:44</span></div>
+  <div class="pb">Wow, dit is wel uniek. Eerst posten:<br><br>"Lucky Ajax, need I say more."<br><br>En dan vervolgens onmiddellijk toch maar wel wat zeggen:<br><br>"... nee denk ik."<br><br>Typisch kakkerlakkengedrag. In de oostenrijkse kranten lees ik steeds dat Ajax de wedstrijd volledig domineerde, maar dat het aan de uitfluitende arbiter lag dat het zo lang moest duren. De coach van Graz zei zich zelfs te hebben geschaamd voor zijn eigen team, en nog een keer zijn excuses te willen maken voor de vele vuile overtredingen op de amsterdamse voetbaljoden. Dat zeggen de kranten dan, he.</div>
+</article>
+<article class="post" data-ts="20110424165525" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2011-04-24 16:55</span></div>
+  <div class="pb">Lange leve de opperkakkerlakken en de minikakkerlakjes van Excelsior! Zouden we het dan toch nog een keer meemaken?</div>
+</article>
+<article class="post" data-ts="20110424185519" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2011-04-24 18:55</span></div>
+  <div class="pb">Amen> Goed werk kralingse vrinden. #derdester</div>
+</article>
+<article class="post" data-ts="20110424234338" id="p7">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#7 · 2011-04-24 23:43</span></div>
+  <div class="pb">fayenoord europa in jatooch</div>
+</article>
+<article class="post" data-ts="20110425104845" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2011-04-25 10:48</span></div>
+  <div class="pb">Twente kampioenen!</div>
+</article>
+<article class="post" data-ts="20110425134747" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2011-04-25 13:47</span></div>
+  <div class="pb">THEO LAAT JE TIETEN ZIEN!!!<br><br>THEO LAAT JE TIETEN ZIEN!!!<br><br>THEO LAAT JE TIETEN ZIEN!!!</div>
+</article>
+<article class="post" data-ts="20110425212511" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2011-04-25 21:25</span></div>
+  <div class="pb">Oh ja, daar kom je voor naar het stadion. Misschien kan ie een wet t-shirt contest doen met die reserve doelman van Ajaks en met superspits Mido. Loopt dat 'stadion' wel voor vol denk ik.</div>
+</article>
+<article class="post" data-ts="20110425230247" id="p11">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#11 · 2011-04-25 23:02</span></div>
+  <div class="pb">PIZZA!</div>
+</article>
+<article class="post" data-ts="20110426210340" id="p12">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#12 · 2011-04-26 21:03</span></div>
+  <div class="pb">Jaja, Johnny Burgerking is weg bij Feijenoord en nou krijgt mitsjel praatjes over dikke voetballers.</div>
+</article>
+<article class="post" data-ts="20110427213756" id="p13">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#13 · 2011-04-27 21:37</span></div>
+  <div class="pb">He, Merlijn begon over Theo's tieten! <br>Ik persoonlijk ben meer onder de indruk van Theo's tattoos.<br>Ik zou deze voetballers trouwens eerder 'volslank' noemen. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

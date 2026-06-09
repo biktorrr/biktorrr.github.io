@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lachen of Huilen? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lachen of Huilen?</h1>
+<p class="tm">6 posts · started 2007-03-26 12:04 by Vb</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070326120400" id="p1">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#1 · 2007-03-26 12:04</span></div>
+  <div class="pb">ik weet t niet...<br><a href="http://www.garnierstreamingmedia.com/asx/openclip.asp?file=/sbs6/wannabeapopstar/hilbrand_nawijn.20070323.asf">Hillie Hillie Hillie!!</a></div>
+</article>
+<article class="post" data-ts="20070326121900" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2007-03-26 12:19</span></div>
+  <div class="pb">alleen Grote Meneren durven zichzelf zo voor de wolven te werpen.</div>
+</article>
+<article class="post" data-ts="20070326132600" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2007-03-26 13:26</span></div>
+  <div class="pb">en alleen grote meneeren worden dan door die wolven verorberd. <br><br>nu de vraag: hoeveel SMS stemmen heeft die gekregen?<br></div>
+</article>
+<article class="post" data-ts="20070326144400" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2007-03-26 14:44</span></div>
+  <div class="pb">Is dat die met die <i>pisvlek</i>?</div>
+</article>
+<article class="post" data-ts="20070509203100" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2007-05-09 20:31</span></div>
+  <div class="pb">dan douw ik em weer even naar boven, die mooie 2000e<br><br>Niet geheel irrelevant..<a href="http://nlpop.blog.nl/pop/2007/05/07/horror-hilbrand-nawijn-gaat-jumpen">Hillie</a> heeft namelijk een jumpstyle nummer gelanceerd, waar hij geheel toepasselijk uit de maat op jumpt.<br></div>
+</article>
+<article class="post" data-ts="20070510103400" id="p6">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#6 · 2007-05-10 10:34</span></div>
+  <div class="pb">ik wilde vragen of die man geen schaamte heeft, maar dat heeft nu niet zoveel zin meer lijkt me...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

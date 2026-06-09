@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VRIJMIPUUU – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VRIJMIPUUU</h1>
+<p class="tm">7 posts · started 2005-11-25 16:29 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051125162900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2005-11-25 16:29</span></div>
+  <div class="pb">ok, dit keer een lastige:<br><br>De floraboys vrijmipuu gaat ook mee in de Sudoku-rage die op dit moment heerscht. Daarom kan je hieronder een Sudoku puuzl vinden. Stap 1 is om deze op te lossen.<br><br>Stap 2 bestaat eruit om uit te vinden wat er op de puntjes moet staan (2 woorden). Dat doe je door de corresponderende letters bij de roze cijfers in te vullen (bv sudoku-hokje met roze A is een '3' dan is de eerste letter een 'C'). De resterende 4 letters zal je erbij moeten raden. <br><br>Succes.<br><br>De eerste goede inzender wint aanstaande zaterdag een DVD die met het onderwerp van deze week te maken heeft (Dit keer echt). Daarvoor wil ik wel de volledig ingevulde sudoku + woorden zien voor zaterdagavond 12u en je moet dan aanwezig zijn op Mitch' feest)<br><br></div>
+</article>
+<article class="post" data-ts="20051125163000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-11-25 16:30</span></div>
+  <div class="pb">hier issie:<br><br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/sudoku.JPG"></div>
+</article>
+<article class="post" data-ts="20051125163100" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2005-11-25 16:31</span></div>
+  <div class="pb">dus 1=A, 2=B, 3=C enz...</div>
+</article>
+<article class="post" data-ts="20051126174000" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2005-11-26 17:40</span></div>
+  <div class="pb">jeyt.. ik heb hem gedaan</div>
+</article>
+<article class="post" data-ts="20051126180600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2005-11-26 18:06</span></div>
+  <div class="pb">hulde aan de puzzelmeister, ik zal  het antwoord meenemen.<br></div>
+</article>
+<article class="post" data-ts="20051126204800" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2005-11-26 20:48</span></div>
+  <div class="pb">Dat is vet onmogelijk, Bikkie. Ik heb er al een uur puzzelen opzitten en ik heb nog maar een nummertje ingevuld.</div>
+</article>
+<article class="post" data-ts="20051128093500" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2005-11-28 09:35</span></div>
+  <div class="pb">voor de volledigheid:<br><br>het antwoord was BIKKIE BAKKIE en de volledige puzzel kan je hieronder vinden. <br><br>Bikkie gefeliciteerd met je prijs!!!<br><br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/sna.JPG"></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

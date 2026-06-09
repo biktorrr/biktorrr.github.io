@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GOG – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">GOG</h1>
+<p class="tm">7 posts · started 2006-09-26 10:59 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060926105900" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2006-09-26 10:59</span></div>
+  <div class="pb">Ik heb het nog even snel opgezocht.de Gedempty Olde Gracht gaat, als het door de raad komt, er als volgt uit zien.<br><i>Een aantal fracties vond dat de coalitie hiermee vooruitliep op de komende behandeling van het ontwerp voor de herinrichting  van de Gedempte Oude Gracht. B&W gaan in het voorstel dat in oktober door de raad wordt behandeld, uit van een 30 km-zone en de invoering van \é\énrichtingsverkeer voor auto's, vanaf  het Spaarne richting De Raaks. In tegengestelde richting wordt een vrije busbaan aangelegd voor het busverkeer. De coalitie vond dat nu het moment was om knopen door te hakken.</i><br>Haarlem105 meldt dat naast deze vrije busbaan laad en los-vakken voor vrachtverkeer komen te liggen, zodat die -zoals nu- niet meer midden op de rijbaan hoeven te parkeren. Deze vakken zijn dan ook bedoeld voor auto's om te laden en lossen en worden 's avonds parkeervakken voor de bewoners.<br><br><br>zie ook de <a href="http://e-diensten.haarlem.nl/infoman/easyk/downdoc.asp?Item=0&format=3003&uid=244118669">beleidsnota</a></div>
+</article>
+<article class="post" data-ts="20060926111000" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2006-09-26 11:10</span></div>
+  <div class="pb">Die beleidsnota is wel een eye-opener, vooral de beraamde effecten van de herinrichting zijn stijlvol weergegeven. Ik wist het niet maar eigenlijk heeft iedereen profijt van een mooie GOG (!)<br></div>
+</article>
+<article class="post" data-ts="20060926121400" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2006-09-26 12:14</span></div>
+  <div class="pb">Het lijkt me dat alleen Victor Cliteur er voordeel bij heeft. Daarom ben ik tegen.</div>
+</article>
+<article class="post" data-ts="20060926132600" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2006-09-26 13:26</span></div>
+  <div class="pb">Maar als ik nou met mijn kastjes van de Ikea aan kom rijden, moet ik helemaal omrijden...<br><br>ik hoop dat ze er een mooie boulevard van maken om 's avonds over op en neer te flaneren. </div>
+</article>
+<article class="post" data-ts="20060926143000" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2006-09-26 14:30</span></div>
+  <div class="pb">volgens de nota krijgt het Verwulft iig dat karakter. Auto's zullen daar 'te gast zijn'.<br>Floraboys Verwulft Flaneerboys</div>
+</article>
+<article class="post" data-ts="20060926210200" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2006-09-26 21:02</span></div>
+  <div class="pb">Wat mij betreft mogen ze de Gedempte Oude Gracht weer openscheppen en hem omdopen in Oude Gracht. Kunnen ze ook een paar mooie bruggen bouwen voor de voetgangers. Weg met de bolides in de binnenstad.</div>
+</article>
+<article class="post" data-ts="20060927093500" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2006-09-27 09:35</span></div>
+  <div class="pb">zo grappig was dat, <br>het was ooit bedoeld als een-april-grap maar iedereen vindt het eigenlijk het beste plan ooit. <br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

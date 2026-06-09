@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Poging twee tot groetjes uit China – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Poging twee tot groetjes uit China</h1>
+<p class="tm">4 posts · started 2005-07-08 06:12 by Ca en Tube</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050708061200" id="p1">
+  <div class="ph"><span class="pa">Ca en Tube</span><span class="pm">#1 · 2005-07-08 06:12</span></div>
+  <div class="pb">Naar wij nu zien zijn onze eerste groetjes niet door de censuur gekomen. Poging 2.<br><br>Onderhand zijn we nu bijna drie weken in China en we hebben het erg naar ons zin. We hebben de Grote Roerganger in zijn vrieskist zien liggen, de muur beklommen en wat poppetjes van klei bekeken. Verder hebben we ook nog de internationale horen schallen over een lieflijk chinees stadje. Kortom, wat wil je nog meer? We zijn nu in Suzhou (iets ten westen van Shanghai) en we gaan morgen naar Nanjing. <br><br>Groetjes<br><br>Ca en Tube<br>PS we weten niet hoe we de vreemde karaktertjes hier moeten produceren, het keyboard ziet er erg normaal uit.   </div>
+</article>
+<article class="post" data-ts="20050708133300" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2005-07-08 13:33</span></div>
+  <div class="pb">terecht!!<br>jullie zijn door de censuur gekomen!<br>groeten terug<br></div>
+</article>
+<article class="post" data-ts="20050708154200" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-07-08 15:42</span></div>
+  <div class="pb">Terechte plaatsen hebben jullie bezocht. Neem je ook nog een stukje mee van de Three Gorges Dam....?</div>
+</article>
+<article class="post" data-ts="20050709005200" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2005-07-09 00:52</span></div>
+  <div class="pb">vette sjit die ingevroren roergangers, veel plezier nog verder. <br><br><br><br><br>(verder is het natuurlijk wel verdacht dat jullie geen rare karakters kunnen produceren)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

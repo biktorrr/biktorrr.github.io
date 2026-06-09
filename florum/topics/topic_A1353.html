@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Besoindre – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Besoindre</h1>
+<p class="tm">11 posts · started 2004-11-12 23:05 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041112230500" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2004-11-12 23:05</span></div>
+  <div class="pb"><img src="http://www.cafepeterbeense.nl/home/img/20031125200840.jpg"></div>
+</article>
+<article class="post" data-ts="20041112230600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-11-12 23:06</span></div>
+  <div class="pb">Goed werk Mitsj.<br><br>De volgende zijn voor Jossyt S.</div>
+</article>
+<article class="post" data-ts="20041112230800" id="p3">
+  <div class="ph"><span class="pa">Merrel</span><span class="pm">#3 · 2004-11-12 23:08</span></div>
+  <div class="pb"><img src="http://www.lekkerspuiten.nl/preview/foto4.jpg"></div>
+</article>
+<article class="post" data-ts="20041112231200" id="p4">
+  <div class="ph"><span class="pa">Merrel</span><span class="pm">#4 · 2004-11-12 23:12</span></div>
+  <div class="pb"><img src="http://www.lekkerspuiten.nl/preview/foto1.jpg"><br><br><img src="http://www.lekkerspuiten.nl/preview/foto2.jpg"></div>
+</article>
+<article class="post" data-ts="20041112231200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-11-12 23:12</span></div>
+  <div class="pb">Nou Jossyt, als je morgen scoort tegen de erecode krijg je er nog twee. Stukje scherphouden. </div>
+</article>
+<article class="post" data-ts="20041112231800" id="p6">
+  <div class="ph"><span class="pa">Merrel</span><span class="pm">#6 · 2004-11-12 23:18</span></div>
+  <div class="pb"><h3>Nog een ouwe held van ons...</h3><br><br><h1>Der Herr der Steine:</h1><br><br><img src="http://www.rtl.de/images/fotos/domino_paul_weijers_2002_i.jpg"><br><br></div>
+</article>
+<article class="post" data-ts="20041112232000" id="p7">
+  <div class="ph"><span class="pa">Merrel &amp; Mitsj</span><span class="pm">#7 · 2004-11-12 23:20</span></div>
+  <div class="pb">Stukje CV van Robin:<br><br><h1>Schon w\ährend seines Studiums arbeitete er in Domino-Projekten.</h1><br><br><img src="http://www.rtl.de/images/fotos/domino_paul_weijers_2002_b_spiegel.jpg"></div>
+</article>
+<article class="post" data-ts="20041112232500" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2004-11-12 23:25</span></div>
+  <div class="pb">Stukje onderzoeksjournalistiek, waar Oli4 nog een puntje aan kan zuigen:<br><br><i>Weijers Domino Productions b.v.<br>Pottenbakkersweg 9, 3449 HZ Woerden<br>The Netherlands<br>Tel. +31 (0)348 490 010</i><br></div>
+</article>
+<article class="post" data-ts="20041112235900" id="p9">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#9 · 2004-11-12 23:59</span></div>
+  <div class="pb"><img src="http://www.vipspotting.nl/images/vip/Patty_Brard.jpg"></div>
+</article>
+<article class="post" data-ts="20041113000200" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2004-11-13 00:02</span></div>
+  <div class="pb"><img src="http://www.slovakije.com/fotoalbum/albums/userpics/normal_Patty_Brard_jpg_173531c.jpg"></div>
+</article>
+<article class="post" data-ts="20041113131500" id="p11">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#11 · 2004-11-13 13:15</span></div>
+  <div class="pb">een mooi verzameling besoindreheden boys. Goed dat jullie je avonduurtjes nuttig besteden !</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

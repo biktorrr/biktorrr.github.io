@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lachen jullie maar! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Lachen jullie maar!</h1>
+<p class="tm">10 posts · started 2009-07-27 10:04 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090727100400" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2009-07-27 10:04</span></div>
+  <div class="pb">Het is zover boys. De eerste inwoner van Ehv heeft zich aangemeld op m'n facebookpagina! En hij heeft meer dan tweehonderd vrienden. Dit gaat groot worden!</div>
+</article>
+<article class="post" data-ts="20090727100700" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2009-07-27 10:07</span></div>
+  <div class="pb">Als beheerder kan ik natuurlijk niets kwijt over deze sympathieke Eindhovenaar, maar hij op z'n foto heeft i een microfoon in z'n hand -- hij is duidelijk de chek.</div>
+</article>
+<article class="post" data-ts="20090727122300" id="p3">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#3 · 2009-07-27 12:23</span></div>
+  <div class="pb">Hoogh Olick! Heb je ook gekeken naar de concurrentie? Zo zijn er bijvoorbeeld drie groepen die "LSD Eindhoven" heten (kunstmatig de gekste) en de naturals zoals "EinDhoVen SkoLE MusIKK kOrpS" en "Asperger Eindhoven". Misschien zou je een live event moeten organiseren om leden te werven!<br><br></div>
+</article>
+<article class="post" data-ts="20090727123600" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2009-07-27 12:36</span></div>
+  <div class="pb">Er zijn ook vet veel "HIV Eindhoven" groepen.</div>
+</article>
+<article class="post" data-ts="20090727141600" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2009-07-27 14:16</span></div>
+  <div class="pb">grote lichten, die Ehvnaren.<br>kost het je ook nog iets Mer? Dan kan je het vast bij de belastingdienst opgeven als aftrekpost onder het kopje liefdadigheid.<br></div>
+</article>
+<article class="post" data-ts="20090727144200" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2009-07-27 14:42</span></div>
+  <div class="pb">Dat kan alleen voor erkende goede doelen professional.</div>
+</article>
+<article class="post" data-ts="20090727151000" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2009-07-27 15:10</span></div>
+  <div class="pb">Ja ik zag het, maar niet HIV-ers leken me geen concurrentie voor "Eindhoven de gekste" <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20090727164700" id="p8">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#8 · 2009-07-27 16:47</span></div>
+  <div class="pb">Als ik het goed begrijp gaat het hier in feite om een bewustwordingscampagne omtrent de waanzin van Eindhoven. Is zeker van maatschappelijk belang c.q. een goed doel. Het zou toch wel heel vreemd zijn als dat niet aftrekbaar zou zijn.</div>
+</article>
+<article class="post" data-ts="20090727173700" id="p9">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#9 · 2009-07-27 17:37</span></div>
+  <div class="pb">Op zich heb je daar een belangrijk punt Bode.</div>
+</article>
+<article class="post" data-ts="20090728165700" id="p10">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#10 · 2009-07-28 16:57</span></div>
+  <div class="pb">Houd je ons op de hoogte van je headcount, Mer?<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

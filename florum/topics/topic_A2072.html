@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rood haarspam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rood haarspam</h1>
+<p class="tm">4 posts · started 2007-06-19 11:04 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070619110400" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2007-06-19 11:04</span></div>
+  <div class="pb">Even puur theoretisch: met Cheska is er een redelijk kans dat ik de met uitsterven bedreigde rode kindjes op aarde zou zetten. Zij is drager van het gen. Verder: leve mijn uniekheid!<br><br>Uit de Pers<br><br>Roodharigen uitschelden is sociaal geaccepteerd<br><br>Door: Arjen van der Horst<br>Gepubliceerd: vandaag 08:25<br>Update: vandaag 08:32<br><br><br>Het incident in Newcastle heeft landelijk veel aandacht getrokken en sindsdien is er een felle discussie losgebroken over het treiteren van roodharigen. Staat het gelijk aan discriminatie en is het dus strafbaar?<br><br>Groot-Brittanni\ë heeft strenge wetten tegen discriminatie en racisme, maar die zijn niet bedoeld om roodharigen te beschermen. Foute opmerkingen over iemands huidskleur worden hard aangepakt, maar het uitschelden van mensen met rood haar is sociaal geaccepteerd. Het is niet onze taak om discriminatie tegen roodharigen in de gaten te houden, liet de Commissie voor Raciale Gelijkheid in een verklaring weten.<br><br>Maar een groter gevaar dreigt voor de roodharigen: ze worden steeds minder zichtbaar. Mensen met rood haar zijn vrij zeldzaam. Slechts 4 procent van de wereldbevolking draagt het gen dat rood haar veroorzaakt en minder dan 1 procent heeft daadwerkelijk rood haar. De hoogste concentraties roodharigen zijn te vinden in Ierland en Groot-Brittanni\ë.<br><br>Mensen kunnen alleen rood haar krijgen als zowel hun vader als moeder het rood-haargen draagt. Door de toegenomen mobiliteit van mensen zijn dragers van het gen zich steeds meer gaan mengen met mensen met een andere haarkleur. Door de immigratie vanuit andere landen wordt het gen zeldzamer in Groot-Brittanni\ë en wordt de kans op een roodharig kind steeds kleiner.<br><br>Volgens de BBC, die in een artikel gingerism onder de aandacht bracht, kunnen de vooroordelen tegen roodharigen te maken hebben met anti-Ierse sentimenten uit de achttiende eeuw. Ieren, die vaak roodharig zijn, werden als minderwaardig beschouwd door de Engelsen.</div>
+</article>
+<article class="post" data-ts="20070619112600" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-06-19 11:26</span></div>
+  <div class="pb">olivier, kutier<br>dat rijmt ook nog..</div>
+</article>
+<article class="post" data-ts="20070619143300" id="p3">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#3 · 2007-06-19 14:33</span></div>
+  <div class="pb">Omdat je zo expliciet aangeeft dat je puur theoretisch spreekt, doet mij je toch gaan wantrouwen...</div>
+</article>
+<article class="post" data-ts="20070619172800" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-06-19 17:28</span></div>
+  <div class="pb">de praktijk zal pas uitsluitsel kunnen geven...<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blije Rije zoekt Blije Kamer – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Blije Rije zoekt Blije Kamer</h1>
+<p class="tm">2 posts · started 2003-08-11 11:52 by PTC namens Marije</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030811115200" id="p1">
+  <div class="ph"><span class="pa">PTC namens Marije</span><span class="pm">#1 · 2003-08-11 11:52</span></div>
+  <div class="pb">Hallo allen,<br><br>Marije wordt binnenkort haar kamer uitgesmeten omdat de oma waar ze bij woont naar een serviceflat gaat. Nu vindt Marije zich te goed om onder een stuk karton onder de brug te moeten slapen en daarom zoekt zij een KAMER!<br><br>Bij deze wil ik aan iedereen vragen of je, als je iets hoort of weet van een kamer, dit aan haar (of mij) door wil geven.<br><br>De gouden tipgever zal worden beschouwd als een vriend van de familie tot in de eeuwigheid.<br><br></div>
+</article>
+<article class="post" data-ts="20030811130000" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-08-11 13:00</span></div>
+  <div class="pb">www.kamernet.nl ?<br><br>Voor de rest heb ik sur le moment nix.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

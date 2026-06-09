@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Foto&#x27;s REVT&#x27;06 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Foto&#x27;s REVT&#x27;06</h1>
+<p class="tm">6 posts · started 2006-04-25 09:35 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060425093500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-04-25 09:35</span></div>
+  <div class="pb">Er staan <a href="http://www.xs4all.nl/~mheemsk2/REVT/layout/2006/index.html">foto's</a> online van het REVT. Waaronder dit Pareltje:<br><img src="http://www.xs4all.nl/~mheemsk2/REVT/layout/2006/slides/REVT0624.jpg"></div>
+</article>
+<article class="post" data-ts="20060425115500" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-04-25 11:55</span></div>
+  <div class="pb">Wel het enige pareltje helaas...<br><br></div>
+</article>
+<article class="post" data-ts="20060425120400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-04-25 12:04</span></div>
+  <div class="pb">ik vind anders <a href="http://www.xs4all.nl/~mheemsk2/REVT/layout/2006/slides/REVT0611.html">deze</a> van ons aller Jan G. ook erg bruut</div>
+</article>
+<article class="post" data-ts="20060425123200" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2006-04-25 12:32</span></div>
+  <div class="pb">Zo Vic, je staat daar wel een show weg te geven zeg! </div>
+</article>
+<article class="post" data-ts="20060425132500" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2006-04-25 13:25</span></div>
+  <div class="pb">ja ik heb mijn dikke pens net even weggefotoshopt daarom ziet het er een beetje raar uit denk ik</div>
+</article>
+<article class="post" data-ts="20060425212600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2006-04-25 21:26</span></div>
+  <div class="pb">Het lijkt wel of je aan het flatuleren bent.<br><br>Ik vond die kiek van Taasje die een uitslag volstrekt willekeurig invult ook heel terecht. Verder nogal boksaai, ja.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

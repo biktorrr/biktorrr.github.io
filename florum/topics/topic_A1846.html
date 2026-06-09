@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vanavond Pok0r? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vanavond Pok0r?</h1>
+<p class="tm">6 posts · started 2006-09-08 11:15 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060908111500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-09-08 11:15</span></div>
+  <div class="pb">De koffer staat te verstoffen, er dient gepokerd te worden.<br><br>Het kan alleen niet aan de GOG, maar ik ben bereid de koffer te verslepen naar Jazz, Lil of (liefst) Tubes huis. <br><br>Wie doen er mee/ waar kan het?<br><br>Merrel doet iig ook mee.</div>
+</article>
+<article class="post" data-ts="20060908151300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2006-09-08 15:13</span></div>
+  <div class="pb">Tijmen doet mee,<br><br>Tube en WJ zijn bevoicemaild</div>
+</article>
+<article class="post" data-ts="20060908191500" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-09-08 19:15</span></div>
+  <div class="pb">Tube's plan:<br><br>van 21-23 bij hem pokeren, daarnaa de sta in</div>
+</article>
+<article class="post" data-ts="20060908192700" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-09-08 19:27</span></div>
+  <div class="pb">ik zal er zijn.</div>
+</article>
+<article class="post" data-ts="20060912153700" id="p5">
+  <div class="ph"><span class="pa">mK</span><span class="pm">#5 · 2006-09-12 15:37</span></div>
+  <div class="pb">zA 16-9 POkor?</div>
+</article>
+<article class="post" data-ts="20060912165900" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-09-12 16:59</span></div>
+  <div class="pb">neyt, verjaardag van een bepaald iemand</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

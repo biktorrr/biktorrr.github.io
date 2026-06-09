@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Culturele genietzondag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Culturele genietzondag</h1>
+<p class="tm">10 posts · started 2005-12-14 21:16 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051214211600" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2005-12-14 21:16</span></div>
+  <div class="pb">Beste Cultuurboys en -girls,<br><br>De culturele genietzondag komt er weer aan! Het programma begint zondag 17 dec. om 15u op het sprookjesachtige Begijnehof in \é\én van de heerlijkste hofjes van Amsterdam. Aldaar zal het vrolijke strijkje "Byreine" in de Engelse kerk een muziekale uitvoering ten gehore brengen. Daarna zal na een korte stadswandeling genoten kunnen worden in \é\én van de vele authentieke caf\é's die Amsterdam rijk is van oud-Hollandse likeuren en ambachtelijk gebrouwen bieren. Voor wie wil zal daarna een eenvoudige doch voedzame maaltijd geserveerd worden in een nader bekend te maken bar-bistro-dancing.<br><br>De culturele genietzondag is een iniatief van de Cheique en ondergetekende. Inschrijving is mogelijk tot 1 seconde voor aanvang van het muziekale gedeelte, maar eerdere kennisgeving wordt hoog op prijs gesteld. Deelname is in principe gratis, maar een financi\ële bijdrage wordt gewaardeerd.</div>
+</article>
+<article class="post" data-ts="20051214234600" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2 · 2005-12-14 23:46</span></div>
+  <div class="pb">deze cheique heer had gaarne zijn aanwezigeheid willen mededelen, malheureusement is hij zijn oud-tante aan het faiteren. Evenzogoed een gouden initiatief, hulde.<br></div>
+</article>
+<article class="post" data-ts="20051215092000" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2005-12-15 09:20</span></div>
+  <div class="pb">En trouwens, de Ca speelt ook in Byreine en kaartjes voor het concert zijn *niet* gratis!</div>
+</article>
+<article class="post" data-ts="20051215100200" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2005-12-15 10:02</span></div>
+  <div class="pb">rije en ik komen waarschijnlijk ook<br>insjallah</div>
+</article>
+<article class="post" data-ts="20051215100800" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2005-12-15 10:08</span></div>
+  <div class="pb">nieuwe info: waarschijnlijk->mogelijk</div>
+</article>
+<article class="post" data-ts="20051215101000" id="p6">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#6 · 2005-12-15 10:10</span></div>
+  <div class="pb">Ik ben aan het klussen met Wendy in mijn blok. Hopelijk krijgen we evenveel ruzie als Maschja en Paul. (En hopelijk doet Wendy ook wat meer dan Maschja). </div>
+</article>
+<article class="post" data-ts="20051216093200" id="p7">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#7 · 2005-12-16 09:32</span></div>
+  <div class="pb">ALLEMAAL KOMEN!!!!<br><br>het wordt een topfeessie!</div>
+</article>
+<article class="post" data-ts="20051216151300" id="p8">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#8 · 2005-12-16 15:13</span></div>
+  <div class="pb">mijn prof komt ook<br><br>hihi</div>
+</article>
+<article class="post" data-ts="20051219154300" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2005-12-19 15:43</span></div>
+  <div class="pb">Hoe was het? Ik deelde mijn genietzondag in Den Haag met een blije schoonvader vanwege een overwinning van ADO.</div>
+</article>
+<article class="post" data-ts="20051219223000" id="p10">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#10 · 2005-12-19 22:30</span></div>
+  <div class="pb">Ik vond het zelf erg leuk. Ik ben eigenlijk wel fan van Esther Apituley. Ik kan haar cd aanbevelen. Heel rustgevende muziek.... <br><br>http://www.apituley.nl/<br><br>maar je kan het ook kopen bij bruno klassiek of broekmans en van poppel.<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

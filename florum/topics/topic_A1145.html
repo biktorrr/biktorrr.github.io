@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>jajaja... de VRIJ-MI-PUU – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">jajaja... de VRIJ-MI-PUU</h1>
+<p class="tm">7 posts · started 2004-03-19 15:34 by VdB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040319153400" id="p1">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#1 · 2004-03-19 15:34</span></div>
+  <div class="pb">daar issie dam, na even een weekje overgeslagen te hebben is deze week terug: <br><h3>DE FLORABOYS VRIJDAGMIDDAG-PUUZL</h3><br><br>we gaan nu terug naar de roots van de vrijmipuu: <br><a href="http://www.jm-p.nl/flora/onzin/floraciet.pdf">WIE IS DEZE FLORACIET?</a> (Pdf)<br><br></div>
+</article>
+<article class="post" data-ts="20040319154100" id="p2">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#2 · 2004-03-19 15:41</span></div>
+  <div class="pb">voor degenen bij wie de link niet goed werkt:<br><img src="http://www.jm-p.nl/flora/onzin/vrijmipuu.jpg"><br>(wel wat lastiger, maar toch...)</div>
+</article>
+<article class="post" data-ts="20040319164100" id="p3">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#3 · 2004-03-19 16:41</span></div>
+  <div class="pb">kan hier volstrekt geen chocola van maken.</div>
+</article>
+<article class="post" data-ts="20040319164800" id="p4">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#4 · 2004-03-19 16:48</span></div>
+  <div class="pb">past misschien niet onder het topic maar ik wil jullie deze gave foto toch niet onthouden.<br><img src="http://www.vi.nl/images2/f/c/1/1997835315_1999999732_Kuijt01_CVH_192_221.jpg"></div>
+</article>
+<article class="post" data-ts="20040319194200" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2004-03-19 19:42</span></div>
+  <div class="pb">ik ga voor dag Taimny</div>
+</article>
+<article class="post" data-ts="20040322101600" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-03-22 10:16</span></div>
+  <div class="pb">Nou ik zie 't niet. Maar een wilde gok: DJ Erik Z?</div>
+</article>
+<article class="post" data-ts="20040322102300" id="p7">
+  <div class="ph"><span class="pa">VdB</span><span class="pm">#7 · 2004-03-22 10:23</span></div>
+  <div class="pb">helaaasss.. de vrijmipuu kent geen winnaar deze week.<br><br>het was natuurlijk Sandor Bassant, het gezicht waar jullie maandenlang tegenaan keken en waarvan gezegd werd:"Dat kennen we nu wel" <br><br>Nou niet goed genoeg dus!<br><br>Kent Uw Floracieten!<br><br>komende vrijdag een nieuwe vrijmipuu</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

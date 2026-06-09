@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DiMiPuu: Floraboys Kunstboys – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">DiMiPuu: Floraboys Kunstboys</h1>
+<p class="tm">5 posts · started 2006-11-14 10:21 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061114102100" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-11-14 10:21</span></div>
+  <div class="pb"><a href="http://staff.science.uva.nl/~vdeboer/floraboys/FloraArt.jpg"><img src="http://staff.science.uva.nl/~vdeboer/floraboys/FloraArt.jpg" width="200"></a><br><br>Even lekker een weekendje aan het schilderen geweest, erg rustgevend. Maar welke floraboys zijn dit? Eeuwige roem voor de winnaars, en wellicht een portret op de flora-voorpagina. (plaatje is klikkabel)</div>
+</article>
+<article class="post" data-ts="20061114102200" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2006-11-14 10:22</span></div>
+  <div class="pb">jazz, ondergetekende en Mitchell</div>
+</article>
+<article class="post" data-ts="20061114102900" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2006-11-14 10:29</span></div>
+  <div class="pb">scherp en snel BIK! <br>Je hebt een schilderij naar een foto van je op de flora-voorpagina gewonnen. Eens even kijken of ik nog een foto van je heb liggen... hmmm </div>
+</article>
+<article class="post" data-ts="20061114121700" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2006-11-14 12:17</span></div>
+  <div class="pb">Ziet er besoindre fraai uit.</div>
+</article>
+<article class="post" data-ts="20061114144400" id="p5">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#5 · 2006-11-14 14:44</span></div>
+  <div class="pb">VanVeleMarktenThuisBoys</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

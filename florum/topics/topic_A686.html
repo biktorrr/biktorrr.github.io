@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nog een heel klein puntje over Machiavelli – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Nog een heel klein puntje over Machiavelli</h1>
+<p class="tm">5 posts · started 2003-01-22 17:34 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030122173400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-01-22 17:34</span></div>
+  <div class="pb">Ik meen mij te herinneren dat er in de regels staat dat als de koning vermoord wordt degene die koning was de koning blijft. Aangezien dit lijdt tot een makkelijke(re) winst ( Je begint als koning en kiest vervolgens altijd de moordenaar en vermoord daarmee de koning, zodat je altijd als eerste mag kiezen en blijft altijd de moordenaar kiezen, die niet bestolen kan worden.) hebben we gelukkig devolgende variant ingesteld.(van spelmagazijn.nl)<br><br><blockquote>Variant voor de vermoorde koning: Wat ook wel wordt geadviseerd is dat de speler die de koning kiest altijd de nieuwe koning wordt, ongeacht of hij wordt vermoord of niet.</blockquote><br><br>Maar goed, daar ging het me eigenlijk niet om, waar het me wel om ging was dat we vorige keer nog een kleine discussie hadden over als de Condottiere (hier de huurling genoemd) een Drakenpoort of een Universidad zou willen slopen. Sommigen meenden de bouwkosten-1 (=5) goud te moeten betalen, weer anderen meenden dat er 7 goud betaalt diende te worden. Hier volgt het juiste antwoord.<br><blockquote><br>Errata: Er zijn gebouwen die meer waard zijn dan dat ze kosten. Het was in de eerdere regels onduidelijk of de kosten voor de huurling nu afhingen van de waarde of van de kosten. In de nieuwe versie van de regels is dat verduidelijkt. De kosten van de huurling zijn afhankelijk van de bouwkosten en niet van de waarde van het gebouw. Een stuk goedkoper dus.<br></blockquote><br><br><br></div>
+</article>
+<article class="post" data-ts="20030122175600" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2003-01-22 17:56</span></div>
+  <div class="pb">OMdat ik vandaag een uurtje tussendoor had heb ik mezelf verdiept het aanbod van bordspellen dat nederland rijk is, om zo -mochten we ooit eens weer eens wat nieuws voor ons zelf of anderen willen kopen- een goede koop te doen.<br><br><br>Na wat wikken en wegen en een aantal 'reviews' te hebben gelezen kom ik tot het volgende:<br><br>-Machiavelli is het (kaart)spel dat zo'n beetje het meest waard is voor je geld.Bijna iedereen is superpositief; degene die dit niet zijn geven blijk van slecht inzicht in het spel.:)<br><br>-De spel(l)en die mij het meest tot de verbeelding spreken zijn:<br>* Charlemange,<br>* Eufraat&Tigris,<br>* Java ,en<br>* El Grande<br><br>Misschien is het ook een idee om, als we het spelen van Machiavelli/Risk/Kolonisten/Isis&Osiris etc. zat zijn, een potje te maken om een nieuw spel te kopen; de meesten zijn +/- 30 euro.<br></div>
+</article>
+<article class="post" data-ts="20030123093600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-01-23 09:36</span></div>
+  <div class="pb">Wij hadden dus gister Koehandel gespeeld, en dat vond ik ook erg leuk. Niet zo veel geluk, simpel maar nwel spannend. Moeten we ook 's in Haarlem spelen.</div>
+</article>
+<article class="post" data-ts="20030123121500" id="p4">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#4 · 2003-01-23 12:15</span></div>
+  <div class="pb">ja ik wil binnenkort ook wel weer eens een spel kopen (ik heb trouwens al '5 nimmt' das ook wel leuk, moeten we ook maar eens doen.)</div>
+</article>
+<article class="post" data-ts="20030123133600" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2003-01-23 13:36</span></div>
+  <div class="pb">Koehandel en 5 Nimmt zijn zeker aanraders. Ik wil trouwens ook nog opmerken dat ik The Lord of the Rings kaartspel nog ergens heb liggen.<br><br><br><br>www.bordspel.com is een interessante site.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

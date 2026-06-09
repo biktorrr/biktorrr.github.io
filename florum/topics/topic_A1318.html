@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heraldiek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heraldiek</h1>
+<p class="tm">2 posts · started 2004-10-07 23:34 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041007233400" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-10-07 23:34</span></div>
+  <div class="pb">Ik was aan het snuffelen op een heraldiek pagina (op zoe naar mooie wapens) staat dit bij het wapen van Heemstede...<br><br>Oorsprong/verklaring :<br>Het wapen is het wapen van het geslacht van Heemstede, vergelijk ook Groet, Schoorl en Bergen. Op zich zou dit wapen weer afgeleid zijn van het wapen van het geslacht Holy, dat het veld echter van zilver voerde.<br><br>Toch een paar straten te ver verhuisd?<br>(bron: www.ngw.nl )</div>
+</article>
+<article class="post" data-ts="20041008122500" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-10-08 12:25</span></div>
+  <div class="pb">Het geslacht One voert als wapen een stralende zon op een rein  wit vlak. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

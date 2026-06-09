@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>16 en 17 maart – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">16 en 17 maart</h1>
+<p class="tm">8 posts · started 2002-03-12 13:44 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020312134400" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2002-03-12 13:44</span></div>
+  <div class="pb">hey wie komen er ballen za en zo? <br>want zondag was het weer huilen met de pet op <br><br>ik ben er in prinkiep za+zo</div>
+</article>
+<article class="post" data-ts="20020312162600" id="p2">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#2 · 2002-03-12 16:26</span></div>
+  <div class="pb">Ik ben d'r in ieder geval op zaterdag</div>
+</article>
+<article class="post" data-ts="20020312170100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-03-12 17:01</span></div>
+  <div class="pb">Ga niet van mij uit. M'n enkel is nog helemaal dik.</div>
+</article>
+<article class="post" data-ts="20020314165200" id="p4">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#4 · 2002-03-14 16:52</span></div>
+  <div class="pb">beide dagen werk ik 's ochtends op de Thalys, maar ik zal zien wat ik kan doen.</div>
+</article>
+<article class="post" data-ts="20020314185700" id="p5">
+  <div class="ph"><span class="pa">sandOr</span><span class="pm">#5 · 2002-03-14 18:57</span></div>
+  <div class="pb">Ik ga naar Praag, bal ze.</div>
+</article>
+<article class="post" data-ts="20020315205600" id="p6">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#6 · 2002-03-15 20:56</span></div>
+  <div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+<article class="post" data-ts="20020315205700" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2002-03-15 20:57</span></div>
+  <div class="pb">Ik kom zaterdag in ieder geval. Ik weet alleen nog niet of ik last ga krijgen van mijn schouder/rug. Dus misschien val ik snel uit.</div>
+</article>
+<article class="post" data-ts="20020315210800" id="p8">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#8 · 2002-03-15 21:08</span></div>
+  <div class="pb">das dus 2 en een half tot nu toe, count me in als nummer 3.<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

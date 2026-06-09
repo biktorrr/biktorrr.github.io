@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>boys en girls bedankt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">boys en girls bedankt</h1>
+<p class="tm">6 posts · started 2009-06-07 14:15 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20090607141500" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2009-06-07 14:15</span></div>
+  <div class="pb">Iedereen bedankt voor de meegebrachte gezelligheid van gisteren en voor het mooie cadeau. Ik ga nu even fijn een stukje van beeldhouwensteijn in Haarlem-Oost. <br><br>Hoogh!</div>
+</article>
+<article class="post" data-ts="20090607220300" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2009-06-07 22:03</span></div>
+  <div class="pb">hehehehe<br><br>het was bijzonder fraai boys</div>
+</article>
+<article class="post" data-ts="20090607224700" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2009-06-07 22:47</span></div>
+  <div class="pb"><a href="http://picasaweb.google.nl/floraboys/VikT?authkey=Gv1sRgCPj85eujqdWSugE#5344677824226369634">de boys in actie!</a></div>
+</article>
+<article class="post" data-ts="20090607234000" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2009-06-07 23:40</span></div>
+  <div class="pb">ok booys, ik was vet gesliept daar. Superleuke workshop! Nogmaals dank.<br><br>Overigens een ontvettend goed filmpje met de trommelende drouille :)</div>
+</article>
+<article class="post" data-ts="20090608211300" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2009-06-08 21:13</span></div>
+  <div class="pb">De drol van Tube ligt ter inspiratie bij de wc. Geen vezels meer nodig zeg ik!<br><br>Overigens is nu ook de groeps foto in hetzelfde picasa album te aanschouwen.</div>
+</article>
+<article class="post" data-ts="20090609104400" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2009-06-09 10:44</span></div>
+  <div class="pb">En ik heb ook maar even de kleine werk-fotootjes erbij gezet</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NIEUWE COLUMN !?!? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">NIEUWE COLUMN !?!?</h1>
+<p class="tm">7 posts · started 2003-03-19 16:25 by Uw redactie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030319162500" id="p1">
+  <div class="ph"><span class="pa">Uw redactie</span><span class="pm">#1 · 2003-03-19 16:25</span></div>
+  <div class="pb">door het hoge aantal mooie florum-posts die er hier te bewonderen vallen alsmede het hogere aantal hits dat gegenereerd wordt door de vele lezers van onze columnist Timmie, doet Uw Webredactie hierbij een voorstel:<br><br>de opening van <strong>Een nieuwe column</strong>, naast Timmie Tikt:<br><ul><br><li> wekelijks!<br><li> met roterende columnisten (Volkskrant stylee)!<br><li> waarin gepolemiseerd kan worden (al dan niet als reactie op eerdere columns of Timmie Tikts!<br><li> Over Ballen, Oorlog, Ceca, de Natte, Bier Brouwen, Columns schrijven, Cijfers geven, enz enz...<br></ul><br>Als er zich stercolumnisten genoeg aanmelden kunnen we lekker snel beginnen. De titel waaronder deze columns dan verschijnen is mij ook nog neit duidelijk maar de subtitels kunnen zijn: <br><ul><br><li>'de prognose van de penose' door Sicco<br><li>'23 spreekt' door Merlijn<br><li>'met de natte vinger' door MB<br><li>'groeten uit XXX' door Mk, Joste Bianco en Oli4<br><li>'van uw redactie' door mijn persoontje<br><li>'dagtaimny' door tijmen<br><li>'de kleine column' door de kleine mannetjes<br><ul><br>Is hier Animo voor? zo ja, dan zal ik voor het weekend de eerste comunist bekend maken!</div>
+</article>
+<article class="post" data-ts="20030319163100" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2003-03-19 16:31</span></div>
+  <div class="pb">DAGGAIS!</div>
+</article>
+<article class="post" data-ts="20030319163100" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2003-03-19 16:31</span></div>
+  <div class="pb">van DAGTAIMNY</div>
+</article>
+<article class="post" data-ts="20030319165300" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-03-19 16:53</span></div>
+  <div class="pb">Nou laat me even duidelijk zijn, ik ga natuurlijk niet zelf zitten tikken. Ik ben best bereid af en toe een persconferentie te geven waar ik mezelf ga zitten zijn, maar zelf schrijven: dank je de koekoek. En nog een stukje: ik presteer al genoeg op het canvas en nog meer druk en deadlines daarbuiten is gewoon meer dan ik op dit moment kan hebben.</div>
+</article>
+<article class="post" data-ts="20030319174800" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2003-03-19 17:48</span></div>
+  <div class="pb">ik ben voor, maar wens wel mijn gebruikelijke gages op te strijken (ik dacht aan 400 per column)</div>
+</article>
+<article class="post" data-ts="20030320102000" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2003-03-20 10:20</span></div>
+  <div class="pb">ok het gaat dan dus door, de eerste columnist zal zijn Oli4! <br><br>Kopij inleveren (=mailen naar victordeboer@hotmail.com) voor maandag aub, met vermelding van gironummer. Maandag zal de eerste column te bewonderen zijn hier op de Floraboys pagina</div>
+</article>
+<article class="post" data-ts="20030321014200" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2003-03-21 01:42</span></div>
+  <div class="pb">Oli4 ik zou voor de zekerheid alleen een leader posten voor je column en de rest voor de zekerheid nog even achter de hand houden tot de betaling binnen is.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

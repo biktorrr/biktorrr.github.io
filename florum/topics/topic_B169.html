@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dik weekend – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dik weekend</h1>
+<p class="tm">5 posts · started 2002-09-13 16:18 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020913161800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2002-09-13 16:18</span></div>
+  <div class="pb">Ben ik er niet,ik ben nog mijn laatste dagen aan het uitdienen in de Dr.AntonPhilipszaal.(drukdrukdruksniemooi)<br><br>Hoe vol is je rolletje btw Mer? Ik zit met smart te wqachten op de prachtkieken van onze vakantie en natuurlijk de elftalpiek.Meteen inskennen bij de commander?Ziet die ons ook nog es.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20020913181200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2002-09-13 18:12</span></div>
+  <div class="pb">Lekker vet dit weekend.</div>
+</article>
+<article class="post" data-ts="20020913203600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2002-09-13 20:36</span></div>
+  <div class="pb">Rolletje zo goed als vol. Ben er beide dagen.</div>
+</article>
+<article class="post" data-ts="20020916010000" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2002-09-16 01:00</span></div>
+  <div class="pb">Dit was een heel dik weekend: twee superpotten!</div>
+</article>
+<article class="post" data-ts="20020916133800" id="p5">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#5 · 2002-09-16 13:38</span></div>
+  <div class="pb">ja wel spannend inderdaad.. 5-4 en 6-5, leuk hoor</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

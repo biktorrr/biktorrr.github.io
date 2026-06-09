@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heimat – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heimat</h1>
+<p class="tm">4 posts · started 2006-01-31 14:24 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20060131142400" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2006-01-31 14:24</span></div>
+  <div class="pb">Tegen alle wetten van de smaak in. Deze grap kan natuurlijk echt niet:<br><a href="http://www.hei-mat.nl/">De Hei-Mat</a></div>
+</article>
+<article class="post" data-ts="20060131152600" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2006-01-31 15:26</span></div>
+  <div class="pb">Vic, je probeert een reactie te ontlokken! Deze is wel weer grappig.</div>
+</article>
+<article class="post" data-ts="20060131153100" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2006-01-31 15:31</span></div>
+  <div class="pb">Een schande is het!</div>
+</article>
+<article class="post" data-ts="20060201090900" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2006-02-01 09:09</span></div>
+  <div class="pb">zet maar een streepje bij grappig voor mij.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

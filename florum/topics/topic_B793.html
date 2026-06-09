@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amsterdam Studenten Cup 2007 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Amsterdam Studenten Cup 2007</h1>
+<p class="tm">9 posts · started 2007-04-24 10:17 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070424101700" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2007-04-24 10:17</span></div>
+  <div class="pb">via USC:<br><h3>De Amsterdam studentencup 2007</h3><br><br>Veldvoetbaltoernooi presented by<br>USC en GeuzenMiddenmeer<br><br>Organisatie: Voetbalvereniging GeuzenMiddenmeer<br>Locatie: Sportpark Voorland, Voorlandpad 15, Amsterdam<br><br>Prijzen: De Cup en <b>100 euro</b> voor het winnende team<br><br>Datum: 12 mei 2007<br>Start toernooi: 11.00 uur<br>Inschrijfgeld: 25 euro per team<br>Inschrijven: Bij de USC-sportbalie. Inschrijven geschiedt per team.<br><br>Alle info: vind je op www.usc.uva.nl<br>Je speelt wedstrijden 11 tegen 11 en je schrijft per team in. Zorg ook voor genoeg wisselspelers. Er kunnen maximaal 8 teams deelnemen, dus schrijf je snel in!</div>
+</article>
+<article class="post" data-ts="20070424101800" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2007-04-24 10:18</span></div>
+  <div class="pb">vraag is of we een team van 11 spelers + wissels op de been kunnen krijgen. </div>
+</article>
+<article class="post" data-ts="20070424124900" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-04-24 12:49</span></div>
+  <div class="pb">Come on: Floraboys ultraboys!</div>
+</article>
+<article class="post" data-ts="20070424152900" id="p4">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#4 · 2007-04-24 15:29</span></div>
+  <div class="pb">Ik ben voor. Dat is 1.</div>
+</article>
+<article class="post" data-ts="20070424161200" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2007-04-24 16:12</span></div>
+  <div class="pb">ik ook. 2</div>
+</article>
+<article class="post" data-ts="20070425083200" id="p6">
+  <div class="ph"><span class="pa">joost</span><span class="pm">#6 · 2007-04-25 08:32</span></div>
+  <div class="pb">3</div>
+</article>
+<article class="post" data-ts="20070425092400" id="p7">
+  <div class="ph"><span class="pa">Frank</span><span class="pm">#7 · 2007-04-25 09:24</span></div>
+  <div class="ps">4</div><div class="pb">Misschien kan John Terry ook wel... 5?</div>
+</article>
+<article class="post" data-ts="20070425105200" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2007-04-25 10:52</span></div>
+  <div class="pb">ik kan dan denk ik nog niet meedoen. Hangt een beetje van het herstel af.<br>Count me out, voor de zekerheid.<br></div>
+</article>
+<article class="post" data-ts="20070425174700" id="p9">
+  <div class="ph"><span class="pa">maurits</span><span class="pm">#9 · 2007-04-25 17:47</span></div>
+  <div class="pb">COUNT ME IN, 6</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>hui? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">hui?</h1>
+<p class="tm">11 posts · started 2004-06-04 13:20 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040604132000" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-06-04 13:20</span></div>
+  <div class="pb">volgens mij gaat er iets mis, ik zie geen onderwerpen staan bij de topics in het voetbalflorum en ik kan ze derhalve ook neyt aanklikken</div>
+</article>
+<article class="post" data-ts="20040604142500" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2004-06-04 14:25</span></div>
+  <div class="ps">jeyt</div><div class="pb">ja.. heb ik ook, zowel in IE als in mozilla</div>
+</article>
+<article class="post" data-ts="20040605181200" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-06-05 18:12</span></div>
+  <div class="pb">grapje van de holy one, maar je kan er wel bij als je wil.</div>
+</article>
+<article class="post" data-ts="20040605222000" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-06-05 22:20</span></div>
+  <div class="pb">Als de Holy One niet wil dat ik het lees, dan zal ik ook geen pogingen ondernemen. Heilig is zijn naam, geprijsd is zijn faam.</div>
+</article>
+<article class="post" data-ts="20040605230400" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2004-06-05 23:04</span></div>
+  <div class="pb">Nou stomme eikel..dat is dus geen grapje van mij en ik vind het schandalig dat ik met dat soort florumvervuiling word geassocieerd. Ik eis daarom ook een rectificatie.</div>
+</article>
+<article class="post" data-ts="20040605230400" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2004-06-05 23:04</span></div>
+  <div class="pb">Zoals je kunt zien is de topicstarter Famous..nog een argument dan ik onterecht beschuldigd ben. Laster.</div>
+</article>
+<article class="post" data-ts="20040607110600" id="p7">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#7 · 2004-06-07 11:06</span></div>
+  <div class="pb">ok</div>
+</article>
+<article class="post" data-ts="20040607114600" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2004-06-07 11:46</span></div>
+  <div class="pb">maar toch zingen wij holy holy holy holy</div>
+</article>
+<article class="post" data-ts="20040607115400" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2004-06-07 11:54</span></div>
+  <div class="pb">ok</div>
+</article>
+<article class="post" data-ts="20040608112800" id="p10">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#10 · 2004-06-08 11:28</span></div>
+  <div class="pb">Tijmen moet sterven. Hij is de Judas en het kwaad. Laat ons zijn naam vergeten in hulde en glorie van De Hoge.</div>
+</article>
+<article class="post" data-ts="20040608124900" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2004-06-08 12:49</span></div>
+  <div class="pb">Nou nou Merlijn...kom je terug uit Duitsland meteen aanzetten met bepaalde reinigingsgevoelesn. Zit het daar toch in de lucht? </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

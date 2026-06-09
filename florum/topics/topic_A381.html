@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>donderdagavond! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">donderdagavond!</h1>
+<p class="tm">9 posts · started 2001-12-24 19:53 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011224195300" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2001-12-24 19:53</span></div>
+  <div class="ps">donderdagavond</div><div class="pb">Donderdagavond gezellig drinken in Bruxelles? ik stel voor 22.30 uur aldaar. We (Tube, Ca, Fleur en ik) moeten nl. zaterdagochtend extreem vroeg met de trein mee naar Praag dus is donderdag de laatste dag dat er een beetje uit gegaan kan worden in de stad.</div>
+</article>
+<article class="post" data-ts="20011224195400" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2001-12-24 19:54</span></div>
+  <div class="ps">donderdagavond</div><div class="pb">Donderdagavond gezellig drinken in Bruxelles? ik stel voor 22.30 uur aldaar. We (Tube, Ca, Fleur en ik) moeten nl. zaterdagochtend extreem vroeg met de trein mee naar Praag dus is donderdag de laatste dag dat er een beetje uit gegaan kan worden in de stad.</div>
+</article>
+<article class="post" data-ts="20011224195400" id="p3">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#3 · 2001-12-24 19:54</span></div>
+  <div class="ps">donderdagavond</div><div class="pb">Donderdagavond gezellig drinken in Bruxelles? ik stel voor 22.30 uur aldaar. We (Tube, Ca, Fleur en ik) moeten nl. zaterdagochtend extreem vroeg met de trein mee naar Praag dus is donderdag de laatste dag dat er een beetje uit gegaan kan worden in de stad.</div>
+</article>
+<article class="post" data-ts="20011224195700" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2001-12-24 19:57</span></div>
+  <div class="ps">donderdagavond</div><div class="pb">donderavond gezellig wat drinken in Bruxelles? ik stel voor 22.30 uur. donderdag is nl. de laatste avond dat sommige mensen uit kunnen voordat we zaterdagochtend heel vroeg naar Praag vertrekken.</div>
+</article>
+<article class="post" data-ts="20011224195900" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-12-24 19:59</span></div>
+  <div class="pb">donderdagavond gezellig drinken in Bruxelles? 22.30 uur?</div>
+</article>
+<article class="post" data-ts="20011224200000" id="p6">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#6 · 2001-12-24 20:00</span></div>
+  <div class="pb">he he, een paar keer proberen maar dan doet 'ie het ook!!</div>
+</article>
+<article class="post" data-ts="20011224215900" id="p7">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#7 · 2001-12-24 21:59</span></div>
+  <div class="pb">da´s alvast vijf mensen die daar zitten. ik misschien ook, hangt een beetje van mjin kralingse woonparadijsje af, of ik erin kan e.d.</div>
+</article>
+<article class="post" data-ts="20011225172000" id="p8">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#8 · 2001-12-25 17:20</span></div>
+  <div class="pb">ik en rije aanwezig zoals het nu gepland is...<br>gaan e dan ook nou naar de lord of the rings <br>smiddags, ik ben erg voor...</div>
+</article>
+<article class="post" data-ts="20011226211300" id="p9">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#9 · 2001-12-26 21:13</span></div>
+  <div class="pb">Ja, lekker gek. Moet nog wel even denken. Ik wou<br>net even m'n ouders ontvluchten na vier helse <br>kerstdagen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rellen in Brussel – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Rellen in Brussel</h1>
+<p class="tm">2 posts · started 2002-06-17 14:33 by Verslaggevert</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020617143300" id="p1">
+  <div class="ph"><span class="pa">Verslaggevert</span><span class="pm">#1 · 2002-06-17 14:33</span></div>
+  <div class="pb">In Brussel zijn na de uitschakeling van de Rode Duivels<br>rellen uitgebroken. De Duivels verloren de kwartfinale<br>tegen Brazilie op strafschoppen. In de reguliere speeltijd<br>werd, volgens de Belgen, een doelpunt van Wilmots<br>ten onrechte afgekeurd. Een kwade supporter "Het is allemaal<br>de schuld van de FIFA, eerst al tegen Turkije en nu<br>tegen ons, Brazilie heeft de titel gekocht. Volkomen<br>belachelijk". Ook de Braziliaanse televisie heeft<br>na herhaaldelijk de beelden bekeken te hebben<br>geen reden gevonden om het doelpunt in twijfel te trekken.<br>Hun commentaar "Wij Brazilianen verdienen de wereldtitel<br>omdat wij een goede naam onder de scheidsrechters hebben.<br>Het is immers alleen een doelpunt als de scheidsrechter<br>het goedkeurd." De FIFA was nog niet bereikbaar voor<br>commentaar.</div>
+</article>
+<article class="post" data-ts="20020617151600" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2002-06-17 15:16</span></div>
+  <div class="pb">hheheheeh,<br><br>t staat nu wel alleen 2-0 voor de brazilianen, zal wel geen penalties worden :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

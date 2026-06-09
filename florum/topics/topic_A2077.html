@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dag, dag, piekniek – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dag, dag, piekniek</h1>
+<p class="tm">10 posts · started 2007-06-21 12:23 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20070621122300" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2007-06-21 12:23</span></div>
+  <div class="pb">Jullie hebben waarschijnlijk al een mailtje gehad, of het op mijn site gezien, maar 14 juli houdt ik een picknick in het Kenaupark. Nu vroeg ik me af wie van jullie wil komen om gezellig wat te eten? Zo kan ik iedereen ook meteen gedag zeggen voor een half jaar, wat de volgende dag zal ik al wegvliegen naar Suriname.<br></div>
+</article>
+<article class="post" data-ts="20070621123900" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2007-06-21 12:39</span></div>
+  <div class="pb">Ik ben er hoor!</div>
+</article>
+<article class="post" data-ts="20070621124100" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2007-06-21 12:41</span></div>
+  <div class="pb">Die staat al tijden in mijn agenda met rood gemarkeerd.</div>
+</article>
+<article class="post" data-ts="20070621130300" id="p4">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#4 · 2007-06-21 13:03</span></div>
+  <div class="pb">ik ben er</div>
+</article>
+<article class="post" data-ts="20070621130400" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2007-06-21 13:04</span></div>
+  <div class="pb">jeit</div>
+</article>
+<article class="post" data-ts="20070621172000" id="p6">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#6 · 2007-06-21 17:20</span></div>
+  <div class="pb">ook een jeyt.. ik land om 8 uur 's ochtends die dag dus dat gaat lukken.</div>
+</article>
+<article class="post" data-ts="20070621174300" id="p7">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#7 · 2007-06-21 17:43</span></div>
+  <div class="pb">Pfff dat wordt dan wel bikkelen. Eerst eastbound de Atlantic over en dan nog vier uur wakker blijven. </div>
+</article>
+<article class="post" data-ts="20070621191800" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2007-06-21 19:18</span></div>
+  <div class="pb">Ben er ook bij.</div>
+</article>
+<article class="post" data-ts="20070714170100" id="p9">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#9 · 2007-07-14 17:01</span></div>
+  <div class="pb">Vond het super leuk dat jullie er allemaal waren. Ik ga meteen even wat foto's op mijn site zetten.<br>Tot volgend jaar allemaal!<br>liefs lara<br><br>lara.shareyourstory.nl</div>
+</article>
+<article class="post" data-ts="20070715010400" id="p10">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#10 · 2007-07-15 01:04</span></div>
+  <div class="pb">Parijs kon me niet missen op Quatorze Juillet, maar ik ga ervanuit dat je een topmiddag beleefd hebt. Heel veel plezier in Suriname, Lara. Wellicht kom ik nog even langs. Ik heb vage plannen die kant op te gaan...</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

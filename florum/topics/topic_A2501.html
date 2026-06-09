@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bjorn Borg – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bjorn Borg</h1>
+<p class="tm">7 posts · started 2008-09-28 16:22 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080928162200" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2008-09-28 16:22</span></div>
+  <div class="pb">Ik heb vandaag op de markt 4 Bjorn Borgs gekocht maat L in hele blije kleurtjes. Maar ze passen me niet! Vallen dus best klein of mijn kont is gewoon te dik net hoe je het wilt zien. Zijn dus maat M zoiets denk ik. Ze waren 2 voor 15,- wil een van de Girls ze misschien van me overkopen?</div>
+</article>
+<article class="post" data-ts="20080928200700" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2008-09-28 20:07</span></div>
+  <div class="pb">Of een van de boys?<br></div>
+</article>
+<article class="post" data-ts="20080928210600" id="p3">
+  <div class="ph"><span class="pa">wendy</span><span class="pm">#3 · 2008-09-28 21:06</span></div>
+  <div class="pb">Beste lara ben helaas van mening dat ik minimaal net zo'n grote kont heb als jij. Kan het dus niet van je over nemen. X</div>
+</article>
+<article class="post" data-ts="20080928211100" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2008-09-28 21:11</span></div>
+  <div class="pb">Boys met niet zoveel van voren... Dan moet het lukken..</div>
+</article>
+<article class="post" data-ts="20080928214100" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2008-09-28 21:41</span></div>
+  <div class="pb">Maar achterstevoren zal toch wel lukken?</div>
+</article>
+<article class="post" data-ts="20080929083800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2008-09-29 08:38</span></div>
+  <div class="pb">mooi topic</div>
+</article>
+<article class="post" data-ts="20080929185000" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2008-09-29 18:50</span></div>
+  <div class="pb">onderbroekenlol!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

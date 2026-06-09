@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tmmy – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Tmmy</h1>
+<p class="tm">1 post · started 2003-11-20 05:18 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031120051800" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2003-11-20 05:18</span></div>
+  <div class="pb">Misschien dat ik nu een groot geheim verklap maar ik kan het niet langer voor mij houden. Dit is iets wat de wereld moet weten. Onze Timmy, ja van de Timmie Tikt's heeft namelijk een, bijna anononieme, alto cyber-identiteit waarin hij de charts van Engeland bestormt (blijkbaar wilde hij even kijken of zijn stem wel aansloeg, uiteraard natuurlijk). Om ons om de tuin te leiden heeft hij dan wel deze cyber identiteit een andere geslacht gegeven, maar zijn trademark, de altijd herkenbare naam, kan ons niet anders doen geloven dan dat hij de echte Timmie is.<br><br><a href="http://www.netribution.co.uk/news/northern_exposure/61/1_61.html">Persbericht</a><br><br><a href="http://www.charts-music.co.uk/21C555R91960PB00005KK4F_TMmy-You-Make-My-Day.html">Single kopen?</a><br><br><a href="http://www.aftonbladet.se/vss/it/story/0,2789,72351,00.html">Zweedse feestjes?</a><br><br>En dan is er natuurlijk ook nog de Timmy! van South Park. Die binnenkort (hopelijk al) in Nederland is. Let vooral op zijn immens populaire band!<br><br>Timmy is the new hadicapped kid in South Park. He can only scream his own name, Timmy, and only a few other words. He is part of a popular heavy metal band called "Timmy and the Lords of the Underworld". <br><img src="http://sp24-7.lambtron.com/timmy1.gif"></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

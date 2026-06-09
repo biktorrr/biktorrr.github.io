@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PSV – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">PSV</h1>
+<p class="tm">5 posts · started 2015-04-20 00:16 by BD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20150420001615" id="p1">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#1 · 2015-04-20 00:16</span></div>
+  <div class="pb"><p><br>	Nou Heilige, gefeliciteerd met PSV hoor. Het mocht wel weer eens.&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20150420005307" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2015-04-20 00:53</span></div>
+  <div class="pb">Dank u. Het liet inderdaad op zich wachten. Des te beter de reden om te feesten. Wat ik dus gisteren en vandaag ook heb gedaan.</div>
+</article>
+<article class="post" data-ts="20150420014603" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2015-04-20 01:46</span></div>
+  <div class="pb">Hoe dan?<br><br>En gefeliciteerd !!</div>
+</article>
+<article class="post" data-ts="20150420080117" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2015-04-20 08:01</span></div>
+  <div class="pb">ja, mk, van harte!</div>
+</article>
+<article class="post" data-ts="20150420114755" id="p5">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#5 · 2015-04-20 11:47</span></div>
+  <div class="pb">Gefeliciteerd, Straler</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

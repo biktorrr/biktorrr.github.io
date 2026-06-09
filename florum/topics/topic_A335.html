@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What&#x27;s going down in Spa – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">What&#x27;s going down in Spa</h1>
+<p class="tm">9 posts · started 2001-11-06 12:48 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011106124800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2001-11-06 12:48</span></div>
+  <div class="pb">OK..Tijmen heeft zich alweer lopen verkneukelen.<br>als wij in Spa zijn is de volgende "Grande 'appening" op de 11e<br><br>http://www.spa-info.be/retromobileclub/index.htm<br><br>Spijtig dat de Commandert dus net de Spa Tekken Dag (op 4 nov.) mist in de speelhal.<br><br>Verder matig weer geloof ik, maar we hebben een wagen om beschut mee boodschappen te doen.<br>Mer,moeten de goalies nog mee?<br></div>
+</article>
+<article class="post" data-ts="20011106125500" id="p2">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#2 · 2001-11-06 12:55</span></div>
+  <div class="ps">Brr</div><div class="pb">Het wordt dus gewoon fuckin' koud.<br><br><img src="http://ttdecoder.eunet.be/pages/ttcF3H53_c.gif"></div>
+</article>
+<article class="post" data-ts="20011106130200" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2001-11-06 13:02</span></div>
+  <div class="pb">daar is hout en de open haard voor :)<br></div>
+</article>
+<article class="post" data-ts="20011106132900" id="p4">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#4 · 2001-11-06 13:29</span></div>
+  <div class="pb">wintersport tralalala...<br>wintersport trallal<br><br>TuuT</div>
+</article>
+<article class="post" data-ts="20011106141800" id="p5">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#5 · 2001-11-06 14:18</span></div>
+  <div class="pb">Kan het bier gewoon buiten staan ipv in de koelkast, lekker toch?<br></div>
+</article>
+<article class="post" data-ts="20011106144600" id="p6">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#6 · 2001-11-06 14:46</span></div>
+  <div class="ps">WoensdagSpaGangers...</div><div class="pb">maior, merlijn, timmetje, michiel en ik zitten <br>woensdag in de trein van 17.27 (Adam CS) spoor 2,<br>helemaal vooraan!!! Wil je mee? neem dan bier mee <br>voor in spa (supermarkten dicht). En bel mer of mij???<br><br>SPAAAAAA IS IMPORTANT!!</div>
+</article>
+<article class="post" data-ts="20011106144800" id="p7">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#7 · 2001-11-06 14:48</span></div>
+  <div class="pb">in verband met tentamens ga ik pas op vrijdag middag (na 16:00). Als er nog mensen zijn die dan ook gaan laat het svp ff weten.<br><br><br><br></div>
+</article>
+<article class="post" data-ts="20011107004700" id="p8">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#8 · 2001-11-07 00:47</span></div>
+  <div class="ps">SPAheenreis:</div><div class="pb">Ik kan dus geen bier meenemen omdat ik direct uit mijn werk (waar ze me vandaag vroegen of ik supervisor wilde worden) naar spoor 2 kom gerend. Victor, kun je dus gewoon veel (als het even kan koude) blikjes (Amstel, Grolsch, Brand, HertogJan of Dommelsch dus geen Heineken of Bavaria) voor me regelen? Ik heb trouwens wel genoeg BEFjes en GLD's mee voor als we onderweg droog zouden komen te staan. Eten doen we wel in Luik bij de Quick! <br>Om te drinken in Spa kun je beter een treetje blikjes kopen dat we intact kunnen laten onderweg dus los van de "onderweg"bieren.<br>Verder wil ik nog benadrukken dat het maar alleszins de vraag is of we wel met de trein in Spa kunnen komen omdat we in Maastricht maar 6 min. hebben. Vanuit Verviers moeten we dan met bus of taxi. BRRRRRRRRR.</div>
+</article>
+<article class="post" data-ts="20011107105100" id="p9">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#9 · 2001-11-07 10:51</span></div>
+  <div class="pb">Joost, ik zit ook nog tot redelijk laat op de school te verblijven, dus ik neem denk ook een van de laatste treinen SPA-waarts, waar de OV nog dienst voor gaat doen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

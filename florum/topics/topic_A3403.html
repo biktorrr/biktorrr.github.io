@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bernaard? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Bernaard?</h1>
+<p class="tm">10 posts · started 2016-05-24 02:13 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20160524021349" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2016-05-24 02:13</span></div>
+  <div class="pb">Bernaard. krijg je mijn mails wel door? Ik heb meerdere malen gemaild over onze afspraak van deze avond maar daar is blijkelijk toch iets misgegaan. </div>
+</article>
+<article class="post" data-ts="20160524024818" id="p2">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#2 · 2016-05-24 02:48</span></div>
+  <div class="pb">Neijt, geen mails gezien. Laatste email is van eergisteren.<br><br>Overigens ook een manier om het Florum te re-toolen: als enige communicatiemiddel van de Bode. </div>
+</article>
+<article class="post" data-ts="20160524025510" id="p3">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#3 · 2016-05-24 02:55</span></div>
+  <div class="pb">Juistem. Vijf emails van het Draaiertje teruggevonden in mijn spam box, tussen de InstaFuck Matches en de Hot Locals Looking for Sex. Kankertje.</div>
+</article>
+<article class="post" data-ts="20160524031125" id="p4">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#4 · 2016-05-24 03:11</span></div>
+  <div class="pb">Overigens, en zonder je af te willen kammen, Draaiert, maar: dit had natuurlijk een goeden gelegenheid kunnen zijn om het "Waar is Bernard"-topic nieuw leven in te blazen.</div>
+</article>
+<article class="post" data-ts="20160524094217" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2016-05-24 09:42</span></div>
+  <div class="pb">Ah dat verklaart een hoop. Misschien toch een olijk idee.om een burner phone aan te schaffen? als t goed genoeg voor stringer bell is..<br><br>Mocht je vanavond nog langs willen komen, ik kan de twee afleveringen best nog een keer zien. Laten we het voorlopig dan via dit kennis- en communicatieinstrument regelen.</div>
+</article>
+<article class="post" data-ts="20160524153803" id="p6">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#6 · 2016-05-24 15:38</span></div>
+  <div class="pb">OK, vanavond om acht uur in dat geval?</div>
+</article>
+<article class="post" data-ts="20160524154005" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2016-05-24 15:40</span></div>
+  <div class="pb">Tiptop. Dan kan je Jossip Victorovitsj nog even gedag zeggen.<br></div>
+</article>
+<article class="post" data-ts="20160528222925" id="p8">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#8 · 2016-05-28 22:29</span></div>
+  <div class="pb">Bernie, komje maandag nog kijken? 20u weer doen?<br><br>Profesj? </div>
+</article>
+<article class="post" data-ts="20160529013241" id="p9">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#9 · 2016-05-29 01:32</span></div>
+  <div class="pb">Jeijt, maandag 20.00. Tik!</div>
+</article>
+<article class="post" data-ts="20160529163031" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2016-05-29 16:30</span></div>
+  <div class="pb">hopsetee, ik zet de dropjes vast klaar.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saluti da Italia – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Saluti da Italia</h1>
+<p class="tm">5 posts · started 2003-07-23 12:13 by MB en Fleur</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030723121300" id="p1">
+  <div class="ph"><span class="pa">MB en Fleur</span><span class="pm">#1 · 2003-07-23 12:13</span></div>
+  <div class="pb">allemaal de groeten uit een heet Italie!<br>We zijn nu acht dagen in Noord-Italie en het is al de hele tijd zo rond de 35 graden. De rivieren staan grotendeels droog en vandaag kan de electriciteit uitvallen.  Gelukkig smaakt het eten, de koffie en de wijn hier prima en houden we het nog vol dankzij onze topconditie. <br>Morgen zakken we af naar het Trasimeense meer om de staking van vrijdag voor te zijn. Over twee weken zijn we terug.<br><br>Ciao </div>
+</article>
+<article class="post" data-ts="20030801160500" id="p2">
+  <div class="ph"><span class="pa">MB en Fleur</span><span class="pm">#2 · 2003-08-01 16:05</span></div>
+  <div class="ps">Een groet uit de eeuwige stad</div><div class="pb">Salve!<br>We zijn vanmorgen in Rome aangekomen. Na een recordaantal dagen zonder regen hier en een hittegolf is het nu eindelijk zover: regen. En niet zo'n beetje ook! Morgen is dat als het goed is over en wordt het weer snel boven de 30 graden. gelukkig hebben we hier een hotelletje naast Termini en staan we niet op een camping. <br>Woensdagavond zijn we weer terug in Nederland. <br>Ciaaaoooo!<br><br></div>
+</article>
+<article class="post" data-ts="20030801174800" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-08-01 17:48</span></div>
+  <div class="pb">doe de groeten aan Cristian Chivu onze besneden joodse broeder.</div>
+</article>
+<article class="post" data-ts="20030802222100" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-08-02 22:21</span></div>
+  <div class="pb">Een braziliaanse ploeggenoot van hem heeft hier eergister een auto-ongeluk veroorzaakt. Gezopen, volgens mij.</div>
+</article>
+<article class="post" data-ts="20030803230000" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2003-08-03 23:00</span></div>
+  <div class="pb">ja Cristian had 'm een flesje Roemeense shnapz cadeau gedaan. Jammer dat die Brazilianen daar zo slecht mee om kunnen gaan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

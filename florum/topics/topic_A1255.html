@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timmie tikt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Timmie tikt</h1>
+<p class="tm">5 posts · started 2004-07-31 13:05 by Timmie</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040731130500" id="p1">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#1 · 2004-07-31 13:05</span></div>
+  <div class="pb">Voor alle vakantiegangers en thuis zitters: een nieuwe Timmie tikt.<br>Maar een beetje meer voor de Herstellende...<br><br><br>Ja, het moest er maar weer eens van komen, een Timmie Tikt. Ik had het al beloofd te doen op mijn afstudeerborrel, waar jullie ook waren, en ik hou me aan mijn beloftes. <br>Drie en een halve week is lang genoeg om over veel dingen na te denken waar je over kan schrijven en ik heb er dan ook een aantal om over te tikken. Maar aangezien het 31 juli is en dus de meesten nog steeds op vakantie zijn, wilde ik het gaan hebben over zomer en vakantie. In voetbaltermen ookwel de droge maanden genoemd (op twee helikopters in de Kuip en een farce en een andere wedstrijd in de Arena).<br><br>Vakantie is voor de floraboys altijd een tijd van komen en gaan. Er wordt weinig gebald en af en aan zijn er mensen naar exotische oorden zoals Thailand, Hongarije en Almere. Echt contact door middel van barbecue's, feesten en concerten des levens zijn er niet. Een gemis? Nee, want iedereen heeft altijd eind augustus er weer helemaal zin in en als ik me goed herriner komen de plannen voor Spa/Zeeland meestal uit die periode, de periode vlak na de vakantie.  Ook wordt er vaak in augustus/september weer veel gebald op het maagdelijke groen wat in de zomer soms wat kan herstellen, tenzij de Erecode dudes dat weer gaan verpletteren. <br><br>Maar de vakantie is niet alleen maar bijkomen. Het is ook verhalen verzamelen en ervaringen opdoen die in de grote Floraboys verzamelwerken terecht komen. Interrail vakantie waar ik de verhalen van heb gehoord, Algarve bezoeken met de Sjeike Deif, een shirt met TuuT uit Bernabeu en Camping Michelangelo in Florence. <br>Dat soort verhalen en ook de uitwisseling daarvan horen voor mij de Floraboys. <br><br>En dit jaar was ik een van de eerste die vertrokken was en slechts Michiel, Kenobi en WJ zullen de eerste thuiskomst meemaken. Maar ik wacht met geduld en spanning op de volle thuiskomst van de Floraboys en dat we maar een prachtige nazomer zullen beleven voor we ons allemaal in onze studie/werk moeten storten.</div>
+</article>
+<article class="post" data-ts="20040731130600" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2004-07-31 13:06</span></div>
+  <div class="pb">Ben ik ff real-time on-line met de Biktie. Ik heb de TT nog niet gelezen maar ik wou het meteen even kwijt voordat ik flauwval. Biktie, bij voorbaat: Hulde!</div>
+</article>
+<article class="post" data-ts="20040731130800" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-07-31 13:08</span></div>
+  <div class="pb">Kan het hoger? Kan het olijker?</div>
+</article>
+<article class="post" data-ts="20040731133000" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2004-07-31 13:30</span></div>
+  <div class="pb">Schitterend!! de tranen bikkelen hun weg over mijn wangen...</div>
+</article>
+<article class="post" data-ts="20040809215300" id="p5">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#5 · 2004-08-09 21:53</span></div>
+  <div class="pb">Bijna gemist dit meesterwerkje. Tijd om hem weer bovenaan de lijst te zetten, opdat het de aandacht krijgt die het verdient. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

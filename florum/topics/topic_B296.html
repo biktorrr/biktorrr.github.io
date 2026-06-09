@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explosieve toename scheuringen [ANP] – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Explosieve toename scheuringen [ANP]</h1>
+<p class="tm">3 posts · started 2003-05-20 13:49 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030520134900" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-05-20 13:49</span></div>
+  <div class="pb">AMSTERDAM -- De GG&GD Amsterdam maakt melding van een explosieve toename van het aantal spier- en peesscheuringen in enkel en knie opgelopen door jongeren. Plaatselijke GG&GD instellingen in Rotterdam, Utrecht, Den Haag en Chaam melden eenzelfde opmerkelijke stijging. Geblesseerde jongeren vertellen dat zij hun kwetsuur volledig aan zichzelf te wijten hadden door een truc van hun Idool Tim na te doen. <br><br>Tijdens afgelopen REVT speelde Tim zich door een onnavolgbare schijnbeweging tussen drie verdedigers vrij, waardoor hij een assist kon geven aan de instormende Sicco.<br><br>Op straten, velden en pleintjes geldt het nu als de grootste vernedering om ge-Timd te worden. Marrokaanse voetballers spreken over "een T zetten".<br><br>Docter Zuurbekje van het AMC adviseert iedereen toch vooral niet te proberen dezelfde beweging te maken als Tim, omdat de kansen op letsel extreem hoog zijn.</div>
+</article>
+<article class="post" data-ts="20030520150600" id="p2">
+  <div class="ph"><span class="pa">de Coach</span><span class="pm">#2 · 2003-05-20 15:06</span></div>
+  <div class="pb">wijze raad Floraboys! We kunnen ons niet nog meer geblesseerden veroorloven nadat stervedette Victor '0' de Boer zijn hele rug afgescheurd heeft toen hij een op het oog simpele actie van Tim wou nadoen.</div>
+</article>
+<article class="post" data-ts="20030523125700" id="p3">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#3 · 2003-05-23 12:57</span></div>
+  <div class="pb">JPB heeft zondag jongstleden ook zijn voetpezen allemaal gescheurd door een dergelijke timmenize truuc uit te halen. Het herstel is voorspoedig, de verwachtingen zijn dat hij de gehele zomerstop niet aan voetballen meer toekomt....</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

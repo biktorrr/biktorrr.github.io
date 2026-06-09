@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Upload ruimte – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Upload ruimte</h1>
+<p class="tm">6 posts · started 2004-12-31 12:43 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041231124300" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-12-31 12:43</span></div>
+  <div class="pb">Lieve webmasterts (Joost/Maarten). Ik zou het verduveld handig vinden als er een optie komt om informatie (voornamelijk in mijn geval plaatjes en docjes) up te loaden naar de floraboys site. Ik moet nu om een plaatje voor vik's keuken te kunnen laten zien allemaal kunstgrepen op andere sites uitvoeren om een plaatje online te krijgen, dat moet anders kunnen. Ik vond het ookal tamelijk jammer om mijn robinsonlijst via de phk met jullie te moeten delen, dat kan toch anders? (ik heb inderdaad geen xs4all homepage ofzo).<br></div>
+</article>
+<article class="post" data-ts="20050101151400" id="p2">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#2 · 2005-01-01 15:14</span></div>
+  <div class="pb">Ik zou wat ruimte voor je kunnen reserveren op m'n webservertje. Moet je er ook nog een eigen naampje bij? tijmen.floraboys.com ofzo? => mail me<br><br>Ik neem aan dat ik je geen cursus FTP-en erij kado hoef te doen? <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20050102180800" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-01-02 18:08</span></div>
+  <div class="pb">Anders heeft je universiteit toch webruimte? Het is idd niet erg schappelijk om de gratis server van WJ nog zwaarder te belasten.</div>
+</article>
+<article class="post" data-ts="20050102193500" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2005-01-02 19:35</span></div>
+  <div class="pb">ik zat meer te denken aan een knopje in de balkjes hieronder, bv ipv EK2004. "upload" dat je dan kan browsen in de files op je eigen systeem, vervolgens kan je een mapje maken in de upload ruimte (bv -tijmen-) met vervolgens de informatie over de locatie van de upgeloade file. maar dit zal wel iets te lui en 'gebruikersvriendelijk' klinken.<br>Dan lijkt me dat idee van MAarten heel erg schappelijk :D<br><br></div>
+</article>
+<article class="post" data-ts="20050102203400" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-01-02 20:34</span></div>
+  <div class="pb">Dat laatste kan ik zonder problemen regelen maar dat kost mijzelf geld en dat is dus geen goede optie. Wellicht heeft Maarten php op zijn eigen server draaien en valt daar iets te uploaden via je browser.<br><br></div>
+</article>
+<article class="post" data-ts="20050103091700" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2005-01-03 09:17</span></div>
+  <div class="pb">Ik doe niet aan gebruiksvriendelijke oplossingen. :)</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

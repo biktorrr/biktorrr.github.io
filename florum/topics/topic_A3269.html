@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Groot Websites Topique – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Groot Websites Topique</h1>
+<p class="tm">5 posts · started 2013-01-23 13:54 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20130123135449" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2013-01-23 13:54</span></div>
+  <div class="pb">Naast series, boeken, films, theater , etc. lijkt het me tijd voor een websites topic.<br><br>Iemand nog een leuke/slechte website die die Boys moeten bekijken? Wat is er besoindre aan? Je weet zelf.<br><br>Kleine kickoff<br><a href="http://yarr.me/"> Yarr.me </a><br>Lekker laagdrempelige lollige plaatjes site. Goed voor een gniffel hier en daar. Geen reclame banners. Gemaakt door de tweeling die altijd bij Bastijn op bezoek was, de inwonende buurjongen van de Holy Familie op de Zijlweg.<br><br></div>
+</article>
+<article class="post" data-ts="20130123151816" id="p2">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#2 · 2013-01-23 15:18</span></div>
+  <div class="pb">Hulde voor het initiatief profesj.<br><br>Mijn duiten: <br><br>wel.nl  (Welingelichte Kringen)<br>Verzamelbak met interessante content van interessante nieuws sites (zoals NY Times, Volkskrant en the economist). <br>Post korte samenvattingen met doorklik naar het origineel. Vaak ook met een vleug opinie in de samenvatting. Voordeel is dat je niet zelf non stop hoeft te surfen. Minpuntje voor de taalnazi's: er staat wel eens een tikfout in. <br><br>Huffingtonpost.com <br>Zou geen nadere toelichting behoeven. Wat ik wel een voordeel vind is bijdragen van fact checkers en context 'providers'. In Nederland zie ik wel eens cijfers voorbij komen (met een politieke lading) waarbij er vervolgens geen enkele context over wordt geboden. Neem een recent bericht dat er meer mensen onder de armoedegrens vallen (+-6%). Heel sociaal Nederland natuurlijk in rep en roer, maar hoe hoog is de armoedegrens, hoe is die bepaald, wie worden meegerekend, en wat is de historische trend? Dat zijn vragen die een Volkskrant site bijvoorbeeld niet biedt. Als er in de VS 157.000 werklozen minder zijn dan wordt zoiets op de huffpost vaak wel ontleed. Hoeveel van die 157.000 zijn voor eenmalige Sandy werkzaamheden, hoeveel mensen zijn er opgehouden met zoeken, wat zijn de trends in verschillende sectoren? Kortom het gaat wat verder dan een enkel cijfer dat wordt geboden door politieke belanghebbers. <br><br>Ander voordeel, er zijn vaak meta discussies, bijvoorbeeld over de strategische keuzes die Obama gemaakt heeft in onderhandeling met de republikeinen over de fiscal cliff. <br><br>Verder neemt huffpost steeds vaker expliciet (en met chocolade letters) afstand van de republican retards in de VS, altijd fijn.<br><br>(Off topic, en ik vrees een gruwelijke rancuneuze bashing uit Virginia, maar is het jullie wel eens opgevallen dat John Boehner verdacht veel lijkt op een oude versie van onze  eigen Bo D\é?) Dat zit natuurlijk met name in die lichte ogen en de hoge knijpbaarheid van de appelwangen, maar het is wel opvallend. </div>
+</article>
+<article class="post" data-ts="20130131000429" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2013-01-31 00:04</span></div>
+  <div class="pb">En tussen het politieke geweld ook nog melding van Ron Jeremy, die in kritieke toestand in het ziekenhuis ligt.<br><br>http://www.huffingtonpost.com/2013/01/30/ron-jeremy-in-critical-condition-heart-aneurysm_n_2582953.html</div>
+</article>
+<article class="post" data-ts="20130131114511" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2013-01-31 11:45</span></div>
+  <div class="pb">Tragisch tragisch.<br><br>Mijn frequent bezochte webbywebsites:<br><br>- Dailyshow.com en colbertnation voor de dagelijkse nieuws/grinniksessie<br>- Avclub.com voor film en tv nieuws<br>- Boingboing.net een tech- en cultuurblog<br><br>- en toch ook maar een vermelding voor Sargasso.nl, hoewel ik daar tegenwoordig zelden vertoef.</div>
+</article>
+<article class="post" data-ts="20130212132916" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2013-02-12 13:29</span></div>
+  <div class="pb">persoonlijk moet ik hier dus bijzonder hard om lachen.<br>Liken op facebook. Doen.<br><a href="https://www.facebook.com/MakeThatTheCatWise"><br>Make that the cat wise </a><br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SBO Prijs – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">SBO Prijs</h1>
+<p class="tm">10 posts · started 2008-09-15 13:05 by Laura</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080915130500" id="p1">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#1 · 2008-09-15 13:05</span></div>
+  <div class="pb">Hey allemaal,<br><br>zoals jullie misschien wel weten, is mijn moeder lactatiekundige (borstvoedingsdeskundige). Nu is ze dit jaar genomineerd voor de SBO Borstvoeding Prijs 2008. En natuurlijk vinden wij (de familie etc) dat ze moet winnen. Maar dat kan dus alleen als ze genoeg stemmen krijgt. <br><br>Stem dus eventjes op mijn moeder (Annet Helmsing) via<br>www.borstvoedingloont.nl<br><br>Thanx!<br>Laura<br></div>
+</article>
+<article class="post" data-ts="20080915131800" id="p2">
+  <div class="ph"><span class="pa">penose</span><span class="pm">#2 · 2008-09-15 13:18</span></div>
+  <div class="pb">He, waarom is mijn moeder niet genomineerd? Die is volgens mij de allerbeste lactatiekundige van Nederland! Laura, is dit een deal: Wij zorgen ervoor dat jouw moeder wint, en zij zorgt ervoor dat mijn moeder volgend jaar wordt genomineerd.</div>
+</article>
+<article class="post" data-ts="20080915132200" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2008-09-15 13:22</span></div>
+  <div class="pb">Alles leuk en aardig, maar <i>waarom</i> vind je dat je moeder de beste borstvoedingdeskundige van 2008 is? Ik heb niet heel veel redenen nodig om te stemmen...</div>
+</article>
+<article class="post" data-ts="20080915132900" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2008-09-15 13:29</span></div>
+  <div class="pb">Om dezelfde reden dat Lara in Suriname de mooiste zonsondergang foto had gemaakt natuurlijk!<br><br></div>
+</article>
+<article class="post" data-ts="20080915133200" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2008-09-15 13:32</span></div>
+  <div class="pb">hehe, kijk die kleine boef bovenaan die site grinniken. </div>
+</article>
+<article class="post" data-ts="20080915133800" id="p6">
+  <div class="ph"><span class="pa">Karim</span><span class="pm">#6 · 2008-09-15 13:38</span></div>
+  <div class="pb">Praktizeert jou moeder ook wat zij preekt? Mijn stem gaat naar de grootste zeer mooist grootste omvang!</div>
+</article>
+<article class="post" data-ts="20080915134100" id="p7">
+  <div class="ph"><span class="pa">Laura</span><span class="pm">#7 · 2008-09-15 13:41</span></div>
+  <div class="pb">Mer, check de site, en daar staat wat ze allemaal heeft gedaan om borstvoeding te promoten...natuurlijk niet alles, maar wel veel van wat ze doet/heeft gedaan.<br>Voor diegenen die al hebben gestemd: Dankjewel!</div>
+</article>
+<article class="post" data-ts="20080915162600" id="p8">
+  <div class="ph"><span class="pa">Karim</span><span class="pm">#8 · 2008-09-15 16:26</span></div>
+  <div class="pb">Astjeblieft!</div>
+</article>
+<article class="post" data-ts="20080915170300" id="p9">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#9 · 2008-09-15 17:03</span></div>
+  <div class="pb">Hmm..ik wil best stemmen, maar ik ben toch benieuwd naar het antwoord op de vraag of borstvoeding echt loont. Daar zijn de meningen verdeeld over.</div>
+</article>
+<article class="post" data-ts="20080915205700" id="p10">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#10 · 2008-09-15 20:57</span></div>
+  <div class="pb">Ik zou zeggen ga eens een discussie aan met Annet daarover <IMG SRC="http://www.jm-p.nl/flora/smile.gif" WIDTH=15 HEIGHT=15 BORDER=0></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

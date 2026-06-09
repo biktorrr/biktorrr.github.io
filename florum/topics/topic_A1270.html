@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Klassiekers? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Klassiekers?</h1>
+<p class="tm">11 posts · started 2004-08-15 13:38 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040815133800" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2004-08-15 13:38</span></div>
+  <div class="pb">Hoe kan ik bij het gehele Florum komen en niet allen bij het Selecte overzicht? Ik wilde Kirsten namelijk het interview van Letterman met Merlijn en Timmie laten lezen maar ik kan het niet vinden. :( ..Misschien dat er nog meer memoirabele bijdragen zijn geweest die het verdienen om makkelijker gevonden te worden?? IPV het het Bilby linkje ofzo?</div>
+</article>
+<article class="post" data-ts="20040815133800" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-08-15 13:38</span></div>
+  <div class="pb">Of gewoon een link naar het hele florum...pffff..zal wel groot zijn.</div>
+</article>
+<article class="post" data-ts="20040815175400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-08-15 17:54</span></div>
+  <div class="pb">goed plan, maar volgens mij is Jossyt S nog niet terug<br><br><br>(ik wel overigens)</div>
+</article>
+<article class="post" data-ts="20040816102500" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2004-08-16 10:25</span></div>
+  <div class="pb">Jossyt S. SMS-te dat i heel Ierland heeft ondergespoten.<br></div>
+</article>
+<article class="post" data-ts="20040816140400" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2004-08-16 14:04</span></div>
+  <div class="pb">klassiekertje: De oudst bewaard gebleven post op het Florum ooit. Deze dateert van 29 mei 2001 !! <br><br>Ik denk niet dat dit de eerste post ooit is, maar toch...<br><br><a href="http://www.sv-hbc.nl/php/expsel.php3?id=107">Hier issie</a></div>
+</article>
+<article class="post" data-ts="20040816141600" id="p6">
+  <div class="ph"><span class="pa">Merlijn a.k.a. -=|:-)</span><span class="pm">#6 · 2004-08-16 14:16</span></div>
+  <div class="pb">Nederland - Estland ook. Ik vind het justified and ancient.</div>
+</article>
+<article class="post" data-ts="20040816142100" id="p7">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#7 · 2004-08-16 14:21</span></div>
+  <div class="pb"><a href="http://www.sv-hbc.nl/php/expsel.php3?id=108">http://www.sv-hbc.nl/php/expsel.php3?id=108</a><br><br>Deze is ook van 29 mei..wel mooi nog van Mr. Smithuis himself.<br>Wel raar dat de berichten bij id=107 beginnen. %|</div>
+</article>
+<article class="post" data-ts="20040816145400" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-08-16 14:54</span></div>
+  <div class="pb">< a href="http://www.sv-hbc.nl/php/expsel.php3?id=111">Speler van de Maand haha</a></div>
+</article>
+<article class="post" data-ts="20040816163800" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-08-16 16:38</span></div>
+  <div class="pb">nogal oldskool allemaal...</div>
+</article>
+<article class="post" data-ts="20040910100600" id="p10">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#10 · 2004-09-10 10:06</span></div>
+  <div class="pb">Jossyt S heeft de pagina gemaakt die alle posts ooit ophaalt: De link is <a href="http://www.sv-hbc.nl/test/totaal.php">http://www.sv-hbc.nl/test/totaal.php</a>.<br><br>LET OP: niet echt fijn voor mensen met een trage verbinding. Maar ook weer niet zo heel erg gruwelijk...</div>
+</article>
+<article class="post" data-ts="20040910104100" id="p11">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#11 · 2004-09-10 10:41</span></div>
+  <div class="pb">Mooyt. Ik was naar deze op zoek :)<br><a href="http://www.sv-hbc.nl/php/expsel.php3?id=804">De David Letterman Show</a></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

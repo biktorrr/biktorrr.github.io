@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aftsuderen BIG T. – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Aftsuderen BIG T.</h1>
+<p class="tm">4 posts · started 2004-06-29 12:13 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040629121300" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2004-06-29 12:13</span></div>
+  <div class="pb">BIG T gefeliciteerd pik en alvast veel succes de komende 4 jaar als AIO.<br><br>Trouwens gaan er nog mensen met de auto naar Leiden? Zo ja dan willen Frank en ik wel meerijden.</div>
+</article>
+<article class="post" data-ts="20040629124100" id="p2">
+  <div class="ph"><span class="pa">Lh</span><span class="pm">#2 · 2004-06-29 12:41</span></div>
+  <div class="pb">Wij gaan met de trein je kan moeilijk in het centrum komen met de wagen.</div>
+</article>
+<article class="post" data-ts="20040629133400" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-06-29 13:34</span></div>
+  <div class="pb">Mk, Mb en ik gaan ook met de trein</div>
+</article>
+<article class="post" data-ts="20040629140000" id="p4">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#4 · 2004-06-29 14:00</span></div>
+  <div class="ps">gefeliciteerd Biggie!!</div><div class="pb"><em style="color:var(--dim)">(no content)</em></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

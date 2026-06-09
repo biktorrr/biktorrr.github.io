@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>di-mi-spam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">di-mi-spam</h1>
+<p class="tm">4 posts · started 2005-11-15 10:07 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051115100700" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2005-11-15 10:07</span></div>
+  <div class="pb"><a href="http://photos1.blogger.com/blogger/5594/826/1600/P6140090.jpg"><img style="float:left; margin:0 10px 10px 0;cursor:pointer; cursor:hand;" src="http://photos1.blogger.com/blogger/5594/826/200/P6140090.jpg" border="0" alt="" /></a><br><br>even een leuke plaats in Nederland</div>
+</article>
+<article class="post" data-ts="20051115101500" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2005-11-15 10:15</span></div>
+  <div class="pb">ga naar timmietikt.blogspot.com voor het plaatje.. hier mag dieplinken neyt kennelijk</div>
+</article>
+<article class="post" data-ts="20051115104700" id="p3">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#3 · 2005-11-15 10:47</span></div>
+  <div class="pb"><img src="http://photos1.blogger.com/blogger/5594/826/1600/P6140090.jpg"></div>
+</article>
+<article class="post" data-ts="20051115110400" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2005-11-15 11:04</span></div>
+  <div class="pb">Hoogh ende olick!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

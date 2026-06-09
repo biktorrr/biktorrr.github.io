@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Theater Topique – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Theater Topique</h1>
+<p class="tm">4 posts · started 2012-01-08 14:12 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120108141246" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2012-01-08 14:12</span></div>
+  <div class="pb"><p><br>	Na films, boeken, snoepreisjes, etc, ook maar een topiqueje voor Het Theater</p><br><p><br>	&nbsp;</p><br><p><br>	Stuk: Next To Normal<br /><br>	Starring: Simone &quot;La&quot; Kleinsma, Freek &quot;Joseph&quot; Bartels en nog 4 anderen<br /><br>	waar: Schouwburg Velsen (try-out), premiere volgende week in De La Mar</p><br><p><br>	Geslaagde &#39;rock&#39; musical over een (amerikaans) gezin, ontwricht door een familietragedie. Besoindre goed geacteerd maar vooral gezongen. Ook de beperkte setting en de 4-koppige band op het podium werkte erg goed. Dat sommige stukjes zowel cultureel als taaltechnisch &#39;lost in translation&#39; waren, mocht de pret niet echt drukken. En met pret bedoel ik weemoed; want waar de musical wordt aangekondigd als een stuk met een lach en een traan overheerst voornamelijk de bescheiden traan.</p><br><p><br>	De amerikaanse versie is bekroond met 2 Tonies. De musical raakt nuchtere nederlanders wellicht minder -op ons komt het slikken van tig verschillende soorten pillen voor het bestrijden van trauma absurd over- en kan ons daarom minder effectief een spiegel voorhouden. Evenzogoed is het wel weer eens aardig om een JoopvdE musical zonder bombastische EltonJohn-TimRice tranentrek scenes te mogen zien.</p><br><p><br>	Waardering: 3 valiumpilletjes en 1 natte tissue.&nbsp;</p><br><p><br>	Geschikt voor het gehele gezin, bevroedelijk.</p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br><p><br>	&nbsp;</p><br></div>
+</article>
+<article class="post" data-ts="20120108161931" id="p2">
+  <div class="ph"><span class="pa">Moderator</span><span class="pm">#2 · 2012-01-08 16:19</span></div>
+  <div class="pb">Beste Tn,<br><br>Zou u voortaan zo vriendelijk willen zijn toneelstukken met zang te posten in het daarvoor bestemde musical-topiquille?<br><br>Dank.</div>
+</article>
+<article class="post" data-ts="20120108185614" id="p3">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#3 · 2012-01-08 18:56</span></div>
+  <div class="pb">Het is geen toneelstuk-topic, elitaire intellectueel-arrogante moderator! Het is een theater-topic!<br><br>(met enige vrees voor de streepjes-nazi)</div>
+</article>
+<article class="post" data-ts="20120109130307" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2012-01-09 13:03</span></div>
+  <div class="pb">Ok dan:<br><br>Wat: Scrooge door en in de Haarlemsche Stadsschouwburg<br>Beff: een amateurtoneel-collegaatje deed mee als het spook van het heden. Erg beff.<br>Oordeel: Geinige bewerking van Dickens. Soms een beetje al te olijk, maar wel degelijk een warm winterbad. Hoofdrol was voor Erik van Mu!$winkel, die zich duidelijk thuis voelt op het podium en erg veel ruimte kreeg om dat te laten zien. <br>Voor het hele gezin? Jeyt, een echte familievoorstelling: vanaf 8+</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

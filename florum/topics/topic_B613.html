@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Volgend seizoen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Volgend seizoen</h1>
+<p class="tm">6 posts · started 2005-05-25 13:21 by De beleidsmakers</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050525132100" id="p1">
+  <div class="ph"><span class="pa">De beleidsmakers</span><span class="pm">#1 · 2005-05-25 13:21</span></div>
+  <div class="pb">Voor volgend seizoen hebben wij een nieuw beleid opgestelt. Het concept is gestoeld op het godenzonen model.<br><br>Zie standenpagina usc of onderstaand.<br><br>Eerste klasse E           gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br> 1 Godenzonen                  6    6   0   0   12    96 -  25    0/ 0   0/ 0<br> 2 Dr. Juice                   5    2   1   2    5    23 -  22    0/ 0   0/ 0<br> <br>Topscorers:  <br><br>1 -  21  Jeroen van Muiswinkel (Godenzonen)<br>2 -  13  Thijs van der Holst (Godenzonen)<br>3 -  12  Vincent Gibson (Godenzonen)<br>4 -  11  Jos Runhaar (Godenzonen)<br>5 -  10  Robert Kranendonk (Godenzonen)<br><br></div>
+</article>
+<article class="post" data-ts="20050525133200" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2005-05-25 13:32</span></div>
+  <div class="pb">haha, <br><br>moet te doen zijn. Goed stuk speurwerk, beleidsmakers!</div>
+</article>
+<article class="post" data-ts="20050601131300" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-06-01 13:13</span></div>
+  <div class="ps">addendum</div><div class="pb">en lief zijn wordt beloond; kijk maar naar Viking FK en Tottenham, die mogen door slands plaats op de Fifa fairplay lijst meedoen aan de coppa_ueffffa.<br></div>
+</article>
+<article class="post" data-ts="20050604132700" id="p4">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#4 · 2005-06-04 13:27</span></div>
+  <div class="pb">Er zijn blijkbaar meer teams met dat concept.<br><br>Tweede klasse D           gesp  gew gel vrl  pnt   doelsaldo   of/pm  ns/pm<br> 1 Futsal Almerdam             6    6   0   0   12    87 -  21    0/ 0   0/ 0<br> 2 Vrienden van Clarence       6    5   0   1   10    37 -  24    0/ 0   0/ 0<br> 3 Rrraaarrr                   6    3   0   3    6    21 -  29    0/ 0   0/ 0<br> 4 Heum em d'r in!!!           6    2   0   4    4    17 -  48    0/ 0   0/ 0<br> 5 FC Vaffanculo               6    1   0   5    2    19 -  38    0/ 0   0/ 0<br> 6 Clockwork Orange            6    1   0   5    1    17 -  38    3/ 1   0/ 0<br><br>Topscorers:  1 -  28  Dennis van Vuuren (Futsal Almerdam)<br>             2 -  19  Igino Vons\ée (Futsal Almerdam)<br>             3 -  14  Jermaine Gove\ïa (Futsal Almerdam)<br>             4 -  13  Marcel Wooter (Futsal Almerdam)<br>             5 -  10  Jasper Hink (Vrienden van Clarence)</div>
+</article>
+<article class="post" data-ts="20050606102900" id="p5">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#5 · 2005-06-06 10:29</span></div>
+  <div class="pb">Helaas voor Tottenham gaat die vlieger niet op, geen ueffa coppa voor Jol.</div>
+</article>
+<article class="post" data-ts="20050627120100" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2005-06-27 12:01</span></div>
+  <div class="pb">De Godenzonen hebben het wel voor elkaar gekregen!<br>Ik weet helaas niet wie er met de cup vandoor is gegaan.<br><br>Bekerfinale<br>	  	  	  	  	 <br>24-jun 	20:00 	<br>4<br>	B6001 	Godenzonen 	- 	AFC Altijd Catanacho</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

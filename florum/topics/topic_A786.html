@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Partijtje Maarten Duwel 24 Mei – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Partijtje Maarten Duwel 24 Mei</h1>
+<p class="tm">6 posts · started 2003-05-14 13:11 by MD</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030514131100" id="p1">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#1 · 2003-05-14 13:11</span></div>
+  <div class="pb">Hallo Allen,<br><br>Ik was 15 april jarig en wilde nu mijn verjaardag eens gaan vieren. Ik dacht zelf aan zaterdag 24 mei. Iedereen is welkom vanaf een uurtje of 20:00.<br><br>Voor de mensen uit Amsterdam enzo is het goed te bereiken, woon op 5 minuten lopen van Hillegom station af, als je fijn met de trein wil komen.<br>Mochten mensen willen crashen na afloop is dat mogelijk uiteraard. :) Laat het wel weten van tevoren als je het weet, anders kan er ter plaatste nog wel wat geregeld worden. =)<br><br>Gaarne zie ik jullie allen verschijnen.<br><br>Maarten Duwel</div>
+</article>
+<article class="post" data-ts="20030514133200" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-05-14 13:32</span></div>
+  <div class="pb">he fuck, dan wou ik ook net mijn partijtje doen</div>
+</article>
+<article class="post" data-ts="20030514135800" id="p3">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#3 · 2003-05-14 13:58</span></div>
+  <div class="pb">oja ik zie dat Merlijn en ik dan al een afspraak hebben, maar misschien dat Michiel en Jurriaan ofzo dan gewoon kunnen met een groep.</div>
+</article>
+<article class="post" data-ts="20030514140800" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-05-14 14:08</span></div>
+  <div class="pb">Ja sorry, dan hadden we 'n kaarthappening opgezet. </div>
+</article>
+<article class="post" data-ts="20030514145400" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2003-05-14 14:54</span></div>
+  <div class="pb">doe em anders ook ff voor de PHK. Ik kan waarschijnlijk wel.<br><br>Is JPB er ook?</div>
+</article>
+<article class="post" data-ts="20030514191400" id="p6">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#6 · 2003-05-14 19:14</span></div>
+  <div class="pb">Uiteraard is JPB ook van de partij. :)<br><br>Had het ook alreeds op de PHK gepost.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

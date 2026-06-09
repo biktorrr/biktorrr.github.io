@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Auto RIJLES – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Auto RIJLES</h1>
+<p class="tm">7 posts · started 2003-12-22 14:07 by Famous</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031222140700" id="p1">
+  <div class="ph"><span class="pa">Famous</span><span class="pm">#1 · 2003-12-22 14:07</span></div>
+  <div class="pb">Na jarenlang als rijlesinstructeurs te hebben gewerkt gaan mijn nichtje en haar vriend nu zelf een rijschool starten in HAARLEM. Vanaf 10 januari gaan ze de weg op.<br><br>Kennen jullie nog mensen in Haarlem die goede rijles willen hebben?? </div>
+</article>
+<article class="post" data-ts="20031222200700" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-12-22 20:07</span></div>
+  <div class="pb">mmmaaior?..</div>
+</article>
+<article class="post" data-ts="20031223193500" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2003-12-23 19:35</span></div>
+  <div class="pb">michiel?</div>
+</article>
+<article class="post" data-ts="20031226130800" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2003-12-26 13:08</span></div>
+  <div class="pb">jammerrrrr! ik woon in Amsterdam...</div>
+</article>
+<article class="post" data-ts="20031227105100" id="p5">
+  <div class="ph"><span class="pa">MD</span><span class="pm">#5 · 2003-12-27 10:51</span></div>
+  <div class="pb">Kan wel wat lessen gebruiken ondanks dat ik mijn papiertje al heb. <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0></div>
+</article>
+<article class="post" data-ts="20040106154100" id="p6">
+  <div class="ph"><span class="pa">Fleur</span><span class="pm">#6 · 2004-01-06 15:41</span></div>
+  <div class="pb">Ik ken iemand die wel belangstelling heeft.<br>Hoe heet de rijschool, hebben ze een internetsite/telefoonnummer?</div>
+</article>
+<article class="post" data-ts="20040108100900" id="p7">
+  <div class="ph"><span class="pa">Rig</span><span class="pm">#7 · 2004-01-08 10:09</span></div>
+  <div class="pb">de rijschool heet: Autorijschool RJ&P (Rob Joosten & Partners) en je kunt Rob bereiken op: <br>06-10911501 of op 023-5407261.<br><br>Omdat ze net gestart zijn is er nog geen internetsite, maar daar wordt hard aan gewerkt.<br><br>Voor mensen die hun rijbewijs nog moeten halen bieden ze ook compactopleidingen aan. Opfriscursussen zijn er uiteraard ook.<br><br>Groeten Rig</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

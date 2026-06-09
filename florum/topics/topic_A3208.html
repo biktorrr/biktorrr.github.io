@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Verjaardag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Verjaardag</h1>
+<p class="tm">5 posts · started 2012-03-04 16:59 by LH</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20120304165947" id="p1">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#1 · 2012-03-04 16:59</span></div>
+  <div class="pb"><p><br>	<span style="font-size:14px;"><big><span style="color: rgb(255, 255, 0);"><span style="background-color: rgb(255, 0, 0);">Voor wie er geen mail heeft gehad omdat ik&nbsp; geen adres heb of het niet meer bleek te kloppen bij deze ook nog even <img alt="smiley" height="20" src="http://www.floraboys.com/ckeditor/ckeditor/plugins/smiley/images/regular_smile.gif" title="smiley" width="20" />.</span></span></big></span></p><br><p><br>	<span style="font-size:14px;"><big><span style="color: rgb(255, 255, 0);"><span style="background-color: rgb(255, 0, 0);">Ik vier mijn verjaardag dit jaar op zaterdagavond 31 maart. Vanaf 20:00 uur zijn jullie welkom aan de Kromhoutlaan voor een biertje, wijntje oid. </span></span></big></span></p><br><p><br>	<span style="font-size:14px;"><big><span style="color: rgb(255, 255, 0);"><span style="background-color: rgb(255, 0, 0);">x</span></span></big></span></p><br></div>
+</article>
+<article class="post" data-ts="20120305171013" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2012-03-05 17:10</span></div>
+  <div class="pb">Topshit, staat in de agenda. Nog leuke wensen?<br></div>
+</article>
+<article class="post" data-ts="20120305190656" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3 · 2012-03-05 19:06</span></div>
+  <div class="pb">Heb nog wel wat staan op lijstje.  nl ...</div>
+</article>
+<article class="post" data-ts="20120305233049" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2012-03-05 23:30</span></div>
+  <div class="pb">Wij zijn er vast bij.</div>
+</article>
+<article class="post" data-ts="20120314221845" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2012-03-14 22:18</span></div>
+  <div class="pb">ik ben erbij</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

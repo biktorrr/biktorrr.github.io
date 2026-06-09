@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>groeten uit de Fjorden – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">groeten uit de Fjorden</h1>
+<p class="tm">4 posts · started 2004-07-09 17:02 by BigT &amp; JL@u</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040709170200" id="p1">
+  <div class="ph"><span class="pa">BigT &amp; JL@u</span><span class="pm">#1 · 2004-07-09 17:02</span></div>
+  <div class="pb">Hey iedereen<br><br>Hartelijke groeten vanuit het Noorse en het Fjordse. We zitten nu ten oosten van Bergen aan de Fjord te heersen en we hebben het supergaaf. Mooie natuur en lekker weer. Alleen veel te steil om te kunnen ballen. Ik hoop dat in Haarlem alles goed is en we hopen jullie weer snel te zien.<br><br>\Ø \Æ \Å, want we hebben hier een veel gaver toetsenbord dan jullie!<br><br></div>
+</article>
+<article class="post" data-ts="20040709203400" id="p2">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#2 · 2004-07-09 20:34</span></div>
+  <div class="pb">\å\Å<br>\æ\Æ<br>ø\Ø<br>ð</div>
+</article>
+<article class="post" data-ts="20040713105100" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2004-07-13 10:51</span></div>
+  <div class="pb">Dag Biggie en J-L@u <br><br>veel plezier nog op jullie trip door de noord</div>
+</article>
+<article class="post" data-ts="20040714102100" id="p4">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#4 · 2004-07-14 10:21</span></div>
+  <div class="pb">ja, geniet van de sterren en drink niet teveel alcohol h\è!</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

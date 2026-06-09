@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vanavond – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Vanavond</h1>
+<p class="tm">10 posts · started 2010-06-18 09:53 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100618095300" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2010-06-18 09:53</span></div>
+  <div class="pb">Wie heeft er zin om een biertje te drinken vanavond in de stad?</div>
+</article>
+<article class="post" data-ts="20100618102200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2010-06-18 10:22</span></div>
+  <div class="pb">Zin wel, echter geen tijd, zie ik je morgen bij de Tube? Dan hebben wij het gelijk even over hoe het afscheid was bij je oude werkgever. <br><br>P.S. Woensel was toch van zaterdag op zondag. <br>P.P.S. Facebook?</div>
+</article>
+<article class="post" data-ts="20100618133700" id="p3">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#3 · 2010-06-18 13:37</span></div>
+  <div class="pb">Wie ben je en wat heb je met onze profesj gedaan?<br><br>Dat gexegd hebbende tik ik m aan</div>
+</article>
+<article class="post" data-ts="20100618135200" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2010-06-18 13:52</span></div>
+  <div class="pb">Tik 'm af.</div>
+</article>
+<article class="post" data-ts="20100618153100" id="p5">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#5 · 2010-06-18 15:31</span></div>
+  <div class="pb">Goed plan. Hoe laat waar?</div>
+</article>
+<article class="post" data-ts="20100618173600" id="p6">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#6 · 2010-06-18 17:36</span></div>
+  <div class="pb">Willen we nog eerst Engeland-Algerije kijken en dan de stad in?</div>
+</article>
+<article class="post" data-ts="20100618174800" id="p7">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#7 · 2010-06-18 17:48</span></div>
+  <div class="pb">Vind het best. Kan bij mij wel.</div>
+</article>
+<article class="post" data-ts="20100618175800" id="p8">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#8 · 2010-06-18 17:58</span></div>
+  <div class="pb">top! dan kom ik langgeslingerd. Typische wedstrijd waar je doorheen kan ouwehoeren. Vic, kom jij ook die kant op?<br><br></div>
+</article>
+<article class="post" data-ts="20100618180400" id="p9">
+  <div class="ph"><span class="pa">vb</span><span class="pm">#9 · 2010-06-18 18:04</span></div>
+  <div class="pb">Ja klinkt wel lollig. Ik zie jullie zum tuub</div>
+</article>
+<article class="post" data-ts="20100618185900" id="p10">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#10 · 2010-06-18 18:59</span></div>
+  <div class="pb">Gaan jullie voor twee kratjes??<br><br>Ik ben er niet bij. Ik ga me opladen voor morgen: Eindoooovvuhhh!!!!!!!!!!!!!<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

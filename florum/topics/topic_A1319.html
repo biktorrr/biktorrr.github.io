@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VRIJMIPUU: return of the legend! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">VRIJMIPUU: return of the legend!</h1>
+<p class="tm">12 posts · started 2004-10-08 11:53 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041008115300" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-10-08 11:53</span></div>
+  <div class="pb">Ik dacht, kom ik doe er nog eens eentje. Deze rebus is voor jullie. Wie het antwoord het grootste post, is de winnaar!<br><img src="http://www.jm-p.nl/flora/onzin/rebus.jpg"></div>
+</article>
+<article class="post" data-ts="20041008115400" id="p2">
+  <div class="ph"><span class="pa">VB, de 133t pAinT h@X0r</span><span class="pm">#2 · 2004-10-08 11:54</span></div>
+  <div class="pb">oja: Paint Rulezzzzz<br><br><br></div>
+</article>
+<article class="post" data-ts="20041008123300" id="p3">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#3 · 2004-10-08 12:33</span></div>
+  <div class="pb">emmm..xie nix?</div>
+</article>
+<article class="post" data-ts="20041008133800" id="p4">
+  <div class="ph"><span class="pa">Vb</span><span class="pm">#4 · 2004-10-08 13:38</span></div>
+  <div class="pb">ik zie t wel</div>
+</article>
+<article class="post" data-ts="20041008141500" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2004-10-08 14:15</span></div>
+  <div class="pb">Spa is im glas tand?</div>
+</article>
+<article class="post" data-ts="20041008141700" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2004-10-08 14:17</span></div>
+  <div class="pb">Correctie: <br><br>Spa is important !<br><br></div>
+</article>
+<article class="post" data-ts="20041008142700" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2004-10-08 14:27</span></div>
+  <div class="pb">oja, ik zie dat er R=L staat, dat moet natuurlijk L=R zijn...</div>
+</article>
+<article class="post" data-ts="20041008155000" id="p8">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#8 · 2004-10-08 15:50</span></div>
+  <div class="pb">haha nu zie ik 'm pas echt. Het was dus een pol. </div>
+</article>
+<article class="post" data-ts="20041011104100" id="p9">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#9 · 2004-10-11 10:41</span></div>
+  <div class="pb">op zeker...</div>
+</article>
+<article class="post" data-ts="20041014125200" id="p10">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#10 · 2004-10-14 12:52</span></div>
+  <div class="pb">ik wacht met spanning af...</div>
+</article>
+<article class="post" data-ts="20041015102300" id="p11">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#11 · 2004-10-15 10:23</span></div>
+  <div class="pb">ik zal er eens over peinzen...</div>
+</article>
+<article class="post" data-ts="20041015123700" id="p12">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#12 · 2004-10-15 12:37</span></div>
+  <div class="pb">ok ok, ik heb m gepost.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

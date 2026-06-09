@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heineken Experience – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Heineken Experience</h1>
+<p class="tm">5 posts · started 2001-12-10 23:20 by Mk</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20011210232000" id="p1">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#1 · 2001-12-10 23:20</span></div>
+  <div class="pb">Hoi, dit schijnt vet koel te zijn voor  5,-...<br><br>http://www.heinekenexperience.nl/<br><br>Datumpje prikken?</div>
+</article>
+<article class="post" data-ts="20011211125100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2001-12-11 12:51</span></div>
+  <div class="pb">ziet er echt heeel gaar uit<br>misschien meer iets voor de bierbrouwende floraboys</div>
+</article>
+<article class="post" data-ts="20160620230307" id="p3">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#3 · 2016-06-20 23:03</span></div>
+  <div class="pb">(speciaal voor de Bode)<br><br>Dit schijnt vet koel te zijn voor  0<br><a>https://dezwijger.nl/programma/heineken-in-afrika</a></div>
+</article>
+<article class="post" data-ts="20160620231356" id="p4">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#4 · 2016-06-20 23:13</span></div>
+  <div class="pb">En nu een <a href="https://dezwijger.nl/programma/heineken-in-afrika">werkend linkje</a></div>
+</article>
+<article class="post" data-ts="20160621005644" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2016-06-21 00:56</span></div>
+  <div class="pb">Mooi. De erkenning die je verdient. Ik ben zelf helaas op vakantie die datum, maar ik roep alle in Nederland aanwezige Boys ertoe op te gaan.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

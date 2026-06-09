@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>spam quote van de dag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">spam quote van de dag</h1>
+<p class="tm">3 posts · started 2005-04-12 15:16 by BigT</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20050412151600" id="p1">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#1 · 2005-04-12 15:16</span></div>
+  <div class="pb">Guus Hiddink:<br><br>"We wonnen zelfs van Real Madrid, op dat moment met afstand de beste ploeg van Europa. Wie kan zich dat rolletje van Linskens niet meer herinneren? Nou, Leo Beenhakker in ieder geval wel. Ik dol hem er nu nog wel eens mee. Wat had die toen een goede spelers bij Real Madrid. Gelukkig is het nog goed gekomen met hem. Eerst technisch adviseur van De Graafschap, toch de allermooiste club. En nu weer bondscoach in Trinidad."<br><br>vooral het laatste stuk is brilliant...</div>
+</article>
+<article class="post" data-ts="20050412190300" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2005-04-12 19:03</span></div>
+  <div class="pb">Onze Varssevelder begint praatjes te krijgen. Wel een erg goed citaat!</div>
+</article>
+<article class="post" data-ts="20050413113700" id="p3">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#3 · 2005-04-13 11:37</span></div>
+  <div class="pb">BigT het is goed dat er oplettende lezers zijn zoals jij. Dit citaat verdient een miljoenen publiek. <br><br>@ Merlijn, post deze ook ff op het Ajax netwerk. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

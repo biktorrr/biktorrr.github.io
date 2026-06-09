@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kamer gezocht in Amsterdam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Kamer gezocht in Amsterdam</h1>
+<p class="tm">5 posts · started 2007-11-22 18:06 by Oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071122180600" id="p1">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#1 · 2007-11-22 18:06</span></div>
+  <div class="pb">Dit maal eens niet voor mezelf. Een Frans-Nederlandse vriendin gaat een halfjaartje in Amsterdam studeren en zoekt vanaf +- half januari een kamer. Tips zijn welkom. Ik zal haar ook wel eens aan jullie voorstellen, het gaat om een leuk meisje. </div>
+</article>
+<article class="post" data-ts="20071123070100" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2007-11-23 07:01</span></div>
+  <div class="pb">Merlijn: had jij nog niet een lege stek aan de GK? <IMG SRC="http://www.jm-p.nl/flora/wink.gif" BORDER=0><!--24.132.223.170--></div>
+</article>
+<article class="post" data-ts="20071123081100" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2007-11-23 08:11</span></div>
+  <div class="pb">Als ik dan op woensdag en in het weekend bij d'r in bed mag kruipen hebben we een oplossing.<!--194.171.252.100--></div>
+</article>
+<article class="post" data-ts="20071123085800" id="p4">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#4 · 2007-11-23 08:58</span></div>
+  <div class="pb">chez la route, comment \ça va avec ta petit maison ?<br><!--193.173.46.126--></div>
+</article>
+<article class="post" data-ts="20071123092200" id="p5">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#5 · 2007-11-23 09:22</span></div>
+  <div class="pb">En dan vraag je gewoon huur in natura.<!--213.84.4.9--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

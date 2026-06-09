@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ballen: 5/6 april – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ballen: 5/6 april</h1>
+<p class="tm">4 posts · started 2003-04-04 09:27 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030404092700" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2003-04-04 09:27</span></div>
+  <div class="pb">Omdat een deel der Floracieden respect gaat betuigen aan een Floragirl (Lara) stel ik voor om zaterdag reeds om 12:30 uur aan te vangen. Het wordt misschien ook weer 's tijd om het Florapark te ontzien en een kijkje te nemen in de Hout. Uit zeer betrouwbare bron heb ik vernomen dat de panna-koning voor (en tijdens) het ballen een panna-clinic zal verzorgen. Dat wil natuurlijk niemand missen. <br><br>Zondag, gewone tijd, jahaa.</div>
+</article>
+<article class="post" data-ts="20030404114000" id="p2">
+  <div class="ph"><span class="pa">Timmie</span><span class="pm">#2 · 2003-04-04 11:40</span></div>
+  <div class="pb">ik ben er inderdaad zaterdag.. zondag niet..</div>
+</article>
+<article class="post" data-ts="20030404133500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-04-04 13:35</span></div>
+  <div class="pb">Maurits heeft geen respect voor degene die deze topic heeft geopend, maar laat weten dat i zaterdag komt.</div>
+</article>
+<article class="post" data-ts="20030405121100" id="p4">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#4 · 2003-04-05 12:11</span></div>
+  <div class="pb">zondag present<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

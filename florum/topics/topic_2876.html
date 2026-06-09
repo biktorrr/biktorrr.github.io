@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zeilen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Zeilen</h1>
+<p class="tm">6 posts&nbsp;·&nbsp;started 2010-04-28 20:26 by Ca</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20100428202600" id="p1">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#1&nbsp;·&nbsp;2010-04-28 20:26</span></div>
+  <div class="pb">As en weder dienende: wie heeft er zin om es mee te zeilen op de Kaag? Bijv. 14 of 15 mei? (13 mei is hemelvaart en waarschijnlijk druk, net als zondagen). Ik moet nog wel even lief aan de ouders vragen of het mag.</div>
+</article>
+<article class="post" data-ts="20100429085100" id="p2">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#2&nbsp;·&nbsp;2010-04-29 08:51</span></div>
+  <div class="pb">Als ik die zondag kan (14e), dan lijkt me dat een top idee!</div>
+</article>
+<article class="post" data-ts="20100429094500" id="p3">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#3&nbsp;·&nbsp;2010-04-29 09:45</span></div>
+  <div class="pb">Sorry maar Tn kan helemaal niet de 14e dan zitten we namelijk nog in Limburg we komen pas in de loop van de middag terug. Wel een super leuk idee. Alleen is het een beetje druk de komende dagen met afspraken enzo.....</div>
+</article>
+<article class="post" data-ts="20100429105600" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4&nbsp;·&nbsp;2010-04-29 10:56</span></div>
+  <div class="pb">tik</div>
+</article>
+<article class="post" data-ts="20100429111800" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5&nbsp;·&nbsp;2010-04-29 11:18</span></div>
+  <div class="pb">*stands corrected*<br>Ik dacht dat het om het weekend ging. Ik zie nu dat het midden in de week valt.<br><br>Andere keer ga ik heel graag mee. </div>
+</article>
+<article class="post" data-ts="20100429113300" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6&nbsp;·&nbsp;2010-04-29 11:33</span></div>
+  <div class="pb">Zeilen is ok ole ole. ik ga de 14e graag mee!</div>
+</article>
+</div>
+
+<script>
+(function(){
+  var container=document.getElementById('posts');
+  var btnAsc=document.getElementById('btn-asc');
+  var btnDesc=document.getElementById('btn-desc');
+  function sortPosts(dir){
+    var posts=Array.from(container.querySelectorAll('.post'));
+    posts.sort(function(a,b){
+      var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);
+    });
+    posts.forEach(function(p){container.appendChild(p);});
+    btnAsc.classList.toggle('active',dir==='asc');
+    btnDesc.classList.toggle('active',dir==='desc');
+  }
+  btnAsc.addEventListener('click',function(){sortPosts('asc');});
+  btnDesc.addEventListener('click',function(){sortPosts('desc');});
+})();
+</script>
+</main>
+<footer>static archive&nbsp;·&nbsp;1,640 posts&nbsp;·&nbsp;183 topics</footer>
+</body></html>

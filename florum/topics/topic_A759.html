@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forum op Kuys.net zuigt – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Forum op Kuys.net zuigt</h1>
+<p class="tm">2 posts · started 2003-04-15 00:20 by Adam Curry</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030415002000" id="p1">
+  <div class="ph"><span class="pa">Adam Curry</span><span class="pm">#1 · 2003-04-15 00:20</span></div>
+  <div class="pb">daarom op dit forum de groeten aan MK in australie!! Hopelijk skipt hij er op los, if you know what i mean.</div>
+</article>
+<article class="post" data-ts="20030415025200" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2003-04-15 02:52</span></div>
+  <div class="pb">Jammer dat de technologie zo snel voor je gaat Adam, ik had wel anders verwacht van jou met al je internetbedrijfjes. Hoe gaat het met de Adam Family? Lopen de televisieinkomsten al lekker binnen?</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uitslag Florapoll 2 en de nieuwe: FloraPoll3 – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Uitslag Florapoll 2 en de nieuwe: FloraPoll3</h1>
+<p class="tm">3 posts · started 2003-04-17 14:18 by PTC</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030417141800" id="p1">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#1 · 2003-04-17 14:18</span></div>
+  <div class="pb">De uitslag van de Florapoll 2: Timmie net verslagen door porno, maar de onbetwiste winnaar was meer polls!!!:<br><br>1. Meer Polls 13 stemmen (37%) <br>2. Meer Porno 10 stemmen (28%) <br>3. Meer Timmie Tikt 8 stemmen (22%)<br><br>Goed aan de eerste eis kan ik voldoen, daarom hier: de Florapoll 3!!! En je kan nu nog maar 1 keer per dag stemmen, als het goed is.<br><br><!-- v- PollGEAR Code by http://htmlgear.com -v --><br><br><br><br><noscript><br><font face='arial' size='1'> take my poll at:<br><A HREF="http://htmlgear.tripod.com/poll/control.poll?u=mrwanky&i=3&a=render">Flora Poll 3:</A>   <img src='http://htmlgear.lycos.com/img/log/po_i_getgear.GIF' border='0'><br>htmlGEAR.com</a></font><br></noscript><br><!-- ^- End PollGEAR Code -^ --><br></div>
+</article>
+<article class="post" data-ts="20030417144300" id="p2">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#2 · 2003-04-17 14:43</span></div>
+  <div class="pb">Een keer per dag ja. Maar niemand houdt me tegen iedere dag voor het slapen gaan even op Ceca klikken.</div>
+</article>
+<article class="post" data-ts="20030422152700" id="p3">
+  <div class="ph"><span class="pa"><em style="color:var(--dim)">anonymous</em></span><span class="pm">#3 · 2003-04-22 15:27</span></div>
+  <div class="pb">tussenstand: <br>Timmie op 3 stemmen aan de kop, <br>gevolgd door <br>Al-Sahhaf, <br>Ali Chemicali <br>en Roelof 'Showmaster' Luinge<br><br>blijf stemmen!<br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>domispam speciaal voor PH – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">domispam speciaal voor PH</h1>
+<p class="tm">1 post · started 2008-04-10 14:56 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20080410145600" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2008-04-10 14:56</span></div>
+  <div class="pb">DEN HAAG - Minister Maxime Verhagen (Buitenlandse Zaken) mag voortaan geen lange inleidingen en bespiegelingen meer houden tijdens zijn debatten met de Tweede Kamer.<br>ANP<br><br>Dat stelde een Kamermeerderheid donderdag. De minister neemt zoveel tijd in beslag dat de Kamer telkens in tijdnood komt.<br><br>Eerder deze week klaagde zijn collega Bert Koenders (Ontwikkelingssamenwerking) dat hij nog maar negen minuten over had om vragen van de Kamer te beantwoorden.<br><br>Voorzitter Henk Jan Ormel (CDA) van de Kamercommissie Buitenlandse Zaken heeft Verhagen gevraagd voortaan meteen te beginnen met de beantwoording van de vragen in de Kamer.<br><br>"We zullen vandaag zien of hij zich daar aan houdt", zei Ormel donderdagochtend. Later op de dag bleek tijdens het eerst volgende overleg, dat de boodschap was overgekomen.<br><br>Boos<br><br>Maar de Kamer is ook boos over het feit dat zij belangrijke brieven vaak te laat ontvangt. Die klacht betreft niet alleen het ministerie van Buitenlandse Zaken, maar ook het ministerie van Defensie.<br><br>De Kamercommissie Defensie werkt aan een inventarisatie en wil er een Kamerdebat aan gaan wijden. De collega's van Buitenlandse Zaken hebben daar geen geduld meer voor.<br><br>Verontwaardiging<br><br>Verhagen (CDA) is al eens over de kwestie aangesproken en dat heeft niet geholpen. "Ik kan het bijna niet geloven, dat het vlak daarna weer mis gaat", aldus ook de verontwaardigde Karien van Gennip van het CDA.<br><br>Zij steunde daarom het voorstel van de SP om het dagelijks bestuur van de Kamer, het presidium, te vragen de minister op de vingers te tikken. Het presidium moet hem duidelijk maken dat dit "ontoelaatbaar is in het verkeer met de Tweede Kamer". </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

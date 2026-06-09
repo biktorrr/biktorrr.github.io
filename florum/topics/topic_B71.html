@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OMKOOP SCHANDAAL !!!! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">OMKOOP SCHANDAAL !!!!</h1>
+<p class="tm">5 posts · started 2002-03-05 23:57 by De Nieuwe Revu</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20020305235700" id="p1">
+  <div class="ph"><span class="pa">De Nieuwe Revu</span><span class="pm">#1 · 2002-03-05 23:57</span></div>
+  <div class="pb"><b>FLORABOYS SCHANDAAL<br><br>Amsterdam, woensdag<br><br>Twee dagen na de nipte overwinning van de Floraboys op ASVS is het kampioensteam opgeschokt door een enorm schandaal. Sterspeler WJ - volgens intimi al weken uit vorm en in heftig conflict verzeild met enkele minder egocentrische spelers- werd dinsdag door de Elsevier op een nogal genante manier letterlijk de hemel in geprezen. De matig presterende speler werd onder meer aangeduid als de verlosser , en bovendien vergeleken met zwarte piet als het gaat om mooie pasjes geven.<br><br> Iedereen die maandag in de floradome aanwezig was heeft echter kunnen constateren dat deze lofuitingen nergens op gebaseerd waren. De 2 goals die Puite maakte waren weliswaar belangrijk maar hadden door iedere Floraboy afgemaakt kunnen worden. De volgens het artikel in Elsevier, wonderschone assist op Holy was er een die door D junior Bart Sevenster ook gegeven had kunnen worden. Al had deze waarschijnlijk minder hard lopen roepen dat dit weer zijn zoveelste assist was.  <br><br>Dit artikel was voor een aantal spelers aanleiding om eens flink uit de doeken te doen. Verdediger van wereldfaam Merlijs 23 riep zelfs dat volgens hem de Elsevier omgekocht werd. Hierop stuurden wij van de Nieuwe Revu een reporter naar de Prinsessekade waar WJ een pied a terre heeft. Wat hier geconstateerd werd is werkelijk schandalig, een reporter van Elsevier kwam net naarbuiten met een splinternieuwe autoradio van Philips. Deze bleek later afkomstig uit een gestolen Opel Kadet waarbij de naam Joost Puite voorkomt op het politierapport. Bovendien blijkt dat WJ schulden heeft bij deze reporter, deze zijn ontstaan tijdens het eerder genoemde snoepreisje van WJ. Hierbij was ook de reporter aanwezig. Terwijl zijn medespelers bezig waren om net te verliezen van de loodzware eersteklasser FC Langovernagedacht, ging WJ zich zo te buiten aan drank en drugs dat hij moest worden opgenomen in het dichtsbijzijnde ziekenhuis. Zelfs hier ging de verwende ster zich nog te buiten, enkele verpleegsters konden ons vertellen dat WJ verscheidene malen zich meer bezig had gehouden met zijn "magique baguette" dan met zijn gezondheid. <br><br>Nadat deze beschamende feiten naar buiten zijn gekomen heeft het bestuur van de Floraboys dan ook bekend gemaakt dat WJ voorlopig tot 17 Maart geschorst wordt en dat zijn gedrag tot dan toe nauwlettend in de gaten zal worden gehouden. Het mag duidelijk zijn dat een speler met dit soort blamerende acties weinig toekomst heeft binnen een sober collectief als de floraboys. De vraag is dan ook hoe lang deze situatie nog houdbaar is.<br><br><br></b><br><br><br><br><br></div>
+</article>
+<article class="post" data-ts="20020306130600" id="p2">
+  <div class="ph"><span class="pa">&#x27;23&#x27; Merlijn</span><span class="pm">#2 · 2002-03-06 13:06</span></div>
+  <div class="pb">Geen commentaar.</div>
+</article>
+<article class="post" data-ts="20020306131800" id="p3">
+  <div class="ph"><span class="pa">Wj</span><span class="pm">#3 · 2002-03-06 13:18</span></div>
+  <div class="pb">okee okee ik geef het toe</div>
+</article>
+<article class="post" data-ts="20020306200400" id="p4">
+  <div class="ph"><span class="pa">De echte WJ</span><span class="pm">#4 · 2002-03-06 20:04</span></div>
+  <div class="pb">ja hier dus de echte WJ, ik weet niet wie onder mijn naam heeft lopen posten maar ik weet van niks.<br><br></div>
+</article>
+<article class="post" data-ts="20020307121600" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2002-03-07 12:16</span></div>
+  <div class="pb">Oh Joost maak 't nou niet zo moeilijk voor jezelf.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

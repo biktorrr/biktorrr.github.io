@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-Kaart uit Tampere – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">E-Kaart uit Tampere</h1>
+<p class="tm">6 posts · started 2004-03-31 13:48 by -- Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040331134800" id="p1">
+  <div class="ph"><span class="pa">-- Merlijn</span><span class="pm">#1 · 2004-03-31 13:48</span></div>
+  <div class="pb">Floraboys,<br><br>Bij deze een aardige posting, die jullie maar als ansicht moeten beschouwen. Het is feitelijk m'n eer te na om niet weer iedereen een ansicht te sturen, maar ze zijn hier verschrikkelijk duur: 1,- het stuk. Sterker nog, laatst had ik er zelfs drie voor 2,- het stuk gekocht. Bleken ze nog afbeeldingen van kerken uit St. Petersburg te hebben ook...<br><br>Verder is alles top. Ik verblijf in Helsinki maar kan zonder interrailverhalen niet thuiskomen en heb dus maar een retourtje Tampere genomen. Alhier wordt ik alleraardigst ontvangen door professoren die zich in de meest positieve bewoordingen uitlaten over mijn onderzoek. Heb daarnet zelfs een uur lang uit de losse pols een presentatie gegeven. (Toegegeven, net iets minder gaaf dan een uur lang PSV afkraken op de Franse radio. Maar toch. Je doet waar je goed in bent.)<br><br>Mijn Fins gaat naar behoren. Hoewel het niet zo op Nederlands lijkt heb ik er niet zoveel problemen mee. Linguistisch gezien lijkt Fins namelijk op Koreaans (serieus); nu ja, Koreaans lijkt natuurlijk op Chinees en dat spreek ik als de beste. Verder kan ik jullie vertellen dat ik al de hele week in het Engels denk. Hopelijk heb ik bij terugkomst zo'n accent als Adam Curry.<br><br>Vrijdag zal ik de DJ met een bezoek in Tallinn vereren. Ik zal m'n ogen openhouden voor lamme mensen en verstopte WC's: verhalen daarover doen het altijd goed rondom de borreltafel.<br><br>Tot in Nederland<br><br><br></div>
+</article>
+<article class="post" data-ts="20040401104500" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-04-01 10:45</span></div>
+  <div class="pb">nog een tip:<br><br>drukke treinen zijn ook heel leuk als verhaal, vooral als er hele dikke vrouwen op je plaats gaan zitten. Succes met het verzamelen!</div>
+</article>
+<article class="post" data-ts="20040402110700" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2004-04-02 11:07</span></div>
+  <div class="pb">Kom je toevallig ook nog langs Helsinki? Ben wel benieuwd of je je in het WybrenMajorkamp schaart, die het een fantastische stad vindt, of in mijn kamp: ik vond het een compleet shitehole waar ik zsm wegwilde. <br>Tallinn is hoe dan ook een topstad. Verlaat de stad niet zonder een mooie kiek van jezelf onder het straatbordje Pikk (Lang) in het oude centrum en wees vooral ook attentief op Estste vertalingen van Astrid Lindgrens heldin Pippi Pikksukk.<br></div>
+</article>
+<article class="post" data-ts="20040402113100" id="p4">
+  <div class="ph"><span class="pa">jossyt</span><span class="pm">#4 · 2004-04-02 11:31</span></div>
+  <div class="pb">kostelijk Oli, voor dit soort weetjes mogen ze mij wakker maken.</div>
+</article>
+<article class="post" data-ts="20040403165100" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-04-03 16:51</span></div>
+  <div class="pb">Ik was gestationeerd in Helsinki en heb alle tijd genomen daar goed rond te koekeloeren. Ik geloof dat ik Helsinki niet erg bijzonder vond. Wat ik nog wel aardig vond was Suomenlinna: de gefortificeerde eilandjes. Maar uitgerekend dat vond Wybren een hele grote domper...<br><br>Tallinn was een toppertje. Ik heb zelfs een T-shirt van de plaatselijke voetbalclub op de kop getikt! Pikk heb ik gemist; maar heb nog wel Galerii Kaks uitgecheckt. Verder heb ik nog een verhaal met diarree en afwezigheid van WC's voor jullie in petto. Maar dat ga ik hier niet posten, want dan kan ik het maar een keer vertellen. </div>
+</article>
+<article class="post" data-ts="20040405184000" id="p6">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#6 · 2004-04-05 18:40</span></div>
+  <div class="pb">O ja, helemaal vergeten. Ook een mooi biljet van 'kaks krooner' (twee kronen) meegenomen? Goed dat je qua Helsinki duidelijk in mijn kamp zit. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Party at Big T&#x27;s? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Party at Big T&#x27;s?</h1>
+<p class="tm">8 posts · started 2003-08-21 14:56 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030821145600" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-08-21 14:56</span></div>
+  <div class="pb">De 5e naderd, is J-Lau al geboekt?</div>
+</article>
+<article class="post" data-ts="20030822145600" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2003-08-22 14:56</span></div>
+  <div class="pb">naderT, hoe kun je nou juist bij dit topic de t vergeten?</div>
+</article>
+<article class="post" data-ts="20030822145800" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-08-22 14:58</span></div>
+  <div class="pb">Goed gezegd, het moet eens afgelopen zijn met die oneindige verkrachting van de Nederlandse taal op het Florum.</div>
+</article>
+<article class="post" data-ts="20030823115500" id="p4">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#4 · 2003-08-23 11:55</span></div>
+  <div class="pb">sorry ik hat eersd "is genaderd" getypd, en daarna niet meer de D in een T verandert. <br><br>Het is btw. wel angstvallig stil rond The Big-T. Issie in het geniep in Leiden Zuid alle noordafrikaanse kindertjes pannales aan het geven?</div>
+</article>
+<article class="post" data-ts="20030823174700" id="p5">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#5 · 2003-08-23 17:47</span></div>
+  <div class="pb">Misschien is ie door het bruggetje gezakt(wat in Leiden i ingestort) en er achter gekomen da ie toch niet zo goed kom zwemmen</div>
+</article>
+<article class="post" data-ts="20030825131500" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2003-08-25 13:15</span></div>
+  <div class="pb">Ik kan jullie verklappen dat de Biggenizer met J L@u (wat een genot toch elke keer weer om die namen te typen) nog een weekje in Belgie zitten. Maar niets staat jullie in de weg zelf alle voorbereidingen voor een Big T verjaardagsfeest te organiseren. </div>
+</article>
+<article class="post" data-ts="20030825140900" id="p7">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#7 · 2003-08-25 14:09</span></div>
+  <div class="pb">ik stel voor om Biggies Crib alvast te verbouwen. Het thema zou Pimps en Prostitutes moeten zijn. Als iemand ff een sleutel regeld en een port roze verf kom ik woensdag alvast alle muren roze schilderen.<br><br></div>
+</article>
+<article class="post" data-ts="20030826101900" id="p8">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#8 · 2003-08-26 10:19</span></div>
+  <div class="pb">Even aan de ouders van Biggy vragen. Niet vergeten netjes met twee woorden te spreken: "Ja mevrouw Biggy, nee meneer Biggenizer." Misschien ook een leuke verrassing om een paar muren door te breken. Als we de keuken nu direct toegankelijk maken vanuit de slaapkamer, scheelt dat in de vroege ochtend toch wat meters naar de frituur.  </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

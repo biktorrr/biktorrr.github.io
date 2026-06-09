@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flora-lijk – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Flora-lijk</h1>
+<p class="tm">7 posts · started 2004-02-17 12:29 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040217122900" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2004-02-17 12:29</span></div>
+  <div class="pb">Zoektocht naar resten verdwenen weduwe begonnen<br><br>Uitgegeven: 17 februari 2004 11:21 <br><br>HAARLEM - Deskundigen van het Korps Landelijke Politie Diensten (KLPD) zijn dinsdag in Haarlem begonnen met de zoektocht naar de stoffelijke resten van de in 1970 verdwenen Haarlemse weduwe Tina Akersloot-Konig. Ze gebruiken onder meer grondradar en een speurhond. <br><br>De politie zoekt op drie verschillende plekken in het Frederikspark en Florapark in Haarlem naar de stoffelijke resten. Dat gebeurt naar aanleiding van recente tips van Haarlemmers over waar de vrouw mogelijk begraven ligt. <br><br></div>
+</article>
+<article class="post" data-ts="20040217123000" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2004-02-17 12:30</span></div>
+  <div class="ps">vervolg</div><div class="pb">De verdwijning van de Haarlemse weduwe is in het nieuws gekomen door de moord op het echtpaar Müller uit Baarn. De verdachte in die zaak werd in 1970 ook in verband gebracht met de vermissing van Tina Akersloot-Konig. Hoewel de politie kort na haar verdwijning een schop met zand en bloed aantrof in de auto van de man, kwam de zaak nooit rond. Het lichaam van de vrouw is nooit gevonden. <br><br>Naar aanleiding van alle publiciteit heeft de Haarlemse politie meerdere tips binnengekregen waar de vrouw zou kunnen liggen. Hoewel de zaak inmiddels is verjaard, wil de politie door middel van het onderzoek duidelijkheid krijgen. </div>
+</article>
+<article class="post" data-ts="20040217124700" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2004-02-17 12:47</span></div>
+  <div class="pb">hmmm het verbaasde me al dat dat bloembed met narcissen een typische vorm had. Het zou toch niet waar zijn?</div>
+</article>
+<article class="post" data-ts="20040217130300" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-02-17 13:03</span></div>
+  <div class="pb">Boris de Hamstert ligt daar trouwens ook begraven, als ze ook maar in de buurt komen, sue ik hun asses eraf voor grafschennis</div>
+</article>
+<article class="post" data-ts="20040217130700" id="p5">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#5 · 2004-02-17 13:07</span></div>
+  <div class="pb">haha, straks vinden ze ook nog een berg met haar van 7 onbekende personen, dat zal een mooi mysterie vormen voor het haarlems dagblad.</div>
+</article>
+<article class="post" data-ts="20040217133700" id="p6">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#6 · 2004-02-17 13:37</span></div>
+  <div class="pb">Floraboys gaan over lijken.</div>
+</article>
+<article class="post" data-ts="20040217134300" id="p7">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#7 · 2004-02-17 13:43</span></div>
+  <div class="pb">Bikkels to the Bone</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

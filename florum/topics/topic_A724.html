@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>buitenspelval – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">buitenspelval</h1>
+<p class="tm">5 posts · started 2003-03-05 23:54 by oli4</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030305235400" id="p1">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#1 · 2003-03-05 23:54</span></div>
+  <div class="pb">Had net wel een interessant gesprek met Cheska. Zij vroeg namelijk wat de buitenspelval inhoudt. Zij dacht aan een val zoals een muizenval, die verdedigers kunnen toepassen om de aanvallers erin te laten lopen, terwijl ik - meer abstract - dacht aan het vallen van buitenspel, zoals de nacht ook valt. Van Dale biedt volgens mij niet echt uitkomst: 'spelpatroon waarbij een of meer spelers van de aanvallende partij buitenspel gezet worden door het gezamenlijk oprukken van de verdedigers'. Wat vinden jullie?<br><br>Je moet het ergens over hebben als je op 500 km afstand van elkaar woont.</div>
+</article>
+<article class="post" data-ts="20030306100800" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2003-03-06 10:08</span></div>
+  <div class="pb">Oh oh oh, Olivier toch. Wat een genante vertoning om je voetbalonwetendheid zo tentoon te spreiden. Ik moet zeggen dat Cheska's betekenis toch wat dichter bij die van de van Dale zit. Verdedigers die op buitenspel spelen anticiperen op een pass van de tegenstander door snel enkele stappen naar voren te zetten, waardoor de argeloze aanvaller (noem hem Henk Vos) buitenspel staat. Je zegt dan dat Henk Vos in de buitenspelval is gelopen. Aan de andere kant `we are talking Henkie Vos' en die laat zich niet zo snel in de buitenspelval lokken, dus heb ik het verkeerde voorbeeld genomen. Maar het idee is toch duidelijk. In principe kun je dit soort dingen het best uitleggen met behulp van bier en martini-doppen.<br><br>In het algemeen is het een vrij hachelijke onderneming om op buitenspel te spelen omdat je wel heel erg afhankelijk bent van de grensrechter. Die ziet al snel een kleine dappere Wamberto over het oog, die in de laatste minuut de 2-2 maakt tegen de plaatselijke FC uit Utrecht in een willekeurige bekerfinale seizoen 2002-2003.</div>
+</article>
+<article class="post" data-ts="20030307102000" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2003-03-07 10:20</span></div>
+  <div class="pb">Nog steeds niet overtuigd. En om die arme Wambertoe er nou aan zijn kroeshaar bij te slepen. Ajax had toch een spitsenprobleem. Ik ken nog wel een Braziliaan die ooit Belg had willen worden om nog eens een interland te mogen spelen, die nu op de bank (of is het de tribune) zit te verkleumen. <br>Verder: als de verdedigers een paar stappen terugdoen, dan kan de buitenspelval (zonder dat het daarom meteen een soort muizenval hoeft te zijn) toch open klappen en invallen. <br>Neem een Rick Hoogendorp. Hij staat daar maar op die beslissende pass te wachten, terwijl alle verdedigers van de tegenpartij, noem ze Top Oss, zijn teruglopen. Dan is hij overvallen door de buitenspelval, zoals je ook overvallen kunt worden door het vallen van de nacht. <br><br>Misschien dat Timmie uitsluitsel weet te tikken. A propos: het is de hoogste tijd voor een nieuwe column dunkt mij.</div>
+</article>
+<article class="post" data-ts="20030307103900" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2003-03-07 10:39</span></div>
+  <div class="pb">Die Rick Hoogendorp, staat daar moederziel alleen te wachten op een fijne pass; meters buitenspel. We hebben met 'm te doen. Aan de andere kant vond ik mijn subject Henkie Vos toch scherper gekozen. Ik bedoel, OK, Rick Hoogendorp komt op je doel afgelopen, "so what?" Maar als Henk Vos op jou als keeper komt afgestormd met z'n fraaie witte kicksen en z'n sterke kaaklijn, dan piep je wel anders.<br><br>Ik denk inderdaad dat wij, Olivier, er niet uit gaan komen. Hopelijk dat le Timmeenizeur uitsluitsel kan geven.</div>
+</article>
+<article class="post" data-ts="20090102110600" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2009-01-02 11:06</span></div>
+  <div class="pb">Sorry, beetje dom. Die vorige post was een ander juweeltje, over het Maradonna-complex van onze vriend Merlijn. De domheid van Olivier kunnen we in dit topic bewonderen</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

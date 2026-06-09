@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floraboys Belastingtopic – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Floraboys Belastingtopic</h1>
+<p class="tm">6 posts · started 2011-03-06 14:08 by VB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20110306140806" id="p1">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#1 · 2011-03-06 14:08</span></div>
+  <div class="pb">Ha die booys,<br><br>Ik zit lekker mijn allereerste belastingaangifte evah te doen. Een erg leuk taakje voor een mooie zondagmiddag.<br><br>Observaties tot nu toe: <br>- Hulde aan de belastingdienst dat ze al heel veel voor je invullen. Ik zag er nogal tegenop met mijn huisaankoop en baan-wissel in 2010.<br><br>- Allen jammer dat mijn huis nog als gesplitst aangegeven staat, nog geen idee hoe ik dat op moet lossen. <br><br>Enfin, ben benieuwd hoe het jullie vergaat. Hebben jullie nog leuke belastingaftrekposten?</div>
+</article>
+<article class="post" data-ts="20110306153402" id="p2">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#2 · 2011-03-06 15:34</span></div>
+  <div class="pb">Welkom aan de bijdragende kant van de samenleving! <br><br>Kan wel een paar aftrekpostjes verzinnen, maar je zou er natuurlijk vanuit jouw maatschappijvisie ook voor kunnen kiezen om afstand te doen van je villa-subsidie om de armlastige burger een extra'tje te kunnen geven... </div>
+</article>
+<article class="post" data-ts="20110306164053" id="p3">
+  <div class="ph"><span class="pa">Extraatje-nazi</span><span class="pm">#3 · 2011-03-06 16:40</span></div>
+  <div class="pb">Een prijzenswaardig links sentiment, helaas wel met een spelfout. </div>
+</article>
+<article class="post" data-ts="20110306171133" id="p4">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#4 · 2011-03-06 17:11</span></div>
+  <div class="pb">Ik heb m'n leven zo ingericht dat de belastingen in minder dan 5 minuten te regelen zijn. Gewoon veel doorklikken en de bankafschriften bij het handje houden.</div>
+</article>
+<article class="post" data-ts="20110306171934" id="p5">
+  <div class="ph"><span class="pa">BD</span><span class="pm">#5 · 2011-03-06 17:19</span></div>
+  <div class="pb">Ikzelf kies voor een benadering waarbij ik permanent in het buitenland verblijf. Omdat ik niet in Nederland woon mag ik van meneer De Jager mijn gigantische knakenberg belastingvrij in Nederland beleggen. <br><br>(Tip - de vermogendheid van in het buitenland woonachtige Boys kun je er aan aflezen of ze ook in het buitenland, of bijvoorbeeld nog gewoon bij hun ouders ingeschreven staan. Deze laatste groep bestaat uit linkse idealisten die echt graag hun geld aan de overheid weggeven, danwel sloebers die geen cent te makken hebben.)</div>
+</article>
+<article class="post" data-ts="20110306181455" id="p6">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#6 · 2011-03-06 18:14</span></div>
+  <div class="pb">Belasting ben ik ook meestal binnen een kwartier mee klaar. Zeker als alles al vooraf ingevuld is. Alleen moet ik de hypotheekrente meestal even opzoeken. Maar die is de komende 10 jaar hetzelfde dus dat wordt een eitje. Verder geen aftrekposten kunnen vinden waarbij we boven de drempels komen. <br><br>Alleen wil ik nog wel een keer mijn huidige reserveringsruimte uitrekenen. Helaas moet ik daarvoor de archieven induiken, wat reteveel tijd kost.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

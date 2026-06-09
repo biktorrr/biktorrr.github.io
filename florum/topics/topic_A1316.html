@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dag lief OLVG, dag – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Dag lief OLVG, dag</h1>
+<p class="tm">11 posts · started 2004-10-06 10:01 by Merlijn</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20041006100100" id="p1">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#1 · 2004-10-06 10:01</span></div>
+  <div class="pb">Ben net bij de poli orthopedie geweest en ze hoeven me daar niet meer te zien, omdat ik feitelijk niet meer door m'n knie gegaan na de operatie. Een klein traantje moest ik wel wegpinken toen ik de draaideur uitliep terwijl ik dacht <i>dag lief OLVG, dag...</i></div>
+</article>
+<article class="post" data-ts="20041006100800" id="p2">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#2 · 2004-10-06 10:08</span></div>
+  <div class="pb">SMOOI</div>
+</article>
+<article class="post" data-ts="20041006102700" id="p3">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#3 · 2004-10-06 10:27</span></div>
+  <div class="pb">Is er nu nog iets dat een glorieuze rentree op de velden in de weg staat of moet je het nog wel even rustig aan doen, bijvoorbeeld om schrijnende taferelen als met Timmie dit weekend te voorkomen?</div>
+</article>
+<article class="post" data-ts="20041006111100" id="p4">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#4 · 2004-10-06 11:11</span></div>
+  <div class="pb">nou gefeliciflapstaart dan he!</div>
+</article>
+<article class="post" data-ts="20041006114200" id="p5">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#5 · 2004-10-06 11:42</span></div>
+  <div class="pb">Nog een maandje fysio naar verwachting en dan kan ik die goddelijke grasmat van het Florapark op kicksen betreden.</div>
+</article>
+<article class="post" data-ts="20041006182400" id="p6">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#6 · 2004-10-06 18:24</span></div>
+  <div class="pb">Dan zal ik  m'n messen maar weer eens door de slijpmachine halen. Goed nieuws chief.<br><br></div>
+</article>
+<article class="post" data-ts="20041007000800" id="p7">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#7 · 2004-10-07 00:08</span></div>
+  <div class="pb">he Merl man! gefeliciteerd man! </div>
+</article>
+<article class="post" data-ts="20041007093900" id="p8">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#8 · 2004-10-07 09:39</span></div>
+  <div class="pb">He persjournalist, geen vuil woord over de tomeloze inzetten van de BT ok...Ga anders even Merlijn's inzet bij zijn herstel roemen ofzo.</div>
+</article>
+<article class="post" data-ts="20041007100700" id="p9">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#9 · 2004-10-07 10:07</span></div>
+  <div class="pb">Ik vond het schrijnend om te zien hoe Timmie na een halfuurtje spelen naar de kant moest, terwijl je de pijn van zijn gezicht af kon lezen. Vond jij dat leuk ofzo, MK? Hoop je dat het ook zo met Merlijn zal gaan?</div>
+</article>
+<article class="post" data-ts="20041007100900" id="p10">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#10 · 2004-10-07 10:09</span></div>
+  <div class="pb">Floraboooys!</div>
+</article>
+<article class="post" data-ts="20041013120000" id="p11">
+  <div class="ph"><span class="pa">oli4</span><span class="pm">#11 · 2004-10-13 12:00</span></div>
+  <div class="pb">Hee Merlijn, ouwe bofkont: volgens het AD is het OLVG het vijfde beste ziekenhuis van Nederland. Chapeau. </div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

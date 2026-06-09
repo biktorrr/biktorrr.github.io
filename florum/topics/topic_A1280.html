@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mooiste Shirt? (wo-mi-spa) – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Mooiste Shirt? (wo-mi-spa)</h1>
+<p class="tm">3 posts · started 2004-09-01 13:48 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20040901134800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2004-09-01 13:48</span></div>
+  <div class="pb">Het FLoraboys shirt buiten beschouwing gelaten, was ik benieuwd wat de boys op dit moment (of allertijden) het mooiste bal-shirt vinden ?<br>Aanleiding is voor mij de hausse in (in mijn ogen) redelijk aantrekkelijke uitshirts. Zo vind ik het uitshirt van Barca dit jaar beter dan die van de paar jaren ervoor <img src="http://www.247shop.nl/isroot/shop247v2/producten/fan/barcelona/2214012501_groot.gif"><br>en ook het cupshirt van Ajax, het uitshirt van de kakkerlakken (lekker metrosexuaal) en zelfs de Milan aspiraties van WillemII mogen er zijn.<br>Overigens denk ik dat mijn persoonlijke favos van alltime zullen blijven het helemaal witte shirt van RealMadrid en het uitshirt van de Spurs van toen ik ongeveer 12 was, helemaal donkerpaars.<br></div>
+</article>
+<article class="post" data-ts="20040901230700" id="p2">
+  <div class="ph"><span class="pa">Mk</span><span class="pm">#2 · 2004-09-01 23:07</span></div>
+  <div class="pb"><img src="http://www.psv-nl.vesproshop.nl/domains/vespro_psv_nl/content/productimages/large/199970.jpg"></div>
+</article>
+<article class="post" data-ts="20040902100500" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2004-09-02 10:05</span></div>
+  <div class="pb">Er is maar een mooi shirt, en dat is het shirt van<br><br><h1>Flora Talinn</h1><br><br>En dat heb ik -- feitelijk.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

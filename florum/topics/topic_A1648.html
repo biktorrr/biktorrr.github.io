@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vrijmispam – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vrijmispam</h1>
+<p class="tm">6 posts · started 2005-12-16 16:48 by MB</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051216164800" id="p1">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#1 · 2005-12-16 16:48</span></div>
+  <div class="pb">voor al de mensen die het leuk vinden mijn werkomgeving op TV te zien: vanavond komt TNS NIPO weer eens op NOVA ivm het niet deelnemen van PRDV aan de verkiezingen. Peter de Vries had zijn deelname nl. af laten hangen van een NIPO-peiling. Het resultaat was veel lager dan hij had gewild. <br>Er liep hierom vandaag weer een cameraploeg door het gebouw te struinen. </div>
+</article>
+<article class="post" data-ts="20051216165700" id="p2">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#2 · 2005-12-16 16:57</span></div>
+  <div class="pb">dus jij hebt PRDV getorpedeerd....<br><br><br>tereeeeecht....</div>
+</article>
+<article class="post" data-ts="20051216211000" id="p3">
+  <div class="ph"><span class="pa">Analist</span><span class="pm">#3 · 2005-12-16 21:10</span></div>
+  <div class="pb">Wat is daar precies zo terecht aan Biktie?</div>
+</article>
+<article class="post" data-ts="20051216222000" id="p4">
+  <div class="ph"><span class="pa">BigT</span><span class="pm">#4 · 2005-12-16 22:20</span></div>
+  <div class="pb">omdat ik bij de 69 % hoor die PRDV geen aanwinst vind voor de NL politiek<br></div>
+</article>
+<article class="post" data-ts="20051217155900" id="p5">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#5 · 2005-12-17 15:59</span></div>
+  <div class="pb">Biktie leg ons dan eens kort inhoudelijk uit waarom PRDV dan geen aanwinst is voor de NL politiek?<br>  </div>
+</article>
+<article class="post" data-ts="20051219150700" id="p6">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#6 · 2005-12-19 15:07</span></div>
+  <div class="pb">Kijk voor de grap eens naar het openingsfilmpje op de site van het Front National, www.frontnational.com<br><br>De nazi´s zijn daarbij vergeleken amateurs<br><br></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>vrij-test – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">vrij-test</h1>
+<p class="tm">5 posts · started 2009-10-09 15:56 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20091009155600" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2009-10-09 15:56</span></div>
+  <div class="pb">ok bijgoogems, omdat het vrijdag is een mooie som voor de liefhebbers: het goede antwoord is al gegeven. Je hoeft het alleen nog even te bewijzen! Je weet immers zelf toch?<br><br><img src='http://www.floraboys.com/onzin/4A-7.png'></div>
+</article>
+<article class="post" data-ts="20091009183300" id="p2">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#2 · 2009-10-09 18:33</span></div>
+  <div class="pb">Ok, leuk, het was me enigszins ontschoten hoe je dit ook al weer aan moest pakken. Maar <a href="http://wortel.tue.nl/html/getallen/getallen.3.04.html">met een beetje hulp</a> kwam ik het weer boven. <br><br>Truc is dat je alle factoren in de noemer naar een vijfdemacht moet krijgen, dan kan je ze daarna zonder 5emacht voor de wortel halen. <br><br>- 486 is 2x3^5, ook niet iets waar je zo opkomt. Daarna is het simpel :)<br><br><img src="http://staff.science.uva.nl/~vdeboer/floraboys/sommetje.jpg"></div>
+</article>
+<article class="post" data-ts="20091009185100" id="p3">
+  <div class="ph"><span class="pa">JK</span><span class="pm">#3 · 2009-10-09 18:51</span></div>
+  <div class="pb">Bwurp</div>
+</article>
+<article class="post" data-ts="20091009205800" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2009-10-09 20:58</span></div>
+  <div class="pb">goed werk draaier, thanx. Inmiddels na  2 1/2 uur de opdracht voltooid.</div>
+</article>
+<article class="post" data-ts="20091009212600" id="p5">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#5 · 2009-10-09 21:26</span></div>
+  <div class="pb">ok, zie je om 23u in de Bruxelleroni</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

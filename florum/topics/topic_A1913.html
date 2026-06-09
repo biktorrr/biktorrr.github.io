@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cultureel doen – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Cultureel doen</h1>
+<p class="tm">6 posts · started 2006-11-19 14:28 by Blije</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20061119142800" id="p1">
+  <div class="ph"><span class="pa">Blije</span><span class="pm">#1 · 2006-11-19 14:28</span></div>
+  <div class="pb">Beste girls 'n boys<br>Donderdag 30 november sta ik op de planken in de Haarlemse Philharmonie, met het stuk Peer Gynt. De muziek wordt gespeeld door het Kennemerjeugd orkest (heel goed trouwens, ik hoorde ze vandaag voor het eerst), en de dans door de Haarlemse Balletschool. Ik doe voor de verandering dit keer ook echt mee, dus mocht er belangstelling zijn, laat het even weten! We hebben nog lang niet genoeg kaarten verkocht voor dit spectakel. Het begint trouwens om half 8, en het duurt hooguit anderhalf uur. Kaartjes via mij...( 10 euroos)</div>
+</article>
+<article class="post" data-ts="20061120105600" id="p2">
+  <div class="ph"><span class="pa">Oli4</span><span class="pm">#2 · 2006-11-20 10:56</span></div>
+  <div class="pb">Hee, da's toevallig. Had het er net dit weekend over dat ik graag Peer Gynt eens zou willen zien. Maar ben helaas niet in NL die dag.</div>
+</article>
+<article class="post" data-ts="20061120123600" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2006-11-20 12:36</span></div>
+  <div class="pb">ik zou graag komen, maar heb een belangrijke taak als minister voor buitenzaakse catering die avond :(<br>is het alleen die donderdag avond?<br></div>
+</article>
+<article class="post" data-ts="20061121104300" id="p4">
+  <div class="ph"><span class="pa">Blije</span><span class="pm">#4 · 2006-11-21 10:43</span></div>
+  <div class="pb">Ja, het is maar eenmalig...en nu blijkbaar nog voor een lege zaal ook....:(<br><br><br><br><br><br>Grapje hoor</div>
+</article>
+<article class="post" data-ts="20061122094900" id="p5">
+  <div class="ph"><span class="pa">Ca</span><span class="pm">#5 · 2006-11-22 09:49</span></div>
+  <div class="pb">ik kan helaas ook niet, ik moet zelf altviool spelen.</div>
+</article>
+<article class="post" data-ts="20061122100800" id="p6">
+  <div class="ph"><span class="pa">VB</span><span class="pm">#6 · 2006-11-22 10:08</span></div>
+  <div class="pb">ik kom wel hoor..<br>als je tenminste voor Tiny Kox stemt</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

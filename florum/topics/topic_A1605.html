@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Extra&#x27;s – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Extra&#x27;s</h1>
+<p class="tm">5 posts · started 2005-11-02 11:56 by TN</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20051102115600" id="p1">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#1 · 2005-11-02 11:56</span></div>
+  <div class="pb">Aangezien The Office onder de boys populariteit geniet, wilde ik jullie ook nog wijzen op "Extra's"(figuranten) een andere zesdelige serie van de BBC met Ricky Gervais (David Brent).<br>Ik heb de afleveringen op de console; ze zijn evt transporteerbaar te maken om ze zo te kunnen zien in huizen van boys die hun tv hebben aangesloten op hun console.</div>
+</article>
+<article class="post" data-ts="20051102122200" id="p2">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#2 · 2005-11-02 12:22</span></div>
+  <div class="pb">Zijn ze ook leuk?</div>
+</article>
+<article class="post" data-ts="20051102140300" id="p3">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#3 · 2005-11-02 14:03</span></div>
+  <div class="pb">Ik heb er nu een paar gekeken. Qua setting zijn ze natuurlijk onvergelijkbaar; alle humor van herkenbaarheid van kantoorperikelen inclusief de extreme ergenis die David Brent opwekt heb je in Extra's niet. Anderzijds speelt hij ook nu weer een soortgelijke rol (een egocentrische, valsbescheidene droplul) en is veel van het type (interpersoonlijke) humor hetzelfde, alleen toegepast op de film wereld ipv een kantoor. Wel heb ik het idee dat ze in sommige dialogen ietsjes te lang doorgaan. De kracht van sommige Office scenes was De Blik of Het Onuitgesproken Woord voor de cut, nu neigt Extra's soms naar het bijna willen uitleggen van een grap. Misschien heeft dit ook te maken met het willen aanboren de Amerikaanse comedyserie markt. Die toch gespeend is van enige subtiliteit wat humor aangaat.<br>Ergo conclusio; anders maar wel leuk.  </div>
+</article>
+<article class="post" data-ts="20051102142100" id="p4">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#4 · 2005-11-02 14:21</span></div>
+  <div class="pb">Oke deze is misschien te makkelijk maar:<br><br>"alle humor van herkenbaarheid van kantoorperikelen" ? <br><br></div>
+</article>
+<article class="post" data-ts="20051102144900" id="p5">
+  <div class="ph"><span class="pa">TN</span><span class="pm">#5 · 2005-11-02 14:49</span></div>
+  <div class="pb">niet persoonlijk gesproken uiteraard, meer voor hen die dat wel hebben...<br>:D<br><br>Verder is het schotse dommeblondje een aardige vervang sidekick van Gareth en zijn cameos van Vinnie Jones en Ben Stiller mij ook bevallen.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

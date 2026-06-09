@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Welkom terug Lara! – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Welkom terug Lara!</h1>
+<p class="tm">7 posts · started 2007-12-31 10:19 by Joost</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20071231101900" id="p1">
+  <div class="ph"><span class="pa">Joost</span><span class="pm">#1 · 2007-12-31 10:19</span></div>
+  <div class="pb">Welkom terug Lara! Goeie vlucht gehad? Beetje aan de kou gewend inmiddels?</div>
+</article>
+<article class="post" data-ts="20071231122800" id="p2">
+  <div class="ph"><span class="pa">MB</span><span class="pm">#2 · 2007-12-31 12:28</span></div>
+  <div class="pb">Hey Lara! denken jullie vanavond nog langs te komen??<!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20071231125800" id="p3">
+  <div class="ph"><span class="pa">Tim</span><span class="pm">#3 · 2007-12-31 12:58</span></div>
+  <div class="pb">welkom terug!<!--62.131.87.44--></div>
+</article>
+<article class="post" data-ts="20071231185900" id="p4">
+  <div class="ph"><span class="pa">LH</span><span class="pm">#4 · 2007-12-31 18:59</span></div>
+  <div class="pb">Dank jullie wel. Ben nog niet aan de kou gewent en aan de donkerte die de hele dag zo'n beetje over je heen hangt brrr maar goed snel genoeg weer ingeburgerd waarschijnlijk! TN en ik blijven vanavond in Haarlem en gaan ons daar bezatten. Maar allemaal alvast een goed oud en nieuw feestje en ik zie jullie de 2e.<br>x<!--24.132.9.21--></div>
+</article>
+<article class="post" data-ts="20071231211200" id="p5">
+  <div class="ph"><span class="pa">Kirrie</span><span class="pm">#5 · 2007-12-31 21:12</span></div>
+  <div class="pb">Lara! Fijn dat je terug bent!! Tijmen heeft je volgens mij heel erg gemist hoor! En wij ook!<br><br>Kus,<br>Kirrie<!--87.212.29.181--></div>
+</article>
+<article class="post" data-ts="20071231213300" id="p6">
+  <div class="ph"><span class="pa">VB en zn vrinden aan her Azartplein</span><span class="pm">#6 · 2007-12-31 21:33</span></div>
+  <div class="pb">Ok Lil en Lara, veel plezier vanavond en een mooi uiteinde en daarbij ook nog een vrolijk begin. Maak het niet te gek. We drinken een pina colada extra op hullie.<br><br><!--24.132.250.21--></div>
+</article>
+<article class="post" data-ts="20080102100900" id="p7">
+  <div class="ph"><span class="pa">PH</span><span class="pm">#7 · 2008-01-02 10:09</span></div>
+  <div class="pb">Smaken Colada's in Surinam trouwens ook naar Roquefort?<!--213.84.4.9--></div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

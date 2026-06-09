@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ned-Bel? – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">Ned-Bel?</h1>
+<p class="tm">6 posts · started 2003-08-19 15:08 by PHK boy</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20030819150800" id="p1">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#1 · 2003-08-19 15:08</span></div>
+  <div class="pb">Is het misschien leuk om deze skitterende wedstrijd bij iemand te gaan kijken? Ik wil wel eens zien of vdV in de spits bij het nederlands eftal werkt...</div>
+</article>
+<article class="post" data-ts="20030819151100" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-08-19 15:11</span></div>
+  <div class="pb">ik ben er niet bij</div>
+</article>
+<article class="post" data-ts="20030819212100" id="p3">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#3 · 2003-08-19 21:21</span></div>
+  <div class="pb">ik ben helemaal voor. Daarnaast wil ik mijn nederige kot wel ter beschikking stellen als er in Haarlem gekeken gaat worden.</div>
+</article>
+<article class="post" data-ts="20030820143600" id="p4">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#4 · 2003-08-20 14:36</span></div>
+  <div class="pb">maareh dudez... wat ist idee?</div>
+</article>
+<article class="post" data-ts="20030820193100" id="p5">
+  <div class="ph"><span class="pa">PHK boy</span><span class="pm">#5 · 2003-08-20 19:31</span></div>
+  <div class="pb">Ik kom er wel aan :)</div>
+</article>
+<article class="post" data-ts="20030821124600" id="p6">
+  <div class="ph"><span class="pa">wj</span><span class="pm">#6 · 2003-08-21 12:46</span></div>
+  <div class="pb">holy fuk wat wat was het slecht.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>geboortekaartje – Floraboys Forum Archive</title>
+<link rel="stylesheet" href="../style.css"></head>
+<body>
+<header class="site-header">
+  <a href="../index.html"><span class="logo">Floraboys Forum Archive</span></a>
+  <span class="sub">//&nbsp;archived</span>
+</header>
+<main class="container"><a class="back" href="../index.html">Back to topics</a>
+<h1 class="th">geboortekaartje</h1>
+<p class="tm">3 posts · started 2003-12-18 15:06 by WJ</p>
+<div class="sort-bar"><span>Sort:</span><button class="sort-btn active" id="btn-asc">Oldest first ▲</button><button class="sort-btn" id="btn-desc">Newest first ▼</button></div>
+<div id="posts">
+<article class="post" data-ts="20031218150600" id="p1">
+  <div class="ph"><span class="pa">WJ</span><span class="pm">#1 · 2003-12-18 15:06</span></div>
+  <div class="pb"><img src="http://home.hetnet.nl/~kees-margot/images/Geb-krtwebbz.jpg">Deze gast heeft geloof ik ook eens verloren met Golf.</div>
+</article>
+<article class="post" data-ts="20031219000000" id="p2">
+  <div class="ph"><span class="pa">PTC</span><span class="pm">#2 · 2003-12-19 00:00</span></div>
+  <div class="pb">mwaha,<br>ja merlijn, zo sta jij over 5 jaar ook met je stancey op een florum</div>
+</article>
+<article class="post" data-ts="20031219101600" id="p3">
+  <div class="ph"><span class="pa">Merlijn</span><span class="pm">#3 · 2003-12-19 10:16</span></div>
+  <div class="pb">Het geboortekaartje van mijn eerstgeborene zal binnen anderhalve dag door iedereen gezien op aarde gezien worden. Want naast Stancey heb ik nog veel meer beeldschone namen in petto.</div>
+</article>
+</div>
+<script>
+(function(){
+  var c=document.getElementById('posts');
+  var ba=document.getElementById('btn-asc');
+  var bd=document.getElementById('btn-desc');
+  function sort(dir){
+    var ps=Array.from(c.querySelectorAll('.post'));
+    ps.sort(function(a,b){var ta=a.dataset.ts,tb=b.dataset.ts;
+      return dir==='asc'?ta.localeCompare(tb):tb.localeCompare(ta);});
+    ps.forEach(function(p){c.appendChild(p);});
+    ba.classList.toggle('active',dir==='asc');
+    bd.classList.toggle('active',dir==='desc');
+  }
+  ba.addEventListener('click',function(){sort('asc');});
+  bd.addEventListener('click',function(){sort('desc');});
+})();
+</script></main>
+<footer>static archive · 58,961 posts · 4,083 topics</footer>
+</body></html>
